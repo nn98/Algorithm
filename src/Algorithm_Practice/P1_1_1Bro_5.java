@@ -80,6 +80,7 @@ public class P1_1_1Bro_5 {
 		// TODO Auto-generated method stub
 		Scanner s=new Scanner(System.in);
 		int input=s.nextInt();
+		// 컴파일 예시-1부터~솔루션까지가 나오고 솔루션 실행되는게 아닌 솔루션 실행 후 출력.
 		System.out.println("1부터 "+input+"까지 총 "+solution(input)+"번의 손뼉을 쳐야 합니다.");
 	}
 
