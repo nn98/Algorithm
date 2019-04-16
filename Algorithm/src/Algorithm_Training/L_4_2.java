@@ -1,6 +1,6 @@
 package Algorithm_Training;
 
-import java.util.Arrays;
+// import java.util.Arrays;
 
 // % 15
 public class L_4_2 {

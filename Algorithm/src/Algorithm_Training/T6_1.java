@@ -16,7 +16,7 @@ import java.util.Scanner;
 }
  */
 public class T6_1 {
-	
+
 
 	public static void main(String[] args) {
 		/*		3
@@ -41,7 +41,4 @@ public class T6_1 {
 		}
 		int from=s.nextInt(),to=s.nextInt();
 	}
-
-	
-
 }
