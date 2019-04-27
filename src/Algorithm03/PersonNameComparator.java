@@ -1,4 +1,4 @@
-package Algorithm;
+package Algorithm03;
 import java.util.Comparator;
 
 public class PersonNameComparator implements Comparator<Person> {

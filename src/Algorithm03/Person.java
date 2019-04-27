@@ -1,4 +1,4 @@
-package Algorithm;
+package Algorithm03;
 
 public class Person {
 	String name;
@@ -21,6 +21,6 @@ public class Person {
 	}
 	@Override
 	public String toString() {
-		return String.format("Person{name=\"%s\", age=%d}", name, age);
+		return String.format("{name=\"%s\", age=%d}", name, age);
 	}
 }

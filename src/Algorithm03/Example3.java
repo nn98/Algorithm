@@ -1,6 +1,6 @@
-package Algorithm;
+package Algorithm03;
 
-public class Example4 {
+public class Example3 {
 	// 배열 a의 start 위치부터 끝까지에서 가장 작은 값의 위치(index)를 리턴한다.
 	static int findMin(int[] a, int start) {
 		int v=a[start],r=start;
