@@ -20,18 +20,22 @@ public class P1475 {
 		}
 		//System.out.println(Arrays.toString(arr));
 		int r=0;
-		boolean Empty=true;
+		boolean Empty=true,six=false,nine=false;
 		for(;;r++) {
 			Empty=true;
+			six=false;
+			nine=false;
 			for(int i=0;i<arr.length;i++) {
 				if(arr[i]!=0) {
 					Empty=false;
+					if(i==6) six=true;
+					if(i==9) nine=true;
 					arr[i]--;
 				}
 			}
-			if(arr[6]==0&&arr[9]!=0) arr[9]--;
-			if(arr[9]==0&&arr[6]!=0) arr[6]--;
 			if(Empty) break;
+			if(arr[6]==0&&arr[9]!=0&&!six) arr[9]--;
+			if(arr[9]==0&&arr[6]!=0&&!nine) arr[6]--;
 			//System.out.println(Empty+Arrays.toString(arr));
 		}
 		System.out.println(r);
