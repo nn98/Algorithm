@@ -1,4 +1,4 @@
-package Algorithm03;
+package Algorithm_03_1;
 
 public class Example8 {
 
