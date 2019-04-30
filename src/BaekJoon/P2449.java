@@ -2,7 +2,7 @@ package BaekJoon;
 
 import java.util.Arrays;
 import java.util.Scanner;
-
+//GG
 public class P2449 {
 	static int count=0;
 	static int sol(int[] arr, int index, int value) {
