@@ -1,4 +1,4 @@
-package Algorithm03;
+package Algorithm_03_1;
 
 public class Example2 {
 	// 배열 a에서 가장 작은 값의 위치(index)를 리턴한다.
