@@ -1,28 +1,28 @@
 package BaekJoon;
 
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.io.OutputStreamWriter;
 import java.util.Arrays;
-import java.util.Scanner;
-//!!!
+//--------------------------?? 정렬문제가 아니라 걍 버퍼사용문제?
 public class P10989 {
 	
-	static void sort(int[] arr) {
-		int[] a=new int[10];
-	}
-	
-	public static void main(String[] args) {
-		Scanner s=new Scanner(System.in);
-		int N=s.nextInt();
-		int[] arr=new int[N],count=new int[10000];
-		for(int i=0;i<N;i++) arr[i]=s.nextInt();
-		for(int i=0;i<N;i++) count[arr[i]]++;
-		int j=0;
+	public static void main(String[] args) throws NumberFormatException, IOException {
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+		int N=Integer.parseInt(br.readLine());
+		int[] arr=new int[N];
 		for(int i=0;i<N;i++) {
-			if(count[j]>0) {
-				System.out.println(j+1);
-				count[j]--;
-			}
-			else j++;
+			arr[i]=Integer.parseInt(br.readLine());
 		}
+		Arrays.sort(arr);
+		for(int i=0;i<N;i++) {
+			bw.write(Integer.toString(arr[i])+"\n");
+		}
+		bw.flush();
+		br.close();
+		bw.close();
 	}
-
 }
