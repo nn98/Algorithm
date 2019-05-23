@@ -4,7 +4,7 @@ import java.math.BigInteger;
 import java.util.Scanner;
 
 public class P1010 {
-
+	//조합의 공식_nCr ㅅ비ㅓㄹ 내가 어케아누
 	static BigInteger sol(int n,int m) {
 		BigInteger sum=new BigInteger("1");
 		int temp=n;
@@ -29,5 +29,4 @@ public class P1010 {
 			System.out.println(sol(n,m));
 		}
 	}
-
 }
