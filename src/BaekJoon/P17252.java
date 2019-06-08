@@ -14,6 +14,8 @@ public class P17252 {
 			arr[i]=(int)Math.pow(3, i);
 		}
 		System.out.println(Arrays.toString(arr));
+		int j=0;
+		for(;n<=arr[j];j++);
+		//for()
 	}
-
 }
