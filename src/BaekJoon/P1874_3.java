@@ -16,6 +16,10 @@ public class P1874_3 {
 			brr[i]=i+1;
 		}
 		for(;aIndex<n;) {
+			if(aIndex<0||bIndex<0) {
+				System.out.println("NO");
+				return;
+			}
 //			System.out.println(aIndex + " , " + bIndex+"\n"+r);
 			if(arr[aIndex]==brr[bIndex]) {
 				r+="-\n";
