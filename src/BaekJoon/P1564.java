@@ -20,8 +20,8 @@ public class P1564 {
 		for(int i=3;i<=n;i++) {
 			k*=i;
 			System.out.println(k);
-			if(k%10==0) while(k%10==0) k/=10;
-			System.out.println(k);
+//			if(k%10==0) while(k%10==0) k/=10;
+//			System.out.println(k);
 			k%=1000000000;
 		}
 		System.out.println(k%100000);
