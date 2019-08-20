@@ -1,3 +1,5 @@
+package BaekJoon;
+
 import java.util.Scanner;
 //수포자 뒤지라는 뜻
 public class P1002_4{

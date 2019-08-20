@@ -2,7 +2,7 @@ package BaekJoon;
 
 import java.util.Scanner;
 
-public class P1918 {
+public class P1918_2 {
 	
 	static class Node{
 		String v;

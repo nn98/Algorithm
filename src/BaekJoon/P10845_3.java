@@ -1,10 +1,12 @@
+package BaekJoon;
+
 import java.io.BufferedWriter;
 import java.io.IOException;
 import java.io.OutputStreamWriter;
 import java.util.Scanner;
 import java.util.StringTokenizer;
 
-public class P10845 {
+public class P10845_3 {
 
 	static Node root=null,rear=null;
 	static boolean isEmpty() {

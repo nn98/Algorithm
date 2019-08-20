@@ -2,7 +2,7 @@ package BaekJoon;
 
 import java.util.Scanner;
 
-public class P1966 {
+public class P1966_3 {
 
 	static class Doc{
 		int j,v;

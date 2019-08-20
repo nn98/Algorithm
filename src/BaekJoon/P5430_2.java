@@ -7,7 +7,7 @@ import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 import java.util.StringTokenizer;
 
-public class P5430 {
+public class P5430_2 {
 
 	public static void main(String[] args) throws IOException {
 		// TODO Auto-generated method stub

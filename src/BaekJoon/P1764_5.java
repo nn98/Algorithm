@@ -10,7 +10,7 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.StringTokenizer;
 
-public class P1764 {
+public class P1764_5 {
 
 	public static void main(String[] args) throws IOException {
 		BufferedReader bf=new BufferedReader(new InputStreamReader(System.in));

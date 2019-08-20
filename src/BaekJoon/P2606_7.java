@@ -6,7 +6,7 @@ import java.util.Collections;
 import java.util.Queue;
 import java.util.Scanner;
 
-public class P2606 {
+public class P2606_7 {
 
 	static int N,c=0;
 	static ArrayList<Integer>[] arr;

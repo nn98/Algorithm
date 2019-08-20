@@ -2,7 +2,7 @@ package BaekJoon;
 
 import java.util.Scanner;
 
-public class P3036 {
+public class P3036_2 {
 
 	static int GCD(int a,int b) {
 		while(b!=0) {

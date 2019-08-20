@@ -4,7 +4,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-public class P5639 {
+public class P5639_2 {
 
 	static class Node{
 		int v;
