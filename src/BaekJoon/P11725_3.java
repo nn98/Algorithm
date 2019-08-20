@@ -1,7 +1,9 @@
+package BaekJoon;
+
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class P11725 {
+public class P11725_3 {
 
 	static int N, config[];
 	static boolean[] c;

@@ -1,10 +1,12 @@
+package BaekJoon;
+
 import java.util.ArrayDeque;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Queue;
 import java.util.Scanner;
 
-public class P1260 {
+public class P1260_2 {
 
 	static int N;
 	static ArrayList<Integer>[] arr;

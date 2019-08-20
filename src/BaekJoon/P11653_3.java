@@ -1,7 +1,9 @@
+package BaekJoon;
+
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class P11653 {
+public class P11653_3 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub

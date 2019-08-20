@@ -1,6 +1,8 @@
+package BaekJoon;
+
 import java.util.Scanner;
 
-public class P1252 {
+public class P1252_4 {
 	
 	static boolean flag=false;
 	

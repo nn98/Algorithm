@@ -3,7 +3,7 @@ package BaekJoon;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class P1002 {
+public class P1002_3 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub

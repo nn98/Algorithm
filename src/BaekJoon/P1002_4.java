@@ -1,6 +1,6 @@
 import java.util.Scanner;
 //수포자 뒤지라는 뜻
-public class P1002_2{
+public class P1002_4{
     public static void main(String args[]){
         Scanner input = new Scanner(System.in);
         
