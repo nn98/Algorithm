@@ -36,7 +36,7 @@ public class P11055 {
 			}
 		}
 		for(int i:history) r=r>i?r:i;
-		System.out.println(Arrays.toString(history));
+//		System.out.println(Arrays.toString(history));
 		System.out.println(r);
 	}
 }
