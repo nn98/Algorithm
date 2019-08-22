@@ -1,9 +1,10 @@
 package BaekJoon;
 
 import java.util.Scanner;
-public class P5893 {
-	
-static StringBuilder sb;
+
+public class BinaryCal {
+	//나중에 정리좀
+	static StringBuilder sb;
 	
 	static String sol(String a,String b) {
 		int count=0;
@@ -58,11 +59,12 @@ static StringBuilder sb;
 		sb.reverse();
 		return sb.toString();
 	}
-	
+
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Scanner s=new Scanner(System.in);
-		String in=s.next(),r=in+"0000";
-		System.out.println(sol(in,r));
+		String a=s.next(),b=s.next();
+		System.out.println(sol(a,b));
 	}
+
 }

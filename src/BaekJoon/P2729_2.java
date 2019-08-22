@@ -1,8 +1,9 @@
 package BaekJoon;
 
 import java.util.Scanner;
-public class P5893 {
-	
+
+public class P2729_2 {
+
 static StringBuilder sb;
 	
 	static String sol(String a,String b) {
@@ -62,7 +63,10 @@ static StringBuilder sb;
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Scanner s=new Scanner(System.in);
-		String in=s.next(),r=in+"0000";
-		System.out.println(sol(in,r));
+		int n=s.nextInt();
+		for(int i=0;i<n;i++) {
+			String a=s.next(),b=s.next();
+			System.out.println(sol(a,b));
+		}
 	}
 }
