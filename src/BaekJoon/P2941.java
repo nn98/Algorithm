@@ -13,12 +13,13 @@ public class P2941 {
 			for(int j=0;j<c.length;j++) {
 				if(i==t.length()-2) break;
 				//System.out.println(t.substring(i,i+3));
-				if(t.substring(i, i+3).compareTo("dz=")==0) {
+				if(t.substring(i, i+2).equals("dz=")) {
 					//System.out.println("case 2");
-					String r=t.substring(0,i)+"!"+t.substring(i+3,t.length());
+					String r=t.substring(0,i)+"!"+t.substring(i+2,t.length());
 					t=r;
 				}
 			}
+			System.out.println(t);
 			for(int j=0;j<c.length;j++) {
 				if(i==t.length()-1) break;
 				//System.out.println(t.substring(i,i+2));
