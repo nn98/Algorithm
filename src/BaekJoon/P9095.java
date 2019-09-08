@@ -4,7 +4,8 @@ import java.util.Scanner;
 
 public class P9095 {
 
-	//의외로 심플
+	// 의외로 심플
+	// 수기로 풀어야
 	public static void main(String[] args) {
 		int[] arr = new int[11];
 		int T, n;
