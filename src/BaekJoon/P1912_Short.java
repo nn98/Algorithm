@@ -1,0 +1,2 @@
+package BaekJoon;
+import java.util.*;class P1912_Short{public static void main(String[]a){Scanner S=new Scanner(System.in);int n=S.nextInt(),s=0,R=-1001;for(;n-->0;){s+=S.nextInt();R=s>R?s:R;s=s<0?0:s;}System.out.print(R);}}
