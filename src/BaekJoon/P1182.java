@@ -3,6 +3,8 @@ package BaekJoon;
 import java.util.Scanner;
 
 public class P1182 {
+	
+	//ㅅㅂ 채점 중 50%대에서 틀렸습니다
 
 	static int t,r=0,arr[];
 	
