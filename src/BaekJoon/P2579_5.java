@@ -50,8 +50,8 @@ public class P2579_5 {
 		history=new int[n];
 		for(int i=0;i<n;i++) arr[i]=Integer.parseInt(br.readLine());
 		for(int i=0;i<n;i++) sol(i,false);
-				System.out.println(Arrays.toString(arr));
-				System.out.println(Arrays.toString(history));
+		System.out.println(Arrays.toString(arr));
+		System.out.println(Arrays.toString(history));
 		System.out.println(max);
 	}
 }
