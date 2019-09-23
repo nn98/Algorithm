@@ -5,7 +5,6 @@ import java.util.Scanner;
 public class P17293 {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		Scanner s=new Scanner(System.in);
 		int N=s.nextInt();
 		for(int i=N;i>0;i--) {
