@@ -3,6 +3,7 @@ package BaekJoon;
 import java.util.Scanner;
 
 public class P2042 {
+	//시간초과
 	public static void main(String[] args) {
 		Scanner s=new Scanner(System.in);
 		long n=s.nextLong(),m=s.nextLong(),k=s.nextLong(),a[]=new long[(int) n];
