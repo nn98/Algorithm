@@ -5,15 +5,15 @@ import java.util.Scanner;
 public class P2042 {
 	public static void main(String[] args) {
 		Scanner s=new Scanner(System.in);
-		int n=s.nextInt(),m=s.nextInt(),k=s.nextInt(),a[]=new int[n];
-		for(int i=0;i<n;i++)a[i]=s.nextInt();
-		for(int i=0;i<m+k;i++) {
-			if(s.nextInt()==1) {
-				a[s.nextInt()-1]=s.nextInt();
+		long n=s.nextLong(),m=s.nextLong(),k=s.nextLong(),a[]=new long[(int) n];
+		for(long i=0;i<n;i++)a[(int) i]=s.nextLong();
+		for(long i=0;i<m+k;i++) {
+			if(s.nextLong()==1) {
+				a[(int) (s.nextLong()-1)]=s.nextLong();
 			}
 			else {
-				int d=s.nextInt()-1,b=s.nextInt(),r=0;
-				for(;d<b;d++)r+=a[d];
+				long d=s.nextLong()-1,b=s.nextLong(),r=0;
+				for(;d<b;d++)r+=a[(int) d];
 				System.out.println(r);
 			}
 		}
