@@ -1,0 +1,2 @@
+package BaekJoon;
+import java.util.*;class P3040_S{public static void main(String[]z){Scanner s=new Scanner(System.in);int r=0,a[]=new int[9];for(int i=0;i<9;i++)r+=a[i]=s.nextInt();for(int i=0;i<9;i++)for(int j=i+1;j<9;j++)if(r-a[i]-a[j]==100)for(int k=0;k<9;k++)if(k!=i&&k!=j)System.out.println(a[k]);}}
