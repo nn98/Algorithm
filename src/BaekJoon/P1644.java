@@ -3,7 +3,7 @@ package BaekJoon;
 import java.util.Scanner;
 
 public class P1644 {
-
+	//시간초과 안나네? 원트개꿀
 	public static void main(String[] args) {
 		Scanner s=new Scanner(System.in);
 		boolean[]c=new boolean[4000001];
