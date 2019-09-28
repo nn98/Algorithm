@@ -1,5 +1,2 @@
 package BaekJoon;
-
-public class P1712_S {
-
-}
+import java.util.*;class P1712_S{public static void main(String[]z){Scanner s=new Scanner(System.in);int a=s.nextInt(),b=-s.nextInt()+s.nextInt(),r=b<=0?-1:a/b+1;System.out.print(r);}}
