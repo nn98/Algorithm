@@ -14,6 +14,10 @@ public class P1049_4 {
 			t=s.nextInt();
 			b=b<t?b:t;
 		}
+		if(a==0||b==0) {
+			System.out.print(0);
+			return;
+		}
 		if(a<b*6) {
 			r+=n/a;
 			r+=a<n%6*b?a:n%6*b;
