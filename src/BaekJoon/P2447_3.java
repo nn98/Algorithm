@@ -1,5 +1,8 @@
 package BaekJoon;
 
+import java.io.BufferedWriter;
+import java.io.IOException;
+import java.io.OutputStreamWriter;
 import java.util.Arrays;
 import java.util.Scanner;
 
@@ -20,9 +23,10 @@ public class P2447_3 {
 			}
 		}
 	}
-	public static void main(String[] args) {
+	public static void main(String[] args) throws IOException {
 		// TODO Auto-generated method stub
 		Scanner s=new Scanner(System.in);
+		BufferedWriter bw=new BufferedWriter(new OutputStreamWriter(System.out));
 		int n=s.nextInt();
 		a=new char[n][n];
 		for(int i=0;i<n;i++)
@@ -30,9 +34,10 @@ public class P2447_3 {
 		sol(n,0,0);
 		for(int i=0;i<n;i++) {
 			for(int j=0;j<n;j++)
-				System.out.print(a[i][j]);
-			System.out.println();
+				bw.write(a[i][j]);
+			bw.newLine();
 		}
+		bw.flush();
 	}
 
 }
