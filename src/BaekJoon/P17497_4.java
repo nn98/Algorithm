@@ -3,7 +3,7 @@ package BaekJoon;
 import java.util.Scanner;
 
 public class P17497_4 {
-
+	//간만에 능지문제
 	public static void main(String[] args) {
 		Scanner s=new Scanner(System.in);
 		long c=1,op=1;
@@ -15,7 +15,7 @@ public class P17497_4 {
 			sb.append("]/[ ");
 		}
 		for(;i!=2;) {
-			System.out.println(i);
+//			System.out.println(i);
 			if(i/2%2==1) {
 				i+=2;
 				op++;
