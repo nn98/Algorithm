@@ -13,10 +13,10 @@ public class P6064_5 {
 			int[]a=new int[4];
 			for(int j=0;j<4;j++)a[j]=Integer.parseInt(t.nextToken());
 			int c=0;
-//			if(a[0]==a[2]&&a[1]==a[3]) {
-//				System.out.println(a[0]*a[1]);
-//				continue;
-//			}
+			if(a[0]==a[2]&&a[1]==a[3]) {
+				System.out.println(a[0]*a[1]);
+				continue;
+			}
 			while(c++<a[0]*a[1]) {
 				if(c%a[0]==a[2]&&c%a[1]==a[3]) {
 					System.out.println(c);
