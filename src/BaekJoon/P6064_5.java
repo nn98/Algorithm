@@ -12,18 +12,23 @@ public class P6064_5 {
 			StringTokenizer t=new StringTokenizer(r.readLine());
 			int[]a=new int[4];
 			for(int j=0;j<4;j++)a[j]=Integer.parseInt(t.nextToken());
-			int c=0;
+			int o,x=a[0]+a[2];
+			for(int k=a[0];;k+=a[0]) {
+				o=k;
+				if(k%a[1]==0)break;
+			}
+			
 			if(a[0]==a[2]&&a[1]==a[3]) {
-				System.out.println(a[0]*a[1]);
+				System.out.println(o);
 				continue;
 			}
-			while(c++<a[0]*a[1]) {
-				if(c%a[0]==a[2]&&c%a[1]==a[3]) {
-					System.out.println(c);
+			for(;x<o;x+=a[0]) {
+				if(x%a[1]==a[3]) {
+					System.out.println(x);
 					break;
 				}
 			}
-			if(c>a[0]*a[1])System.out.println(-1);
+			if(x>o)System.out.println(-1);
 		}
 	}
 }
