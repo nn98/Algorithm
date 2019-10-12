@@ -21,6 +21,6 @@ class P11051 {
 //		System.out.println(a);
 		for(;m>1;m--)a=a.divide(new BigInteger(""+m));
 		System.out.println(a);
-		System.out.print(a.mod(new BigInteger("100007")));
+		System.out.print(a.mod(new BigInteger("10007")));
 	}
 }
