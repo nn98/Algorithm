@@ -3,7 +3,7 @@ package BaekJoon;
 import java.util.Scanner;
 
 public class P2740_2 {
-
+	//¼öÇÐÇÏ¸é ¤¸µÊ¤©¤·
 	public static void main(String[] args) {
 		Scanner s=new Scanner(System.in);
 		int n=s.nextInt(),m=s.nextInt(),a[][]=new int[n][m],b[][],k;
