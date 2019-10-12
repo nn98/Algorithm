@@ -45,5 +45,4 @@ public class P1620 {
 			}
 		}
 	}
-
 }
