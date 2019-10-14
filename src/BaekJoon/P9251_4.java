@@ -11,6 +11,8 @@ public class P9251_4 {
 			a=b;
 			b=r;
 		}
+		System.out.println(a);
+		System.out.println(b);
 		int f=0,q=0,p=0;
 		for(int i=0;i<a.length();i++) {
 			for(int j=f;j<b.length();j++) {
