@@ -12,6 +12,15 @@ public class P15483_2 {
 		for(int i=1;i<x;i++)r[i][0]=i;
 		for(int i=1;i<y;i++)r[0][i]=i;
 		for(int i=0;i<r.length;i++)System.out.println(Arrays.toString(r[i]));
+		for(int i=1;i<x;i++) {
+			for(int j=1;j<y;j++) {
+				if(a.charAt(i)==b.charAt(j))
+					r[i][j]=r[i-1][j-1];
+				else
+					r[i][j]=Math.min(r[i-1][j-1],Math.min(r[i-1][j],r[i][j-1]));
+			}
+		}
+		for(int i=0;i<r.length;i++)System.out.println(Arrays.toString(r[i]));
 	}
 
 }
