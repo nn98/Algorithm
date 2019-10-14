@@ -31,7 +31,7 @@ public class P9251_4 {
 				}
 			}
 		}
-		System.out.println(q+" "+p);
+//		System.out.println(q+" "+p);
 		System.out.print(q>p?q:p);
 	}
 }
