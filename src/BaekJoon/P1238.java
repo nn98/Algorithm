@@ -4,7 +4,7 @@ import java.util.Scanner;
 import java.util.StringTokenizer;
 
 public class P1238 {
-
+	//G
 	public static void main(String[] args) {
 		Scanner s=new Scanner(System.in);
 		int n=s.nextInt()+1,m=s.nextInt(),x=s.nextInt(),a[][]=new int[n][n];
