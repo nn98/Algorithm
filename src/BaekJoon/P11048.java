@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 public class P11048 {
-
+	//dp OneClear?
 	static int x,y,a[][],d[][];
 	static void sol(int i,int j) {
 		if(i<x&&j<y) {
