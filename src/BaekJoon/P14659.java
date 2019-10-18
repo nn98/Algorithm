@@ -23,5 +23,4 @@ public class P14659 {
 		m=m>c?m:c;
 		System.out.print(m);
 	}
-
 }
