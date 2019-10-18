@@ -9,7 +9,7 @@ public class P11066 {
 		Scanner s=new Scanner(System.in);
 		int n=s.nextInt(),a[],m,sum;
 		for(int i=0;i<n;i++) {
-			a=new int[10000000];
+			a=new int[10001];
 			m=s.nextInt();
 			sum=0;
 //			int[]t=new int[m];
