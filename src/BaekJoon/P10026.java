@@ -68,5 +68,4 @@ public class P10026 {
 //		for(int i=0;i<n;i++)System.out.println(Arrays.toString(q[i]));
 		System.out.println(P+" "+Q);
 	}
-
 }
