@@ -9,8 +9,8 @@ import java.util.Arrays;
 import java.util.StringTokenizer;
 
 public class P1005_3 {
-
 	//시발 건설시간 0시간 가능 ㅇㅈㄹ
+	//입출력시간 단축 필요 x
 	static int n,a[],b[][],d[];
 	static int sol(int i) {
 		//		System.out.println("sol"+i);
