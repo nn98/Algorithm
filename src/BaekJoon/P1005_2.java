@@ -20,7 +20,7 @@ public class P1005_2 {
 			for(int j=0;j<n;j++) {
 				//				System.out.println(i+" "+j);
 				if(b[i][j]>0) {
-					if(d[j]==0)
+					if(d[j]<0)
 						p=sol(j);
 					else 
 						p=d[j];
