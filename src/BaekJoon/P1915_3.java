@@ -4,7 +4,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-public class P1915_2 {
+public class P1915_3 {
 	public static void main(String[]z) throws IOException {
 		BufferedReader r=new BufferedReader(new InputStreamReader(System.in));
 		String[]a=r.readLine().split(" ");
