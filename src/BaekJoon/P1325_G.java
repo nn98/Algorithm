@@ -1,10 +1,13 @@
 package BaekJoon;
 
+import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.IOException;
+import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 import java.util.ArrayList;
 import java.util.Scanner;
+import java.util.StringTokenizer;
 
 public class P1325_G {
 
@@ -24,11 +27,15 @@ public class P1325_G {
 	}
 	
 	public static void main(String[] args) throws IOException {
-		Scanner s=new Scanner(System.in);
+		BufferedReader r=new BufferedReader(new InputStreamReader(System.in));
 		BufferedWriter w=new BufferedWriter(new OutputStreamWriter(System.out));
-		int n=s.nextInt(),m,i,j;
+		StringTokenizer t=new StringTokenizer(r.readLine());
+		int n=Integer.parseInt(t.nextToken()),m,i,j;
 		for(i=n;i>0;i--)a[i]=new ArrayList<Integer>();
-		for(m=s.nextInt();m>0;m--)a[s.nextInt()].add(s.nextInt());
+		for(m=Integer.parseInt(t.nextToken());m>0;m--) {
+			t=new StringTokenizer(r.readLine());
+			a[Integer.parseInt(t.nextToken())].add(Integer.parseInt(t.nextToken()));
+		}
 		m=0;
 		for(i=1;i<=n;i++) {
 			v=new boolean[10001];
