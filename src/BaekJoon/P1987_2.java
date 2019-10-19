@@ -53,5 +53,4 @@ public class P1987_2 {
 //			System.out.println(Arrays.toString(a[i]));
 //		}
 	}
-
 }
