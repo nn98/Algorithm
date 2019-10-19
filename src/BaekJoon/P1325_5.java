@@ -7,11 +7,9 @@ public class P1325_5 {
 	static int n,D[],p=0;
 	static boolean N[][],H[];
 	static void o(int i) {
-		H[i]=true;
 		int u=1;
 		for(int j=0;j<n;j++) {
 			if(N[i][j]) {
-				if(H[j])continue;
 				if(D[j]==0)o(j);
 				u+=D[j];
 			}
@@ -28,11 +26,9 @@ public class P1325_5 {
 			N[y][x]=true;
 		}
 		for(int i=0;i<n;i++) {
-			H=new boolean[n];
 			if(D[i]==0)o(i);
 			p=p>D[i]?p:D[i];
 		}
-//		System.out.println(Arrays.toString(D));
 		for(int i=0;i<n;i++)
 			if(D[i]==p)
 				System.out.print(i+1+" ");
