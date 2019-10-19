@@ -5,7 +5,8 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 
 public class P1915 {
-
+	//대리가 명하네 ㄹㅇ
+	//수학?
 	static int n,m,l=0;
 	static char[][]b;
 	static boolean[][]D;
