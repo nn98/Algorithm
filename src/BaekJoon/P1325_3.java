@@ -2,7 +2,7 @@ package BaekJoon;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class Main {
+public class P1325_3 {
 
 	static ArrayList<Integer>[] arr;
 	static boolean[] his;
