@@ -30,9 +30,7 @@ public class P1987_4 {
 		n=s.nextInt()+2;
 		m=s.nextInt()+2;
 		a=new char[n--][m--];
-		for(;i<n;i++,j=1){
-			for(char c:s.nextLine().toCharArray())a[i][j++]=c;
-		}
+		for(;i<n;i++,j=1)for(char c:s.nextLine().toCharArray())a[i][j++]=c;
 		o(1,1,"");
 		System.out.print(u);
 	}
