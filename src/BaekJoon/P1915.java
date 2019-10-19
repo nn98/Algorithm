@@ -36,9 +36,9 @@ public class P1915 {
 			}
 			if(c)break;
 		}
-		for(int f=r+1;f<i-1;f++)
-			for(int t=e+1;t<j-1;t++)
-				D[f][t]=true;
+//		for(int f=r+1;f<i-1;f++)
+//			for(int t=e+1;t<j-1;t++)
+//				D[f][t]=true;
 		l=l>i-r?l:i-r;
 	}
 	public static void main(String[] args) throws IOException {
