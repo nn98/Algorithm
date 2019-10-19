@@ -24,7 +24,6 @@ public class P1915_2 {
 				}
 			}
 		}
-		
 		System.out.println(p*p);
 	}
 }
