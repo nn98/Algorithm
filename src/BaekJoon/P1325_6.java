@@ -5,6 +5,7 @@ import java.io.BufferedWriter;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
+import java.util.StringTokenizer;
 public class P1325_6 {
 	static int n,D[],p=0;
 	static boolean N[][],H[];
@@ -21,13 +22,14 @@ public class P1325_6 {
 	public static void main(String[] args) throws IOException {
 		BufferedReader r=new BufferedReader(new InputStreamReader(System.in));
 		BufferedWriter w=new BufferedWriter(new OutputStreamWriter(System.out));
-		String[]q=r.readLine().split(" ");
-		n=Integer.parseInt(q[0]);
+		StringTokenizer t=new StringTokenizer(r.readLine());
+		n=Integer.parseInt(t.nextToken());
 		D=new int[n];
 		N=new boolean[n][n];
-		for(int m=Integer.parseInt(q[1]);m>0;m--) {
-			q=r.readLine().split(" ");
-			N[Integer.parseInt(q[1])-1][Integer.parseInt(q[0])-1]=true;
+		for(int m=Integer.parseInt(t.nextToken());m>0;m--) {
+			t=new StringTokenizer(r.readLine());
+			int k=Integer.parseInt(t.nextToken())-1;
+			N[Integer.parseInt(t.nextToken())-1][k]=true;
 		}
 		for(int i=0;i<n;i++) {
 			if(D[i]==0)o(i);
