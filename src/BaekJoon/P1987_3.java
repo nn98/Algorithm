@@ -11,7 +11,7 @@ public class P1987_3 {
 	static void o(int i,int j,StringBuilder b) {
 //	static void o(int i,int j,String b) {
 		b.append(a[i][j]);
-		System.out.println(i+" "+j+" "+b+" "+b.length());
+//		System.out.println(i+" "+j+" "+b+" "+b.length());
 		u=u>b.length()?u:b.length();
 		int p,q;
 		for(int l=0;l<4;l++) {
@@ -29,7 +29,7 @@ public class P1987_3 {
 			}
 			if(c) {
 //				System.out.println(b+" go "+p+" "+q+" ");
-				o(p,q,b);
+				o(p,q,new StringBuilder(b));
 			}
 		}
 	}
@@ -48,7 +48,7 @@ public class P1987_3 {
 		}
 		o(1,1,new StringBuilder());
 //		o(1,1,"");
-		System.out.println(u+1);
+		System.out.println(u);
 //		for(int i=0;i<n;i++) {
 //			System.out.println(Arrays.toString(a[i]));
 //		}
