@@ -6,7 +6,7 @@ import java.util.List;
 import java.util.Scanner;
 
 public class P1300 {
-
+	//Default
 	public static void main(String[] args) {
 		Scanner s=new Scanner(System.in);
 		int n=s.nextInt(),k=s.nextInt(),i=1,x=1,y=1,t=1;
