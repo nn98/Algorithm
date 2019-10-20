@@ -12,6 +12,10 @@ public class P11945 {
 			for(char c:s.next().toCharArray())
 				a[i][j++]=c-'0';
 		}
+		for(i=0;i<n;i++) {
+			for(j=m-1;j>=0;j--)
+				System.out.print(a[i][j]);
+			System.out.println();
+		}
 	}
-
 }
