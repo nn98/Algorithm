@@ -8,8 +8,7 @@ public class P11586 {
 		Scanner s=new Scanner(System.in);
 		int n=s.nextInt(),i=0,m;
 		StringBuilder[]a=new StringBuilder[n];
-		s.nextLine();
-		for(;i<n;i++)a[i]=new StringBuilder(s.nextLine());
+		for(;i<n;i++)a[i]=new StringBuilder(s.next());
 		switch(s.nextInt()) {
 		case 1:
 			for(i=0;i<n;i++)
@@ -25,5 +24,4 @@ public class P11586 {
 			break;
 		}
 	}
-
 }
