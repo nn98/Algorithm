@@ -5,7 +5,8 @@ import java.util.Scanner;
 
 public class P17136 {
 
-	static int r=0,A[][]=new int[10][10];
+	static int r=0,A[][]=new int[10][10],k[]= {0,5,5,5,5,5};
+	static boolean C=true;
 	static void o(int i,int j) {
 //		System.out.println(i+" "+j+" "+A[i][j]);
 		int t=1,d=0;
@@ -29,6 +30,12 @@ public class P17136 {
 			for(int y=j;j<=j+t-1&&y<10;y++)
 				if(A[x][y]==1)A[x][y]=0;
 		r+=t;
+		if(k[t]==0) {
+			C=false;
+			r=-1;
+			return;
+		}
+		k[t]--;
 //		System.out.println(i+" "+j+" "+A[i][j]+" "+t);
 	}
 	public static void main(String[] args) {
