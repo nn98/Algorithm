@@ -1,13 +1,11 @@
 package BaekJoon;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
-
+//원트
+//쫄거없이 ㄱ
+import java.io.*;
 public class P1018 {
-
 	static char[][]C;
-	static int n,m,l=Integer.MAX_VALUE;
+	static int n,m,l=64;
 	static void o(int x,int y) {
 		int c=0,d=0;
 		for(int i=x;i<x+8;i++) {
