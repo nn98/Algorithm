@@ -48,5 +48,4 @@ public class P1018 {
 				o(i,j);
 		System.out.print(l);
 	}
-
 }
