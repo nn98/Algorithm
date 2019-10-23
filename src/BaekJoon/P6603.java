@@ -25,5 +25,4 @@ public class P6603 {
 			System.out.println();
 		}
 	}
-
 }
