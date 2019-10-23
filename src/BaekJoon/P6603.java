@@ -22,6 +22,7 @@ public class P6603 {
 			a=new int[k];
 			for(i=0;i<k;i++)a[i]=s.nextInt();
 			o(0,"");
+			System.out.println();
 		}
 	}
 
