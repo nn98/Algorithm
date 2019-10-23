@@ -1,10 +1,8 @@
 package BaekJoon;
 
-import java.util.Arrays;
 import java.util.Scanner;
-
 public class P11722 {
-
+	//¿øÆ®
 	static int n,a[],h[],r=0;
 	static void o(int x,int u) {
 		if(h[x]>u)
