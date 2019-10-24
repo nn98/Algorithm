@@ -48,5 +48,4 @@ public class P12791 {
 			System.out.print(u+r);
 		}
 	}
-
 }
