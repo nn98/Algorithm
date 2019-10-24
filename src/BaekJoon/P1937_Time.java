@@ -19,6 +19,7 @@ public class P1937_Time {
 		}
 	}
 	public static void main(String[] args) throws NumberFormatException, IOException {
+		long A=System.currentTimeMillis();
 		BufferedReader b=new BufferedReader(new InputStreamReader(System.in));
 		n=Integer.parseInt(b.readLine());
 		a=new int[n+2][n+2];
@@ -51,5 +52,6 @@ public class P1937_Time {
 		//		for(i=0;i<n+2;i++)
 		//			System.out.println(Arrays.toString(h[i]));
 		System.out.print(r);
+		System.out.println(System.currentTimeMillis()-A);
 	}
 }
