@@ -16,5 +16,4 @@ public class P1773 {
 		for(boolean c:a)if(c)r++;
 		System.out.print(r);
 	}
-
 }
