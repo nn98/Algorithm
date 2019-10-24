@@ -1,7 +1,8 @@
 package BaekJoon;
 
-import java.util.Arrays;
-import java.util.Scanner;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 
 public class P1937_Time {
 
@@ -17,14 +18,16 @@ public class P1937_Time {
 			}
 		}
 	}
-	public static void main(String[] args) {
+	public static void main(String[] args) throws NumberFormatException, IOException {
 		BufferedReader b=new BufferedReader(new InputStreamReader(System.in));
-		n=s.nextInt();
+		n=Integer.parseInt(b.readLine());
 		a=new int[n+2][n+2];
 		h=new int[n+2][n+2];
-		for(;i<n+1;i++)
-			for(j=1;j<n+1;j++)
-				a[i][j]=s.nextInt();
+		for(;i<n+1;i++) {
+			j=1;
+			for(String t:b.readLine().split(" "))
+				a[i][j++]=Integer.parseInt(t);
+		}
 		//		for(i=0;i<n+2;i++)
 		//			System.out.println(Arrays.toString(a[i]));
 		for(i=1;i<n+1;i++) {
