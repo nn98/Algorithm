@@ -49,5 +49,4 @@ public class P1937 {
 		//			System.out.println(Arrays.toString(h[i]));
 		System.out.print(r);
 	}
-
 }
