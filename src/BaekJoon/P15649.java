@@ -10,7 +10,5 @@ public class P15649 {
 		for(;i<=n;i++)f*=i;
 		for(i=n-m;i>1;i--)f/=i;
 		StringBuffer[]a=new StringBuffer[f];
-		
 	}
-
 }
