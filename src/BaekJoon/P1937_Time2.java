@@ -52,7 +52,8 @@ public class P1937_Time2 {
 		}
 		//		for(i=0;i<n+2;i++)
 		//			System.out.println(Arrays.toString(h[i]));
-		System.out.print(r);
 		System.out.println(System.currentTimeMillis()-A);
+		System.out.print(r);
+		
 	}
 }
