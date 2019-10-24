@@ -3,6 +3,7 @@ package BaekJoon;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.StringTokenizer;
 
 public class P1937_Time2 {
 
@@ -25,9 +26,9 @@ public class P1937_Time2 {
 		a=new int[n+2][n+2];
 		h=new int[n+2][n+2];
 		for(;i<n+1;i++) {
-			j=1;
-			for(String t:b.readLine().split(" "))
-				a[i][j++]=Integer.parseInt(t);
+			StringTokenizer st=new StringTokenizer(b.readLine());
+			for(j=1;j<n+1;j++)
+				a[i][j]=Integer.parseInt(st.nextToken());
 		}
 		//		for(i=0;i<n+2;i++)
 		//			System.out.println(Arrays.toString(a[i]));
