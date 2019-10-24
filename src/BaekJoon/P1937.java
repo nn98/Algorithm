@@ -1,10 +1,41 @@
 package BaekJoon;
 
+import java.util.Arrays;
+import java.util.Scanner;
+
 public class P1937 {
 
+	static int n,a[][],r=0,i=1,j,h[][],p[]= {1,0,-1,0},q[]= {0,1,0,-1};
+	static void o(int x,int y) {
+		
+	}
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+		Scanner s=new Scanner(System.in);
+		n=s.nextInt();
+		a=new int[n+2][n+2];
+		h=new int[n+2][n+2];
+		for(;i<n-1;i++)
+			for(j=1;j<n-1;j++)
+				a[i][j]=s.nextInt();
+		for(i=1;i<n-1;i++) {
+			for(j=1;j<n-1;j++) {
+				boolean c=true;
+				for(int k=0;k<4;k++) {
+					int x=i+p[k],y=j+q[k];
+					if(a[x][y]!=0&&a[x][y]<a[i][j]) {
+						c=false;
+						break;
+					}
+				}
+				if(c) {
+					System.out.println(i-1+" "+(j-1));
+					h[i][j]=1;
+				}
+			}
+		}
+		for(i=0;i<n+2;i++)
+			System.out.println(Arrays.toString(h[i]));
+			
 	}
 
 }
