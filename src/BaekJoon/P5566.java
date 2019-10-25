@@ -10,7 +10,7 @@ public class P5566 {
 			a[i]=s.nextInt();
 		n--;
 		for(i=0;i<m&&w<n;i++) {
-			System.out.println(w);
+//			System.out.println(w);
 			w+=s.nextInt();
 			if(w>=n) {
 				i++;
