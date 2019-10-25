@@ -24,5 +24,4 @@ public class P5533 {
 		}
 		for(int t:r)System.out.println(t);
 	}
-
 }
