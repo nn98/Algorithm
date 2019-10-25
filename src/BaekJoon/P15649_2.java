@@ -28,7 +28,7 @@ public class P15649_2 {
 		r=new ArrayList<>();
 		for(;i<=n;i++)a[i-1]=i;
 		o(0,new StringBuffer());
-		Collections.sort(r);
+//		Collections.sort(r);
 	}
 
 }
