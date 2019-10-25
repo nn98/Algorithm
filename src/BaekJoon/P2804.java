@@ -34,5 +34,4 @@ public class P2804 {
 			System.out.println(o);
 		}
 	}
-
 }
