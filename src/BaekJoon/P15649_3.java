@@ -1,5 +1,6 @@
 package BaekJoon;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 import java.util.Scanner;
@@ -11,8 +12,12 @@ public class P15649_3 {
 	
 	static void o(int x,String s) {
 		if(x==n) {
-			if(s.length()==m*2)
+			if(s.length()==m*2) {
 				r.add(s);
+				if(s.split(" ").length>=2) {
+//					r.add(new StringBuffer(s).reverse().toString());
+				}
+			}
 			return;
 		}
 		o(x+1,""+s);
@@ -21,6 +26,7 @@ public class P15649_3 {
 	
 	public static void main(String[] args) {
 		Scanner s=new Scanner(System.in);
+		System.out.println(Arrays.toString(" 1 ".split(" ")));
 		n=s.nextInt();
 		m=s.nextInt();
 		a=new int[n];
