@@ -1,7 +1,5 @@
 package BaekJoon;
-
 public class P13235 {
-
 	public static void main(String[] args) {
 		String t=new java.util.Scanner(System.in).next(),r="true";
 		int i=0,l=t.length()-1;
@@ -10,5 +8,4 @@ public class P13235 {
 				r="false";
 		System.out.print(r);
 	}
-
 }
