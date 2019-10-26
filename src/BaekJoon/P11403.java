@@ -19,8 +19,8 @@ public class P11403 {
 		Scanner s=new Scanner(System.in);
 		n=s.nextInt();
 		a=new int[n][n];
-		for(;i<n;i++)
-			for(;j<n;j++)
+		for(int i=0;i<n;i++)
+			for(int j=0;j<n;j++)
 				a[i][j]=s.nextInt();
 		for(i=0;i<n;i++)
 			System.out.println(Arrays.toString(a[i]));
