@@ -25,8 +25,8 @@ public class P11403_2 {
 		for(;i<n;i++)
 			for(j=0;j<n;j++)
 				a[i][j]=s.nextInt();
-		for(i=0;i<n;i++)
-			System.out.println(Arrays.toString(a[i]));
+//		for(i=0;i<n;i++)
+//			System.out.println(Arrays.toString(a[i]));
 		System.out.println();
 		for(i=0;i<n;i++) {
 			for(j=0;j<n;j++) {
@@ -36,7 +36,13 @@ public class P11403_2 {
 				}
 			}
 		}
-		for(i=0;i<n;i++)
-			System.out.println(Arrays.toString(a[i]));
+//		for(i=0;i<n;i++)
+//			System.out.println(Arrays.toString(a[i]));
+		for(i=0;i<n;i++) {
+			String r="";
+			for(j=0;j<n;j++)
+				r+=a[i][j]+" ";
+			System.out.println(r.trim());
+		}
 	}
 }
