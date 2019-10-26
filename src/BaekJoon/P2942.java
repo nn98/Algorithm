@@ -1,9 +1,6 @@
 package BaekJoon;
-
 import java.util.Scanner;
-
 public class P2942 {
-
 	static int g(int a,int b) {
 		int t;
 		if(a>b) {
@@ -25,5 +22,4 @@ public class P2942 {
 			if(m%i==0)
 				System.out.println(i+" "+R/i+" "+G/i);
 	}
-
 }
