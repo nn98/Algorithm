@@ -27,6 +27,7 @@ public class P11403_2 {
 				a[i][j]=s.nextInt();
 		for(i=0;i<n;i++)
 			System.out.println(Arrays.toString(a[i]));
+		System.out.println();
 		for(i=0;i<n;i++) {
 			for(j=0;j<n;j++) {
 				if(a[i][j]==1) {
