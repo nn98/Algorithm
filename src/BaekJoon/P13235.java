@@ -4,7 +4,7 @@ public class P13235 {
 
 	public static void main(String[] args) {
 		String t=new java.util.Scanner(System.in).next(),r="true";
-		int i=0,l=t.length();
+		int i=0,l=t.length()-1;
 		for(;i<l/2;i++)
 			if(t.charAt(i)!=t.charAt(l-i))
 				r="false";
