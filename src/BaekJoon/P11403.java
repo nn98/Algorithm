@@ -6,14 +6,21 @@ import java.util.Scanner;
 
 public class P11403 {
 	static int n,a[][],i=0,j;
-	static void o(int f,int w) {
-		System.out.println(f+" "+w);
-		if(f==w||a[w][f]==1)return;
+//	static void o(int f,int w) {
+//		System.out.println(f+" "+w);
+//		if(f==w||a[w][f]==1)return;
+//		for(int k=0;k<n;k++) {
+//			if(a[w][k]==1) {
+//				a[f][k]=1;
+//				o(f,k);
+//			}
+//		}
+//	}
+	static void o(int p,int q) {
+		System.out.println(p+" "+q);
 		for(int k=0;k<n;k++) {
-			if(a[w][k]==1) {
-				a[f][k]=1;
-				o(f,k);
-			}
+			if(a[q][k]==1)
+				a[p][k]=1;
 		}
 	}
 	public static void main(String[]z) {
