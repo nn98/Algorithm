@@ -8,8 +8,7 @@ public class P13235 {
 		for(;i<l/2;i++)
 			if(t.charAt(i)!=t.charAt(l-i))
 				r="false";
-		System.out.print(r
-				);
+		System.out.print(r);
 	}
 
 }
