@@ -1,4 +1,4 @@
-package BaekJoon;
+package Merge;
 
 import java.util.Scanner;
 
