@@ -12,6 +12,7 @@ public class P2033 {
 			if(j>4)
 				n+=i;
 			n-=m;
+			System.out.println(n+" "+i);
 		}
 		System.out.print(n);
 	}
