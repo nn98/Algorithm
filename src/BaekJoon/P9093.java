@@ -15,5 +15,4 @@ public class P9093 {
 					System.out.print(b.charAt(j)+(j==0?" ":""));
 		}
 	}
-
 }
