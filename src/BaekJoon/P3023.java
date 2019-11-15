@@ -20,8 +20,8 @@ public class P3023 {
 				a[n-i-1][m-j-1]=t;
 			}
 		}
-		for(char[]r:a)
-			System.out.println(Arrays.toString(r));
+//		for(char[]r:a)
+//			System.out.println(Arrays.toString(r));
 		x=s.nextInt()-1;
 		y=s.nextInt()-1;
 		if(a[x][y]=='.')
