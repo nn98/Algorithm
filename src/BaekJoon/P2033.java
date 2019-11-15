@@ -12,10 +12,7 @@ public class P2033 {
 			if(j>4)
 				n+=i;
 			n-=m;
-//			System.out.println(n+" "+i);
 		}
-		if(n/(i/10)>4)
-			n=i;
 		System.out.print(n);
 	}
 }
