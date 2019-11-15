@@ -30,6 +30,6 @@ public class P3023 {
 			a[x][y]='.';
 		for(i=0;i<n;i++)
 			for(j=0;j<=m;j++)
-				System.out.print(i==j?"\n";a[i][j]);
+				System.out.print(i==j?"\n":a[i][j]);
 	}
 }
