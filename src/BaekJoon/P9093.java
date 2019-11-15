@@ -12,7 +12,7 @@ public class P9093 {
 			String[]a=s.nextLine().split(" ");
 			for(String b:a)
 				for(j=b.length()-1;j>=0;j--)
-					System.out.println(b.charAt(j)+j==0?" ":"");
+					System.out.print(b.charAt(j)+(j==0?" ":""));
 		}
 	}
 
