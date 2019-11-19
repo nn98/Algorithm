@@ -9,7 +9,10 @@ public class P1188_S {
 		int a=s.nextInt(),b=s.nextInt(),c=b,d;
 		for(;;) {
 			d=a%b;
-			if(d==0)System.out.print(c-b);
+			if(d==0) {
+				System.out.print(c-b);
+				break;
+			}
 			a=b;
 			b=d;
 		}
