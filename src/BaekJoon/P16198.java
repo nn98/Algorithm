@@ -12,7 +12,6 @@ public class P16198 {
 		a=new int[n];
 		h=new int[n];
 		for(;i<n;a[i++]=s.nextInt());
-		System.out.println(Arrays.toString(a));
 	}
 
 }
