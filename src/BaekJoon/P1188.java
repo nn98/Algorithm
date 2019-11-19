@@ -3,7 +3,6 @@ package BaekJoon;
 import java.util.Scanner;
 
 public class P1188 {
-
 	static int g(int a,int b) {
 		for(;;) {
 			int t=a%b;
@@ -15,7 +14,6 @@ public class P1188 {
 	public static void main(String[] args) {
 		Scanner s=new Scanner(System.in);
 		int a=s.nextInt(),b=s.nextInt();
-		System.out.println(g(a,b));
+		System.out.print(b-g(a,b));
 	}
-
 }
