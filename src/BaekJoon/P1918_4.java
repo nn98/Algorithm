@@ -18,7 +18,7 @@ public class P1918_4 {
 			t=t.N;
 			return v;
 		}
-		boolean isE() {
+		boolean isL() {
 			return N==null;
 		}
 	}
@@ -27,7 +27,7 @@ public class P1918_4 {
 //				r=new StringBuffer();
 		String r,s[]=new java.util.Scanner(System.in).next().split("");
 		for(String i:s)new N(i);
-		while(t.isE())
+		while(t!=null)
 			System.out.println(t.pop());
 	}
 
