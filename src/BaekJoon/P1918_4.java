@@ -46,7 +46,7 @@ public class P1918_4 {
 				else {
 					while(!t.peek().equals("("))
 						System.out.print(t.pop());
-//					t.pop();
+					t.pop();
 				}
 				break;
 			case 1:
