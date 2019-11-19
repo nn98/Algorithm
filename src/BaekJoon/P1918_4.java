@@ -22,13 +22,32 @@ public class P1918_4 {
 			return N==null;
 		}
 	}
+	static int O(String s) {
+		int r=-1;
+		if(s.equals("(")||s.equals(")"))
+			r=0;
+		if(s.equals("+")||s.equals("-"))
+			r=1;
+		if(s.equals("*")||s.equals("/"))
+			r=2;
+		return r;
+	}
 	public static void main(String[] args) {
 //		StringBuffer s=new StringBuffer(new java.util.Scanner(System.in).next()),
 //				r=new StringBuffer();
-		String r,s[]=new java.util.Scanner(System.in).next().split("");
-		for(String i:s)new N(i);
-		while(t!=null)
-			System.out.println(t.pop());
+		String r="",s[]=new java.util.Scanner(System.in).next().split("");
+		for(String i:s) {
+			switch(O(i)) {
+			case 0:
+				break;
+			case 1:
+				break;
+			case 2:
+				break;
+			default:
+				r+=i;
+			}
+		}
 	}
 
 }
