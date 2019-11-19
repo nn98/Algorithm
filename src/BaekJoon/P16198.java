@@ -14,5 +14,4 @@ public class P16198 {
 		for(;i<n;a[i]=s.nextInt(),m=a[m]>a[i++]?m:i-1);
 		System.out.println(a[m]+" "+m);
 	}
-
 }
