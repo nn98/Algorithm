@@ -6,11 +6,9 @@ public class P1541 {
 
 	public static void main(String[] args) {
 		String[]n=new java.util.Scanner(System.in).next().split("-"),m;
-		System.out.println(Arrays.toString(n));
 		int i=0,j,r;
 		for(String s:n) {
 			if(s.contains("+")) {
-				System.out.println(s);
 				m=s.split("\\+");
 				j=0;
 				for(String t:m)
@@ -24,5 +22,4 @@ public class P1541 {
 			r-=Integer.parseInt(n[i++]);
 		System.out.print(r);
 	}
-
 }
