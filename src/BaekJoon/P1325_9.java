@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class P1325_3 {
+public class P1325_9 {
 
 	static boolean ar[][],h[];
 	static int n,s[],k=0;
