@@ -1,8 +1,6 @@
 package BaekJoon;
 
-import BaekJoon.P1918_4.N;
-
-public class P1918_4 {
+public class P1918_5 {
 	static N t=null;
 	private static String i;
 	static class N {
