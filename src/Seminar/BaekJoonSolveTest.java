@@ -17,24 +17,31 @@ public class BaekJoonSolveTest {
 			a=0;
 			String in=r.readLine();
 			while(!in.equals("0")) {
-				boolean C=true,P=true;
-				for(String i:tesk) {
-					if(i.equals(in)) {
-						C=false;
-						break;
-					}
+				boolean C=true,P=true,rr[]=new boolean[20000];
+				int t=Integer.parseInt(in);
+				if(rr[t]) {
+					System.out.println(in);
 				}
-				if(C)
-					c++;
-				for(String i:py) {
-					if(i.equals(in)) {
-						P=false;
-						break;
+				else {
+					rr[t]=true;
+					for(String i:tesk) {
+						if(i.equals(in)) {
+							C=false;
+							break;
+						}
 					}
+					if(C)
+						c++;
+					for(String i:py) {
+						if(i.equals(in)) {
+							P=false;
+							break;
+						}
+					}
+					if(P)
+						p++;
+					a++;
 				}
-				if(P)
-					p++;
-				a++;
 				in=r.readLine();
 			}
 			System.out.println("ÃÑ: "+a+", ´ë»ý¼¼: "+c+", ÆÄÀÌ½ã: "+p);
