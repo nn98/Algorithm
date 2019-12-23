@@ -6,6 +6,10 @@ import java.io.InputStreamReader;
 
 public class BaekJoonSolveTest {
 
+	/***
+	 
+	 nahyunho1030
+	 */
 	public static void main(String[] args) throws IOException {
 		String[]tesk= {"17293","10987","11024","10173","2864"},
 				py= {"11720","5218","1718"};
