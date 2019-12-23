@@ -8,7 +8,7 @@ public class P2355 {
 		Scanner s=new Scanner(System.in);
 		int f=s.nextInt(),t=s.nextInt();
 		long r=t+f;
-		System.out.println(r*(r/2+1));
+		System.out.println(r*(r/2));
 	}
 
 }
