@@ -33,7 +33,8 @@ public class BaekJoonSolveTest {
 					}
 				}
 				if(P)
-					c++;
+					p++;
+				a++;
 				in=r.readLine();
 			}
 			System.out.println("ÃÑ: "+a+", ´ë»ý¼¼: "+c+", ÆÄÀÌ½ã: "+p);
