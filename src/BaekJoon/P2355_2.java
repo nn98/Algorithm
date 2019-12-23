@@ -15,3 +15,4 @@ public class P2355_2 {
 		System.out.print((a+b)*(b-a+1)/2);
 	}
 }
+//Tq
