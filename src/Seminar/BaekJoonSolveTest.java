@@ -16,8 +16,9 @@ public class BaekJoonSolveTest {
 			p=0;
 			a=0;
 			String in=r.readLine();
+			boolean rr[]=new boolean[20000];
 			while(!in.equals("0")) {
-				boolean C=true,P=true,rr[]=new boolean[20000];
+				boolean C=true,P=true;
 				int t=Integer.parseInt(in);
 				if(rr[t]) {
 					System.out.println(in);
@@ -45,6 +46,8 @@ public class BaekJoonSolveTest {
 				in=r.readLine();
 			}
 			System.out.println("ÃÑ: "+a+", ´ë»ý¼¼: "+c+", ÆÄÀÌ½ã: "+p);
+			System.out.println(a+"\t"+p);
+			System.out.println(a+"\t"+c);
 		}
 	}
 
