@@ -20,7 +20,7 @@ public class P11062 {
 					x+=v;
 				else y+=v;
 			}
-			System.out.print(y);
+			System.out.print(x+" "+y);
 		}
 	}
 
