@@ -1,7 +1,6 @@
 package BaekJoon;
 
 public class P10769 {
-
 	public static void main(String[] args) {
 		String[]a=new java.util.Scanner(System.in).nextLine().split("");
 		int i=0,h=0,s=0;
