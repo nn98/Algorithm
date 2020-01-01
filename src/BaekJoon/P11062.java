@@ -3,7 +3,7 @@ package BaekJoon;
 import java.util.Scanner;
 
 public class P11062 {
-
+	//1. 단순 선택. 현재에서 최선만.
 	public static void main(String[] args) {
 		Scanner s=new Scanner(System.in);
 		int n=s.nextInt(),m,a[];
