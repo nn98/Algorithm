@@ -6,6 +6,7 @@ public class P16953 {
 
 	static int f,t,r=-1;
 	static void o(String x,int c) {
+		if(x.length()>9)return;
 		int X=Integer.parseInt(x);
 		if(X==t)
 			r=r==-1?c:r<c?r:c;
@@ -18,8 +19,7 @@ public class P16953 {
 		Scanner s=new Scanner(System.in);
 		f=s.nextInt();
 		t=s.nextInt();
-		o(""+f,0);
+		o(""+f,1);
 		System.out.print(r);
 	}
-
 }
