@@ -2,10 +2,10 @@ package BaekJoon;
 
 import java.util.Scanner;
 
+//비트연산자 사용가능? *2부분?
 public class P16953 {
-
 	static int f,t,r=-1;
-	static void o(String x,int c) {
+	static void o(String x,int c){
 		if(x.length()>9)return;
 		int X=Integer.parseInt(x);
 		if(X==t)
