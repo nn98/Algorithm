@@ -16,7 +16,8 @@ public class P3009 {
 			if(a[j])b[j]=false;
 			else b[j]=true;
 		}
-		for(i=0;++i<1002;);
+		for(i=0;++i<1001;)if(a[i])System.out.print(i+" ");
+		for(i=0;++i<1001;)if(b[i])System.out.print(i);
 	}
 
 }
