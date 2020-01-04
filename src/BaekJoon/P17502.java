@@ -19,5 +19,4 @@ public class P17502 {
 		}
 		for(String j:a)System.out.print(j);
 	}
-
 }
