@@ -12,5 +12,4 @@ public class P2959 {
 		Arrays.sort(a);
 		System.out.print(a[0]*a[2]);
 	}
-
 }
