@@ -1,6 +1,6 @@
 package BaekJoon;
 
-import java.util.Scanner;
+import java.util.*;
 
 public class P3009 {
 
@@ -13,7 +13,7 @@ public class P3009 {
 			if(a[j])a[j]=false;
 			else a[j]=true;
 			j=s.nextInt();
-			if(a[j])b[j]=false;
+			if(b[j])b[j]=false;
 			else b[j]=true;
 		}
 		for(i=0;++i<1001;)if(a[i])System.out.print(i+" ");
