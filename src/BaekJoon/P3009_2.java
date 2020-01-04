@@ -1,6 +1,6 @@
 package BaekJoon;
 
-import java.util.Scanner;
+import java.util.*;
 
 public class P3009_2 {
 
