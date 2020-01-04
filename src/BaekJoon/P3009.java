@@ -19,5 +19,4 @@ public class P3009 {
 		for(i=0;++i<1001;)if(a[i])System.out.print(i+" ");
 		for(i=0;++i<1001;)if(b[i])System.out.print(i);
 	}
-
 }
