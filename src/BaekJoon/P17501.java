@@ -9,6 +9,7 @@ public class P17501 {
 		Scanner s=new Scanner(System.in);
 		int n=s.nextInt(),a[]=new int[n],i=0,m=0,r=0;
 		for(;i<n;a[i++]=s.nextInt());
+		s.nextLine();
 		for(;i-->1;) {
 			String j=s.nextLine().substring(0,1);
 			if(j.equals("-"))m++;
