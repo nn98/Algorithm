@@ -4,13 +4,17 @@ import java.io.*;
 import java.util.*;
 public class P2568 {
 	public static void main(String[]z)throws Exception{
+		ArrayList<Integer>r=new ArrayList<Integer>(50000);
+		System.out.println(r.size());
 		BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
 		int A,N=Integer.parseInt(br.readLine()),o=501,i=0,a[]=new int[o],x;
 		StringTokenizer st;
 		StringBuffer F=new StringBuffer();
 		for(;i++<N;) {
 			st=new StringTokenizer(br.readLine());
-			a[Integer.parseInt(st.nextToken())]=Integer.parseInt(st.nextToken());
+			int p=Integer.parseInt(st.nextToken()),q=Integer.parseInt(st.nextToken());
+			a[p]=q;
+			r.add(p,q);
 		}
 		TreeSet<Integer>ts = new TreeSet<>();
 		boolean f=false;
@@ -32,8 +36,12 @@ public class P2568 {
 				}
 			}
 		}
+//		System.out.println(F);
+//		System.out.println(ts.toString());
+		st=new StringTokenizer(F.toString());
+		F=new StringBuffer();
+		F.append(r.indexOf(Integer.parseInt(st.nextToken()))+" ");
 		System.out.println(F);
-		System.out.println(ts.toString());
 		System.out.print(N-ts.size());
 	}
 }
