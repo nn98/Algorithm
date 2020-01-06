@@ -3,17 +3,19 @@ package BaekJoon;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 import java.util.StringTokenizer;
 
 public class P1365_C {
 
-	static int a[],s=1;
+	static List<Integer> a=new ArrayList();
 	static int o(int n) {
-		int l=0,h=s-1;
+		int l=0,h=a.size()-1;
 		while(l<h) {
 			int m=(l+h)/2;
-			if(a[m]>=n)
+			if(a.get(m)>=n)
 				h=m;
 			else
 				l=m+1;
@@ -24,14 +26,13 @@ public class P1365_C {
 		int n,i=0;
 		BufferedReader f=new BufferedReader(new InputStreamReader(System.in));
 		n=Integer.parseInt(f.readLine());
-		a=new int[n];
 		StringTokenizer t=new StringTokenizer(f.readLine());
 		for(;i<n;i++) {
 			int v=Integer.parseInt(t.nextToken());
-			if(v>a[s-1]) {
-				a[s++-1]=v;
+			if(v>a.get(a.size()-1)) {
+				a.add(v);
 			}
-			else a[o(v)]=v;
+			else a
 		}
 		System.out.println(Arrays.toString(a));
 		System.out.print(n-s+1);
