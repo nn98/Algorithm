@@ -17,7 +17,7 @@ public class P1365_2 {
 		for(;i<n;a[i++]=Integer.parseInt(t.nextToken()));
 		for(i=0;i<n;i++) {
 			for(int j=i;j>=0;j--) {
-				if(h[j]!=0) {
+				if(a[j]<a[i]&&h[j]!=0) {
 					h[i]=h[j]+1;
 					r=r>h[i]?r:h[i];
 					break;
