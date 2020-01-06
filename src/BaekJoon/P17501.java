@@ -24,5 +24,4 @@ public class P17501 {
 		}
 		System.out.print(r);
 	}
-
 }
