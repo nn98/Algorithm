@@ -5,7 +5,7 @@ import java.util.*;
 public class P2568 {
 	public static void main(String[]z)throws Exception{
 		BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
-		int A,N=Integer.parseInt(br.readLine()),o=501,i=0,a[]=new int[o],b[]=new int[o];
+		int A,N=Integer.parseInt(br.readLine()),o=500001,i=0,a[]=new int[o],b[]=new int[o];
 		StringTokenizer st;
 		List<Integer>l=new ArrayList();
 		for(;i++<N;) {
