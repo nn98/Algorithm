@@ -6,6 +6,7 @@ import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
 public class P1365_C {
+	// C++ Lower Bound 시간초과
 	static int n,s=1,i=0,a[]=new int[100000];
 	static void o(int n) {
 		int f=0,t=s,m;
