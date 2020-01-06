@@ -7,5 +7,6 @@ public class P10797 {
 		Scanner s=new Scanner(System.in);
 		int n=s.nextInt(),r=0,i=0;
 		for(;i++<5;r=s.nextInt()==n?r+1:r);
+		System.out.print(r);
 	}
 }
