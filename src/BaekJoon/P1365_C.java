@@ -9,33 +9,26 @@ import java.util.List;
 import java.util.StringTokenizer;
 
 public class P1365_C {
-
-	static List<Integer> a=new ArrayList();
-	static int o(int n) {
-		int l=0,h=a.size()-1;
-		while(l<h) {
-			int m=(l+h)/2;
-			if(a.get(m)>=n)
-				h=m;
-			else
-				l=m+1;
+	static int n,s=1,i=0,a[]=new int[100000];
+	static void o(int n) {
+		int f=0,t=s,m;
+		if(a[s-1]<n) {
+			a[s++]=n;
+			return;
 		}
-		return h;
+		while(s<=t) {
+			m=(f+t)/2;
+			if(a[m]<n)s=m+1;
+			else t=m-1;
+		}
+		a[t+1]=n;
 	}
 	public static void main(String[] args) throws NumberFormatException, IOException {
-		int n,i=0;
 		BufferedReader f=new BufferedReader(new InputStreamReader(System.in));
 		n=Integer.parseInt(f.readLine());
 		StringTokenizer t=new StringTokenizer(f.readLine());
-		for(;i<n;i++) {
-			int v=Integer.parseInt(t.nextToken());
-			if(v>a.get(a.size()-1)) {
-				a.add(v);
-			}
-			else a
-		}
-		System.out.println(Arrays.toString(a));
-		System.out.print(n-s+1);
+		for(;i++<n;)o(Integer.parseInt(t.nextToken()));
+		System.out.print(n-s);
 	}
 
 }
