@@ -3,6 +3,7 @@ package BaekJoon;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.Arrays;
 import java.util.StringTokenizer;
 
 public class P1365_C {
@@ -32,6 +33,7 @@ public class P1365_C {
 			}
 			else a[o(v)]=v;
 		}
+		System.out.println(Arrays.toString(a));
 		System.out.print(n-s+1);
 	}
 
