@@ -11,12 +11,9 @@ public class P1365_C2 {
 	static int o(int x) {
 		int r=h[x];
 		if(r>0)return r;
-
 		r=1;
-		for(int i=x+1;i<n;i++) {
-			if(a[i]>a[x])r=Math.max(r,o(i)+1);
-		}
-
+		for(int i=x+1;i<n;i++)if(a[i]>a[x])r=Math.max(r,o(i)+1);
+		return h[x]=r;
 	}
 	public static void main(String[] args) throws IOException {
 		BufferedReader f=new BufferedReader(new InputStreamReader(System.in));
@@ -26,6 +23,8 @@ public class P1365_C2 {
 		h=new int[n];
 		for(;i<n;a[i++]=Integer.parseInt(t.nextToken()));
 		for(i=0;i<n;o(i++));
+		for(i=0;i<n;i++)if(h[i]>m)m=h[i];
+		System.out.print(n-m);
 	}
 
 }
