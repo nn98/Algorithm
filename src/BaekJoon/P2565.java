@@ -1,12 +1,10 @@
 package BaekJoon;
 
-import java.io.BufferedReader;
-import java.io.InputStreamReader;
-import java.util.Arrays;
-import java.util.StringTokenizer;
-import java.util.TreeSet;
+import java.io.*;
+import java.util.*;
 
 public class P2565 {
+	//Scanner does not cause timeover
 	public static void main(String[]z)throws Exception{
 		BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
 		int A,N=Integer.parseInt(br.readLine()),o=501,i=0,a[]=new int[o];
