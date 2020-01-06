@@ -22,7 +22,7 @@ public class P1365 {
 		a=new int[n];
 		h=new int[n];
 		for(;i<n;a[i++]=s.nextInt());
-		for(i=0;i<n;o(i++,0));
+		for(i=0;i<n;o(i++,1));
 		System.out.print(n-r);
 	}
 }
