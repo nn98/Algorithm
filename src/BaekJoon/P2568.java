@@ -5,11 +5,14 @@ import java.util.*;
 public class P2568 {
 	public static void main(String[]z)throws Exception{
 		BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
-		int A,N=Integer.parseInt(br.readLine()),o=501,i=0,a[]=new int[o];
+		int A,N=Integer.parseInt(br.readLine()),o=501,i=0,a[]=new int[o],b[]=new int[o];
 		StringTokenizer st;
+		List<Integer>l=new ArrayList();
 		for(;i++<N;) {
 			st=new StringTokenizer(br.readLine());
-			a[Integer.parseInt(st.nextToken())]=Integer.parseInt(st.nextToken());
+			int p=Integer.parseInt(st.nextToken()),q=Integer.parseInt(st.nextToken());
+			a[p]=q;
+			b[q]=p;
 		}
 		TreeSet<Integer>ts = new TreeSet<>();
 		boolean f=false;
@@ -21,11 +24,16 @@ public class P2568 {
 				}
 				else {
 					A=a[i];
-					if(A<=ts.last())ts.remove(ts.ceiling(A));
+					if(A<=ts.last()) {
+						l.add(b[ts.ceiling(A)]);
+						ts.remove(ts.ceiling(A));
+					}
 					ts.add(A);
 				}
 			}
 		}
-		System.out.print(N-ts.size());
+		Collections.sort(l);
+		System.out.println(N-ts.size());
+		for(int j:l)System.out.println(j);
 	}
 }
