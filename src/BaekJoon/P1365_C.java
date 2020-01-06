@@ -24,6 +24,7 @@ public class P1365_C {
 		BufferedReader f=new BufferedReader(new InputStreamReader(System.in));
 		n=Integer.parseInt(f.readLine());
 		StringTokenizer t=new StringTokenizer(f.readLine());
+		a[i++]=Integer.parseInt(t.nextToken());
 		for(;i++<n;)o(Integer.parseInt(t.nextToken()));
 		System.out.print(n-s);
 	}
