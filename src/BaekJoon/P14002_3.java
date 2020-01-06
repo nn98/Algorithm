@@ -26,7 +26,7 @@ public class P14002_3 {
 		h[0]=a[0];
 		int j=0;
 		for(i=1;i<n;i++) {
-			System.out.println(a[i]);
+//			System.out.println(a[i]);
 			if(h[j]<a[i])h[++j]=a[i];
 			else {
 				int s=o(j,a[i]);
