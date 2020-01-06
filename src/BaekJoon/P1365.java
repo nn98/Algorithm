@@ -23,5 +23,6 @@ public class P1365 {
 		h=new int[n];
 		for(;i<n;a[i++]=s.nextInt());
 		for(i=0;i<n;o(i++,0));
+		System.out.print(n-r);
 	}
 }
