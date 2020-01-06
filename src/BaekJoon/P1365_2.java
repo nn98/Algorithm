@@ -25,7 +25,7 @@ public class P1365_2 {
 			}
 			if(h[i]==0)h[i]=1;
 		}
-		System.out.println(Arrays.toString(h));
+//		System.out.println(Arrays.toString(h));
 		System.out.print(n-r);
 	}
 }
