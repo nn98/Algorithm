@@ -8,7 +8,6 @@ public class P1365 {
 	//LIS만보고 알았어야;
 	static int n,a[],h[],i=0,r;
 	static void o(int x,int v) {
-		System.out.println(0);
 		for(int j=x;j<n;j++) {
 			if(a[j]>a[x]&&h[j]<=v) {
 				o(j,v+1);
