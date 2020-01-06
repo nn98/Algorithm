@@ -9,29 +9,27 @@ import java.util.TreeSet;
 public class P2565 {
 	public static void main(String[]z)throws Exception{
 		BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
-		int A, N = Integer.parseInt(br.readLine()),a[]=new int[501];
+		int A,N=Integer.parseInt(br.readLine()),o=501,i=0,a[]=new int[o];
 		StringTokenizer st;
-		for(;N-->0;) {
+		for(;i++<N;) {
 			st=new StringTokenizer(br.readLine());
 			a[Integer.parseInt(st.nextToken())]=Integer.parseInt(st.nextToken());
 		}
-		System.out.println(Arrays.toString(a));
 		TreeSet<Integer>ts = new TreeSet<>();
 		boolean f=false;
-		for (int n = 1; n < N; n++){
-			if(a[n]!=0) {
+		for (i=0;++i<o;){
+			if(a[i]!=0) {
 				if(!f) {
-					ts.add(a[n]);
+					ts.add(a[i]);
 					f=true;
 				}
 				else {
-					A=a[n];
+					A=a[i];
 					if(A<=ts.last())ts.remove(ts.ceiling(A));
 					ts.add(A);
 				}
 			}
 		}
-		System.out.println(ts.toString());
-		System.out.print(ts.size());
+		System.out.print(N-ts.size());
 	}
 }
