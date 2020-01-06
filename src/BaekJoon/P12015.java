@@ -14,7 +14,6 @@ public class P12015 {
 			if (A <= ts.last())ts.remove(ts.ceiling(A));
 			ts.add(A);
 		}
-//		System.out.println(ts.toString());
 		System.out.print(ts.size());
 	}
 }
