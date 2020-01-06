@@ -20,7 +20,7 @@ public class P12015 {
 			}
 			ts.add(A);
 		}
-		System.out.print(N - ts.size());
+		System.out.print(ts.size());
 	}
 
 }
