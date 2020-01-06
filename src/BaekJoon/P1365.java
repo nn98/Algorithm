@@ -1,6 +1,10 @@
 package BaekJoon;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.Scanner;
+import java.util.StringTokenizer;
 
 public class P1365 {
 
@@ -16,12 +20,13 @@ public class P1365 {
 			}
 		}
 	}
-	public static void main(String[] args) {
-		Scanner s=new Scanner(System.in);
-		n=s.nextInt();
+	public static void main(String[] args) throws NumberFormatException, IOException {
+		BufferedReader f=new BufferedReader(new InputStreamReader(System.in));
+		n=Integer.parseInt(f.readLine());
 		a=new int[n];
 		h=new int[n];
-		for(;i<n;a[i++]=s.nextInt());
+		StringTokenizer t=new StringTokenizer(f.readLine());
+		for(;i<n;a[i++]=Integer.parseInt(t.nextToken()));
 		for(i=0;i<n;i++)if(h[i]<1)o(i,1);
 		System.out.print(n-r);
 	}
