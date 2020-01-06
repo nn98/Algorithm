@@ -3,6 +3,7 @@ package BaekJoon;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.Arrays;
 import java.util.StringTokenizer;
 
 public class P1365_2 {
@@ -23,6 +24,7 @@ public class P1365_2 {
 				}
 			}
 		}
+		System.out.println(Arrays.toString(h));
 		System.out.print(n-r-1);
 	}
 }
