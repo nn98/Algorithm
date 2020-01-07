@@ -11,7 +11,7 @@ public class P5355 {
 		for(;i-->0;) {
 			String[]a=s.nextLine().split(" ");
 			double r=Double.parseDouble(a[0]);
-			for(j=0;j++<a.length;) {
+			for(j=0;++j<a.length;) {
 				switch(a[j]) {
 				case "@":
 					r*=3;
@@ -24,7 +24,7 @@ public class P5355 {
 					break;
 				}
 			}
-			System.out.printf("%.2f",r);
+			System.out.printf("%.2f\n",r);
 		}
 	}
 
