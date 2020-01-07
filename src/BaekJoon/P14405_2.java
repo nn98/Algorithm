@@ -15,5 +15,4 @@ public class P14405_2 {
 		}
 		System.out.print(c?"YES":"NO");
 	}
-
 }
