@@ -20,6 +20,7 @@ public class P14405_4 {
 						return;
 					}
 				}
+				System.out.print("YES");
 			} catch(Exception e) {
 				System.out.print("NO");
 				return;
