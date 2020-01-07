@@ -12,5 +12,4 @@ public class P14405_3 {
 		}
 		System.out.print("NO");
 	}
-
 }
