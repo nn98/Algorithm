@@ -1,7 +1,7 @@
 package BaekJoon;
 
 public class P14405 {
-
+	//z ´õ°É¸²
 	static String A(String i) {
 		return i.replaceAll("pi","");
 	}
