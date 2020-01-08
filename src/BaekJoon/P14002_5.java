@@ -21,6 +21,8 @@ public class P14002_5{
 		for(;i<n;a[i++]=Integer.parseInt(t.nextToken()));
 		for(i=0;i<n;i++)if(h[i]==0)o(i,1);
 		System.out.println(m);
+		
+		//TODO
 		s=new int[m];
 		for(i=n;i>=0&&m>0;i--) {
 			if(h[i]==m) {
