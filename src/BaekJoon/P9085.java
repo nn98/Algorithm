@@ -1,9 +1,7 @@
 package BaekJoon;
 
-import java.util.Scanner;
-
+import java.util.*;
 public class P9085 {
-
 	public static void main(String[] args) {
 		Scanner s=new Scanner(System.in);
 		int n=s.nextInt(),i,m,r;
@@ -14,5 +12,4 @@ public class P9085 {
 			System.out.println(r);
 		}
 	}
-
 }
