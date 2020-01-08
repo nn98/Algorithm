@@ -14,7 +14,7 @@ public class P5573 {
 		for(;i<x;i++) {
 			t=new StringTokenizer(r.readLine());
 			for(j=0;j<y;a[i][j++]=Integer.parseInt(t.nextToken()));
-			System.out.println(Arrays.toString(a[i]));
+//			System.out.println(Arrays.toString(a[i]));
 		}
 		for(;n-->0;) {
 			i=j=0;
