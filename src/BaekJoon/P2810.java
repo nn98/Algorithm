@@ -3,7 +3,7 @@ package BaekJoon;
 import java.util.Scanner;
 
 public class P2810 {
-
+	//People>=Sit
 	public static void main(String[] args) {
 		Scanner s=new Scanner(System.in);
 		int n=s.nextInt(),r=1,i=0;
