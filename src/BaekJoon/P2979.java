@@ -1,10 +1,8 @@
 package BaekJoon;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class P2979 {
-
 	public static void main(String[] args) {
 		Scanner s=new Scanner(System.in);
 		int a[]=new int[4],i=1,f,t;
