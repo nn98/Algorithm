@@ -5,7 +5,7 @@ import java.io.InputStreamReader;
 import java.util.Arrays;
 import java.util.StringTokenizer;
 	//¼ôÄÚµù Áö¶ö
-public class P14002_4 {
+public class P14002_5 {
 
 	static int n,a[],h[],i=0,m=0,y;
 	static StringBuffer[]H;
