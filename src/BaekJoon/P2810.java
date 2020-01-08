@@ -12,6 +12,6 @@ public class P2810 {
 			if(a[i]=='L')i++;
 			r++;
 		}
-		System.out.print(r);
+		System.out.print(r<n?r:n);
 	}
 }
