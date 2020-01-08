@@ -34,5 +34,4 @@ public class P14002_4 {
 		for(i=0;i<n;i++)if(h[i]==0)o(i,1,new StringBuffer());
 		System.out.println(m+"\n"+H[y]);
 	}
-
 }
