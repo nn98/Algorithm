@@ -28,5 +28,4 @@ public class P2979 {
 		}
 		System.out.print(f);
 	}
-
 }
