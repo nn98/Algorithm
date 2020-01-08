@@ -6,7 +6,8 @@ public class P9461 {
 
 	public static void main(String[] args) {
 		Scanner s=new Scanner(System.in);
-		int n=s.nextInt(),i=2,a[]=new int[100];
+		int n=s.nextInt(),i=2;
+		long[]a=new long[100];
 		a[0]=1;
 		a[1]=1;
 		a[2]=1;
