@@ -1,5 +1,6 @@
 package BaekJoon;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class P2822 {
@@ -11,12 +12,16 @@ public class P2822 {
 		for(;i<9;b[a[i++]=s.nextInt()]=true);
 		for(i=z;--i>0&&c<5;) {
 			if(b[i]) {
-				for(j=1;j<9;j++)p[j]=i==a[j];
+				for(j=1;j<9;j++)
+//					?
+//					p[j]=(i==a[j]);
+					if(i==a[j])p[j]=true;
 				r+=i;
 				c++;
 			}
 		}
+//		System.out.println(Arrays.toString(p));
 		System.out.println(r);
-		for(i=1;i<z;System.out.print(p[i++]?i+" ":""));
+		for(i=1;i<z;System.out.print(p[i++]?i-1+" ":""));
 	}
 }
