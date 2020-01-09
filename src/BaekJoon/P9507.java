@@ -11,7 +11,7 @@ public class P9507 {
 		BigInteger[]a=new BigInteger[68];
 		a[i]=a[0]=BigInteger.ONE;
 		for(;i++<67;) {
-			a[i]=a[i-1];
+//			a[i]=a[i-1];
 			for(j=i;j-->0;a[i]=a[i].add(a[j]));
 		}
 		for(;n-->0;)System.out.println(a[s.nextInt()]);
