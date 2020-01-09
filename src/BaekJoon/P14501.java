@@ -1,12 +1,8 @@
 package BaekJoon;
 
-import java.io.BufferedReader;
-import java.io.InputStreamReader;
-import java.util.Arrays;
-import java.util.StringTokenizer;
-
-public class P14501 {
-
+import java.io.*;
+import java.util.*;
+public class P14501{
 	static int n,a[],b[],h[],i=0,p=0;
 	static void o(int x,int v) {
 		h[x]=b[x]+v;
