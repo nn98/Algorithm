@@ -4,6 +4,9 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
+//http://blog.naver.com/occidere/220793012348
+//이문제같은경우는 점화식 공식을 떠올려야하는 문제?
+
 public class P9084_2 {
 	public static void main(String[] args)throws Exception{
 		int n,m,a[],p,d[],i,j;
