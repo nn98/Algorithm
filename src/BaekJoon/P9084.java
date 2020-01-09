@@ -5,7 +5,6 @@ import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
 public class P9084 {
-
 	static int n,m,p,a[],h[],i,c;
 	static boolean[][]H;
 	static void o(int x,int v) {
@@ -19,7 +18,6 @@ public class P9084 {
 			o(x,v+a[x]);
 			o(x+1,v);
 			//			o(x+1,v);
-
 		}
 	}
 	public static void main(String[] args)throws Exception{
