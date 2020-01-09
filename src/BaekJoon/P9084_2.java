@@ -14,7 +14,7 @@ public class P9084_2 {
 			a=new int[m+1];
 			for(i=0;i<m;a[i++]=Integer.parseInt(t.nextToken()));
 			p=Integer.parseInt(r.readLine());
-			d= new int[m+1];//테스트케이스만큼 돌려야 하므로 매 케이스마다 선언해 초기화함
+			d= new int[p+1];//테스트케이스만큼 돌려야 하므로 매 케이스마다 선언해 초기화함
 			d[0] = 1;
 			for (i = 1; i <= m; i++)
 				for (j = a[i]; j <= p; j++)
