@@ -7,6 +7,9 @@ import java.util.StringTokenizer;
 public class P14501 {
 
 	static int n,a[],b[],h[],i=0;
+	static void o(int x) {
+		
+	}
 	public static void main(String[] args)throws Exception{
 		BufferedReader r=new BufferedReader(new InputStreamReader(System.in));
 		n=Integer.parseInt(r.readLine());
