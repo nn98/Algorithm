@@ -8,7 +8,7 @@ public class P14501{
 		h[x]=b[x]+v;
 		if(x+a[x]>n)h[x]-=b[x];
 		for(int i=x+a[x];i<n;i++) {
-			if(h[i]<v+b[x])
+			if(h[i]<=v+b[x])
 				o(i,v+b[x]);
 		}
 		p=p>h[x]?p:h[x];
@@ -25,6 +25,7 @@ public class P14501{
 			b[i]=Integer.parseInt(t.nextToken());
 		}
 		for(i=0;i<n;i++)if(h[i]==0)o(i,0);
+		System.out.println(Arrays.toString(h));
 		System.out.print(p);
 	}
 }
