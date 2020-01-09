@@ -1,11 +1,10 @@
 package BaekJoon;
 
-import java.util.PriorityQueue;
-import java.util.Scanner;
+import java.util.*;
 
 public class P11279 {
 
-	public static void main(String[] args) {
+	public static void main(String[]z) {
 		Scanner s=new Scanner(System.in);
 		int n=s.nextInt(),m;
 		PriorityQueue<Integer>q=new PriorityQueue<>((a, b) -> b - a);
