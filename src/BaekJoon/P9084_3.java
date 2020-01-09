@@ -1,10 +1,8 @@
 package BaekJoon;
 
-import java.util.Scanner;
-
-public class P9084_3 {
-
-	public static void main(String[] args) {
+import java.util.*;
+public class P9084_3{
+	public static void main(String[]z){
 		Scanner s=new Scanner(System.in);
 		int n=s.nextInt(),m,p,i,j,a[],d[];
 		for(;n-->0;) {
@@ -20,5 +18,4 @@ public class P9084_3 {
 			System.out.println(d[p]);
 		}
 	}
-
 }
