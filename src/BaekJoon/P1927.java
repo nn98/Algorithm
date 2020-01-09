@@ -1,7 +1,7 @@
 package BaekJoon;
 
 import java.util.*;
-
+//TimeOver
 public class P1927 {
 
 	public static void main(String[] args) {
