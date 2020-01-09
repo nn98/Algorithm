@@ -15,5 +15,4 @@ public class P1927_2 {
 			else q.add(m);
 		}
 	}
-
 }
