@@ -13,8 +13,9 @@ public class P9084_3 {
 			for(i=0;i++<m;a[i]=s.nextInt());
 			p=s.nextInt();
 			d=new int[p+1];
+			d[0]=1;
 			for(i=0;i++<m;)
-				for(j=0;j++<p;)
+				for(j=a[i];j<=p;j++)
 					d[j]+=d[j-a[i]];
 			System.out.println(d[p]);
 		}
