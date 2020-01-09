@@ -7,7 +7,7 @@ import java.util.StringTokenizer;
 
 public class P14501 {
 
-	static int n,a[],b[],h[],i=0;
+	static int n,a[],b[],h[],i=0,r=0;
 	static void o(int x,int v) {
 		h[x]=b[x]+v;
 		if(x+a[x]>n)h[x]-=b[x];
@@ -15,6 +15,7 @@ public class P14501 {
 			if(h[i]<v+b[x])
 				o(i,v+b[x]);
 		}
+		r=r>h[x]?r:h[x];
 	}
 	public static void main(String[] args)throws Exception{
 		BufferedReader r=new BufferedReader(new InputStreamReader(System.in));
