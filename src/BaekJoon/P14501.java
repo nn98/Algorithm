@@ -2,13 +2,19 @@ package BaekJoon;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
+import java.util.Arrays;
 import java.util.StringTokenizer;
 
 public class P14501 {
 
 	static int n,a[],b[],h[],i=0;
-	static void o(int x) {
-		
+	static void o(int x,int v) {
+		h[x]=b[x]+v;
+		if(x+a[x]>n)h[x]-=b[x];
+		for(int i=x+a[x];i<n;i++) {
+			if(h[i]<v+b[x])
+				o(i,v+b[x]);
+		}
 	}
 	public static void main(String[] args)throws Exception{
 		BufferedReader r=new BufferedReader(new InputStreamReader(System.in));
@@ -21,5 +27,7 @@ public class P14501 {
 			a[i]=Integer.parseInt(t.nextToken());
 			b[i]=Integer.parseInt(t.nextToken());
 		}
+		for(i=0;i<n;i++)if(h[i]==0)o(i,0);
+		System.out.println(Arrays.toString(h));
 	}
 }
