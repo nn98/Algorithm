@@ -9,5 +9,4 @@ public class P14918 {
 		b = sc.nextInt();
 		System.out.println((a+b));
 	}
-
 }
