@@ -2,9 +2,8 @@ package BaekJoon;
 
 import java.math.BigInteger;
 import java.util.Scanner;
-
+//long으로 되네?
 public class P9507 {
-
 	public static void main(String[] args) {
 		Scanner s=new Scanner(System.in);
 		int n=s.nextInt(),i=1,j;
