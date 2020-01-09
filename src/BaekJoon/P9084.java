@@ -4,6 +4,8 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
+//TimeOver
+
 public class P9084 {
 	static int n,m,p,a[],h[],i,c;
 	static boolean[][]H;
