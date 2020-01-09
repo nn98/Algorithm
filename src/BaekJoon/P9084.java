@@ -7,13 +7,14 @@ import java.util.StringTokenizer;
 public class P9084 {
 
 	static int n,m,p,a[],h[],i,c;
-	static void o(int x,int n) {
-		if(n==p)c++;
-		else if(n>p)return;
+	static void o(int x,int v) {
+		if(v==p)c++;
+		else if(v>p)return;
+		else if(x==m)return;
 		else {
-			o(x,n+a[x]);
-			o(x+1,n);
-			o(x+1,n+a[x]);
+			o(x,v+a[x]);
+			o(x+1,v);
+			o(x+1,v+a[x]);
 		}
 	}
 	public static void main(String[] args)throws Exception{
