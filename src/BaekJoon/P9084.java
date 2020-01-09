@@ -13,9 +13,9 @@ public class P9084 {
 		else if(v>p)return;
 		else if(x==m)return;
 		else {
-//			if(H[x][v])return;
-//			else H[x][v]=true;
-//			System.out.println(v);
+			if(H[x][v])return;
+			else H[x][v]=true;
+			System.out.println(v);
 			o(x,v+a[x]);
 			o(x+1,v);
 			//			o(x+1,v);
