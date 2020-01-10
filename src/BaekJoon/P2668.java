@@ -23,8 +23,14 @@ public class P2668 {
 		h=new int[n];
 		l=new boolean[n][n];
 		for(;i<n;a[i++]=s.nextInt());
-		for(i=0;i<n;o(i++,0,new StringBuffer()));
-		System.out.println(Arrays.toString(h));
+		for(i=1;i<n;o(i++,0,new StringBuffer()));
+		StringBuffer b=new StringBuffer();
+		for(i=1;i<n;i++)if(h[i]==1) {
+			r++;
+			b.append(i+"\n");
+		}
+//		System.out.print(Arrays.toString(h));
+		System.out.print(r+"\n"+b);
 	}
 
 }
