@@ -11,10 +11,8 @@ public class P1780 {
 		boolean c=true;
 		int v=a[x][y];
 		for(int i=x;i<x+s&&c;i++)
-			for(int j=y;j<y+s&&c;j++) {
-				System.out.println(i+" "+j);
+			for(int j=y;j<y+s&&c;j++)
 				c=a[i][j]==v;
-			}
 		if(c)l[v+1]++;
 		else{
 			for(int i=x;i<x+s;i+=s/3)
