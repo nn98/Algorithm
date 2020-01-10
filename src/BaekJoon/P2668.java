@@ -15,7 +15,7 @@ public class P2668 {
 		n=s.nextInt();
 		a=new int[n];
 		h=new int[n];
-		for(;i<n;a[i++]=s.nextInt());
+		for(;i<n;a[i++]=s.nextInt()-1);
 		for(i=0;i<n;o(i,0,i++));
 		System.out.println(Arrays.toString(h));
 	}
