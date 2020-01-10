@@ -6,8 +6,9 @@ import java.util.Scanner;
 public class P2668 {
 	static int n,a[],h[],i=0,r=0;
 	static void o(int x,int c,int O) {
+		System.out.println(x+" "+c+" "+O);
 		if(c>n)return;
-		if(a[x]==O)h[O]=c;
+		if(a[x]==O)h[O]=h[O]>c?h[O]:c;
 		else o(a[x],c+1,O);
 	}
 	public static void main(String[] args) {
