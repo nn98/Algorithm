@@ -32,5 +32,4 @@ public class P2668 {
 //		System.out.print(Arrays.toString(h));
 		System.out.print(r+"\n"+b);
 	}
-
 }
