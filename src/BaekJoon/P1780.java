@@ -3,9 +3,8 @@ package BaekJoon;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
-
-public class P1780 {
-
+//¿øÆ®
+public class P1780{
 	static int n,i,j,a[][],l[]=new int[3];
 	static void o(int x,int y,int s) {
 		boolean c=true;
