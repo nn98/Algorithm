@@ -7,7 +7,6 @@ public class P2668 {
 	static int n,a[],h[],i=1,r=0;
 	static boolean[][]l;
 	static void o(int x,int c,StringBuffer b) {
-//		System.out.println(x+" "+c+" "+O);
 		StringBuffer B=new StringBuffer(b.append(x+" "));
 		if(c>n)return;
 		if(a[x]==b.charAt(0)-'0') {
