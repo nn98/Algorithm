@@ -15,11 +15,15 @@ public class P3613 {
 				}
 			}else {System.out.print(n);}
 		}else {
-			for(;i<n.length();i++) {
-				if(n.charAt(i)<97)
-					System.out.print('_'+""+(char)(n.charAt(i)+32));
-				else
-					System.out.print((char)n.charAt(i));
+			if(n.contains("_"))
+				System.out.print("Error!");
+			else {
+				for(;i<n.length();i++) {
+					if(n.charAt(i)<97)
+						System.out.print('_'+""+(char)(n.charAt(i)+32));
+					else
+						System.out.print((char)n.charAt(i));
+				}
 			}
 		}
 	}
