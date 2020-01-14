@@ -41,5 +41,4 @@ public class P3028 {
 		}
 		System.out.print(r);
 	}
-
 }
