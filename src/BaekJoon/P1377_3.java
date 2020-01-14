@@ -14,7 +14,7 @@ public class P1377_3 {
 		for(i=0;i++<n;)
 			for(j=0;j++<i;)
 				if(a[i]==b[j]) {
-					r=r>j-i?r:j-i;
+					r=r>i-j?r:i-j;
 					break;
 				}
 		System.out.println(Arrays.toString(a));
