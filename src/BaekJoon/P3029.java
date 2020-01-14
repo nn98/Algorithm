@@ -25,5 +25,4 @@ public class P3029 {
 		}
 		for(;i<3;System.out.printf("%02d"+(i==2?"":":"),t[i++]));
 	}
-
 }
