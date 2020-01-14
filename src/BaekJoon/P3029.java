@@ -9,6 +9,7 @@ public class P3029 {
 		String[]a=s.next().split(":"),b=s.next().split(":");
 		int t[]=new int[3],i=3,f=0,A,B;
 		for(;i-->1;) {
+			System.out.println(t[i]);
 			A=Integer.parseInt(a[i]);
 			B=Integer.parseInt(b[i]);
 			if(f==1) {
