@@ -12,13 +12,13 @@ public class P1377_2 {
 		b=a.clone();
 		Arrays.sort(a);
 		for(i=0;i++<n;)
-			for(j=0;j++<n;)
+			for(j=0;j++<i;)
 				if(a[i]==b[j]) {
 					r=r>j-i?r:j-i;
 					break;
 				}
-//		System.out.println(Arrays.toString(a));
-//		System.out.println(Arrays.toString(b));
+		System.out.println(Arrays.toString(a));
+		System.out.println(Arrays.toString(b));
 		System.out.print(r+1);
 	}
 }
