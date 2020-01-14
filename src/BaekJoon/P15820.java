@@ -10,7 +10,7 @@ public class P15820 {
 		boolean a=true,b=true;
 		String r;
 		for(;i++<n&&a;a=s.nextInt()==s.nextInt());
-		for(i=0;i++<m&&a;a=s.nextInt()==s.nextInt());
+		for(i=0;i++<m&&b;b=s.nextInt()==s.nextInt());
 		if(a&&b)r="Accepted";
 		else if(a)r="Why Wrong!!!";
 		else r="Wrong Answer";
