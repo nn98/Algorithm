@@ -1,9 +1,7 @@
 package BaekJoon;
 
-import java.util.Scanner;
-
-public class P11005 {
-
+import java.util.*;
+public class P11005{
 	public static void main(String[] args) {
 		Scanner s=new Scanner(System.in);
 		int n=s.nextInt(),b=s.nextInt(),p;
@@ -16,5 +14,4 @@ public class P11005 {
 		}
 		System.out.print(f.reverse());
 	}
-
 }
