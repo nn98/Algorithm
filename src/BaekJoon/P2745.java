@@ -17,5 +17,4 @@ public class P2745 {
 		}
 		System.out.println(r);
 	}
-
 }
