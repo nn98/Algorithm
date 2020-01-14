@@ -19,7 +19,7 @@ public class P1377 {
 				}
 			}
 			if(!c) {
-				System.out.println(i);
+				System.out.print(i);
 				break;
 			}
 		}
