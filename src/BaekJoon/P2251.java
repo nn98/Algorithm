@@ -1,7 +1,7 @@
 package BaekJoon;
 
 import java.util.Scanner;
-
+//출처: https://mygumi.tistory.com/228 [마이구미의 HelloWorld]
 public class P2251 {
 
 	static boolean[][] visited = new boolean[201][201];
