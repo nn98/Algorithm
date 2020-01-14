@@ -23,5 +23,4 @@ public class P3613 {
 			}
 		}
 	}
-
 }
