@@ -19,5 +19,4 @@ public class P1377_3 {
 				}
 		System.out.print(r+1);
 	}
-
 }
