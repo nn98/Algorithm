@@ -39,6 +39,7 @@ public class P3028 {
 				break;
 			}
 		}
+		System.out.print(r);
 	}
 
 }
