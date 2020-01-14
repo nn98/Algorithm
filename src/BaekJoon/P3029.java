@@ -1,10 +1,8 @@
 package BaekJoon;
 
-import java.util.Arrays;
+//caution description
 import java.util.Scanner;
-
 public class P3029 {
-
 	public static void main(String[] args) {
 		Scanner s=new Scanner(System.in);
 		String[]a=s.next().split(":"),b=s.next().split(":");
@@ -23,6 +21,7 @@ public class P3029 {
 				f=1;
 			}
 		}
+		if(t[0]==0&&t[1]==0&&t[2]==0)t[0]=24;
 		for(;++i<3;System.out.printf("%02d"+(i==2?"":":"),t[i]));
 	}
 }
