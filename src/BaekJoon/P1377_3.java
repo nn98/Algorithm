@@ -17,8 +17,6 @@ public class P1377_3 {
 					r=r>i-j?r:i-j;
 					break;
 				}
-		System.out.println(Arrays.toString(a));
-		System.out.println(Arrays.toString(b));
 		System.out.print(r+1);
 	}
 
