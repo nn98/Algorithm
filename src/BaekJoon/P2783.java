@@ -15,5 +15,4 @@ public class P2783 {
 		}
 		System.out.printf("%.2f",r);
 	}
-
 }
