@@ -4,21 +4,15 @@ import java.util.*;
 class P13226{
 	public static void main(String[]z){
 		Scanner s=new Scanner(System.in);
-		int n=s.nextInt(),v,c,j;
+		int n=s.nextInt(),v=0,c,j,a[]=new int[10000001];
+		for(;v<10000001;v++)
+			for(c=0;c<10000001/v;a[v*c++]++);
 		for(;n-->0;) {
 			v=s.nextInt();
-			c=0;
-			boolean[]a=new boolean[v+1];
-			for(j=1;j<=v/2;j++){
-				if(v%j==0) {
-					if(a[j])continue;
-					a[j]=true;
-					a[v/j]=true;
-					c+=2;
-					if(j*j==v)c--;
-				}
-			}
-			System.out.println(v+" "+(v==1?v:c));
+			c=s.nextInt();
+			j=0;
+			for(;v<=c;j=j>a[v]?j:a[v],v++);
+			System.out.println(j);
 		}
 	}
 
