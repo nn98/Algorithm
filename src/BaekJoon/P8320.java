@@ -11,7 +11,7 @@ public class P8320 {
 					continue;
 				a[i][j]=true;
 				a[j][i]=true;
-				System.out.println(i+" "+j);
+//				System.out.println(i+" "+j);
 				r++;
 			}
 		}
