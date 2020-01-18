@@ -8,6 +8,6 @@ public class P3047_S {
 		for(;i<3;a[i++]=s.nextInt());
 		Arrays.sort(a);
 		String t=s.next();
-		for(i=0;i<3;System.out.print(a[t.charAt(i++)]+" "));
+		for(i=0;i<3;System.out.print(a[t.charAt(i++)-65]+" "));
 	}
 }
