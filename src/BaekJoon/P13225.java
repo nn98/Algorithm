@@ -10,8 +10,8 @@ public class P13225 {
 		for(;n-->0;) {
 			v=s.nextInt();
 			c=0;
-			for(j=1;j<v/2;j++)if(v%j==0)c+=2;
-			if(Math.sqrt(v)%1==0)c++;
+			for(j=1;j<=v/2;j++)if(v%j==0)if(j*j==v)c++;else c+=2;
+			if(v==1)c=1;
 			System.out.println(v+" "+c);
 		}
 		
