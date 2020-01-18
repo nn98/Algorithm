@@ -4,7 +4,6 @@ import java.util.Scanner;
 
 public class P13226 {
 
-	public static void main(String[] args) {
 		public static void main(String[] args) {
 			Scanner s=new Scanner(System.in);
 			int n=s.nextInt(),v,c,j;
@@ -24,5 +23,5 @@ public class P13226 {
 				System.out.println(v+" "+(v==1?v:c));
 			}
 		}
-	}
+	
 }
