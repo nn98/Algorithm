@@ -17,5 +17,4 @@ public class P8320 {
 		}
 		System.out.print(r);
 	}
-
 }
