@@ -1,10 +1,7 @@
 package BaekJoon;
 
-import java.util.Arrays;
-import java.util.Scanner;
-
+import java.util.*;
 public class P3047_S {
-
 	public static void main(String[] args) {
 		Scanner s=new Scanner(System.in);
 		int i=0,a[]=new int[3];
@@ -13,5 +10,4 @@ public class P3047_S {
 		String t=s.next();
 		for(i=0;i<3;System.out.print(a[t.charAt(i++)]+" "));
 	}
-
 }
