@@ -22,7 +22,5 @@ public class P13225 {
 			}
 			System.out.println(v+" "+(v==1?v:c));
 		}
-
 	}
-
 }
