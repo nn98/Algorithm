@@ -1,7 +1,6 @@
 package BaekJoon;
 
-public class P8320 {
-
+public class P8320{
 	public static void main(String[] args) {
 		int n=new java.util.Scanner(System.in).nextInt(),i=1,j,r=0;
 		boolean[][]a=new boolean[n+1][n+1];
