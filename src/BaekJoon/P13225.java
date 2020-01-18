@@ -10,16 +10,17 @@ public class P13225 {
 		for(;n-->0;) {
 			v=s.nextInt();
 			c=0;
-			for(j=1;j<v/2;j++){
+			boolean[]a=new boolean[v+1];
+			for(j=1;j<=v/2;j++){
 				if(v%j==0) {
-					if(j*j==v)
-						c++;
-					else c+=2;
-					System.out.println(j);
+					if(a[j])continue;
+					a[j]=true;
+					a[v/j]=true;
+					c+=2;
+					if(j*j==v)c--;
 				}
 			}
-			if(v==1)c=1;
-			System.out.println(v+" "+c);
+			System.out.println(v+" "+(v==1?v:c));
 		}
 
 	}
