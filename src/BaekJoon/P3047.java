@@ -22,5 +22,4 @@ public class P3047 {
 		for(char t:s.nextLine().toCharArray())
 			System.out.print(b[t-'A']+" ");
 	}
-
 }
