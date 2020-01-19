@@ -11,5 +11,4 @@ public class P5543 {
 		for(;i-->1;a=s.nextInt(),m=m<a?m:a);
 		System.out.print(n+m-50);
 	}
-
 }
