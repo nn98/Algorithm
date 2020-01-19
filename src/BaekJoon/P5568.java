@@ -23,5 +23,7 @@ public class P5568 {
 		a=new String[m=n=s.nextInt()];
 		for(i=s.nextInt();n>0;a[--n]=s.next());
 		System.out.println(Arrays.toString(a));
+		o(0,0,"");
+		System.out.println(s.toString());
 	}
 }
