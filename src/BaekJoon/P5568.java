@@ -8,10 +8,10 @@ public class P5568 {
 	
 	static String[]a;
 	static int n,i,m;
-	static HashSet<String> s=new HashSet();
+	static HashSet<String> r=new HashSet();
 	static void o(int x,int c,String t) {
 		if(c==i) {
-			s.add(t);
+			r.add(t);
 			return;
 		}
 		if(x==m)return;
@@ -24,6 +24,6 @@ public class P5568 {
 		for(i=s.nextInt();n>0;a[--n]=s.next());
 		System.out.println(Arrays.toString(a));
 		o(0,0,"");
-		System.out.println(s.toString());
+		System.out.println(r.toString());
 	}
 }
