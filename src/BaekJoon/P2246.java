@@ -26,7 +26,9 @@ public class P2246 {
 	public static void main(String[] args) {
 		Scanner s=new Scanner(System.in);
 		n=s.nextInt();
-		a=b=new int[n];
+//		a=b=new int[n]; is equal arr
+		a=new int[n];
+		b=new int[n];
 		for(;i<n;a[i]=s.nextInt(),b[i++]=s.nextInt());
 		System.out.println(Arrays.toString(a));
 		System.out.println(Arrays.toString(b));
