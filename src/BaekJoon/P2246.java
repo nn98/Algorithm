@@ -12,6 +12,7 @@ public class P2246 {
 			if(f){
 				c=(a[j]<a[x]&&b[j]>b[x]);
 				d=(a[j]>a[x]&&b[j]<b[x]);
+				System.out.println(c+" "+d);
 				f=false;
 			}
 			if(c)c=(a[j]<a[x]&&b[j]>b[x]);
