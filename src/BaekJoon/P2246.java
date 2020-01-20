@@ -7,7 +7,7 @@ public class P2246 {
 	static int n,a[],b[],r=0,i=0,j;
 	static void o(int x) {
 		boolean f=true,c=true,d=true;
-		for(j=0;j<n&&(c||d);j++) {
+		for(int j=0;j<n&&(c||d);j++) {
 			if(j==x)continue;
 			if(f){
 				System.out.println(a[j]+" "+a[x]);
