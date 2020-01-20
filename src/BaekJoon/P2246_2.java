@@ -13,7 +13,8 @@ public class P2246_2 {
 		}
 		for(int i=0;i<n;i++) {
 			boolean c=true;
-			for(int j=0;j<n;j++) {
+			System.out.println();
+			for(int j=0;j<n&&c;j++) {
 				if(i!=j) {
 					System.out.println(a[i]<a[j]&&b[i]>b[j]);
 					System.out.println(a[i]>a[j]&&b[i]<b[j]);
@@ -22,6 +23,6 @@ public class P2246_2 {
 			}
 			if(c)r++;
 		}
-		System.out.println(c);
+		System.out.println(r);
 	}
 }
