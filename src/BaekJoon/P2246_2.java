@@ -19,6 +19,8 @@ public class P2246_2 {
 					System.out.println(a[i]<a[j]&&b[i]>b[j]);
 					System.out.println(a[i]>a[j]&&b[i]<b[j]);
 					c=(a[i]<a[j]&&b[i]>b[j])||(a[i]>a[j]&&b[i]<b[j]);
+					if(!c)System.out.println(a[i]+" "+a[j]);
+					if(!c)System.out.println(b[i]+" "+b[j]);
 				}
 			}
 			if(c)r++;
