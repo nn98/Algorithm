@@ -2,26 +2,26 @@ package BaekJoon;
 
 import java.util.Arrays;
 import java.util.Scanner;
-
+//TMThink
 public class P2246 {
 
 	static int n,a[],b[],r=0,i=0,j;
 	static void o(int x) {
-		boolean f=true,c=true,d=true;
-		for(int j=0;j<n&&(c||d);j++) {
+		boolean f=true,c=true;
+		for(int j=0;j<n&&c;j++) {
 			if(j==x)continue;
 			if(f){
-				c=(a[j]<a[x]&&b[j]>b[x]);
-				d=(a[j]>a[x]&&b[j]<b[x]);
+				c=(a[j]<a[x]&&b[j]>b[x])||(a[j]>a[x]&&b[j]<b[x]);
 				f=false;
 			}
-			System.out.println(a[j]+" "+a[x]);
-			System.out.println(b[j]+" "+b[x]);
-			if(c)c=(a[j]<a[x]&&b[j]>b[x]);
-			if(d)d=(a[j]>a[x]&&b[j]<b[x]);
-			System.out.println(c+" "+d);
+			c=(a[j]<a[x]&&b[j]>b[x])||(a[j]>a[x]&&b[j]<b[x]);
+			System.out.println("a[j]<a[x]"+(a[j]<a[x]));
+			System.out.println("b[j]>b[x]"+(b[j]>b[x]));
+			System.out.println("a[j]>a[x]"+(a[j]>a[x]));
+			System.out.println("b[j]<b[x]"+(b[j]<b[x]));
 		}
-		if(c||d)r++;
+		if(c)r++;
+		else System.out.println(j+" "+a[x]+" "+a[j]+" "+b[x]+" "+b[j]);
 	}
 	public static void main(String[] args) {
 		Scanner s=new Scanner(System.in);
