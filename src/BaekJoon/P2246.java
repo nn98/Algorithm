@@ -1,5 +1,6 @@
 package BaekJoon;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class P2246 {
@@ -27,6 +28,8 @@ public class P2246 {
 		n=s.nextInt();
 		a=b=new int[n];
 		for(;i<n;a[i]=s.nextInt(),b[i++]=s.nextInt());
+		System.out.println(Arrays.toString(a));
+		System.out.println(Arrays.toString(b));
 		for(;i-->0;o(i));
 		System.out.print(r);
 	}
