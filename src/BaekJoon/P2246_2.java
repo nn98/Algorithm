@@ -11,18 +11,18 @@ public class P2246_2 {
 			b[i]=s.nextInt();
 		}
 		for(int i=0;i<n;i++) {
-			boolean c=true;
-			System.out.println();
-			for(int j=0;j<n&&c;j++) {
+			boolean c=true,d=true;
+			for(int j=0;j<n&&(c||d);j++) {
 				if(i!=j) {
-					System.out.println(a[i]<a[j]&&b[i]>b[j]);
-					System.out.println(a[i]>a[j]&&b[i]<b[j]);
-					c=(a[i]<a[j]&&b[i]>b[j])||(a[i]>a[j]&&b[i]<b[j]);
-					if(!c)System.out.println(a[i]+" "+a[j]);
-					if(!c)System.out.println(b[i]+" "+b[j]);
+					if(a[i]==a[j]||b[i]==b[j])continue;
+					if(a[j]<a[i])c=b[j]>b[i];
+					if(b[j]<b[i])d=a[j]>a[i];
 				}
 			}
-			if(c)r++;
+			if(c||d) {
+				System.out.println(i);
+				r++;
+			}
 		}
 		System.out.println(r);
 	}
