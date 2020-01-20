@@ -5,7 +5,6 @@ import java.util.HashSet;
 import java.util.Scanner;
 
 public class P5568 {
-	
 	static String[]a;
 	static int n,i,m;
 	static HashSet<String> r=new HashSet();
