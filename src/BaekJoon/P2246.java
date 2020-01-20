@@ -11,15 +11,15 @@ public class P2246 {
 		for(int j=0;j<n&&(c||d);j++) {
 			if(j==x)continue;
 			if(f){
-				System.out.println(a[j]+" "+a[x]);
-				System.out.println(b[j]+" "+b[x]);
 				c=(a[j]<a[x]&&b[j]>b[x]);
 				d=(a[j]>a[x]&&b[j]<b[x]);
-				System.out.println(c+" "+d);
 				f=false;
 			}
+			System.out.println(a[j]+" "+a[x]);
+			System.out.println(b[j]+" "+b[x]);
 			if(c)c=(a[j]<a[x]&&b[j]>b[x]);
 			if(d)d=(a[j]>a[x]&&b[j]<b[x]);
+			System.out.println(c+" "+d);
 		}
 		if(c||d)r++;
 	}
