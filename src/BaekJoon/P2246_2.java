@@ -6,7 +6,7 @@ public class P2246_2 {
 
 	public static void main(String[] args){
 		Scanner s=new Scanner(System.in);
-		int n=s.nextInt(),a[]=new int[n],b[]=new int[n];
+		int n=s.nextInt(),a[]=new int[n],b[]=new int[n],r=0;
 		for(int i=0;i<n;i++) {
 			a[i]=s.nextInt();
 			b[i]=s.nextInt();
@@ -20,7 +20,8 @@ public class P2246_2 {
 					c=(a[i]<a[j]&&b[i]>b[j])||(a[i]>a[j]&&b[i]<b[j]);
 				}
 			}
+			if(c)r++;
 		}
+		System.out.println(c);
 	}
-
 }
