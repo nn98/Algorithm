@@ -24,6 +24,6 @@ public class P2246_2 {
 				r++;
 			}
 		}
-		System.out.println(r);
+		System.out.print(r);
 	}
 }
