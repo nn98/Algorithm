@@ -14,6 +14,7 @@ public class P2246_2 {
 			System.out.println(i);
 			boolean c=true,d=true;
 			for(int j=0;j<n&&(c||d);j++) {
+				System.out.println(j);
 				if(i!=j) {
 					if(a[i]==a[j]||b[i]==b[j])continue;
 					System.out.printf("%d , %d + ",a[j],a[i]);
