@@ -7,5 +7,4 @@ public class P2921 {
 		for(;n-->0;b=a+b,r+=b,a+=3);
 		System.out.print(r);
 	}
-
 }
