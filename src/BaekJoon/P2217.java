@@ -11,7 +11,11 @@ public class P2217 {
 		for(;i<n;a[i++]=s.nextInt());
 		Arrays.sort(a);
 		v=r=a[--i];
-		System.out.println(v);
+		for(;--i>=0;) {
+			v=a[i]*(n-i);
+			if(v<r)break;
+			else r=v;
+		}
+		System.out.println(r);
 	}
-
 }
