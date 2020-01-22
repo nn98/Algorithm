@@ -13,8 +13,7 @@ public class P2217 {
 		v=r=a[--i];
 		for(;--i>=0;) {
 			v=a[i]*(n-i);
-			if(v<r)break;
-			else r=v;
+			r=v>r?v:r;
 		}
 		System.out.println(r);
 	}
