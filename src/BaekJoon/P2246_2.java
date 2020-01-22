@@ -16,7 +16,7 @@ public class P2246_2 {
 			for(int j=0;j<n&&(c||d);j++) {
 				System.out.println(i+" "+j);
 				if(i!=j) {
-					if(a[i]==a[j]||b[i]==b[j])continue;
+//					if(a[i]==a[j]||b[i]==b[j])continue;
 					System.out.printf("%d , %d + ",a[j],a[i]);
 					if(a[j]<a[i])c=b[j]>b[i];
 					System.out.printf("%d , %d = ",b[j],b[i]);
