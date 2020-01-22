@@ -1,9 +1,7 @@
 package BaekJoon;
 
 import java.util.*;
-
 public class P2252 {
-
 	static int n,m,a[],i=0,N,p,q;
 	static List<List<Integer>>l=new ArrayList();
 	public static void main(String[] args){
