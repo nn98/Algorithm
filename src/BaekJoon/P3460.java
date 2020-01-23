@@ -13,7 +13,7 @@ public class P3460 {
 			for(j=1,i=0;j<m;j*=2,i++);
 			j/=2;
 			for(;--i>=0;j/=2) {
-				b.append(" "+(m/j==1?i:""));
+				b.append(m/j==1?" "+i:"");
 				m%=j;
 			}
 			System.out.println(b);
