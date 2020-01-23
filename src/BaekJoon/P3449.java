@@ -11,7 +11,7 @@ public class P3449 {
 			String a=s.next(),b=s.next();
 			r=i=0;
 			for(;i<a.length();i++){
-				r+=a.charAt(i)==b.charAt(i)?1:0;
+				r+=a.charAt(i)==b.charAt(i)?0:1;
 			}
 			System.out.println("Hamming distance is "+r+".");
 		}
