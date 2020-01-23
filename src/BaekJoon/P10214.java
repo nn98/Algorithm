@@ -14,5 +14,4 @@ public class P10214 {
 			System.out.println(a>b?"Yonsei":a==b?"Draw":"Korea");
 		}
 	}
-
 }
