@@ -16,6 +16,7 @@ public class P3460_2 {
 				b.append(m/j);
 				m%=j;
 			}
+			b=b.reverse();
 			for(i=0;i<b.length();i++)
 				if(b.charAt(i)=='1')System.out.print(i+" ");
 		}
