@@ -8,5 +8,4 @@ public class P10833 {
 		for(;n-->0;i=s.nextInt(),r+=s.nextInt()%i);
 		System.out.print(r);
 	}
-
 }
