@@ -13,6 +13,7 @@ public class P3449 {
 			for(;i<a.length();i++){
 				r+=a.charAt(i)==b.charAt(i)?1:0;
 			}
+			System.out.println("Hamming distance is "+r+".");
 		}
 	}
 
