@@ -9,9 +9,10 @@ public class FibonacciCal {
 		Scanner s=new Scanner(System.in);
 		int n=s.nextInt(),i=2;
 		BigInteger a=BigInteger.ZERO,b=BigInteger.ONE;
-		for(;i<n;i++) {
+		for(;i<=n;i++) {
 			b=a.add(b);
 			a=b.subtract(a);
+//			System.out.println(b);
 		}
 		System.out.print(n==1?a:b);
 	}
