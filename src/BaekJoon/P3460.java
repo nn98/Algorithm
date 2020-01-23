@@ -10,6 +10,7 @@ public class P3460 {
 		for(;n-->0;) {
 			m=s.nextInt();
 			for(i=0,j=2;j<m;i++) {
+				System.out.println(j);
 				if(m%j!=0) {
 					System.out.print(i+" ");
 					m--;
