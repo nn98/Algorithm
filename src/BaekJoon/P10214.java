@@ -11,7 +11,7 @@ public class P10214 {
 			a=0;
 			b=0;
 			for(i=0;i++<9;a+=s.nextInt(),b+=s.nextInt());
-			
+			System.out.println(a>b?"Yonsei":a==b?"Draw":"Korea");
 		}
 	}
 
