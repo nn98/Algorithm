@@ -11,11 +11,12 @@ public class P3460 {
 			m=s.nextInt();
 			StringBuffer b=new StringBuffer();
 			for(j=1,i=0;j<m;j*=2,i++);
-			System.out.println(j);
-			for(;i>=0;j/=2,i--)if(m%j==0) {
-				System.out.print(" "+i);
+			j/=2;
+			for(;i>=0;j/=2,i--) {
+				b.append(" "+m/j);
 				m%=j;
 			}
+			System.out.println(b);
 		}
 	}
 }
