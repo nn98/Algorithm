@@ -9,8 +9,11 @@ public class P3460 {
 		int n=s.nextInt(),m,i,j;
 		for(;n-->0;) {
 			m=s.nextInt();
-			for(i=0,j=2;j>m;i++) {
-				if(m%j!=0)System.out.print(i+" ");
+			for(i=0,j=2;j<m;i++) {
+				if(m%j!=0) {
+					System.out.print(i+" ");
+					m--;
+				}
 				j*=2;
 			}
 		}
