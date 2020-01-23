@@ -11,7 +11,7 @@ public class P3059 {
 			a=new int[91];
 			for(char i:s.next().toCharArray())a[i]++;
 			r=0;
-			for(j=64;j++<90;r+=a[j]==1?j:0);
+			for(j=64;j++<90;r+=a[j]==0?j:0);
 			System.out.println(r);
 		}
 	}
