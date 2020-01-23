@@ -16,5 +16,4 @@ public class P3449 {
 			System.out.println("Hamming distance is "+r+".");
 		}
 	}
-
 }
