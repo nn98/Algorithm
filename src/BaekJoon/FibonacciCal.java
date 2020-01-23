@@ -15,5 +15,4 @@ public class FibonacciCal {
 		}
 		System.out.print(n==1?a:b);
 	}
-
 }
