@@ -1,10 +1,19 @@
 package BaekJoon;
 
+import java.math.BigInteger;
+import java.util.Scanner;
+
 public class FibonacciCal {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+		Scanner s=new Scanner(System.in);
+		int n=s.nextInt(),i=2;
+		BigInteger a=BigInteger.ZERO,b=BigInteger.ONE;
+		for(;i<n;i++) {
+			b=a.add(b);
+			a=b.subtract(a);
+		}
+		System.out.print(n==1?a:b);
 	}
 
 }
