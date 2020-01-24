@@ -1,5 +1,6 @@
 package BaekJoon;
 
+import java.math.BigInteger;
 import java.util.Arrays;
 import java.util.Scanner;
 
@@ -13,10 +14,11 @@ public class P14579 {
 //		int n=s.nextInt(),m=s.nextInt(),a[]=new int[m-n+1],i=0;
 //		a[0]=n%2==0?(1+n)*(n/2):(1+n)*(n/2)+(n/2+1);
 //		for(;i++<=m-n;a[i]=a[i-1]+(++n));
-		int n=s.nextInt(),m=s.nextInt(),a[]=new int[m-n+1],i=0,r;
+		int n=s.nextInt(),m=s.nextInt(),a[]=new int[m-n+1],i=0;
+		
 		a[0]=n%2==0?(1+n)*(n/2):(1+n)*(n/2)+(n/2+1);
-		r=a[i];
-		for(;i++<=m-n;r*=a[i]=a[i-1]+(++n));
+		BigInteger r=new BigInteger(""+a[0]);
+		for(;i++<=m-n;r=r.multiply(new BigInteger(""+a[i]=a[i-1]+(++n)));
 		System.out.print(r);
 	}
 }
