@@ -1,6 +1,5 @@
 package BaekJoon;
 
-import java.math.BigInteger;
 import java.util.Scanner;
 //±¦È÷ ÂÌÇÊ¿ä°¡ ¾ø´Ù
 public class P14579_3 {
