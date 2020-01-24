@@ -13,6 +13,7 @@ public class P14579_2 {
 //		System.out.println(Arrays.toString(a));
 		BigInteger r=new BigInteger(""+a[n]);
 		for(;n++<m;r=r.multiply(new BigInteger(""+a[n])));
+		System.out.print(r.mod(new BigInteger("14579")));
 	}
 
 }
