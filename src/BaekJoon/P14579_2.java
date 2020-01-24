@@ -10,10 +10,8 @@ public class P14579_2 {
 		Scanner s=new Scanner(System.in);
 		int n=s.nextInt(),m=s.nextInt(),i=1001,a[]=new int[i],j=1;
 		for(;j<i;a[j]=j+a[j-1],j++);
-//		System.out.println(Arrays.toString(a));
 		BigInteger r=new BigInteger(""+a[n]);
 		for(;n++<m;r=r.multiply(new BigInteger(""+a[n])));
 		System.out.print(r.mod(new BigInteger("14579")));
 	}
-
 }
