@@ -9,9 +9,13 @@ public class P14579 {
 		Scanner s=new Scanner(System.in);
 //		int ;
 //		System.out.println(v);
-		int n=s.nextInt(),m=s.nextInt(),a[]=new int[m-n+1],i=0;
+//		System.out.println(Arrays.toString(a));
+//		int n=s.nextInt(),m=s.nextInt(),a[]=new int[m-n+1],i=0;
+//		a[0]=n%2==0?(1+n)*(n/2):(1+n)*(n/2)+(n/2+1);
+//		for(;i++<=m-n;a[i]=a[i-1]+(++n));
+		int n=s.nextInt(),m=s.nextInt(),a[]=new int[m-n+1],i=0,r=1;
 		a[0]=n%2==0?(1+n)*(n/2):(1+n)*(n/2)+(n/2+1);
-		for(;i++<=m-n;a[i]=a[i-1]+(++n));
-		System.out.println(Arrays.toString(a));
+		for(;i++<=m-n;r*=a[i]=a[i-1]+(++n));
+		System.out.print(r);
 	}
 }
