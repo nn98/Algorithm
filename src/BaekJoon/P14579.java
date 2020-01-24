@@ -18,7 +18,7 @@ public class P14579 {
 		
 		a[0]=n%2==0?(1+n)*(n/2):(1+n)*(n/2)+(n/2+1);
 		BigInteger r=new BigInteger(""+a[0]);
-		for(;i++<=m-n;r=r.multiply(new BigInteger(""+a[i]=a[i-1]+(++n)));
+		for(;i++<=m-n;r=r.multiply(new BigInteger());
 		System.out.print(r);
 	}
 }
