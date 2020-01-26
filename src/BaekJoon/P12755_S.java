@@ -11,5 +11,4 @@ public class P12755_S {
 			if(n<=0)System.out.print(s.charAt(l-1+n));
 		}
 	}
-
 }
