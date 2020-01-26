@@ -13,5 +13,6 @@ public class P12755 {
 		System.out.println(v);
 		for(;n>i;n-=i,v++);
 		System.out.println(n+" "+v);
+		System.out.println((""+v).charAt(n-1));
 	}
 }
