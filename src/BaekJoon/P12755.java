@@ -9,7 +9,8 @@ public class P12755 {
 		j/=10;
 		n-=i*j;
 		System.out.println(n+" "+i+" "+j);
-		v=(int) Math.pow(10, i);
+		v=(int) Math.pow(10, i++);
 		System.out.println(v);
+		for(;n>1;n-=i,v++);
 	}
 }
