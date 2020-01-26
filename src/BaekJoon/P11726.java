@@ -6,7 +6,6 @@ public class P11726 {
 		a[1]=1;
 		a[2]=2;
 		for(;++i<s;a[i]=(a[i-1]+a[i-2])%10007);
-//		System.out.println(Arrays.toString(a));
 		System.out.print(a[new java.util.Scanner(System.in).nextInt()]);
 	}
 }
