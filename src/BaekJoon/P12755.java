@@ -5,5 +5,9 @@ public class P12755 {
 		int n=new java.util.Scanner(System.in).nextInt(),i=1,j=9;
 		for(;i*j<n;i++,j*=10);
 		System.out.println(i+" "+j);
+		i--;
+		j/=10;
+		n-=i*j;
+		System.out.println(n+" "+i+" "+j);
 	}
 }
