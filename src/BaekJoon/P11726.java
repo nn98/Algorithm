@@ -1,9 +1,6 @@
 package BaekJoon;
 
-import java.util.Arrays;
-
 public class P11726 {
-
 	public static void main(String[] args) {
 		int i=2,s=1001,a[]=new int[s];
 		a[1]=1;
