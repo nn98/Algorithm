@@ -1,5 +1,5 @@
 package BaekJoon;
-
+//No TimeOver
 public class P12755_S{
 	public static void main(String[] args){
 		int n=new java.util.Scanner(System.in).nextInt(),i=0,l;
