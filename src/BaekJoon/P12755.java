@@ -9,5 +9,6 @@ public class P12755 {
 		j/=10;
 		n-=i*j;
 		System.out.println(n+" "+i+" "+j);
+		
 	}
 }
