@@ -10,5 +10,6 @@ public class P12755 {
 		n-=i*j;
 		System.out.println(n+" "+i+" "+j);
 		v=(int) Math.pow(10, i);
+		System.out.println(v);
 	}
 }
