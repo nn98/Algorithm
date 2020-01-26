@@ -24,6 +24,6 @@ public class P12755_2 {
 		int from = 1;
 		for (int i = 0; i < digit - 1; ++i) from *= 10;
 		int idx = n - psum - 1;
-		System.out.println((""+from + (idx / digit)).charAt(idx%digit));
+		System.out.println((""+(from + (idx / digit))).charAt(idx%digit));
 	}
 }
