@@ -1,6 +1,6 @@
 package BaekJoon;
 
-public class P11727 {
+public class P11727{
 	public static void main(String[] args){
 		int i=1,s=1001,a[]=new int[s];
 		a[0]=1;
