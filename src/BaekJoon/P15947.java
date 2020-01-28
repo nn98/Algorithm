@@ -1,7 +1,5 @@
 package BaekJoon;
 
-import java.util.Arrays;
-
 public class P15947 {
 
 	public static void main(String[] args) {
@@ -10,6 +8,7 @@ public class P15947 {
 		if(b.contains("t")) {
 			b="tu";
 			c=b.length()/2+n/14;
+			System.out.println(c);
 			if(c>3) {
 				b+="+ru*"+ ++c;
 			}
