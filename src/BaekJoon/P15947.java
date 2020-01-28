@@ -9,10 +9,10 @@ public class P15947 {
 			c=b.length()/2+n/14;
 			b="tu";
 //			System.out.println(c);
-			if(c>3) {
+			if(c>4) {
 				b+="+ru*"+ ++c;
 			}
-			else for(;c-->=0;b+="ru");
+			else for(;c-->0;b+="ru");
 		}
 		System.out.println(b);
 	}
