@@ -11,7 +11,7 @@ public class P15947 {
 			b="tu";
 			c=b.length()/2+n/14;
 			if(c>3) {
-				b+="+ru*"+++c;
+				b+="+ru*"+ ++c;
 			}
 			else for(;c-->=0;b+="ru");
 		}
