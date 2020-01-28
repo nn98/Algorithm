@@ -8,6 +8,7 @@ public class P10799 {
 		for(;i<a.length;i++) {
 			if(a[i]=='(') {
 				if(a[i+1]==')') {
+					System.out.println(i);
 					r+=c;
 					i++;
 				}
@@ -15,5 +16,6 @@ public class P10799 {
 			}
 			else c--;
 		}
+		System.out.print(r);
 	}
 }
