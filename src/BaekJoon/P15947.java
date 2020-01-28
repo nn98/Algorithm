@@ -13,7 +13,7 @@ public class P15947 {
 			if(c>4) {
 				b+="+ru*"+--c;
 			}
-			else for(;--c>0;b+="ruru");
+			else for(;c-->0;b+="ruru");
 		}
 		System.out.println(b);
 	}
