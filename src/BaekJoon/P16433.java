@@ -1,5 +1,6 @@
 package BaekJoon;
-
+//One try
+//다행히 내가 빡대가리는 아니다
 import java.util.Scanner;
 public class P16433 {
 	public static void main(String[] args) {
