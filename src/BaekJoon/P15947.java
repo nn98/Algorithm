@@ -10,7 +10,7 @@ public class P15947 {
 		if(b.contains("t")) {
 			b="tu";
 			c=b.length()/2+n/14;
-			if(c>4) {
+			if(c>3) {
 				b+="+ru*"+--c;
 			}
 			else for(;c-->=0;b+="ru");
