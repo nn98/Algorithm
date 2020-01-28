@@ -10,7 +10,7 @@ public class P15947 {
 			b="tu";
 //			System.out.println(c);
 			if(c>4) {
-				b+="+ru*"+ ++c;
+				b+="+ru*"+--c;
 			}
 			else for(;--c>0;b+="ru");
 		}
