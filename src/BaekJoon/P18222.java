@@ -9,7 +9,6 @@ public class P18222 {
 		int i=0,c=0;
 		while(n.compareTo(a.pow(i+1))>=0)i++;
 		while(!n.equals(BigInteger.ZERO)) {
-			System.out.println(i);
 //			if(n.divide(a.pow(i)).equals(BigInteger.ONE))c++;
 //			c+=Integer.parseInt(n.divide(a.pow(i)).toString());
 			System.out.println(n.divide(a.pow(i)));
