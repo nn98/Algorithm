@@ -11,10 +11,10 @@ public class P18222 {
 		while(!n.equals(BigInteger.ZERO)) {
 //			if(n.divide(a.pow(i)).equals(BigInteger.ONE))c++;
 //			c+=Integer.parseInt(n.divide(a.pow(i)).toString());
-			System.out.println(n.divide(a.pow(i)));
+//			System.out.println(n.divide(a.pow(i)));
 			c+=n.divide(a.pow(i)).equals(BigInteger.ONE)?1:0;
 			n=n.mod(a.pow(i--));
 		}
-		System.out.println(c);
+		System.out.println(c%2);
 	}
 }
