@@ -7,7 +7,7 @@ public class P18222 {
 	public static void main(String[] args) {
 		BigInteger a=new BigInteger("2"),n=new BigInteger(new java.util.Scanner(System.in).next());
 		int i=0,c=0;
-		if(!n.equals("1")) {
+		if(!n.equals(BigInteger.ONE)) {
 			while(n.compareTo(a.pow(i+1))>=0)i++;
 			while(!n.equals(BigInteger.ZERO)) {
 				//			if(n.divide(a.pow(i)).equals(BigInteger.ONE))c++;
