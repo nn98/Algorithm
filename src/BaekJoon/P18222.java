@@ -15,6 +15,7 @@ public class P18222 {
 			i--;
 			n=n.mod(a.pow(i--));
 		}
+		System.out.println(c);
 	}
 
 }
