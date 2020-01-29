@@ -16,5 +16,4 @@ public class P18245 {
 			System.out.println();
 		}
 	}
-
 }
