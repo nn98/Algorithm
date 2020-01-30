@@ -16,13 +16,13 @@ public class P12790 {
 				r+=a[0]<1?1:a[0];
 				break;
 			case 2:
-				r+=a[1]<1?1:a[1];
+				r+=5*a[1]<1?1:a[1];
 				break;
 			case 3:
 				r+=2*a[2]<0?0:a[2];
 				break;
 			case 4:
-				r+=a[3];
+				r+=2*a[3];
 			}
 			System.out.println(r);
 		}
