@@ -8,5 +8,4 @@ public class P2914 {
 		Scanner s=new Scanner(System.in);
 		System.out.print(s.nextInt()*(s.nextInt()-1)+1);
 	}
-
 }
