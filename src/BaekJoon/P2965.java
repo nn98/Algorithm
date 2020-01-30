@@ -12,5 +12,6 @@ public class P2965 {
 		Arrays.sort(a);
 		v=a[1]=a[0];
 		v=v>a[2]-a[1]?v:a[2]-a[1];
+		System.out.println(v);
 	}
 }
