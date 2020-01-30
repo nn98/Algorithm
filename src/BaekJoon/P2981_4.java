@@ -13,5 +13,4 @@ public class P2981_4 {
 		}
 		System.out.println(c);
 	}
-
 }
