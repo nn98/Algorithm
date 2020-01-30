@@ -1,10 +1,12 @@
 package BaekJoon;
 
+import java.util.Scanner;
+
 public class P2914 {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+		Scanner s=new Scanner(System.in);
+		System.out.print(s.nextInt()*(s.nextInt()-1)+1);
 	}
 
 }
