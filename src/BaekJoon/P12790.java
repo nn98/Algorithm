@@ -27,5 +27,4 @@ public class P12790 {
 			System.out.println(r);
 		}
 	}
-
 }
