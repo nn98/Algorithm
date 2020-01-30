@@ -9,7 +9,7 @@ public class P10798 {
 		String a="";
 		while(s.hasNext()) {
 			a+=s.nextLine()+" ";
-			if(a.charAt(a.length()-1)=='0')break;
+			if(a.charAt(a.length()-2)=='0')break;
 		}
 		String[]b=a.split(" ");
 		int i=0,j,c;
