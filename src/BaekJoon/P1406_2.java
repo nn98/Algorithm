@@ -4,7 +4,6 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
-
 public class P1406_2{
 	public static void main(String[]z){
 		Scanner s=new Scanner(System.in);
