@@ -8,7 +8,7 @@ public class P1406_2{
 		List<String>l=new ArrayList(Arrays.asList(s.next().split("")));
 		int n=s.nextInt(),i=l.size();
 		for(;n-->0;) {
-			switch(t=s.next()) {
+			switch(t=s.next()){
 			case "L":
 				if(i>0)i--;
 				break;
