@@ -1,10 +1,7 @@
 package BaekJoon;
 
-import java.util.Arrays;
 import java.util.Scanner;
-
 public class P11052 {
-
 	static int n,a[],i=0,r=0;
 	static void o(int x,int v,int c) {
 //		System.out.println(x+" "+v);
