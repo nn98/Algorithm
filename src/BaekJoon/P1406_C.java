@@ -33,12 +33,14 @@ public class P1406_C {
 		for(;m-->0;) {
 			switch(t=s.next()){
 			case "L":
+				if(l==null)break;
 				n=l;
 				l=l.n;
 				n.n=r;
 				r=n;
 				break;
 			case "D":
+				if(r==null)break;
 				n=r;
 				r=r.n;
 				n.n=l;
