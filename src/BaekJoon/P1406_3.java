@@ -25,5 +25,7 @@ public class P1406_3{
 				break;
 			}
 		}
+		for(String j:l)w.write(j);
+		w.flush();
 	}
 }
