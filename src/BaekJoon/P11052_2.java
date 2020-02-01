@@ -9,7 +9,7 @@ public class P11052_2 {
 		int n=s.nextInt(),a[]=new int[n+1],h[]=new int[n+1],i=0;
 		for(;i++<n;) {
 			a[i]=s.nextInt();
-			h[i]=
+//			h[i]=
 		}
 	}
 
