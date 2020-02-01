@@ -45,11 +45,24 @@ public class P1406_C {
 				l=n;
 				break;
 			case "B":
-				
+				if(l!=null)l=l.n;
 				break;
 			case "P":
+				n=new Node(s.next());
+				n.n=l;
+				l=n;
 				break;
 			}
+		}
+		while(l!=null) {
+			n=l;
+			l=l.n;
+			n.n=r;
+			r=n;
+		}
+		while(r!=null) {
+			System.out.print(r.v);
+			r=r.n;
 		}
 	}
 
