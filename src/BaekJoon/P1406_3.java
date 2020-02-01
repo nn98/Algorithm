@@ -25,6 +25,5 @@ public class P1406_3{
 				break;
 			}	
 		}
-		
 	}
 }
