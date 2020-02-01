@@ -25,5 +25,4 @@ public class P11052 {
 		o(1,0,0);
 		System.out.println(r);
 	}
-
 }
