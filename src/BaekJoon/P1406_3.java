@@ -9,7 +9,7 @@ public class P1406_3{
 		String t;
 		List<String>l=new ArrayList(Arrays.asList(r.readLine().split("")));
 		int n=Integer.parseInt(r.readLine()),i=l.size();
-		for(;n-->0;) {
+		for(;n-->0;){
 			switch(t=r.readLine()){
 			case "L":
 				if(i>0)i--;
