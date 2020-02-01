@@ -3,7 +3,7 @@ package BaekJoon;
 //https://dundung.tistory.com/6
 //LinkedList + Iterator b
 import java.io.*;
-public class P1406_C {
+public class P1406_C{
 	static class Node{
 		String v;
 		Node n;
