@@ -69,7 +69,7 @@ public class P1406_C {
 				if(l!=null)l=l.n;
 				break;
 			default:
-				n=new Node(s.next());
+				n=new Node(t.substring(t.length()-1));
 				n.n=l;
 				l=n;
 				break;
