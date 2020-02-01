@@ -24,10 +24,10 @@ public class P1406_C {
 			l=n;
 		}
 		n=l;
-		while(n!=null) {
-			System.out.println(n.v);
-			n=n.n;
-		}
+//		while(n!=null) {
+//			System.out.println(n.v);
+//			n=n.n;
+//		}
 		String t;
 		int m=s.nextInt();
 		for(;m-->0;) {
@@ -65,5 +65,4 @@ public class P1406_C {
 			r=r.n;
 		}
 	}
-
 }
