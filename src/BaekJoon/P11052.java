@@ -8,10 +8,10 @@ public class P11052 {
 	static int n,a[],i=0,r=0;
 	static void o(int x,int v,int c) {
 		if(x>n)return;
-		System.out.println(x+" "+v);
+//		System.out.println(x+" "+v);
 		if(c==n)r=r>v?r:v;
 		else if(c<n) {
-			System.out.println(n/x);
+//			System.out.println(n/x);
 			for(int j=0;j<=n/x;j++)
 				o(x+1,v+a[x]*j,c+x*j);
 		}
@@ -21,7 +21,7 @@ public class P11052 {
 		n=s.nextInt();
 		a=new int[n+1];
 		for(;i++<n;a[i]=s.nextInt());
-		System.out.println(Arrays.toString(a));
+//		System.out.println(Arrays.toString(a));
 		o(1,0,0);
 		System.out.println(r);
 	}
