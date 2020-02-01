@@ -24,7 +24,7 @@ public class P1406_2 {
 				break;
 			case "P":
 				t=s.next();
-				l.add(i,t);
+				l.add(i++,t);
 				break;
 			}
 		}
