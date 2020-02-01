@@ -1,5 +1,9 @@
 package BaekJoon;
 
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.InputStreamReader;
+import java.io.OutputStreamWriter;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -15,7 +19,7 @@ public class P1406_C {
 			this.v=v;
 		}
 	}
-	public static void main(String[] args) {
+	public static void main(String[] args)throws Exception{
 		Node l=null,r=null,n;
 		Scanner s=new Scanner(System.in);
 		for(String i:s.next().split("")) {
@@ -28,10 +32,26 @@ public class P1406_C {
 //			System.out.println(n.v);
 //			n=n.n;
 //		}
+		BufferedReader R=new BufferedReader(new InputStreamReader(System.in));
+		BufferedWriter w=new BufferedWriter(new OutputStreamWriter(System.out));
 		String t;
 		int m=s.nextInt();
 		for(;m-->0;) {
-			switch(t=s.next()){
+//			switch(t=r.readLine()){
+//			case "L":
+//				if(i>0)i--;
+//				break;
+//			case "D":
+//				if(i<l.size())i++;
+//				break;
+//			case "B":
+//				if(i>0)l.remove(i---1);
+//				break;
+//			default:
+//				l.add(i++,t.substring(t.length()-1));
+//				break;
+//			}
+			switch(t=R.readLine()){
 			case "L":
 				if(l==null)break;
 				n=l;
@@ -49,7 +69,7 @@ public class P1406_C {
 			case "B":
 				if(l!=null)l=l.n;
 				break;
-			case "P":
+			default:
 				n=new Node(s.next());
 				n.n=l;
 				l=n;
@@ -63,8 +83,9 @@ public class P1406_C {
 			r=n;
 		}
 		while(r!=null) {
-			System.out.print(r.v);
+			w.write(r.v);
 			r=r.n;
 		}
+		w.flush();
 	}
 }
