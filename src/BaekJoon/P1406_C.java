@@ -21,8 +21,9 @@ public class P1406_C {
 	}
 	public static void main(String[] args)throws Exception{
 		Node l=null,r=null,n;
-		Scanner s=new Scanner(System.in);
-		for(String i:s.next().split("")) {
+		BufferedReader R=new BufferedReader(new InputStreamReader(System.in));
+		BufferedWriter w=new BufferedWriter(new OutputStreamWriter(System.out));
+		for(String i:R.readLine().split("")) {
 			n=new Node(i);
 			n.n=l;
 			l=n;
@@ -31,11 +32,8 @@ public class P1406_C {
 //		while(n!=null) {
 //			System.out.println(n.v);
 //			n=n.n;
-//		}
-		BufferedReader R=new BufferedReader(new InputStreamReader(System.in));
-		BufferedWriter w=new BufferedWriter(new OutputStreamWriter(System.out));
-		String t;
-		int m=s.nextInt();
+//		}String t;
+		int m=Integer.parseInt(R.readLine());
 		for(;m-->0;) {
 //			switch(t=r.readLine()){
 //			case "L":
