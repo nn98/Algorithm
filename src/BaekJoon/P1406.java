@@ -7,7 +7,7 @@ public class P1406 {
 	public static void main(String[] args) {
 		Scanner s=new Scanner(System.in);
 		String t,a[]=s.next().split("");
-		int n=s.nextInt(),i=0;
+		int n=s.nextInt(),i=a.length;
 		for(;n-->0;) {
 			switch(t=s.next()) {
 			case "L":
