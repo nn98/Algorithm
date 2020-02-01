@@ -23,7 +23,7 @@ public class P1406_3{
 			default:
 				l.add(i++,t.substring(t.length()-1));
 				break;
-			}	
+			}
 		}
 	}
 }
