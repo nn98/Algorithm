@@ -56,7 +56,7 @@ public class P1406_C {
 				break;
 			}
 		}
-		while(l!=null) {
+		while(l!=null){
 			n=l;
 			l=l.n;
 			n.n=r;
