@@ -19,7 +19,7 @@ public class P1406_2{
 				if(i<l.size())i++;
 				break;
 			case "B":
-				if(i>0)l.remove(i-1);
+				if(!l.isEmpty())if(i>0)l.remove(i-1);
 				break;
 			case "P":
 				t=s.next();
