@@ -7,7 +7,7 @@ public class P11052 {
 
 	static int n,a[],i=0,r=0;
 	static void o(int x,int v,int c) {
-		System.out.println(x);
+		System.out.println(x+" "+v);
 		if(c==n)r=r>v?r:v;
 		else if(c<n) {
 			for(int j=0;j<n/x;j++)
