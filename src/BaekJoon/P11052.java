@@ -10,6 +10,7 @@ public class P11052 {
 		System.out.println(x+" "+v);
 		if(c==n)r=r>v?r:v;
 		else if(c<n) {
+			System.out.println(n/x);
 			for(int j=0;j<n/x;j++)
 				o(x+1,v+a[x]*j,c+x*j);
 		}
