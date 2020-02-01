@@ -2,6 +2,7 @@ package BaekJoon;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
+import java.util.Arrays;
 import java.util.StringTokenizer;
 
 public class P11004_2 {
@@ -11,5 +12,7 @@ public class P11004_2 {
 		int n=Integer.parseInt(t.nextToken()),m=Integer.parseInt(t.nextToken()),a[]=new int[n];
 		t=new StringTokenizer(r.readLine());
 		for(;n-->0;a[n]=Integer.parseInt(t.nextToken()));
+		Arrays.sort(a);
+		System.out.print(a[m-1]);
 	}
 }
