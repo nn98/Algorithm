@@ -5,8 +5,8 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
 
-public class P1406_2 {
-	public static void main(String[]z) {
+public class P1406_2{
+	public static void main(String[]z){
 		Scanner s=new Scanner(System.in);
 		String t;
 		List<String>l=new ArrayList(Arrays.asList(s.next().split("")));
