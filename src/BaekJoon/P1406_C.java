@@ -28,6 +28,7 @@ public class P1406_C {
 			n.n=l;
 			l=n;
 		}
+		String t;
 		n=l;
 //		while(n!=null) {
 //			System.out.println(n.v);
