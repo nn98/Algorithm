@@ -24,7 +24,7 @@ public class P9465_C {
 				h[0][i]=Math.max(h[1][i-1],h[1][i-2])+a[0][i];
 				h[1][i]=Math.max(h[0][i-1],h[0][i-2])+a[1][i];
 			}
-			System.out.println(Math.max(h[0][m],h[1][m]));
+			System.out.println(Math.max(h[0][m-1],h[1][m-1]));
 		}
 	}
 }
