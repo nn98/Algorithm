@@ -8,7 +8,7 @@ import java.util.StringTokenizer;
 public class P9465_2 {
 	static int n,m,a[][],h[][],l,i,j;
 	static void o(int x,int v,int c) {
-		System.out.println(x+" "+c);
+//		System.out.println(x+" "+c);
 		if(x==m) {
 			l=l>v?l:v;
 			return;
