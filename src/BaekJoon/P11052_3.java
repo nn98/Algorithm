@@ -1,5 +1,6 @@
 package BaekJoon;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class P11052_3 {
@@ -10,8 +11,11 @@ public class P11052_3 {
 		for(;i<n;a[i++]=s.nextInt());
 		h[1]=a[1];
 		for(i=2;i<n;i++) {
-			for(j=1;j<=i-j;j++);
+			for(j=1;j<=i-j;j++) {
+				h[i]=h[i]>h[j]+h[i-j]?h[i]:h[j]+h[i-j];
+			}
 		}
+		System.out.print(Arrays.toString(h));
 	}
 
 }
