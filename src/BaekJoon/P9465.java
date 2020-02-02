@@ -19,8 +19,8 @@ public class P9465 {
 	public static void main(String[] args)throws Exception{
 		BufferedReader r=new BufferedReader(new InputStreamReader(System.in));
 		n=Integer.parseInt(r.readLine());
-		m=Integer.parseInt(r.readLine());
 		for(;n-->0;) {
+			m=Integer.parseInt(r.readLine());
 			a=new int[2][m];
 			h=new boolean[2][m];
 			for(i=0;i<2;i++) {
