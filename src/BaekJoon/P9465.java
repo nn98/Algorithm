@@ -13,8 +13,8 @@ public class P9465 {
 		l=l>v?l:v;
 		if(x!=m-1) {
 			if(h[0][x+1]<v)	o(x+1,v,0);
-			if(c!=1)if(h[1][x+1]<v+a[0][x])o(x+1,v+a[0][x],1);
-			if(c!=2)if(h[2][x+1]<v+a[1][x])o(x+1,v+a[1][x],2);
+			if(c!=2)if(h[1][x+1]<v+a[0][x])o(x+1,v+a[0][x],1);
+			if(c!=1)if(h[2][x+1]<v+a[1][x])o(x+1,v+a[1][x],2);
 		}
 	}
 	public static void main(String[] args)throws Exception{
