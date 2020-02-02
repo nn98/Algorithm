@@ -3,8 +3,7 @@ package BaekJoon;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
-
-public class P9465_C {
+public class P9465_C{
 	static int n,m,a[][],h[][],l,i,j;
 	public static void main(String[] args)throws Exception{
 		BufferedReader r=new BufferedReader(new InputStreamReader(System.in));
