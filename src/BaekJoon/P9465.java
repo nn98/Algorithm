@@ -9,6 +9,7 @@ public class P9465 {
 
 	static int n,m,a[][],h[][],l,i,j;
 	static void o(int x,int v,int c) {
+		System.out.println(x+" "+c);
 		h[c][x]=c==0?v:v+a[c-1][x];
 		if(x!=m-1) {
 			if(h[0][x+1]<v)	o(x+1,v,0);
