@@ -15,8 +15,8 @@ public class P9465_2 {
 		}
 		if(c<2)h[c][x]=v;
 		o(x+1,v,2);
-		if(c!=1)o(x+1,v+a[0][x],1);
-		if(c!=0)o(x+1,v+a[1][x],0);
+		if(c!=1)if(h[1][x+1]<v+a[0][x])o(x+1,v+a[0][x],1);
+		if(c!=0)if(h[0][x+1]<v+a[1][x])o(x+1,v+a[1][x],0);
 	}
 	public static void main(String[] args)throws Exception{
 		BufferedReader r=new BufferedReader(new InputStreamReader(System.in));
