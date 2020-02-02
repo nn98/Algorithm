@@ -9,7 +9,6 @@ public class P11052_3 {
 		for(i=2;i<=n;i++) {
 			for(j=1;j<=i-j;j++) {
 				a[i]=a[i]>a[j]+a[i-j]?a[i]:a[j]+a[i-j];
-				
 			}
 		}
 		System.out.print(a[n]);
