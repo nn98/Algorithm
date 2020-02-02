@@ -24,7 +24,8 @@ public class P9465 {
 			a=new int[2][m];
 			h=new boolean[2][m];
 			for(i=0;i<2;i++) {
-			StringTokenizer t=new StringTokenizer(r.readLine());for(j=0;j<m;a[i][j]=Integer.parseInt(t.nextToken()));
+			StringTokenizer t=new StringTokenizer(r.readLine());
+			for(j=0;j<m;a[i][j]=Integer.parseInt(t.nextToken()));
 			o(0,0,0);
 			System.out.println(l);
 			l=0;
