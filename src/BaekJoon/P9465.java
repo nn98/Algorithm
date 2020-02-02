@@ -9,6 +9,7 @@ public class P9465 {
 	static int n,m,a[][],h[][],l,i,j;
 	static void o(int x,int v,int c) {
 		h[c][x]=v;
+		l=l>v?l:v;
 		if(x==m-1) {
 			if(h[0][x+1]<v)	o(x+1,v,0);
 			if(c!=1)if(h[1][x+1]<v+a[0][x])o(x+1,v+a[0][x],1);
