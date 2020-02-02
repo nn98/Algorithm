@@ -20,5 +20,4 @@ public class P17212_3 {
 		}
 		System.out.print(r);
 	}
-
 }
