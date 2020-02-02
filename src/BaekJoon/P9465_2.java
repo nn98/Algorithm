@@ -30,7 +30,7 @@ public class P9465_2 {
 				for(j=0;j<m;a[i][j++]=Integer.parseInt(t.nextToken()));
 			}
 			o(0,0,0);
-			for(i=0;i<3;System.out.println(Arrays.toString(h[i++])));
+			for(i=0;i<2;System.out.println(Arrays.toString(h[i++])));
 			System.out.println(l);
 			l=0;
 		}
