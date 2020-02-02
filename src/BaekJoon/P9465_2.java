@@ -29,7 +29,7 @@ public class P9465_2 {
 				StringTokenizer t=new StringTokenizer(r.readLine());
 				for(j=0;j<m;a[i][j++]=Integer.parseInt(t.nextToken()));
 			}
-			o(0,0,0);
+			o(0,0,2);
 			for(i=0;i<2;System.out.println(Arrays.toString(h[i++])));
 			System.out.println(l);
 			l=0;
