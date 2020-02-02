@@ -13,6 +13,7 @@ public class P11052_3 {
 		for(i=2;i<=n;i++) {
 			for(j=1;j<=i-j;j++) {
 				h[i]=a[i]>h[j]+h[i-j]?a[i]:h[j]+h[i-j];
+				
 			}
 		}
 		System.out.print(Arrays.toString(h));
