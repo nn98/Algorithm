@@ -16,7 +16,7 @@ public class P9465_C {
 			h=new int[2][m+2];
 			for(i=0;i<2;i++) {
 				StringTokenizer t=new StringTokenizer(r.readLine());
-				for(j=1;j<m;a[i][j++]=Integer.parseInt(t.nextToken()));
+				for(j=1;j<=m;a[i][j++]=Integer.parseInt(t.nextToken()));
 			}
 			h[0][1]=a[0][1];
 			h[1][1]=a[1][1];
