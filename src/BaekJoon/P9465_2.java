@@ -9,14 +9,16 @@ public class P9465_2 {
 	static int n,m,a[][],h[][],l,i,j;
 	static void o(int x,int v,int c) {
 		System.out.println(x+" "+c);
-		h[c][x]=c==0?v:v+a[c==1?1:0][x];
-		if(x!=m-1) {
-			if(h[0][x+1]<v)	o(x+1,v,0);
-			if(c!=2)if(h[2][x+1]<v+a[1][x])o(x+1,v+a[1][x],2);
-			if(c!=1)if(h[1][x+1]<v+a[0][x])o(x+1,v+a[0][x],1);
-		}else {
-			l=l>h[c][x]?l:h[c][x];
+		if(x==m-1) {
+			l=l>v?l:v;
+			return;
 		}
+		if(c<2) {
+			h[c][x]=v+a[c][x];
+		}
+		o(x+1,v,2);
+		if(c!=1)o(x+1,h[c][x],1);
+		if(c!=0)o(x+1,h[c][x],0);
 	}
 	public static void main(String[] args)throws Exception{
 		BufferedReader r=new BufferedReader(new InputStreamReader(System.in));
@@ -24,7 +26,7 @@ public class P9465_2 {
 		for(;n-->0;) {
 			m=Integer.parseInt(r.readLine());
 			a=new int[2][m];
-			h=new int[3][m];
+			h=new int[2][m];
 			for(i=0;i<2;i++) {
 				StringTokenizer t=new StringTokenizer(r.readLine());
 				for(j=0;j<m;a[i][j++]=Integer.parseInt(t.nextToken()));
