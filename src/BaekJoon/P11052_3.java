@@ -17,5 +17,4 @@ public class P11052_3 {
 		}
 		System.out.print(Arrays.toString(h));
 	}
-
 }
