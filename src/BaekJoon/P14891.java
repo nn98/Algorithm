@@ -22,9 +22,9 @@ public class P14891 {
 		}
 		else{
 			if(t>0)
-				if(!a[t-1][2].equals(a[t][6]))o(t-1,-1);
+				if(!a[t-1][2].equals(a[t][6]))if(!h[t-1])o(t-1,-1);
 			if(t<3)
-				if(!a[t+1][6].equals(a[t][2]))o(t+1,-1);
+				if(!a[t+1][6].equals(a[t][2]))if(!h[t+1])o(t+1,-1);
 			String v=a[t][7];
 			for(int i=7;i>0;i--)a[t][i]=a[t][i-1];
 			a[t][0]=v;
