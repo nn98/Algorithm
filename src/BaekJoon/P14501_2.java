@@ -7,7 +7,7 @@ public class P14501_2 {
 	static int n,a[],b[],h[],i;
 	static void o(int x) {
 		if(x+a[x]>n)return;
-		else if(x+a[x]==n)h[x]=b[x];
+		else if(x+a[x]==n||x+a[x]+a[x+a[x]]>n)h[x]=b[x];
 		else {
 			int v=0,X=x;
 			x+=a[x];
