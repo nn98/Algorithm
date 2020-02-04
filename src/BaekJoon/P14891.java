@@ -1,10 +1,7 @@
 package BaekJoon;
 
-import java.util.Arrays;
 import java.util.Scanner;
-
 public class P14891 {
-
 	static String[][]a=new String[4][];
 	static boolean[]h;
 	static int i,r,j=1;
