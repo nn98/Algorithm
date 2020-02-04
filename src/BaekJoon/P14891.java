@@ -38,7 +38,10 @@ public class P14891 {
 			o(s.nextInt()-1,s.nextInt());
 			for(String[]b:a)System.out.println(Arrays.toString(b));
 		}
-		for(;++i<3;j*=2)if(a[i][0].equals("1"))r+=j;
+		for(;++i<3;j*=2) {
+			System.out.println(a[i][0]);
+			if(a[i][0].equals("1"))r+=j;
+		}
 		System.out.print(r);
 	}
 }
