@@ -31,5 +31,4 @@ public class P14719 {
 		}
 		System.out.print(r);
 	}
-
 }
