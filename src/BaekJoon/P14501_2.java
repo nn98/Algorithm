@@ -15,8 +15,8 @@ public class P14501_2 {
 				v=v>h[x]?v:h[x];
 			}
 			h[X]=v+b[X];
-			r=r>h[X]?r:h[X];
 		}
+		r=r>h[X]?r:h[X];
 	}
 	public static void main(String[] args){
 		Scanner s=new Scanner(System.in);
