@@ -13,7 +13,7 @@ public class P14501_3 {
 		for(;i++<n;a[i]=s.nextInt(),b[i]=s.nextInt(),h[i]=b[i]);
 		for(i=1;i++<n;)
 			for(j=0;++j<i;)
-				if(i-j>=a[j])
+				if(i-j>=a[j])//병신같이 뒤집음
 					h[i]=Math.max(b[i]+h[j],h[i]);
 //		System.out.println(Arrays.toString(a));
 //		System.out.println(Arrays.toString(b));
