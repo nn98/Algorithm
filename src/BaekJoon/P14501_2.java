@@ -9,14 +9,13 @@ public class P14501_2 {
 		if(x+a[x]>n)return;
 		else if(x+a[x]==n||x+a[x]+a[x+a[x]]>n)h[x]=b[x];
 		else {
-			int v=0,X=x;
-			x+=a[x];
-			for(;x<n;x++) {
-				v=v>h[x]?v:h[x];
+			int v=0,X=x+a[x];
+			for(;X<n;X++) {
+				v=v>h[X]?v:h[X];
 			}
-			h[X]=v+b[X];
+			h[x]=v+b[x];
 		}
-		r=r>h[X]?r:h[X];
+		r=r>h[x]?r:h[x];
 	}
 	public static void main(String[] args){
 		Scanner s=new Scanner(System.in);
@@ -30,3 +29,13 @@ public class P14501_2 {
 		System.out.println(Arrays.toString(h));
 	}
 }
+/*
+7
+3 10
+6 500
+1 10
+1 20
+2 15
+4 40
+1 200
+*/
