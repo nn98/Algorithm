@@ -12,12 +12,11 @@ public class P14501_3 {
 		for(;i++<n;a[i]=s.nextInt(),b[i]=s.nextInt(),h[i]=b[i]);
 		for(i=1;i++<n;)
 			for(j=0;++j<i;)
-				if(a[j]>i-j)
+				if(i-j>=a[j])
 					h[i]=Math.max(b[i]+h[j],h[i]);
-		for(i=0;i++<n;) {
+		for(i=0;i++<n;)
 			if(n+1<i+a[i])
 				r=r>h[i]?r:h[i];
-		}
 		System.out.print(r);
 	}
 
