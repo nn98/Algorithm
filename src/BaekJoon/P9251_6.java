@@ -1,6 +1,5 @@
 package BaekJoon;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class P9251_6 {
