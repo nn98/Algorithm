@@ -20,6 +20,6 @@ public class P9251_6 {
 			}
 		}
 //		for(int[]d:c)System.out.println(Arrays.toString(d));
-		System.out.print(c[i][j]);
+		System.out.print(c[i-1][j-1]);
 	}
 }
