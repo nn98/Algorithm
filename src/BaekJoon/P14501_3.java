@@ -1,5 +1,6 @@
 package BaekJoon;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class P14501_3 {
@@ -43,6 +44,9 @@ public class P14501_3 {
 	            }
 	        }
 	    }
+	    System.out.println(Arrays.toString(t));
+	    System.out.println(Arrays.toString(p));
+	    System.out.println(Arrays.toString(dp));
 	    System.out.println(max);
 	}
 
