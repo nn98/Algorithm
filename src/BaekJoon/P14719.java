@@ -12,6 +12,8 @@ public class P14719 {
 		for(;i<y;i++)for(j=s.nextInt();j-->0;a[j][i]=true);
 		for(boolean[]b:a)System.out.println(Arrays.toString(b));
 		for(i=0;i<x;i++) {
+			c=false;
+			v=0;
 			for(j=0;j<y;j++) {
 				if(a[i][j]) {
 					if(c) {
