@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class P14501_2 {
 	static int n,a[],b[],h[],i;
-	public static void main(String[] args) {
+	public static void main(String[] args){
 		Scanner s=new Scanner(System.in);
 		n=s.nextInt();
 		a=new int[n];
