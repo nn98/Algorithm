@@ -27,6 +27,6 @@ public class P14501_2 {
 		for(;i<n;a[i]=s.nextInt(),b[i++]=s.nextInt());
 		for(;i-->0;o(i));
 		System.out.print(r);
-//		System.out.println(Arrays.toString(h));
+		System.out.println(Arrays.toString(h));
 	}
 }
