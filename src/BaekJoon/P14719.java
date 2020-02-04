@@ -9,7 +9,7 @@ public class P14719 {
 		Scanner s=new Scanner(System.in);
 		int x=s.nextInt(),y=s.nextInt(),i=0,j;
 		boolean[][]a=new boolean[x][y];
-		for(;i<y;i++)for(j=s.nextInt();j-->1;a[i][j]=true);
+		for(;i<y;i++)for(j=s.nextInt();j-->1;a[j][i]=true);
 		for(boolean[]b:a)System.out.println(Arrays.toString(b));
 	}
 
