@@ -1,5 +1,6 @@
 package BaekJoon;
 
+//½Å±â
 import java.util.Arrays;
 import java.util.Scanner;
 
