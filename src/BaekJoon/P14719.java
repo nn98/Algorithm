@@ -10,6 +10,7 @@ public class P14719 {
 		int x=s.nextInt(),y=s.nextInt(),i=0,j,v=0,r=0;
 		boolean c=false,a[][]=new boolean[x][y];
 		for(;i<y;i++)for(j=s.nextInt();j-->0;a[j][i]=true);
+//		for(boolean[]b:a)System.out.println(Arrays.toString(b));
 		for(i=0;i<x;i++) {
 			for(j=0;j<y;j++) {
 				if(a[i][j]) {
@@ -27,7 +28,6 @@ public class P14719 {
 			}
 		}
 		System.out.print(r);
-//		for(boolean[]b:a)System.out.println(Arrays.toString(b));
 	}
 
 }
