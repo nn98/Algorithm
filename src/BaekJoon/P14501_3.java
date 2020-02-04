@@ -31,5 +31,4 @@ public class P14501_3 {
 //		}
 		System.out.print(r);
 	}
-
 }
