@@ -11,7 +11,7 @@ public class P14501_2 {
 		else {
 			int v=0,X=x;
 			x+=a[x];
-			for(;x<n;x++) {
+			for(;x<=n;x++) {
 				v=v>h[x]?v:h[x];
 			}
 			h[X]=v+b[X];
