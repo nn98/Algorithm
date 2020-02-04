@@ -20,7 +20,10 @@ public class P14501_3 {
 	 
 	        dp[i] = p[i];
 	    }
-	 
+
+	    System.out.println(Arrays.toString(t));
+	    System.out.println(Arrays.toString(p));
+	    System.out.println(Arrays.toString(dp));
 	    // dp[n] = n일때까지 얻은 수익
 	 
 	    for (int i = 2; i <= n; i++) {
