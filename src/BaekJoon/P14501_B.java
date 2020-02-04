@@ -1,5 +1,8 @@
 package BaekJoon;
 
+import java.util.Arrays;
+import java.util.Scanner;
+
 public class P14501_B {
 	static int[] d = new int[21];
 	public static void main(String[] args) {
@@ -10,6 +13,7 @@ public class P14501_B {
 			int p = sc.nextInt();
 			d[i]=Math.max(d[i-1], d[i]);
 			d[i+t-1] = Math.max(d[i+t-1], d[i-1]+p);
+			System.out.println(Arrays.toString(d));
 		}
 		System.out.print(d[n]);
 	}
