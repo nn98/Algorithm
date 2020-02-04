@@ -9,7 +9,7 @@ public class P14891 {
 	static boolean[]h;
 	static int i,r,j=1;
 	static void o(int t,int c) {
-		System.out.println(t);
+//		System.out.println(t);
 		h[t]=true;
 		if(c<0) {
 			if(t>0)
@@ -36,10 +36,10 @@ public class P14891 {
 		for(i=s.nextInt();i-->0;) {
 			h=new boolean[4];
 			o(s.nextInt()-1,s.nextInt());
-			for(String[]b:a)System.out.println(Arrays.toString(b));
+//			for(String[]b:a)System.out.println(Arrays.toString(b));
 		}
 		for(;++i<4;j*=2) {
-			System.out.println(a[i][0]);
+//			System.out.println(a[i][0]);
 			if(a[i][0].equals("1"))r+=j;
 		}
 		System.out.print(r);
