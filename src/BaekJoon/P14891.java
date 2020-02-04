@@ -9,6 +9,7 @@ public class P14891 {
 	static boolean[]h;
 	static int i=0,j;
 	static void o(int t,int c) {
+		System.out.println(t);
 		h[t]=true;
 		if(c<0) {
 			if(t>0)
