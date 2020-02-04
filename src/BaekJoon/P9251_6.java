@@ -13,6 +13,7 @@ public class P9251_6 {
 				c[i][j]=Math.max(c[i-1][j-1],Math.max(c[i-1][j],c[i][j-1]))+a.charAt(i-1)==b.charAt(j-1)?1:0;
 			}
 		}
-		System.out.print(c[i][j]);
+		
+		System.out.print(c[i-1][j-1]);
 	}
 }
