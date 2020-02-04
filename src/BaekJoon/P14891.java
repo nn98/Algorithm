@@ -34,7 +34,7 @@ public class P14891 {
 		for(;i<4;a[i++]=s.next().split(""));
 		for(i=s.nextInt();i-->0;) {
 			h=new boolean[4];
-			o(s.nextInt(),s.nextInt());
+			o(s.nextInt()-1,s.nextInt());
 			for(String[]b:a)System.out.println(Arrays.toString(b));
 		}
 	}
