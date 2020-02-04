@@ -1,10 +1,7 @@
 package BaekJoon;
 
-import java.util.Arrays;
 import java.util.Scanner;
-
 public class P14719 {
-
 	public static void main(String[] args) {
 		Scanner s=new Scanner(System.in);
 		int x=s.nextInt(),y=s.nextInt(),i=0,j,v=0,r=0;
