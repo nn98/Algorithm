@@ -14,7 +14,7 @@ public class P14501_2 {
 			for(;x<n;x++) {
 				v=v>h[x]?v:h[x];
 			}
-			h[X]=v;
+			h[X]=v+b[X];
 		}
 	}
 	public static void main(String[] args){
