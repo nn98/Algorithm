@@ -1,5 +1,6 @@
 package BaekJoon;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 //https://mygumi.tistory.com/151
@@ -14,6 +15,9 @@ public class P14501_3 {
 			for(j=0;++j<i;)
 				if(i-j>=a[j])
 					h[i]=Math.max(b[i]+h[j],h[i]);
+		System.out.println(Arrays.toString(a));
+		System.out.println(Arrays.toString(b));
+		System.out.println(Arrays.toString(h));
 		for(i=0;i++<n;)
 			if(n+1<i+a[i])
 				r=r>h[i]?r:h[i];
