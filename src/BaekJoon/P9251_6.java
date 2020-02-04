@@ -1,5 +1,6 @@
 package BaekJoon;
 
+//https://118k.tistory.com/483
 import java.util.Scanner;
 
 public class P9251_6 {
