@@ -9,8 +9,8 @@ public class P9251_6 {
 		Scanner s=new Scanner(System.in);
 		String a=s.next(),b=s.next();
 		int i=1,j=1,c[][]=new int[10][10];
-		for(;i<a.length();i++) {
-			for(j=1;j<b.length();j++) {
+		for(;i<=a.length();i++) {
+			for(j=1;j<=b.length();j++) {
 //				System.out.print(c[i-1][j-1]+" ");
 //				System.out.print(c[i-1][j]+" ");
 //				System.out.print(c[i][j-1]+" ");
