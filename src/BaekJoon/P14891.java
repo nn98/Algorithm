@@ -7,7 +7,7 @@ public class P14891 {
 
 	static String[][]a=new String[4][];
 	static boolean[]h;
-	static int i=0,j;
+	static int i,r,j=1;
 	static void o(int t,int c) {
 		System.out.println(t);
 		h[t]=true;
@@ -38,5 +38,7 @@ public class P14891 {
 			o(s.nextInt()-1,s.nextInt());
 			for(String[]b:a)System.out.println(Arrays.toString(b));
 		}
+		for(;i<4;j*=2)if(a[i++][0].equals("1"))r+=j;
+		System.out.print(r);
 	}
 }
