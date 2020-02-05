@@ -1,5 +1,6 @@
 package BaekJoon;
-
+//case > 1 1 1 1 1..
+//data type range
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
