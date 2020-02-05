@@ -7,7 +7,7 @@ public class P9613 {
 	public static void main(String[] args)throws Exception{
 		BufferedReader r=new BufferedReader(new InputStreamReader(System.in));
 		int n=Integer.parseInt(r.readLine()),m,v[],i,j,M;
-		long R=0;
+		long R;
 		boolean[][]a;
 		for(;n-->0;) {
 			StringTokenizer t=new StringTokenizer(r.readLine());
