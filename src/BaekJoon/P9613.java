@@ -25,7 +25,7 @@ public class P9613 {
 			for(i=0;i<M;i++) {
 				for(j=i;++j<M;) {
 					for(m=Math.min(v[i],v[j]);m>0&&!(a[i][m]&&a[j][m]);m--);
-					System.out.println(m);
+//					System.out.println(m);
 					R+=m;
 				}
 			}
