@@ -12,7 +12,7 @@ public class P5582 {
 			for(j=1;j<=b.length();j++)
 				c[i][j]=a.charAt(i-1)==b.charAt(j-1)?c[i-1][j-1]+1:Math.max(c[i-1][j],c[i][j-1]);
 		for(i=1;i<=a.length();i++)
-			for(j=1;j<b.length();j++) {
+			for(j=1;j<=b.length();j++) {
 				p=0;
 				x=i;
 				y=j;
@@ -20,6 +20,7 @@ public class P5582 {
 					p++;
 					x++;
 					y++;
+					if(x==4000||y==4000)break;
 				}
 				v=v>p?v:p;
 			}
