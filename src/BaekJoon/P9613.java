@@ -17,9 +17,9 @@ public class P9613 {
 			a=new boolean[m][];
 			v=new int[m];
 			for(;m-->0;) {
-				i=Integer.parseInt(t.nextToken());
-				a[m]=new boolean[i+1];
-				for(j=1;j<=i/2;j++)if(i%j==0)a[m][j]=a[m][i/j]=true;
+				v[m]=Integer.parseInt(t.nextToken());
+				a[m]=new boolean[v[m]+1];
+				for(j=1;j<=v[m]/2;j++)if(v[m]%j==0)a[m][j]=a[m][v[m]/j]=true;
 			}
 			for(boolean[]X:a)System.out.println(Arrays.toString(X));
 		}
