@@ -20,6 +20,7 @@ public class P9613 {
 			for(;m-->0;) {
 				v[m]=Integer.parseInt(t.nextToken());
 				a[m]=new boolean[v[m]+1];
+				a[m][1]=true;
 				for(j=1;j<=v[m]/2;j++)if(v[m]%j==0)a[m][j]=a[m][v[m]/j]=true;
 			}
 			for(i=0;i<M;i++) {
