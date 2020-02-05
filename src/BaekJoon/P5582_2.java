@@ -14,6 +14,7 @@ public class P5582_2 {
 					c[i+1][j+1]=c[i][j]+1;
 					r=Math.max(r,c[i+1][j+1]);
 				}
+		System.out.print(r);
 	}
 
 }
