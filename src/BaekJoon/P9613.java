@@ -24,5 +24,4 @@ public class P9613 {
 			for(boolean[]X:a)System.out.println(Arrays.toString(X));
 		}
 	}
-
 }
