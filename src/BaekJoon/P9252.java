@@ -1,5 +1,7 @@
 package BaekJoon;
 
+import java.util.Scanner;
+
 public class P9252 {
 	public static void main(String[]z){
 		Scanner s=new Scanner(System.in);
