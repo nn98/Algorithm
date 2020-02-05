@@ -15,10 +15,10 @@ public class P9252 {
 			if(c[x][y]==c[x][y-1])y--;
 			else if(c[x][y]==c[x-1][y])x--;
 			else if(c[x][y]-1==c[x-1][y-1]) {
-				r+=--x;
+				r+=a.charAt(--x);
 				y--;
 			}
 		}
-		System.out.print(c[i][j]+r);
+		System.out.print(c[i][j]+"\n"+r);
 	}
 }
