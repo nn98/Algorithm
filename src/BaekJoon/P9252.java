@@ -19,6 +19,6 @@ public class P9252 {
 				y--;
 			}
 		}
-		System.out.print(c[i][j]+"\n"+r);
+		System.out.print(c[i][j]+"\n"+new StringBuffer(r).reverse());
 	}
 }
