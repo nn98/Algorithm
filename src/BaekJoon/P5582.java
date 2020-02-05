@@ -23,7 +23,7 @@ public class P5582 {
 				}
 				v=v>p?v:p;
 			}
-		for(int[]o:c)System.out.println(Arrays.toString(o));
+//		for(int[]o:c)System.out.println(Arrays.toString(o));
 		System.out.print(v);
 	}
 }
