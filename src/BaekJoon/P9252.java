@@ -1,5 +1,5 @@
 package BaekJoon;
-
+//https://www.crocus.co.kr/787
 import java.util.Scanner;
 public class P9252 {
 	public static void main(String[]z){
