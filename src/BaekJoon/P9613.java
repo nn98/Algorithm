@@ -29,7 +29,7 @@ public class P9613 {
 					R+=m;
 				}
 			}
-			System.out.println(" "+R);
+			System.out.println(R);
 //			for(boolean[]X:a)System.out.println(Arrays.toString(X));
 			
 		}
