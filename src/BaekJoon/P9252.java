@@ -8,6 +8,7 @@ public class P9252 {
 	static StringBuffer f;
 	static void o(int i,int j) {
 		f.append(0);
+		System.out.println(f);
 	}
 	public static void main(String[]z){
 		Scanner s=new Scanner(System.in);
