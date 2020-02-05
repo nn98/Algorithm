@@ -16,5 +16,4 @@ public class P5582_2 {
 				}
 		System.out.print(r);
 	}
-
 }
