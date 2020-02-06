@@ -30,7 +30,6 @@ public class P9613 {
 			}
 			System.out.println(R);
 //			for(boolean[]X:a)System.out.println(Arrays.toString(X));
-			
 		}
 	}
 }
