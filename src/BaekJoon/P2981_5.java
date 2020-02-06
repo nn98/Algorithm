@@ -1,6 +1,7 @@
 package BaekJoon;
 //https://jennylee4517.github.io/ps/2981-%EA%B2%80%EB%AC%B8/
 //Ã¤Á¡ 86ÆÛ¿¡¼­ ½Ã¹ß ¹» ÃÄ ÇÏ´Â °Çµ¥ °³ Á¿
+//¸¸µç»õ³¢ ´ë°¡¸® ±úµµ ¹¿ÁË
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.InputStreamReader;
