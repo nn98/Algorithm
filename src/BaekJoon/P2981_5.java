@@ -27,6 +27,9 @@ public class P2981_5 {
 		for(i=1;i<n;a[i-1]=a[i]-a[i++-1]);
 		System.out.println(Arrays.toString(a));
 		for(i=1;i<n-1;c=G(a[i-1],a[i]),v=v>c?v:c,i++);
+		boolean[]b=new boolean[v+1];
+		for(i=0;i++<v/2;b[i]=b[v/i]=v%i==0);
+		System.out.println(Arrays.toString(b));
 		System.out.println(v);
 	}
 }
