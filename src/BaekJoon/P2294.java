@@ -2,8 +2,8 @@ package BaekJoon;
 
 import java.util.Arrays;
 import java.util.Scanner;
-public class P2294 {
-	public static void main(String[] args) {
+public class P2294{
+	public static void main(String[] args){
 		Scanner s=new Scanner(System.in);
 		int n=s.nextInt(),m=s.nextInt(),a[]=new int[n],b[]=new int[m+1],i=0,j;
 		for(;i<n;a[i++]=s.nextInt());
