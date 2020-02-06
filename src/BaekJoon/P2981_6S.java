@@ -1,6 +1,7 @@
 package BaekJoon;
 //?????
 //출력을 병신같이 하지 않도록 주의하자!^^ㅆㅃㄹ
+//조건 좆같네
 import java.util.Arrays;
 import java.util.Scanner;
 public class P2981_6S {
