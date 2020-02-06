@@ -14,7 +14,7 @@ public class P11728 {
 			if(i==n)r.append(b[j++]+" ");
 			else if(j==m)r.append(a[i++]+" ");
 			else {
-				r.append(a[i]<b[j]?a[i++]:b[j++]+" ");
+				r.append((a[i]<b[j]?a[i++]:b[j++])+" ");
 			}
 		}
 		System.out.print(r);
