@@ -1,5 +1,4 @@
 package BaekJoon;
-
 import java.util.*;
 public class P2294{
 	public static void main(String[] args){
