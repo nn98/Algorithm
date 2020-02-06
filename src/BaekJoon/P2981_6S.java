@@ -16,6 +16,6 @@ public class P2981_6S {
 		Arrays.sort(a);
 		m=a[1]-a[0];
 		for(i=2;i<n;m=G(m,a[i]-a[i++-1]));
-		for(i=2;i<=m;System.out.print(m%i==0?i+" ":""));
+		for(i=2;i<=m;i++)if(m%i==0)System.out.print(i+" ");
 	}
 }
