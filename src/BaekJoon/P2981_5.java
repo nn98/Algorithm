@@ -20,12 +20,17 @@ public class P2981_5 {
 			v=G(a[0],a[1]);
 			for(i=2;i<n-1;v=G(v,a[i++]));
 		}
-		for(i=2;i<=v;w.write(v%i==0?i+" ":""),i++);
-		//		boolean[]b=new boolean[v+1];
-		//		for(i=0;i++<v/2;b[i]=b[v/i]=v%i==0);
-		//		System.out.println(Arrays.toString(b));
-		//		System.out.println(v);
-		//		for(i=1;++i<=v;w.write(b[i]?i+" ":""));
+		
+//		시발 약수
+//		단순반복	시간초과
+//		for(i=2;i<=v;w.write(v%i==0?i+" ":""),i++);
+		
+//		배열
+				boolean[]b=new boolean[v+1];
+				for(i=0;i++<v/2;b[i]=b[v/i]=v%i==0);
+				for(i=1;++i<=v;w.write(b[i]?i+" ":""));
+				//		System.out.println(Arrays.toString(b));
+				//		System.out.println(v);
 		w.flush();
 	}
 }
