@@ -7,7 +7,6 @@ public class P2294 {
 		Scanner s=new Scanner(System.in);
 		int n=s.nextInt(),m=s.nextInt(),a[]=new int[n],b[]=new int[m+1],i=0,j;
 		for(;i<n;a[i++]=s.nextInt());
-//		Arrays.sort(a);
 		Arrays.fill(b,100001);
 		b[0]=0;
 		for(i=0;i<n;i++)
