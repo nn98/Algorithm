@@ -11,7 +11,7 @@ public class P11728 {
 		for(;j<m;b[j++]=s.nextInt());
 		System.out.println(Arrays.toString(a));
 		i=j=0;
-		while(i<n&&j<m) {
+		while(i<n||j<m) {
 			if(i==n)r=b[j++];
 			else if(j==m)r=a[i++];
 			else {
