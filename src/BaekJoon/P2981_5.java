@@ -20,7 +20,7 @@ public class P2981_5 {
 	}
 	public static void main(String[] args)throws Exception{
 		BufferedReader r=new BufferedReader(new InputStreamReader(System.in));
-		//		BufferedWriter w=new BufferedWriter(new OutputStreamWriter(System.out));
+				BufferedWriter w=new BufferedWriter(new OutputStreamWriter(System.out));
 		int n=Integer.parseInt(r.readLine()),a[]=new int[n],i=0,c,v=0;
 		for(;i<n;a[i++]=Integer.parseInt(r.readLine()));
 		Arrays.sort(a);
@@ -35,6 +35,7 @@ public class P2981_5 {
 		for(i=0;i++<v/2;b[i]=b[v/i]=v%i==0);
 		//		System.out.println(Arrays.toString(b));
 		//		System.out.println(v);
-		for(i=1;++i<=v;System.out.print(b[i]?i+" ":""));
+		for(i=1;++i<=v;w.write(b[i]?i+" ":""));
+		w.flush();
 	}
 }
