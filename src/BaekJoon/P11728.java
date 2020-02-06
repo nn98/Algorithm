@@ -1,7 +1,7 @@
 package BaekJoon;
 
-import java.util.Scanner;
-public class P11728 {
+import java.util.*;
+public class P11728{
 	public static void main(String[] args) {
 		Scanner s=new Scanner(System.in);
 		int n=s.nextInt(),m=s.nextInt(),i=0,j=0,a[]=new int[n],b[]=new int[m];
