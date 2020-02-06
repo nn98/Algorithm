@@ -3,7 +3,6 @@ package BaekJoon;
 //출력을 병신같이 하지 않도록 주의하자!^^ㅆㅃㄹ
 import java.util.Arrays;
 import java.util.Scanner;
-
 public class P2981_6S {
 	static int G(int a,int b) {
 		if(b==0)return a;
