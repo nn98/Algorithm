@@ -5,9 +5,9 @@ import java.util.Arrays;
 public class P2981_5 {
 	static int G(int a,int b) {
 		int t=b%a;
-		while(t!=1) {
+		while(t!=0) {
 			b=a;
-			b=t;
+			a=t;
 			t=b%a;
 		}
 		return a;
