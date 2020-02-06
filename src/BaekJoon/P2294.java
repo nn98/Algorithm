@@ -16,5 +16,4 @@ public class P2294 {
 			for(j=a[i];j<=m;j++)b[j]=b[j-a[i]]+1<b[j]?b[j-a[i]]+1:b[j];
 		System.out.println(b[m]);
 	}
-
 }
