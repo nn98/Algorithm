@@ -32,6 +32,6 @@ public class P2981_5 {
 		for(i=0;i++<v/2;b[i]=b[v/i]=v%i==0);
 //		System.out.println(Arrays.toString(b));
 //		System.out.println(v);
-		for(i=1;i<=v;System.out.print(b[i]?i:""+" "));
+		for(i=0;++i<=v;System.out.print(b[i]?i:""+" "));
 	}
 }
