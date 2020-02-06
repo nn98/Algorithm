@@ -5,7 +5,7 @@ import java.util.Arrays;
 public class P2981_5 {
 	static int G(int a,int b) {
 		int t=b%a;
-		while(t!=0) {
+		while(t!=1) {
 			b=a;
 			b=t;
 			t=b%a;
