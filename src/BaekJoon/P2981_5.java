@@ -31,11 +31,13 @@ public class P2981_5 {
 			v=G(a[0],a[1]);
 			for(i=2;i<n-1;v=G(v,a[i++]));
 		}
-		boolean[]b=new boolean[v+1];
-		for(i=0;i++<v/2;b[i]=b[v/i]=v%i==0);
+		for(i=v-1;i>=2;w.write(v%i==0?i+" ":""),i--);
+//		boolean[]b=new boolean[v+1];
+//		for(i=0;i++<v/2;b[i]=b[v/i]=v%i==0);
 		//		System.out.println(Arrays.toString(b));
 		//		System.out.println(v);
-		for(i=1;++i<=v;w.write(b[i]?i+" ":""));
+//		for(i=1;++i<=v;w.write(b[i]?i+" ":""));
+		
 		w.flush();
 	}
 }
