@@ -18,6 +18,6 @@ public class P2981_5 {
 		int n=Integer.parseInt(r.readLine()),a[]=new int[n],i=0;
 		for(;i<n;a[i++]=Integer.parseInt(r.readLine()));
 		Arrays.sort(a);
-		System.out.println(G(10,24));
+		System.out.println(G(8,24));
 	}
 }
