@@ -1,7 +1,14 @@
 package BaekJoon;
 //https://jennylee4517.github.io/ps/2981-%EA%B2%80%EB%AC%B8/
-import java.io.*;
+//채점 86퍼에서 시발 뭘 쳐 하는 건데 개 좆
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.InputStreamReader;
+import java.io.OutputStreamWriter;
 import java.util.Arrays;
+import java.util.Collections;
+import java.util.LinkedList;
+import java.util.List;
 public class P2981_5 {
 	static int G(int a,int b) {
 		if(a%b==0)return b;
@@ -26,11 +33,25 @@ public class P2981_5 {
 //		for(i=2;i<=v;w.write(v%i==0?i+" ":""),i++);
 		
 //		배열
-				boolean[]b=new boolean[v+1];
-				for(i=0;i++<v/2;b[i]=b[v/i]=v%i==0);
-				for(i=1;++i<=v;w.write(b[i]?i+" ":""));
+//				boolean[]b=new boolean[v+1];
+//				for(i=0;i++<v/2;b[i]=b[v/i]=v%i==0);
+//				for(i=1;++i<=v;w.write(b[i]?i+" ":""));
 				//		System.out.println(Arrays.toString(b));
 				//		System.out.println(v);
+		
+//		리스트
+		List<Integer>l=new LinkedList();
+		l.add(v);
+		for(i=2;i<=Math.sqrt(v);i++)
+			if(v%i==0) {
+				if(i==v/i)l.add(i);
+				else {
+					l.add(i);
+					l.add(v/i);
+				}
+			}
+		Collections.sort(l);
+		for(int j:l)w.write(j+" ");
 		w.flush();
 	}
 }
