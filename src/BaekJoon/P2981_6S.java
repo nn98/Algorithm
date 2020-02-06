@@ -18,5 +18,4 @@ public class P2981_6S {
 		for(i=2;i<n;m=G(m,a[i]-a[i++-1]));
 		for(i=2;i<=m;System.out.print(m%i==0?i+" ":""));
 	}
-
 }
