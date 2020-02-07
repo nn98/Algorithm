@@ -3,7 +3,6 @@ package BaekJoon;
 import java.io.*;
 public class P1371 {
 	public static void main(String[] args)throws Exception{
-		System.out.println((int)'z');
 		BufferedReader r=new BufferedReader(new InputStreamReader(System.in));
 		String s;
 		int i,a[]=new int[26],v=0;
