@@ -16,6 +16,6 @@ public class P1371 {
 			}
 		}
 		for(i=0;i<26;i++)v=v>a[i]?v:a[i];
-		for(i=0;i<26;i++)System.out.print(a[i]==v?(char)i+'a':"");
+		for(i=0;i<26;i++)System.out.print(a[i]==v?(char)(i+97):"");
 	}
 }
