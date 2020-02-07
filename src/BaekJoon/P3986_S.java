@@ -9,7 +9,10 @@ public class P3986_S {
 		int n=s.nextInt(),r=0;
 		while(n-->0) {
 			String t=s.next();
-			while(t.contains("AA")||t.contains("BB"))t=t.replace("AA|BB","");
+			while(t.contains("AA")||t.contains("BB")) {
+				t=t.replace("AA","");
+				t=t.replace("BB","");
+			}
 			if(t.equals(""))r++;
 		}
 		System.out.print(r);
