@@ -7,7 +7,7 @@ public class P1371 {
 		String s;
 		int i,a[]=new int[26],v=0;
 		StringBuffer f=new StringBuffer();
-		while(!(s=r.readLine()).equals("")) {
+		while((s=r.readLine())!=null) {
 //			while(!(s=r.readLine()).equals("")) {
 			for(i=0;i<s.length();i++) {
 				char c=s.charAt(i);
