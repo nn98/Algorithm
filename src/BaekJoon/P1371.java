@@ -1,7 +1,7 @@
 package BaekJoon;
 
 import java.io.*;
-public class P1371 {
+public class P1371{
 	public static void main(String[] args)throws Exception{
 		BufferedReader r=new BufferedReader(new InputStreamReader(System.in));
 		String s;
