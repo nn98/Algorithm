@@ -1,5 +1,5 @@
 package BaekJoon;
-
+//OneT
 import java.io.*;
 public class P1371{
 	public static void main(String[] args)throws Exception{
