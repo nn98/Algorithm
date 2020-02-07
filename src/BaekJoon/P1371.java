@@ -4,7 +4,7 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 public class P1371 {
 	public static void main(String[] args)throws Exception{
-		System.out.println('z');
+		System.out.println((int)'z');
 		BufferedReader r=new BufferedReader(new InputStreamReader(System.in));
 		String s;
 		int i,a[]=new int[26];
