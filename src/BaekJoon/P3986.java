@@ -19,5 +19,4 @@ public class P3986 {
 		}
 		System.out.print(r);
 	}
-
 }
