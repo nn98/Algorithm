@@ -12,7 +12,7 @@ public class P1371 {
 		while(!(s=r.readLine()).equals("")) {
 			for(i=0;i<s.length();i++) {
 				char c=s.charAt(i);
-				if(c>96&&c<11);
+				if(c>96&&c<123)a[c-'a']++;
 			}
 		}
 	}
