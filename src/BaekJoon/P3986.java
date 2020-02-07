@@ -12,12 +12,14 @@ public class P3986 {
 			Stack<String>t=new Stack();
 			String[]a=s.next().split("");
 			j=a.length;
-			for(i=0;i<a.length;i++) {
+			for(i=0;i<j;i++) {
 				if(t.isEmpty()||!t.peek().equals(a[i]))t.push(a[i]);
 				else t.pop();
 			}
-			
+			r+=i==j&&t.isEmpty()?1:0;
+//			if(i==j&&t.isEmpty())r++;
 		}
+		System.out.print(r);
 	}
 
 }
