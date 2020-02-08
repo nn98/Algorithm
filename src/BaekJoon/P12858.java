@@ -21,7 +21,7 @@ public class P12858{
 			else{
 				p=a[b[1]];
 				for(;++b[1]<=b[2];p=G(p,a[b[1]]));
-//				System.out.println(p);
+				System.out.println(p);
 			}
 		}
 	}
