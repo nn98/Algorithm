@@ -11,11 +11,11 @@ public class P7806 {
 				int P=0;
 				while(m%i==0) {
 					m/=i;
-					P+=1;
+					P++;
 				}
 				if(P>0) {
 					int Q=0;
-					for(j=1;j<=n;j*=i)Q+=n/j;
+					for(j=i;j<=n;j*=i)Q+=n/j;
 					for(j=0;j<(P<Q?P:Q);j++)r*=i;
 				}
 				if(m<i)break;
