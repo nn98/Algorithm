@@ -3,7 +3,6 @@ package BaekJoon;
 import java.util.Scanner;
 
 public class P1992 {
-
 	static char[][]a;
 	static void o(int i,int j,int s) {
 		int x=i+s,y=j+s;
