@@ -20,7 +20,7 @@ public class P12858{
 			t=new StringTokenizer(r.readLine());
 			for(n=0;n<3;b[n++]=Integer.parseInt(t.nextToken())-n>0?1:0);
 			System.out.println(Arrays.toString(b));
-			if(b[0]>=0)for(;b[1]<b[2];a[b[1]++]+=b[0]);
+			if(b[0]>=0)for(;b[1]<=b[2];a[b[1]++]+=b[0]);
 			else {
 				p=a[b[1]];
 				for(;++b[1]<=b[2];p=G(p,a[b[1]]));
