@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class P1992 {
 	static char[][]a;
 	static void o(int i,int j,int s) {
-		int x=i+s,y=j+s;
+		int x=i+s,y=j+s,S=s/2;
 		char t=a[i][j];
 		boolean c=true;
 		for(;i<x&&c;i++)
@@ -14,6 +14,11 @@ public class P1992 {
 		if(c)System.out.print(t);
 		else {
 			System.out.print("(");
+			o(i,j,S);
+			o(i,j+S,S);
+			o(i+S,j,S);
+			o(i+S,j+S,S);
+			System.out.print(")");
 		}
 	}
 	public static void main(String[] args) {
