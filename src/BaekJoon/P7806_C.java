@@ -12,5 +12,4 @@ public class P7806_C {
 			m=s.nextInt();
 			
 	}
-
 }
