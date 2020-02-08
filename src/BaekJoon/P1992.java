@@ -1,7 +1,6 @@
 package BaekJoon;
 
 import java.util.Scanner;
-
 public class P1992 {
 	static char[][]a;
 	static void o(int p,int q,int s) {
