@@ -11,7 +11,7 @@ public class P1992 {
 		for(;i<x&&c;i++) {
 			for(j=q;j<y&&c;j++) {
 				c=a[i][j]==t;
-				System.out.println(i+" "+j+" "+a[i][j]);
+//				System.out.println(i+" "+j+" "+a[i][j]);
 			}
 		}
 		if(c)System.out.print(t);
