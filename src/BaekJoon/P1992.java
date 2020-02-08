@@ -1,5 +1,5 @@
 package BaekJoon;
-
+//OneT
 import java.util.Scanner;
 public class P1992 {
 	static char[][]a;
