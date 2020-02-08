@@ -4,12 +4,12 @@ import java.util.Scanner;
 
 public class P1992 {
 	static char[][]a;
-	static void o(int i,int j,int s) {
-		int x=i+s,v=j,y=j+s,S=s/2;
-		char t=a[i][j];
+	static void o(int p,int q,int s) {
+		int S=s/2,i=p,j,x=p+s,y=q+s;
+		char t=a[p][q];
 		boolean c=true;
 		for(;i<x&&c;i++) {
-			for(j=v;j<y&&c;j++) {
+			for(j=q;j<y&&c;j++) {
 				c=a[i][j]==t;
 				System.out.println(i+" "+j+" "+a[i][j]);
 			}
@@ -17,10 +17,10 @@ public class P1992 {
 		if(c)System.out.print(t);
 		else {
 			System.out.print("(");
-			o(i,j,S);
-			o(i,j+S,S);
-			o(i+S,j,S);
-			o(i+S,j+S,S);
+			o(p,q,S);
+			o(p,q+S,S);
+			o(p+S,q,S);
+			o(p+S,q+S,S);
 			System.out.print(")");
 		}
 	}
