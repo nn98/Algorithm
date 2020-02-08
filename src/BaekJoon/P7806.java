@@ -6,8 +6,7 @@ public class P7806 {
 	public static void main(String[] args) {
 		Scanner s=new Scanner(System.in);
 		while(s.hasNext()) {
-			int n=s.nextInt(),m=s.nextInt(),i=2,j;
-			long M=m,r=1;
+			int n=s.nextInt(),m=s.nextInt(),M=m,i=2,j,r=1;
 			for(;i*i<=M;i++) {
 				int P=0;
 				while(m%i==0) {
