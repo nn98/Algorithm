@@ -13,11 +13,11 @@ public class P1992 {
 				c=a[i][j]==t;
 		if(c)System.out.print(t);
 		else {
-			
+			System.out.print("(");
 		}
 	}
 	public static void main(String[] args) {
-		System.out.println((int)'1');
+//		System.out.println((int)'1');
 		Scanner s=new Scanner(System.in);
 		int n=s.nextInt(),i=0;
 		a=new char[n][];
