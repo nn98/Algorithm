@@ -8,9 +8,12 @@ public class P1992 {
 		int x=i+s,y=j+s,S=s/2;
 		char t=a[i][j];
 		boolean c=true;
-		for(;i<x&&c;i++)
-			for(;j<y&&c;j++)
+		for(;i<x&&c;i++) {
+			for(;j<y&&c;j++) {
 				c=a[i][j]==t;
+				System.out.println(i+" "+j+" "+a[i][j]);
+			}
+		}
 		if(c)System.out.print(t);
 		else {
 			System.out.print("(");
