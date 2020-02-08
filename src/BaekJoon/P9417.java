@@ -2,7 +2,7 @@ package BaekJoon;
 
 import java.util.Scanner;
 
-public class P9417 {
+public class P9417{
 	static int G(int a,int b) {
 		return b==0?a:G(b,a%b);
 	}
