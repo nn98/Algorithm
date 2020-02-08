@@ -10,9 +10,12 @@ public class P12858{
 	}
 	public static void main(String[] args)throws Exception{
 		BufferedReader r=new BufferedReader(new InputStreamReader(System.in));
-		int n=Integer.parseInt(r.readLine()),a[]=new int[n],m=Integer.parseInt(r.readLine()),b[]=new int[3],p,q;
+		int n=Integer.parseInt(r.readLine()),a[]=new int[n],m=0,b[]=new int[3],p,q;
+		StringTokenizer t=new StringTokenizer(r.readLine());
+		for(;m<n;a[m++]=Integer.parseInt(t.nextToken()));
+		m=Integer.parseInt(r.readLine());
 		for(;m-->0;) {
-			StringTokenizer t=new StringTokenizer(r.readLine());
+			t=new StringTokenizer(r.readLine());
 			for(n=0;n<3;b[n++]=Integer.parseInt(t.nextToken()))
 			if(b[0]>0)for(;b[1]<b[2];a[b[1]++]+=b[0]);
 			else {
