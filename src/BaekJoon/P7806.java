@@ -1,5 +1,6 @@
 package BaekJoon;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class P7806 {
@@ -10,7 +11,7 @@ public class P7806 {
 			int n=s.nextInt(),m=s.nextInt(),a[]=new int[1000000001],i=0;
 			boolean[]k=new boolean[1000000001];
 			for(;++i<=Math.sqrt(m);k[i]=k[m/i]=m%i==0);
+			System.out.println(Arrays.toString(k));
 		}
 	}
-
 }
