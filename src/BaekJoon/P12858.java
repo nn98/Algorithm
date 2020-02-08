@@ -1,8 +1,7 @@
 package BaekJoon;
 
 import java.io.*;
-import java.util.Arrays;
-import java.util.StringTokenizer;
+import java.util.*;
 public class P12858{
 	static int G(int a,int b){
 		return b==0?a:G(b,a%b);
