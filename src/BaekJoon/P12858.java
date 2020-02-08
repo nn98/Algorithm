@@ -7,5 +7,4 @@ public class P12858 {
 		BufferedReader r=new BufferedReader(new InputStreamReader(System.in));
 		int n=Integer.parseInt(r.readLine());
 	}
-
 }
