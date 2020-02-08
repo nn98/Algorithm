@@ -4,9 +4,8 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.Arrays;
 import java.util.StringTokenizer;
-
 public class P12858{
-	static int G(int a,int b) {
+	static int G(int a,int b){
 		return b==0?a:G(b,a%b);
 	}
 	public static void main(String[] args)throws Exception{
