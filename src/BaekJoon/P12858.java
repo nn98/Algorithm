@@ -18,8 +18,8 @@ public class P12858{
 		for(;m-->0;) {
 			System.out.println(Arrays.toString(a));
 			t=new StringTokenizer(r.readLine());
-			for(n=0;n<3;b[n++]=Integer.parseInt(t.nextToken()));
-			if(b[0]>0)for(;b[1]<b[2];a[b[1]++]+=b[0]);
+			for(n=0;n<3;b[n++]=Integer.parseInt(t.nextToken())-1);
+			if(b[0]>=0)for(;b[1]<b[2];a[b[1]++]+=b[0]);
 			else {
 				p=a[b[1]];
 				for(;++b[1]<b[2];q=G(p,a[b[1]]),p=p>q?p:q);
