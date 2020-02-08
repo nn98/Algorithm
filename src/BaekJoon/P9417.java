@@ -23,5 +23,4 @@ public class P9417 {
 			System.out.println(r);
 		}
 	}
-
 }
