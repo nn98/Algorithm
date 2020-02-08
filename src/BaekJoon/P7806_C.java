@@ -1,5 +1,5 @@
 package BaekJoon;
-
+//https://www.crocus.co.kr/980
 import java.util.Scanner;
 
 public class P7806_C {
