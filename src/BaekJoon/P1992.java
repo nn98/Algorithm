@@ -6,10 +6,11 @@ public class P1992 {
 
 	static char[][]a;
 	static void o(int i,int j,int s) {
+		int x=i+s,y=j+s;
 		char t=a[i][j];
 		boolean c=true;
-		for(;i<i+s&&c;i++)
-			for(;j<j+s&&c;j++)
+		for(;i<x&&c;i++)
+			for(;j<y&&c;j++)
 				c=a[i][j]==t;
 		if(c)System.out.print(t);
 		else {
