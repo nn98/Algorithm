@@ -8,6 +8,7 @@ public class P12858{
 	}
 	public static void main(String[] args)throws Exception{
 		BufferedReader r=new BufferedReader(new InputStreamReader(System.in));
+		BufferedWriter w=new BufferedWriter(new OutputStreamWriter(System.out));
 		int n=Integer.parseInt(r.readLine()),a[]=new int[n],m=0,b[]=new int[3],p,q;
 		StringTokenizer t=new StringTokenizer(r.readLine());
 		for(;m<n;a[m++]=Integer.parseInt(t.nextToken()));
@@ -21,8 +22,9 @@ public class P12858{
 			else{
 				p=a[b[1]];
 				for(;++b[1]<=b[2];p=G(p,a[b[1]]));
-				System.out.println(p);
+				w.write(p+"\n");
 			}
 		}
+		w.flush();
 	}
 }
