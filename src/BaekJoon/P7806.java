@@ -11,7 +11,7 @@ public class P7806 {
 				int P=0;
 				while(m%i==0) {
 					m/=i;
-					P++;
+					P+=1;
 				}
 				if(P>0) {
 					int Q=0;
