@@ -5,11 +5,11 @@ import java.util.Scanner;
 public class P1992 {
 	static char[][]a;
 	static void o(int i,int j,int s) {
-		int x=i+s,y=j+s,S=s/2;
+		int x=i+s,v=j,y=j+s,S=s/2;
 		char t=a[i][j];
 		boolean c=true;
 		for(;i<x&&c;i++) {
-			for(;j<y&&c;j++) {
+			for(j=v;j<y&&c;j++) {
 				c=a[i][j]==t;
 				System.out.println(i+" "+j+" "+a[i][j]);
 			}
