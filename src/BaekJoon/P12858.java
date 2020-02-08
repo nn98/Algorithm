@@ -1,9 +1,11 @@
 package BaekJoon;
 
-public class P12858 {
+import java.io.BufferedReader;
 
-	public static void main(String[] args) {
-		
+public class P12858 {
+	public static void main(String[] args)throws Exception{
+		BufferedReader r=new BufferedReader(new InputStreamReader(System.in));
+		int n=Integer.parseInt(r.readLine());
 	}
 
 }
