@@ -26,5 +26,4 @@ public class P11689 {
 		}
 		System.out.print(r);
 	}
-
 }
