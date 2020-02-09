@@ -1,7 +1,6 @@
 package BaekJoon;
 
 import java.util.Scanner;
-
 //https://lanph3re.github.io/backjoon1689
 public class P11689 {
 	public static void main(String[] args) {
