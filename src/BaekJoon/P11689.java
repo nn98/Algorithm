@@ -2,9 +2,8 @@ package BaekJoon;
 
 import java.util.Scanner;
 
-//Hold
+//https://lanph3re.github.io/backjoon1689
 public class P11689 {
-
 	public static void main(String[] args) {
 		Scanner s=new Scanner(System.in);
 		long n=s.nextLong(),c=-1,r=n,t,k=2,i=2;
