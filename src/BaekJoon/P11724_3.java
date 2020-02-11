@@ -5,7 +5,6 @@ import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
 public class P11724_3 {
-
 	static int n,m,r=0,x=0,y;
 	static boolean h[],a[][];
 	static void o(int i,boolean c,int f) {
