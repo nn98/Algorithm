@@ -12,10 +12,8 @@ public class P11724_4 {
 		System.out.println(i+" / "+f);
 		String[]b=f.toString().split(" ");
 		if(b[0].equals(""+i)) {
-			if(b.length>1) {
-				R++;
-				return;
-			}
+			R++;
+			return;
 		}
 		for(int j=1;j<n;j++) {
 			if(a[i][j]) {
@@ -34,11 +32,11 @@ public class P11724_4 {
 			t=new StringTokenizer(r.readLine());
 			p=Integer.parseInt(t.nextToken());
 			q=Integer.parseInt(t.nextToken());
-//			a[p][q]=a[q][p]=true;
+			//			a[p][q]=a[q][p]=true;
 			a[p][q]=true;
 		}
 		for(boolean[]b:a)System.out.println(Arrays.toString(b));
-		for(m=1;m<n;m++)o(m,new StringBuffer(m+" "));
+		for(m=1;m<n;m++)o(m,new StringBuffer());
 		System.out.println(Arrays.toString(h));
 		System.out.println(R);
 	}
