@@ -31,5 +31,7 @@ public class P11724_3 {
 			a[p][q]=a[q][p]=true;
 		}
 		for(boolean[]b:a)System.out.println(Arrays.toString(b));
+		for(m=0;m<n;m++)o(m,true,m);
+		System.out.println(r);
 	}
 }
