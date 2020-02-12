@@ -12,7 +12,7 @@ public class P11724_3 {
 		System.out.println(f+" "+i+" "+c+" "+F);
 		if(h[i])return;
 		if(!F) {
-			if(i==f) {
+			if(i!=f) {
 				R+=c?1:0;
 				return;
 			}
