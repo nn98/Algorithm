@@ -8,15 +8,18 @@ import java.util.StringTokenizer;
 public class P11724_3 {
 	static int n,m,R=0,x=0,y,p,q;
 	static boolean h[],a[][];
-	static void o(int i,boolean c,int f) {
-		System.out.println(i);
-		if(i==f) {
-			R+=c?1:0;
-			return;
+	static void o(int i,boolean c,int f,boolean F) {
+		System.out.println(i+" "+f);
+		if(!F) {
+			if(i==f) {
+				R+=c?1:0;
+				return;
+			}
 		}
+		else F=false;
 		if(h[i])c=false;
 		else h[i]=true;
-		for(int k=0;k<n;k++)if(a[i][k])o(k,c,i);
+		for(int k=0;k<n;k++)if(a[i][k])o(k,c,i,F);
 	}
 	public static void main(String[] args)throws Exception{
 		BufferedReader r=new BufferedReader(new InputStreamReader(System.in));
@@ -32,7 +35,7 @@ public class P11724_3 {
 			a[p][q]=a[q][p]=true;
 		}
 		for(boolean[]b:a)System.out.println(Arrays.toString(b));
-		for(m=0;m<n;m++)o(m,true,m);
+		for(m=0;m<n;m++)o(m,true,m,true);
 		System.out.println(Arrays.toString(h));
 		System.out.println(R);
 	}
