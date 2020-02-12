@@ -27,7 +27,7 @@ public class P11724_5 {
 		for(int j=1;j<n;j++)
 			if(a[i][j])
 				o(j,f);
-		System.out.println(Arrays.toString(b));
+		System.out.println(Arrays.toString(b)+" "+b.length);
 		if(b.length>0) {
 			boolean c=false;
 			for(String s:b) {
