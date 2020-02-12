@@ -1,8 +1,7 @@
 package BaekJoon;
-
+//WTF
 import java.util.Arrays;
 import java.util.Scanner;
-
 public class P12972 {
 
 	public static void main(String[] args) {
