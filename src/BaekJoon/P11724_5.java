@@ -10,23 +10,10 @@ public class P11724_5 {
 	static boolean h[],a[][];
 	static void o(int i,StringBuffer f) {
 		System.out.println(i+" / "+f);
-		String[]b=f.toString().split(" ");
-		if(b[0].equals(""+i)) {
-			boolean c=false;
-			for(String s:b) {
-				int j=Integer.parseInt(s);
-				c=h[j];
-				h[j]=true;
-			}
-			if(!c)System.out.println(f+"++");
-			R+=c?0:1;
-			return;
-		}
-		for(int j=1;j<n;j++) {
-			if(a[i][j]) {
-				o(j,f.append(i+" "));
-			}
-		}
+		f.append(i+" ");
+		for(int j=1;j<n;j++)
+			if(a[i][j])
+				o(j,f);
 	}
 	public static void main(String[] args)throws Exception{
 		BufferedReader r=new BufferedReader(new InputStreamReader(System.in));
