@@ -13,7 +13,7 @@ public class P11724_5 {
 		String[]b=f.toString().split(" ");
 		if(!b[0].equals(""))
 			if(b[0].equals(""+i)) {
-				System.out.println(Arrays.toString(h));
+//				System.out.println(Arrays.toString(h));
 				boolean c=false;
 				for(String s:b) {
 					int j=Integer.parseInt(s);
@@ -21,7 +21,7 @@ public class P11724_5 {
 					h[j]=true;
 				}
 				if(!c)System.out.println(f+"++");
-				System.out.println(Arrays.toString(h));
+//				System.out.println(Arrays.toString(h));
 				R+=c?0:1;
 				return;
 			}
@@ -32,7 +32,7 @@ public class P11724_5 {
 //		System.out.println(Arrays.toString(b)+" "+b.length);
 		b=f.toString().split(" ");
 		if(!b[0].equals("")) {
-			System.out.println(Arrays.toString(h));
+//			System.out.println(Arrays.toString(h));
 			boolean c=false;
 			for(String s:b) {
 				int j=Integer.parseInt(s);
@@ -40,7 +40,7 @@ public class P11724_5 {
 				h[j]=true;
 			}
 			if(!c)System.out.println(f+"++");
-			System.out.println(Arrays.toString(h));
+//			System.out.println(Arrays.toString(h));
 			R+=c?0:1;
 		}
 	}
