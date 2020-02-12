@@ -43,7 +43,7 @@ public class P11724_5 {
 			a[p][q]=true;
 		}
 		for(boolean[]b:a)System.out.println(Arrays.toString(b));
-		for(m=1;m<n;m++)o(m,new StringBuffer());
+		for(m=1;m<n;m++)if(!h[m])o(m,new StringBuffer());
 		System.out.println(Arrays.toString(h));
 		System.out.println(R);
 	}
