@@ -12,7 +12,13 @@ public class P11724_4 {
 		System.out.println(i+" / "+f);
 		String[]b=f.toString().split(" ");
 		if(b[0].equals(""+i)) {
-			R++;
+			boolean c=false;
+			for(String s:b) {
+				int j=Integer.parseInt(s);
+				c=h[j];
+				h[j]=true;
+			}
+			R+=c?0:1;
 			return;
 		}
 		for(int j=1;j<n;j++) {
