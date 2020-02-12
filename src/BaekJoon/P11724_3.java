@@ -6,11 +6,11 @@ import java.util.Arrays;
 import java.util.StringTokenizer;
 
 public class P11724_3 {
-	static int n,m,r=0,x=0,y,p,q;
+	static int n,m,R=0,x=0,y,p,q;
 	static boolean h[],a[][];
 	static void o(int i,boolean c,int f) {
 		if(i==f) {
-			r+=c?1:0;
+			R+=c?1:0;
 			return;
 		}
 		if(h[i])c=false;
@@ -32,6 +32,6 @@ public class P11724_3 {
 		}
 		for(boolean[]b:a)System.out.println(Arrays.toString(b));
 		for(m=0;m<n;m++)o(m,true,m);
-		System.out.println(r);
+		System.out.println(R);
 	}
 }
