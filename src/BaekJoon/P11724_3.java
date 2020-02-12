@@ -2,10 +2,11 @@ package BaekJoon;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
+import java.util.Arrays;
 import java.util.StringTokenizer;
 
 public class P11724_3 {
-	static int n,m,r=0,x=0,y;
+	static int n,m,r=0,x=0,y,p,q;
 	static boolean h[],a[][];
 	static void o(int i,boolean c,int f) {
 		if(i==f) {
@@ -23,6 +24,12 @@ public class P11724_3 {
 		m=Integer.parseInt(t.nextToken());
 		a=new boolean[n][n];
 		h=new boolean[n];
-		for(;m-->0;);
+		for(;m-->0;) {
+			t=new StringTokenizer(r.readLine());
+			p=Integer.parseInt(t.nextToken());
+			q=Integer.parseInt(t.nextToken());
+			a[p][q]=a[q][p]=true;
+		}
+		for(boolean[]b:a)System.out.println(Arrays.toString(b));
 	}
 }
