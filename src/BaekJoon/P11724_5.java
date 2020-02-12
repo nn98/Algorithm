@@ -9,7 +9,7 @@ public class P11724_5 {
 	static int n,m,R=0,x=0,y,p,q;
 	static boolean h[],a[][];
 	static void o(int i,StringBuffer f) {
-		System.out.println(i+" / "+f);
+//		System.out.println(i+" / "+f);
 		String[]b=f.toString().split(" ");
 		if(!b[0].equals(""))
 			if(b[0].equals(""+i)) {
@@ -20,7 +20,7 @@ public class P11724_5 {
 					c=c?c:h[j];
 					h[j]=true;
 				}
-				if(!c)System.out.println(f+"++");
+//				if(!c)System.out.println(f+"++");
 //				System.out.println(Arrays.toString(h));
 				R+=c?0:1;
 				return;
@@ -39,7 +39,7 @@ public class P11724_5 {
 				c=h[j];
 				h[j]=true;
 			}
-			if(!c)System.out.println(f+"++");
+//			if(!c)System.out.println(f+"++");
 //			System.out.println(Arrays.toString(h));
 			R+=c?0:1;
 		}
@@ -58,9 +58,9 @@ public class P11724_5 {
 			//			a[p][q]=a[q][p]=true;
 			a[p][q]=true;
 		}
-		for(boolean[]b:a)System.out.println(Arrays.toString(b));
+//		for(boolean[]b:a)System.out.println(Arrays.toString(b));
 		for(m=1;m<n;m++)if(!h[m])o(m,new StringBuffer());
-		System.out.println(Arrays.toString(h));
+//		System.out.println(Arrays.toString(h));
 		System.out.println(R);
 	}
 }
