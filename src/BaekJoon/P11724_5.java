@@ -17,7 +17,7 @@ public class P11724_5 {
 				boolean c=false;
 				for(String s:b) {
 					int j=Integer.parseInt(s);
-					c=h[j];
+					c=c?c:h[j];
 					h[j]=true;
 				}
 				if(!c)System.out.println(f+"++");
