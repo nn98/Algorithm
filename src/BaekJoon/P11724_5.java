@@ -30,6 +30,7 @@ public class P11724_5 {
 			if(a[i][j])
 				o(j,f);
 //		System.out.println(Arrays.toString(b)+" "+b.length);
+		b=f.toString().split(" ");
 		if(!b[0].equals("")) {
 			System.out.println(Arrays.toString(h));
 			boolean c=false;
