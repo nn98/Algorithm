@@ -7,7 +7,7 @@ import java.util.StringTokenizer;
 
 public class P11724_3 {
 	static int n,m,R=0,x=0,y,p,q;
-	static boolean h[],a[][];
+	static boolean h[][],a[][];
 	static void o(int i,boolean c,int f,boolean F) {
 		System.out.println(i+" "+f);
 		if(!F) {
@@ -17,9 +17,12 @@ public class P11724_3 {
 			}
 		}
 		else F=false;
-		if(h[i])c=false;
-		else h[i]=true;
-		for(int k=0;k<n;k++)if(a[i][k])o(k,c,i,F);
+//		if(h[i])c=false;
+//		else h[i]=true;
+		for(int k=0;k<n;k++)if(a[i][k])if(!h[i][k]) {
+			h[i][k]=true;
+			o(k,c,i,F);
+		}
 	}
 	public static void main(String[] args)throws Exception{
 		BufferedReader r=new BufferedReader(new InputStreamReader(System.in));
@@ -27,7 +30,7 @@ public class P11724_3 {
 		n=Integer.parseInt(t.nextToken());
 		m=Integer.parseInt(t.nextToken());
 		a=new boolean[n][n];
-		h=new boolean[n];
+		h=new boolean[n][n];
 		for(;m-->0;) {
 			t=new StringTokenizer(r.readLine());
 			p=Integer.parseInt(t.nextToken())-1;
