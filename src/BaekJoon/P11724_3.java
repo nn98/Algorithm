@@ -26,8 +26,8 @@ public class P11724_3 {
 		h=new boolean[n];
 		for(;m-->0;) {
 			t=new StringTokenizer(r.readLine());
-			p=Integer.parseInt(t.nextToken());
-			q=Integer.parseInt(t.nextToken());
+			p=Integer.parseInt(t.nextToken())-1;
+			q=Integer.parseInt(t.nextToken())-1;
 			a[p][q]=a[q][p]=true;
 		}
 		for(boolean[]b:a)System.out.println(Arrays.toString(b));
