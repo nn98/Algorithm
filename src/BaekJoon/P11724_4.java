@@ -8,21 +8,20 @@ import java.util.StringTokenizer;
 public class P11724_4 {
 	static int n,m,R=0,x=0,y,p,q;
 	static boolean h[],a[][];
-	static void o(int i,boolean c,int f,boolean F) {
-		System.out.println(f+" "+i+" "+c+" "+F);
-		if(h[i])return;
-		if(!F) {
-			if(i!=f) {
-				R+=c?1:0;
+	static void o(int i,StringBuffer f) {
+		System.out.println(i+" "+f);
+		String[]b=f.toString().split(" ");
+		if(b[0].equals(""+i)) {
+			if(b.length>1) {
+				R++;
 				return;
 			}
 		}
-		else F=false;
-		if(h[i])c=false;
-		else h[i]=true;
-		for(int k=0;k<n;k++)if(a[i][k])
-			o(k,c,i,F);
-		
+		for(int j=1;j<n;j++) {
+			if(a[i][j]) {
+				o(j,f.append(i+" "));
+			}
+		}
 	}
 	public static void main(String[] args)throws Exception{
 		BufferedReader r=new BufferedReader(new InputStreamReader(System.in));
@@ -39,7 +38,7 @@ public class P11724_4 {
 			a[p][q]=true;
 		}
 		for(boolean[]b:a)System.out.println(Arrays.toString(b));
-		for(m=1;m<n;m++)o(m,true,m,true);
+		for(m=1;m<n;m++)o(m,new StringBuffer(m+" "));
 		System.out.println(Arrays.toString(h));
 		System.out.println(R);
 	}
