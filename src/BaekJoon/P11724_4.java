@@ -9,7 +9,7 @@ public class P11724_4 {
 	static int n,m,R=0,x=0,y,p,q;
 	static boolean h[],a[][];
 	static void o(int i,StringBuffer f) {
-		System.out.println(i+" "+f);
+		System.out.println(i+" / "+f);
 		String[]b=f.toString().split(" ");
 		if(b[0].equals(""+i)) {
 			if(b.length>1) {
