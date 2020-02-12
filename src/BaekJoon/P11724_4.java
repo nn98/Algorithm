@@ -18,6 +18,7 @@ public class P11724_4 {
 				c=h[j];
 				h[j]=true;
 			}
+			if(!c)System.out.println(f+"++");
 			R+=c?0:1;
 			return;
 		}
