@@ -11,7 +11,7 @@ public class P11724_5 {
 	static void o(int i,StringBuffer f) {
 		System.out.println(i+" / "+f);
 		String[]b=f.toString().split(" ");
-		if(b.length>0)
+		if(!b[0].equals(""))
 			if(b[0].equals(""+i)) {
 				boolean c=false;
 				for(String s:b) {
@@ -28,7 +28,7 @@ public class P11724_5 {
 			if(a[i][j])
 				o(j,f);
 		System.out.println(Arrays.toString(b)+" "+b.length);
-		if(b.length>0) {
+		if(!b[0].equals("")) {
 			boolean c=false;
 			for(String s:b) {
 				int j=Integer.parseInt(s);
