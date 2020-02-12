@@ -9,7 +9,7 @@ public class P11724_3 {
 	static int n,m,R=0,x=0,y,p,q;
 	static boolean h[][],a[][];
 	static void o(int i,boolean c,int f,boolean F) {
-		System.out.println(i+" "+f);
+		System.out.println(i+" "+f+" "+c+" "+F);
 		if(!F) {
 			if(i==f) {
 				R+=c?1:0;
