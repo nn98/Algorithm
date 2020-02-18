@@ -12,5 +12,4 @@ public class P12972 {
 //		for(;i<n;i++)for(j=0;j<n;a[i][j++]=s.nextInt());
 		for(int[]b:a)System.out.println(Arrays.toString(b));
 	}
-
 }
