@@ -20,7 +20,7 @@ public class P12972 {
 					t=null;
 				} else {
 					r.add(t);
-					t=null;
+					t=I;
 				}
 			}
 		}
