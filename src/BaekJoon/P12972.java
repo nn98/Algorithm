@@ -24,6 +24,7 @@ public class P12972 {
 				}
 			}
 		}
+		if(t!=null)r.add(t);
 		System.out.println(l);
 		System.out.println(r);
 //		for(;i<n;i++)for(j=0;j<n;a[i][j++]=s.nextInt());
