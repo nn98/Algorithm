@@ -18,6 +18,7 @@ public class P16503_2 {
 			c=p/q;
 			break;
 		}
+		System.out.println(p+" "+q+" "+c);
 		return c;
 	}
 	public static void main(String[] args) {
