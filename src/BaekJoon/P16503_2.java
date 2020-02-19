@@ -7,12 +7,16 @@ public class P16503_2 {
 		switch(b[c]) {
 		case "+":
 			c=p+q;
+			break;
 		case "-":
 			c=p-q;
+			break;
 		case "*":
 			c=p*q;
+			break;
 		case "/":
 			c=p/q;
+			break;
 		}
 		return c;
 	}
