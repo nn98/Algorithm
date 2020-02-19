@@ -6,5 +6,4 @@ public class P3053 {
 		double n=new java.util.Scanner(System.in).nextInt();
 		System.out.printf("%.6f\n%.6f",Math.PI*n,2*n*n);
 	}
-
 }
