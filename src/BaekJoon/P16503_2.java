@@ -23,5 +23,7 @@ public class P16503_2 {
 			i++;
 		}
 		i=o(a[0],o(a[1],a[2],1),0);
+		j=o(a[2],o(a[1],a[0],0),1);
+		System.out.println(i<j?i:j+"\n"+(i<j?j:i));
 	}
 }
