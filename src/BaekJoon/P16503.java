@@ -12,12 +12,16 @@ public class P16503 {
 			switch(a[i]) {
 			case "+":
 				q[j]=Integer.parseInt(a[k])+Integer.parseInt(a[k+2]);
+				break;
 			case "-":
 				q[j]=Integer.parseInt(a[k])-Integer.parseInt(a[k+2]);
+				break;
 			case "*":
 				q[j]=Integer.parseInt(a[k])*Integer.parseInt(a[k+2]);
+				break;
 			case "/":
 				q[j]=Integer.parseInt(a[k])/Integer.parseInt(a[k+2]);
+				break;
 			}
 		System.out.println(Arrays.toString(q));
 	}
