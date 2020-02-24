@@ -18,7 +18,7 @@ public class P2178 {
 			P=p+X[k];
 			Q=q+Y[k];
 			if(a[P][Q]==49)
-				if(h[P][Q]>c)
+				if((h[P][Q]>c)||(h[P][Q]==0))
 					o(P,Q,c+1);
 		}
 	}
