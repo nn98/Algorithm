@@ -22,7 +22,7 @@ public class P1004 {
 				x=e*e+f*f;
 				r+=m>b[2]&&x>b[2]?1:0;
 			}
-			System.out.println(r);
+			System.out.println(r-1);
 		}
 	}
 
