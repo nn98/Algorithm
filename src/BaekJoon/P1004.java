@@ -1,9 +1,7 @@
 package BaekJoon;
 
 import java.util.Scanner;
-
 public class P1004 {
-
 	public static void main(String[] args) {
 		Scanner s=new Scanner(System.in);
 		int n=s.nextInt(),m,x,a[]=new int[4],i,j,b[]=new int[3],c,d,e,f,r;
