@@ -19,5 +19,4 @@ public class P2178 {
 		for(int[]k:a)
 			System.out.println(Arrays.toString(k));
 	}
-
 }
