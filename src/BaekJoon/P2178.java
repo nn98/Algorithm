@@ -7,7 +7,7 @@ public class P2178 {
 
 	static int x,y,a[][],h[][],i=0,j,r=99999,X[]= {1,0,-1,0},Y[]= {0,1,0,-1};
 	static void o(int p,int q,int c) {
-//		System.out.println(p+" "+q);
+		System.out.println(p+" "+q);
 		if(p==x&&q==y) {
 			r=r<c?r:c;
 			return;
