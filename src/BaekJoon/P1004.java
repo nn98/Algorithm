@@ -20,7 +20,7 @@ public class P1004 {
 				e=b[0]-a[2];
 				f=b[1]-a[3];
 				x=e*e+f*f;
-				r+=m>b[2]&&x>b[2]?1:0;
+				r+=m<=b[2]&&x<=b[2]?1:0;
 			}
 			System.out.println(r);
 		}
