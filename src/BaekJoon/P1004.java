@@ -11,7 +11,7 @@ public class P1004 {
 			for(i=0;i<4;a[i++]=s.nextInt());
 			i=s.nextInt();
 			for(;i-->0;) {
-				for(j=0;j<3;b[j]=s.nextInt());
+				for(j=0;j<3;b[j++]=s.nextInt());
 			}
 		}
 	}
