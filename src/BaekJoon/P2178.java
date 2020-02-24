@@ -33,9 +33,9 @@ public class P2178 {
 			for(char k:s.next().toCharArray())
 				a[i][j++]=k;
 		}
-		for(int[]k:a)
-			System.out.println(Arrays.toString(k));
+//		for(int[]k:a)
+//			System.out.println(Arrays.toString(k));
 		o(1,1,1);
-		System.out.println(r);
+		System.out.print(r);
 	}
 }
