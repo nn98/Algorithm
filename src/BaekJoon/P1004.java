@@ -25,5 +25,4 @@ public class P1004 {
 			System.out.println(r-1);
 		}
 	}
-
 }
