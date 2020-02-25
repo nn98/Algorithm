@@ -3,7 +3,6 @@ package BaekJoon;
 import java.util.Scanner;
 
 public class P7790 {
-
 	public static void main(String[] args) {
 		Scanner s=new Scanner(System.in);
 		int r=0,i;
@@ -15,5 +14,4 @@ public class P7790 {
 		}
 		System.out.println(r);
 	}
-
 }
