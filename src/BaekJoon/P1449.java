@@ -15,7 +15,7 @@ public class P1449 {
 			j=a[i];
 			if(l[j]&&r[j])continue;
 			t++;
-			for(int k=m;k-->0;j++) {
+			for(int k=m;k-->0&&j<1001;j++) {
 				l[j]=r[j]=true;
 			}
 		}
