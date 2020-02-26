@@ -12,11 +12,12 @@ public class P1138 {
 		System.out.println(Arrays.toString(a));
 		for(i=0;i<n;i++) {
 			j=0;
-			while(a[i]!=0&&b[j]==0) {
+			while(a[i]!=0){
 				if(b[j]==0)
 					a[i]--;
 				j++;
 			}
+			while(b[j]==0)j++;
 			b[j]=i+1;
 			System.out.println(Arrays.toString(b));
 		}
