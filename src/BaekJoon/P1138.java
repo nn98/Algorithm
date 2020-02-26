@@ -19,10 +19,7 @@ public class P1138 {
 			}
 			while(b[j]!=0)j++;
 			b[j]=i+1;
-			System.out.println(Arrays.toString(b));
 		}
-		System.out.println(Arrays.toString(a));
-		System.out.println(Arrays.toString(b));
 	}
 
 }
