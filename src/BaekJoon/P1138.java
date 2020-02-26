@@ -14,7 +14,7 @@ public class P1138 {
 			j=0;
 			while(a[i]!=0&&b[j]==0) {
 				if(b[j]==0)
-					a[i]-=a[i]==0?1:0;
+					a[i]--;
 				j++;
 			}
 			b[j]=i+1;
