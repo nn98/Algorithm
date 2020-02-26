@@ -17,7 +17,7 @@ public class P1138 {
 					a[i]--;
 				j++;
 			}
-			while(b[j]==0)j++;
+			while(b[j]!=0)j++;
 			b[j]=i+1;
 			System.out.println(Arrays.toString(b));
 		}
