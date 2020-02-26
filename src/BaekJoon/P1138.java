@@ -20,6 +20,6 @@ public class P1138 {
 			while(b[j]!=0)j++;
 			b[j]=i+1;
 		}
+		for(int t:b)System.out.print(t+" ");
 	}
-
 }
