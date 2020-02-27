@@ -8,6 +8,7 @@ public class P1264 {
 		Scanner s=new Scanner(System.in);
 		String in;
 		int i=0,r=0,a[],j;
+		System.out.println('e');
 		while(!"#".equals(in=s.nextLine())) {
 			a=new int[26];
 			for(;i<in.length();j=in.charAt(i++)-'a',a[j<26&&j>=0?j:1]++);
