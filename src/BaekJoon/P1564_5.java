@@ -14,5 +14,4 @@ public class P1564_5 {
 		String R=""+r;
 		System.out.println(R.substring(R.length()-5,R.length()));
 	}
-
 }
