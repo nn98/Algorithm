@@ -9,7 +9,7 @@ public class P1264_2 {
 		String in;
 		int r,i;
 		while(!"#".equals(in=s.nextLine())) {
-			for()
+			
 		}
 	}
 
