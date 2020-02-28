@@ -1,5 +1,4 @@
 package BaekJoon;
-
 import java.io.*;
 public class P1564_6{
 	public static void main(String[] args)throws Exception{
