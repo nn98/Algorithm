@@ -1,9 +1,7 @@
 package BaekJoon;
 
-import java.io.BufferedReader;
-import java.io.InputStreamReader;
-
-public class P1564_6 {
+import java.io.*;
+public class P1564_6{
 	public static void main(String[] args)throws Exception{
 		BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
 		long n=Long.parseLong(br.readLine()),m=1,r=1,d=1000000000000L;
