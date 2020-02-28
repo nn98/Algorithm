@@ -10,5 +10,4 @@ public class P1564_4 {
 		while(n>1)b=b.multiply(new BigInteger(""+n--));
 		System.out.println(b);
 	}
-
 }
