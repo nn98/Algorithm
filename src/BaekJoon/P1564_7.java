@@ -1,11 +1,10 @@
 package BaekJoon;
-public class P1564_7 {
+public class P1564_7{
 	public static void main(String[] args)throws Exception{
 		long n=new java.util.Scanner(System.in).nextLong(),m=1,r=1,d=1000000000000L;
-		while(m++<n) {
+		while(m++<n){
 			r*=m;
 			while(r%10==0)r/=10;
-//			? ¾Æ´Ï ½¬¹ú?
 			r%=d;
 		}
 		String R=""+r;
