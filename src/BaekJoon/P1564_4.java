@@ -7,7 +7,7 @@ public class P1564_4 {
 	public static void main(String[] args) {
 		int n=new java.util.Scanner(System.in).nextInt();
 		BigInteger b=new BigInteger(""+n--);
-		while(n>1)b.multiply(new BigInteger(""+n--));
+		while(n>1)b=b.multiply(new BigInteger(""+n--));
 		System.out.println(b);
 	}
 
