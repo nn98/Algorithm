@@ -10,6 +10,7 @@ public class P1564_6 {
 		while(m++<n) {
 			r*=m;
 			while(r%10==0)r/=10;
+//			? ¾Æ´Ï ½¬¹ú?
 			r%=d;
 		}
 		String R=""+r;
