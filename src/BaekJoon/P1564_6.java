@@ -10,6 +10,7 @@ public class P1564_6 {
 		while(m++<n) {
 			r*=m;
 			while(r%10==0)r/=10;
+			r%=d;
 		}
 		String R=""+r;
 		System.out.println(R.substring(R.length()-5,R.length()));
