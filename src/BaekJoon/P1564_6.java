@@ -12,6 +12,6 @@ public class P1564_6{
 			r%=d;
 		}
 		String R=""+r;
-		System.out.println(R.substring(R.length()-5,R.length()));
+		System.out.print(R.substring(R.length()-5,R.length()));
 	}
 }
