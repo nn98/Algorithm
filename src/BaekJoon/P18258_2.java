@@ -35,21 +35,22 @@ public class P18258_2 {
 					c--;
 					h=h.n;
 				}
-				System.out.println(m);
+				w.write(m+"\n");
 				break;
 			case "size":
-				System.out.println(c);
+				w.write(c+"\n");
 				break;
 			case "empty":
-				System.out.println(c==0?1:0);
+				w.write((c==0?1:0)+"\n");
 				break;
 			case "front":
-				System.out.println(h==null?-1:h.v);
+				w.write((h==null?-1:h.v)+"\n");
 				break;
 			case "back":
-				System.out.println(t==null?-1:t.v);
+				w.write((t==null?-1:t.v)+"\n");
 				break;
 			}
 		}
+		w.flush();
 	}
 }
