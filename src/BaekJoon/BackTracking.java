@@ -6,7 +6,7 @@ public class BackTracking {
 
 	static int n,m,a[],b[];
 	static void PrintA() {
-		for(int i:b)
+		for(int i:b);
 	}
 	public static void main(String[] args) {
 		Scanner s=new Scanner(System.in);
