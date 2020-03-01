@@ -6,7 +6,7 @@ public class P18258 {
 	static class Node{
 		int v;
 		Node n;
-		Node(int n){n=v;}
+		Node(int n){v=n;}
 	}
 	static Node h=null,t=null;
 	static int c;
@@ -14,8 +14,6 @@ public class P18258 {
 		Scanner s=new Scanner(System.in);
 		int n=s.nextInt(),m;
 		for(;n-->0;) {
-			System.out.println("head: "+h.v);
-			System.out.println("tail: "+t.v);
 			String g=s.next();
 			switch(g) {
 			case "push":
