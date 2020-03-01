@@ -42,7 +42,7 @@ public class P18258 {
 				System.out.println(h==null?-1:h.v);
 				break;
 			case "back":
-				System.out.println(t.v);
+				System.out.println(t==null?-1:t.v);
 				break;
 			}
 		}
