@@ -3,7 +3,6 @@ package BaekJoon;
 import java.util.Scanner;
 
 public class P18258 {
-
 	static class Node{
 		int v;
 		Node n;
