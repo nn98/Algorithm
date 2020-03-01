@@ -47,5 +47,4 @@ public class P18258 {
 			}
 		}
 	}
-
 }
