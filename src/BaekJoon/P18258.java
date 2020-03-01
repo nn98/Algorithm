@@ -36,7 +36,7 @@ public class P18258 {
 				System.out.println(c);
 				break;
 			case "empty":
-				System.out.println(c==0?0:1+"c: "+c);
+				System.out.println(c==0?1:0);
 				break;
 			case "front":
 				System.out.println(h==null?-1:h.v);
