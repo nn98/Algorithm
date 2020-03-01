@@ -45,6 +45,8 @@ public class P18258 {
 				System.out.println(t.v);
 				break;
 			}
+			System.out.println("head: "+h.v);
+			System.out.println("tail: "+t.v);
 		}
 	}
 
