@@ -23,6 +23,27 @@ public class P18258 {
 				if(t!=null)t.n=N;
 				t=N;
 				break;
+			case "pop":
+				if(h==null)m=-1;
+				else {
+					m=h.v;
+					c--;
+					h=h.n;
+				}
+				System.out.println(m);
+				break;
+			case "size":
+				System.out.println(c);
+				break;
+			case "empty":
+				System.out.println(c==0?0:1);
+				break;
+			case "front":
+				System.out.println(h==null?-1:h.v);
+				break;
+			case "back":
+				System.out.println(t.v);
+				break;
 			}
 		}
 	}
