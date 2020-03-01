@@ -34,6 +34,7 @@ public class P18258_2 {
 					m=h.v;
 					c--;
 					h=h.n;
+					if(h==null)t=null;
 				}
 				w.write(m+"\n");
 				break;
