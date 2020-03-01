@@ -14,6 +14,8 @@ public class P18258 {
 		Scanner s=new Scanner(System.in);
 		int n=s.nextInt(),m;
 		for(;n-->0;) {
+			System.out.println("head: "+h.v);
+			System.out.println("tail: "+t.v);
 			String g=s.next();
 			switch(g) {
 			case "push":
@@ -45,8 +47,6 @@ public class P18258 {
 				System.out.println(t.v);
 				break;
 			}
-			System.out.println("head: "+h.v);
-			System.out.println("tail: "+t.v);
 		}
 	}
 
