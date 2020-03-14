@@ -7,7 +7,7 @@ public class P1564_T {
       Scanner sc = new Scanner(System.in);
       
       long n = sc.nextInt();
-      String s = "1";
+      String s = "1".replace("","");
       long result;
       int countZero; // 0의 개수 구하는 변수
       
@@ -15,7 +15,6 @@ public class P1564_T {
          result = Long.parseLong(s) * i; // 팩토리얼 값 구하기
          s = Long.toString(result); // 팩토리얼 값 문자열로 만들기
          countZero = 0; // 0의 갯수 구하는 변수 초기화
-         
          for(int j = s.length() - 1; j >= 0; j--) {
             if(s.charAt(j) == '0'){ // 뒤에 연속된 0의 개수 구하기
                countZero++;
