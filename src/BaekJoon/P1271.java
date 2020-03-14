@@ -1,8 +1,7 @@
 package BaekJoon;
 
-import java.math.BigInteger;
-import java.util.Scanner;
-
+import java.math.*;
+import java.util.*;
 public class P1271 {
 	public static void main(String[] args) {
 		Scanner s=new Scanner(System.in);
