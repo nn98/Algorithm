@@ -10,5 +10,4 @@ public class P1271 {
 		BigInteger m=new BigInteger(s.next()),n=new BigInteger(s.next());
 		System.out.print(m.divide(n)+"\n"+m.mod(n));
 	}
-
 }
