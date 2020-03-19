@@ -12,7 +12,6 @@ import java.util.Scanner;
 //8 4 2 6 8
 //9 1
 public class P1009_3 {
-
 	public static void main(String[] args) {
 		Scanner s=new Scanner(System.in);
 		int n=s.nextInt(),m,i=0,k,a[][]= {
