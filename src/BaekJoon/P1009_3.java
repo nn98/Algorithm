@@ -26,7 +26,7 @@ public class P1009_3 {
 				{8,4,2,6},
 				{9,1},
 		};
-		for(;n-->0;m=s.nextInt(),k=s.nextInt()-1,System.out.println(a[m][k%a[m].length]));
+		for(;n-->0;m=s.nextInt()-1,k=s.nextInt()-1,System.out.println(a[m][k%a[m].length]));
 	}
 
 }
