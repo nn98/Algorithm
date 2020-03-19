@@ -1,7 +1,6 @@
 package BaekJoon;
 
 import java.util.Scanner;
-
 //1
 //2 4 8 6 2
 //3 9 7 1 3
