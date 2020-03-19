@@ -8,5 +8,4 @@ public class P2525 {
 		int n=s.nextInt(),m=s.nextInt()+s.nextInt();
 		System.out.print((n+m/60)%24+" "+m%60);
 	}
-
 }
