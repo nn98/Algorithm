@@ -28,5 +28,4 @@ public class P1009_3 {
 		};
 		for(;n-->0;m=s.nextInt()-1,k=s.nextInt()-1,System.out.println(a[m][k%a[m].length]));
 	}
-
 }
