@@ -14,7 +14,7 @@ import java.util.Scanner;
 public class P1009_3 {
 	public static void main(String[] args) {
 		Scanner s=new Scanner(System.in);
-		int n=s.nextInt(),m,i=0,k,a[][]= {
+		long n=s.nextLong(),m,i=0,k,a[][]= {
 				{1},
 				{2,4,8,6},
 				{3,9,7,1},
@@ -25,6 +25,6 @@ public class P1009_3 {
 				{8,4,2,6},
 				{9,1},
 		};
-		for(;n-->0;m=s.nextInt()-1,k=s.nextInt()-1,System.out.println(a[m%10][k%a[m].length]));
+		for(;n-->0;m=s.nextInt()-1,k=s.nextInt()-1,System.out.println(a[(int) (m%10)][(int) (k%a[(int) m].length)]));
 	}
 }
