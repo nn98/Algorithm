@@ -24,6 +24,7 @@ public class P1009_3 {
 				{7,9,3,1},
 				{8,4,2,6},
 				{9,1},
+				{0}
 		};
 		for(;n-->0;m=s.nextInt()-1,k=s.nextInt()-1,System.out.println(a[(int) (m%10)][(int) (k%a[(int) m].length)]));
 	}
