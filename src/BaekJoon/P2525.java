@@ -1,5 +1,4 @@
 package BaekJoon;
-
 import java.util.Scanner;
 public class P2525 {
 	public static void main(String[] args) {
