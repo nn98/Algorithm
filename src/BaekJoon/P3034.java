@@ -7,5 +7,4 @@ public class P3034 {
 		int n=s.nextInt(),m=s.nextInt(),k=s.nextInt(),p=(int)Math.sqrt(m*m+k*k);
 		for(;n-->0;System.out.println(s.nextInt()<=p?"DA":"NE"));
 	}
-
 }
