@@ -11,5 +11,4 @@ public class P2997 {
 		for(;i<3;a[i++]=s.nextInt());
 		Arrays.sort(a);
 	}
-
 }
