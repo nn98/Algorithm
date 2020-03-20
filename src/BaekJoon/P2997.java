@@ -9,6 +9,17 @@ public class P2997 {
 		Arrays.sort(a);
 		n=a[1]-a[0];
 		m=a[2]-a[1];
-		System.out.print(n==m?n:(n<m?n:m));
+		if(n==m) {
+			i=a[2]+n;
+		}
+		else {
+			if(n>m) {
+				i=a[0]+m;
+			}
+			else {
+				i=a[1]+n;
+			}
+		}
+		System.out.print(i);
 	}
 }
