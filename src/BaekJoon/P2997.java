@@ -1,6 +1,6 @@
 package BaekJoon;
 
-import java.util.*
+import java.util.*;
 public class P2997 {
 	public static void main(String[] args) {
 		Scanner s=new Scanner(System.in);
