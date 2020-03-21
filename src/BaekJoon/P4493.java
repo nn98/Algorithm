@@ -53,5 +53,4 @@ public class P4493 {
 			System.out.println(a==b?"TIE":"Player "+(a<b?2:1));
 		}
 	}
-
 }
