@@ -49,8 +49,8 @@ public class P4493 {
 					}
 					break;
 				}
-				System.out.println(a==b?"TIE":"Player "+(a<b?2:1));
 			}
+			System.out.println(a==b?"TIE":"Player "+(a<b?2:1));
 		}
 	}
 
