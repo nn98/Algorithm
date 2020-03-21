@@ -1,5 +1,4 @@
 package BaekJoon;
-
 import java.util.Scanner;
 public class P5612 {
 	public static void main(String[] args) {
