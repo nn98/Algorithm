@@ -10,5 +10,4 @@ public class P5612 {
 		for(;n-->0;r+=s.nextInt()-s.nextInt(),m=m>r?m:r);
 		System.out.println(m);
 	}
-
 }
