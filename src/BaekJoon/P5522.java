@@ -10,5 +10,4 @@ public class P5522 {
 		for(;i++<5;r+=s.nextInt());
 		System.out.print(r);
 	}
-
 }
