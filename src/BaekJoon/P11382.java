@@ -1,5 +1,4 @@
 package BaekJoon;
-
 import java.util.Scanner;
 public class P11382 {
 	public static void main(String[] args){
@@ -8,5 +7,4 @@ public class P11382 {
 		for(;i-->0;r+=s.nextLong());
 		System.out.print(r);
 	}
-
 }
