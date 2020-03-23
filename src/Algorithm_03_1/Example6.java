@@ -2,7 +2,7 @@ package Algorithm_03_1;
 
 import java.util.Arrays;
 public class Example6 {
-	// ¹è¿­ a¿¡¼­ i À§Ä¡¿Í j À§Ä¡ÀÇ °ªÀ» ¼­·Î ¹Ù²Û´Ù
+	// ï¿½è¿­ aï¿½ï¿½ï¿½ï¿½ i ï¿½ï¿½Ä¡ï¿½ï¿½ j ï¿½ï¿½Ä¡ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Ù²Û´ï¿½
 	static void swap(int[] a, int i, int j) {
 		int temp = a[i];
 		a[i] = a[j];
@@ -11,14 +11,14 @@ public class Example6 {
 	// bubble sort
 	static void bubbleSort(int[] a) {
 		for (int i = a.length - 1; i >= 1; --i) {
-			boolean ¿Ï·á = true;
+			boolean crush = true;
 			for (int j = 0; j < i; ++j) {
 				if (a[j] > a[j + 1]) {
 					swap(a, j, j + 1);
-					¿Ï·á = false;
+					crush = false;
 				}
 			}
-			if (¿Ï·á) break;
+			if (crush) break;
 		}
 	}
 	public static void main(String[] args) {
