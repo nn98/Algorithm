@@ -6,48 +6,49 @@ public class P14406 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		Scanner s=new Scanner(System.in);
-		String r=s.next();
-		switch(r) {
-		case "»ç.¿ì.³ª":
-			System.out.println("»ç¶û°ú ¿ìÁ¤À» ³ª´©ÀÚ");
-			break;
-		case "¿À.Â¡.¾î":
-			System.out.println("¿À·¡µµ·Ï Â¡±×·´°Ô ¾î¿ï¸®ÀÚ");
-			break;
-		case "»ç.ÀÌ.´Ù":
-			System.out.println("»ç¶ûÇÏÀÚ ÀÌ ¼¼»ó ´Ù ¹ÙÃÄ");
-			break;
-		case "³ª.°¡.ÀÚ":
-			System.out.println("³ª¶ó, °¡Á¤, ÀÚ½ÅÀÇ ¹ßÀüÀ» À§ÇÏ¿©");
-			break;
-		case "Àç.°³.¹ß":
-			System.out.println("Àç¹ÌÀÖ°í °³¼ºÀÖ°Ô ¹ßÀüÀûÀ¸·Î »ìÀÚ");
-			break;
-		case "¿ì.¾Æ.¹Ì":
-			System.out.println("¿ì¾ÆÇÏ°í ¾Æ¸§´Ù¿î ¹Ì·¡¸¦ À§ÇÏ¿©");
-			break;
-		case "ÀÌ.±â.ÀÚ":
-			System.out.println("ÀÌ·± ±âÈ¸¸¦ ÀÚÁÖ ¸¸µéÀÚ");
-			break;
-		case "Ã».¹Ù.Áö":
-			System.out.println("Ã»ÃáÀº ¹Ù·Î Áö±İºÎÅÍ");
-			break;
-		case "°É.°É.°É":
-			System.out.println("´õ »ç¶ûÇÒ°É, ´õ ÂüÀ»°É, ´õ Áñ±æ°É.");
-			break;
-		case "Áö.È­.ÀÚ":
-			System.out.println("Áö±İºÎÅÍ È­ÇÕÇÏÀÚ");
-			break;
-		case "Àç.°Ç.Ãà":
-			System.out.println("Àç¹ÌÀÖ°í °Ç°­ÇÏ°Ô, Ãàº¹ÇÏ¸ç »ìÀÚ");
-			break;
-		case "ÇØ.´ç.È­":
-			System.out.println("ÇØ°¡ °¥¼ö·Ï ´ç´çÇÏ°í È­·ÁÇÏ°Ô");
-			break;
-		case "ÁÖ.Àü.ÀÚ":
-			System.out.println("ÁÖÀÎÀÇ½ÄÀ» °®°í Àü¹®¼ºÀ» °®Ãß°í ÀÚ½ÅÀÖ°Ô »ìÀÚ");
-			break;
+		// TODO Auto-generated method stub
+				Scanner s=new Scanner(System.in);
+				String r=s.next();
+				switch(r) {
+				case "ì‚¬.ìš°.ë‚˜":
+					System.out.println("ì‚¬ë‘ê³¼ ìš°ì •ì„ ë‚˜ëˆ„ì");
+					break;
+				case "ì˜¤.ì§•.ì–´":
+					System.out.println("ì˜¤ë˜ë„ë¡ ì§•ê·¸ëŸ½ê²Œ ì–´ìš¸ë¦¬ì");
+					break;
+				case "ì‚¬.ì´.ë‹¤":
+					System.out.println("ì‚¬ë‘í•˜ì ì´ ì„¸ìƒ ë‹¤ ë°”ì³");
+					break;
+				case "ë‚˜.ê°€.ì":
+					System.out.println("ë‚˜ë¼, ê°€ì •, ìì‹ ì˜ ë°œì „ì„ ìœ„í•˜ì—¬");
+					break;
+				case "ì¬.ê°œ.ë°œ":
+					System.out.println("ì¬ë¯¸ìˆê³  ê°œì„±ìˆê²Œ ë°œì „ì ìœ¼ë¡œ ì‚´ì");
+					break;
+				case "ìš°.ì•„.ë¯¸":
+					System.out.println("ìš°ì•„í•˜ê³  ì•„ë¦„ë‹¤ìš´ ë¯¸ë˜ë¥¼ ìœ„í•˜ì—¬");
+					break;
+				case "ì´.ê¸°.ì":
+					System.out.println("ì´ëŸ° ê¸°íšŒë¥¼ ìì£¼ ë§Œë“¤ì");
+					break;
+				case "ì²­.ë°”.ì§€":
+					System.out.println("ì²­ì¶˜ì€ ë°”ë¡œ ì§€ê¸ˆë¶€í„°");
+					break;
+				case "ê±¸.ê±¸.ê±¸":
+					System.out.println("ë” ì‚¬ë‘í• ê±¸, ë” ì°¸ì„ê±¸, ë” ì¦ê¸¸ê±¸.");
+					break;
+				case "ì§€.í™”.ì":
+					System.out.println("ì§€ê¸ˆë¶€í„° í™”í•©í•˜ì");
+					break;
+				case "ì¬.ê±´.ì¶•":
+					System.out.println("ì¬ë¯¸ìˆê³  ê±´ê°•í•˜ê²Œ, ì¶•ë³µí•˜ë©° ì‚´ì");
+					break;
+				case "í•´.ë‹¹.í™”":
+					System.out.println("í•´ê°€ ê°ˆìˆ˜ë¡ ë‹¹ë‹¹í•˜ê³  í™”ë ¤í•˜ê²Œ");
+					break;
+				case "ì£¼.ì „.ì":
+					System.out.println("ì£¼ì¸ì˜ì‹ì„ ê°–ê³  ì „ë¬¸ì„±ì„ ê°–ì¶”ê³  ìì‹ ìˆê²Œ ì‚´ì");
+					break;
 
 		}
 	}
