@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class P2798 {
 	static int n,m,a[],r,i;
 	static void o(int x,int v,int c) {
-		System.out.println(v);
+		System.out.println(v+" "+c);
 		if(v>m||r==m)return;
 		if(x==n||c==3)r=r>v?r:v;
 		else {
