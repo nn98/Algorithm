@@ -9,8 +9,10 @@ public class P2798 {
 		if(v>m)return;
 		if(r==m)return;
 		if(x==n)r=r>v?r:v;
+		else {
 		o(x+1,v+a[x],c+1);
 		o(x+1,v,c);
+		}
 	}
 	public static void main(String[]z) {
 		Scanner s=new Scanner(System.in);
