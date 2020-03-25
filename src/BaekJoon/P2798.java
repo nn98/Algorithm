@@ -6,10 +6,8 @@ public class P2798 {
 	static int n,m,a[],r,i;
 	static void o(int x,int v,int c) {
 		System.out.println(v);
-		if(c>2)return;
-		if(v>m)return;
-		if(r==m)return;
-		if(x==n)r=r>v?r:v;
+		if(v>m||r==m)return;
+		if(x==n||c==3)r=r>v?r:v;
 		else {
 		o(x+1,v+a[x],c+1);
 		o(x+1,v,c);
