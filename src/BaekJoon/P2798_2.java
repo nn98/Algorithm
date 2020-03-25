@@ -3,7 +3,6 @@ package BaekJoon;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
-
 public class P2798_2 {
 	static int n,m,a[],r,i;
 	static void o(int x,int v,int c) {
