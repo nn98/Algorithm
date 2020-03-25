@@ -1,7 +1,6 @@
 package BaekJoon;
 
 public class P14491 {
-
 	public static void main(String[] args) {
 		int n=new java.util.Scanner(System.in).nextInt(),m=6561;
 		String r="";
@@ -12,5 +11,4 @@ public class P14491 {
 		}
 		System.out.print(r);
 	}
-
 }
