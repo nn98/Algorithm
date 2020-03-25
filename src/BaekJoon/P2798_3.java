@@ -10,7 +10,7 @@ public class P2798_3 {
 		for(;i<n;a[i++]=s.nextInt());
 		outline:for(i=0;i<n-2;i++)
 			for(j=i+1;j<n-1;j++)
-				for(k=i+2;k<n;k++) {
+				for(k=j+1;k<n;k++) {
 					u=a[i]+a[j]+a[k];
 					if(u<=m)r=r>u?r:u;
 					if(r==m)break outline;
