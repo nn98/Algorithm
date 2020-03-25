@@ -18,6 +18,7 @@ public class P2798 {
 		m=s.nextInt();
 		a=new int[n];
 		for(;i<n;a[i++]=s.nextInt());
+		o(0,0,0);
 		System.out.print(r);
 	}
 }
