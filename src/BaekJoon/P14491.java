@@ -8,7 +8,7 @@ public class P14491 {
 			n%=m;
 			m/=9;
 		}
-		for(;r.charAt(n++)=='0';)
+		for(;r.charAt(n++)=='0';);
 		System.out.print(r.substring(n));
 	}
 }
