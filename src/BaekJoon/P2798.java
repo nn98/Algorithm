@@ -5,6 +5,7 @@ import java.util.Scanner;
 public class P2798 {
 	static int n,m,a[],r,i;
 	static void o(int x,int v,int c) {
+		System.out.println(v);
 		if(c>2)return;
 		if(v>m)return;
 		if(r==m)return;
