@@ -14,7 +14,11 @@ public class P2485_C {
 	}
 	public static void main(String[] args) {
 		Scanner s=new Scanner(System.in);
-		int n=s.nextInt();
+		int n=s.nextInt(),m=n-1,i=0,a[]=new int[n],b[]=new int[m],j=0;
+		for(;i<n;j=i++) {
+			a[i]=s.nextInt();
+			if(i>0)b[j]=a[i]-a[j];
+		}
 	}
 
 }
