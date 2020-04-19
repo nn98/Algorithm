@@ -26,7 +26,10 @@ public class P2485 {
 		for(i=0;i<n;i++) {
 			if(i>0) {
 				j=a[i]-a[i-1];
-				m=m<j?m:j;
+				if(j<m)m=j;
+				else {
+					m=G(j,m);
+				}
 				l.add(j);
 			}
 		}
