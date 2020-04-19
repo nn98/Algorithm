@@ -18,6 +18,7 @@ public class P2485 {
 	}
 	
 	public static void main(String[] args) {
+		System.out.println(G(6,24));
 		Scanner s=new Scanner(System.in);
 		int n=s.nextInt(),a[]=new int[n],m=Integer.MAX_VALUE,i=0,j;
 		for(;i<n;a[i++]=s.nextInt());
@@ -26,10 +27,7 @@ public class P2485 {
 		for(i=0;i<n;i++) {
 			if(i>0) {
 				j=a[i]-a[i-1];
-				if(j<m)m=j;
-				else {
-					m=G(j,m);
-				}
+				m=G(j,m);
 				l.add(j);
 			}
 		}
