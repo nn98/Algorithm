@@ -10,9 +10,9 @@ public class P2485 {
 		Scanner s=new Scanner(System.in);
 		int n=s.nextInt(),a[]=new int[n],m=Integer.MAX_VALUE,i=0,j;
 		List<Integer>l=new ArrayList();
-		for(;i<n;) {
-			a[i++]=s.nextInt();
-			if(i>1) {
+		for(;i<n;i++) {
+			a[i]=s.nextInt();
+			if(i>0) {
 				j=a[i]-a[i-1];
 				m=m<j?m:j;
 				l.add(j);
