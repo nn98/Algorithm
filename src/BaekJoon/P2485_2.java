@@ -1,5 +1,9 @@
 package BaekJoon;
 
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
 public class P2485_2 {
 
 	static int G(int a,int b){
@@ -11,7 +15,28 @@ public class P2485_2 {
 		}
 	}
 	public static void main(String[] args) {
-		System.out.println(G(6,36));
+		Scanner s=new Scanner(System.in);
+		int n=s.nextInt(),m,i=0,j=0,k=0,v;
+		List<Integer>l=new ArrayList();
+		for(;i<n;i++) {
+			m=s.nextInt();
+			if(i>0) {
+				v=m-k;
+				l.add(v);
+				
+			}
+			k=m;
+		}
+		System.out.println(l);
+		for(int a:l) {
+			if(i++!=n)j=G(a,k);
+			k=a;
+		}
+		System.out.println(j);
+		for(int a:l) {
+			j+=a/j-1;
+		}
+		System.out.println(j);
 	}
 
 }
