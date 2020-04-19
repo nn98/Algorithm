@@ -14,11 +14,13 @@ public class P2485 {
 			a[i++]=s.nextInt();
 			if(i>1) {
 				j=a[i]-a[i-1];
-				m<j?m:j;
+				m=m<j?m:j;
 				l.add(j);
 			}
 		}
-		
+		j=0;
+		for(int v:l)j+=v>m?v/m-1:0;
+		System.out.println(j);
 	}
 
 }
