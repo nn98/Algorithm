@@ -14,7 +14,7 @@ public class P2485_C {
 	}
 	public static void main(String[] args) {
 		Scanner s=new Scanner(System.in);
-		System.out.println(G(3,17));
+		System.out.println(G(3,63));
 		int n=s.nextInt();
 	}
 
