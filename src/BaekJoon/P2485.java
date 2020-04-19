@@ -1,15 +1,19 @@
 package BaekJoon;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
 
 public class P2485 {
 
+	
+	
 	public static void main(String[] args) {
 		Scanner s=new Scanner(System.in);
 		int n=s.nextInt(),a[]=new int[n],m=Integer.MAX_VALUE,i=0,j;
 		for(;i<n;a[i++]=s.nextInt());
+		Arrays.sort(a);
 		List<Integer>l=new ArrayList();
 		for(i=0;i<n;i++) {
 			if(i>0) {
