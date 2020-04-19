@@ -6,7 +6,6 @@ import java.util.List;
 import java.util.Scanner;
 
 public class P2485 {
-
 	static int G(int a,int b) {
 		int c=a%b;
 		for(;;) {
