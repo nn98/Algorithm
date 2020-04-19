@@ -7,9 +7,18 @@ import java.util.Scanner;
 
 public class P2485 {
 
-	
+	static int G(int a,int b) {
+		int c=a%b;
+		for(;;) {
+			if(c==0)return b;
+			a=b;
+			b=c;
+			c=a%b;
+		}
+	}
 	
 	public static void main(String[] args) {
+		System.out.println(G(13,7));
 		Scanner s=new Scanner(System.in);
 		int n=s.nextInt(),a[]=new int[n],m=Integer.MAX_VALUE,i=0,j;
 		for(;i<n;a[i++]=s.nextInt());
