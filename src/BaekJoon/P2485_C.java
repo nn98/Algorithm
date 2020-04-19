@@ -22,6 +22,6 @@ public class P2485_C {
 		for(i=0;i<m-1;i++) {
 			b[i]=b[i+1]=G(b[i],b[i+1]);
 		}
-		
+		System.out.println((a[m]-a[0])/b[m-1]);
 	}
 }
