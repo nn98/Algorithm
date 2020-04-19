@@ -32,11 +32,11 @@ public class P2485_2 {
 			if(i++!=n)j=G(a,k);
 			k=a;
 		}
-		System.out.println(j);
+		n=0;
 		for(int a:l) {
-			j+=a/j-1;
+			n+=a/j-1;
 		}
-		System.out.println(j);
+		System.out.println(n);
 	}
 
 }
