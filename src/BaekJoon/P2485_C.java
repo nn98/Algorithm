@@ -19,6 +19,9 @@ public class P2485_C {
 			a[i]=s.nextInt();
 			if(i>0)b[j]=a[i]-a[j];
 		}
+		for(i=0;i<m-1;i++) {
+			b[i]=b[i+1]=G(b[i],b[i+1]);
+		}
+		
 	}
-
 }
