@@ -1,7 +1,7 @@
 package BaekJoon;
 
 import java.util.Scanner;
-
+//50퍼에서 틀렸었는데 왤까
 public class P2485_C {
 
 	static int G(int a,int b) {
