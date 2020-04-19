@@ -27,7 +27,6 @@ public class P2485_2 {
 			}
 			k=m;
 		}
-		System.out.println(l);
 		for(int a:l) {
 			if(i++!=n)j=G(a,k);
 			k=a;
