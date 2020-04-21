@@ -15,6 +15,10 @@ public class P16926 {
 		m=Integer.parseInt(t.nextToken());
 		k=Integer.parseInt(t.nextToken());
 		a=new int[n][m];
+		for(;i<n;i++) {
+			t=new StringTokenizer(r.readLine());
+			for(j=0;j<m;a[i][j++]=Integer.parseInt(t.nextToken()));
+		}
 	}
 
 }
