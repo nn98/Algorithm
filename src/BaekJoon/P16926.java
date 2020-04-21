@@ -20,5 +20,4 @@ public class P16926 {
 			for(j=0;j<m;a[i][j++]=Integer.parseInt(t.nextToken()));
 		}
 	}
-
 }
