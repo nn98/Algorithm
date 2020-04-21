@@ -19,5 +19,5 @@ public class P16926 {
 			t=new StringTokenizer(r.readLine());
 			for(j=0;j<m;a[i][j++]=Integer.parseInt(t.nextToken()));
 		}
-	}1
+	}
 }
