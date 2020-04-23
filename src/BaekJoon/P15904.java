@@ -1,6 +1,6 @@
 package BaekJoon;
 
-public class P15904 {
+public class P15904{
 	public static void main(String[] args) {
 		String s=new java.util.Scanner(System.in).nextLine(),p;
 		boolean[]a=new boolean[4];
