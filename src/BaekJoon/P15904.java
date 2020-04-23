@@ -3,7 +3,7 @@ package BaekJoon;
 public class P15904 {
 
 	public static void main(String[] args) {
-		String s=new java.util.Scanner(System.in).nextLine();
+		String s=new java.util.Scanner(System.in).nextLine(),p;
 		boolean[]a=new boolean[4];
 		int i=0,j=0;
 		for(;i<s.length();i++) {
@@ -26,6 +26,9 @@ public class P15904 {
 				break;
 			}
 		}
+		if(a[0]&&a[1]&&a[2]&&a[3])p="love";
+		else p="hate";
+		System.out.print("I "+p+" UCPC");
 	}
 
 }
