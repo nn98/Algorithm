@@ -11,6 +11,7 @@ public class P18883 {
 		int n=s.nextInt(),m=s.nextInt(),i=0;
 		BufferedWriter w=new BufferedWriter(new OutputStreamWriter(System.out));
 		for(;i<n*m;w.write(++i%m==0?i+"\n":i+" "));
+		w.flush();
 	}
 
 }
