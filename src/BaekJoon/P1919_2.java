@@ -11,7 +11,7 @@ public class P1919_2 {
 		for(;i<A;i++)
 			for(j=0;j<B;j++)
 				if(a[i].equals(b[j])&&!a[i].equals("")) {
-					r+2;
+					r+=2;
 					a[i]=b[j]="";
 				}
 		System.out.print(A+B-r);
