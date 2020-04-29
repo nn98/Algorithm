@@ -16,6 +16,8 @@ public class P1919 {
 				}
 			}
 		}
+//		문제를 잘 읽자
+//		병신아
 		System.out.println(c);
 	}
 
