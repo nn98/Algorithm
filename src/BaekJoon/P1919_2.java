@@ -16,5 +16,4 @@ public class P1919_2 {
 				}
 		System.out.print(r);
 	}
-
 }
