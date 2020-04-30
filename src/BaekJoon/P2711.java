@@ -16,5 +16,4 @@ public class P2711 {
 		}
 		System.out.print(r);
 	}
-
 }
