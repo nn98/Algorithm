@@ -11,7 +11,10 @@ public class P2711 {
 		for(;n-->0;) {
 			i=s.nextInt();
 			t=new StringBuffer(s.next());
+			t.replace(i,i,"");
+			r.append(t+"\n");
 		}
+		System.out.print(r);
 	}
 
 }
