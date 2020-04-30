@@ -6,10 +6,11 @@ public class P2711 {
 
 	public static void main(String[] args) {
 		Scanner s=new Scanner(System.in);
-		int n=s.nextInt(),i,j,k;
+		int n=s.nextInt(),i;
+		StringBuffer t,r=new StringBuffer();
 		for(;n-->0;) {
 			i=s.nextInt();
-			String t=s.next();
+			t=new StringBuffer(s.next());
 		}
 	}
 
