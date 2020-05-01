@@ -13,8 +13,8 @@ public class P1302 {
 			String a=s.next();
 			if(t.get(a)==null)t.put(a,1);
 			else t.put(a,t.get(a));
+			System.out.println(t);
 		}
-		System.out.println(t);
 	}
 
 }
