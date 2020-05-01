@@ -30,7 +30,7 @@ public class P6443 {
 	
 	public static void main(String[] args)throws Exception{
 		n=Integer.parseInt(r.readLine());
-		for(;k<n;k++) {
+		for(;k<n;k++){
 			for(int i=0;i<26;p[i++]=0);
 			a=r.readLine().toCharArray();
 			m=a.length;
