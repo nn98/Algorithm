@@ -15,7 +15,7 @@ public class P6443 {
 	static char[]p,f=new char[1001],a;
 	
 	static void D(int x,int d)throws Exception{
-		if(d==n) {
+		if(d==m) {
 			w.write(String.valueOf(f)+"\n");
 			return;
 		}
