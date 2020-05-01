@@ -6,7 +6,6 @@ import java.util.Scanner;
 import java.util.TreeMap;
 
 public class P1302 {
-
 	public static void main(String[] args) {
 		Scanner s=new Scanner(System.in);
 		int n=s.nextInt(),m;
@@ -29,5 +28,4 @@ public class P1302 {
 		}
 		System.out.println(r);
 	}
-
 }
