@@ -11,8 +11,8 @@ public class P6443 {
 
 	static BufferedReader r=new BufferedReader(new InputStreamReader(System.in));
 	static BufferedWriter w=new BufferedWriter(new OutputStreamWriter(System.out));
-	static int n,k;
-	static char[]p,f=new char[1001];
+	static int n,m,k;
+	static char[]p,f=new char[1001],a;
 	
 	static void D(int x,int d)throws Exception{
 		if(d==n) {
@@ -32,7 +32,9 @@ public class P6443 {
 		n=Integer.parseInt(r.readLine());
 		for(;k<n;k++) {
 			p=new char[26];
-			for(char j:r.readLine().toCharArray())p[j-'a']++;
+			a=r.readLine().toCharArray();
+			m=a.length;
+			for(char j:a)p[j-'a']++;
 			D(0,0);
 		}
 		w.flush();
