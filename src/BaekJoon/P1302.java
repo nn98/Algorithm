@@ -1,7 +1,9 @@
 package BaekJoon;
 
 import java.util.HashMap;
+import java.util.Iterator;
 import java.util.Scanner;
+import java.util.TreeMap;
 
 public class P1302 {
 
@@ -14,7 +16,11 @@ public class P1302 {
 			if(t.get(a)==null)t.put(a,1);
 			else t.put(a,t.get(a)+1);
 		}
-		System.out.println(t);
+		TreeMap<String,Integer>h=new TreeMap(t);
+		Iterator<String>i=h.keySet().iterator();
+		while(i.hasNext()) {
+			
+		}
 	}
 
 }
