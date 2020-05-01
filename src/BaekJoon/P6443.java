@@ -5,6 +5,8 @@ import java.io.BufferedWriter;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 
+// 백트래킹 DFS BFS
+
 public class P6443 {
 
 	static BufferedReader r=new BufferedReader(new InputStreamReader(System.in));
