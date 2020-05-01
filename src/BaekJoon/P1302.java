@@ -12,9 +12,9 @@ public class P1302 {
 		for(;n-->0;) {
 			String a=s.next();
 			if(t.get(a)==null)t.put(a,1);
-			else t.put(a,t.get(a));
-			System.out.println(t);
+			else t.put(a,t.get(a)+1);
 		}
+		System.out.println(t);
 	}
 
 }
