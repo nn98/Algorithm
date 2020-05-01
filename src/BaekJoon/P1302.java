@@ -11,6 +11,7 @@ public class P1302 {
 		Scanner s=new Scanner(System.in);
 		int n=s.nextInt(),m;
 		HashMap<String,Integer>t=new HashMap();
+		String r="",p;
 		for(;n-->0;) {
 			String a=s.next();
 			if(t.get(a)==null)t.put(a,1);
@@ -19,10 +20,14 @@ public class P1302 {
 		TreeMap<String,Integer>h=new TreeMap(t);
 		Iterator<String>i=h.keySet().iterator();
 		while(i.hasNext()) {
-			m=t.get(i.next());
-			n=n>m?n:m;
+			p=i.next();
+			m=t.get(p);
+			if(n<m) {
+				r=p;
+				n=m;
+			}
 		}
-		System.out.println(n);
+		System.out.println(t.get(r));
 	}
 
 }
