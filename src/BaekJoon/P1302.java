@@ -9,7 +9,7 @@ public class P1302 {
 
 	public static void main(String[] args) {
 		Scanner s=new Scanner(System.in);
-		int n=s.nextInt();
+		int n=s.nextInt(),m;
 		HashMap<String,Integer>t=new HashMap();
 		for(;n-->0;) {
 			String a=s.next();
@@ -19,8 +19,10 @@ public class P1302 {
 		TreeMap<String,Integer>h=new TreeMap(t);
 		Iterator<String>i=h.keySet().iterator();
 		while(i.hasNext()) {
-			System.out.println(i.next());
+			m=t.get(i.next());
+			n=n>m?n:m;
 		}
+		System.out.println(n);
 	}
 
 }
