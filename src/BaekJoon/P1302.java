@@ -27,7 +27,7 @@ public class P1302 {
 				n=m;
 			}
 		}
-		System.out.println(t.get(r));
+		System.out.println(r);
 	}
 
 }
