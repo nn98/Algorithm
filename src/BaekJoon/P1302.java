@@ -18,9 +18,7 @@ public class P1302 {
 		}
 		TreeMap<String,Integer>h=new TreeMap(t);
 		Iterator<String>i=h.keySet().iterator();
-		while(i.hasNext()) {
-			
-		}
+		System.out.println(i.toString());
 	}
 
 }
