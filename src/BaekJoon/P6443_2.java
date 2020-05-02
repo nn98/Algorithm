@@ -8,7 +8,7 @@ public class P6443_2 {
 
 	static void D(int x,int d){
 		if(d==m) {
-			System.out.println(String.valueOf(f));
+			System.out.println(String.valueOf(f).substring(0,m));
 			return;
 		}
 		for(int i=0;i<26;i++)
