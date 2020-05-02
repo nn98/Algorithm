@@ -16,7 +16,7 @@ public class P6443 {
 	
 	static void D(int x,int d)throws Exception{
 		if(d==m) {
-			w.write(String.valueOf(f)+"\n");
+			System.out.println(String.valueOf(f));
 			return;
 		}
 		for(int i=0;i<26;i++)
