@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class P6443_2 {
 	static int n,m,k;
-	static char[]p=new char[26],f=new char[1001],a;
+	static char[]p=new char[26],f=new char[501],a;
 
 	static void D(int x,int d){
 		if(d==m) {
