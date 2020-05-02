@@ -1,7 +1,8 @@
 package BaekJoon;
 
 import java.util.Scanner;
-
+//Memory - 234348
+//Best's - 24348 ¤§¤§
 public class P6443_2 {
 	static int n,m,k;
 	static char[]p=new char[26],f=new char[501],a;
