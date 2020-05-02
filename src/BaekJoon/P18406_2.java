@@ -7,6 +7,6 @@ public class P18406_2 {
 		for(;n<m;i+=a[n++]-'0',j+=a[m--]-'0');
 		System.out.println(i);
 		System.out.println(j);
-		System.out.println(n==m?"LUCKY":"READY");
+		System.out.println(i==j?"LUCKY":"READY");
 	}
 }
