@@ -11,7 +11,7 @@ public class P15829 {
 		 char[]a=s.next().toCharArray();
 		 BigInteger r=new BigInteger("0");
 		 for(;i<n;i++) {
-			 r.add(new BigInteger(""+(a[i]-96)*(int)Math.pow(m,i)));
+			 r=r.add(new BigInteger(""+(a[i]-96)*(int)Math.pow(m,i)));
 		 }
 		 System.out.println(r);
 	}
