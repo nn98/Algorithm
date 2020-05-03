@@ -12,6 +12,7 @@ public class P15829_2 {
 		 for(;i<n;i++) {
 			 p=new BigInteger(""+(a[i]-96));
 			 p=p.multiply(q.pow(i));
+			 r=r.add(p);
 		 }
 		 System.out.println(r.mod(new BigInteger("1234567891")));
 	}
