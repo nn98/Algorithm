@@ -1,5 +1,5 @@
 package BaekJoon;
-
+//채점 속도가 훨 빠르네
 import java.util.*;
 public class P15829_3 {
 	public static void main(String[] args) {
