@@ -15,5 +15,4 @@ public class P15829 {
 		 }
 		 System.out.println(r.mod(new BigInteger("1234567891")));
 	}
-
 }
