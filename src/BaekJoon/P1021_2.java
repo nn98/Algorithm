@@ -10,7 +10,10 @@ public class P1021_2 {
 
 	static int a[],R,N,n,m;
 	static void O(int t) {
-		int i=0;
+		int i=0,j=0,p=0,I=0,J=0,V=N;
+		for(;t!=N+i||t!=N+j;i++,j--) {
+			if(N+i==n)
+		}
 	}
 	public static void main(String[] args)throws Exception{
 		BufferedReader r=new BufferedReader(new InputStreamReader(System.in));
