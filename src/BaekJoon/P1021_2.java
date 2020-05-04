@@ -17,7 +17,8 @@ public class P1021_2 {
 		BufferedReader r=new BufferedReader(new InputStreamReader(System.in));
 		BufferedWriter w=new BufferedWriter(new OutputStreamWriter(System.out));
 		StringTokenizer t=new StringTokenizer(r.readLine());
-		n=Integer.parseInt(t.nextToken()),m=Integer.parseInt(t.nextToken());
+		n=Integer.parseInt(t.nextToken());
+		m=Integer.parseInt(t.nextToken());
 		a=new int[n];
 		t=new StringTokenizer(r.readLine());
 	}
