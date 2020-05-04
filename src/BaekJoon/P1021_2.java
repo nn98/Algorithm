@@ -7,7 +7,7 @@ import java.io.OutputStreamWriter;
 import java.util.StringTokenizer;
 
 public class P1021_2 {
-
+//	tq
 	static int a[],R,N,n,m;
 	static void O(int t) {
 		int i=0,j=0,p=0,I=0,J=0,V=N;
