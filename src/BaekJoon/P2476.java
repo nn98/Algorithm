@@ -13,11 +13,10 @@ public class P2476 {
 			c=s.nextInt();
 			if(a==b||b==c||a==c) {
 				if(a==b&&b==c)v=10000+a*1000;
-				if(a==b||a==c)v=1000+a*100;
-				if(b==c)v=1000+b*100;
+				else if(a==b||a==c)v=1000+a*100;
+				else if(b==c)v=1000+b*100;
 			}
 			else v=Math.max(a, Math.max(c, b))*100;
-			System.out.println(v);
 			m=m>v?m:v;
 		}
 		System.out.println(m);
