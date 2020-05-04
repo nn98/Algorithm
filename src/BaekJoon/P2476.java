@@ -17,6 +17,7 @@ public class P2476 {
 				if(b==c)v=1000+b*100;
 			}
 			else v=Math.max(a, Math.max(c, b))*100;
+			System.out.println(v);
 			m=m>v?m:v;
 		}
 		System.out.println(m);
