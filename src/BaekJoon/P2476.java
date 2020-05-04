@@ -1,9 +1,6 @@
 package BaekJoon;
-
 import java.util.Scanner;
-
 public class P2476 {
-
 	public static void main(String[] args) {
 		Scanner s=new Scanner(System.in);
 		int n=s.nextInt(),a,b,c,m=0,v=0;
@@ -21,5 +18,4 @@ public class P2476 {
 		}
 		System.out.println(m);
 	}
-
 }
