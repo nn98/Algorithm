@@ -23,6 +23,6 @@ public class P2530 {
 		if(h>=24) {
 			h%=24;
 		}
+		System.out.print(h+" "+m+" "+n);
 	}
-
 }
