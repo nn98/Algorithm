@@ -20,7 +20,7 @@ public class P9610 {
 					else r[3]++;
 			}
 		}
-		for(n=1;n<6;n++)System.out.println(n==5?"AXIS":("Q"+n)+": "+r[n]);
+		for(n=1;n<6;n++)System.out.println((n==5?"AXIS":("Q"+n))+": "+r[n]);
 	}
 
 }
