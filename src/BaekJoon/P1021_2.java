@@ -9,13 +9,16 @@ import java.util.StringTokenizer;
 
 public class P1021_2 {
 
+	static int a[],R,N,n,m;
+	static void O(int t) {
+		int i=0;
+	}
 	public static void main(String[] args)throws Exception{
 		BufferedReader r=new BufferedReader(new InputStreamReader(System.in));
 		BufferedWriter w=new BufferedWriter(new OutputStreamWriter(System.out));
 		StringTokenizer t=new StringTokenizer(r.readLine());
-		int n=Integer.parseInt(t.nextToken()),m=Integer.parseInt(t.nextToken()),N=0,a[]=new int[n];
+		n=Integer.parseInt(t.nextToken()),m=Integer.parseInt(t.nextToken());
+		a=new int[n];
 		t=new StringTokenizer(r.readLine());
-		for(;m-->0;a[Integer.parseInt(t.nextToken())-1]++);
-		System.out.println(Arrays.toString(a));
 	}
 }
