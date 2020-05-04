@@ -15,8 +15,7 @@ public class P1021_2 {
 		StringTokenizer t=new StringTokenizer(r.readLine());
 		int n=Integer.parseInt(t.nextToken()),m=Integer.parseInt(t.nextToken()),N=0,a[]=new int[n];
 		t=new StringTokenizer(r.readLine());
-		for(;n-->0;a[Integer.parseInt(t.nextToken())]++);
+		for(;m-->0;a[Integer.parseInt(t.nextToken())]++);
 		System.out.println(Arrays.toString(a));
 	}
-
 }
