@@ -1,9 +1,7 @@
 package BaekJoon;
 
 import java.util.Scanner;
-
 public class P9610 {
-
 	public static void main(String[] args) {
 		Scanner s=new Scanner(System.in);
 		int n=s.nextInt(),a,b,r[]=new int[6];
@@ -22,5 +20,4 @@ public class P9610 {
 		}
 		for(n=1;n<6;n++)System.out.println((n==5?"AXIS":("Q"+n))+": "+r[n]);
 	}
-
 }
