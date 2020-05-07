@@ -9,10 +9,11 @@ public class P2139 {
 		int a,b,c,d[]=new int[13],r,i;
 		d[2]=-3;
 		d[4]=d[6]=d[9]=d[11]=-1;
-		do {
+		for(;;){
 			a=s.nextInt();
 			b=s.nextInt();
 			c=s.nextInt();
+			if(a==0)break;
 			if(c%4==0) {
 				if(c%100==0)d[2]-=1;
 				if(c%400==0)d[2]+=1;
@@ -22,7 +23,7 @@ public class P2139 {
 			for(i=1;i<b;r+=31+d[i++]);
 			r+=a;
 			System.out.println(r);
-		}while(a!=0);
+		}
 	}
 
 }
