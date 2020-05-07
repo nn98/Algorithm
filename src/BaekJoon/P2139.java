@@ -23,6 +23,7 @@ public class P2139 {
 			for(i=1;i<b;r+=31+d[i++]);
 			r+=a;
 			System.out.println(r);
+			d[2]=-3;
 		}
 	}
 
