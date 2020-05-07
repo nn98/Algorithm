@@ -11,7 +11,7 @@ public class P1225_2 {
 		for(;i<2;i++)
 			for(char c:s.next().toCharArray())
 				a[i][c-'0']++;
-		
+		for(int[]c:a)System.out.println(Arrays.toString(c));
 //		char[]a=s.next().toCharArray(),b=s.next().toCharArray();
 //		Arrays.sort(a);
 //		Arrays.sort(b);
