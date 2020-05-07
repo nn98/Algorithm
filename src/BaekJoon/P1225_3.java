@@ -1,9 +1,6 @@
 package BaekJoon;
-
 import java.util.Scanner;
-
 public class P1225_3 {
-
 	public static void main(String[] args) {
 		Scanner s=new Scanner(System.in);
 		String a=s.nextLine();
@@ -15,5 +12,4 @@ public class P1225_3 {
 		}
 		System.out.println(b*c);
 	}
-
 }
