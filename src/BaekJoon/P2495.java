@@ -10,7 +10,7 @@ public class P2495 {
 		for(;i-->0;) {
 			char[]a=s.next().toCharArray();
 			m=r=c=1;
-			for(;c<8;) {
+			for(;c++<7;) {
 				if(a[c]==a[c-1])r++;
 				else r=1;
 				m=m>r?m:r;
