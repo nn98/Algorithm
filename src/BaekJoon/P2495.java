@@ -14,6 +14,7 @@ public class P2495 {
 				if(a[c]==a[c-1])r++;
 				else r=1;
 				m=m>r?m:r;
+				System.out.println(r+" "+m);
 			}
 			System.out.println(m);
 		}
