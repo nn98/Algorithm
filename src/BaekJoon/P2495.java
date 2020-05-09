@@ -15,7 +15,7 @@ public class P2495 {
 				else r=1;
 				m=m>r?m:r;
 			}
-			System.out.println(r);
+			System.out.println(m);
 		}
 	}
 
