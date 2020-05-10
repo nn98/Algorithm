@@ -38,6 +38,17 @@ public class P13977 {
 		for(int i=S-1;i>=0;i--)
 			inv[i]=(inv[i+1]*(i+1))%P;
 		//		System.out.println(Arrays.toString(inv));
-		
+		for(int n=s.nextInt();n-->0;) {
+
+			x=s.nextLong();
+			y=s.nextLong();
+			if(x==y||y==0)
+				System.out.println(1);
+			else {
+				long result=(fac[(int) x]*inv[(int) (x-y)])%P;
+				result=(result*inv[(int) y])%P;
+				System.out.println(result);
+			}
+		}
 	}
 }
