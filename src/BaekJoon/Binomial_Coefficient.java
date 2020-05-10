@@ -62,13 +62,13 @@ public class Binomial_Coefficient {
 		now=System.currentTimeMillis();
 		long fac[]=new long[S+1],x,y,inv[]=new long[S+1];
 		fac[1]=1;
-		for(int i=1;i<=S;i++)
+		for(int i=2;i<=S;i++)
 			fac[1]=(fac[i-1]*i)%P;
 		inv[S]=sol3(fac[S],P-2);
 		for(int i=S-1;i>=0;i--)
 			inv[i]=(inv[i+1]*(i+1))%P;
-		System.out.println(Arrays.toString(fac));
-		System.out.println(Arrays.toString(inv));
+//		System.out.println(Arrays.toString(fac));
+//		System.out.println(Arrays.toString(inv));
 		x=s.nextLong();
 		y=s.nextLong();
 		if(x==y||y==0)
