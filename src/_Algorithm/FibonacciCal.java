@@ -1,4 +1,4 @@
-package BaekJoon;
+package _Algorithm;
 
 import java.math.BigInteger;
 import java.util.Scanner;
