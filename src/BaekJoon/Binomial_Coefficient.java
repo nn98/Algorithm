@@ -1,5 +1,6 @@
 package BaekJoon;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Binomial_Coefficient {
@@ -66,6 +67,8 @@ public class Binomial_Coefficient {
 		inv[S]=sol3(fac[S],P-2);
 		for(int i=S-1;i>=0;i--)
 			inv[i]=(inv[i+1]*(i+1))%P;
+		System.out.println(Arrays.toString(fac));
+		System.out.println(Arrays.toString(inv));
 		x=s.nextLong();
 		y=s.nextLong();
 		if(x==y||y==0)
