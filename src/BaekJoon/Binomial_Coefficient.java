@@ -26,5 +26,4 @@ public class Binomial_Coefficient {
 		System.out.println(sol2(s.nextInt(),s.nextInt()));
 		System.out.println("runtime: "+(System.currentTimeMillis()-now));
 	}
-
 }
