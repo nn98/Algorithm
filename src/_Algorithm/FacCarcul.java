@@ -1,4 +1,4 @@
-package BaekJoon;
+package _Algorithm;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
