@@ -58,16 +58,16 @@ public class Binomial_Coefficient {
 		System.out.println(sol2(n,r));
 		System.out.println("runtime: "+(System.currentTimeMillis()-now));
 		
-//		sol 3
+//		sol 3 
 		now=System.currentTimeMillis();
 		long fac[]=new long[S+1],x,y,inv[]=new long[S+1];
 		fac[1]=1;
 		for(int i=2;i<=S;i++)
-			fac[1]=(fac[i-1]*i)%P;
+			fac[i]=(fac[i-1]*i)%P;
+		for(int i=0;i<20;System.out.print(fac[i++]+" "));
 		inv[S]=sol3(fac[S],P-2);
 		for(int i=S-1;i>=0;i--)
 			inv[i]=(inv[i+1]*(i+1))%P;
-//		System.out.println(Arrays.toString(fac));
 //		System.out.println(Arrays.toString(inv));
 		x=s.nextLong();
 		y=s.nextLong();
