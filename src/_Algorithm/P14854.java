@@ -47,7 +47,7 @@ public class P14854 {
 			else {
 				long result=(fac[(int) x]*inv[(int) (x-y)])%P;
 				result=(result*inv[(int) y])%P;
-				System.out.println(result);
+				System.out.println(result%142857);
 			}
 		}
 	}
