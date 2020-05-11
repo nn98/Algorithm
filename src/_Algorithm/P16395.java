@@ -13,5 +13,4 @@ public class P16395 {
 				a[i][j]=a[i-1][j-1]+a[i-1][j];
 		System.out.print(a[s.nextInt()-1][s.nextInt()-1]);
 	}
-
 }
