@@ -1,4 +1,4 @@
-package _Algorithm;
+package BaekJoon;
 import java.util.*;
 public class P16395 {
 	public static void main(String[] args) {
