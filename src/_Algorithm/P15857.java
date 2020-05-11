@@ -1,7 +1,6 @@
 package _Algorithm;
 
 public class P15857 {
-
 	public static void main(String[] args) {
 		char r='u';
 		switch(new java.util.Scanner(System.in).nextInt()) {
@@ -31,5 +30,4 @@ public class P15857 {
 			break;
 		}
 	}
-
 }
