@@ -1,4 +1,4 @@
-package _Algorithm;
+package BaekJoon;
 
 public class P15857_2 {
 	public static void main(String[] args) {
