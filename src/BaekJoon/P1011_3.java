@@ -1,9 +1,6 @@
 package BaekJoon;
 import java.util.Scanner;
 public class P1011_3 {
-	static void o(int f, int t){
-	}
-
 	public static void main(String[] args) {
 		Scanner s=new Scanner(System.in);
 		int n=s.nextInt(),i,a,b,j;
@@ -12,7 +9,7 @@ public class P1011_3 {
 			a=s.nextInt();
 			b=s.nextInt();
 			j=0;
-			for(;;) {
+			for(;;){
 				a+=i;
 				j++;
 				if(a>=b)break;
