@@ -11,7 +11,7 @@ public class P1342 {
 	static int n,m,k,R;
 	static char[]p=new char[26],f=new char[1001],a;
 
-	static void D(int x,int d)throws Exception{
+	static void D(int x,int d){
 		if(d==m) {
 //			System.out.println(String.valueOf(f));
 			boolean c=true;
