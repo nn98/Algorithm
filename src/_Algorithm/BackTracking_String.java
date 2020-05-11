@@ -36,5 +36,4 @@ public class BackTracking_String {
 			for(int G=0;G<26;G++)p[G]=0;
 		}
 	}
-
 }
