@@ -1,11 +1,7 @@
 package BaekJoon;
-
 import java.util.Scanner;
-
 public class P1011_2 {
-
 	static int n,i,a,b,j;
-	
 	static void o(int f, int t){
 		i=1;
 		a=f;
@@ -30,5 +26,5 @@ public class P1011_2 {
 		Scanner s=new Scanner(System.in);
 		for(n=s.nextInt();n-->0;o(s.nextInt(),s.nextInt()));
 	}
-
 }
+//¹¹¿© ½Ã¹ß Á¤´ä·ü ¿Ö 28ÆÛ¿©
