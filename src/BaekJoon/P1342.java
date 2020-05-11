@@ -35,6 +35,5 @@ public class P1342 {
 		D(0,0);
 //		for(int G=0;G<26;G++)p[G]=0;
 		System.out.println(R);
-
 	}
 }
