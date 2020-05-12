@@ -7,7 +7,6 @@ public class P1269_2 {
 		boolean[]a=new boolean[o],b=new boolean[o];
 		for(;n-->0;a[s.nextInt()]=true);
 		for(;m-->0;b[s.nextInt()]=true);
-//		System.out.println(n);
 		for(;o-->0;n+=a[o]^b[o]?1:0);
 		System.out.println(n+1);
 	}
