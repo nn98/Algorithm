@@ -7,7 +7,7 @@ public class P1269 {
 
 	public static void main(String[] args) {
 		Scanner s=new Scanner(System.in);
-		int n=s.nextInt(),m=s.nextInt(),i=0,j,r=0,v=0;
+		int n=s.nextInt(),m=s.nextInt(),i=0,j,r=0,v=0,c[]=new int[100000000];
 		s.nextLine();
 		String[]a=s.nextLine().split(" "),b=s.nextLine().split(" ");
 		Arrays.sort(a);
