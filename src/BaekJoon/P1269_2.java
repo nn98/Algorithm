@@ -1,4 +1,4 @@
-12package BaekJoon;
+package BaekJoon;
 
 public class P1269_2 {
 
