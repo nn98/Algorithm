@@ -14,5 +14,4 @@ public class P1269_2 {
 		for(;o-->0;n+=a[o]^b[o]?1:0);
 		System.out.println(n+1);
 	}
-
 }
