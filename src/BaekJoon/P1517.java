@@ -16,6 +16,7 @@ public class P1517 {
 	public static void main(String[] args) {
 		Scanner s=new Scanner(System.in);
 		int n=s.nextInt(),i=0,j;
+		s.nextLine();
 		a=s.nextLine().split(" ");
 		for(;i<n;i++) {
 			for(j=i+1;j<n;j++)
