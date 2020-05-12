@@ -19,8 +19,8 @@ public class P1517 {
 		s.nextLine();
 		a=s.nextLine().split(" ");
 		for(;i<n;i++) {
-			for(j=i+1;j<n;j++)
-				if(a[j].compareTo(a[j-1])<0)o(j,j-1);
+			for(j=0;j<n-i;j++)
+				if(a[j+1].compareTo(a[j])<0)o(j+1,j);
 		}
 		System.out.println(Arrays.toString(a));
 		System.out.println(r);
