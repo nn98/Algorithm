@@ -22,7 +22,7 @@ public class P1517 {
 			for(j=0;j<n-i;j++)
 				if(a[j+1].compareTo(a[j])<0)o(j+1,j);
 		}
-		System.out.println(Arrays.toString(a));
+//		System.out.println(Arrays.toString(a));
 		System.out.println(r);
 	}
 
