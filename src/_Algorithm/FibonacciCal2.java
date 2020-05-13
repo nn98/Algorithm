@@ -10,6 +10,7 @@ public class FibonacciCal2 {
 		return f1(n-1)+f1(n-2);
 	}
 	
+	static long h[];
 	public static void main(String[] args) {
 		Scanner s=new Scanner(System.in);
 		
