@@ -24,7 +24,7 @@ public class FibonacciCal2 {
 		System.out.print("F1: "+f1(s.nextLong()));
 		System.out.println("Runtime: "+(System.currentTimeMillis()-time));
 		
-//		f3: 
+//		f3: Pisano Period 피사노 주기
 		time=System.currentTimeMillis();
 		System.out.print("F1: "+f1(s.nextLong()));
 		System.out.println("Runtime: "+(System.currentTimeMillis()-time));
