@@ -12,7 +12,7 @@ public class FibonacciCal2 {
 
 	static long h[];
 	static long f2(long n) {
-		h=new long[(int)n];
+		h=new long[(int)n+1];
 		h[0]=0;
 		h[1]=1;
 		for(int i=1;++i<=n;)
@@ -25,12 +25,12 @@ public class FibonacciCal2 {
 		
 //		f1: Recursive 단순 재귀 구현
 		long time=System.currentTimeMillis();
-		System.out.print("F1: "+f1(s.nextLong()));
+		System.out.println("F1: "+f1(s.nextLong()));
 		System.out.println("Runtime: "+(System.currentTimeMillis()-time));
 		
 //		f2: DP
 		time=System.currentTimeMillis();
-		System.out.print("F2: "+f2(s.nextLong()));
+		System.out.println("F2: "+f2(s.nextLong()));
 		System.out.println("Runtime: "+(System.currentTimeMillis()-time));
 		
 	}
