@@ -1,5 +1,7 @@
 package BaekJoon;
 
+import java.util.Scanner;
+
 public class P11444_2 {
 	static long mod = 1000000007;
 	public static void main(String[] ar){
