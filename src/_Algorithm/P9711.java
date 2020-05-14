@@ -33,5 +33,4 @@ public class P9711 {
 //		f3(10000,2000000000);
 		for(;i++<n;System.out.println("Case #"+i+": "+f3(s.nextLong(),s.nextInt())));
 	}
-
 }
