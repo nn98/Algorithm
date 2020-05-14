@@ -32,7 +32,7 @@ public class P9177 {
 					else if(t==a[1][y])y++;
 					else c=!c;
 			}
-			w.write("Data set "+i+(c?": yes":": no"));
+			w.write("Data set "+i+(c?": yes\n":": no\n"));
 		}
 		w.flush();
 	}
