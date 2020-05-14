@@ -9,8 +9,15 @@ public class FibonacciCal2 {
 		if(n==1)return 1;
 		return f1(n-1)+f1(n-2);
 	}
-	
+
 	static long h[];
+	static long f2(long n) {
+		h=new long[(int)n];
+		h[0]=0;
+		h[1]=1;
+		
+	}
+	
 	public static void main(String[] args) {
 		Scanner s=new Scanner(System.in);
 		
@@ -21,7 +28,7 @@ public class FibonacciCal2 {
 		
 //		f2: DP
 		time=System.currentTimeMillis();
-		System.out.print("F1: "+f1(s.nextLong()));
+		System.out.print("F2: "+f2(s.nextLong()));
 		System.out.println("Runtime: "+(System.currentTimeMillis()-time));
 		
 //		f3: Pisano Period 피사노 주기
