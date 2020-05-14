@@ -26,7 +26,7 @@ public class P11444 {
 	}
 	
 	public static void main(String[] args) {
-		System.out.print(new java.util.Scanner(System.in).nextLong());
+		System.out.print(f4(new java.util.Scanner(System.in).nextLong()));
 	}
 
 }
