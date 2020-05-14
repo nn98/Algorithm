@@ -60,7 +60,7 @@ public class FibonacciCal2 {
 
 //		f3: Pisano Period 피사노 주기
 		time=System.currentTimeMillis();
-		System.out.print("F3 Mod by: "+f3(s.nextLong(),s.nextInt()));
+		System.out.println("F3: "+f3(s.nextLong(),s.nextInt()));
 		System.out.println("Runtime: "+(System.currentTimeMillis()-time));
 	}
 
