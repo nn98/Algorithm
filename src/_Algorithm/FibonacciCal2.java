@@ -4,7 +4,10 @@ import java.util.Scanner;
 
 public class FibonacciCal2 {
 
+	static long time;
+	
 	static long f1(long n) {
+		time=System.currentTimeMillis();
 		if(n==0)return 0;
 		if(n==1)return 1;
 		return f1(n-1)+f1(n-2);
@@ -12,6 +15,7 @@ public class FibonacciCal2 {
 
 	static long h[];
 	static long f2(long n) {
+		time=System.currentTimeMillis();
 		h=new long[(int)n+1];
 		h[0]=0;
 		h[1]=1;
@@ -22,6 +26,7 @@ public class FibonacciCal2 {
 	
 	static long p[];
 	static long f3(long n,int d) {
+		time=System.currentTimeMillis();
 		int f0=0,f1=1,f2=1,r=0,i=2;
 		for(;i<=n;i++) {
 			f2=(f0+f1)%d;
@@ -49,17 +54,17 @@ public class FibonacciCal2 {
 		Scanner s=new Scanner(System.in);
 		
 //		f1: Recursive 단순 재귀 구현
-		long time=System.currentTimeMillis();
+		
 		System.out.println("F1: "+f1(s.nextLong()));
 		System.out.println("Runtime: "+(System.currentTimeMillis()-time)+" O(2**n)");
 		
 //		f2: DP
-		time=System.currentTimeMillis();
+		
 		System.out.println("F2: "+f2(s.nextLong()));
 		System.out.println("Runtime: "+(System.currentTimeMillis()-time)+" O(n)");
 
 //		f3: Pisano Period 피사노 주기
-		time=System.currentTimeMillis();
+		
 		System.out.println("F3: "+f3(s.nextLong(),s.nextInt()));
 		System.out.println("Runtime: "+(System.currentTimeMillis()-time));
 	}
