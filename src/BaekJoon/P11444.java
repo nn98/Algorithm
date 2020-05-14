@@ -5,7 +5,6 @@ public class P11444 {
 	static long mod=1000000007;
 	static long f4(long n) {
 		long N=n--,m[][]={{1,1},{1,0}},aM[][]={{1,0},{0,1}};
-		System.out.println(n);
 		while(n>0) {
 			if(n%2==1)aM=mMultiply(aM,m);
 			m=mMultiply(m,m);
