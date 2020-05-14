@@ -30,8 +30,8 @@ public class P9711 {
 	public static void main(String[] args) {
 		Scanner s=new Scanner(System.in);
 		int n=s.nextInt(),i=0;
-		f3(10000,2000000000);
-		for(;i++<n;System.out.println("Case #"+i+": "+p[s.nextInt()]));
+//		f3(10000,2000000000);
+		for(;i++<n;System.out.println("Case #"+i+": "+f3(s.nextLong(),s.nextInt())));
 	}
 
 }
