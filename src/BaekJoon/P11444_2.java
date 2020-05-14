@@ -6,7 +6,7 @@ public class P11444_2 {
 	static long mod = 1000000007;
 	public static void main(String[] ar){
 		Scanner sc = new Scanner(System.in);
-		long n = sc.nextLong()-1;
+		long n = new java.util.Scanner(System.in).nextLong()-1;
 		long originalN = n+1;
 		
 		
