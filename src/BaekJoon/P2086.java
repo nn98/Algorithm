@@ -1,5 +1,7 @@
 package BaekJoon;
 
+import java.util.Scanner;
+
 public class P2086 {
 
 	static long mod=1000000007;
@@ -26,7 +28,13 @@ public class P2086 {
 	}
 	
 	public static void main(String[] args) {
-		System.out.print(f4(new java.util.Scanner(System.in).nextLong()));
+		Scanner s=new Scanner(System.in);
+		long f=s.nextLong()-1,t=s.nextLong(),r=0;
+		for(;f++<t;) {
+			r+=f4(f);
+			r%=1000000000;
+		}
+		System.out.print(r);
 	}
 
 }
