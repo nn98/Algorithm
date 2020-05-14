@@ -11,7 +11,7 @@ public class P11444 {
 			n/=2;
 		}
 		if(N<3)return 1;
-		else return aM[1][0]+aM[1][1]%mod;
+		else return (aM[1][0]+aM[1][1])%mod;
 	}
 	static long[][]mMultiply(long[][]mm1,long[][]mm2){
 		int m1=mm1.length,n1=mm1[0].length,m2=mm2.length,n2=mm2[0].length,i=0,j,k;
