@@ -95,7 +95,7 @@ public class FibonacciCal2 {
 //		f4: Matrix 행렬 연산
 		
 		System.out.println("F4: "+f4(s.nextLong()));
-		System.out.println("Runtime: "+(System.currentTimeMillis()-time)+" O(n)");
+		System.out.println("Runtime: "+(System.currentTimeMillis()-time)+" O(long2n)");
 	}
 
 }
