@@ -16,7 +16,7 @@ public class P12904 {
 			F=true;
 		}
 		if(F)return;
-		if(b.length()<f.length())return;
+		if(b.length()==f.length())return;
 		StringBuffer c=new StringBuffer(f).reverse();
 		f.append("A");
 		c.append("B");
