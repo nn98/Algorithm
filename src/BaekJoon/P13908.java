@@ -12,6 +12,7 @@ public class P13908 {
 			boolean c=true;
 			for(int i=0;i++<9&&c;c=a[i]?s.contains(""+i):c);
 			r+=c?1:0;
+			return;
 		}
 		for(int i=0;i<10;o(s+i,l+1));
 	}
