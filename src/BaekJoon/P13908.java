@@ -7,7 +7,7 @@ public class P13908 {
 	static int n,m,r;
 	static boolean[]a;
 	static void o(String s,int l) {
-		System.out.println(s);
+//		System.out.println(s);
 		if(s.length()==n) {
 			boolean c=true;
 			for(int i=0;i++<9&&c;c=a[i]?s.contains(""+i):c);
