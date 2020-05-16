@@ -10,6 +10,7 @@ public class P12904 {
 	static List<StringBuffer>l=new ArrayList();
 	static boolean F;
 	static void o(StringBuffer f) {
+		System.out.println(f);
 		if(f.toString().equals(b)) {
 			System.out.print(1);
 			F=true;
