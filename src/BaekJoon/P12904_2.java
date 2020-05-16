@@ -16,7 +16,7 @@ public class P12904_2 {
 			F=true;
 		}
 		if(F)return;
-		if(f.length()==1)return;
+		if(f.length()<=a.length())return;
 		if(f.charAt(f.length()-1)=='A') {
 			f.delete(f.length()-1,f.length());
 			System.out.println("f: "+f);
