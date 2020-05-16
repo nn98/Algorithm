@@ -24,7 +24,6 @@ public class P12904_2 {
 				l.add(f.toString());
 				o(f);
 			}
-			o(f);
 		}
 		else {
 			f.delete(f.length()-1,f.length());
@@ -34,7 +33,6 @@ public class P12904_2 {
 				l.add(f.toString());
 				o(f);
 			}
-			o(f);
 		}
 	}
 	public static void main(String[] args) {
