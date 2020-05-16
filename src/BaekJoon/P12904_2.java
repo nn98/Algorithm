@@ -1,5 +1,8 @@
 package BaekJoon;
 
+// 양방향 선형 프로그래밍
+// aka 서순
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
