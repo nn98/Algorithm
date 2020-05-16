@@ -4,25 +4,30 @@ import java.util.Scanner;
 
 public class P13908_2 {
 
-	static int n,m,r;
+	static int n,m,M,r;
 	static boolean[]a;
-	static void o(String s,int l) {
+	static void o(int s,int l) {
 //		System.out.println(s);
-		if(s.length()==n) {
-			boolean c=true;
-			for(int i=0;i++<9&&c;c=a[i]?s.contains(""+i):c);
-			r+=c?1:0;
+		if(s==n) {
+			r+=l==M?1:0;
 			return;
 		}
-		for(int i=0;i<10;o(s+i++,l+1));
+		for(int i=-1;i++<9;) {
+			if(a[i]) {
+				a[i]=!a[i];
+				o(s+1,l+1);
+				a[i]=true;
+			}
+			else o(s+1,l);
+		}
 	}
 	
 	public static void main(String[] args) {
 		Scanner s=new Scanner(System.in);
 		n=s.nextInt();
 		a=new boolean[10];
-		for(m=s.nextInt();m-->0;a[s.nextInt()]=true);
-		o("",0);
+		for(M=m=s.nextInt();m-->0;a[s.nextInt()]=true);
+		o(0,0);
 		System.out.println(r);
 	}
 
