@@ -14,7 +14,7 @@ public class P13908 {
 			r+=c?1:0;
 			return;
 		}
-		for(int i=0;i<10;o(s+i,l+1));
+		for(int i=0;i<10;o(s+i++,l+1));
 	}
 	
 	public static void main(String[] args) {
