@@ -2,7 +2,7 @@ package BaekJoon;
 
 public class P2023 {
 	public static void main(String[] args) {
-		int z=100000000,i=1,j;
+		int z=new java.util.Scanner(System.in).nextInt(),i=1,j;
 		boolean[]a=new boolean[z];
 		a[i]=true;
 		for(;i<z;i++)
