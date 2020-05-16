@@ -36,6 +36,7 @@ public class P12904 {
 		a=s.next();
 		b=s.next();
 		o(new StringBuffer(a));
+		System.out.println(l.toString());
 		if(!F)System.out.println(0);
 	}
 
