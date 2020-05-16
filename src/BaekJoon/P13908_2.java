@@ -3,7 +3,6 @@ package BaekJoon;
 import java.util.Scanner;
 
 public class P13908_2 {
-
 	static int n,m,M,r;
 	static boolean[]a;
 	static void o(int s,int l) {
