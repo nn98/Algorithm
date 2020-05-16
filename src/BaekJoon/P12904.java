@@ -10,7 +10,7 @@ public class P12904 {
 	static List<String>l=new ArrayList();
 	static boolean F;
 	static void o(StringBuffer f) {
-		System.out.println("input: "+f);
+//		System.out.println("input: "+f);
 		if(f.toString().equals(b)) {
 			System.out.print(1);
 			F=true;
@@ -20,8 +20,8 @@ public class P12904 {
 		StringBuffer c=new StringBuffer(f).reverse();
 		f.append("A");
 		c.append("B");
-		System.out.println("f: "+f);
-		System.out.println("c: "+c);
+//		System.out.println("f: "+f);
+//		System.out.println("c: "+c);
 		if(!l.contains(f.toString())) {
 			l.add(f.toString());
 			o(f);
@@ -36,7 +36,7 @@ public class P12904 {
 		a=s.next();
 		b=s.next();
 		o(new StringBuffer(a));
-		System.out.println(l.toString());
+//		System.out.println(l.toString());
 		if(!F)System.out.println(0);
 	}
 
