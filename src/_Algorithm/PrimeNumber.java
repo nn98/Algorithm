@@ -10,7 +10,7 @@ public class PrimeNumber {
 			if(!a[i])
 				for(j=i*2;j<z;j+=i)
 					a[j]=true;
-		for(i=1;i<20;System.out.println(a[i]))
+		for(i=1;i<20;System.out.println(a[i]));
 	}
 
 }
