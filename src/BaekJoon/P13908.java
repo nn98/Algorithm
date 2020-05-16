@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class P13908 {
 
 	static int n,m;
-	boolean[]a;
+	static boolean[]a;
 	
 	public static void main(String[] args) {
 		Scanner s=new Scanner(System.in);
