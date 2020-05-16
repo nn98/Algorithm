@@ -7,7 +7,7 @@ import java.util.Scanner;
 public class P12904 {
 
 	static String a,b;
-	static List<StringBuffer>l=new ArrayList();
+	static List<String>l=new ArrayList();
 	static boolean F;
 	static void o(StringBuffer f) {
 		System.out.println("input: "+f);
@@ -22,12 +22,12 @@ public class P12904 {
 		c.append("B");
 		System.out.println("f: "+f);
 		System.out.println("c: "+c);
-		if(!l.contains(f)) {
-			l.add(f);
+		if(!l.contains(f.toString())) {
+			l.add(f.toString());
 			o(f);
 		}
-		if(!l.contains(c)) {
-			l.add(c);
+		if(!l.contains(c.toString())) {
+			l.add(c.toString());
 			o(c);
 		}
 	}
