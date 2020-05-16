@@ -27,13 +27,13 @@ public class BackTracking_String {
 	}
 
 	public static void main(String[] args)throws Exception{
-		n=Integer.parseInt(r.readLine());
+		n=Integer.parseInt(r.readLine());	//반복횟수	
 		for(;k<n;k++) {
-			a=r.readLine().toCharArray();
-			m=a.length;
-			for(char j:a)p[j-'a']++;
+			a=r.readLine().toCharArray();	//백트래킹할 문자들
+			m=a.length;						//문자 길이
+			for(char j:a)p[j-'a']++;		//알파벳별 개수 
 			D(0,0);
-			for(int G=0;G<26;G++)p[G]=0;
+			for(int G=0;G<26;G++)p[G]=0;	//알파벳별 개수 초기화
 		}
 	}
 }
