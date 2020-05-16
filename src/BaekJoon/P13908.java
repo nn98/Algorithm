@@ -22,6 +22,7 @@ public class P13908 {
 		a=new boolean[10];
 		for(m=s.nextInt();m-->0;a[s.nextInt()]=true);
 		o("",0);
+		System.out.println(r);
 	}
 
 }
