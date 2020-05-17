@@ -1,12 +1,10 @@
 package BaekJoon;
 
 import java.util.Scanner;
-
 public class P13908_2 {
 	static int n,m,M,r;
 	static boolean[]a;
 	static void o(int s,int l) {
-//		System.out.println(s);
 		if(s==n) {
 			r+=l==M?1:0;
 			return;
@@ -20,7 +18,6 @@ public class P13908_2 {
 			else o(s+1,l);
 		}
 	}
-	
 	public static void main(String[] args) {
 		Scanner s=new Scanner(System.in);
 		n=s.nextInt();
@@ -29,5 +26,4 @@ public class P13908_2 {
 		o(0,0);
 		System.out.println(r);
 	}
-
 }
