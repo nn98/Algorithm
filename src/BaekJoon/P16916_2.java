@@ -10,6 +10,7 @@ public class P16916_2 {
 		char[]a=s.next().toCharArray(),b=s.next().toCharArray();
 		BigInteger n=BigInteger.ZERO,m;
 		for(int i=0;i++<b.length;n=n.add(new BigInteger(""+i*b[i-1])));
+		System.out.println(n);
 	}
 
 }
