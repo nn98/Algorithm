@@ -10,7 +10,7 @@ public class P15651 {
 
 	static int n,m;
 	static char[]f;
-	static boolean[]c;
+	//	static boolean[]c;
 	static BufferedWriter w=new BufferedWriter(new OutputStreamWriter(System.out));
 	static void o(int x)throws Exception{
 		if(x==m) {
@@ -19,13 +19,13 @@ public class P15651 {
 			w.newLine();
 		}else
 			for(int i=0;i++<n;)
-				if(c[i])continue;
-				else {
-					f[x]=(char)(i+'0');
-					c[i]=true;
-					o(x+1);
-					c[i]=false;
-				}
+				//				if(c[i])continue;
+				//				else {
+				f[x]=(char)(i+'0');
+		//					c[i]=true;
+		o(x+1);
+		//					c[i]=false;
+		//				}
 	}
 	public static void main(String[] args)throws Exception{
 		BufferedReader r=new BufferedReader(new InputStreamReader(System.in));
@@ -33,7 +33,7 @@ public class P15651 {
 		n=Integer.parseInt(t.nextToken());
 		m=Integer.parseInt(t.nextToken());
 		f=new char[m];
-		c=new boolean[n+1];
+//		c=new boolean[n+1];
 		o(0);
 		w.flush();
 	}
