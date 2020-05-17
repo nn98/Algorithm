@@ -24,9 +24,9 @@ public class P15665 {
 				if(c[i]==0)continue;
 				else {
 					f[x]=i;
-					c[i]--;
+//					c[i]--;
 					o(x+1);
-					c[i]++;
+//					c[i]++;
 				}
 			}
 		}
