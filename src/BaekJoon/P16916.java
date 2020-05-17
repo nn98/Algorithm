@@ -15,7 +15,6 @@ public class P16916 {
 					if(a[i+j]==b[j])r++;
 					else break;
 				if(r==B)c++;
-				i+=j;
 			}
 		System.out.print(c);
 	}
