@@ -12,7 +12,7 @@ public class BackTracking {
 		if(x==m)
 			System.out.println(r);
 		else
-			for(int i=0;i<n;i++) {
+			for(int i=0;i++<n;) {
 				r[x]=(char) (i+'0');
 				o(x+1,0);
 			}
