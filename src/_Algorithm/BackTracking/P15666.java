@@ -19,14 +19,14 @@ public class P15666 {
 		}else {
 			int i=0,j=m;
 			for(;++i<L&&j>0;) {
-				//				if(x>0)
-				//					if(f[x-1]>a[i-1])continue;
+				if(x>0)
+					if(f[x-1]>i)continue;
 				if(c[i]==0)continue;
 				else {
 					f[x]=i;
-//					c[i]--;
+					//					c[i]--;
 					o(x+1);
-//					c[i]++;
+					//					c[i]++;
 				}
 			}
 		}
@@ -36,10 +36,10 @@ public class P15666 {
 		StringTokenizer t=new StringTokenizer(r.readLine());
 		n=Integer.parseInt(t.nextToken());
 		m=Integer.parseInt(t.nextToken());
-//		a=new int[n];
+		//		a=new int[n];
 		f=new int[m];
 		t=new StringTokenizer(r.readLine());
-//		for(int i=0;i<n;a[i++]=Integer.parseInt(t.nextToken()));
+		//		for(int i=0;i<n;a[i++]=Integer.parseInt(t.nextToken()));
 		for(int i=0;i++<n;c[Integer.parseInt(t.nextToken())]++);
 		o(0);
 		w.flush();
