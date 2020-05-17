@@ -9,39 +9,39 @@ import java.util.StringTokenizer;
 
 public class P15663_Sol1 {
 
-	static int n,m;
-	static int[]a,f;
-	static boolean[]c;
+	static int n,m,L=10001;
+	static int[]f,c=new int[L];
 	static BufferedWriter w=new BufferedWriter(new OutputStreamWriter(System.out));
 	static void o(int x)throws Exception{
 		if(x==m) {
 			for(int a:f)
 				w.write(a+" ");
 			w.newLine();
-		}else
-			for(int i=0;i++<n;) {
+		}else {
+			int i=0,j=m;
+			for(;++i<L&&j>0;) {
 				//				if(x>0)
 				//					if(f[x-1]>a[i-1])continue;
-				if(c[i])continue;
+				if(c[i]==0)continue;
 				else {
-					f[x]=a[i-1];
-					c[i]=true;
+					f[x]=i;
+					c[i]--;
 					o(x+1);
-					c[i]=false;
+					c[i]++;
 				}
 			}
+		}
 	}
 	public static void main(String[] args)throws Exception{
 		BufferedReader r=new BufferedReader(new InputStreamReader(System.in));
 		StringTokenizer t=new StringTokenizer(r.readLine());
 		n=Integer.parseInt(t.nextToken());
 		m=Integer.parseInt(t.nextToken());
-		a=new int[n];
+//		a=new int[n];
 		f=new int[m];
-		c=new boolean[n+1];
 		t=new StringTokenizer(r.readLine());
-		for(int i=0;i<n;a[i++]=Integer.parseInt(t.nextToken()));
-		Arrays.sort(a);
+//		for(int i=0;i<n;a[i++]=Integer.parseInt(t.nextToken()));
+		for(int i=0;i++<n;c[Integer.parseInt(t.nextToken())]++);
 		o(0);
 		w.flush();
 	}
