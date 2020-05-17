@@ -1,4 +1,4 @@
-package _Algorithm;
+package BaekJoon;
 
 import java.util.Scanner;
 public class P9711 {
