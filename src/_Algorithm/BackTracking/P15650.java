@@ -6,7 +6,7 @@ import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 import java.util.StringTokenizer;
 
-public class P15649 {
+public class P15650 {
 
 	static int n,m;
 	static char[]f;
