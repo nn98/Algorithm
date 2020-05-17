@@ -2,6 +2,7 @@ package BaekJoon;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
+import java.util.Arrays;
 
 public class P16916_3 {
 	static int ans=0;
@@ -20,6 +21,7 @@ public class P16916_3 {
 	
 	static void KMP(String origin, String ptn) {
 		int[] pi = getPi(ptn);
+		System.out.println(Arrays.toString(pi));
 		int j=0;
 		for(int i=0;i<origin.length();i++) {
 			while(j>0 && origin.charAt(i)!=ptn.charAt(j)) {
