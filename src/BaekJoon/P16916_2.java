@@ -11,12 +11,12 @@ public class P16916_2 {
 		BigInteger n=BigInteger.ZERO,m;
 		int i=0,j,c=0;
 		for(;i++<b.length;n=n.add(new BigInteger(""+i*b[i-1])));
-		System.out.println(n);
+//		System.out.println(n);
 		for(i=0;i<a.length-b.length&&c==0;i++) {
 			m=BigInteger.ZERO;
 			for(j=0;j++<b.length;)
 				m=m.add(new BigInteger(""+j*a[i+j-1]));
-			System.out.println(m);
+//			System.out.println(m);
 			if(n.equals(m))c++;
 		}
 		System.out.println(c);
