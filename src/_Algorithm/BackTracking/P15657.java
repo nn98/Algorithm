@@ -20,6 +20,8 @@ public class P15657 {
 			w.newLine();
 		}else
 			for(int i=0;i++<n;) {
+				if(x>0)
+					if(f[x-1]>a[i-1])continue;
 				//				if(c[i])continue;
 				//				else {
 				f[x]=a[i-1];
