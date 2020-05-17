@@ -9,6 +9,8 @@ public class BackTracking {
 		for(int i:b);
 	}
 	public static void main(String[] args) {
+		char[]c= {'a','b','b','b','b'};
+		System.out.println(c);
 		Scanner s=new Scanner(System.in);
 		System.out.print("count of Integer: ");
 		n=s.nextInt();
@@ -18,5 +20,4 @@ public class BackTracking {
 		b=new int[m];
 		
 	}
-
 }
