@@ -13,7 +13,7 @@ public class P16472 {
 			b=new boolean[26];
 			j=i;
 			c=0;
-			while(c<n) {
+			while(c<=n) {
 				if(j>=a.length)break;
 				if(!b[a[j]-'a']) {
 					c++;
