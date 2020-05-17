@@ -13,14 +13,15 @@ public class P16472 {
 		for(;i<l;) {
 			b=new boolean[26];
 			c=0;
-			for(j=i;j<l&&c<n;j++) {
+			for(j=i;j<l;j++) {
 //				if(a[j-1]!=a[j])c++;
 				if(!b[a[j]-'a']) {
 					c++;
 					b[a[j]-'a']=true;
 				}
-				
+				if(c>n)break;
 			}
+			
 //			while(c<=n) {
 //				if(j>=a.length)break;
 //				if(!b[a[j]-'a']) {
