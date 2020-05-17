@@ -6,14 +6,15 @@ public class P16472 {
 
 	public static void main(String[] args) {
 		Scanner s=new Scanner(System.in);
-		int n=s.nextInt(),i=0,c,j,m=0;
+		int n=s.nextInt(),i=0,c,j,m=0,l;
 		char[]a=s.next().toCharArray();
+		l=a.length;
 		boolean[]b;
-		for(;i<a.length;) {
+		for(;i<l;) {
 			b=new boolean[26];
 			c=0;
-			for(j=i;c<n;j++) {
-				if(a[j+1]!=a[j])c++;
+			for(j=i+1;j<l&&c<n;j++) {
+				if(a[j-1]!=a[j])c++;
 				
 			}
 			System.out.println("i: "+i+" j: "+j);
