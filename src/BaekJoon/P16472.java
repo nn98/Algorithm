@@ -17,7 +17,7 @@ public class P16472 {
 				if(a[j-1]!=a[j])c++;
 				
 			}
-			System.out.println("i: "+i+" j: "+j);
+//			System.out.println("i: "+i+" j: "+j);
 //			while(c<=n) {
 //				if(j>=a.length)break;
 //				if(!b[a[j]-'a']) {
@@ -27,7 +27,7 @@ public class P16472 {
 //				j++;
 //			}
 			m=m>j-i?m:j-i;
-			System.out.println(m);
+//			System.out.println(m);
 			for(j=i+1;j<a.length&&a[j-1]==a[j];j++);
 			i=j;
 		}
