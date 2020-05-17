@@ -10,20 +10,19 @@ import java.util.StringTokenizer;
 public class P15654 {
 
 	static int n,m;
-	static int[]a;
-	static char[]f;
+	static int[]a,f;
 	static boolean[]c;
 	static BufferedWriter w=new BufferedWriter(new OutputStreamWriter(System.out));
 	static void o(int x)throws Exception{
 		if(x==m) {
-			for(char a:f)
+			for(int a:f)
 				w.write(a+" ");
 			w.newLine();
 		}else
 			for(int i=0;i++<n;)
 				if(c[i])continue;
 				else {
-					f[x]=(char)(a[i-1]+'0');
+					f[x]=a[i-1];
 					c[i]=true;
 					o(x+1);
 					c[i]=false;
@@ -35,7 +34,7 @@ public class P15654 {
 		n=Integer.parseInt(t.nextToken());
 		m=Integer.parseInt(t.nextToken());
 		a=new int[n];
-		f=new char[m];
+		f=new int[m];
 		c=new boolean[n+1];
 		t=new StringTokenizer(r.readLine());
 		for(int i=0;i<n;a[i++]=Integer.parseInt(t.nextToken()));
