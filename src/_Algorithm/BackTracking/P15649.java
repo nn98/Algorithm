@@ -32,6 +32,8 @@ public class P15649 {
 		StringTokenizer t=new StringTokenizer(r.readLine());
 		n=Integer.parseInt(t.nextToken());
 		m=Integer.parseInt(t.nextToken());
+		o(0);
+		w.flush();
 	}
 
 }
