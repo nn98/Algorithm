@@ -23,7 +23,7 @@ public class P15654 {
 			for(int i=0;i++<n;)
 				if(c[i])continue;
 				else {
-					f[x]=(char)(a[i]+'0');
+					f[x]=(char)(a[i-1]+'0');
 					c[i]=true;
 					o(x+1);
 					c[i]=false;
