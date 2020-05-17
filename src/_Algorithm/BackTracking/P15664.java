@@ -19,7 +19,7 @@ public class P15664 {
 			w.newLine();
 		}else {
 			int i=f[x==0?x:x-1],j=m;
-			for(;++i<L&&j>0;) {
+			for(;i<L&&j>0;i++) {
 				//				if(x>0)
 				//					if(f[x-1]>a[i-1])continue;
 				if(c[i]==0)continue;
