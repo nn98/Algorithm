@@ -11,7 +11,7 @@ public class P15663 {
 
 	static int n,m;
 	static int[]a,f;
-//	static boolean[]c;
+	static boolean[]c;
 	static BufferedWriter w=new BufferedWriter(new OutputStreamWriter(System.out));
 	static void o(int x)throws Exception{
 		if(x==m) {
@@ -20,15 +20,15 @@ public class P15663 {
 			w.newLine();
 		}else
 			for(int i=0;i++<n;) {
-				if(x>0)
-					if(f[x-1]>a[i-1])continue;
-				//				if(c[i])continue;
-				//				else {
-				f[x]=a[i-1];
-				//					c[i]=true;
-				o(x+1);
-				//					c[i]=false;
-				//				}
+				//				if(x>0)
+				//					if(f[x-1]>a[i-1])continue;
+				if(c[i])continue;
+				else {
+					f[x]=a[i-1];
+					c[i]=true;
+					o(x+1);
+					c[i]=false;
+				}
 			}
 	}
 	public static void main(String[] args)throws Exception{
@@ -38,7 +38,7 @@ public class P15663 {
 		m=Integer.parseInt(t.nextToken());
 		a=new int[n];
 		f=new int[m];
-//		c=new boolean[n+1];
+		c=new boolean[n+1];
 		t=new StringTokenizer(r.readLine());
 		for(int i=0;i<n;a[i++]=Integer.parseInt(t.nextToken()));
 		Arrays.sort(a);
