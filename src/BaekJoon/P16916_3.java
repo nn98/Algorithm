@@ -4,7 +4,6 @@ package BaekJoon;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
-
 public class P16916_3 {
 	static int ans=0;
 	static int[] getPi(String pattern) {
@@ -19,7 +18,6 @@ public class P16916_3 {
 		}
 		return pi;
 	}
-	
 	static void KMP(String origin, String ptn) {
 		int[] pi = getPi(ptn);
 		int j=0;
@@ -37,7 +35,6 @@ public class P16916_3 {
 			}
 		}
 	}
-	
 	public static void main(String[] args) throws Exception{
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		String origin = br.readLine();
