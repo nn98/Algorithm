@@ -4,8 +4,11 @@ import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 import java.util.StringTokenizer;
 
@@ -49,7 +52,9 @@ public class P15663_Sol2 {
 		for(int i=0;i<n;a[i++]=Integer.parseInt(t.nextToken()));
 		Arrays.sort(a);
 		o(0);
-		for(String s:s)w.write(s+"\n");
+		List<String>l=new ArrayList(s);
+		Collections.sort(l);
+		for(String s:l)w.write(s+"\n");
 		w.flush();
 	}
 
