@@ -24,7 +24,7 @@ public class P16472 {
 			System.out.println("i: "+i);
 			System.out.println("j: "+j);
 			m=m>j-i?m:j-1;
-			for(j=i+1;j<a.length&&a[j-1]==a[j++];);
+			for(j=i+1;j<a.length&&a[j-1]==a[j];j++);
 			i=j;
 		}
 		System.out.print(m-1);
