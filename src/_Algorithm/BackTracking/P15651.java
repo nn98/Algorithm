@@ -38,5 +38,4 @@ public class P15651 {
 		o(0);
 		w.flush();
 	}
-
 }
