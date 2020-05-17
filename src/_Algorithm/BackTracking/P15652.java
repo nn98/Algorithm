@@ -19,8 +19,7 @@ public class P15652 {
 			w.newLine();
 		}else
 			for(int i=0;i++<n;) {
-				if(x>0)
-				if(i>f[x-1]-'0')break;
+				if(x>0)if(i<f[x-1]-'0')continue;
 				//				if(c[i])continue;
 				//				else {
 				f[x]=(char)(i+'0');
