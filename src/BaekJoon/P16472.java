@@ -28,6 +28,7 @@ public class P16472 {
 //				j++;
 //			}
 			m=m>j-i?m:j-1;
+			System.out.println(m);
 			for(j=i+1;j<a.length&&a[j-1]==a[j];j++);
 			i=j;
 		}
