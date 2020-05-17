@@ -11,18 +11,21 @@ public class P16472 {
 		boolean[]b;
 		for(;i<a.length;) {
 			b=new boolean[26];
-			j=i;
 			c=0;
-			while(c<=n) {
-				if(j>=a.length)break;
-				if(!b[a[j]-'a']) {
-					c++;
-					b[a[j]-'a']=true;
-				}
-				j++;
+			for(j=i;c<n;j++) {
+				if(a[j+1]!=a[j])c++;
+				
 			}
-			System.out.println("i: "+i);
-			System.out.println("j: "+j);
+			System.out.println("i: "+i+" j: "+j);
+			
+//			while(c<=n) {
+//				if(j>=a.length)break;
+//				if(!b[a[j]-'a']) {
+//					c++;
+//					b[a[j]-'a']=true;
+//				}
+//				j++;
+//			}
 			m=m>j-i?m:j-1;
 			for(j=i+1;j<a.length&&a[j-1]==a[j];j++);
 			i=j;
