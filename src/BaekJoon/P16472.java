@@ -14,6 +14,7 @@ public class P16472 {
 			j=i;
 			c=0;
 			while(c<n) {
+				if(j>=a.length)break;
 				if(!b[a[j]-'a']) {
 					c++;
 					b[a[j]-'a']=true;
