@@ -1,4 +1,4 @@
-package _Algorithm;
+package _Algorithm.BackTracking;
 
 import java.util.Scanner;
 
@@ -8,13 +8,27 @@ public class BackTracking {
 	static char[]r;
 	static boolean[]c;
 	
-	static void o(int x,int l) {
+	// 중복 가능한 모든 조합
+	static void o1(int x) {
 		if(x==m)
 			System.out.println(r);
 		else
 			for(int i=0;i++<n;) {
 				r[x]=(char) (i+'0');
-				o(x+1,0);
+				o1(x+1);
+			}
+	}
+
+	static void o2(int x) {
+		if(x==m)
+			System.out.println(r);
+		else
+			for(int i=0;i++<n;) {
+				if(c[i])continue;
+				r[x]=(char) (i+'0');
+				c[i]=true;
+				o2(x+1);
+				c[i]=false;
 			}
 	}
 	
@@ -27,6 +41,8 @@ public class BackTracking {
 		m=s.nextInt();
 		b=new int[m];
 		r=new char[m];
-		o(0,0);
+		o1(0);
+		c=new boolean[n+1];
+		o2(0);
 	}
 }
