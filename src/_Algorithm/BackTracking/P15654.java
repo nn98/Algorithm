@@ -34,12 +34,12 @@ public class P15654 {
 		StringTokenizer t=new StringTokenizer(r.readLine());
 		n=Integer.parseInt(t.nextToken());
 		m=Integer.parseInt(t.nextToken());
-		Arrays.sort(a);
 		a=new int[n];
 		f=new char[m];
 		c=new boolean[n+1];
 		t=new StringTokenizer(r.readLine());
 		for(int i=0;i<n;a[i++]=Integer.parseInt(t.nextToken()));
+		Arrays.sort(a);
 		o(0);
 		w.flush();
 	}
