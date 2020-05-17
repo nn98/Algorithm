@@ -19,9 +19,11 @@ public class P16472 {
 				}
 				j++;
 			}
+			m=m>j-i?m:j-1;
 			for(j=i+1;a[j-1]==a[j++];);
 			i=j;
 		}
+		System.out.print(m-1);
 	}
 
 }
