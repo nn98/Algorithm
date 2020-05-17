@@ -11,7 +11,7 @@ public class P15656 {
 
 	static int n,m;
 	static int[]a,f;
-	static boolean[]c;
+//	static boolean[]c;
 	static BufferedWriter w=new BufferedWriter(new OutputStreamWriter(System.out));
 	static void o(int x)throws Exception{
 		if(x==m) {
@@ -19,14 +19,15 @@ public class P15656 {
 				w.write(a+" ");
 			w.newLine();
 		}else
-			for(int i=0;i++<n;)
-				if(c[i])continue;
-				else {
-					f[x]=a[i-1];
-					c[i]=true;
-					o(x+1);
-					c[i]=false;
-				}
+			for(int i=0;i++<n;) {
+				//				if(c[i])continue;
+				//				else {
+				f[x]=a[i-1];
+				//					c[i]=true;
+				o(x+1);
+				//					c[i]=false;
+				//				}
+			}
 	}
 	public static void main(String[] args)throws Exception{
 		BufferedReader r=new BufferedReader(new InputStreamReader(System.in));
@@ -35,7 +36,7 @@ public class P15656 {
 		m=Integer.parseInt(t.nextToken());
 		a=new int[n];
 		f=new int[m];
-		c=new boolean[n+1];
+//		c=new boolean[n+1];
 		t=new StringTokenizer(r.readLine());
 		for(int i=0;i<n;a[i++]=Integer.parseInt(t.nextToken()));
 		Arrays.sort(a);
