@@ -36,7 +36,7 @@ public class P16472 {
 			for(j=i+1;j<a.length&&a[j-1]==a[j];j++);
 			i=j;
 		}
-		System.out.print(m-1);
+		System.out.print(m);
 	}
 
 }
