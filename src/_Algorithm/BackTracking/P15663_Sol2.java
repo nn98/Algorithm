@@ -5,6 +5,8 @@ import java.io.BufferedWriter;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 import java.util.Arrays;
+import java.util.HashSet;
+import java.util.Set;
 import java.util.StringTokenizer;
 
 public class P15663_Sol2 {
@@ -13,11 +15,15 @@ public class P15663_Sol2 {
 	static int[]a,f;
 	static boolean[]c;
 	static BufferedWriter w=new BufferedWriter(new OutputStreamWriter(System.out));
+	static Set<String>s=new HashSet();
 	static void o(int x)throws Exception{
 		if(x==m) {
+			StringBuffer u=new StringBuffer();
 			for(int a:f)
-				w.write(a+" ");
-			w.newLine();
+				u.append(a+" ");
+//				w.write(a+" ");
+//			w.newLine();
+			s.add(u.toString());
 		}else
 			for(int i=0;i++<n;) {
 				//				if(x>0)
@@ -43,6 +49,7 @@ public class P15663_Sol2 {
 		for(int i=0;i<n;a[i++]=Integer.parseInt(t.nextToken()));
 		Arrays.sort(a);
 		o(0);
+		for(String s:s)w.write(s+"\n");
 		w.flush();
 	}
 
