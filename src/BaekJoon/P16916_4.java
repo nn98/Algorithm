@@ -5,8 +5,8 @@ import java.io.InputStreamReader;
 
 public class P16916_4 {
 	public static void main(String[] args)throws Exception{
-		BufferedReader r=new BufferedReader(new InputStreamReader(System.in));
-		char[]a=r.readLine().toCharArray(),b=r.readLine().toCharArray();
+		BufferedReader R=new BufferedReader(new InputStreamReader(System.in));
+		char[]a=R.readLine().toCharArray(),b=R.readLine().toCharArray();
 		int i=0,j,r,A=a.length,B=b.length,c=0;
 		for(;i<A&&c==0;i++)
 			if(a[i]==b[0]) {
