@@ -1,4 +1,4 @@
-package _Algorithm;
+package _Algorithm.BackTracking;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
