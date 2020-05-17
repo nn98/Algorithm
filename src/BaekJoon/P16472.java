@@ -18,7 +18,6 @@ public class P16472 {
 				
 			}
 			System.out.println("i: "+i+" j: "+j);
-			
 //			while(c<=n) {
 //				if(j>=a.length)break;
 //				if(!b[a[j]-'a']) {
