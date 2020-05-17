@@ -15,6 +15,7 @@ public class P16916_2 {
 			m=BigInteger.ZERO;
 			for(j=1;j<b.length;j++)
 				m=m.add(new BigInteger(""+j*a[i+j-1]));
+			System.out.println(m);
 			if(n.equals(m))c++;
 		}
 		System.out.println(c);
