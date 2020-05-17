@@ -31,12 +31,11 @@ public class P16472 {
 //				j++;
 //			}
 			m=m>j-i?m:j-i;
-			System.out.println("i: "+i+" j: "+j);
-			System.out.println(m);
+//			System.out.println("i: "+i+" j: "+j);
+//			System.out.println(m);
 			for(j=i+1;j<a.length&&a[j-1]==a[j];j++);
 			i=j;
 		}
 		System.out.print(m);
 	}
-
 }
