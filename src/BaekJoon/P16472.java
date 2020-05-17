@@ -11,7 +11,8 @@ public class P16472 {
 		boolean[]b;
 		for(;i<a.length;) {
 			b=new boolean[26];
-			j=c=0;
+			j=i;
+			c=0;
 			while(c<n) {
 				if(!b[a[j]-'a']) {
 					c++;
