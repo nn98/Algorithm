@@ -7,7 +7,7 @@ import java.io.OutputStreamWriter;
 import java.util.Arrays;
 import java.util.StringTokenizer;
 
-public class P15656 {
+public class P15657 {
 
 	static int n,m;
 	static int[]a,f;
