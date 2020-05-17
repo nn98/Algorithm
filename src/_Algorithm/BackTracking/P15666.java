@@ -6,7 +6,7 @@ import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 import java.util.StringTokenizer;
 
-public class P15665 {
+public class P15666 {
 
 	static int n,m,L=10001;
 	static int[]f,c=new int[L];
