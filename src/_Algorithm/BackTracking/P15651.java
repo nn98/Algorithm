@@ -18,14 +18,15 @@ public class P15651 {
 				w.write(a+" ");
 			w.newLine();
 		}else
-			for(int i=0;i++<n;)
+			for(int i=0;i++<n;) {
 				//				if(c[i])continue;
 				//				else {
 				f[x]=(char)(i+'0');
-		//					c[i]=true;
-		o(x+1);
-		//					c[i]=false;
-		//				}
+				//					c[i]=true;
+				o(x+1);
+				//					c[i]=false;
+				//				}
+			}
 	}
 	public static void main(String[] args)throws Exception{
 		BufferedReader r=new BufferedReader(new InputStreamReader(System.in));
@@ -33,7 +34,7 @@ public class P15651 {
 		n=Integer.parseInt(t.nextToken());
 		m=Integer.parseInt(t.nextToken());
 		f=new char[m];
-//		c=new boolean[n+1];
+		//		c=new boolean[n+1];
 		o(0);
 		w.flush();
 	}
