@@ -18,7 +18,7 @@ public class P15664 {
 				w.write(a+" ");
 			w.newLine();
 		}else {
-			int i=0,j=m;
+			int i=f[x==0?x:x-1],j=m;
 			for(;++i<L&&j>0;) {
 				//				if(x>0)
 				//					if(f[x-1]>a[i-1])continue;
