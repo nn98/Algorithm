@@ -21,9 +21,7 @@ public class P8595 {
 				}
 				
 		}
-		System.out.println(i);
-		System.out.println(a.substring(f,i));
-		if(c>0)r+=Integer.parseInt(a.substring(f,i));
+		if(c>0)r+=Integer.parseInt(a.substring(f,i+1));
 		System.out.print(r);
 	}
 }
