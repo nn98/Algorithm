@@ -3,7 +3,6 @@ package _Algorithm.String;
 import java.util.Scanner;
 
 public class P8595 {
-
 	public static void main(String[] args) {
 		Scanner s=new Scanner(System.in);
 		int n=s.nextInt(),i=0,f=0,t,r=0,c=0;
@@ -24,5 +23,4 @@ public class P8595 {
 		}
 		System.out.print(r);
 	}
-
 }
