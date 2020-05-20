@@ -8,8 +8,9 @@ public class DFS_Main {
 	static boolean a[][],h[];
 
 	static void o(int x,StringBuffer f) {
-		f.append(x+" ");
+		if(h[x])return;
 		h[x]=true;
+		f.append(x+" ");
 		int y=0,c=0;
 		for(;++y<n;) {
 			if(a[x][y])
