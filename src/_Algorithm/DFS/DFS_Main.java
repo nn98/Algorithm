@@ -12,7 +12,6 @@ public class DFS_Main {
 	}
 	
 	public static void main(String[] args) {
-		System.out.println((int)'');
 		Scanner s=new Scanner(System.in);
 		n=s.nextInt()+1;
 		m=s.nextInt();
