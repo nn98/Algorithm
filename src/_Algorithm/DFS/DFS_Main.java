@@ -9,8 +9,8 @@ public class DFS_Main {
 	
 	public static void main(String[] args) {
 		Scanner s=new Scanner(System.in);
-		n=s.nextInt();
+		n=s.nextInt()+1;
 		m=s.nextInt();
+		a=new boolean[n][n];
 	}
-
 }
