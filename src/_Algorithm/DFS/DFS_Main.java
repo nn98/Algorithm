@@ -15,8 +15,8 @@ public class DFS_Main {
 				if(h[y])continue;
 				else {
 					c++;
-					o(y,new StringBuffer(f));
 					h[y]=true;
+					o(y,new StringBuffer(f));
 				}
 		}
 		if(c==0)System.out.println(f);
