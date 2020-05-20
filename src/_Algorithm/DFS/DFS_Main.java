@@ -9,13 +9,13 @@ public class DFS_Main {
 
 	static void o(int x,StringBuffer f) {
 		f.append(x+" ");
+		h[x]=true;
 		int y=0,c=0;
 		for(;++y<n;) {
 			if(a[x][y])
 				if(h[y])continue;
 				else {
 					c++;
-					h[y]=true;
 					o(y,new StringBuffer(f));
 				}
 		}
