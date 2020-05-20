@@ -27,7 +27,7 @@ public class DFS_Main {
 		n=s.nextInt()+1;
 		m=s.nextInt();
 		a=new boolean[n][n];
-		b=new boolean[n];
+		h=new boolean[n];
 		for(;m-->0;i=s.nextInt(),j=s.nextInt(),a[i][j]=a[j][i]=true);
 	}
 }
