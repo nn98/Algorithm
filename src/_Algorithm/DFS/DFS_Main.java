@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class DFS_Main {
 
-	static int n,m,i;
+	static int n,m,i,j;
 	static boolean[][]a;
 	
 	public static void main(String[] args) {
@@ -12,5 +12,6 @@ public class DFS_Main {
 		n=s.nextInt()+1;
 		m=s.nextInt();
 		a=new boolean[n][n];
+		for(;m-->0;i=s.nextInt(),j=s.nextInt(),a[i][j]=a[j][i]=true);
 	}
 }
