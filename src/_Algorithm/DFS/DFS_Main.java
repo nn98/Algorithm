@@ -7,7 +7,12 @@ public class DFS_Main {
 	static int n,m,i,j;
 	static boolean[][]a;
 	
+	static void o(int x) {
+		
+	}
+	
 	public static void main(String[] args) {
+		System.out.println((int)'');
 		Scanner s=new Scanner(System.in);
 		n=s.nextInt()+1;
 		m=s.nextInt();
