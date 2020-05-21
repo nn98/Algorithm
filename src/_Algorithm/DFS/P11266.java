@@ -13,6 +13,7 @@ public class P11266 {
 		b=new boolean[n][n];
 		c=new int[n];
 		for(;m-->0;i=s.nextInt(),j=s.nextInt(),b[i][j]=b[j][i]=true);
+		System.out.println(m);
 	}
 
 }
