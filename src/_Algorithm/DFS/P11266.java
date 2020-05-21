@@ -9,6 +9,7 @@ public class P11266 {
 	
 	static void o(int x,boolean y) {
 		c[x]=m++;
+		int ret;
 	}
 	
 	public static void main(String[] args) {
