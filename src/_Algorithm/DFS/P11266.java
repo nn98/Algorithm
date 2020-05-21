@@ -8,7 +8,7 @@ public class P11266 {
 	static boolean[]a,b[];
 	
 	static void o(int x,boolean y) {
-		a[x]=m++;
+		c[x]=m++;
 	}
 	
 	public static void main(String[] args) {
