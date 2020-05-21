@@ -8,7 +8,7 @@ public class P11266 {
 	static boolean[]a,b[];
 	
 	static void o(int x,boolean y) {
-		
+		a[x]=m++;
 	}
 	
 	public static void main(String[] args) {
@@ -18,6 +18,7 @@ public class P11266 {
 		b=new boolean[n][n];
 		c=new int[n];
 		for(;m-->0;i=s.nextInt(),j=s.nextInt(),b[i][j]=b[j][i]=true);
+		m=1;
 		for(m=0;++m<n;)if(!a[m])o(m,true);
 	}
 
