@@ -9,7 +9,7 @@ public class P11266 {
 	static boolean[]a,b[];
 	
 	static int o(int x,boolean y) {
-		System.out.println(x);
+//		System.out.println(x);
 		c[x]=++r;
 		int ret=c[x],child=0,k=0;
 		for(;++k<n;) {
@@ -36,7 +36,9 @@ public class P11266 {
 		b=new boolean[n][n];
 		c=new int[n];
 		for(;m-->0;i=s.nextInt(),j=s.nextInt(),b[i][j]=b[j][i]=true);
-		for(m=0;++m<n;)if(c[m]>0)o(m,true);
+		for(m=0;++m<n;)if(c[m]==0)o(m,true);
+		System.out.println(Arrays.toString(c));
+		System.out.println(Arrays.toString(a));
 		m=0;
 		for(i=0;++i<n;m+=a[i]?1:0);
 		System.out.println(m);
