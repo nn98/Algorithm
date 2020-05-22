@@ -7,7 +7,7 @@ public class P11266 {
 	static int n,m,r,c[],i,j;
 	static boolean[]a,b[];
 	
-	static void o(int x,boolean y) {
+	static int o(int x,boolean y) {
 		c[x]=m++;
 		int ret=c[x],child=0,k=0;
 		for(;++k<n;) {
@@ -17,8 +17,13 @@ public class P11266 {
 					continue;
 				}
 				child++;
+				int p=o(k,false);
+				if(!y&&p>=c[x])a[x]=true;
+				ret=Math.min(ret, p);
 			}
 		}
+		if(y)a[x]=child>=2;
+		return ret;
 	}
 	
 	public static void main(String[] args) {
@@ -30,6 +35,10 @@ public class P11266 {
 		for(;m-->0;i=s.nextInt(),j=s.nextInt(),b[i][j]=b[j][i]=true);
 		m=1;
 		for(m=0;++m<n;)if(!a[m])o(m,true);
+		m=0;
+		for(i=0;++i<n;m+=a[i]?1:0);
+		System.out.println(m);
+		for(i=0;++i<n;System.out.print(a[i]?i+" ":""));
 	}
 
 }
