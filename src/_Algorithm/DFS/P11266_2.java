@@ -13,13 +13,12 @@ public class P11266_2 {
 		return r;
 	}
 	public static void main(String[] args) {
-		for(int x=7;x>0;System.out.println(x));
 		Scanner s=new Scanner(System.in);
 		v=s.nextInt()+1;
 		e=s.nextInt();
-		d=new int[n];
-		c=new int[n];
-		l=new List[n];
+		d=new int[v];
+		c=new int[v];
+		l=new List[v];
 		for(;++i<v;l[i]=new ArrayList());
 		for(;e-->0;f=s.nextInt(),t=s.nextInt(),l[f].add(t),l[t].add(f));
 		for(i=0;++i<v;)if(d[i]==0)o(i,true);
