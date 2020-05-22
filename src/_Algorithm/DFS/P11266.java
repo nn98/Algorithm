@@ -36,7 +36,7 @@ public class P11266 {
 		b=new boolean[n][n];
 		c=new int[n];
 		for(;m-->0;i=s.nextInt(),j=s.nextInt(),b[i][j]=b[j][i]=true);
-		for(boolean[]t:b)System.out.println(Arrays.toString(t));
+//		for(boolean[]t:b)System.out.println(Arrays.toString(t));
 		j=m=1;
 		for(m=0;++m<n;)if(!a[m])o(m,true);
 		m=0;
