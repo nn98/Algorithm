@@ -13,7 +13,7 @@ public class P11266_2 {
 		return r;
 	}
 	public static void main(String[] args) {
-		for(int x=7;--x>0;System.out.println(x));
+		for(int x=7;x>0;System.out.println(x));
 		Scanner s=new Scanner(System.in);
 		v=s.nextInt()+1;
 		e=s.nextInt();
