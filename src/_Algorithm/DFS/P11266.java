@@ -9,7 +9,6 @@ public class P11266 {
 	static boolean[]a,b[];
 	
 	static int o(int x,boolean y) {
-		System.out.println(x);
 		c[x]=j++;
 		int ret=c[x],child=0,k=0;
 		for(;++k<n;) {
