@@ -1,5 +1,7 @@
 package _Algorithm.DFS;
-
+//boolean 	2차원배열로 시도시 에러.
+//List		배열로 시도시 성공.
+//연결된 순서가 중요하다?
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
@@ -34,6 +36,7 @@ public class P11266_2 {
 		l=new List[v];
 		for(;++i<v;l[i]=new ArrayList());
 		for(;e-->0;f=s.nextInt(),t=s.nextInt(),l[f].add(t),l[t].add(f));
+		for(i=0;++i<v;System.out.println(l[i].toString()));
 		f=0;
 		for(i=0;++i<v;)if(d[i]==0)o(i,true);
 		for(i=0;++i<v;n+=c[i]>0?1:0);
