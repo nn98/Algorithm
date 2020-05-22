@@ -12,7 +12,7 @@ public class P11266_2 {
 		d[x]=++f;
 		int r=d[x],h=0,i=0,N,p;
 		for(;i<l[x].size();) {
-			N=l[x].get(i);
+			N=l[x].get(i++);
 			if(d[N]>0) {
 				r=r<d[N]?r:d[N];
 				continue;
