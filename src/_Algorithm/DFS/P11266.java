@@ -12,7 +12,9 @@ public class P11266 {
 		System.out.println(x);
 		c[x]=j++;
 		int ret=c[x],child=0,k=0;
+		System.out.println(k+" "+n);
 		for(;++k<n;) {
+			System.out.println(x+" "+k);
 			if(b[x][k]) {
 				System.out.println(x+" "+k);
 				if(c[k]>0) {
@@ -31,7 +33,8 @@ public class P11266 {
 	
 	public static void main(String[] args) {
 		Scanner s=new Scanner(System.in);
-		int n=s.nextInt()+1,m=s.nextInt();
+		n=s.nextInt()+1;
+		m=s.nextInt();
 		a=new boolean[n];
 		b=new boolean[n][n];
 		c=new int[n];
