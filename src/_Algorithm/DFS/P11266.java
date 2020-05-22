@@ -9,7 +9,16 @@ public class P11266 {
 	
 	static void o(int x,boolean y) {
 		c[x]=m++;
-		int ret;
+		int ret=c[x],child=0,k=0;
+		for(;++k<n;) {
+			if(b[x][k]) {
+				if(c[k]>0) {
+					ret=Math.min(ret,k);
+					continue;
+				}
+				child++;
+			}
+		}
 	}
 	
 	public static void main(String[] args) {
