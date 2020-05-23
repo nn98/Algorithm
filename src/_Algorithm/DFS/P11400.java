@@ -10,18 +10,17 @@ public class P11400 {
 	static List[]l;
 	static int m,dis[],i,j;
 	static int o(int x,int p) {
-		System.out.println(x);
 		dis[x]=++m;
 		int r=dis[x],i=0,n,v;
 		for(;i<l[x].size();i++) {
 			n=(int)l[x].get(i);
 			if(n==p)continue;
-			if(dis[x]>0) {
+			if(dis[n]>0) {
 				r=r<dis[n]?r:dis[n];
 				continue;
 			}
 			v=o(n,x);
-			if(v>dis[x])l[0].add(x<n?x:n+" "+(x>n?x:n));
+			if(v>dis[x])l[0].add((x<n?x:n+" "+(x>n?x:n)));
 			r=r<v?r:v;
 		}
 		return r;
