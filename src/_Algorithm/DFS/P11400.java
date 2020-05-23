@@ -34,6 +34,7 @@ public class P11400 {
 		for(i=v;i-->0;l[i]=new ArrayList());
 		for(;e-->0;i=s.nextInt(),j=s.nextInt(),l[i].add(j),l[j].add(i));
 		for(i=0;++i<v;j=dis[i]==0?o(i,0):0);
+		for(List t:l)System.out.println(t);
 		System.out.println(l[0].size());
 		Collections.sort(l[0]);
 		for(i=0;i<l[0].size();System.out.println(l[0].get(i++)));
