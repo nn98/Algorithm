@@ -10,6 +10,7 @@ public class P11400 {
 	static List[]l;
 	static int m,dis[],i,j;
 	static int o(int x,int p) {
+		System.out.println(x);
 		dis[x]=++m;
 		int r=dis[x],i=0,n,v;
 		for(;i<l[x].size();i++) {
