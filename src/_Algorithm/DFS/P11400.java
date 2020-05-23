@@ -20,7 +20,7 @@ public class P11400 {
 				continue;
 			}
 			v=o(n,x);
-			if(v>dis[x])z.add(x<n?x:n+" "+(x>n?x:n));
+			if(v>dis[x])z.add((x<n?x:n)+" "+(x>n?x:n));
 			r=r<v?r:v;
 		}
 		return r;
@@ -35,8 +35,8 @@ public class P11400 {
 		for(;e-->0;i=s.nextInt(),j=s.nextInt(),l[i].add(j),l[j].add(i));
 		for(i=0;++i<v;j=dis[i]==0?o(i,0):0);
 		System.out.println(z.size());
-		Collections.sort(l[0]);
-		for(i=0;i<z.size();System.out.println(l[0].get(i++)));
+		Collections.sort(z);
+		for(i=0;i<z.size();System.out.println(z.get(i++)));
 	}
 
 }
