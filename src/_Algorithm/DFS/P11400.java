@@ -11,19 +11,19 @@ public class P11400 {
 	static int m,dis[],i,j;
 	static int o(int x,int p) {
 		dis[x]=++m;
-		int r=dis[x],i=0,n,v;
+		int ret=dis[x],i=0;
 		for(;i<l[x].size();i++) {
-			n=(int)l[x].get(i);
-			if(n==p)continue;
-			if(dis[n]>0) {
-				r=r<dis[n]?r:dis[n];
+			int nex=(int)l[x].get(i);
+			if(nex==p)continue;
+			if(dis[nex]>0) {
+				ret=Math.min(ret,dis[nex]);
 				continue;
 			}
-			v=o(n,x);
-			if(v>dis[x])l[0].add((x<n?x:n)+" "+(x>n?x:n));
-			r=r<v?r:v;
+			int pre=o(nex,x);
+			if(pre>dis[x])l[0].add((x<nex?x:nex)+" "+(x>nex?x:nex));
+			ret=Math.min(ret, pre);
 		}
-		return r;
+		return ret;
 	}
 	public static void main(String[] args) {
 		Scanner s=new Scanner(System.in);
