@@ -1,11 +1,10 @@
 package _Algorithm.DFS;
-
+//¾¯ÀÌ,,,¹ú Á¸³ª ¾î·Æ³×
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 import java.util.Scanner;
-
 
 public class P11400_2 {
 	static List[]l;
