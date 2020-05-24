@@ -2,53 +2,31 @@ package _Algorithm.DFS;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Scanner;
 
 public class P11400 {
-	static class Pair<L,R> {
-		final L left;
-		final R right;
+	static class Pair implements Comparable<Pair>{
+		final int left;
+		final int right;
 
-		public Pair(L left, R right) {
+		public Pair(int left, int right) {
 			this.left = left;
 			this.right = right;
 		}
 
-		@Override
-		public int hashCode() {
-			final int prime = 31;
-			int result = 1;
-			result = prime * result + ((left == null) ? 0 : left.hashCode());
-			result = prime * result + ((right == null) ? 0 : right.hashCode());
-			return result;
+		public int compareTo(Pair o) {
+			int r=0;
+			r=Integer.compare(this.left,o.left);
+			if(r==0)r=Integer.compare(this.right,this.right);
+			return r;
 		}
 
-		@Override
-		public boolean equals(Object obj) {
-			if (this == obj)
-				return true;
-			if (obj == null)
-				return false;
-			if (getClass() != obj.getClass())
-				return false;
-			Pair other = (Pair) obj;
-			if (left == null) {
-				if (other.left != null)
-					return false;
-			} else if (!left.equals(other.left))
-				return false;
-			if (right == null) {
-				if (other.right != null)
-					return false;
-			} else if (!right.equals(other.right))
-				return false;
-			return true;
+		public String toString() {
+			return this.left+" "+this.right;
 		}
 
-		static <L,R> Pair<L,R> of(L left, R right){
-			return new Pair<L,R>(left, right);
-		}
 	}
 	static List[]l;
 	static int m,dis[],i,j;
@@ -63,7 +41,7 @@ public class P11400 {
 				continue;
 			}
 			int pre=o(nex,x);
-			if(pre>dis[x])l[0].add(new Pair(x<nex?x:nex,x<nex?x:nex));
+			if(pre>dis[x])l[0].add(new Pair(x<nex?x:nex,x>nex?x:nex));
 			ret=Math.min(ret, pre);
 		}
 		return ret;
