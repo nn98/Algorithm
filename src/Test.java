@@ -3,59 +3,36 @@ import java.util.Collections;
 import java.util.List;
 
 public class Test {
-	static class Pair<L,R> {
-		static <L,R> Pair<L,R> of(L left, R right){
-			return new Pair<L,R>(left, right);
-		}
-		final L left;
+	static class Pair implements Comparable<Pair>{
+		final int left;
+		final int right;
 
-		final R right;
-
-		public Pair(L left, R right) {
+		public Pair(int left, int right) {
 			this.left = left;
 			this.right = right;
 		}
 
-		@Override
-		public boolean equals(Object obj) {
-			if (this == obj)
-				return true;
-			if (obj == null)
-				return false;
-			if (getClass() != obj.getClass())
-				return false;
-			Pair other = (Pair) obj;
-			if (left == null) {
-				if (other.left != null)
-					return false;
-			} else if (!left.equals(other.left))
-				return false;
-			if (right == null) {
-				if (other.right != null)
-					return false;
-			} else if (!right.equals(other.right))
-				return false;
-			return true;
+		public int compareTo(Pair o) {
+			int r=0;
+			r=Integer.compare(this.left,o.left);
+			if(r==0)r=Integer.compare(this.right,this.right);
+			return r;
 		}
 
-		@Override
-		public int hashCode() {
-			final int prime = 31;
-			int result = 1;
-			result = prime * result + ((left == null) ? 0 : left.hashCode());
-			result = prime * result + ((right == null) ? 0 : right.hashCode());
-			return result;
+		public String toString() {
+			return this.left+" "+this.right;
 		}
+
 	}
 	public static void main(String[] args) {
 		List l=new ArrayList();
-//		l.add("1 2");
-//		l.add("6 7");
-//		l.add("115 22");
-//		l.add("185 21");
-//		l.add("101 2");
-//		l.add("101 25646");
-//		l.add("10949 22");
+		//		l.add("1 2");
+		//		l.add("6 7");
+		//		l.add("115 22");
+		//		l.add("185 21");
+		//		l.add("101 2");
+		//		l.add("101 25646");
+		//		l.add("10949 22");
 		l.add(new Pair(1,2));
 		l.add(new Pair(6,7));
 		l.add(new Pair(115,22));
@@ -64,6 +41,21 @@ public class Test {
 		l.add(new Pair(100,25646));
 		l.add(new Pair(10949,22));
 		Collections.sort(l);
+		//		int as=0;
+		//		
+		//		int[][]a= {
+		//				{1,2},
+		//				{6,7},
+		//				{115,22},
+		//				{185,21},
+		//				{101,2},
+		//				{100,25665},
+		//				{10949,22}
+		//		};
+		//
+		//		Arrays.sort(a);
+		//		for(int[]i:a)System.out.println(Arrays.toString(i));
+
 		System.out.println(l);
 	}
 
