@@ -33,7 +33,6 @@ public class Bubble {
 				}
 		}
 		System.out.println(Arrays.toString(a));
-		System.out.println(i);
 	}
 
 }
