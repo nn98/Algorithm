@@ -1,5 +1,6 @@
 package _Algorithm.Sorting;
 
+import java.util.Arrays;
 import java.util.Scanner;
 public class P1517 {
 
@@ -27,7 +28,7 @@ public class P1517 {
 				r+=c;
 			}
 			else 
-				if(a[x]<a[y]) {
+				if(a[x]<=a[y]) {
 					b[z++]=a[x++];
 					r+=c;
 				}
@@ -49,7 +50,7 @@ public class P1517 {
 		//System.out.println(Arrays.toString(a));
 		o(0,n-1);
 //		for(i=0;i<n;System.out.println(a[i++]));
-		//System.out.println(Arrays.toString(a));
+//		System.out.println(Arrays.toString(a));
 		System.out.println(r);
 	}
 
