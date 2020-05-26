@@ -4,7 +4,8 @@ import java.util.Scanner;
 
 public class P1517 {
 
-	static int n,i,a[],b[],r;
+	static int n,i,a[],b[];
+	static long r;
 	static void o(int f,int t) {
 		if(f<t) {
 			int m=(f+t)/2;
