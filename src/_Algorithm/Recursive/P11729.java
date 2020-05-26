@@ -8,10 +8,10 @@ public class P11729 {
 	static int r,i=-2,j;
 	static void o(int n,int f,int b,int t) {
 		r++;
-		if(n==1)s.append(f+" "+t+"\n");
+		if(n==1)s.append("\n"+f+" "+t);
 		else {
 			o(n-1,f,t,b);
-			s.append(f+" "+t+"\n");
+			s.append("\n"+f+" "+t);
 			o(n-1,b,f,t);
 		}
 	}
