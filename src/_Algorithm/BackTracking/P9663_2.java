@@ -9,6 +9,7 @@ public class P9663_2 {
 		if(x==n)r++;
 		else {
 			for(int i=0;++i<=n;x--) {
+				System.out.println(Arrays.toString(a));
 				a[++x]=i;
 				if(p(x)>0)d(x);
 				else a[x]=0;
@@ -28,7 +29,6 @@ public class P9663_2 {
 			a=new int[15];
 			a[1]=i;
 			d(1);
-			System.out.println(Arrays.toString(a));
 		}
 		System.out.print(r);
 	}
