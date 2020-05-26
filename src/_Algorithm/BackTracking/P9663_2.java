@@ -1,5 +1,7 @@
 package _Algorithm.BackTracking;
 
+import java.util.Arrays;
+
 public class P9663_2 {
 
 	static int n=new java.util.Scanner(System.in).nextInt(),r,a[],i;
@@ -26,6 +28,7 @@ public class P9663_2 {
 			a=new int[15];
 			a[1]=i;
 			d(1);
+			System.out.println(Arrays.toString(a));
 		}
 		System.out.print(r);
 	}
