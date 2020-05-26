@@ -1,5 +1,6 @@
 package _Algorithm.BackTracking;
-
+//이건 뭔 기묘한 백트래킹이여
+//2차원을 1차원으로 전환? 와 시발 천잰가
 import java.util.Arrays;
 
 public class P9663_2 {
