@@ -23,7 +23,7 @@ public class P9663_2 {
 	}
 	public static void main(String[] args) {
 		for(;++i<=n;) {
-			a=new int[n];
+			a=new int[15];
 			a[1]=i;
 			d(1);
 		}
