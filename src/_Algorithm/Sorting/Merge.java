@@ -35,6 +35,7 @@ public class Merge {
 		for(;i<n;a[i++]=s.nextInt());
 		//System.out.println(Arrays.toString(a));
 		o(0,n-1);
+		for(i=0;i<n;System.out.println(a[i++]));
 		//System.out.println(Arrays.toString(a));
 	}
 
