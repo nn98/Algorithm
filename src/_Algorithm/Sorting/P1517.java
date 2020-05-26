@@ -1,7 +1,6 @@
 package _Algorithm.Sorting;
 
 import java.util.Scanner;
-
 public class P1517 {
 
 	static int n,i,a[],b[];
