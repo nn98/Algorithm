@@ -4,7 +4,7 @@ package _Algorithm.Sorting;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class Marge {
+public class Merge_Fail {
 
 	static int n,i,j,a[],b[];
 	static void m(int f,int t) {
