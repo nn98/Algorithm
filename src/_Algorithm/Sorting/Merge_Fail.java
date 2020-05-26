@@ -1,7 +1,6 @@
 package _Algorithm.Sorting;
 //실패!
 //난 제대로되는데 ㅅㅂ
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class Merge_Fail {
