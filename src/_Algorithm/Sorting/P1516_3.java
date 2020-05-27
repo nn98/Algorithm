@@ -8,6 +8,7 @@ public class P1516_3 {
 	static boolean[]a[],b[],f;
 	static void o() {
 		x++;
+		y=0;
 		for(i=0;++i<n;) {
 			if(f[i])continue;
 			boolean c=false;
@@ -17,9 +18,9 @@ public class P1516_3 {
 				f[i]=true;
 			}
 		}
-		System.out.println(Arrays.toString(t)+x);
+		System.out.println(Arrays.toString(t[x])+x);
 		for(i=0;++i<n&&t[x][i]!=0;)
-			for(k=0;++k<n;a[k][i]=false);
+			for(k=0;++k<n;a[k][t[x][i]]=false,System.out.println(k+" "+i));
 	}
 	public static void main(String[] args) {
 //		System.out.println(1^1); XOR test
@@ -37,7 +38,10 @@ public class P1516_3 {
 		}
 		System.out.println(Arrays.toString(v));
 		while(x<n-1)o();
-		System.out.println(Arrays.toString(t));
+		for(boolean[]c:a)
+			System.out.println(Arrays.toString(c));
+		for(int[]c:t)
+			System.out.println(Arrays.toString(c));
 		for(boolean[]c:b)
 			System.out.println(Arrays.toString(c));
 //		for(i=0;++i<n;) {
@@ -51,6 +55,18 @@ public class P1516_3 {
 //			}
 //			r[j]+=v[j];
 //		}
+		for(i=0;++i<n;) {
+			j=0;
+			while(++j<n&&t[i][j]!=0) {
+				k=t[i][j];
+				for(x=0;++x<i;) {
+					for(y=0;++j<n&&t[x][y]!=0;)
+						if(b[k][t[x][y]])
+							r[k]=Math.max(r[k],v[t[x][y]]);
+				}
+				r[k]+=v[k];
+			}
+		}
 		System.out.println(Arrays.toString(r));
 	}
 
