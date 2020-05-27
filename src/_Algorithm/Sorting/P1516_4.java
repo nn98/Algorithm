@@ -13,7 +13,7 @@ public class P1516_4 {
 		v=new int[n];
 		c=new int[n];
 		l=new List[n];
-		for(;++i<n;l[i]=new ArrayList());
+		for(;i<n;l[i++]=new ArrayList());
 		for(i=0;++i<n;) {
 			j=0;
 			for(String s:r.readLine().split(" ")) {
@@ -29,9 +29,6 @@ public class P1516_4 {
 		System.out.println(Arrays.toString(v));
 		System.out.println(Arrays.toString(c));
 		for(i=0;++i<n;System.out.println(l[i].toString()));
-		
-		
-		
 	}
 
 }
