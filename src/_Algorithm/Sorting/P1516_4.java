@@ -16,12 +16,13 @@ public class P1516_4 {
 		for(;++i<n;l[i]=new ArrayList());
 		for(i=0;++i<n;) {
 			j=0;
-			StringTokenizer t=new StringTokenizer(r.readLine());
-			while((m=Integer.parseInt(t.nextToken()))>=0) {
-				if(j==0)v[i]=m;
-				else {
-					l[i].add(Integer.parseInt(t.nextToken()));
-					c[i]++;
+			for(String s:r.readLine().split(" ")) {
+				if(!s.equals("-1")) {
+					if(j>0) {
+						l[i].add(Integer.parseInt(s));
+						c[i]++;
+					}
+					else v[i]=Integer.parseInt(s);
 				}
 			}
 		}
