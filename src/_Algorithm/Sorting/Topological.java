@@ -13,7 +13,7 @@ public class Topological {
 		}
 	}
 	public static void main(String[] args) {
-		System.out.println(1^1);
+//		System.out.println(1^1); XOR test
 		Scanner s=new Scanner(System.in);
 		n=s.nextInt()+1;
 		v=new int[n];
