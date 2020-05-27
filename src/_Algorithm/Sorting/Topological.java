@@ -7,13 +7,19 @@ public class Topological {
 
 	static int n,i,j,v[],t[];
 	static boolean[][]a;
+	static void o() {
+		for(i=0;++i<n;) {
+			boolean c=false;
+		}
+	}
 	public static void main(String[] args) {
+		System.out.println(1^1);
 		Scanner s=new Scanner(System.in);
-		n=s.nextInt();
+		n=s.nextInt()+1;
 		v=new int[n];
 		t=new int[n];
 		a=new boolean[n][n];
-		for(;i<n;i++) {
+		for(;++i<n;) {
 			v[i]=s.nextInt();
 			while((j=s.nextInt())>=0)a[i][j]=true;
 		}
