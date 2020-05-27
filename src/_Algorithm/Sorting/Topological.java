@@ -49,6 +49,7 @@ public class Topological {
 				if(b[j][t[k]])
 					r[j]=Math.max(r[j],v[t[k]]);
 			}
+			r[j]+=v[j];
 		}
 		System.out.println(Arrays.toString(r));
 	}
