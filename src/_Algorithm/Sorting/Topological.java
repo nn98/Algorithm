@@ -15,6 +15,11 @@ public class Topological {
 	static List<Integer>[]l;
 	static void o() {
 		for(i=0;++i<n;)if(c[i]==0)l[0].add(i);
+		for(i=0;++i<n;) {
+			j=l[0].remove(0);
+			System.out.print(j+" ");
+			for(int z:l[j])c[z]--;
+		}
 	}
 	public static void main(String[] args)throws Exception{
 		BufferedReader r=new BufferedReader(new InputStreamReader(System.in));
