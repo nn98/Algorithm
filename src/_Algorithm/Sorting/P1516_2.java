@@ -3,7 +3,7 @@ package _Algorithm.Sorting;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class Topological {
+public class P1516_2 {
 
 	static int n,i,j,k,x,v[],t[],r[];
 	static boolean[]a[],b[],f;
