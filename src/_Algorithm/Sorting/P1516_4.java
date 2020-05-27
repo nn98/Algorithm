@@ -18,7 +18,7 @@ public class P1516_4 {
 			j=0;
 			for(String s:r.readLine().split(" ")) {
 				if(!s.equals("-1")) {
-					if(j>0) {
+					if(++j>1) {
 						l[i].add(Integer.parseInt(s));
 						c[i]++;
 					}
