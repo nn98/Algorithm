@@ -8,17 +8,22 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.Queue;
 
 public class Topological {
 
 	static int n,m,v[],c[],i,j,k,x;
 	static List<Integer>[]l;
 	static void o() {
-		for(i=0;++i<n;)if(c[i]==0)l[0].add(i);
+		Queue q=new LinkedList();
+		for(i=0;++i<n;)if(c[i]==0)q.add(i);
 		for(i=0;++i<n;) {
-			j=l[0].remove(0);
+			j=(int)q.remove();
 			System.out.print(j+" ");
-			for(int z:l[j])c[z]--;
+			for(int z:l[j]) {
+				c[z]--;
+				if(c[z]==0)q.add(z);
+			}
 		}
 	}
 	public static void main(String[] args)throws Exception{
@@ -44,6 +49,7 @@ public class Topological {
 			}
 		}
 		System.out.println(Arrays.toString(c));
-		for(i=0;++i<n;System.out.println(l[i].toString()));
+//		for(i=0;++i<n;System.out.println(l[i].toString()));
+		o();
 	}
 }
