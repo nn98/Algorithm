@@ -5,13 +5,16 @@ import java.util.Scanner;
 
 public class Topological {
 
-	static int n,i,j,x,v[],t[];
+	static int n,i,j,k,x,v[],t[];
 	static boolean[][]a;
 	static void o() {
 		for(i=0;++i<n;) {
 			boolean c=false;
 			for(j=0;++j<n;c=c|a[i][j]);
-			if(!c)t[x++]=i;
+			if(!c) {
+				for(k=0;++k<n;a[k][i]=false);
+				t[x++]=i;
+			}
 		}
 	}
 	public static void main(String[] args) {
@@ -28,7 +31,7 @@ public class Topological {
 		System.out.println(Arrays.toString(v));
 		for(boolean[]b:a)
 			System.out.println(Arrays.toString(b));
-		o();
+		while(x<n-1)o();
 		System.out.println(Arrays.toString(t));
 	}
 
