@@ -1,5 +1,6 @@
 package _Algorithm.Sorting;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class P1516 {
@@ -11,6 +12,7 @@ public class P1516 {
 			for(j=0;j<2;a[i][j++]=s.nextInt());
 			if(++i>1)s.next();
 		}
+		for(int[]b:a)System.out.println(Arrays.toString(b));
 	}
 
 }
