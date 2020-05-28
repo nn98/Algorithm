@@ -38,7 +38,7 @@ public class Quick {
 //		System.out.println(Arrays.toString(a));
 		o(0,n-1);
 		for(int i:a)System.out.println(i);
-//		System.out.println(Arrays.toString(a)); 10 31 8 48 73 11 28 20 29 65 15
+//		System.out.println(Arrays.toString(a));
 	}
 
 }
