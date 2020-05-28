@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class Quick {
 
-	static int n,a[],i,j;
+	static int n,a[],i,j,m;
 	static void w(int f,int t) {
 		System.out.println(8);
 		int x=a[f];
@@ -14,12 +14,13 @@ public class Quick {
 	}
 	static void o(int f,int t) {
 		if(f<t) {
-			int m=(f+t)/2;
-			p(f,m,(f+m)/2);
-			p(m+1,t,(m+1+t)/2);
+			p(f,t);
+			o(f,i);
+			o(i+2,t);
 		}
 	}
-	static void p(int f,int t,int m) {
+	static void p(int f,int t) {
+		int m=(f+t)/2;
 		w(t,m);
 		i=f-1;
 		j=f;
@@ -30,7 +31,6 @@ public class Quick {
 			}
 		}
 		w(i+1,t);
-
 	}
 	public static void main(String[] args) {
 		Scanner s=new Scanner(System.in);
@@ -38,7 +38,7 @@ public class Quick {
 		a=new int[n];
 		for(;i<n;a[i++]=s.nextInt());
 		System.out.println(Arrays.toString(a));
-		p(0,n-1,n/2);
+		o(0,n-1);
 		System.out.println(Arrays.toString(a));
 	}
 
