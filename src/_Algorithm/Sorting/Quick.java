@@ -1,5 +1,6 @@
 package _Algorithm.Sorting;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Quick {
@@ -16,6 +17,7 @@ public class Quick {
 		n=s.nextInt();
 		a=new int[n];
 		for(;i<n;a[i++]=s.nextInt());
+		System.out.println(Arrays.toString(a));
 	}
 
 }
