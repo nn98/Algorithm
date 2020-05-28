@@ -7,7 +7,7 @@ public class Quick {
 
 	static int n,a[],i,j;
 	static void w(int f,int t) {
-		System.out.println(w);
+		System.out.println(8);
 		int x=a[f];
 		a[f]=a[t];
 		a[t]=x;
@@ -22,12 +22,13 @@ public class Quick {
 			w(t,m);
 			i=f-1;
 			j=f;
+			System.out.println(j+" "+t);
 			for(;j<t;j++) {
 				if(a[j]<a[t]) {
 					w(j,++i);
 				}
 			}
-			w(j,t);
+			w(i+1,t);
 		}
 	}
 	public static void main(String[] args) {
