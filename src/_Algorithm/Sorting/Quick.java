@@ -23,7 +23,7 @@ public class Quick {
 			j=f;
 			for(;j<t;j++) {
 				if(a[j]<a[t]) {
-					w(j,++i)
+					w(j,++i);
 				}
 			}
 		}
