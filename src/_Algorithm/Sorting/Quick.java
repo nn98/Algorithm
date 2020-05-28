@@ -1,6 +1,5 @@
 package _Algorithm.Sorting;
-
-import java.util.Arrays;
+// Worst case Problem?
 import java.util.Scanner;
 
 public class Quick {
@@ -37,7 +36,7 @@ public class Quick {
 		for(;i<n;a[i++]=s.nextInt());
 //		System.out.println(Arrays.toString(a));
 		o(0,n-1);
-		for(int i:a)System.out.println(i);
+//		for(int i:a)System.out.println(i);
 //		System.out.println(Arrays.toString(a));
 	}
 
