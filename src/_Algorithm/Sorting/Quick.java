@@ -7,7 +7,6 @@ public class Quick {
 
 	static int n,a[],i,j,m;
 	static void w(int f,int t) {
-		System.out.println(8);
 		int x=a[f];
 		a[f]=a[t];
 		a[t]=x;
@@ -24,7 +23,6 @@ public class Quick {
 		w(t,m);
 		i=f-1;
 		j=f;
-		System.out.println(j+" "+t);
 		for(;j<t;j++) {
 			if(a[j]<a[t]) {
 				w(j,++i);
@@ -37,9 +35,9 @@ public class Quick {
 		n=s.nextInt();
 		a=new int[n];
 		for(;i<n;a[i++]=s.nextInt());
-		System.out.println(Arrays.toString(a));
+//		System.out.println(Arrays.toString(a));
 		o(0,n-1);
-		System.out.println(Arrays.toString(a));
+//		System.out.println(Arrays.toString(a)); 10 31 8 48 73 11 28 20 29 65 15
 	}
 
 }
