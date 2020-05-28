@@ -7,6 +7,7 @@ public class Quick {
 
 	static int n,a[],i,j;
 	static void w(int f,int t) {
+		System.out.println(w);
 		int x=a[f];
 		a[f]=a[t];
 		a[t]=x;
@@ -26,6 +27,7 @@ public class Quick {
 					w(j,++i);
 				}
 			}
+			w(j,t);
 		}
 	}
 	public static void main(String[] args) {
