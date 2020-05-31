@@ -14,7 +14,7 @@ public class Heap {
 		Scanner s=new Scanner(System.in);
 		n=s.nextInt();
 		while(S-1>n)S*=2;
-		System.out.println(S);
+		System.out.println(S-1);
 		a=new int[S];
 	}
 }
