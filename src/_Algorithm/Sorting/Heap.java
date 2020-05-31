@@ -13,8 +13,8 @@ public class Heap {
 	public static void main(String[] args) {
 		Scanner s=new Scanner(System.in);
 		n=s.nextInt();
-		while(S-1>n)S*=2;
-		System.out.println(S-1);
+		while(S-1<n)S*=2;
+		System.out.println(--S);
 		a=new int[S];
 	}
 }
