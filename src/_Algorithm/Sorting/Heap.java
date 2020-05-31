@@ -43,6 +43,8 @@ public class Heap {
 		for(;l<n;a[l++]=s.nextInt());
 		System.out.println(Arrays.toString(a));
 		n--;
+		o();
+		System.out.println(Arrays.toString(a));
 //		b();
 //		System.out.println(Arrays.toString(a));
 	}
