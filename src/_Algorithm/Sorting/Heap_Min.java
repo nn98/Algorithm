@@ -3,7 +3,7 @@ package _Algorithm.Sorting;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class Heap {
+public class Heap_Min {
 	
 	static int n,s,l,r,t,i,a[];
 	static void o() {
