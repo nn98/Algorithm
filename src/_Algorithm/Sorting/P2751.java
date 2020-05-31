@@ -1,5 +1,6 @@
 package _Algorithm.Sorting;
 //시간초과 존나게나네
+//스캐너는 드럽게 느라디
 import java.io.*;
 
 public class P2751 {
