@@ -32,18 +32,21 @@ public class P2751 {
 		a[y]=t;
 	}
 
-	public static void main(String[] args) {
-		Scanner s=new Scanner(System.in);
+	public static void main(String[] args)throws Exception{
+		BufferedReader r=new BufferedReader(new InputStreamReader(System.in));
+		BufferedWriter w=new BufferedWriter(new OutputStreamWriter(System.out));
 //		n=s.nextInt();
 //		while(S-1<n)S*=2;
 //		System.out.println(--S);
 //		a=new int[S];
-		a=new int[n=s.nextInt()];
-		for(;l<n;a[l++]=s.nextInt());
-		System.out.println(Arrays.toString(a));
+		a=new int[n=Integer.parseInt(r.readLine())];
+		for(;l<n;a[l++]=Integer.parseInt(r.readLine()));
+//		System.out.println(Arrays.toString(a));
 		n--;
 		o();
-		System.out.println(Arrays.toString(a));
+		for(int j:a)w.write(j);
+		w.flush();
+//		System.out.println(Arrays.toString(a));
 //		b();
 //		System.out.println(Arrays.toString(a));
 	}
