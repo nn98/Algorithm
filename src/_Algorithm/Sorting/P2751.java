@@ -1,7 +1,6 @@
 package _Algorithm.Sorting;
 //시간초과 존나게나네
-import java.util.Arrays;
-import java.util.Scanner;
+import java.io.*;
 
 public class P2751 {
 	
