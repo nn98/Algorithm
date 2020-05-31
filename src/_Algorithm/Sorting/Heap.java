@@ -6,6 +6,13 @@ import java.util.Scanner;
 public class Heap {
 	
 	static int n,s,l,r,t,i,a[];
+	static void o() {
+		b();
+		for(;n>=1;) {
+			w(0,n--);
+			h(0);
+		}
+	}
 	static void b() {
 		for(i=(n-1)/2;i>=0;i--)h(i);
 	}
@@ -36,7 +43,7 @@ public class Heap {
 		for(;l<n;a[l++]=s.nextInt());
 		System.out.println(Arrays.toString(a));
 		n--;
-		b();
-		System.out.println(Arrays.toString(a));
+//		b();
+//		System.out.println(Arrays.toString(a));
 	}
 }
