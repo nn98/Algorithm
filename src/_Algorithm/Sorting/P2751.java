@@ -44,7 +44,7 @@ public class P2751 {
 //		System.out.println(Arrays.toString(a));
 		n--;
 		o();
-		for(int j:a)w.write(j);
+		for(int j:a)w.write(j+"\n");
 		w.flush();
 //		System.out.println(Arrays.toString(a));
 //		b();
