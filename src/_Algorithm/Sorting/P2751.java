@@ -32,7 +32,6 @@ public class P2751 {
 		a[x]=a[y];
 		a[y]=t;
 	}
-
 	public static void main(String[] args)throws Exception{
 		BufferedReader r=new BufferedReader(new InputStreamReader(System.in));
 		BufferedWriter w=new BufferedWriter(new OutputStreamWriter(System.out));
