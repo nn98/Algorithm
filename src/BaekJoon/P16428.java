@@ -23,7 +23,7 @@ public class P16428 {
 					d=a.subtract(b.multiply(c));
 					break;
 				case 1:
-					c.add(BigInteger.ONE);
+					c=c.subtract(BigInteger.ONE);
 					break;
 				}
 				break;
