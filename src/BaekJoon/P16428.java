@@ -9,7 +9,8 @@ public class P16428 {
 		BigInteger a=new BigInteger(s.next()),b=new BigInteger(s.next()),c=a.divide(b),d=null;
 		try {
 			d=a.mod(b);
-			System.out.print(c+"\n"+d);
+			if(a.signum()<0)
+				c.subtract(BigInteger.ONE);
 		} catch(Exception e) {
 			System.out.println(e);
 			switch(a.signum()) {
@@ -22,9 +23,9 @@ public class P16428 {
 					c=c.add(BigInteger.ONE);
 					d=a.subtract(b.multiply(c));
 					break;
-				case 1:
-					c=c.subtract(BigInteger.ONE);
-					break;
+//				case 1:
+//					c=c.subtract(BigInteger.ONE);
+//					break;
 				}
 				break;
 			case 1:
@@ -37,8 +38,8 @@ public class P16428 {
 				}
 				break;
 			}
-			System.out.print(c+"\n"+d);
 		}
+		System.out.print(c+"\n"+d);
 	}
 
 }
