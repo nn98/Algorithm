@@ -20,7 +20,7 @@ public class P16428 {
 				switch(b.signum()) {
 				case -1:
 					c=c.add(BigInteger.ONE);
-					d=a.add(b.multiply(c));
+					d=a.subtract(b.multiply(c));
 					break;
 				case 1:
 					break;
