@@ -10,8 +10,9 @@ public class P16428 {
 		BigInteger a=new BigInteger(s.next()),b=new BigInteger(s.next()),c=a.divide(b),d;
 		try {
 			d=a.mod(b);
-			System.out.println(c+"\n"+d);
+			System.out.print(c+"\n"+d+"\n"+a.remainder(b));
 		} catch(Exception e) {
+			System.out.println(e);
 			c=c.add(BigInteger.ONE);
 			if(a.signum()<0)
 				d=a.add(b.multiply(c));
