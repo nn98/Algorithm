@@ -9,5 +9,4 @@ public class P3003 {
 		int i=0,a[]={1,1,2,2,2,8};
 		for(;i<6;System.out.print(a[i++]-s.nextInt()+" "));
 	}
-
 }
