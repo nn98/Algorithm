@@ -4,7 +4,6 @@ import java.math.BigInteger;
 import java.util.Scanner;
 
 public class P16428 {
-
 	public static void main(String[] args) {
 		Scanner s=new Scanner(System.in);
 		BigInteger a=new BigInteger(s.next()),b=new BigInteger(s.next()),c=a.divide(b),d=null;
@@ -24,7 +23,7 @@ public class P16428 {
 					d=a.subtract(b.multiply(c));
 					break;
 				case 1:
-					c.subtract(BigInteger.ONE);
+					c.add(BigInteger.ONE);
 					break;
 				}
 				break;
