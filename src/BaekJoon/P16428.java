@@ -8,16 +8,17 @@ public class P16428 {
 	public static void main(String[] args) {
 		Scanner s=new Scanner(System.in);
 		BigInteger a=new BigInteger(s.next()),b=new BigInteger(s.next()),c=a.divide(b),d;
-//		try {
-//			d=a.mod(b);
-//		} catch(Exception e) {
-//			c=c.add(BigInteger.ONE);
-//			System.out.print(c);
-//			d=c.add(BigInteger.ONE);
-//			System.out.println(a.subtract(b.multiply(c)));
-//		}
-		System.out.println(c);
-		System.out.println(a.remainder(b));
+		try {
+			d=a.mod(b);
+			System.out.println(c+"\n"+d);
+		} catch(Exception e) {
+			c=c.add(BigInteger.ONE);
+			if(a.signum()<0)
+				d=a.add(b.multiply(c));
+			else
+				d=a.subtract(b.multiply(c));
+			System.out.println(c+"\n"+d);
+		}
 	}
 
 }
