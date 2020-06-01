@@ -24,6 +24,7 @@ public class P16428 {
 					d=a.subtract(b.multiply(c));
 					break;
 				case 1:
+					c.subtract(BigInteger.ONE);
 					break;
 				}
 				break;
