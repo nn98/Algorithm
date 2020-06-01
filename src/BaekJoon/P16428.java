@@ -10,7 +10,7 @@ public class P16428 {
 		try {
 			d=a.mod(b);
 			if(a.signum()<0)
-				c.subtract(BigInteger.ONE);
+				c=c.subtract(BigInteger.ONE);
 		} catch(Exception e) {
 			System.out.println(e);
 			switch(a.signum()) {
