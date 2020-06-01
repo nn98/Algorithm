@@ -12,6 +12,7 @@ public class P16428 {
 			d=a.mod(b);
 			System.out.print(c+"\n"+d);
 		} catch(Exception e) {
+			System.out.println(e);
 			switch(a.signum()) {
 			case 0:
 				c=d=BigInteger.ZERO;
@@ -29,6 +30,7 @@ public class P16428 {
 			case 1:
 				switch(b.signum()) {
 				case -1:
+					d=a.subtract(b.multiply(c));
 					break;
 				case 1:
 					break;
