@@ -1,7 +1,6 @@
 package _Algorithm.BackTracking;
 
 public class Test {
-
 	static int n;
 	static char[]a;
 	static StringBuffer f=new StringBuffer();
@@ -15,5 +14,4 @@ public class Test {
 		o(0);
 		System.out.println(f);
 	}
-
 }
