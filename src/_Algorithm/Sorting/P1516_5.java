@@ -1,6 +1,8 @@
 package _Algorithm.Sorting;
 
 import java.util.Arrays;
+import java.util.LinkedList;
+import java.util.Queue;
 import java.util.Scanner;
 
 public class P1516_5 {
@@ -20,8 +22,14 @@ public class P1516_5 {
 					r[i]++;
 				}
 		System.out.println(Arrays.toString(t));
+		System.out.println(Arrays.toString(r));
 		for(int[]b:a)System.out.println(Arrays.toString(b));
-		
+		Queue<Integer> q=new LinkedList();
+		m=n;
+		while(m>1) {
+			for(i=0;++i<n;)if(r[i]==0)q.add(i);
+			
+		}
 	}
 
 }
