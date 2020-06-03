@@ -15,7 +15,7 @@ public class P1516_5 {
 			while(true)
 				if(m==0)t[i]=m=s.nextInt();
 				else {
-					if((m=s.nextInt())!=-1)break;
+					if((m=s.nextInt())==-1)break;
 					a[i][m]++;
 				}
 		System.out.println(Arrays.toString(t));
