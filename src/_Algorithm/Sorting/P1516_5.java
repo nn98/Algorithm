@@ -45,5 +45,4 @@ public class P1516_5 {
 		//System.out.println(Arrays.toString(r));
 		for(i=0;++i<n;System.out.println(r[i]));
 	}
-
 }
