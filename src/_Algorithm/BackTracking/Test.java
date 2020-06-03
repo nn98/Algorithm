@@ -7,9 +7,7 @@ public class Test {
 	static StringBuffer f=new StringBuffer();
 	static void o(int x) {
 		if(x==n-1)System.out.println(a);
-		else {
-			for(int i=0;++i<n;a[x]=(char)('0'+i),o(x+1));
-		}
+		else for(int i=0;++i<n;a[x]=(char)('0'+i),o(x+1));
 	}
 	public static void main(String[] args) {
 		n=new java.util.Scanner(System.in).nextInt();
