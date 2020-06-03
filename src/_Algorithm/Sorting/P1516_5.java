@@ -22,9 +22,9 @@ public class P1516_5 {
 					a[i][m]++;
 					c[i]++;
 				}
-		System.out.println(Arrays.toString(t));
-		System.out.println(Arrays.toString(c));
-		for(int[]b:a)System.out.println(Arrays.toString(b));
+		//System.out.println(Arrays.toString(t));
+		//System.out.println(Arrays.toString(c));
+		for(int[]b:a)//System.out.println(Arrays.toString(b));
 		Queue<Integer> q=new LinkedList();
 		m=n;
 		while(m>1) {
@@ -32,7 +32,7 @@ public class P1516_5 {
 				q.add(i);
 				c[i]--;
 			}
-			System.out.println(q.toString());
+			//System.out.println(q.toString());
 			while(!q.isEmpty()) {
 				k=q.remove();
 				r[k]+=t[k];
@@ -44,9 +44,10 @@ public class P1516_5 {
 					}
 				m--;
 			}
-			System.out.println(Arrays.toString(r));
+			//System.out.println(Arrays.toString(r));
 		}
-		System.out.println(Arrays.toString(r));
+		//System.out.println(Arrays.toString(r));
+		for(i=0;++i<n;System.out.println(r[i]));
 	}
 
 }
