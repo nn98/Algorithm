@@ -1,12 +1,8 @@
 package _Algorithm.Sorting;
-
-import java.util.Arrays;
-import java.util.LinkedList;
-import java.util.Queue;
-import java.util.Scanner;
-
+//쉽지않은 부분
+//1트
+import java.util.*;
 public class P1516_5 {
-
 	public static void main(String[] args) {
 		Scanner s=new Scanner(System.in);
 		int n=s.nextInt()+1,m=0,i=0,j,k,c[],r[],t[],a[][];
