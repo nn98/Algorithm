@@ -12,9 +12,12 @@ public class P1516_5 {
 		t=new int[n];
 		a=new int[n][n];
 		for(;++i<n;m=0)
-			while(m!=-1)
+			while(true)
 				if(m==0)t[i]=m=s.nextInt();
-				else a[i][s.nextInt()]++;
+				else {
+					if((m=s.nextInt())!=-1)
+					a[i][m]++;
+				}
 		System.out.println(Arrays.toString(t));
 		for(int[]b:a)System.out.println(Arrays.toString(b));
 	}
