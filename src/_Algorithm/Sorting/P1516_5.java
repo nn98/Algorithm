@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class P1516_5 {
 
-	static int n,m,i,j,t[],a[][];
+	static int n,m,i,r[],t[],a[][];
 	public static void main(String[] args) {
 		Scanner s=new Scanner(System.in);
 		n=s.nextInt()+1;
