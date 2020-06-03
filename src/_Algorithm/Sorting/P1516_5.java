@@ -24,7 +24,7 @@ public class P1516_5 {
 				}
 		//System.out.println(Arrays.toString(t));
 		//System.out.println(Arrays.toString(c));
-		for(int[]b:a)//System.out.println(Arrays.toString(b));
+		//for(int[]b:a)System.out.println(Arrays.toString(b));
 		Queue<Integer> q=new LinkedList();
 		m=n;
 		while(m>1) {
