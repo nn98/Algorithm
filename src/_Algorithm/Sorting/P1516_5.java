@@ -35,13 +35,13 @@ public class P1516_5 {
 			System.out.println(q.toString());
 			while(!q.isEmpty()) {
 				k=q.remove();
+				r[k]+=t[k];
 				for(j=0;++j<n;)
 					if(a[j][k]>0) {
 						c[j]--;
 						a[j][k]--;
 						r[j]=r[j]>t[k]?r[j]:t[k];
 					}
-				r[k]+=t[k];
 				m--;
 			}
 			System.out.println(Arrays.toString(r));
