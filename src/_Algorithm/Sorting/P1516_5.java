@@ -5,11 +5,11 @@ import java.util.Scanner;
 
 public class P1516_5 {
 
-	static int n,m,i,r[],t[],a[][];
 	public static void main(String[] args) {
 		Scanner s=new Scanner(System.in);
-		n=s.nextInt()+1;
+		int n=s.nextInt()+1,m=0,i=0,r[],t[],a[][];
 		t=new int[n];
+		r=new int[n];
 		a=new int[n][n];
 		for(;++i<n;m=0)
 			while(true)
@@ -17,9 +17,11 @@ public class P1516_5 {
 				else {
 					if((m=s.nextInt())==-1)break;
 					a[i][m]++;
+					r[i]++;
 				}
 		System.out.println(Arrays.toString(t));
 		for(int[]b:a)System.out.println(Arrays.toString(b));
+		
 	}
 
 }
