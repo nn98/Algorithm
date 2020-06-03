@@ -13,7 +13,7 @@ public class Test {
 	}
 	public static void main(String[] args) {
 		n=new java.util.Scanner(System.in).nextInt();
-		a=new char[n];
+		a=new char[n++];
 		o(0);
 		System.out.println(f);
 	}
