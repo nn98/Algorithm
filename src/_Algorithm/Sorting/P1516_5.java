@@ -9,7 +9,7 @@ public class P1516_5 {
 
 	public static void main(String[] args) {
 		Scanner s=new Scanner(System.in);
-		int n=s.nextInt()+1,m=0,i=0,j,c[],r[],t[],a[][];
+		int n=s.nextInt()+1,m=0,i=0,j,k,c[],r[],t[],a[][];
 		t=new int[n];
 		c=new int[n];
 		r=new int[n];
@@ -28,17 +28,23 @@ public class P1516_5 {
 		Queue<Integer> q=new LinkedList();
 		m=n;
 		while(m>1) {
-			for(i=0;++i<n;)if(c[i]==0)q.add(i);
+			for(i=0;++i<n;)if(c[i]==0) {
+				q.add(i);
+				c[i]--;
+			}
 			System.out.println(q.toString());
-			for(int k:q) {
+			while(!q.isEmpty()) {
+				k=q.remove();
 				for(j=0;++j<n;)
 					if(a[j][k]>0) {
+						c[j]--;
 						a[j][k]--;
 						r[j]=r[j]>t[k]?r[j]:t[k];
 					}
 				r[k]+=t[k];
 				m--;
 			}
+			System.out.println(Arrays.toString(r));
 		}
 		System.out.println(Arrays.toString(r));
 	}
