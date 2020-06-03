@@ -6,7 +6,7 @@ public class Test {
 	static char[]a;
 	static StringBuffer f=new StringBuffer();
 	static void o(int x) {
-		if(x==n)System.out.println(a);
+		if(x==n-1)System.out.println(a);
 		else {
 			for(int i=0;++i<n;a[x]=(char)('0'+i),o(x+1));
 		}
