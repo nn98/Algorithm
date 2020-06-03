@@ -40,7 +40,7 @@ public class P1516_5 {
 					if(a[j][k]>0) {
 						c[j]--;
 						a[j][k]--;
-						r[j]=r[j]>t[k]?r[j]:t[k];
+						r[j]=r[j]>r[k]?r[j]:r[k];
 					}
 				m--;
 			}
