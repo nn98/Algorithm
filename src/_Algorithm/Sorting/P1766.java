@@ -14,8 +14,8 @@ public class P1766 {
 			a[j][i]++;
 			c[j]++;
 		}
-		System.out.println(Arrays.toString(c));
-		for(int[]b:a)System.out.println(Arrays.toString(b));
+//		System.out.println(Arrays.toString(c));
+//		for(int[]b:a)System.out.println(Arrays.toString(b));
 		m=n;
 		for(;m>1;) {
 			boolean C=true,D;
