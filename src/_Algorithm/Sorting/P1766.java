@@ -20,6 +20,7 @@ public class P1766 {
 		for(;m>0;) {
 			boolean C=true,D;
 			for(i=0;++i<n&&C;C=c[i]>0);
+			if(!C)i--;
 //				D=true;
 //				for(j=0;++j<n&&D;D=a[i][j]==0);
 //				C=D;
