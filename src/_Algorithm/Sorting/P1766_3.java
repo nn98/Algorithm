@@ -1,13 +1,8 @@
 package _Algorithm.Sorting;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-import java.util.PriorityQueue;
-import java.util.Scanner;
+import java.util.*;
 
 public class P1766_3 {
-
 	static int n,m,i,j,d[];
 	static List<List>l=new ArrayList();
 	static void o() {
@@ -34,8 +29,6 @@ public class P1766_3 {
 			d[i]++;
 		}
 		o();
-//		System.out.println(Arrays.toString(d));
-//		for(List a:l)System.out.println(a);
 	}
 
 }
