@@ -11,7 +11,7 @@ public class P1766 {
 		for(;m-->0;) {
 			i=s.nextInt();
 			j=s.nextInt();
-			a[i][j]++;
+			a[j][i]++;
 			c[j]++;
 		}
 		System.out.println(Arrays.toString(c));
