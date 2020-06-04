@@ -16,7 +16,7 @@ public class P1766_2 {
 			j=s.nextInt();
 			a[j].add(i);
 		}
-		for(List L:a)System.out.println(L);
+//		for(List L:a)System.out.println(L);
 		m=n;
 		for(;m>1;) {
 			boolean C=true,D;
