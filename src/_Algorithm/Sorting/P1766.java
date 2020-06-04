@@ -16,6 +16,21 @@ public class P1766 {
 		}
 		System.out.println(Arrays.toString(c));
 		for(int[]b:a)System.out.println(Arrays.toString(b));
+		m=n;
+		for(;m>0;) {
+			boolean C=true,D;
+			for(i=0;++i<n&&C;C=c[i]>0);
+//				D=true;
+//				for(j=0;++j<n&&D;D=a[i][j]==0);
+//				C=D;
+			System.out.print(i+" ");
+			for(j=0;++j<n;)if(a[j][i]>0) {
+				a[j][i]--;
+				c[j]--;
+			}
+			c[i]++;
+			m--;
+		}
 	}
 
 }
