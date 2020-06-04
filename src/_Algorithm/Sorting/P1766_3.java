@@ -20,7 +20,7 @@ public class P1766_3 {
 				d[c]--;
 				if(d[c]==0)q.offer(c);
 			}
-			System.out.println(m+" ");
+			System.out.print(m+" ");
 		}
 	}
 	public static void main(String[] args) {
