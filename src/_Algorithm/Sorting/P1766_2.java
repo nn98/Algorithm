@@ -8,7 +8,7 @@ public class P1766_2 {
 
 	public static void main(String[] args) {
 		Scanner s=new Scanner(System.in);
-		int n=s.nextInt()+1,m=s.nextInt(),i,j;
+		int n=s.nextInt()+1,m=s.nextInt(),i=0,j;
 		List<Integer>[]a=new List[n];
 		for(;++i<n;a[i]=new ArrayList());
 		for(;m-->0;) {
