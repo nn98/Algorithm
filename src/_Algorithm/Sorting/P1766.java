@@ -17,7 +17,7 @@ public class P1766 {
 		System.out.println(Arrays.toString(c));
 		for(int[]b:a)System.out.println(Arrays.toString(b));
 		m=n;
-		for(;m>0;) {
+		for(;m>1;) {
 			boolean C=true,D;
 			for(i=0;++i<n&&C;C=c[i]>0);
 			if(!C)i--;
