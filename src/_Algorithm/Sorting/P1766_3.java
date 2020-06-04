@@ -12,7 +12,7 @@ public class P1766_3 {
 	static List<List>l=new ArrayList();
 	static void o() {
 		PriorityQueue<Integer>q=new PriorityQueue();
-		for(i=0;++i<=n;)if(d[i]==0)q.offer(i);
+		for(i=0;++i<n;)if(d[i]==0)q.offer(i);
 		while(!q.isEmpty()) {
 			m=q.poll();
 			for(Object t:l.get(m)) {
