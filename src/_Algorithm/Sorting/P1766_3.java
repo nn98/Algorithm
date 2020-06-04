@@ -1,7 +1,6 @@
 package _Algorithm.Sorting;
-
+//차이가 크지 않아보이는데 되네
 import java.util.*;
-
 public class P1766_3 {
 	static int n,m,i,j,d[];
 	static List<List>l=new ArrayList();
@@ -30,5 +29,4 @@ public class P1766_3 {
 		}
 		o();
 	}
-
 }
