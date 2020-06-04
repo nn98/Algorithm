@@ -33,6 +33,7 @@ public class P1766_3 {
 			l.get(s.nextInt()).add((i=s.nextInt()));
 			d[i]++;
 		}
+		o();
 //		System.out.println(Arrays.toString(d));
 //		for(List a:l)System.out.println(a);
 	}
