@@ -1,6 +1,7 @@
 package _Algorithm.DFS;
 
-import java.util.Scanner;
+import java.io.*;
+import java.util.*;
 
 public class P1325_2 {
 	static int n,m,i,j,r;
@@ -23,14 +24,16 @@ public class P1325_2 {
 		if(c==0)System.out.println(f);
 	}
 
-	public static void main(String[] args) {
-		Scanner s=new Scanner(System.in);
-		n=s.nextInt()+1;
-		m=s.nextInt();
+	public static void main(String[] args)throws Exception{
+		BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
+		BufferedWriter bw=new BufferedWriter(new OutputStreamWriter(System.out));
+		StringTokenizer t=new StringTokenizer(br.readLine());
+		n=Integer.parseInt(t.nextToken())+1;
+		m=Integer.parseInt(t.nextToken());
 		a=new boolean[n][n];
 		h=new boolean[n];
 		f=new boolean[n];
-		for(;m-->0;i=s.nextInt(),j=s.nextInt(),a[j][i]=true);
+		for(;m-->0;t=new StringTokenizer(br.readLine()),i=Integer.parseInt(t.nextToken()),j=Integer.parseInt(t.nextToken()),a[j][i]=true);
 		for(m=0;++m<n;r=0,o(m,new StringBuffer()),System.out.println(r),h=new boolean[n]);
 	}
 }
