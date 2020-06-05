@@ -38,7 +38,7 @@ public class P1325 {
 			if(r>i) {
 				f=new boolean[n];
 				f[m]=true;
-				r=i;
+				i=r;
 			}else if(r==i)f[m]=true;
 		}
 		for(i=0;++i<n;System.out.print(f[i]?i+" ":""));
