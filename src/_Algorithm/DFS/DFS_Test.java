@@ -4,8 +4,11 @@ import java.util.*;
 import java.io.*;
 public class DFS_Test {
 
-	static int n,m,i,j;
+	static int n,m,i,j,r[];
 	static boolean[]a[],b;
+	static void o(int x) {
+		if(b[x])return;
+	}
 	public static void main(String[] args)throws Exception{
 		BufferedReader r=new BufferedReader(new InputStreamReader(System.in));
 		BufferedWriter w=new BufferedWriter(new OutputStreamWriter(System.out));
@@ -23,7 +26,8 @@ public class DFS_Test {
 			if(c)a[i][j]=true;
 			a[j][i]=true;
 		}
-		for(boolean[]d:a)System.out.println(Arrays.toString(d));
+//		for(boolean[]d:a)System.out.println(Arrays.toString(d));
+		
 	}
 
 }
