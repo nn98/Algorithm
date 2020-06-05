@@ -30,16 +30,6 @@ public class P1325_2 {
 		h=new boolean[n];
 		f=new boolean[n];
 		for(;m-->0;i=s.nextInt(),j=s.nextInt(),a[j][i]=true);
-		i=0;
-		for(m=0;++m<n;h=new boolean[n]) {
-			r=0;
-			o(m,new StringBuffer());
-			if(r>i) {
-				f=new boolean[n];
-				f[m]=true;
-				i=r;
-			}else if(r==i)f[m]=true;
-		}
-		for(i=0;++i<n;System.out.print(f[i]?i+" ":""));
+		for(m=0;++m<n;r=0,o(m,new StringBuffer()),System.out.println(r),h=new boolean[n]);
 	}
 }
