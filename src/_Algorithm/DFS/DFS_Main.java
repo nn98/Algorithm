@@ -31,6 +31,6 @@ public class DFS_Main {
 		a=new boolean[n][n];
 		h=new boolean[n];
 		for(;m-->0;i=s.nextInt(),j=s.nextInt(),a[i][j]=a[j][i]=true);
-		for(m=0;++m<n;c=0,o(m,new StringBuffer()),System.out.println(r),h=new boolean[n]);
+		for(m=0;++m<n;r=0,o(m,new StringBuffer()),System.out.println(r),h=new boolean[n]);
 	}
 }
