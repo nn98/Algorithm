@@ -37,10 +37,10 @@ public class DFS_Test {
 			a[j][i]=true;
 		}
 		for(i=0;++i<n;)if(!b[i])o(i);
-		System.out.println(Arrays.toString(b));
-		System.out.println(Arrays.toString(R));
 //		for(boolean[]d:a)System.out.println(Arrays.toString(d));
-		
+//		System.out.println(Arrays.toString(b));
+//		System.out.println(Arrays.toString(R));
+		for(i=0;++i<n;System.out.print(R[i]==m?i+" ":""));
 	}
 
 }
