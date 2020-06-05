@@ -15,6 +15,7 @@ public class DFS_Test {
 				c+=R[k];
 			}
 		}
+		m=m>c?m:c;
 		R[x]=c;
 	}
 	public static void main(String[] args)throws Exception{
@@ -35,7 +36,7 @@ public class DFS_Test {
 			if(c)a[i][j]=true;
 			a[j][i]=true;
 		}
-		for(m=0;++m<n;)if(!b[m])o(m);
+		for(i=0;++i<n;)if(!b[i])o(i);
 		System.out.println(Arrays.toString(b));
 		System.out.println(Arrays.toString(R));
 //		for(boolean[]d:a)System.out.println(Arrays.toString(d));
