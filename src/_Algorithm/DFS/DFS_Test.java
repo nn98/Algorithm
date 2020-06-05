@@ -9,8 +9,8 @@ public class DFS_Test {
 	public static void main(String[] args)throws Exception{
 		BufferedReader r=new BufferedReader(new InputStreamReader(System.in));
 		BufferedWriter w=new BufferedWriter(new OutputStreamWriter(System.out));
-		StringTokenizer t=new StringTokenizer(r.readLine());
 		System.out.println("Directed? (y/n): ");
+		StringTokenizer t=new StringTokenizer(r.readLine());
 		boolean c=r.readLine().equals("n");
 		n=Integer.parseInt(t.nextToken())+1;
 		m=Integer.parseInt(t.nextToken());
