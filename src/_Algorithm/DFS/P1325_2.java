@@ -20,6 +20,7 @@ public class P1325_2 {
 					o(y,new StringBuffer(f));
 				}
 		}
+		if(c==0)System.out.println(f);
 	}
 
 	public static void main(String[] args) {
