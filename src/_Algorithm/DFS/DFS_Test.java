@@ -11,8 +11,7 @@ public class DFS_Test {
 		int c=1,k=0;
 		for(;++k<n;) {
 			if(a[x][k]) {
-				if(b[k])continue;
-				o(k);
+				if(!b[k])o(k);
 				c+=R[k];
 			}
 		}
@@ -36,7 +35,7 @@ public class DFS_Test {
 			if(c)a[i][j]=true;
 			a[j][i]=true;
 		}
-		o(1);
+		for(m=0;++m<n;)if(!b[m])o(m);
 		System.out.println(Arrays.toString(b));
 		System.out.println(Arrays.toString(R));
 //		for(boolean[]d:a)System.out.println(Arrays.toString(d));
