@@ -4,36 +4,40 @@ import java.io.*;
 import java.util.*;
 
 public class P1325_2 {
-	static int n,m,i,j,r[];
-	static boolean[]a[],h,f;
-
-	static void o(int x,StringBuffer f) {
-		if(h[x])return;
-		h[x]=true;
-		f.append(x+" ");
-		int y=0,c=0;
-		for(;++y<n;) {
-			if(a[x][y])
-				if(h[y])continue;
-				else {
-					c++;
-					o(y,new StringBuffer(f));
-				}
+	static int n,m,i,j,R[];
+	static boolean[]a[],b;
+	static void o(int x) {
+		b[x]=true;
+		int c=1,k=0;
+		for(;++k<n;) {
+			if(a[x][k]) {
+				if(!b[k])o(k);
+				c+=R[k];
+			}
 		}
-		if(c==0)System.out.println(f);
+		m=m>c?m:c;
+		R[x]=c;
 	}
-
 	public static void main(String[] args)throws Exception{
-		BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
-		BufferedWriter bw=new BufferedWriter(new OutputStreamWriter(System.out));
-		StringTokenizer t=new StringTokenizer(br.readLine());
+		BufferedReader r=new BufferedReader(new InputStreamReader(System.in));
+		BufferedWriter w=new BufferedWriter(new OutputStreamWriter(System.out));
+		StringTokenizer t=new StringTokenizer(r.readLine());
 		n=Integer.parseInt(t.nextToken())+1;
 		m=Integer.parseInt(t.nextToken());
-		r=new int[n];
-		h=new boolean[n];
-		f=new boolean[n];
 		a=new boolean[n][n];
-		for(;m-->0;t=new StringTokenizer(br.readLine()),i=Integer.parseInt(t.nextToken()),j=Integer.parseInt(t.nextToken()),a[j][i]=true);
-		for(m=0;++m<n;o(m,new StringBuffer()),System.out.println(r),h=new boolean[n]);
+		b=new boolean[n];
+		R=new int[n];
+		for(;m-->0;) {
+			t=new StringTokenizer(r.readLine());
+			i=Integer.parseInt(t.nextToken());
+			j=Integer.parseInt(t.nextToken());
+			a[j][i]=true;
+		}
+		for(i=0;++i<n;)if(!b[i])o(i);
+//		for(boolean[]d:a)System.out.println(Arrays.toString(d));
+//		System.out.println(Arrays.toString(b));
+//		System.out.println(Arrays.toString(R));
+		for(i=0;++i<n;System.out.print(R[i]==m?i+" ":""));
 	}
+
 }
