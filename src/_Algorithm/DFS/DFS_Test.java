@@ -9,9 +9,9 @@ public class DFS_Test {
 	public static void main(String[] args)throws Exception{
 		BufferedReader r=new BufferedReader(new InputStreamReader(System.in));
 		BufferedWriter w=new BufferedWriter(new OutputStreamWriter(System.out));
-		System.out.println("Directed? (y/n): ");
-		StringTokenizer t=new StringTokenizer(r.readLine());
+		System.out.print("Directed? (y/n): ");
 		boolean c=r.readLine().equals("n");
+		StringTokenizer t=new StringTokenizer(r.readLine());
 		n=Integer.parseInt(t.nextToken())+1;
 		m=Integer.parseInt(t.nextToken());
 		a=new boolean[n][n];
@@ -20,8 +20,8 @@ public class DFS_Test {
 			t=new StringTokenizer(r.readLine());
 			i=Integer.parseInt(t.nextToken());
 			j=Integer.parseInt(t.nextToken());
-			a[i][j]=true;
-			if(c)a[j][i]=true;
+			if(c)a[i][j]=true;
+			a[j][i]=true;
 		}
 		for(boolean[]d:a)System.out.println(Arrays.toString(d));
 	}
