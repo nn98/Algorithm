@@ -8,7 +8,7 @@ public class DFS_Test {
 	static boolean[]a[],b;
 	static void o(int x) {
 		b[x]=true;
-		int c=0,k=0;
+		int c=1,k=0;
 		for(;++k<n;) {
 			if(a[x][k]) {
 				if(b[k])continue;
@@ -37,6 +37,7 @@ public class DFS_Test {
 			a[j][i]=true;
 		}
 		o(1);
+		System.out.println(Arrays.toString(b));
 		System.out.println(Arrays.toString(R));
 //		for(boolean[]d:a)System.out.println(Arrays.toString(d));
 		
