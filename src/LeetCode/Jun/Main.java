@@ -51,7 +51,7 @@ public class Main {
 			bw.write("2020-06\t1. TwoSum\n");
 			bw.flush();
 			Thread.sleep(500);
-			bw.write("\tIntegers) 1 2 3 4 5\n\tTarget) 3");
+			bw.write("\tIntegers) 1 2 3 4 5\n\tTarget) 3\n");
 			bw.flush();
 			tCase="2 7 11 15\n9";
 			selection=new StringSelection(tCase);
