@@ -1,6 +1,6 @@
 package LeetCode.Jun;
 public class TwoSum {
-	public int[] twoSum(int[] nums, int target) {
+	public static int[] twoSum(int[] nums, int target) {
         int i=0,r[]=new int[2],j,l=nums.length;
         for(;i<l;i++){
             for(j=i+1;j<l;j++){
