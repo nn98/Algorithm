@@ -74,8 +74,9 @@ public class Main {
 			tCase="2 7 11 15\n9";
 			selection=new StringSelection(tCase);
 			clip.setContents(selection,null);
-			String[]input=br.readLine().split(" ");
-			int l=input.length,i,nums[]=new int[l],target,result[];
+			input=br.readLine().split(" ");
+			l=input.length;
+			nums=new int[l];
 			for(i=0;i<l;nums[i]=Integer.parseInt(input[i++]));
 			target=Integer.parseInt(br.readLine());
 			result=TwoSum.twoSum(nums, target);
