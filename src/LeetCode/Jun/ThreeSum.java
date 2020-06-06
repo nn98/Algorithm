@@ -8,7 +8,7 @@ import java.util.Set;
 
 //이름봐 ㅅㅂ
 public class ThreeSum {
-	public static List<List<Integer>> threeSum(int[] nums) {
+	public static List<List<Integer>> threeSum(Integer[] nums) {
 		List<List<Integer>>r=new ArrayList();
 //		중복제거 x
 //		int i=0,j,k,l=nums.length;
@@ -17,12 +17,12 @@ public class ThreeSum {
 //				for(k=j+1;k<l;k++)
 //					if(nums[i]+nums[j]+nums[k]==0)
 //						r.add(Arrays.asList(nums[i],nums[j],nums[k]));
-		System.out.println(Arrays.toString(nums));
-		System.out.println(Arrays.asList(nums).toString());
 		Set<Integer>s=new HashSet(Arrays.asList(nums));
 		List<Integer>L=new ArrayList(s);
-		System.out.println(s.toString());
-		System.out.println(L.toString());
+//		System.out.println(Arrays.toString(nums));
+//		System.out.println(Arrays.asList(nums).toString());
+//		System.out.println(s.toString());
+//		System.out.println(L.toString());
 		int l=s.size(),i=0,j,k;
 		for(;i<l-2;i++)
 			for(j=i+1;j<l-1;j++)
