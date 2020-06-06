@@ -18,7 +18,7 @@ public class ThreeSum {
 //					if(nums[i]+nums[j]+nums[k]==0)
 //						r.add(Arrays.asList(nums[i],nums[j],nums[k]));
 		System.out.println(Arrays.toString(nums));
-		System.out.println(Arrays.asList(nums));
+		System.out.println(Arrays.asList(nums).toString());
 		Set<Integer>s=new HashSet(Arrays.asList(nums));
 		List<Integer>L=new ArrayList(s);
 		System.out.println(s.toString());
