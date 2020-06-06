@@ -17,10 +17,12 @@ public class ThreeSum {
 //				for(k=j+1;k<l;k++)
 //					if(nums[i]+nums[j]+nums[k]==0)
 //						r.add(Arrays.asList(nums[i],nums[j],nums[k]));
+		System.out.println(Arrays.toString(nums));
+		System.out.println(Arrays.asList(nums));
 		Set<Integer>s=new HashSet(Arrays.asList(nums));
 		List<Integer>L=new ArrayList(s);
-		System.out.println(s);
-		System.out.println(L);
+		System.out.println(s.toString());
+		System.out.println(L.toString());
 		int l=s.size(),i=0,j,k;
 		for(;i<l-2;i++)
 			for(j=i+1;j<l-1;j++)
