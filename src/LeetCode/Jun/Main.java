@@ -43,7 +43,7 @@ public class Main {
 		Clipboard clip=Toolkit.getDefaultToolkit().getSystemClipboard();
 
 		//		3> Test Selection
-		bw.write("Select Case:\t1. TwoSum\t2. ThreeSum ");
+		bw.write("Select Case:\t1. TwoSum\t2. ThreeSum\t:");
 		bw.flush();
 		switch(br.readLine()) {
 		case "1":
@@ -58,7 +58,7 @@ public class Main {
 			clip.setContents(selection,null);
 			String[]input=br.readLine().split(" ");
 			int l=input.length,i,nums[]=new int[l],target,result[];
-			for(i=0;i<l;nums[i++]=Integer.parseInt(input[i]));
+			for(i=0;i<l;nums[i]=Integer.parseInt(input[i++]));
 			target=Integer.parseInt(br.readLine());
 			result=TwoSum.twoSum(nums, target);
 			bw.write(Arrays.toString(result)+"\n");
