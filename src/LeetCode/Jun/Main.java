@@ -79,8 +79,9 @@ public class Main {
 			nums=new int[l];
 			for(i=0;i<l;nums[i]=Integer.parseInt(input[i++]));
 			target=Integer.parseInt(br.readLine());
-			result=ThreeSum.
-			bw.write(Arrays.toString(result)+"\n");
+//			result=
+			List r=ThreeSum.threeSum(nums);
+			bw.write(r+"\n");
 			bw.flush();
 			break;
 		default: 
