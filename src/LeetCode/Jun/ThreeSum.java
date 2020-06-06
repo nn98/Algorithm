@@ -19,10 +19,8 @@ public class ThreeSum {
 //						r.add(Arrays.asList(nums[i],nums[j],nums[k]));
 		Set<Integer>s=new HashSet(Arrays.asList(nums));
 		List<Integer>L=new ArrayList(s);
-//		System.out.println(Arrays.toString(nums));
-//		System.out.println(Arrays.asList(nums).toString());
-//		System.out.println(s.toString());
-//		System.out.println(L.toString());
+		System.out.println(s.toString());
+		System.out.println(L.toString());
 		int l=s.size(),i=0,j,k;
 		for(;i<l-2;i++)
 			for(j=i+1;j<l-1;j++)
