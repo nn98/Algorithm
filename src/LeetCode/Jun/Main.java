@@ -3,6 +3,7 @@ package LeetCode.Jun;
 import java.awt.Toolkit;
 import java.awt.datatransfer.*;
 import java.io.*;
+import java.util.*;
 
 public class Main {
 
@@ -27,8 +28,10 @@ public class Main {
 //		Clipboard clipboard = Toolkit.getDefaultToolkit().getSystemClipboard();
 //		clipboard.setContents(stringSelection, null);
 		
+//		0> I/O Setting
 		BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
 		BufferedWriter bw=new BufferedWriter(new OutputStreamWriter(System.out));
+		StringTokenizer st; 
 
 //		1> Test instructions
 		bw.write("Test Case Will copy to Clipboard.\nFollow Input Form.\n\n");
@@ -45,6 +48,7 @@ public class Main {
 		tCase="2 7 11 15\n9";
 		selection=new StringSelection(tCase);
 		clip.setContents(selection,null);
+		
 	}
 
 }
