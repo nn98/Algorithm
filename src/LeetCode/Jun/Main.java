@@ -42,6 +42,9 @@ public class Main {
 		Thread.sleep(500);
 		bw.write("\tIntegers) 1 2 3 4 5\n\tTarget) 3");
 		bw.flush();
+		tCase="2 7 11 15\n9";
+		selection=new StringSelection(tCase);
+		clip.setContents(selection,null);
 	}
 
 }
