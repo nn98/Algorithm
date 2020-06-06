@@ -76,9 +76,9 @@ public class Main {
 			clip.setContents(selection,null);
 			input=br.readLine().split(" ");
 			l=input.length;
-			nums=new int[l];
-			for(i=0;i<l;nums[i]=Integer.parseInt(input[i++]));
-			List r=ThreeSum.threeSum(nums);
+			Integer[]nums0=new Integer[l];
+			for(i=0;i<l;nums0[i]=Integer.parseInt(input[i++]));
+			List r=ThreeSum.threeSum(nums0);
 			bw.write(r+"\n");
 			bw.flush();
 			break;
