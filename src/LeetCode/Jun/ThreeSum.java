@@ -2,6 +2,7 @@ package LeetCode.Jun;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
@@ -15,8 +16,12 @@ public class ThreeSum {
 		for(;i<l-2;i++)
 			for(j=i+1;j<l-1;j++)
 				for(k=j+1;k<l;k++)
-					if(nums[i]+nums[j]+nums[k]==0)
-						r.add(Arrays.asList(nums[i],nums[j],nums[k]));
+					if(nums[i]+nums[j]+nums[k]==0) {
+						List list=Arrays.asList(nums[i],nums[j],nums[k]);
+						Collections.sort(list);
+						if(!r.contains(list))
+							r.add(list);
+					}
 		
 //		중복제거 o
 //		Set<Integer>s=new HashSet(Arrays.asList(nums));
