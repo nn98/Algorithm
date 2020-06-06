@@ -69,9 +69,9 @@ public class Main {
 			bw.write("2020-06\t1. TwoSum\n");
 			bw.flush();
 			Thread.sleep(500);
-			bw.write("\tIntegers) 1 2 3 4 5\n\tTarget) 3\n");
+			bw.write("\tIntegers) 1 2 3 4 5\n");
 			bw.flush();
-			tCase="2 7 11 15\n9";
+			tCase="-1 0 1 2 -1 -4";
 			selection=new StringSelection(tCase);
 			clip.setContents(selection,null);
 			input=br.readLine().split(" ");
@@ -79,7 +79,7 @@ public class Main {
 			nums=new int[l];
 			for(i=0;i<l;nums[i]=Integer.parseInt(input[i++]));
 			target=Integer.parseInt(br.readLine());
-			result=TwoSum.twoSum(nums, target);
+			result=ThreeSum.
 			bw.write(Arrays.toString(result)+"\n");
 			bw.flush();
 			break;
