@@ -9,7 +9,7 @@ import java.util.Set;
 
 //이름봐 ㅅㅂ
 public class ThreeSum {
-	public static List<List<Integer>> threeSum(Integer[] nums) {
+	public static List<List<Integer>> threeSum(int[] nums) {
 		List<List<Integer>>r=new ArrayList();
 //		중복제거 x
 		int i=0,j,k,l=nums.length;
