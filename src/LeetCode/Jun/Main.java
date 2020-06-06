@@ -65,6 +65,22 @@ public class Main {
 			bw.flush();
 			break;
 		case "2":
+//			3-2> T1: ThreeSum
+			bw.write("2020-06\t1. TwoSum\n");
+			bw.flush();
+			Thread.sleep(500);
+			bw.write("\tIntegers) 1 2 3 4 5\n\tTarget) 3\n");
+			bw.flush();
+			tCase="2 7 11 15\n9";
+			selection=new StringSelection(tCase);
+			clip.setContents(selection,null);
+			String[]input=br.readLine().split(" ");
+			int l=input.length,i,nums[]=new int[l],target,result[];
+			for(i=0;i<l;nums[i]=Integer.parseInt(input[i++]));
+			target=Integer.parseInt(br.readLine());
+			result=TwoSum.twoSum(nums, target);
+			bw.write(Arrays.toString(result)+"\n");
+			bw.flush();
 			break;
 		default: 
 			bw.write("anonymous");
