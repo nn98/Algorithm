@@ -1,7 +1,8 @@
 package LeetCode.Jun;
 
+import java.awt.Toolkit;
+import java.awt.datatransfer.*;
 import java.io.*;
-import java.awt.*;
 
 public class Main {
 
@@ -31,10 +32,16 @@ public class Main {
 
 //		1> Test instructions
 		bw.write("Test Case Will copy to Clipboard.\nFollow Input Form.\n\n");
-//		2> T1: TwoSum
+//		2> Clipboard setting
+		String tCase;
+		StringSelection selection;
+		Clipboard clip=Toolkit.getDefaultToolkit().getSystemClipboard();
+//		3> T1: TwoSum
 		bw.write("2020-06\t1. TwoSum\n");
 		bw.flush();
-		
+		Thread.sleep(500);
+		bw.write("\tIntegers) 1 2 3 4 5\n\tTarget) 3");
+		bw.flush();
 	}
 
 }
