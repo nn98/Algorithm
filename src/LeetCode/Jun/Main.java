@@ -85,7 +85,6 @@ public class Main {
 		default: 
 			bw.write("anonymous");
 			bw.flush();
-
 		}
 
 	}
