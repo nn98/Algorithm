@@ -30,7 +30,8 @@ public class Main {
 		BufferedWriter bw=new BufferedWriter(new OutputStreamWriter(System.out));
 
 //		1> Test instructions
-		bw.write("Test Case Will copy to Clipboard\n");
+		bw.write("Test Case Will copy to Clipboard.\nFollow Input Form.\n\n");
+//		2> T1: TwoSum
 		bw.write("2020-06\t1. TwoSum\n");
 		bw.flush();
 		
