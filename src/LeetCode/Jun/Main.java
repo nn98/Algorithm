@@ -28,8 +28,11 @@ public class Main {
 		
 		BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
 		BufferedWriter bw=new BufferedWriter(new OutputStreamWriter(System.out));
-		
-		System.out.println("2020-06\t1. TwoSum");
+
+//		1> Test instructions
+		bw.write("Test Case Will copy to Clipboard\n");
+		bw.write("2020-06\t1. TwoSum\n");
+		bw.flush();
 		
 	}
 
