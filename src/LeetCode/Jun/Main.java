@@ -43,7 +43,7 @@ public class Main {
 		Clipboard clip=Toolkit.getDefaultToolkit().getSystemClipboard();
 
 		//		3> Test Selection
-		bw.write("Select Case:\t1. TwoSum\t2. ThreeSum\t:");
+		bw.write("Select Case:\t1. TwoSum\t2. ThreeSum\t: ");
 		bw.flush();
 		switch(br.readLine()) {
 		case "1":
