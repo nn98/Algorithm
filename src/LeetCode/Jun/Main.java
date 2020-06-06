@@ -65,7 +65,7 @@ public class Main {
 			bw.flush();
 			break;
 		case "2":
-//			3-2> T1: ThreeSum
+//			3-2> T2: ThreeSum
 			bw.write("2020-06\t1. TwoSum\n");
 			bw.flush();
 			Thread.sleep(500);
