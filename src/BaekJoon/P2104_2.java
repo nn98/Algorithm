@@ -32,9 +32,8 @@ public class P2104_2 {
 			a=Integer.parseInt(t.nextToken());
 			l.add(i,new ArrayList(n));
 			for(j=0;j<i;l.get(i).add(j++,0));
-			l.get(i).add(a);
-			if(i==0)continue;
-			for(j=i;j>=0;l.get(j).add(i,l.get(j--).get(i-1)+a));
+			if(i==0)l.get(i).add(a);
+			else for(j=i;j>=0;l.get(j).add(l.get(j--).get(i-1)+a));
 		}
 		for(List b:l)System.out.println(b);
 		o(0,n-1);
