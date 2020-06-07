@@ -3,7 +3,7 @@ import java.io.*;
 import java.util.*;
 public class P2104_3 {
 
-	static int n,a[],i,R,j,k,m;
+	static int n,a[],i,R,j,k,m,p;
 	static void o(int f,int t) {
 		if(t==f)R=R>a[f]*a[f]?R:a[f]*a[f];
 		else if(t>f) {
@@ -28,17 +28,11 @@ public class P2104_3 {
 		for(;i<n;i++,k--) {
 			System.out.println(m);
 			a[m]=Integer.parseInt(t.nextToken());
-			for(j=m-k;j>0;a[j]=a[m]+a[j-1],j-=k);
+			p=k;
+			for(j=m-p;j>0;a[j]=a[m]+a[j-1],System.out.println(Arrays.toString(a)),j-=++p);
 			m+=k;
 		}
-		m=n-1;
-		for(i=0;i<a.length;i++) {
-			System.out.print(a[i]+" ");
-			if(i==m) {
-				System.out.println();
-				m+=m-1;
-			}
-		}
+		System.out.println(Arrays.toString(a));
 		o(0,n-1);
 		System.out.print(R);
 	}
