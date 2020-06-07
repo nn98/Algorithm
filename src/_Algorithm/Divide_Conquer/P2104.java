@@ -1,4 +1,4 @@
-package BaekJoon;
+package _Algorithm.Divide_Conquer;
 //Memory Over
 import java.io.*;
 import java.util.*;
