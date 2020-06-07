@@ -12,14 +12,16 @@ public class P2104 {
 		if(t==f)R=R>a[f]*a[f]?R:a[f]*a[f];
 		else if(t>f) {
 			int i=f,j=f,l=t-f+1,m=a[f],v;
-			for(;i++<f;) {
+			for(;i++<t;) {
+				System.out.println("\t"+m);
 				if(a[i]<m) {
+					System.out.println("\t"+a[i]);
 					j=i;
 					m=a[i];
 				}
 			}
 			v=V[f][t]*m;
-			System.out.println(f+" "+t+"\t"+v);
+			System.out.println(f+" "+t+"\t"+v+"\t"+V[f][t]+" * "+m);
 			R=R>v?R:v;
 				o(f,j-1);
 				o(j+1,t);
