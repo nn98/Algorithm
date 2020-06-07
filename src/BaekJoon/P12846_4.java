@@ -1,6 +1,6 @@
 package BaekJoon;
 // O oneT
-
+// https://www.acmicpc.net/blog/view/12 설명만들음
 import java.io.*;
 import java.util.*;
 
