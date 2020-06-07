@@ -1,4 +1,4 @@
-package BaekJoon;
+package _Algorithm.Divide_Conquer;
 import java.util.*;
 public class P12846{
 	public static void main(String[] args) {
