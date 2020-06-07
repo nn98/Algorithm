@@ -12,5 +12,4 @@ public class P12846_3 {
 		StringTokenizer t=new StringTokenizer(r.readLine());
 		for(;i<n;a[i++]=Integer.parseInt(t.nextToken()));
 	}
-
 }
