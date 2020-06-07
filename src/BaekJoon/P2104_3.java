@@ -26,9 +26,10 @@ public class P2104_3 {
 		a=new int[n*(n+1)/2];
 		StringTokenizer t=new StringTokenizer(r.readLine());
 		for(;i<n;i++,k--) {
-			m=n*i-i+1;
+			System.out.println(m);
 			a[m]=Integer.parseInt(t.nextToken());
-			for(j=m-k;j>0;a[j]=a[m]+a[j-1]);
+			for(j=m-k;j>0;a[j]=a[m]+a[j-1],j-=k);
+			m+=k;
 		}
 		m=n-1;
 		for(i=0;i<a.length;i++) {
