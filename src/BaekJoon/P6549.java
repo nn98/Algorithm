@@ -27,9 +27,9 @@ public class P6549 {
 		BufferedReader r=new BufferedReader(new InputStreamReader(System.in));
 		StringTokenizer t=new StringTokenizer(r.readLine());
 		while(!t.equals("0")) {
-			n=Integer.parseInt(r.readLine());
+			n=Integer.parseInt(t.nextToken());
 			a=new int[n];
-			for(;i<n;a[i++]=Integer.parseInt(t.nextToken()));
+			for(i=0;i<n;a[i++]=Integer.parseInt(t.nextToken()));
 			o(0,n-1);
 			System.out.print(R);
 			t=new StringTokenizer(r.readLine());
