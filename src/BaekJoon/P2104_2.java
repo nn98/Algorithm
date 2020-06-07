@@ -3,15 +3,15 @@ package BaekJoon;
 import java.io.*;
 import java.util.*;
 public class P2104_2 {
-	static int n,a[],i,R,V[][],j,k;
+	static int n,i,R,V[][],j,k;
 	static void o(int f,int t) {
-		if(t==f)R=R>a[f]*a[f]?R:a[f]*a[f];
+		if(t==f)R=R>V[f][f]*V[f][f]?R:V[f][f]*V[f][f];
 		else if(t>f) {
-			int i=f,j=f,l=t-f+1,m=a[f],v;
+			int i=f,j=f,l=t-f+1,m=V[f][f],v;
 			for(;i++<t;) {
-				if(a[i]<m) {
+				if(V[i][i]<m) {
 					j=i;
-					m=a[i];
+					m=V[i][i];
 				}
 			}
 			v=V[f][t]*m;
@@ -26,9 +26,9 @@ public class P2104_2 {
 		V=new int[n][n];
 		StringTokenizer t=new StringTokenizer(r.readLine());
 		for(;i<n;i++) {
-			V[i][i]=a[i]=Integer.parseInt(t.nextToken());
+			V[i][i]=Integer.parseInt(t.nextToken());
 			if(i==0)continue;
-			for(j=i;j>=0;V[j][i]=V[j--][i-1]+a[i]);
+			for(j=i;j>=0;V[j][i]=V[j--][i-1]+V[i][i]);
 		}
 		o(0,n-1);
 		System.out.print(R);
