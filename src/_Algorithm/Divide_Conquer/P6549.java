@@ -27,6 +27,7 @@ public class P6549 {
 	}
 	public static void main(String[] args)throws Exception{
 		BufferedReader r=new BufferedReader(new InputStreamReader(System.in));
+		BufferedWriter w=new BufferedWriter(new OutputStreamWriter(System.out));
 		String s=r.readLine();
 		while(!s.equals("0")) {
 			StringTokenizer t=new StringTokenizer(s);
@@ -34,9 +35,10 @@ public class P6549 {
 			a=new int[n];
 			for(i=0;i<n;a[i++]=Integer.parseInt(t.nextToken()));
 			o(0,n-1);
-			System.out.println(R);
+			w.write(R+"\n");
 			s=r.readLine();
 		}
+		w.flush();
 	}
 
 }
