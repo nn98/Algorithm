@@ -8,7 +8,7 @@ public class P12846_3 {
 
 	public static void main(String[] args)throws Exception{
 		BufferedReader r=new BufferedReader(new InputStreamReader(System.in));
-		int n=Integer.parseInt(r.readLine()),a[]=new int[n],i=0,j,m,v,e;
+		int n=Integer.parseInt(r.readLine()),a[]=new int[n],i=0,j,m,v=0,e;
 		StringTokenizer t=new StringTokenizer(r.readLine());
 		for(;i<n;a[i++]=Integer.parseInt(t.nextToken()));
 		for(i=0;i<n;i++) {
