@@ -6,7 +6,7 @@ public class P6549 {
 
 	static int n,a[],i,R;
 	static void o(int f,int t) {
-//		System.out.println(f+" "+t);
+		//		System.out.println(f+" "+t);
 		if(t<f)return;
 		if(f==t)R=R>a[f]?R:a[f];
 		else {
@@ -25,12 +25,15 @@ public class P6549 {
 	}
 	public static void main(String[] args)throws Exception{
 		BufferedReader r=new BufferedReader(new InputStreamReader(System.in));
-		n=Integer.parseInt(r.readLine());
-		a=new int[n];
 		StringTokenizer t=new StringTokenizer(r.readLine());
-		for(;i<n;a[i++]=Integer.parseInt(t.nextToken()));
-		o(0,n-1);
-		System.out.print(R);
+		while(!t.equals("0")) {
+			n=Integer.parseInt(r.readLine());
+			a=new int[n];
+			for(;i<n;a[i++]=Integer.parseInt(t.nextToken()));
+			o(0,n-1);
+			System.out.print(R);
+			t=new StringTokenizer(r.readLine());
+		}
 	}
 
 }
