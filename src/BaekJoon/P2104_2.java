@@ -33,5 +33,4 @@ public class P2104_2 {
 		o(0,n-1);
 		System.out.print(R);
 	}
-
 }
