@@ -22,13 +22,21 @@ public class P2104_3 {
 	}
 	public static void main(String[] args)throws Exception{
 		BufferedReader r=new BufferedReader(new InputStreamReader(System.in));
-		n=Integer.parseInt(r.readLine());
-		System.out.println(n*(n+1)/2);
+		k=n=Integer.parseInt(r.readLine());
+		a=new int[n*(n+1)/2];
 		StringTokenizer t=new StringTokenizer(r.readLine());
-		for(;i<n;i++) {
-//			V[i][i]=a[i]=Integer.parseInt(t.nextToken());
-//			if(i==0)continue;
-//			for(j=i;j>=0;V[j][i]=V[j--][i-1]+a[i]);
+		for(;i<n;i++,k--) {
+			m=n*i-i+1;
+			a[m]=Integer.parseInt(t.nextToken());
+			for(j=m-k;j>0;a[j]=a[m]+a[j-1]);
+		}
+		m=n-1;
+		for(i=0;i<a.length;i++) {
+			System.out.print(a[i]+" ");
+			if(i==m) {
+				System.out.println();
+				m+=m-1;
+			}
 		}
 		o(0,n-1);
 		System.out.print(R);
