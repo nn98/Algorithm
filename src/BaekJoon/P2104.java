@@ -2,6 +2,7 @@ package BaekJoon;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
+import java.util.Arrays;
 import java.util.StringTokenizer;
 
 public class P2104 {
@@ -16,6 +17,8 @@ public class P2104 {
 			V[i][i]=a[i]=Integer.parseInt(t.nextToken());
 			for(j=i;j>0;V[j][i]=V[j][i-1]+a[i]);
 		}
+		System.out.println(Arrays.toString(a));
+		for(int[]b:V)System.out.println(Arrays.toString(b));
 	}
 
 }
