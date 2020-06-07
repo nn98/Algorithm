@@ -7,7 +7,7 @@ public class P2104_4 {
 
 	static int n,a[],R,i,j;
 	static void o(int f,int t) {
-		System.out.println(f+" "+t);
+//		System.out.println(f+" "+t);
 		if(t<f)return;
 		if(f==t)R=R>a[f]?R:a[f];
 		else {
