@@ -35,8 +35,10 @@ public class P2104 {
 			if(i==0)continue;
 			for(j=i;j>=0;V[j][i]=V[j--][i-1]+a[i]);
 		}
-		System.out.println(Arrays.toString(a)+"\n");
-		for(int[]b:V)System.out.println(Arrays.toString(b));
+//		System.out.println(Arrays.toString(a)+"\n");
+//		for(int[]b:V)System.out.println(Arrays.toString(b));
+		o(0,n-1);
+		System.out.print(R);
 	}
 
 }
