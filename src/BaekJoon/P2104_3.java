@@ -15,7 +15,7 @@ public class P2104_3 {
 				}
 			}
 //			v=V[f][t]*m;
-			R=R>v?R:v;
+//			R=R>v?R:v;
 				o(f,j-1);
 				o(j+1,t);
 		}
