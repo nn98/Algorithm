@@ -1,4 +1,4 @@
-package BaekJoon;
+package _Algorithm.Divide_Conquer;
 //히스토그램
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
