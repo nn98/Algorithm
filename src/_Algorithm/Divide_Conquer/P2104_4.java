@@ -1,4 +1,4 @@
-package BaekJoon;
+package _Algorithm.Divide_Conquer;
 // dkdh tlqkf sdfwezfzsfzsesfwefcwezfv
 import java.io.*;
 import java.math.BigInteger;
