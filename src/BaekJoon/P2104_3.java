@@ -23,8 +23,7 @@ public class P2104_3 {
 	public static void main(String[] args)throws Exception{
 		BufferedReader r=new BufferedReader(new InputStreamReader(System.in));
 		n=Integer.parseInt(r.readLine());
-		m=(n+1)*n/2+(n%2==0?0:(n/2+1));
-		System.out.println(m);
+		System.out.println(n*(n+1)/2);
 		StringTokenizer t=new StringTokenizer(r.readLine());
 		for(;i<n;i++) {
 //			V[i][i]=a[i]=Integer.parseInt(t.nextToken());
