@@ -1,4 +1,6 @@
 package BaekJoon;
+//분할정복을 못하는건가 문제들이 개같은건가
+
 import java.io.*;
 import java.util.*;
 
