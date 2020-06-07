@@ -13,15 +13,12 @@ public class P2104 {
 		else if(t>f) {
 			int i=f,j=f,l=t-f+1,m=a[f],v;
 			for(;i++<t;) {
-				System.out.println("\t"+m);
 				if(a[i]<m) {
-					System.out.println("\t"+a[i]);
 					j=i;
 					m=a[i];
 				}
 			}
 			v=V[f][t]*m;
-			System.out.println(f+" "+t+"\t"+v+"\t"+V[f][t]+" * "+m);
 			R=R>v?R:v;
 				o(f,j-1);
 				o(j+1,t);
@@ -38,8 +35,6 @@ public class P2104 {
 			if(i==0)continue;
 			for(j=i;j>=0;V[j][i]=V[j--][i-1]+a[i]);
 		}
-//		System.out.println(Arrays.toString(a)+"\n");
-//		for(int[]b:V)System.out.println(Arrays.toString(b));
 		o(0,n-1);
 		System.out.print(R);
 	}
