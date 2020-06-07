@@ -1,5 +1,5 @@
 package BaekJoon;
-
+//히스토그램
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
