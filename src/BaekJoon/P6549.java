@@ -2,7 +2,7 @@ package BaekJoon;
 import java.io.*;
 import java.util.*;
 
-public class P12846_4 {
+public class P6549 {
 
 	static int n,a[],i,R;
 	static void o(int f,int t) {
