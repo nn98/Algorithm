@@ -1,4 +1,4 @@
-package BaekJoon;
+package _Algorithm.Divide_Conquer;
 //에이 시발 머리 존나 똑똑해야되네
 //?
 import java.io.*;
