@@ -3,18 +3,20 @@ package BaekJoon;
 import java.io.*;
 import java.util.*;
 public class P2104_2 {
-	static int n,i,R,V[][],j,k;
+	static int n,i,R,j,k,a;
+	static List<List<Integer>>l;
 	static void o(int f,int t) {
-		if(t==f)R=R>V[f][f]*V[f][f]?R:V[f][f]*V[f][f];
+		int x=l.get(f).get(f);
+		if(t==f)R=R>x*x?R:x*x;
 		else if(t>f) {
-			int i=f,j=f,l=t-f+1,m=V[f][f],v;
+			int i=f,j=f,m=x,v;
 			for(;i++<t;) {
-				if(V[i][i]<m) {
+				if(l.get(i).get(i)<m) {
 					j=i;
-					m=V[i][i];
+					m=l.get(i).get(i);
 				}
 			}
-			v=V[f][t]*m;
+			v=l.get(f).get(t)*m;
 			R=R>v?R:v;
 				o(f,j-1);
 				o(j+1,t);
@@ -23,12 +25,14 @@ public class P2104_2 {
 	public static void main(String[] args)throws Exception{
 		BufferedReader r=new BufferedReader(new InputStreamReader(System.in));
 		n=Integer.parseInt(r.readLine());
-		V=new int[n][n];
+		l=new ArrayList();
 		StringTokenizer t=new StringTokenizer(r.readLine());
 		for(;i<n;i++) {
-			V[i][i]=Integer.parseInt(t.nextToken());
+			a=Integer.parseInt(t.nextToken());
+			l.add(i,new ArrayList());
+			l.get(i).add(i,a);
 			if(i==0)continue;
-			for(j=i;j>=0;V[j][i]=V[j--][i-1]+V[i][i]);
+			for(j=i;j>=0;l.get(j).add(i,l.get(j--).get(i-1)+a));
 		}
 		o(0,n-1);
 		System.out.print(R);
