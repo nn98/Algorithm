@@ -35,7 +35,7 @@ public class P2104_2 {
 			if(i==0)l.get(i).add(a);
 			else for(j=i;j>=0;l.get(j).add(l.get(j--).get(i-1)+a));
 		}
-		for(List b:l)System.out.println(b);
+//		for(List b:l)System.out.println(b);
 		o(0,n-1);
 		System.out.print(R);
 	}
