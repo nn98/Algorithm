@@ -24,7 +24,7 @@ public class P2104_3 {
 		BufferedReader r=new BufferedReader(new InputStreamReader(System.in));
 		n=Integer.parseInt(r.readLine());
 		a=new int[(n+1)*n/2+n%2==0?0:n/2+1];
-		System.out.println();
+		System.out.println((n+1)*n/2+n%2==0?0:n/2+1);
 		StringTokenizer t=new StringTokenizer(r.readLine());
 		for(;i<n;i++) {
 //			V[i][i]=a[i]=Integer.parseInt(t.nextToken());
