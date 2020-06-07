@@ -6,7 +6,8 @@ import java.util.StringTokenizer;
 
 public class P2104 {
 
-	public static void main(String[] args) {
+	static int n,a[],i,R;
+	public static void main(String[] args)throws Exception{
 		BufferedReader r=new BufferedReader(new InputStreamReader(System.in));
 		n=Integer.parseInt(r.readLine());
 		a=new int[n];
