@@ -8,7 +8,7 @@ public class P12846_4 {
 	static int n,a[],i,R;
 	static void o(int f,int t) {
 		System.out.println(f+" "+t);
-		if(f<0)return;
+		if(f<0||t<0)return;
 		if(f==t)R=R>a[f]?R:a[f];
 		else {
 			int m=a[f],v,l=t-f+1,i=f,j=f;
