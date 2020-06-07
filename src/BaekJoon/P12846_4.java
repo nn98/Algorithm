@@ -15,6 +15,10 @@ public class P12846_4 {
 					j=i;
 					m=a[i];
 				}
+			v=m*l;
+			R=R>v?R:v;
+				o(f,j-1);
+				o(j+1,t);
 		}
 
 	}
@@ -24,6 +28,8 @@ public class P12846_4 {
 		a=new int[n];
 		StringTokenizer t=new StringTokenizer(r.readLine());
 		for(;i<n;a[i++]=Integer.parseInt(t.nextToken()));
+		o(0,n-1);
+		System.out.print(R);
 	}
 
 }
