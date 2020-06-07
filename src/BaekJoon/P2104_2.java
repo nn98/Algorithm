@@ -25,11 +25,11 @@ public class P2104_2 {
 	public static void main(String[] args)throws Exception{
 		BufferedReader r=new BufferedReader(new InputStreamReader(System.in));
 		n=Integer.parseInt(r.readLine());
-		l=new ArrayList();
+		l=new ArrayList(n);
 		StringTokenizer t=new StringTokenizer(r.readLine());
 		for(;i<n;i++) {
 			a=Integer.parseInt(t.nextToken());
-			l.add(i,new ArrayList());
+			l.add(i,new ArrayList(n));
 			l.get(i).add(i,a);
 			if(i==0)continue;
 			for(j=i;j>=0;l.get(j).add(i,l.get(j--).get(i-1)+a));
