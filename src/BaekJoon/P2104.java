@@ -25,7 +25,6 @@ public class P2104 {
 	public static void main(String[] args)throws Exception{
 		BufferedReader r=new BufferedReader(new InputStreamReader(System.in));
 		n=Integer.parseInt(r.readLine());
-		a=new int[n];
 		V=new int[n][n];
 		StringTokenizer t=new StringTokenizer(r.readLine());
 		for(;i<n;i++) {
