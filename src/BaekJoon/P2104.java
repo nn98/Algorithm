@@ -8,6 +8,22 @@ import java.util.StringTokenizer;
 public class P2104 {
 
 	static int n,a[],i,R,V[][],j,k;
+	static void o(int f,int t) {
+		if(t==f)R=R>a[f]*a[f]?R:a[f]*a[f];
+		else if(t>f) {
+			int i=f,j=f,l=t-f+1,m=a[f],v;
+			for(;i++<f;) {
+				if(a[i]<m) {
+					j=i;
+					m=a[i];
+				}
+			}
+			v=V[f][t]*m;
+			R=R>v?R:v;
+				o(f,j-1);
+				o(j+1,t);
+		}
+	}
 	public static void main(String[] args)throws Exception{
 		BufferedReader r=new BufferedReader(new InputStreamReader(System.in));
 		n=Integer.parseInt(r.readLine());
