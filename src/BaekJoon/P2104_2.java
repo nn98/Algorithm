@@ -6,6 +6,7 @@ public class P2104_2 {
 	static int n,i,R,j,k,a;
 	static List<List<Integer>>l;
 	static void o(int f,int t) {
+		if(f==n)return;
 		int x=l.get(f).get(f);
 		if(t==f)R=R>x*x?R:x*x;
 		else if(t>f) {
@@ -30,6 +31,7 @@ public class P2104_2 {
 		for(;i<n;i++) {
 			a=Integer.parseInt(t.nextToken());
 			l.add(i,new ArrayList(n));
+			for(j=0;j<i;l.get(i).add(j++,0));
 			l.get(i).add(i,a);
 			if(i==0)continue;
 			for(j=i;j>=0;l.get(j).add(i,l.get(j--).get(i-1)+a));
