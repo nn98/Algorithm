@@ -16,9 +16,10 @@ public class P2104 {
 		StringTokenizer t=new StringTokenizer(r.readLine());
 		for(;i<n;i++) {
 			V[i][i]=a[i]=Integer.parseInt(t.nextToken());
-			for(j=i;j>0;V[j][i]=V[j--][i-1]+a[i]);
+			if(i==0)continue;
+			for(j=i;j>=0;V[j][i]=V[j--][i-1]+a[i]);
 		}
-		System.out.println(Arrays.toString(a));
+		System.out.println(Arrays.toString(a)+"\n");
 		for(int[]b:V)System.out.println(Arrays.toString(b));
 	}
 
