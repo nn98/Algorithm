@@ -19,6 +19,7 @@ public class P2104 {
 				}
 			}
 			v=V[f][t]*m;
+			System.out.println(f+" "+t+"\t"+v);
 			R=R>v?R:v;
 				o(f,j-1);
 				o(j+1,t);
