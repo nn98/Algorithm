@@ -33,5 +33,4 @@ public class P6549 {
 			s=r.readLine();
 		}
 	}
-
 }
