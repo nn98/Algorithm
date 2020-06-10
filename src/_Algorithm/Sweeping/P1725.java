@@ -9,7 +9,7 @@ public class P1725 {
 		n=Integer.parseInt(r.readLine());
 		a=new int[n];
 		Stack<Integer>s=new Stack();
-		for(String g:r.readLine().split(" ")) {
+		for(;i<n;){
 			a[i]=Integer.parseInt(g);
 			while(!s.isEmpty()&&a[s.peek()]>a[i]) {
 				int c=s.pop(),w=i,k;
