@@ -20,7 +20,7 @@ public class P1725_2 {
 			}
 			k.push(i);
 		}
-		while(!k.isEmpty()&&a[k.peek()]>a[i]) {
+		while(!k.isEmpty()) {
 			j=k.pop();
 			long w=i;
 			if(!k.isEmpty())w-=k.peek()+1;
