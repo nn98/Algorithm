@@ -40,6 +40,7 @@ public class P1725_3 {
 			m=(int) (m<c?c:m);
 		}
 		System.out.println(m);
+		System.out.println("이걸 생각해내는게 미친놈인거 아니냐 시발");
 	}
 
 }
