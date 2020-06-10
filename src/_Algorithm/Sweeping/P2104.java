@@ -15,6 +15,7 @@ public class P2104 {
 			j=a[i]=Integer.parseInt(s);
 			w=0;
 			m=Integer.MAX_VALUE;
+//			팝하는 조건에서 문제가 있나?
 			while(!t.isEmpty()&&a[t.peek()]>j) {
 				k=t.pop();
 				v=a[k];
