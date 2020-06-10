@@ -11,6 +11,7 @@ public class Main {
 	static int n,a[],m,M,j,i;
 	
 	public static void main(String[] args)throws Exception{
+//		My
 		BufferedReader r=new BufferedReader(new InputStreamReader(System.in));
 		n=Integer.parseInt(r.readLine());
 		a=new int[n];
@@ -43,6 +44,14 @@ public class Main {
 		y=x*m;
 		M=M>y?M:y;
 		System.out.println(M);
+		
+//		Sol's
+		n=Integer.parseInt(r.readLine());
+		a=new int[n];
+		for(String g:r.readLine().split(" ")) {
+			System.out.println(g);
+			while(!s.isEmpty()&&a[s.peek()]>c);
+		}
 	}
 
 }
