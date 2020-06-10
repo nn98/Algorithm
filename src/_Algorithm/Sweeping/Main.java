@@ -9,9 +9,9 @@ import java.util.Stack;
 public class Main {
 
 	static int n,a[],m,M,j,i;
-	
+
 	public static void main(String[] args)throws Exception{
-//		My
+		//		My
 		BufferedReader r=new BufferedReader(new InputStreamReader(System.in));
 		n=Integer.parseInt(r.readLine());
 		a=new int[n];
@@ -45,8 +45,8 @@ public class Main {
 		M=M>y?M:y;
 		System.out.println(M);
 		i=M=0;
-		
-//		Sol's
+
+		//		Sol's
 		n=Integer.parseInt(r.readLine());
 		a=new int[n];
 		for(String g:r.readLine().split(" ")) {
@@ -59,12 +59,13 @@ public class Main {
 			}
 			s.push(i++);
 		}
-		while(!s.isEmpty()&&a[s.peek()]>a[i]) {
-			int c=s.pop(),w=i,k;
-			if(!s.isEmpty())w-=s.peek()+1;
-			k=a[c]*w;
-			M=M>k?M:k;
-		}
+		if(i<n)
+			while(!s.isEmpty()&&a[s.peek()]>a[i]) {
+				int c=s.pop(),w=i,k;
+				if(!s.isEmpty())w-=s.peek()+1;
+				k=a[c]*w;
+				M=M>k?M:k;
+			}
 		System.out.println(M);
 	}
 
