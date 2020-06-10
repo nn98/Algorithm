@@ -2,7 +2,7 @@ package _Algorithm.Sweeping;
 
 import java.io.*;
 import java.util.*;
-public class P2104 {
+public class P1725 {
 	static int n,M,a[],i;
 	public static void main(String[] args)throws Exception{
 		BufferedReader r=new BufferedReader(new InputStreamReader(System.in));
