@@ -30,6 +30,7 @@ public class P6549 {
 				m=(int) (m<c?c:m);
 			}
 			System.out.println(m);
+			s=r.readLine();
 		}
 	}
 
