@@ -41,5 +41,4 @@ public class P2104 {
 		}
 		System.out.print(R);
 	}
-
 }
