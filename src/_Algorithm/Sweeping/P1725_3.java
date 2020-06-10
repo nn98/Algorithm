@@ -29,10 +29,14 @@ public class P1725_3 {
 			k.push(i);
 		}
 		while(!k.isEmpty()) {
+			System.out.println("스택에 값 남음");
 			j=k.pop();
+			System.out.println("남은 탑 인덱스, "+j);
 			long w=i;
 			if(!k.isEmpty())w-=k.peek()+1;
+			System.out.println("몇칸인지 구해서, "+w);
 			long c=a[j]*w;
+			System.out.println("넓이 계산, "+a[j]+" * "+w+" = "+c);
 			m=(int) (m<c?c:m);
 		}
 		System.out.println(m);
