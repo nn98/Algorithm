@@ -10,7 +10,7 @@ public class P1725 {
 		a=new int[n];
 		Stack<Integer>s=new Stack();
 		for(;i<n;){
-			a[i]=Integer.parseInt(g);
+			a[i]=Integer.parseInt(r.readLine());
 			while(!s.isEmpty()&&a[s.peek()]>a[i]) {
 				int c=s.pop(),w=i,k;
 				if(!s.isEmpty())w-=s.peek()+1;
