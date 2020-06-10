@@ -44,14 +44,28 @@ public class Main {
 		y=x*m;
 		M=M>y?M:y;
 		System.out.println(M);
+		i=M=0;
 		
 //		Sol's
 		n=Integer.parseInt(r.readLine());
 		a=new int[n];
 		for(String g:r.readLine().split(" ")) {
-			System.out.println(g);
-			while(!s.isEmpty()&&a[s.peek()]>c);
+			a[i]=Integer.parseInt(g);
+			while(!s.isEmpty()&&a[s.peek()]>a[i]) {
+				int c=s.pop(),w=i,k;
+				if(!s.isEmpty())w-=s.peek()+1;
+				k=a[c]*w;
+				M=M>k?M:k;
+			}
+			s.push(i++);
 		}
+		while(!s.isEmpty()&&a[s.peek()]>a[i]) {
+			int c=s.pop(),w=i,k;
+			if(!s.isEmpty())w-=s.peek()+1;
+			k=a[c]*w;
+			M=M>k?M:k;
+		}
+		System.out.println(M);
 	}
 
 }
