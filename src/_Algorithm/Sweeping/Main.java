@@ -1,6 +1,8 @@
 package _Algorithm.Sweeping;
 // 히스토그램 크기 문제 기준으로.
 // 배열 내용 싹 훑으면서 기준값보다 크거나 같으면 추가하고 계속, 작으면 거기까지 저장하고 작은값부터 새로?
+// 시발
+// 메인 말고 1725가 기본 스위핑
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
