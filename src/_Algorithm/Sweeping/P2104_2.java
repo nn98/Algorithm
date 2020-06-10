@@ -19,7 +19,7 @@ public class P2104_2 {
 			while(!t.isEmpty()&&a[t.peek()]>a[i]) {
 				k=t.pop();
 				v=a[k];
-				int p=t.isEmpty()?0:k;
+				int p=t.isEmpty()?0:t.peek();
 				R=Math.max(R,(u[i-1]-u[p])*v);
 			}
 			t.push(i++);
