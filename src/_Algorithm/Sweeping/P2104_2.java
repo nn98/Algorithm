@@ -16,6 +16,7 @@ public class P2104_2 {
 		for(String s:r.readLine().split(" ")) {
 			a[i]=Integer.parseInt(s);
 			if(i>0)u[i]=u[i-1]+a[i];
+			else u[i]=a[i];
 			while(!t.isEmpty()&&a[t.peek()]>a[i]) {
 				k=t.pop();
 				v=a[k];
