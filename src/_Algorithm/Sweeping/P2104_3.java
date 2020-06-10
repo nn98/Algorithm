@@ -8,12 +8,13 @@ public class P2104_3 {
 	static long R,w,e,u[];
 	public static void main(String[] args)throws Exception{
 		BufferedReader r=new BufferedReader(new InputStreamReader(System.in));
-		n=Integer.parseInt(r.readLine())+1;
-		a=new int[n+1];
-		u=new long[n];
+		n=Integer.parseInt(r.readLine());
+		a=new int[n+2];
+		a[n+1]=0;
+		u=new long[n+2];
 		Stack<Integer>t=new Stack();
 		StringTokenizer T=new StringTokenizer(r.readLine());
-		for(;i<=n+1;i++) {
+		for(;i<=n;i++) {
 			a[i]=Integer.parseInt(T.nextToken());
 			u[i]=u[i-1]+a[i];
 			while(!t.isEmpty()&&a[t.peek()]>a[i]) {
