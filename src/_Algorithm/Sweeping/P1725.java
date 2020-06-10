@@ -3,18 +3,19 @@ package _Algorithm.Sweeping;
 import java.io.*;
 import java.util.*;
 public class P1725 {
-	static int n,M,a[],i;
+	static long n,M,a[];
+	static int i;
 	public static void main(String[] args)throws Exception{
 		BufferedReader r=new BufferedReader(new InputStreamReader(System.in));
 		n=Integer.parseInt(r.readLine());
-		a=new int[n];
+		a=new long[(int) n];
 		Stack<Integer>s=new Stack();
 		for(;i<n;){
 			a[i]=Integer.parseInt(r.readLine());
 			while(!s.isEmpty()&&a[s.peek()]>a[i]) {
-				int c=s.pop(),w=i,k;
+				long c=s.pop(),w=i,k;
 				if(!s.isEmpty())w-=s.peek()+1;
-				k=a[c]*w;
+				k=a[(int) c]*w;
 				M=M>k?M:k;
 			}
 			s.push(i++);
@@ -23,7 +24,7 @@ public class P1725 {
 			while(!s.isEmpty()&&a[s.peek()]>a[i]) {
 				int c=s.pop(),w=i,k;
 				if(!s.isEmpty())w-=s.peek()+1;
-				k=a[c]*w;
+				k=(int) (a[c]*w);
 				M=M>k?M:k;
 			}
 		System.out.println(M);
