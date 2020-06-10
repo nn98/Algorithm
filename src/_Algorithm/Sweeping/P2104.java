@@ -20,6 +20,7 @@ public class P2104 {
 				m=m<k?m:k;
 				w+=k;
 				e=w*m;
+				System.out.println("at - "+i+": "+w+" * "+m+" = "+e);
 				R=R>e?R:e;
 			}
 			t.push(i++);
@@ -31,6 +32,7 @@ public class P2104 {
 			m=m<k?m:k;
 			w+=k;
 			e=w*m;
+			System.out.println(w+" * "+m+" = "+e);
 			R=R>e?R:e;
 		}
 		System.out.print(R);
