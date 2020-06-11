@@ -19,7 +19,7 @@ public class P6549 {
 					long w=i;
 					if(!k.isEmpty())w-=k.peek()+1;
 					long c=a[(int)j]*w;
-					m=(int) (m<c?c:m);
+					m=m<c?c:m;
 				}
 				k.push(i);
 			}
@@ -28,7 +28,7 @@ public class P6549 {
 				long w=i;
 				if(!k.isEmpty())w-=k.peek()+1;
 				long c=a[(int)j]*w;
-				m=(int) (m<c?c:m);
+				m=m<c?c:m;
 			}
 			System.out.println(m);
 			s=r.readLine();
