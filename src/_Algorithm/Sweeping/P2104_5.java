@@ -27,6 +27,9 @@ public class P2104_5 {
 			}
 			s[++m]=i;
 		}
+		System.out.println(Arrays.toString(a));
+		System.out.println(Arrays.toString(u));
+		System.out.println(Arrays.toString(s));
 		System.out.println(w);
 	}
 }
