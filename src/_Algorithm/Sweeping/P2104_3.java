@@ -4,8 +4,8 @@ import java.io.*;
 import java.util.*;
 public class P2104_3 {
 
-	static int n,m,i=1,k,h,a[];
-	static long R,w,e,u[];
+	static int n,m,i=1,k,a[];
+	static long R,w,e,h,u[];
 	public static void main(String[] args)throws Exception{
 		BufferedReader r=new BufferedReader(new InputStreamReader(System.in));
 		n=Integer.parseInt(r.readLine());
@@ -25,8 +25,8 @@ public class P2104_3 {
 			}
 			t.push(i);
 		}
-//		System.out.println(Arrays.toString(a));
-//		System.out.println(Arrays.toString(u));
+		System.out.println(Arrays.toString(a));
+		System.out.println(Arrays.toString(u));
 		System.out.print(R);
 	}
 }
