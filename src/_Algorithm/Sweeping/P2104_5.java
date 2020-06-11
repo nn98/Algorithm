@@ -1,9 +1,7 @@
 package _Algorithm.Sweeping;
 // 스택 대신 배열?
-
 import java.io.*;
 import java.util.*;
-
 public class P2104_5 {
 	static int n,m,i,k,a[],s[];
 	static long R,w,e,h,u[];
