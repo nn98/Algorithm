@@ -1,5 +1,5 @@
 package _Algorithm.Sweeping;
-
+// Sweeping OK Thank u https://beginthread.tistory.com/25
 import java.util.*;
 public class P2104_6 {
 	public static void main(String[] args) {
