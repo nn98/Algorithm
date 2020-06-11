@@ -2,7 +2,6 @@ package _Algorithm.Sweeping;
 
 import java.io.*;
 import java.util.*;
-
 public class P2104_4 {
 	static int n,m,i,k,a[],s[];
 	static long R,w,e,h,u[];
