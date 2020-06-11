@@ -1,4 +1,6 @@
 package _Algorithm.Sweeping;
+// 스택 대신 배열?
+
 import java.io.*;
 import java.util.*;
 
