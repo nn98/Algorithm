@@ -1,10 +1,7 @@
 package _Algorithm.Sweeping;
 
-import java.util.Arrays;
-import java.util.Scanner;
-
+import java.util.*;
 public class P2104_6 {
-
 	public static void main(String[] args) {
 		Scanner s=new Scanner(System.in);
 		int n=s.nextInt()+1,a[],b[],m,i=0,j=0;
@@ -25,5 +22,4 @@ public class P2104_6 {
 		}
 		System.out.print(w);
 	}
-
 }
