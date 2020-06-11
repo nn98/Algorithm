@@ -7,15 +7,15 @@ public class P2104_5 {
 	static long R,w,e,h,u[];
 	public static void main(String[] args)throws Exception{
 		BufferedReader r=new BufferedReader(new InputStreamReader(System.in));
-		n=Integer.parseInt(r.readLine());
-		a=new int[n+2];
-		u=new long[n+1];
+		n=Integer.parseInt(r.readLine())+1;
+		a=new int[n+1];
+		u=new long[n];
 		StringTokenizer t=new StringTokenizer(r.readLine());
-		for(;++i<=n;) {
+		for(;++i<n;) {
 			a[i]=Integer.parseInt(t.nextToken());
 			u[i]=u[i-1]+a[i];
 		}
-		a[++n]=0;
+		a[n]=0;
 		s=new int[n];
 		for(i=1;i<=n;i++) {
 			while(a[s[m]]>=a[i]) {
