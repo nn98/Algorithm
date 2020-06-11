@@ -37,3 +37,4 @@ public class P2104_6{
 		System.out.println(o(1,n));
 	}
 }
+// 시벌 시간도 더 오래걸리는게 왜 더 어렵노
