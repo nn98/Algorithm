@@ -9,7 +9,8 @@ public class P6549 {
 		String s=r.readLine();
 		while(!s.equals("0")) {
 			StringTokenizer t=new StringTokenizer(s);
-			int n=Integer.parseInt(t.nextToken()),i=0,a[]=new int[n],m=0,j;
+			int n=Integer.parseInt(t.nextToken()),i=0,a[]=new int[n],j;
+			long m=0;
 			Stack<Integer>k=new Stack();
 			for(;i<n;i++) {
 				a[i]=Integer.parseInt(t.nextToken());
