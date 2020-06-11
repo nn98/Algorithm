@@ -17,8 +17,6 @@ public class P2503 {
 			B=s.nextInt();
 			if(S==0&&B==0)
 				for(i=0;i<3;r[a[i++]]=-1);
-			if(S==0&&B>0)
-				for(i=0;i<3;b[a[i++]]=-1);
 		}
 		System.out.println(Arrays.toString(r));
 	}
