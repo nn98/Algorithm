@@ -7,7 +7,7 @@ public class P2104_5 {
 	static long R,w,e,h,u[];
 	public static void main(String[] args)throws Exception{
 		BufferedReader r=new BufferedReader(new InputStreamReader(System.in));
-		n=Integer.parseInt(r.readLine())+1;
+		n=Integer.parseInt(r.readLine())+1;	//걍 n에 1 더애허 해도 ㅇㅋ
 		a=new int[n+1];
 		u=new long[n];
 		StringTokenizer t=new StringTokenizer(r.readLine());
