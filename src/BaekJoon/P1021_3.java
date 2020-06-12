@@ -14,6 +14,8 @@ public class P1021_3 {
 			i=j=x;
 			I=J=0;
 			for(;;i++,j--,I++,J++) {
+				if(i>n)i=0;
+				if(j<0)j=n;
 				if(a[k]==i) {
 					r+=I;
 					m--;
