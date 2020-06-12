@@ -17,6 +17,7 @@ public class P1021_3 {
 				if(i>n)i=0;
 				if(j<0)j=n;
 				if(a[k]==i) {
+					System.out.println(a[k]+" "+i+" "+I);
 					r+=I;
 					m--;
 					b[i]=true;
@@ -25,6 +26,7 @@ public class P1021_3 {
 					break;
 				}
 				if(a[k]==j) {
+					System.out.println(a[k]+" "+j+" "+J);
 					r+=J;
 					m--;
 					b[j]=true;
