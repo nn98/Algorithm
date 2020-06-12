@@ -36,8 +36,14 @@ public class P1021_4 {
 					x++;
 					break;
 				}
-				if(b[i])I--;
-				if(b[j])J--;
+				if(b[i]) {
+					I--;
+					i++;
+				}
+				if(b[j]) {
+					J--;
+					j--;
+				}
 			}
 		}
 		System.out.print(r);
