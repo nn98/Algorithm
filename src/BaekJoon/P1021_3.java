@@ -1,5 +1,5 @@
 package BaekJoon;
-
+// 1 over counting at test case 3
 import java.util.Scanner;
 
 public class P1021_3 {
@@ -42,5 +42,4 @@ public class P1021_3 {
 		}
 		System.out.print(r);
 	}
-
 }
