@@ -10,6 +10,10 @@ public class P1021_5 {
 		for(;i<m;a[i++]=s.nextInt());
 		for(;m>0;) {
 			x=x>n?1:x;
+			while(b[x]) {
+				x++;
+				x=x>n?1:x;
+			}
 			i=j=x;
 			I=J=0;
 			for(;;i++,j--,I++,J++) {
