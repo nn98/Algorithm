@@ -15,11 +15,11 @@ public class P1021_3 {
 			i=j=++x;
 			I=J=0;
 			for(;;i++,j--,I++,J++) {
-				System.out.println(i+" "+j+" "+x);
 				if(i>n)i=0;
 				if(j<0)j=n;
+				System.out.println(i+" "+j+" "+x);
 				if(a[k]==i) {
-					System.out.println("i: "+a[k]+" "+i+" "+I);
+					System.out.println("i(fore): "+a[k]+" "+i+" "+I);
 					r+=I;
 					m--;
 					b[i]=true;
@@ -28,7 +28,7 @@ public class P1021_3 {
 					break;
 				}
 				if(a[k]==j) {
-					System.out.println("j: "+a[k]+" "+j+" "+J);
+					System.out.println("j(back): "+a[k]+" "+j+" "+J);
 					r+=J;
 					m--;
 					b[j]=true;
