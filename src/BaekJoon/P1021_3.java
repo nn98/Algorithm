@@ -21,6 +21,7 @@ public class P1021_3 {
 					m--;
 					b[i]=true;
 					x=i;
+					k++;
 					break;
 				}
 				if(a[k]==j) {
@@ -28,6 +29,7 @@ public class P1021_3 {
 					m--;
 					b[j]=true;
 					x=j;
+					k++;
 					break;
 				}
 				if(b[i])I--;
