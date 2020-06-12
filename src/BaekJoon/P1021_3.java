@@ -17,9 +17,9 @@ public class P1021_3 {
 			for(;;i++,j--,I++,J++) {
 				if(i>n)i=0;
 				if(j<0)j=n;
-				System.out.println(i+" "+j+" "+x);
+				System.out.printf("base:%d forw:%d back:%d\n",x,i,j);
 				if(a[k]==i) {
-					System.out.println("i(fore): "+a[k]+" "+i+" "+I);
+					System.out.println("i(forw): "+a[k]+" "+i+" "+I);
 					r+=I;
 					m--;
 					b[i]=true;
