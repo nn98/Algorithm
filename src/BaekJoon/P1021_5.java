@@ -1,5 +1,5 @@
 package BaekJoon;
-
+// 이거하나에 그이 한시간걸리네 50min
 import java.util.*;
 public class P1021_5 {
 	public static void main(String[] args) {
