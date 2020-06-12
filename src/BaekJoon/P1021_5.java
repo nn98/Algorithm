@@ -17,18 +17,14 @@ public class P1021_5 {
 				i=i>n?0:i;
 				j=j<0?n:j;
 				while(b[i]) {
-//					I--;
 					i++;
 					i=i>n?0:i;
 				}
 				while(b[j]) {
-//					J--;
 					j--;
 					j=j<0?n:j;
 				}
-				System.out.printf("base:%d forw:%d(+%d) back:%d(-%d)\n",x,i,I,j,J);
 				if(a[k]==i) {
-					System.out.println("i(forw): "+a[k]+" "+i+" "+I);
 					r+=I;
 					m--;
 					b[i]=true;
@@ -37,7 +33,6 @@ public class P1021_5 {
 					break;
 				}
 				if(a[k]==j) {
-					System.out.println("j(back): "+a[k]+" "+j+" "+J);
 					r+=J;
 					m--;
 					b[j]=true;
