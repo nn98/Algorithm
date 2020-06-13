@@ -12,10 +12,14 @@ public class P2042_2 {
 		int m=(s+e)/2;
 		return t[n]=o(n*2,s,m)+o(n*2+1,m+1,e);
 	}
-	static void p(int n,int s,int t,int x,long d) {
+	static void p(int n,int s,int e,int x,long d) {
+		
 	}
-	static long u(int n,int s,int t,int l,int r) {
-		return 0;
+	static long u(int n,int s,int e,int l,int r) {
+		if(l>e||r<s)return 0;
+		if(l<=s&&r>=e)return t[n];
+		int m=(s+e)/2;
+		return u(n*2,s,m,l,r)+u(n*2+1,m+1,e,l,r);
 	}
 	public static void main(String[] args) {
 		Scanner s=new Scanner(System.in);
