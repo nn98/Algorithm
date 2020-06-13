@@ -37,15 +37,13 @@ public class P2042_2 {
 		i*=2;
 		t=new long[i];
 		o(1,0,--n);
-		System.out.println(Arrays.toString(t));
 		for(;m-->0;) {
 			if(s.nextInt()==1) {
 				x=s.nextInt()-1;
 				d=s.nextInt()-a[x];
 				p(1,0,n,x,d);
-				System.out.println(Arrays.toString(t));
 			}else
-				System.out.println(u(1,0,n,s.nextInt(),s.nextInt()));
+				System.out.println(u(1,0,n,s.nextInt()-1,s.nextInt()-1));
 		}
 	}
 }
