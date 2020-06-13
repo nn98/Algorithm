@@ -53,9 +53,9 @@ public class Segment_Tree {
 		for(;m-->0;) {
 			s=new StringTokenizer(r.readLine());
 			if(s.nextToken().equals("1")) {
-				
+				p(1,0,n-1,Integer.parseInt(s.nextToken()),Integer.parseInt(s.nextToken()));
 			}else {
-				System.out.println(u(1,0,5,Integer.parseInt(s.nextToken()),Integer.parseInt(s.nextToken())));
+				System.out.println(u(1,0,n-1,Integer.parseInt(s.nextToken()),Integer.parseInt(s.nextToken())));
 			}
 		}
 //		o(0,0,(int)m-1);
