@@ -1,8 +1,7 @@
 package _Algorithm.Divide_Conquer;
-
-import java.util.Scanner;
-
 //된다고 이게? 시벌?
+//왜 되는데 아ㅋㅋ
+import java.util.Scanner;
 public class P2042_3 {
 	public static void main(String[] args) {
 		Scanner s=new Scanner(System.in);
