@@ -46,6 +46,7 @@ public class Segment_Tree {
 		a=new int[n];
 		h=(int)Math.round(Math.log(n)/Math.log(2));
 		i=(1<<(h+1));
+		System.out.println(i);
 		t=new int[i];
 //		t=new int[1];
 		
