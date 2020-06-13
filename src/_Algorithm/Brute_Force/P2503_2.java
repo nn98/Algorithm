@@ -10,7 +10,7 @@ public class P2503_2 {
 		if(x==3) {
 			System.out.println(a);
 			
-			System.out.println(Integer.parseInt(a.toString()));
+			System.out.println(Integer.parseInt(a));
 		}
 		else for(int k=0;++k<10;)
 			if(!c[k]) {
