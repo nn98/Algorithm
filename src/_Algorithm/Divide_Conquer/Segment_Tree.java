@@ -6,7 +6,7 @@ public class Segment_Tree {
 
 	static int n,m,h,i,j,a[],t[];
 	static int o(int n,int s,int e) {
-//		System.out.println(n+" "+s+" "+e+" "+Arrays.toString(t));
+		System.out.println(n+" "+s+" "+e+" "+Arrays.toString(t));
 		if(s==e)return t[n]=a[s];
 		else {
 			int m=(s+e)/2;
@@ -45,8 +45,8 @@ public class Segment_Tree {
 		a=new int[n];
 		h=(int)Math.round(Math.log(n)/Math.log(2));
 		i=(1<<(h+1));
-		System.out.println(i);
-		t=new int[i];
+//		System.out.println(i);
+		t=new int[i+1];
 //		t=new int[1];
 		
 //		System.out.println(i);
