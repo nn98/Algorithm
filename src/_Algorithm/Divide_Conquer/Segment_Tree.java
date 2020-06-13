@@ -43,11 +43,16 @@ public class Segment_Tree {
 		n=Integer.parseInt(s.nextToken());
 		m=Integer.parseInt(s.nextToken())+Integer.parseInt(s.nextToken());
 		a=new int[n];
-		h=Math.round(Math.round(Math.log(n)/Math.log(2)));
-		i=(1<<(h+1));
+//		높이와 노드 개수 구하는 공식
+//		인데 시벌 난 왜 안되냐
+//		h=Math.round(Math.round(Math.log(n)/Math.log(2)));
+//		i=(1<<(h+1));
 //		System.out.println(i);
-		t=new int[i+1];
-//		t=new int[1];
+//		내방식대로
+		for(i=1;i<n;i*=2);
+		i*=2;
+		System.out.println(i);
+		t=new int[i];
 		
 //		System.out.println(i);
 		for(i=0;i<n;a[i++]=Integer.parseInt(r.readLine()));
