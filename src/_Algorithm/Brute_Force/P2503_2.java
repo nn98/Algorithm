@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 public class P2503_2 {
-	static int n,m,i,j,d[][];
+	static int n,m,i,j,d[][],r;
 	static char[]a=new char[3],b[];
 	static boolean[]c=new boolean[10];
 	static void o(int x) {
@@ -18,6 +18,9 @@ public class P2503_2 {
 				o(x+1);
 				c[k]=false;
 			}
+	}
+	static void p() {
+		
 	}
 	public static void main(String[]z) {
 		Scanner s=new Scanner(System.in);
