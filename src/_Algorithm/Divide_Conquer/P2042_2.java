@@ -17,5 +17,4 @@ public class P2042_2 {
 		System.out.println(i);
 		t=new long[i];
 	}
-
 }
