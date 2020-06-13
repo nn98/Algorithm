@@ -13,7 +13,13 @@ public class P2042_2 {
 		return t[n]=o(n*2,s,m)+o(n*2+1,m+1,e);
 	}
 	static void p(int n,int s,int e,int x,long d) {
-		
+		if(x<s||x>e)return;
+		t[n]+=d;
+		if(s!=e) {
+			int m=(s+e)/2;
+			p(n*2,s,m,x,d);
+			p(n*2+1,m+1,e,x,d);
+		}
 	}
 	static long u(int n,int s,int e,int l,int r) {
 		if(l>e||r<s)return 0;
