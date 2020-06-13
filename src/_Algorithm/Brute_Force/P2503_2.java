@@ -7,7 +7,11 @@ public class P2503_2 {
 	static char[]a=new char[3];
 	static boolean[]c=new boolean[10];
 	static void o(int x) {
-		if(x==3)System.out.println(a);
+		if(x==3) {
+			System.out.println(a);
+			
+			System.out.println(Integer.parseInt(a.toString()));
+		}
 		else for(int k=0;++k<10;)
 			if(!c[k]) {
 				a[x]=(char)(k+'0');
