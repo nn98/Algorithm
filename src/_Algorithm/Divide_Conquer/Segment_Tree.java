@@ -43,7 +43,7 @@ public class Segment_Tree {
 		n=Integer.parseInt(s.nextToken());
 		m=Integer.parseInt(s.nextToken())+Integer.parseInt(s.nextToken());
 		a=new int[n];
-		h=(int)Math.round(Math.log(n)/Math.log(2));
+		h=Math.round(Math.round(Math.log(n)/Math.log(2)));
 		i=(1<<(h+1));
 //		System.out.println(i);
 		t=new int[i+1];
