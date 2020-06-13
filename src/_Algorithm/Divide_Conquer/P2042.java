@@ -34,7 +34,6 @@ public class P2042 {
 		a=new int[n];
 		for(i=1;i<n;i*=2);
 		i*=2;
-		System.out.println(i);
 		t=new int[i];
 		for(i=0;i<n;a[i++]=Integer.parseInt(r.readLine()));
 		o(1,0,n-1);
@@ -43,7 +42,6 @@ public class P2042 {
 			if(s.nextToken().equals("1")) {
 				int x=Integer.parseInt(s.nextToken())-1,d=Integer.parseInt(s.nextToken())-a[x];
 				p(1,0,n-1,x,d);
-				System.out.println(Arrays.toString(t));
 			}else {
 				System.out.println(u(1,0,n-1,Integer.parseInt(s.nextToken())-1,Integer.parseInt(s.nextToken())-1));
 			}
