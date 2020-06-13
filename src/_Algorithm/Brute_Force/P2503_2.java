@@ -30,8 +30,7 @@ public class P2503_2 {
 						if(i==m)e[0]++;
 						else e[1]++;
 			System.out.println("\t"+Arrays.toString(a)+" "+Arrays.toString(b[j])+" "+Arrays.toString(e));
-			f=d[j][0]==e[0];
-			f=d[j][1]==e[1];
+			f=d[j][0]==e[0]&&d[j][1]==e[1];
 		}
 //		r+=f?1:0;
 		if(f) {
