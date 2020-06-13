@@ -1,6 +1,5 @@
 package _Algorithm.Brute_Force;
-//
-import java.util.Arrays;
+// 다른 방식의 브루트 포스? ㄴㄴ 그냥 비교대상을 입력받는게 다름
 import java.util.Scanner;
 
 public class P2503_2 {
