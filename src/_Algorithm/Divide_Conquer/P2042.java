@@ -5,7 +5,6 @@ import java.util.*;
 public class P2042 {
 	static int n,m,h,i,j,a[],t[];
 	static int o(int n,int s,int e) {
-		System.out.println(n+" "+s+" "+e+" "+Arrays.toString(t));
 		if(s==e)return t[n]=a[s];
 		else {
 			int m=(s+e)/2;
@@ -39,8 +38,6 @@ public class P2042 {
 		t=new int[i];
 		for(i=0;i<n;a[i++]=Integer.parseInt(r.readLine()));
 		o(1,0,n-1);
-		System.out.println(Arrays.toString(a));
-		System.out.println(Arrays.toString(t));
 		for(;m-->0;) {
 			s=new StringTokenizer(r.readLine());
 			if(s.nextToken().equals("1")) {
@@ -48,7 +45,7 @@ public class P2042 {
 				p(1,0,n-1,x,d);
 				System.out.println(Arrays.toString(t));
 			}else {
-				System.out.println("\t"+u(1,0,n-1,Integer.parseInt(s.nextToken())-1,Integer.parseInt(s.nextToken())-1));
+				System.out.println(u(1,0,n-1,Integer.parseInt(s.nextToken())-1,Integer.parseInt(s.nextToken())-1));
 			}
 		}
 	}
