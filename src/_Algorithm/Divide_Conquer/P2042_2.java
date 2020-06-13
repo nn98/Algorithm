@@ -6,8 +6,11 @@ public class P2042_2 {
 
 	static int n,m,i,x;
 	static long d,a[],t[];
-	static long o(int n,int s,int t) {
-		return 0;
+	static long o(int n,int s,int e) {
+		System.out.println(n+" "+s+" "+" "+e);
+		if(s==e)return t[n]=a[s];
+		int m=(s+e)/2;
+		return t[n]=o(n*2,s,m)+o(n*2+1,m+1,e);
 	}
 	static void p(int n,int s,int t,int x,long d) {
 	}
@@ -23,13 +26,14 @@ public class P2042_2 {
 		for(i=1;i<n;i*=2);
 		i*=2;
 		t=new long[i];
+		o(1,0,--n);
 		for(;m-->0;) {
 			if(s.nextInt()==1) {
 				x=s.nextInt()-1;
 				d=a[x]-s.nextInt();
-				p(1,0,n-1,x,d);
+				p(1,0,n,x,d);
 			}else
-				System.out.println(u(1,0,n-1,s.nextInt(),s.nextInt()));
+				System.out.println(u(1,0,n,s.nextInt(),s.nextInt()));
 		}
 	}
 }
