@@ -20,7 +20,7 @@ public class P2503_2 {
 			}
 	}
 	static void p() {
-		System.out.println(a);
+//		System.out.println(a);
 		f=true;
 		for(j=0;j<n&&f;j++) {
 			e=new int[2];
@@ -29,7 +29,7 @@ public class P2503_2 {
 					if(a[i]==b[j][m])
 						if(i==m)e[0]++;
 						else e[1]++;
-			System.out.println("\t"+Arrays.toString(a)+" "+Arrays.toString(b[j])+" "+Arrays.toString(e)+"=="+Arrays.toString(d[j]));
+//			System.out.println("\t"+Arrays.toString(a)+" "+Arrays.toString(b[j])+" "+Arrays.toString(e)+"=="+Arrays.toString(d[j]));
 			f=d[j][0]==e[0]&&d[j][1]==e[1];
 		}
 //		r+=f?1:0;
@@ -43,7 +43,7 @@ public class P2503_2 {
 		b=new char[n][];
 		d=new int[n][2];
 		for(;m-->0;b[m]=s.next().toCharArray(),d[m][0]=s.nextInt(),d[m][1]=s.nextInt());
-		for(;++m<n;System.out.println(Arrays.toString(b[m])+" "+d[m][0]+" "+d[m][1]));
+//		for(;++m<n;System.out.println(Arrays.toString(b[m])+" "+d[m][0]+" "+d[m][1]));
 		o(0);
 		System.out.println(r);
 	}
