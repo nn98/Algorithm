@@ -2,7 +2,6 @@ package _Algorithm.Divide_Conquer;
 
 import java.io.*;
 import java.util.*;
-
 public class Segment_Tree {
 
 	static int n,m,h,i,j,a[],t[];
