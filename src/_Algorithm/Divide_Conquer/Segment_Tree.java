@@ -7,7 +7,7 @@ public class Segment_Tree {
 
 	static int n,m,h,i,j,a[],t[];
 	static int o(int n,int s,int e) {
-		System.out.println(n+" "+s+" "+e+" "+Arrays.toString(t));
+//		System.out.println(n+" "+s+" "+e+" "+Arrays.toString(t));
 		if(s==e)return t[n]=a[s];
 		else {
 			int m=(s+e)/2;
@@ -37,15 +37,19 @@ public class Segment_Tree {
 //		t=new long[(int)Math.round(Math.pow(2,Math.round(Math.log(n))+1)-1)];
 //		t=new long[(int)(2*n-1)];
 //		세상에 자바엔 log2가 없대! 시발
+		
 		BufferedReader r=new BufferedReader(new InputStreamReader(System.in));
 		StringTokenizer s=new StringTokenizer(r.readLine());
+		
 		n=Integer.parseInt(s.nextToken());
 		m=Integer.parseInt(s.nextToken())+Integer.parseInt(s.nextToken());
 		a=new int[n];
 		h=(int)Math.round(Math.log(n)/Math.log(2));
 		i=(1<<(h+1));
-		t=new int[i+1];
-		System.out.println(i);
+		t=new int[i];
+//		t=new int[1];
+		
+//		System.out.println(i);
 		for(i=0;i<n;a[i++]=Integer.parseInt(r.readLine()));
 		o(1,0,n-1);
 		System.out.println(Arrays.toString(a));
@@ -53,9 +57,11 @@ public class Segment_Tree {
 		for(;m-->0;) {
 			s=new StringTokenizer(r.readLine());
 			if(s.nextToken().equals("1")) {
-				p(1,0,n-1,Integer.parseInt(s.nextToken()),Integer.parseInt(s.nextToken()));
+				int x=Integer.parseInt(s.nextToken())-1,d=Integer.parseInt(s.nextToken())-a[x];
+				p(1,0,n-1,x,d);
+				System.out.println(Arrays.toString(t));
 			}else {
-				System.out.println(u(1,0,n-1,Integer.parseInt(s.nextToken()),Integer.parseInt(s.nextToken())));
+				System.out.println("\t"+u(1,0,n-1,Integer.parseInt(s.nextToken())-1,Integer.parseInt(s.nextToken())-1));
 			}
 		}
 //		o(0,0,(int)m-1);
