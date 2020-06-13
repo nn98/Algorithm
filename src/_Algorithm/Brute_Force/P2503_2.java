@@ -32,10 +32,7 @@ public class P2503_2 {
 //			System.out.println("\t"+Arrays.toString(a)+" "+Arrays.toString(b[j])+" "+Arrays.toString(e)+"=="+Arrays.toString(d[j]));
 			f=d[j][0]==e[0]&&d[j][1]==e[1];
 		}
-//		r+=f?1:0;
-		if(f) {
-			r++;
-		}
+		r+=f?1:0;
 	}
 	public static void main(String[]z) {
 		Scanner s=new Scanner(System.in);
