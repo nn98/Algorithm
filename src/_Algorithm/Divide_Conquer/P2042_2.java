@@ -40,7 +40,9 @@ public class P2042_2 {
 		for(;m-->0;) {
 			if(s.nextInt()==1) {
 				x=s.nextInt()-1;
-				d=s.nextInt()-a[x];
+				i=s.nextInt();
+				d=i-a[x];
+				a[x]=i;
 				p(1,0,n,x,d);
 			}else
 				System.out.println(u(1,0,n,s.nextInt()-1,s.nextInt()-1));
