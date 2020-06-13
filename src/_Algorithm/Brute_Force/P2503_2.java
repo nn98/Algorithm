@@ -3,7 +3,7 @@ package _Algorithm.Brute_Force;
 import java.util.Scanner;
 
 public class P2503_2 {
-	static int n,i,j,d[][];
+	static int n,m,i,j,d[][];
 	static char[]a=new char[3],b[];
 	static boolean[]c=new boolean[10];
 	static void o(int x) {
@@ -21,9 +21,10 @@ public class P2503_2 {
 	public static void main(String[]z) {
 		Scanner s=new Scanner(System.in);
 		o(0);
-		n=s.nextInt();
+		m=n=s.nextInt();
 		b=new char[n][];
 		d=new int[n][2];
-		for(;n-->0;b[n]=s.next().toCharArray(),d[n][0]=s.nextInt(),d[n][0]=s.nextInt());
+		for(;m-->0;b[n]=s.next().toCharArray(),d[n][0]=s.nextInt(),d[n][0]=s.nextInt());
+		for(;m<n;System.out.println(b[m]+" "+d[m][0]+" "+d[m][1]));
 	}
 }
