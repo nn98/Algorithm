@@ -20,6 +20,7 @@ public class P10868 {
 		for(i=1;i<n;i*=2);
 		i*=2;
 		t=new long[i];
+		o(1,0,--n);
 		System.out.println(Arrays.toString(t));
 	}
 
