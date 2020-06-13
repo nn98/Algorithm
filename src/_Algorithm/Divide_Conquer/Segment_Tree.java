@@ -5,8 +5,8 @@ import java.util.*;
 
 public class Segment_Tree {
 
-	static long n,m,h,k,i,j,a[]={3,1,6,4,5,2},t[];
-	static long o(int n,int s,int e) {
+	static int n,m,h,k,i,j,a[]={3,1,6,4,5,2},t[];
+	static int o(int n,int s,int e) {
 //		System.out.println(n+" "+s+" "+e+" "+Arrays.toString(t));
 		if(s==e)return t[n]=a[s];
 		else return t[n]=o(n*2,s,(s+e)/2)+o(n*2+1,(s+e)/2+1,e);
@@ -24,10 +24,10 @@ public class Segment_Tree {
 		n=Integer.parseInt(s.nextToken());
 		m=Integer.parseInt(s.nextToken());
 		k=Integer.parseInt(s.nextToken());
-		h=Math.round(Math.log(n)/Math.log(2));
+		h=(int)Math.round(Math.log(n)/Math.log(2));
 		i=(1<<(h+1));
 		System.out.println(i);
-		t=new long[(int)i];
+		t=new int[i];
 //		o(0,0,(int)m-1);
 		o(1,0,5);
 		System.out.println(Arrays.toString(a));
