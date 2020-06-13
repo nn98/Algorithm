@@ -1,5 +1,5 @@
 package _Algorithm.Divide_Conquer;
-
+//https://www.acmicpc.net/blog/view/9
 import java.io.*;
 import java.util.*;
 public class Segment_Tree {
