@@ -1,5 +1,6 @@
 package _Algorithm.Brute_Force;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class P2503_2 {
@@ -25,6 +26,6 @@ public class P2503_2 {
 		b=new char[n][];
 		d=new int[n][2];
 		for(;m-->0;b[m]=s.next().toCharArray(),d[m][0]=s.nextInt(),d[m][0]=s.nextInt());
-		for(;m<n;System.out.println(b[m]+" "+d[m][0]+" "+d[m][1]));
+		for(;++m<n;System.out.println(Arrays.toString(b[m])+" "+d[m][0]+" "+d[m][1]));
 	}
 }
