@@ -1,6 +1,6 @@
 package _Algorithm.Divide_Conquer;
-
-import java.util.Arrays;
+// 으아아ㅏㅏ아아아아아아아아ㅏ아앙ㅇㅇ앙아아ㅏ
+// 근데 시발 아직도 확실하지가 않다 병신
 import java.util.Scanner;
 
 public class P2042_2 {
