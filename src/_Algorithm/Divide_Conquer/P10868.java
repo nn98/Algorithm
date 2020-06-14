@@ -26,7 +26,6 @@ public class P10868 {
 		i*=2;
 		t=new int[i];
 		o(1,0,--n);
-		System.out.println(Arrays.toString(t));
 		for(;m-->0;) {
 			i=s.nextInt()-1;
 			j=s.nextInt()-1;
