@@ -1,6 +1,5 @@
 package _Algorithm.Divide_Conquer;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class P2357 {
@@ -38,8 +37,6 @@ public class P2357 {
 		r=new int[i];
 		o(1,0,--n);
 		O(1,0,n);
-		System.out.println(Arrays.toString(t));
-		System.out.println(Arrays.toString(r));
 		for(;m-->0;) {
 			i=s.nextInt()-1;
 			j=s.nextInt()-1;
