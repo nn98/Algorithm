@@ -1,5 +1,5 @@
 package _Algorithm.Divide_Conquer;
-
+// 0으로 바뀌는건 어케하나
 import java.util.Arrays;
 import java.util.Scanner;
 
