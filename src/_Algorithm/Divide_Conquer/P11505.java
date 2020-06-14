@@ -23,7 +23,7 @@ public class P11505 {
 		t[n]*=d;
 	}
 	static long u(int n,int s,int e,int l,int r) {
-		if(l>e||r<s)return 0;
+		if(l>e||r<s)return 1;
 		if(l<=s&&e<=r)return t[n];
 		int m=(s+e)/2;
 		return u(n*2,s,m,l,r)*u(n*2+1,m+1,e,l,r)%q;
