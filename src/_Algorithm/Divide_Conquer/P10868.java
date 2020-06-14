@@ -28,8 +28,8 @@ public class P10868 {
 		o(1,0,--n);
 		System.out.println(Arrays.toString(t));
 		for(;m-->0;) {
-			i=s.nextInt();
-			j=s.nextInt();
+			i=s.nextInt()-1;
+			j=s.nextInt()-1;
 			System.out.println(p(1,0,n));
 		}
 	}
