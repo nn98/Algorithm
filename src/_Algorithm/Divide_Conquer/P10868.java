@@ -33,5 +33,4 @@ public class P10868 {
 			System.out.println(p(1,0,n));
 		}
 	}
-
 }
