@@ -36,6 +36,7 @@ public class P11505 {
 		for(i=1;i<n;i*=2);
 		i*=2;
 		t=new long[i];
+		Arrays.fill(t,1);
 		System.out.println(Arrays.toString(t));
 		o(1,0,--n);
 		for(;m-->0;) {
