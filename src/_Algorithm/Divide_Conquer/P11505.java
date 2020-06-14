@@ -5,20 +5,20 @@ import java.util.Scanner;
 
 public class P11505 {
 	static int n,m,i,x,q=1000000007;
-	static long d,a[],t[];
+	static long w,d,a[],t[];
 	static long o(int n,int s,int e) {
 		System.out.println(Arrays.toString(t));
 		if(s==e)return t[n]=a[s];
 		int m=(s+e)/2;
 		return t[n]=o(n*2,s,m)*o(n*2+1,m+1,e)%q;
 	}
-	static void p(int n,int s,int e,int x,long d) {
+	static void p(int n,int s,int e,int x) {
 		if(x<s||x>e)return;
-		t[n]+=d;
+		t[n]/=w;
 		if(s!=e) {
 			int m=(s+e)/2;
-			p(n*2,s,m,x,d);
-			p(n*2+1,m+1,e,x,d);
+			p(n*2,s,m,x);
+			p(n*2+1,m+1,e,x);
 		}
 	}
 	static long u(int n,int s,int e,int l,int r) {
@@ -43,10 +43,10 @@ public class P11505 {
 		for(;m-->0;) {
 			if(s.nextInt()==1) {
 				x=s.nextInt()-1;
-				i=s.nextInt();
-				d=i-a[x];
-				a[x]=i;
-				p(1,0,n,x,d);
+				w=a[x];
+				d=a[x]=s.nextLong();
+				p(1,0,n,x);
+				System.out.println(Arrays.toString(t));
 			}else
 				System.out.println(u(1,0,n,s.nextInt()-1,s.nextInt()-1));
 		}
