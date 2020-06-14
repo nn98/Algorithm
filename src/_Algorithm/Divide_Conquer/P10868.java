@@ -1,10 +1,7 @@
 package _Algorithm.Divide_Conquer;
-
-import java.util.Arrays;
+// 오우 쓋
 import java.util.Scanner;
-
 public class P10868 {
-
 	static int n,m,i,j,a[],t[];
 	static int o(int n,int s,int e) {
 		if(s==e)return t[n]=a[s];
