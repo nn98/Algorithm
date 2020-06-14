@@ -7,7 +7,6 @@ public class P11505 {
 	static int n,m,i,x,q=1000000007;
 	static long w,d,a[],t[];
 	static long o(int n,int s,int e) {
-		System.out.println(Arrays.toString(t));
 		if(s==e)return t[n]=a[s];
 		int m=(s+e)/2;
 		return t[n]=o(n*2,s,m)*o(n*2+1,m+1,e)%q;
@@ -38,16 +37,13 @@ public class P11505 {
 		i*=2;
 		t=new long[i];
 		Arrays.fill(t,1);
-		System.out.println(Arrays.toString(a));
 		o(1,0,--n);
-		System.out.println(Arrays.toString(t));
 		for(;m-->0;) {
 			if(s.nextInt()==1) {
 				x=s.nextInt()-1;
 				w=a[x];
 				d=a[x]=s.nextLong();
 				p(1,0,n,x);
-				System.out.println(Arrays.toString(t));
 			}else
 				System.out.println(u(1,0,n,s.nextInt()-1,s.nextInt()-1));
 		}
