@@ -13,7 +13,9 @@ public class P10868 {
 	}
 	static int p(int n,int s,int e) {
 		if(i>e|j<s)return Integer.MAX_VALUE;
-		return 0;
+		if(i<=s&e<=j)return t[n];
+		int m=(s+e)/2,a=p(n*2,s,m),b=p(n*2+1,m+1,e);
+		return a<b?a:b;
 	}
 	public static void main(String[] args) {
 		Scanner s=new Scanner(System.in);
@@ -28,6 +30,7 @@ public class P10868 {
 		for(;m-->0;) {
 			i=s.nextInt();
 			j=s.nextInt();
+			System.out.println(p(1,0,n));
 		}
 	}
 
