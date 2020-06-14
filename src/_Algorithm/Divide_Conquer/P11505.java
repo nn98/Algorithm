@@ -13,7 +13,8 @@ public class P11505 {
 	}
 	static void p(int n,int s,int e,int x) {
 		if(x<s||x>e)return;
-		t[n]/=w;
+		if(w==0)t[n]=0;
+		else t[n]/=w;
 		if(s!=e) {
 			int m=(s+e)/2;
 			p(n*2,s,m,x);
@@ -44,6 +45,7 @@ public class P11505 {
 				w=a[x];
 				d=a[x]=s.nextLong();
 				p(1,0,n,x);
+				System.out.println(Arrays.toString(t));
 			}else
 				System.out.println(u(1,0,n,s.nextInt()-1,s.nextInt()-1));
 		}
