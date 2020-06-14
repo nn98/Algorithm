@@ -1,5 +1,6 @@
 package _Algorithm.Divide_Conquer;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class P11505 {
@@ -34,7 +35,7 @@ public class P11505 {
 		for(i=1;i<n;i*=2);
 		i*=2;
 		t=new long[i];
-		System.out.println();
+		System.out.println(Arrays.toString(t));
 		o(1,0,--n);
 		for(;m-->0;) {
 			if(s.nextInt()==1) {
