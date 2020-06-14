@@ -20,6 +20,7 @@ public class P11505 {
 			p(n*2,s,m,x);
 			p(n*2+1,m+1,e,x);
 		}
+		t[n]*=d;
 	}
 	static long u(int n,int s,int e,int l,int r) {
 		if(l>e||r<s)return 0;
