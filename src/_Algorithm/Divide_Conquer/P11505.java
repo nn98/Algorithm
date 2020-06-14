@@ -7,6 +7,7 @@ public class P11505 {
 	static int n,m,i,x,q=1000000007;
 	static long d,a[],t[];
 	static long o(int n,int s,int e) {
+		System.out.println(Arrays.toString(t));
 		if(s==e)return t[n]=a[s];
 		int m=(s+e)/2;
 		return t[n]=o(n*2,s,m)*o(n*2+1,m+1,e)%q;
