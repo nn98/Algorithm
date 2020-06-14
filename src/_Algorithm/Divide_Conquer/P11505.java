@@ -3,12 +3,12 @@ package _Algorithm.Divide_Conquer;
 import java.util.Scanner;
 
 public class P11505 {
-	static int n,m,i,x,s=1000000007;
+	static int n,m,i,x,q=1000000007;
 	static long d,a[],t[];
 	static long o(int n,int s,int e) {
 		if(s==e)return t[n]=a[s];
 		int m=(s+e)/2;
-		return t[n]=o(n*2,s,m)*o(n*2+1,m+1,e)%s;
+		return t[n]=o(n*2,s,m)*o(n*2+1,m+1,e)%q;
 	}
 	static void p(int n,int s,int e,int x,long d) {
 		if(x<s||x>e)return;
@@ -23,7 +23,7 @@ public class P11505 {
 		if(l>e||r<s)return 0;
 		if(l<=s&&e<=r)return t[n];
 		int m=(s+e)/2;
-		return u(n*2,s,m,l,r)*u(n*2+1,m+1,e,l,r)%s;
+		return u(n*2,s,m,l,r)*u(n*2+1,m+1,e,l,r)%q;
 	}
 	public static void main(String[] args) {
 		Scanner s=new Scanner(System.in);
