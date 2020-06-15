@@ -22,14 +22,16 @@ public class P1849 {
 		n=s.nextInt();
 		a=new int[n];
 		for(;i<n;a[i++]=1);
-		for(i=1;i<n;i*=2);
-		i*=2;
+//		for(i=1;i<n;i*=2);
+//		i*=2;
+		for(i=1;i<n*2;i*=2);
 		t=new int[i];
 		o(1,0,n-1);
-		for(i=0;i<n;i++) {
-			j=s.nextInt();
-			p(j+1,1,0,n-1);
-		}
+		System.out.println(Arrays.toString(t));
+//		for(i=0;i<n;i++) {
+//			j=s.nextInt();
+//			p(j+1,1,0,n-1);
+//		}
 	}
 
 }
