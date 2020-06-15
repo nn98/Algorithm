@@ -1,7 +1,7 @@
 package _Algorithm.Segment_Tree;
-
-import java.util.Arrays;
-import java.util.Scanner;
+// 아 이게 아니네;
+import java.util.*;
+import java.io.*;
 
 public class P3653 {
 
@@ -11,11 +11,12 @@ public class P3653 {
 		int m=(s+e)/2;
 		return t[n]=o(n*2,s,m)+o(n*2+1,m+1,e);
 	}
-	public static void main(String[] args) {
-		Scanner s=new Scanner(System.in);
-		for(n=s.nextInt();n-->0;) {
-			i=s.nextInt();
-			j=s.nextInt();
+	public static void main(String[] args)throws Exception{
+		BufferedReader r=new BufferedReader(new InputStreamReader(System.in));
+		BufferedWriter w=new BufferedWriter(new OutputStreamWriter(System.out));
+		for(n=Integer.parseInt(r.readLine());n-->0;) {
+//			i=s.nextInt();
+//			j=s.nextInt();
 			for(m=1;m<i;m*=2);
 			m*=2;
 			a=new int[i];
