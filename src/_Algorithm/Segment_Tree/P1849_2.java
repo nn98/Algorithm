@@ -1,5 +1,5 @@
 package _Algorithm.Segment_Tree;
-
+// 입출력 시간초과 예상
 import java.util.Arrays;
 import java.util.Scanner;
 
