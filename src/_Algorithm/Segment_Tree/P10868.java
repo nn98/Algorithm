@@ -1,4 +1,4 @@
-package _Algorithm.Divide_Conquer;
+package _Algorithm.Segment_Tree;
 // 오우 쓋
 import java.util.Scanner;
 public class P10868 {
