@@ -1,5 +1,5 @@
 package _Algorithm.Segment_Tree;
-
+// 싹다 버퍼로해야되려나
 import java.io.*;
 
 public class P1849_3 {
