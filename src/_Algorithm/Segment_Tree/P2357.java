@@ -1,4 +1,4 @@
-package _Algorithm.Divide_Conquer;
+package _Algorithm.Segment_Tree;
 
 import java.util.Scanner;
 
