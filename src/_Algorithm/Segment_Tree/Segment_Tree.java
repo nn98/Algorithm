@@ -1,4 +1,4 @@
-package _Algorithm.Divide_Conquer;
+package _Algorithm.Segment_Tree;
 //https://www.acmicpc.net/blog/view/9
 import java.io.*;
 import java.util.*;
