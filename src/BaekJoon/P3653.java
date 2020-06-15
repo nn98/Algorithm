@@ -21,6 +21,7 @@ public class P3653 {
 				w.write(a[m]+" ");
 				k=a[m];
 				for(i=0;i<x;i++)if(a[i]<k)a[i]++;
+				a[m]=0;
 			}
 			w.write("\n");
 		}
