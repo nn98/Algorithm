@@ -34,6 +34,6 @@ public class P1849_2 {
 			a[i]=e;
 			u();
 		}
-		System.out.println(Arrays.toString(a));
+		for(i=0;i++<n;System.out.println(a[i]));
 	}
 }
