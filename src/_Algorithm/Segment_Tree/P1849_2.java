@@ -11,7 +11,8 @@ public class P1849_2 {
 		Scanner s=new Scanner(System.in);
 		n=s.nextInt();
 		a=new int[n+1];
-//		for(i=1;i)
+		for(i=1;i<n*2;i*=2);
+		t=new int[i];
 		m=1;
 		for(i=0;i++<n;)u();
 	}
