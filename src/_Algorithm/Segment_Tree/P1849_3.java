@@ -32,6 +32,7 @@ public class P1849_3 {
 			a[i]=e;
 			u();
 		}
-		for(i=0;i++<n;System.out.println(a[i]));
+		for(i=0;i++<n;w.write(a[i]+"\n"));
+		w.flush();
 	}
 }
