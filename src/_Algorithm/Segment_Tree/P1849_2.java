@@ -1,5 +1,6 @@
 package _Algorithm.Segment_Tree;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class P1849_2 {
@@ -18,5 +19,6 @@ public class P1849_2 {
 		j=i/2;
 		m=1;
 		for(i=0;i++<n;)u();
+		System.out.println(Arrays.toString(t));
 	}
 }
