@@ -1,4 +1,4 @@
-package _Algorithm.Divide_Conquer;
+package _Algorithm.Segment_Tree;
 //된다고 이게? 시벌?
 //왜 되는데 아ㅋㅋ
 import java.util.Scanner;
