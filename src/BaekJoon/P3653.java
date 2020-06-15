@@ -1,5 +1,5 @@
 package BaekJoon;
-
+// 시간초과 까비
 import java.io.*;
 import java.util.*;
 
