@@ -20,7 +20,8 @@ public class P3653 {
 			m*=2;
 			a=new int[i];
 			t=new int[m];
-			for(m=0;++m<i;a[m]=m)
+			for(m=0;++m<i;a[m]=m);
+			System.out.println(Arrays.toString(t));
 			o(1,0,i-1);
 			System.out.println(Arrays.toString(t));
 		}
