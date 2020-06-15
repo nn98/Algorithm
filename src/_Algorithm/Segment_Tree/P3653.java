@@ -1,5 +1,6 @@
 package _Algorithm.Segment_Tree;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class P3653 {
@@ -19,7 +20,9 @@ public class P3653 {
 			m*=2;
 			a=new int[i];
 			t=new int[m];
+			for(m=0;++m<i;a[m]=m)
 			o(1,0,i-1);
+			System.out.println(Arrays.toString(t));
 		}
 	}
 
