@@ -30,12 +30,8 @@ public class P1849_3 {
 		for(;e++<n;) {
 			p=Integer.parseInt(r.readLine());
 			i=f(1,p);
-			System.out.println("\t"+i);
 			a[i]=e;
-			System.out.println("\t"+Arrays.toString(a));
-			System.out.println("\t"+Arrays.toString(t));
 			u();
-			System.out.println("\t"+Arrays.toString(t));
 		}
 		for(i=0;i++<n;w.write(a[i]+"\n"));
 		w.flush();
