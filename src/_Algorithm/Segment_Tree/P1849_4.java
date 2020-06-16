@@ -19,15 +19,15 @@ public class P1849_4 {
 	
 	static int f(int x,int v) {					// x index, v value, j mid index
 		System.out.println(x+" "+v);
-//		ㅁ: 1, 5	ㄹ: 3, 1	ㅂ: 7, 0	ㅍ: 14, 0
+//		ㅁ: 1, 5	ㄹ: 3, 1	ㅂ: 6, 1	ㅍ: 13, 0
 		if(x>=j)return x-j+1;					// 인덱스 중간값보다 크거나 같으면 중간만큼 빼고 +1	ㅁ: 8==1
-//		ㄴ		ㄴ		ㄴ		ㅇ: 14-8+1 = 7
+//		ㄴ		ㄴ		ㄴ		ㅇ: 13-8+1 = 6
 		int p=t[x*2];							// p 트리 왼쪽노드값
-//		ㅔ = 4	ㅔ = 1	ㅔ = 1
+//		ㅔ = 4	ㅔ = 2	ㅔ = 1
 		if(v<p)return f(x*2,v);					// 대상이 작으면 왼쪽노드에,
-//		ㄴ		ㄴ		ㅇ		ㅍ: 14, 0
+//		ㄴ		ㅇ		ㅂ: 6, 1	ㅍ: 14, 0
 		return f(x*2+1,v-p);					// 크거나 같으면 오른쪽노드로	가는데 왜 p를 빼 시벌
-//		ㄹ: 3, 1	ㅂ: 7, 0
+//		ㄹ: 3, 1	ㅍ: 13, 0
 	}
 	public static void main(String[]z)throws Exception{
 		BufferedReader r=new BufferedReader(new InputStreamReader(System.in));
