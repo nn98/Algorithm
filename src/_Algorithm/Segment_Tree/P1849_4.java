@@ -8,10 +8,10 @@ import java.util.Arrays;
 
 public class P1849_4 {
 	static int n,m,i,j,a[],t[],x,e,p;
-	static void u() {
-		x=j+i-1;
-		t[x]=m;
-		for(;x>1;x/=2,t[x]=t[x*2]+t[x*2+1]);
+	static void u() {							// i 인덱스, m 값, -j  크기의 반?-
+		x=j+i-1;								// 크기의 반 + 인덱스 - 1 			ㅁ: 8+1-1 = 8
+		t[x]=m;									// 계산 인덱스에 값					ㅁ: t[8]=0;
+		for(;x>1;x/=2,t[x]=t[x*2]+t[x*2+1]);	// 계덱스 1보다 클 동안 2씩 나누며		아 시바 트리만드는거네 그냥
 	}
 	static int f(int x,int v) {
 		if(x>=j)return x-j+1;
