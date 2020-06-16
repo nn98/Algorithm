@@ -26,7 +26,6 @@ public class P1849_3 {
 		j=i/2;
 		m=1;
 		for(i=0;i++<n;)u();
-		System.out.println(Arrays.toString(a));
 		m=0;
 		for(;e++<n;) {
 			p=Integer.parseInt(r.readLine());
