@@ -31,13 +31,13 @@ public class P1849_4 {
 		for(i=0;i++<n;)u();
 		m=0;
 		for(;e++<n;) {
-			p=Integer.parseInt(r.readLine());
-			i=f(1,p);
-			System.out.println("\t"+i);
-			a[i]=e;
+			p=Integer.parseInt(r.readLine());				//값 입력받고
+			i=f(1,p);										//해당 값 탐색
+			System.out.println("\t"+i);						//탐색해서 찾은 인덱스로
+			a[i]=e;											//결과배열에 현재 카운트
 			System.out.println("\t"+Arrays.toString(a));
 			System.out.println("\t"+Arrays.toString(t));
-			u();
+			u();											//해당 인덱스 0 초기화, 트리 조정
 			System.out.println("\t"+Arrays.toString(t));
 		}
 		for(i=0;i++<n;w.write(a[i]+"\n"));
