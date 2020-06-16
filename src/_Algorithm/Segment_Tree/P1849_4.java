@@ -7,7 +7,7 @@ import java.io.OutputStreamWriter;
 import java.util.Arrays;
 
 public class P1849_4 {
-	static int n,m,i,j,a[],t[],x,e,p;
+	static int n,m,i,j,a[],t[],x,e,p,q,k;
 	static void u() {							// i 인덱스, m 값, -j  크기의 반?-
 		System.out.println(Arrays.toString(t));
 		x=j+i-1;								// 크기의 반 + 인덱스 - 1 			ㅁ: 8+1-1 = 8
@@ -47,9 +47,12 @@ public class P1849_4 {
 			System.out.println("\t"+i);						//탐색해서 찾은 인덱스로
 			a[i]=e;											//결과배열에 현재 카운트
 			System.out.println("\t"+Arrays.toString(a));
-			System.out.println("\t"+Arrays.toString(t));
+//			System.out.println("\t"+Arrays.toString(t));
 			u();											//해당 인덱스 0 초기화, 트리 조정
-			System.out.println("\t"+Arrays.toString(t));
+			for(k=1;k<=j;k*=2) {
+				for(q=k;q<k*2;System.out.print(t[q++]+" "));
+				System.out.println();
+			}
 		}
 		for(i=0;i++<n;w.write(a[i]+"\n"));
 		w.flush();
