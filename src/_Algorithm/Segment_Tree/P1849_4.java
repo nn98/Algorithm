@@ -4,10 +4,21 @@ import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
+import java.util.Arrays;
 
 public class P1849_4 {
-
-	static int n,a[],t[],i,j,m;
+	static int n,m,i,j,a[],t[],x,e,p;
+	static void u() {
+		x=j+i-1;
+		t[x]=m;
+		for(;x>1;x/=2,t[x]=t[x*2]+t[x*2+1]);
+	}
+	static int f(int x,int v) {
+		if(x>=j)return x-j+1;
+		int p=t[x*2];
+		if(v<p)return f(x*2,v);
+		return f(x*2+1,v-p);
+	}
 	public static void main(String[]z)throws Exception{
 		BufferedReader r=new BufferedReader(new InputStreamReader(System.in));
 		BufferedWriter w=new BufferedWriter(new OutputStreamWriter(System.out));
@@ -17,7 +28,19 @@ public class P1849_4 {
 		t=new int[i];
 		j=i/2;
 		m=1;
-		
+		for(i=0;i++<n;)u();
+		m=0;
+		for(;e++<n;) {
+			p=Integer.parseInt(r.readLine());
+			i=f(1,p);
+			System.out.println("\t"+i);
+			a[i]=e;
+			System.out.println("\t"+Arrays.toString(a));
+			System.out.println("\t"+Arrays.toString(t));
+			u();
+			System.out.println("\t"+Arrays.toString(t));
+		}
+		for(i=0;i++<n;w.write(a[i]+"\n"));
+		w.flush();
 	}
-
 }
