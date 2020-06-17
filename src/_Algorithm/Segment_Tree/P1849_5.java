@@ -9,7 +9,7 @@ import java.util.Arrays;
 public class P1849_5 {
 	static int n,m=1,i=1,j,k,e,p,a[],t[],x,y,v;
 	static void o() {
-		x=j-i+1;
+		x=j+i-1;
 		t[x]=m;
 		for(;x>1;x/=2,t[x]=t[x*2]+t[x*2+1]);
 	}
