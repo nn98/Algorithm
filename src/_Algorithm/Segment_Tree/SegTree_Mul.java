@@ -1,10 +1,27 @@
 package _Algorithm.Segment_Tree;
 
+import java.util.Scanner;
+
 public class SegTree_Mul {
 
+	static int n,m,i,j,a[],t[],p,q;
+	static int o(int n,int s,int e) {
+		if(s==e)return t[n]=a[s];
+		int m=(s+e)/2;
+		return t[n]=o(n*2,s,m)*o(n*2+1,m+1,e);
+	}
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+		Scanner s=new Scanner(System.in);
+		n=s.nextInt();
+		a=new int[n];
+		for(;i<n;a[i++]=s.nextInt());
+		for(i=1;i<n;i*=2);
+		i*=2;
+		t=new int[i];
+		o(1,0,n-1);
+		j=2;
+		for(;m<i;System.out.println(),j*=2)
+			for(;++m<j;System.out.print(t[m]+" "));
 	}
 
 }
