@@ -1,4 +1,6 @@
 package _Algorithm.Segment_Tree;
+// 1849는 앞의 더 큰 수
+// 1777은 뒤의 더 작은 수 ㅅㅂ
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
