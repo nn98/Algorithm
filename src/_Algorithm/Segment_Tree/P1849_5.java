@@ -45,5 +45,4 @@ public class P1849_5 {
 			System.out.println(Arrays.toString(a));
 		}
 	}
-
 }
