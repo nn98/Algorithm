@@ -1,8 +1,9 @@
 package _Algorithm.Segment_Tree;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
-public class SegTree_Mul {
+public class SegTree_Mul_1 {
 
 	static int n,m,i,j,a[],t[],p,q;
 	static int o(int n,int s,int e) {
@@ -20,8 +21,9 @@ public class SegTree_Mul {
 		t=new int[i];
 		o(1,0,n-1);
 		j=2;
-		for(;m<i;System.out.println(),j*=2)
-			for(;++m<j;System.out.print(t[m]+" "));
+		System.out.println(Arrays.toString(t));
+		for(;m<i-1;j*=2,m--)
+			for(;m<j;System.out.print(++m!=j?(t[m]+" "):"\n"));
 	}
 
 }
