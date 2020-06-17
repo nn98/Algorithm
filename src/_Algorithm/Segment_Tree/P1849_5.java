@@ -37,5 +37,7 @@ public class P1849_5 {
 			a[i]=p;
 			o();
 		}
+		for(p=0;p++<n;w.write(a[n]+"\n"));
+		w.flush();
 	}
 }
