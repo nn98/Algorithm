@@ -10,6 +10,12 @@ public class P3653_2 {
 		BufferedWriter w=new BufferedWriter(new OutputStreamWriter(System.out));
 		for(n=Integer.parseInt(r.readLine());n-->0;) {
 			StringTokenizer t=new StringTokenizer(r.readLine());
+			m=Integer.parseInt(t.nextToken());
+			i=Integer.parseInt(t.nextToken());
+			t=new StringTokenizer(r.readLine());
+			for(;i-->0;) {
+				j=Integer.parseInt(t.nextToken());
+			}
 		}
 	}
 
