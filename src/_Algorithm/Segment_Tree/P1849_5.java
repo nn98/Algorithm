@@ -31,13 +31,11 @@ public class P1849_5 {
 		i*=2;
 		t=new int[i];
 		for(i=0;i++<n;o());
-		System.out.println(Arrays.toString(t));
 		m=0;
 		for(;p++<n;) {
 			f(Integer.parseInt(r.readLine()));
 			a[i]=p;
 			o();
-			System.out.println(Arrays.toString(a));
 		}
 	}
 }
