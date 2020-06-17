@@ -14,7 +14,7 @@ public class P1849_5 {
 		for(;x>1;x/=2,t[x]=t[x*2]+t[x*2+1]);
 	}
 	static void f(int v) {
-		if(x>=j)k=x-j+1;
+		if(x>=j)i=x-j+1;
 		else {
 			e=t[x*2];
 			if(v<e)x*=2;
@@ -37,6 +37,13 @@ public class P1849_5 {
 		t=new int[i];
 		for(i=0;i++<n;o());
 		System.out.println(Arrays.toString(t));
+		m=0;
+		for(;p++<n;) {
+			f(Integer.parseInt(r.readLine()));
+			a[i]=p;
+			o();
+			System.out.println(Arrays.toString(a));
+		}
 	}
 
 }
