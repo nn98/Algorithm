@@ -1,11 +1,6 @@
 package _Algorithm.Segment_Tree;
 
-import java.io.BufferedReader;
-import java.io.BufferedWriter;
-import java.io.InputStreamReader;
-import java.io.OutputStreamWriter;
-import java.util.Arrays;
-
+import java.io.*;
 public class P1849_5 {
 	static int n,m=1,i=1,j,k,e,p,a[],t[],x,y,v;
 	static void o() {
