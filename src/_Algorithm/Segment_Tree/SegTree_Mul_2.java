@@ -23,7 +23,7 @@ public class SegTree_Mul_2 {
 		for(;p++<n;m=a[p-1],o());
 		j=2;
 		System.out.println(Arrays.toString(t));
-		for(;m<i-1;j*=2,m--)
+		for(m=0;m<i-1;j*=2,m--)
 			for(;m<j;System.out.print(++m!=j?(t[m]+" "):"\n"));
 	}
 
