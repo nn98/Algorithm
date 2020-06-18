@@ -23,6 +23,7 @@ public class P11505 {
 		for(i=1;i<n;i*=2);
 		j=i;
 		b=new long[i*2];
+		Arrays.fill(b,1);
 		for(i=0;i++<n;v=a[i-1],o());
 		System.out.println(Arrays.toString(b));
 		for(;m-->0;) {
