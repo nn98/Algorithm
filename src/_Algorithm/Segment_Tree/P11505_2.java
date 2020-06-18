@@ -1,4 +1,5 @@
 package _Algorithm.Segment_Tree;
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class P11505_2 {
@@ -8,7 +9,7 @@ public class P11505_2 {
 	static long o(int n,int s,int e) {
 		if(s==e)return t[n]=a[s];
 		int m=(s+e)/2;
-		return t[n]=o(n*2,s,m)+o(n*2+1,m+1,e);
+		return t[n]=o(n*2,s,m)*o(n*2+1,m+1,e);
 	}
 	static void p(int n,int s,int e,int x,long d) {
 		if(x<s||x>e)return;
@@ -20,7 +21,7 @@ public class P11505_2 {
 		}
 	}
 	static long u(int n,int s,int e,int l,int r) {
-		if(l>e||r<s)return 0;
+		if(l>e||r<s)return 1;
 		if(l<=s&&e<=r)return t[n];
 		int m=(s+e)/2;
 		return u(n*2,s,m,l,r)+u(n*2+1,m+1,e,l,r);
@@ -34,7 +35,9 @@ public class P11505_2 {
 		for(i=1;i<n;i*=2);
 		i*=2;
 		t=new long[i];
+		Arrays.fill(t,1);
 		o(1,0,--n);
+		System.out.println(Arrays.toString(t));
 		for(;m-->0;) {
 			if(s.nextInt()==1) {
 				x=s.nextInt()-1;
