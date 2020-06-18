@@ -31,7 +31,6 @@ public class P11505 {
 		b=new long[i*2];
 		Arrays.fill(b,1);
 		for(i=0;i++<n;v=a[i-1],o());
-		System.out.println(Arrays.toString(b));
 		for(;m-->0;) {
 			t=new StringTokenizer(r.readLine());
 			k=Integer.parseInt(t.nextToken());
@@ -40,7 +39,6 @@ public class P11505 {
 				i=Integer.parseInt(t.nextToken());
 				v=Integer.parseInt(t.nextToken());
 				o();
-				System.out.println(Arrays.toString(b));
 			}
 		}
 		w.flush();
