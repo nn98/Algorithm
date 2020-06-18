@@ -1,4 +1,5 @@
 package _Algorithm.Segment_Tree;
+import java.util.Arrays;
 // 으아아ㅏㅏ아아아아아아아아ㅏ아앙ㅇㅇ앙아아ㅏ
 // 근데 시발 아직도 확실하지가 않다 병신
 import java.util.Scanner;
@@ -38,6 +39,7 @@ public class P2042_2 {
 		i*=2;
 		t=new long[i];
 		o(1,0,--n);
+		System.out.println(Arrays.toString(t));
 		for(;m-->0;) {
 			if(s.nextInt()==1) {
 				x=s.nextInt()-1;
