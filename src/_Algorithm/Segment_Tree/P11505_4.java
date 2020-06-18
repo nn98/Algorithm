@@ -1,20 +1,25 @@
 package _Algorithm.Segment_Tree;
 
-import java.util.Arrays;
-import java.util.Scanner;
+import java.util.*;
 
 public class P11505_4 {
-	static int n,m,i,x;
-	static long d,a[],t[],M=1000000007,v;
+	static int n,m,i,x,C;
+	static long d,a[],t[],M=1000000007,v,T[];
 	static long o(int n,int s,int e) {
-		if(s==e)return t[n]=a[s];
+		if(s==e) {
+			T[C++]=n;
+			return t[n]=a[s];
+		}
 		int m=(s+e)/2;
 		return t[n]=o(n*2,s,m)*o(n*2+1,m+1,e)%M;
 	}
 	static void p(int n,int s,int e,int x,long d,long p) {
 		if(x<s||x>e)return;
-		t[n]/=d;
-		t[n]*=p%M;
+		if(s==e)if(t[n]==0)t[n]=p;
+		else {
+			t[n]/=d;
+			t[n]*=p%M;
+		}
 		if(s!=e) {
 			int m=(s+e)/2;
 			p(n*2,s,m,x,d,p);
@@ -32,18 +37,21 @@ public class P11505_4 {
 		n=s.nextInt();
 		m=s.nextInt()+s.nextInt();
 		a=new long[n];
+		T=new long[n];
 		for(;i<n;a[i++]=s.nextLong());
 		for(i=1;i<n;i*=2);
 		i*=2;
 		t=new long[i];
-		Arrays.fill(t,1);
+		Arrays.fill(t,-1);
 		o(1,0,--n);
+		System.out.println(Arrays.toString(T));
 		System.out.println(Arrays.toString(t));
 		for(;m-->0;) {
 			if(s.nextInt()==1) {
 				x=s.nextInt()-1;
 				i=s.nextInt();
 				v=a[x];
+				a[x]=i;
 				p(1,0,n,x,v,i);
 				System.out.println(Arrays.toString(t));
 			}else
