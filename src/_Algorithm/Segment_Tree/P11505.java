@@ -25,12 +25,11 @@ public class P11505 {
 		n=Integer.parseInt(t.nextToken());
 		m=Integer.parseInt(t.nextToken())+Integer.parseInt(t.nextToken());;
 		a=new int[n];
-		for(;i<n;a[i++]=Integer.parseInt(r.readLine()));
 		for(i=1;i<n;i*=2);
 		j=i;
 		b=new long[i*2];
 		Arrays.fill(b,1);
-		for(i=0;i++<n;v=a[i-1],o());
+		for(i=0;i++<n;v=Integer.parseInt(r.readLine()),o());
 		for(;m-->0;) {
 			t=new StringTokenizer(r.readLine());
 			k=Integer.parseInt(t.nextToken());
