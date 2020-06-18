@@ -1,5 +1,5 @@
 package _Algorithm.Segment_Tree;
-
+// 0¶«½Ã ¾ÈµÉµí
 import java.util.*;
 
 public class P11505_4 {
