@@ -19,6 +19,7 @@ public class SegTree_Mul_2 {
 		j=i;
 		i*=2;
 		t=new int[i];
+		Arrays.fill(t,1);
 		for(;p++<n;m=a[p-1],o());
 		j=2;
 		System.out.println(Arrays.toString(t));
