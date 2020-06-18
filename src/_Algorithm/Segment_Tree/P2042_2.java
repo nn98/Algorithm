@@ -23,7 +23,6 @@ public class P2042_2 {
 		}
 	}
 	static long u(int n,int s,int e,int l,int r) {
-		System.out.println(n+" "+s+" "+e+" "+l+" "+r);
 		if(l>e||r<s)return 0;
 		if(l<=s&&e<=r)return t[n];
 		int m=(s+e)/2;
@@ -39,7 +38,6 @@ public class P2042_2 {
 		i*=2;
 		t=new long[i];
 		o(1,0,--n);
-		System.out.println(Arrays.toString(t));
 		for(;m-->0;) {
 			if(s.nextInt()==1) {
 				x=s.nextInt()-1;
