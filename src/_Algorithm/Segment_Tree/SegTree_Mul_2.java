@@ -5,10 +5,10 @@ import java.util.Scanner;
 
 public class SegTree_Mul_2 {
 	static int n,m,i,j,a[],t[],p,q;
-	static int o(int n,int s,int e) {
-		if(s==e)return t[n]=a[s];
-		int m=(s+e)/2;
-		return t[n]=o(n*2,s,m)*o(n*2+1,m+1,e);
+	static void o() {
+		int x=j+p-1;
+		t[x]=m;
+		for(;x>1;x/=2,t[x]=t[x*2]*t[x*2+1]);
 	}
 	public static void main(String[] args) {
 		Scanner s=new Scanner(System.in);
@@ -16,9 +16,10 @@ public class SegTree_Mul_2 {
 		a=new int[n];
 		for(;i<n;a[i++]=s.nextInt());
 		for(i=1;i<n;i*=2);
+		j=i;
 		i*=2;
 		t=new int[i];
-		o(1,0,n-1);
+		for(;p++<n;m=a[p-1],o());
 		j=2;
 		System.out.println(Arrays.toString(t));
 		for(;m<i-1;j*=2,m--)
