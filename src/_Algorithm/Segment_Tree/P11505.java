@@ -1,4 +1,5 @@
 package _Algorithm.Segment_Tree;
+//두개 스까쓰니까 안됨
 
 import java.util.*;
 import java.io.*;
