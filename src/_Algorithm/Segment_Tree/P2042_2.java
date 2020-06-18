@@ -22,6 +22,7 @@ public class P2042_2 {
 		}
 	}
 	static long u(int n,int s,int e,int l,int r) {
+		System.out.println(n+" "+s+" "+e+" "+l+" "+r);
 		if(l>e||r<s)return 0;
 		if(l<=s&&e<=r)return t[n];
 		int m=(s+e)/2;
