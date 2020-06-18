@@ -18,7 +18,8 @@ public class P11505_3 {
 		j=i;
 		i*=2;
 		t=new long[i];
-		for(;j<i;x=j++,t[x]=s.nextInt(),o());
+//		for(;j<i;x=j++,t[x]=s.nextInt(),o());
+		for(;m++<n;x=j++,t[x]=s.nextInt(),o());
 		System.out.println(Arrays.toString(t));
 	}
 
