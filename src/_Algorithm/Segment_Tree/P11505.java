@@ -13,6 +13,7 @@ public class P11505 {
 		for(;x>1;x/=2,b[x]=b[x*2]*b[x*2+1]%M);
 	}
 	static long u(int n,int s,int e,int l,int r) {
+		System.out.println(n+" "+s+" "+e+" "+l+" "+r);
 		if(l>e|r<s)return 1;
 		if(l<=s&e<=r)return b[n];
 		int x=(s+e)/2;
@@ -33,7 +34,7 @@ public class P11505 {
 		for(;m-->0;) {
 			t=new StringTokenizer(r.readLine());
 			k=Integer.parseInt(t.nextToken());
-			if(k>1)w.write(u(1,0,n-1,Integer.parseInt(t.nextToken())-1,Integer.parseInt(t.nextToken())-1)+"\n");
+			if(k>1)w.write(u(1,0,n-1,Integer.parseInt(t.nextToken()),Integer.parseInt(t.nextToken()))+"\n");
 			else {
 				i=Integer.parseInt(t.nextToken());
 				v=Integer.parseInt(t.nextToken());
