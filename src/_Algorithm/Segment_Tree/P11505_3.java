@@ -1,4 +1,5 @@
 package _Algorithm.Segment_Tree;
+// 능지구간 시작
 
 import java.util.Arrays;
 import java.util.Scanner;
