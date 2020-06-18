@@ -34,7 +34,7 @@ public class P11505 {
 		for(;m-->0;) {
 			t=new StringTokenizer(r.readLine());
 			k=Integer.parseInt(t.nextToken());
-			if(k>1)w.write(u(1,0,n-1,Integer.parseInt(t.nextToken()),Integer.parseInt(t.nextToken()))+"\n");
+			if(k>1)w.write(u(1,0,n-1,Integer.parseInt(t.nextToken())-1,Integer.parseInt(t.nextToken())-1)+"\n");
 			else {
 				i=Integer.parseInt(t.nextToken());
 				v=Integer.parseInt(t.nextToken());
