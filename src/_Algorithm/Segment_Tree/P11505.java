@@ -10,14 +10,14 @@ public class P11505 {
 	static void o() {
 		int x=i+j-1;
 		b[x]=v;
-		for(;x>1;x/=2,b[x]=b[x*2]*b[x*2+1]%M);
+		for(;x>1;x/=2,b[x]=b[x*2]+b[x*2+1]%M);
 	}
 	static long u(int n,int s,int e,int l,int r) {
 		System.out.println(n+" "+s+" "+e+" "+l+" "+r);
 		if(l>e|r<s)return 1;
 		if(l<=s&e<=r)return b[n];
 		int x=(s+e)/2;
-		return u(n*2,s,x,l,r)*u(n*2+1,x+1,e,l,r)%M;
+		return u(n*2,s,x,l,r)+u(n*2+1,x+1,e,l,r)%M;
 	}
 	public static void main(String[] args)throws Exception{
 		BufferedReader r=new BufferedReader(new InputStreamReader(System.in));
@@ -29,8 +29,9 @@ public class P11505 {
 		for(i=1;i<n;i*=2);
 		j=i;
 		b=new long[i*2];
-		Arrays.fill(b,1);
-		for(i=0;i++<n;v=Integer.parseInt(r.readLine()),o());
+//		Arrays.fill(b,1);
+		for(i=0;i++<n;v=Integer.parseInt(r.readLine()),o(),System.out.println(Arrays.toString(b)));
+		
 		for(;m-->0;) {
 			t=new StringTokenizer(r.readLine());
 			k=Integer.parseInt(t.nextToken());
