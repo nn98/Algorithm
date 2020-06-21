@@ -42,5 +42,4 @@ public class Test02 {
 		for(i=0;i<n;w.write(a[i++]+"\n"));
 		w.flush();
 	}
-
 }
