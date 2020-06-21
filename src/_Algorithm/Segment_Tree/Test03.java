@@ -31,9 +31,10 @@ public class Test03 {
 		for(i=0;i<n;t[x=j+i++]=1,o());
 		StringTokenizer T=new StringTokenizer(r.readLine());
 		for(;k<n;b[k++]=Integer.parseInt(T.nextToken()));
-		for(i=0;i++<n;) {
+		for(;--k>=0;) {
+			v=b[k];
 			p();
-			a[y]=i;
+			a[y]=k;
 			t[x=j+y]=0;
 			o();
 		}
