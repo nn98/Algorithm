@@ -21,6 +21,7 @@ public class P1777_C {
 			else{
 				Is.add(Is.size()-sun[i], i+1);
 			}
+			System.out.println(Is);
 		}
 		for(int i=0; i<Is.size(); i++){
 			System.out.print(Is.get(i));
