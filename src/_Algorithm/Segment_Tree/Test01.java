@@ -5,7 +5,6 @@ import java.io.BufferedWriter;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 import java.util.Arrays;
-
 public class Test01 {
 	static int i=1,j,n,m,t[],a[],x,k,h;
 	static void o() {
@@ -45,5 +44,4 @@ public class Test01 {
 		for(i=0;i++<n;w.write(a[i]+"\n"));
 		w.flush();
 	}
-
 }
