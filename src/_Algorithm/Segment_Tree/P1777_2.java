@@ -1,8 +1,6 @@
 package _Algorithm.Segment_Tree;
-
 import java.io.*;
 import java.util.*;
-
 public class P1777_2 {
 	static int n,i=1,j,k,x,y,v,a[],b[],t[];
 	static void o() {
