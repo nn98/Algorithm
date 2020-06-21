@@ -1,4 +1,5 @@
 package _Algorithm.Segment_Tree;
+// 일단 한번에 되긴 했는데
 
 import java.io.*;
 import java.util.*;
@@ -9,6 +10,8 @@ public class Test03 {
 		for(;x>1;x/=2,t[x]=t[x*2]+t[x*2+1]);
 	}
 	static void p() {
+//		for(int Z=m++;Z-->0;System.out.print("\t"));
+//		System.out.println(v+" "+x);
 		if(x>=j)y=x-j;
 		else {
 			y=t[x*=2];
