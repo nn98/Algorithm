@@ -31,7 +31,13 @@ public class Test02 {
 		j=i;
 		t=new int[i*2];
 		for(i=0;i<n;t[x=j+i++]=1);
-		
+		for(i=0;i++<n;) {
+			v=Integer.parseInt(r.readLine());
+			p();
+			a[y]=i;
+			t[x=j+y]=0;
+			o();
+		}
 	}
 
 }
