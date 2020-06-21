@@ -8,13 +8,11 @@ import java.util.Arrays;
 import java.util.StringTokenizer;
 
 public class P1777_2 {
-	static int n,m,i=1,j,k,x,y,v,a[],b[],t[];
+	static int n,i=1,j,k,x,y,v,a[],b[],t[];
 	static void o() {
 		for(;x>1;x/=2,t[x]=t[x*2]+t[x*2+1]);
 	}
 	static void p() {
-		for(int Z=m++;Z-->0;System.out.print("\t"));
-		System.out.println(v+" "+x);
 		if(x>=j)y=x-j;
 		else {
 			y=t[x*=2];
@@ -38,8 +36,6 @@ public class P1777_2 {
 		StringTokenizer T=new StringTokenizer(r.readLine());
 		for(;k<n;b[k++]=Integer.parseInt(T.nextToken()));
 		for(;--k>=0;) {
-			System.out.println(k+1);
-			m=0;
 			v=b[k];
 			p();
 			a[y]=k+1;
