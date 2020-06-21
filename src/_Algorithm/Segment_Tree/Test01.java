@@ -11,8 +11,8 @@ public class Test01 {
 		for(;x>1;x/=2,t[x]=t[x*2]+t[x*2+1]);
 	}
 	static void p(int v) {
-		for(int Z=m++;Z-->0;System.out.print("\t"));
-		System.out.println(v+" "+x);
+//		for(int Z=m++;Z-->0;System.out.print("\t"));
+//		System.out.println(v+" "+x);
 		if(x>=j)k=x-j+1;
 		else {
 			h=t[x*=2];
@@ -32,14 +32,14 @@ public class Test01 {
 		j=i;
 		t=new int[i*2];
 		for(i=0;i<n;t[x=(j+i++)]=1,o());
-		System.out.println(Arrays.toString(t));
+//		System.out.println(Arrays.toString(t));
 		for(i=0;i++<n;) {
 			m=0;
 			p(Integer.parseInt(r.readLine()));
 			a[k]=i;
 			t[x=j+k-1]=0;
 			o();
-			System.out.println(Arrays.toString(t));
+//			System.out.println(Arrays.toString(t));
 		}
 		for(i=0;i++<n;w.write(a[i]+"\n"));
 		w.flush();
