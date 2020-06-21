@@ -1,7 +1,7 @@
 package _Algorithm.Segment_Tree;
+// TimeOut Without Tree
 
 import java.io.*;
-import java.util.Scanner;
 
 public class Test00 {
 
