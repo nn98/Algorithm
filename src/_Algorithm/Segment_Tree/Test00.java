@@ -1,5 +1,6 @@
 package _Algorithm.Segment_Tree;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Test00 {
@@ -12,11 +13,18 @@ public class Test00 {
 		for(;i++<n;) {
 			j=0;
 			m=s.nextInt();
-			while(m-->0)while(a[++j]>0);
-			System.out.println(j);
+			while(a[j]>0)j++;
+			while(m>0) {
+				j++;
+				while(a[j]>0)j++;
+				m--;
+			}
+			while(a[j]>0)j++;
 			a[j]++;
 			r[j]=i;
+			System.out.println(Arrays.toString(a));
 		}
+		System.out.println(Arrays.toString(r));
 	}
 
 }
