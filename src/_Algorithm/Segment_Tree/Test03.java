@@ -1,5 +1,6 @@
 package _Algorithm.Segment_Tree;
 // 일단 한번에 되긴 했는데
+// 생각한 그대로 쉽게되는거 보면 이런거 만드는 인간들은 ㄹㅇ 사람 아님
 
 import java.io.*;
 import java.util.*;
