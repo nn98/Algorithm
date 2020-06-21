@@ -34,11 +34,11 @@ public class Test03 {
 		for(;--k>=0;) {
 			v=b[k];
 			p();
-			a[y]=k;
+			a[y]=k+1;
 			t[x=j+y]=0;
 			o();
 		}
-		for(i=0;i<n;w.write(a[i++]+"\n"));
+		for(i=n;i-->0;w.write(a[i]+" "));
 		w.flush();
 	}
 }
