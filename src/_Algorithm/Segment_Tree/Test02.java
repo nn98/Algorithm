@@ -38,6 +38,8 @@ public class Test02 {
 			t[x=j+y]=0;
 			o();
 		}
+		for(i=0;i<n;w.write(a[i++]+"\n"));
+		w.flush();
 	}
 
 }
