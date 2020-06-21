@@ -24,7 +24,7 @@ public class Test00 {
 			a[j]++;
 			r[j]=i;
 		}
-		for(i=0;i<n;W.write(r[i++]));
+		for(i=0;i<n;W.write(r[i++]+"\n"));
 		W.flush();
 	}
 
