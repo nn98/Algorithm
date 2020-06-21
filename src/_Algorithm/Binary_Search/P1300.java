@@ -1,4 +1,5 @@
 package _Algorithm.Binary_Search;
+//http://wookje.dance/2017/02/20/boj-1300-K%EB%B2%88%EC%A7%B8-%EC%88%98/
 
 import java.util.Scanner;
 
