@@ -22,9 +22,8 @@ public class Test00 {
 			while(a[j]>0)j++;
 			a[j]++;
 			r[j]=i;
-			System.out.println(Arrays.toString(a));
 		}
-		System.out.println(Arrays.toString(r));
+		
 	}
 
 }
