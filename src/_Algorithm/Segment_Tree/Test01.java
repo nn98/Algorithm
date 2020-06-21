@@ -19,7 +19,7 @@ public class Test01 {
 		for(;i<n;i*=2);
 		j=i;
 		t=new int[i*2];
-		for(i=0;i<n;t[j+i++]=1,o());
+		for(i=0;i<n;t[x=(j+i++)]=1,o());
 		System.out.println(Arrays.toString(t));
 	}
 
