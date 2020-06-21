@@ -10,8 +10,8 @@ public class Test03 {
 		for(;x>1;x/=2,t[x]=t[x*2]+t[x*2+1]);
 	}
 	static void p() {
-//		for(int Z=m++;Z-->0;System.out.print("\t"));
-//		System.out.println(v+" "+x);
+		for(int Z=m++;Z-->0;System.out.print("\t"));
+		System.out.println(v+" "+x);
 		if(x>=j)y=x-j;
 		else {
 			y=t[x*=2];
@@ -35,10 +35,13 @@ public class Test03 {
 		StringTokenizer T=new StringTokenizer(r.readLine());
 		for(;k<n;b[k++]=Integer.parseInt(T.nextToken()));
 		for(;--k>=0;) {
+			System.out.println(k+1);
+			m=0;
 			v=b[k];
 			p();
 			a[y]=k+1;
 			t[x=j+y]=0;
+			System.out.println(Arrays.toString(a));
 			o();
 		}
 		for(i=n;i-->0;w.write(a[i]+" "));
