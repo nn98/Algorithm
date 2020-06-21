@@ -20,5 +20,4 @@ public class P1300 {
 		}
 		System.out.print(r);
 	}
-
 }
