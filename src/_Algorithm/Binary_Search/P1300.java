@@ -11,6 +11,7 @@ public class P1300 {
 			m=(f+t)/2;
 			u=0;
 			for(i=0;++i<=n;u+=m/i<n?m/i:n);
+			System.out.println(f+" "+t+" "+m+" "+u);
 			if(u<k)f=m+1;
 			else {
 				r=m;
