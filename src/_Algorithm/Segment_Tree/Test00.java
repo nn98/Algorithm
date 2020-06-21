@@ -23,7 +23,7 @@ public class Test00 {
 			a[j]++;
 			r[j]=i;
 		}
-		
+		for(i=0;i<n;System.out.println(r[i++]));
 	}
 
 }
