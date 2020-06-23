@@ -1,4 +1,5 @@
 package _Algorithm.Segment_Tree;
+// À¸¾Æ¾Ç ½Ã¹ß
 
 import java.util.*;
 import java.io.*;
@@ -46,5 +47,4 @@ public class P3653_4 {
 		}
 		W.flush();
 	}
-
 }
