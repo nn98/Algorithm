@@ -28,8 +28,6 @@ public class P3653_4 {
 			t=new int[i*2];
 			m=0;
 			for(i=b;i<a+b;x=j+i++,t[x]=1,o(),q[m]=b+m++);
-			System.out.println(Arrays.toString(q));
-			System.out.println(Arrays.toString(t));
 			T=new StringTokenizer(R.readLine());
 			for(i=0;i++<b;) {
 				m=Integer.parseInt(T.nextToken())-1;
