@@ -3,7 +3,7 @@ package _Algorithm.Segment_Tree;
 import java.util.*;
 
 public class P11505_5 {
-	static int n,m,i,x,C;
+	static int n,m,i,j,x,C;
 	static long d,a[],t[],M=1000000007,v,T[];
 	static long o(int n,int s,int e) {
 		if(s==e) {
@@ -40,6 +40,7 @@ public class P11505_5 {
 		T=new long[n];
 		for(;i<n;a[i++]=s.nextLong());
 		for(i=1;i<n;i*=2);
+		j=i;
 		i*=2;
 		t=new long[i];
 		Arrays.fill(t,-1);
@@ -55,7 +56,7 @@ public class P11505_5 {
 				p(1,0,n,x,v,i);
 				System.out.println(Arrays.toString(t));
 			}else
-				System.out.println(u(1,0,n,s.nextInt()-1,s.nextInt()-1));
+				System.out.println(u(1,0,j-1,s.nextInt()-1,s.nextInt()-1));
 		}
 	}
 }
