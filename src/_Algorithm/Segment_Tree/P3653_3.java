@@ -40,6 +40,10 @@ public class P3653_3 {
 				t[j+p]=0;
 				q[m]=b-i;
 				t[j+q[m]]=1;
+				x=j+p;
+				o();
+				x=j+q[m];
+				o();
 //				System.out.println(Arrays.toString(q));
 //				System.out.println(Arrays.toString(t));
 			}
