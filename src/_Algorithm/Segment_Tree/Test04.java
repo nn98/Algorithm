@@ -10,10 +10,19 @@ public class Test04 {
 		for(;x>1;x/=2,t[x]=t[x*2]+t[x*2+1]);
 	}
 	static int u(int n,int s,int e) {
-		if(r<s||e<l)return 0;
-		if(l<=s&&e<=r)return t[n];
-		int m=(s+e)/2;
-		return u(n*2,s,m)+u(n*2+1,m+1,e);
+		System.out.println(n+" "+s+" "+e);
+		if(r<s||e<l) {
+			System.out.println("\t1. re 0");
+			return 0;
+		}
+		if(l<=s&&e<=r) {
+			System.out.println("\t2. re "+t[n]);
+			return t[n];
+		}
+		System.out.println("\t3.");
+		int m=(s+e)/2,l=u(n*2,s,m),r=u(n*2+1,m+1,e);
+		System.out.println("\t\t>3. left "+l+" right "+r);
+		return l+r;
 	}
 	public static void main(String[] args) {
 		Scanner s=new Scanner(System.in);
