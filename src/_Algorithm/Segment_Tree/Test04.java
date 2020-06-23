@@ -18,11 +18,13 @@ public class Test04 {
 	public static void main(String[] args) {
 		Scanner s=new Scanner(System.in);
 		n=s.nextInt();
+		p=s.nextInt();
 		for(i=1;i<n;i*=2);
 		j=i;
 		t=new int[i*2];
 		for(;m<n;x=j+m++,t[x]=s.nextInt(),o());
 		System.out.println(Arrays.toString(t));
+		for(;p-->0;l=s.nextInt(),r=s.nextInt(),u(1,0,n-1));
 	}
 
 }
