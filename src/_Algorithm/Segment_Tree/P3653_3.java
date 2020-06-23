@@ -32,12 +32,13 @@ public class P3653_3 {
 			System.out.println(Arrays.toString(t));
 			for(i=0;i++<b;) {
 				m=s.nextInt()-1;
-				r=j+q[m];
+				r=q[m];
 				System.out.println("index: "+r);
 				System.out.print(u(1,0,j-1)+" ");
-				t[r]=0;
+				t[j+r]=0;
 				q[m]=b-i;
 				t[b-i]=1;
+				System.out.println(Arrays.toString(q));
 				System.out.println(Arrays.toString(t));
 			}
 		}
