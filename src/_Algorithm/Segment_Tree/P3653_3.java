@@ -21,7 +21,7 @@ public class P3653_3 {
 			for(m=1;m<i+j;m*=2);
 			k=m;
 			t=new int[m*2];
-			for(p=i;p<i+j;x=k+p,t[x]=1,o());
+			for(p=i;p<i+j;x=k+p++,t[x]=1,o());
 			System.out.println(Arrays.toString(t));
 		}
 	}
