@@ -22,7 +22,8 @@ public class P11505_5 {
 		for(i=0;i<n;x=j+i++,t[x]=Integer.parseInt(R.readLine()),o());
 		System.out.println(Arrays.toString(t));
 		for(;m-->0;) {
-			
+			z=new StringTokenizer(R.readLine());
+			k=Integer.parseInt(z.nextToken());
 		}
 	}
 }
