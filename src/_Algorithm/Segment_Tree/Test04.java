@@ -1,4 +1,6 @@
 package _Algorithm.Segment_Tree;
+// end를 n-1로 했을 경우 오류.
+// end를 j-1로 했을 경우 성공.
 
 import java.util.Arrays;
 import java.util.Scanner;
@@ -33,7 +35,7 @@ public class Test04 {
 		t=new int[i*2];
 		for(;m<n;x=j+m++,t[x]=s.nextInt(),o());
 		System.out.println(Arrays.toString(t));
-		for(;p-->0;l=s.nextInt(),r=s.nextInt(),System.out.println(u(1,0,j-1)));
+		for(;p-->0;l=s.nextInt(),r=s.nextInt(),System.out.println(u(1,0,n-1)));
 	}
 
 }
