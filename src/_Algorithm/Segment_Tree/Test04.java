@@ -24,7 +24,7 @@ public class Test04 {
 		t=new int[i*2];
 		for(;m<n;x=j+m++,t[x]=s.nextInt(),o());
 		System.out.println(Arrays.toString(t));
-		for(;p-->0;l=s.nextInt(),r=s.nextInt(),u(1,0,n-1));
+		for(;p-->0;l=s.nextInt(),r=s.nextInt(),System.out.println(u(1,0,n-1)));
 	}
 
 }
