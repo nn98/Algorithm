@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 public class P3653_3 {
 
-	static int n,m,i,j,t[],x,l,r,a,b,q[];
+	static int n,m,i,j,t[],x,l,r,a,b,q[],p;
 	static void o() {
 		for(;x>1;x/=2,t[x]=t[x*2]+t[x*2+1]);
 	}
@@ -32,14 +32,16 @@ public class P3653_3 {
 			System.out.println(Arrays.toString(t));
 			for(i=0;i++<b;) {
 				m=s.nextInt()-1;
-				r=q[m]-1;
-				System.out.println("index: "+r);
+				p=r=q[m];
+				r--;
+//				System.out.print(l+" ~ "+r+" = ");
+//				System.out.println(u(1,0,j-1)+" ");
 				System.out.print(u(1,0,j-1)+" ");
-				t[j+++r]=0;
+				t[j+p]=0;
 				q[m]=b-i;
-				t[q[m]]=1;
-				System.out.println(Arrays.toString(q));
-				System.out.println(Arrays.toString(t));
+				t[j+q[m]]=1;
+//				System.out.println(Arrays.toString(q));
+//				System.out.println(Arrays.toString(t));
 			}
 		}
 	}
