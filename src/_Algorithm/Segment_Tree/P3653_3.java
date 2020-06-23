@@ -35,6 +35,9 @@ public class P3653_3 {
 				r=q[m];
 				System.out.print(u(1,0,j-1)+" ");
 				t[r]=0;
+				q[m]=b-i;
+				t[b-i]=1;
+				System.out.println(Arrays.toString(t));
 			}
 		}
 	}
