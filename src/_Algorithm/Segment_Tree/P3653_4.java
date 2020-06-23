@@ -15,7 +15,7 @@ public class P3653_4 {
 		return u(n*2,s,m)+u(n*2+1,m+1,e);
 	}
 	public static void main(String[] args) {
-		Scanner s=new Scanner(System.in);
+		
 		n=s.nextInt();
 		for(;n-->0;) {
 			a=s.nextInt();
@@ -32,8 +32,6 @@ public class P3653_4 {
 				m=s.nextInt()-1;
 				p=r=q[m];
 				r--;
-//				System.out.print(l+" ~ "+r+" = ");
-//				System.out.println(u(1,0,j-1)+" ");
 				System.out.print(u(1,0,j-1)+" ");
 				t[j+p]=0;
 				q[m]=b-i;
@@ -42,8 +40,6 @@ public class P3653_4 {
 				o();
 				x=j+q[m];
 				o();
-//				System.out.println(Arrays.toString(q));
-//				System.out.println(Arrays.toString(t));
 			}
 		}
 	}
