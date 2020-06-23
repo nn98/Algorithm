@@ -11,7 +11,7 @@ public class P3653_3 {
 		for(;x>1;x/=2,t[x]=t[x*2]+t[x*2+1]);
 	}
 	static int u(int n,int s,int e) {
-		if(r<s||e<l)return t[n];
+		if(r<s||e<l)return 0;
 		if(l<=s&&e<=r)return t[n];
 		int m=(s+e)/2;
 		return u(n*2,s,m)+u(n*2+1,m+1,e);
