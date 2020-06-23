@@ -1,5 +1,6 @@
 package _Algorithm.Segment_Tree;
 // https://lyzqm.blogspot.com/2017/07/segment-tree-3653.html?showComment=1531981580261#c7391195554365601508
+// µÇ³²
 
 import java.util.Arrays;
 import java.util.Scanner;
