@@ -2,7 +2,6 @@ package _Algorithm.Segment_Tree;
 // 이제야 이해되네 시벌거
 import java.util.*;
 import java.io.*;
-
 public class P11505_6 {
 	static int x,n,m,i,j,k,l,r;
 	static long t[],M=1000000007;
