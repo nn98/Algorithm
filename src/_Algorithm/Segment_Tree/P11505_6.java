@@ -3,7 +3,7 @@ package _Algorithm.Segment_Tree;
 import java.util.*;
 import java.io.*;
 
-public class P11505_5 {
+public class P11505_6 {
 	static int x,n,m,i,j,k,l,r;
 	static long t[],M=1000000007;
 	static void o() {
