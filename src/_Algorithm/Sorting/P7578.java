@@ -1,5 +1,6 @@
 package _Algorithm.Sorting;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class P7578 {
@@ -43,6 +44,7 @@ public class P7578 {
 		a=new int[500010];
 		b=new int[500010];
 		for(i=0;i<n;a[i++]=A[s.nextInt()]);
+		System.out.println(Arrays.toString(a));
 		o(0,n-1);
 		System.out.println(R);
 	}
