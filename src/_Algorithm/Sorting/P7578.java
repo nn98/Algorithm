@@ -19,7 +19,6 @@ public class P7578 {
 		int i = p, j = q+1;
 		int cnt = 0;
 		while(i<=q || j<=r){
-			System.out.println(i<=q | j<=r);
 			if(i > q){
 				b[idx++] = a[j++]; cnt++;
 			}else if(j > r){
