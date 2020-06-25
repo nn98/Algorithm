@@ -21,16 +21,12 @@ public class P7578 {
 		while(i<=q || j<=r){
 			System.out.println(i<=q | j<=r);
 			if(i > q){
-				System.out.println(55);
 				b[idx++] = a[j++]; cnt++;
 			}else if(j > r){
-				System.out.println(66);
 				b[idx++] = a[i++]; R += cnt;
 			}else if(a[i] <= a[j]){
-				System.out.println(77);
 				b[idx++] = a[i++]; R += cnt;
 			}else{
-				System.out.println(88);
 				b[idx++] = a[j++]; cnt++;
 			}
 		}
