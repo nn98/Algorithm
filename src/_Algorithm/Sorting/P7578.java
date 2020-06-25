@@ -44,5 +44,4 @@ public class P7578 {
 		o(0,n-1);
 		System.out.println(R);
 	}
-
 }
