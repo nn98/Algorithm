@@ -3,7 +3,7 @@ package _Algorithm.Sorting;
 import java.util.Scanner;
 
 public class P7578 {
-	static int n,i,a[],b[];
+	static int n,i,a[],b[],A[];
 	static long R;
 	static void o(int f,int t) {
 		if(f<t) {
@@ -38,13 +38,12 @@ public class P7578 {
 	public static void main(String[] args) {
 		Scanner s=new Scanner(System.in);
 		n=s.nextInt();
+		A=new int[1000001];
+		for(;i<n;A[s.nextInt()]=i++);
 		a=new int[500010];
 		b=new int[500010];
-		for(;i<n;a[i++]=s.nextInt());
-//		System.out.println(Arrays.toString(a));
+		for(i=0;i<n;a[i++]=A[s.nextInt()]);
 		o(0,n-1);
-//		for(i=0;i<n;System.out.println(a[i++]));
-//		System.out.println(Arrays.toString(a));
 		System.out.println(R);
 	}
 
