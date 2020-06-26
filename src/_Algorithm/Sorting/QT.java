@@ -16,9 +16,9 @@ public class QT {
 			System.out.println("o\t"+s+" "+e);
 			System.out.println(Arrays.toString(a));
 			int m=(s+e)/2;
+			p(s,e,m);
 			o(s,m-1);
 			o(m+1,e);
-			p(s,e,m);
 			System.out.println("\t"+Arrays.toString(a));
 		}
 	}
@@ -26,10 +26,9 @@ public class QT {
 		System.out.println("\tp\t"+s+" "+e+" "+m);
 		int x=a[m];
 		w(m,e);
-		int i=-1,j=0;
+		int i=s-1;
 		for(;s<e;s++) {
 			if(a[s]<x)w(++i,s);
-			else j++;
 			System.out.println("\t"+Arrays.toString(a));
 		}
 		w(++i,e);
