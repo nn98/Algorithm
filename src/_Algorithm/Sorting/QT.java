@@ -34,6 +34,8 @@ public class QT {
 		a=new int[n];
 		for(;i<n;a[i++]=s.nextInt());
 		System.out.println(Arrays.toString(a));
+		o(0,n-1);
+		System.out.println(Arrays.toString(a));
 	}
 
 }
