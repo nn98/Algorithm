@@ -12,12 +12,13 @@ public class QT {
 		a[j]=t;
 	}
 	static void o(int s,int e) {
-		if(s==e)return;
-		System.out.println("o\t"+s+" "+e);
-		int m=(s+e)/2;
-		p(s,e,m);
-		o(s,m-1);
-		o(m+1,e);
+		if(s<e) {
+			System.out.println("o\t"+s+" "+e);
+			int m=(s+e)/2;
+			p(s,e,m);
+			o(s,m-1);
+			o(m+1,e);
+		}
 	}
 	static void p(int s,int e,int m) {
 		System.out.println("\tp\t"+s+" "+e+" "+m);
