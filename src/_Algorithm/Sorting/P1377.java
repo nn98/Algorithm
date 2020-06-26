@@ -11,5 +11,5 @@ public class P1377 {
 		for(i=1;++i<n;k+=a[i-1]>a[i]?1:0);
 		System.out.println(k);
 	}
-
+// 같은값은?
 }
