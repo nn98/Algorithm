@@ -22,7 +22,7 @@ public class QT1 {
 		w((s+e)/2,e);
 		i=s-1;
 		for(;s<e;s++)
-			if(a[s]>a[e])
+			if(a[s]<a[e])
 				w(++i,s);
 		w(i+1,e);
 	}
