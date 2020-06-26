@@ -14,8 +14,10 @@ public class QT {
 	static void o(int s,int e) {
 		if(s<e) {
 			System.out.println("o\t"+s+" "+e);
+			System.out.println(Arrays.toString(a));
 			int m=(s+e)/2;
 			p(s,e,m);
+			System.out.println("\t"+Arrays.toString(a));
 			o(s,m-1);
 			o(m+1,e);
 		}
@@ -26,8 +28,9 @@ public class QT {
 		w(m,e);
 		int i=-1,j=0;
 		for(;s<e;s++) {
-			if(a[s]>x)j++;
-			else w(++i,j);
+			if(a[s]<x)w(++i,s);
+			else j++;
+			System.out.println("\t"+Arrays.toString(a));
 		}
 		w(++i,e);
 	}
@@ -36,10 +39,9 @@ public class QT {
 		n=s.nextInt();
 		a=new int[n];
 		for(;i<n;a[i++]=s.nextInt());
-		System.out.println(Arrays.toString(a));
 		o(0,n-1);
-		System.out.println(Arrays.toString(a));
 	}
 
 }
 // 6 2 1 4 6 5 3
+// 6 6 4 5 2 1 3
