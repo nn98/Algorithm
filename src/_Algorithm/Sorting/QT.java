@@ -16,10 +16,10 @@ public class QT {
 			System.out.println("o\t"+s+" "+e);
 			System.out.println(Arrays.toString(a));
 			int m=(s+e)/2;
-			p(s,e,m);
-			System.out.println("\t"+Arrays.toString(a));
 			o(s,m-1);
 			o(m+1,e);
+			p(s,e,m);
+			System.out.println("\t"+Arrays.toString(a));
 		}
 	}
 	static void p(int s,int e,int m) {
