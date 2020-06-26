@@ -20,7 +20,7 @@ public class QT {
 		o(m+1,e);
 	}
 	static void p(int s,int e,int m) {
-		System.out.println("\tp\t"+s+" "+e);
+		System.out.println("\tp\t"+s+" "+e+" "+m);
 		int x=a[m];
 		w(m,e);
 		int i=-1,j=0;
