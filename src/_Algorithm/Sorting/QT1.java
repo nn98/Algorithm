@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 public class QT1 {
-
+// 시벌 내코드를 내가 이해를 몬하노
 	static int n,a[],i,j;
 	static void w(int i,int j) {
 		int t=a[i];
