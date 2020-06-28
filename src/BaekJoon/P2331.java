@@ -11,15 +11,15 @@ public class P2331 {
 		int i=0,x;
 		a[i++]=s.nextInt();
 		p=s.nextInt();
-		for(;i<20;) {
+		for(;i<20;i++) {
 			q=0;
 			j=a[i-1];
 			for(k=1;k<=j;k*=10);
 			System.out.println(k);
 			for(;k>1;k/=10,q+=Math.pow(j/k,p),j%=k);
 			System.out.println(" "+q);
-			a[i++]=q;
-			for(x=0;x<i;x++)if(a[x]==a[i-1])break;
+			a[i]=q;
+			for(x=0;x<=i;x++)if(a[x]==a[i])break;
 		}
 		System.out.println(Arrays.toString(a));
 		System.out.println(k);
