@@ -6,7 +6,7 @@ public class P2331 {
 
 	public static void main(String[] args) {
 		Scanner s=new Scanner(System.in);
-		int a[]=new int[10000],p,i=0,j,k,q;
+		int a[]=new int[10000],p,i=0,j,k=1,q;
 		a[i++]=s.nextInt();
 		p=s.nextInt();
 		for(;;) {
