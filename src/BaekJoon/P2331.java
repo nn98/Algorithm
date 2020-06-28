@@ -18,7 +18,6 @@ public class P2331 {
 			j=a[i-1];
 			for(k=1;k<=j;k*=10);
 			for(;k>1;k/=10,q+=Math.pow(j/k,p),j%=k);
-			System.out.println(" "+q);
 			a[i]=q;
 			for(x=0;x<i;x++)if(a[x]==a[i])break loop;
 		}
