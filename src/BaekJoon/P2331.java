@@ -7,7 +7,8 @@ public class P2331 {
 
 	public static void main(String[] args) {
 		Scanner s=new Scanner(System.in);
-		int a[]=new int[1000],p,i=0,j,k=1,q;
+		long p,j,k=1,q,a[]=new long[100000];
+		int i=0,x;
 		a[i++]=s.nextInt();
 		p=s.nextInt();
 		for(;i<20;) {
@@ -18,7 +19,7 @@ public class P2331 {
 			for(;k>1;k/=10,q+=j/k*p,j%=k);
 			System.out.println(" "+q);
 			a[i++]=q;
-			for(;k<i;k++)if(a[k]==a[i-1])break;
+			for(x=0;x<i;x++)if(a[x]==a[i-1])break;
 		}
 		System.out.println(Arrays.toString(a));
 		System.out.println(k);
