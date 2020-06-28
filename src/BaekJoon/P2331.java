@@ -9,7 +9,7 @@ public class P2331 {
 	public static void main(String[] args) {
 		Scanner s=new Scanner(System.in);
 		long p,j,k=1,q,a[]=new long[100000];
-		int i=0,x;
+		int i=0,x=0;
 		a[i++]=s.nextInt();
 		p=s.nextInt();
 		loop:
@@ -23,7 +23,7 @@ public class P2331 {
 			for(x=0;x<i;x++)if(a[x]==a[i])break loop;
 		}
 //		System.out.println(Arrays.toString(a));
-		System.out.println(k);
+		System.out.println(x);
 	}
 
 }
