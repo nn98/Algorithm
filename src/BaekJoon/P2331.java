@@ -5,7 +5,6 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 public class P2331 {
-
 	public static void main(String[] args) {
 		Scanner s=new Scanner(System.in);
 		long p,j,k=1,q,a[]=new long[10000000];
