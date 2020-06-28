@@ -1,7 +1,5 @@
 package BaekJoon;
 //https://docu94.tistory.com/41
-
-import java.util.Arrays;
 import java.util.Scanner;
 public class P2331 {
 	public static void main(String[] args) {
