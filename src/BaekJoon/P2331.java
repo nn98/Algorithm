@@ -15,7 +15,7 @@ public class P2331 {
 			j=a[i-1];
 			for(k=1;k<=j;k*=10);
 			System.out.println(k);
-			for(;k>1;k/=10,q+=j/k*p,q%=k);
+			for(;k>1;k/=10,q+=j/k*p,j%=k);
 			System.out.println(" "+q);
 			a[i++]=q;
 			for(;k<i;k++)if(a[k]==a[i-1])break;
