@@ -11,6 +11,7 @@ public class P2331 {
 		int i=0,x;
 		a[i++]=s.nextInt();
 		p=s.nextInt();
+		loop:
 		for(;i<20;i++) {
 			q=0;
 			j=a[i-1];
@@ -18,7 +19,7 @@ public class P2331 {
 			for(;k>1;k/=10,q+=Math.pow(j/k,p),j%=k);
 			System.out.println(" "+q);
 			a[i]=q;
-			for(x=0;x<=i;System.out.println("\t"+a[x]+" "+a[i]),x++)if(a[x]==a[i])break;
+			for(x=0;x<=i;x++)if(a[x]==a[i])break loop;
 		}
 //		System.out.println(Arrays.toString(a));
 		System.out.println(k);
