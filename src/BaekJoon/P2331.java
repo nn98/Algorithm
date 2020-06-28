@@ -25,5 +25,4 @@ public class P2331 {
 //		System.out.println(Arrays.toString(a));
 		System.out.println(x);
 	}
-
 }
