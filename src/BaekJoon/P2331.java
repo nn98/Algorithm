@@ -21,7 +21,6 @@ public class P2331 {
 						break loop;
 					}
 			}
-		//		System.out.println(Arrays.toString(a));
 		System.out.println(r);
 	}
 }
