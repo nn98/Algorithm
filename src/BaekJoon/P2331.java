@@ -1,4 +1,5 @@
 package BaekJoon;
+//https://docu94.tistory.com/41
 
 import java.util.Arrays;
 import java.util.Scanner;
