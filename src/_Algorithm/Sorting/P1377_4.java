@@ -31,11 +31,9 @@ public class P1377_4 {
 		n=s.nextInt();
 		b=new int[n][2];
 		for(;i<n;b[i][0]=s.nextInt(),b[i][1]=i++);
-		System.out.println(Arrays.toString(b[0]));
-		System.out.println(Arrays.toString(b[1]));
-//		o(0,n-1);
-		Arrays.sort(b);
-		System.out.println(Arrays.toString(b[0]));
+		for(int[]a:b)System.out.println(Arrays.toString(a));
+		o(0,n-1);
+		for(int[]a:b)System.out.println(Arrays.toString(a));
 	}
 
 }
