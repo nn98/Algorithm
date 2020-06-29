@@ -17,9 +17,10 @@ public class P1377_3 {
 	static void p(int s,int e) {
 		m=(s+e)/2;
 		w(m,e);
-		m=a[e];
+		n=a[e];
 		j=s-1;
-		for(;s<e;s++)if(a[s]>)
+		for(;s<e;s++)if(a[s]<n)w(++j,s);
+		w(m,e);
 	}
 	public static void main(String[] args) {
 		Scanner s=new Scanner(System.in);
@@ -27,6 +28,8 @@ public class P1377_3 {
 		a=new int[n];
 		b=new int[2][n];
 		for(;i<n;a[i]=b[0][i]=s.nextInt(),b[1][i]=i++);
+		System.out.println(Arrays.toString(a));
+		p(0,n-1);
 		System.out.println(Arrays.toString(a));
 		System.out.println(Arrays.toString(b[0]));
 		System.out.println(Arrays.toString(b[1]));
