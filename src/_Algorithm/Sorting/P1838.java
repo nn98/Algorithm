@@ -9,8 +9,6 @@ public class P1838 {
 		Scanner s=new Scanner(System.in);
 		int n=s.nextInt(),a[]=new int[n],i=0,b[]=new int[n];
 		for(;i<n;b[i]=a[i++]=s.nextInt());
-		System.out.println(Arrays.toString(a));
-		System.out.println(Arrays.toString(b));
 	}
 
 }
