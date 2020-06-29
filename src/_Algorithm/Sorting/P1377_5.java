@@ -1,6 +1,6 @@
 package _Algorithm.Sorting;
 
-import java.util.Scanner;
+import java.io.*;
 
 public class P1377_5 {
 	static int n,i,j,b[][],c[][],t[],m,v;
@@ -24,12 +24,12 @@ public class P1377_5 {
 		for(;s<e;s++)if(b[s][0]<v)w(++j,s);
 		w(j+1,e);
 	}
-	public static void main(String[] args) {
-		Scanner s=new Scanner(System.in);
-		n=s.nextInt();
+	public static void main(String[] args)throws Exception{
+		BufferedReader r=new BufferedReader(new InputStreamReader(System.in));
+		n=Integer.parseInt(r.readLine());
 		b=new int[n][2];
 		c=new int[n][2];
-		for(;i<n;c[i][0]=b[i][0]=s.nextInt(),c[i][1]=b[i][1]=i++);
+		for(;i<n;c[i][0]=b[i][0]=Integer.parseInt(r.readLine()),c[i][1]=b[i][1]=i++);
 		o(0,n-1);
 		m=0;
 		for(i=n;i-->0;)
