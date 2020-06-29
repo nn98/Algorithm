@@ -29,6 +29,7 @@ public class P1838_4 {
 			R=R>p.x-x?R:p.x-x;
 		x++;
 		}
+		System.out.println(R);
 	}
 
 }
