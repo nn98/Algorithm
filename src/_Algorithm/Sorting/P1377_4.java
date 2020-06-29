@@ -33,11 +33,12 @@ public class P1377_4 {
 		for(;i<n;c[i][0]=b[i][0]=s.nextInt(),c[i][1]=b[i][1]=i++);
 		//		for(int[]a:b)System.out.println(Arrays.toString(a));
 		o(0,n-1);
-		//		for(int[]a:b)System.out.println(Arrays.toString(a));
+		for(int[]a:b)System.out.println(Arrays.toString(a));
+		for(int[]a:c)System.out.println(Arrays.toString(a));
 		m=0;
 		for(i=n;i-->0;)
 			for(j=i;j-->0;)
-				if(b[i][0]==b[j][0]&b[i][1]==b[j][1])
+				if(b[i][0]==c[j][0]&b[i][1]==c[j][1])
 					m=m>i-j?m:i-j;
 
 					System.out.println(m);
