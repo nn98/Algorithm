@@ -20,7 +20,9 @@ public class P1377_6 {
 				Collections.sort(a[i]);
 				for(k=0;k<a[i].size();k++) {
 					c++;
-					R=Math.min(a[i].get(k)-c,R);
+					n=a[i].get(k);
+					System.out.println("c: "+c+" n: "+n);
+					R=R>n-c?R:n-c;
 				}
 			}
 		}
