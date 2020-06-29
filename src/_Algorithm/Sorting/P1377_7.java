@@ -2,7 +2,7 @@ package _Algorithm.Sorting;
 
 import java.util.*;
 public class P1377_7 {
-	public static void main(String[] args) {
+	public static void main(String[]z){
 		Scanner s=new Scanner(System.in);
 		int n=s.nextInt(),i=0,a[][]=new int[n][2],r=0;
 		for(;i<n;a[i][0]=s.nextInt(),a[i][1]=i++);
