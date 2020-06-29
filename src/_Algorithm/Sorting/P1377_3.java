@@ -26,6 +26,7 @@ public class P1377_3 {
 		j=s-1;
 		for(;s<e;s++)if(a[s]<n)w(++j,s);
 		w(j+1,e);
+		System.out.println("re :"+j);
 	}
 	public static void main(String[] args) {
 		Scanner s=new Scanner(System.in);
