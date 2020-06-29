@@ -11,7 +11,7 @@ public class P1838_3 {
 		BufferedReader R=new BufferedReader(new InputStreamReader(System.in));
 		int n=Integer.parseInt(R.readLine()),a[]=new int[n],i=0,b[]=new int[n],j,r=0;
 		StringTokenizer t=new StringTokenizer(R.readLine());
-		for(;i<n;a[i++]=Integer.parseInt(t.nextToken()));
+		for(;i<n;b[i]=a[i++]=Integer.parseInt(t.nextToken()));
 		Arrays.sort(a);
 		for(i=0;i<n;i++)
 			for(j=n;j-->0;)
