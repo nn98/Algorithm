@@ -12,8 +12,8 @@ public class P1377_3 {
 		a[j]=t;
 	}
 	static void o(int s,int e) {
+		System.out.println(s+" "+e);
 		if(s<e) {
-			System.out.println(s+" "+e);
 			p(s,e);
 			o(s,j);
 			o(j+2,e);
