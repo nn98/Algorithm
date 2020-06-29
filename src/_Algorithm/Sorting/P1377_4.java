@@ -38,8 +38,10 @@ public class P1377_4 {
 		m=0;
 		for(i=n;i-->0;)
 			for(j=i;j-->0;)
-				if(c[i][0]==b[j][0]&c[i][1]==b[j][1])
+				if(c[i][0]==b[j][0]&c[i][1]==b[j][1]) {
+					System.out.println("c "+i+" / b "+j);
 					m=m>i-j?m:i-j;
+				}
 
 					System.out.println(m);
 	}
