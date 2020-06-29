@@ -21,7 +21,7 @@ public class P1377_6 {
 				for(k=0;k<a[i].size();k++) {
 					c++;
 					n=a[i].get(k);
-					System.out.println("c: "+c+" n: "+n);
+//					System.out.println("c: "+c+" n: "+n);
 					R=R>n-c?R:n-c;
 				}
 			}
