@@ -12,9 +12,11 @@ public class P1377_3 {
 		a[j]=t;
 	}
 	static void o(int s,int e) {
-		p(s,e);
-		o(s,j);
-		o(j+2,e);
+		if(s<e) {
+			p(s,e);
+			o(s,j);
+			o(j+2,e);
+		}
 	}
 	static void p(int s,int e) {
 		m=(s+e)/2;
@@ -22,7 +24,7 @@ public class P1377_3 {
 		n=a[e];
 		j=s-1;
 		for(;s<e;s++)if(a[s]<n)w(++j,s);
-		w(m,e);
+		w(j+1,e);
 	}
 	public static void main(String[] args) {
 		Scanner s=new Scanner(System.in);
