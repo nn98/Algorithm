@@ -13,6 +13,7 @@ public class P1377_3 {
 	}
 	static void o(int s,int e) {
 		System.out.println(s+" "+e);
+		System.out.println(Arrays.toString(a));
 		if(s<e) {
 			p(s,e);
 			o(s,j);
