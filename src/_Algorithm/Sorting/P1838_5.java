@@ -2,7 +2,7 @@ package _Algorithm.Sorting;
 
 import java.io.*;
 import java.util.*;
-public class P1838_5 {
+public class P1838_5{
 	static class P implements Comparable<P>{
 		int x,v;
 		P(int X,int V){
