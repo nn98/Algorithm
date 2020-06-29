@@ -31,7 +31,6 @@ public class P1377_4 {
 		b=new int[n][2];
 		c=new int[n][2];
 		for(;i<n;c[i][0]=b[i][0]=s.nextInt(),c[i][1]=b[i][1]=i++);
-		//		for(int[]a:b)System.out.println(Arrays.toString(a));
 		o(0,n-1);
 		m=0;
 		for(i=n;i-->0;)
