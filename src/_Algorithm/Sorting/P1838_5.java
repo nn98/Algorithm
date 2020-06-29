@@ -4,7 +4,6 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.PriorityQueue;
 import java.util.StringTokenizer;
-
 public class P1838_5 {
 	static class P implements Comparable<P>{
 		int x,v;
