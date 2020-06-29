@@ -11,7 +11,7 @@ public class P1377_7 {
 		for(;i<n;a[i][0]=s.nextInt(),a[i][1]=i++);
 		Arrays.sort(a,(b,c)->b[0]-c[0]);
 		for(i=0;i<n;i++)
-			r=Math.max(r,a[i][1]);
+			r=Math.max(r,a[i][1]-i);
 		System.out.print(r+1);
 	}
 
