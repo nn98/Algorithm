@@ -14,5 +14,4 @@ public class P1377_7 {
 			r=Math.max(r,a[i][1]-i);
 		System.out.print(r+1);
 	}
-
 }
