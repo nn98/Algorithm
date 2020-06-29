@@ -1,9 +1,7 @@
 package _Algorithm.Sorting;
 
-import java.util.Scanner;
-
-public class P1838_2 {
-
+import java.util.*;
+public class P1838_2{
 	public static void main(String[] args) {
 		Scanner s=new Scanner(System.in);
 		int n=s.nextInt(),j=500001,a[]=new int[j],i=0,r=0,c=0;
