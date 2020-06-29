@@ -1,5 +1,6 @@
 package _Algorithm.Sorting;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class P1377_3 {
@@ -11,7 +12,9 @@ public class P1377_3 {
 		a=new int[n];
 		b=new int[2][n];
 		for(;i<n;a[i]=b[0][i]=s.nextInt(),b[1][i]=i++);
-		
+		System.out.println(Arrays.toString(a));
+		System.out.println(Arrays.toString(b[0]));
+		System.out.println(Arrays.toString(b[1]));
 	}
 
 }
