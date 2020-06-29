@@ -5,7 +5,22 @@ import java.util.Scanner;
 
 public class P1377_3 {
 
-	static int n,i,j,a[],b[][];
+	static int n,i,j,a[],b[][],t,m;
+	static void w(int i,int j) {
+		t=a[i];
+		a[i]=a[j];
+		a[j]=t;
+	}
+	static void o(int s,int e) {
+		
+	}
+	static void p(int s,int e) {
+		m=(s+e)/2;
+		w(m,e);
+		m=a[e];
+		j=s-1;
+		for(;s<e;s++)if(a[s]>)
+	}
 	public static void main(String[] args) {
 		Scanner s=new Scanner(System.in);
 		n=s.nextInt();
