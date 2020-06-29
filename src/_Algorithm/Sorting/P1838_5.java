@@ -29,5 +29,4 @@ public class P1838_5 {
 		}
 		System.out.println(R);
 	}
-
 }
