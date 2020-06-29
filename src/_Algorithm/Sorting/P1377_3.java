@@ -12,7 +12,9 @@ public class P1377_3 {
 		a[j]=t;
 	}
 	static void o(int s,int e) {
-		
+		p(s,e);
+		o(s,j);
+		o(j+2,e);
 	}
 	static void p(int s,int e) {
 		m=(s+e)/2;
@@ -29,10 +31,10 @@ public class P1377_3 {
 		b=new int[2][n];
 		for(;i<n;a[i]=b[0][i]=s.nextInt(),b[1][i]=i++);
 		System.out.println(Arrays.toString(a));
-		p(0,n-1);
-		System.out.println(Arrays.toString(a));
 		System.out.println(Arrays.toString(b[0]));
 		System.out.println(Arrays.toString(b[1]));
+		o(0,n-1);
+		System.out.println(Arrays.toString(a));
 	}
 
 }
