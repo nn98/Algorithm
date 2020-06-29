@@ -1,10 +1,7 @@
 package _Algorithm.Sorting;
 
-import java.util.Arrays;
-import java.util.Scanner;
-
+import java.util.*;
 public class P1377_7 {
-
 	public static void main(String[] args) {
 		Scanner s=new Scanner(System.in);
 		int n=s.nextInt(),i=0,a[][]=new int[n][2],r=0;
