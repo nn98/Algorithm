@@ -1,9 +1,15 @@
 package _Algorithm.Sorting;
 
+import java.util.Scanner;
+
 public class P1838_2 {
 
 	public static void main(String[] args) {
-		
+		Scanner s=new Scanner(System.in);
+		int n=s.nextInt(),j=500001,a[]=new int[j],i=0,r=0;
+		for(;i++<n;a[s.nextInt()]=i);
+		for(i=0;++i<j;r=r>a[i]-i?r:a[i]-i);
+		System.out.println(r);
 	}
 
 }
