@@ -11,5 +11,4 @@ public class P1838_2 {
 		for(i=0;++i<j;c+=a[i]==0?0:1,r=r>a[i]-c?r:a[i]-c);
 		System.out.println(r);
 	}
-
 }
