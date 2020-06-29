@@ -33,7 +33,8 @@ public class P1377_4 {
 		for(;i<n;b[i][0]=s.nextInt(),b[i][1]=i++);
 		System.out.println(Arrays.toString(b[0]));
 		System.out.println(Arrays.toString(b[1]));
-		o(0,n-1);
+//		o(0,n-1);
+		Arrays.sort(b);
 		System.out.println(Arrays.toString(b[0]));
 	}
 
