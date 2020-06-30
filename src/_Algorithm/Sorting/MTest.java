@@ -11,7 +11,7 @@ public class MTest {
 		if(s<e) {
 			int m=(s+e)/2;
 			o(s,m);
-			o(m+1,e);
+			o(m,e);
 			m(s,e,m);
 		}
 	}
