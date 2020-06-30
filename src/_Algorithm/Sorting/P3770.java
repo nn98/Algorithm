@@ -29,7 +29,7 @@ public class P3770 {
 						Iterator<Integer> x=a[j].iterator();
 						while(x.hasNext()) {
 //							System.out.println("\t"+(e=x.next()));
-							if(p<e)R++;
+							if(p<x.next())R++;
 						}
 					}
 				}
