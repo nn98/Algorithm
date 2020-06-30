@@ -32,5 +32,4 @@ public class MTest0 {
 		o(0,n-1);
 		for(int z:a)System.out.println(z);
 	}
-
 }
