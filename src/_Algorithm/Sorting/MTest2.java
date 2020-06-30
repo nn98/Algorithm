@@ -44,7 +44,7 @@ public class MTest2 {
 		b=new int[n];
 		for(;i<n;a[i++]=s.nextInt());
 		o(0,n-1);
-		System.out.println(Arrays.toString(a));
+		System.out.println(r);
 	}
 
 }
