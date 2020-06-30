@@ -41,7 +41,7 @@ public class P7578_4 {
 		Scanner s=new Scanner(System.in);
 		n=s.nextInt();
 		for(;i<n;A[s.nextInt()]=++i);
-		for(i=0;i<n;a[i]=A[s.nextInt()]);
+		for(i=0;i<n;a[i++]=A[s.nextInt()]);
 		o(0,n-1);
 		System.out.println(r);
 	}
