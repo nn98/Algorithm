@@ -23,15 +23,17 @@ public class P3770 {
 			for(i=w;i-->0;) {
 				while(a[i].isEmpty()) {
 					p=a[i].poll();
+					System.out.println(p);
 					for(j=i;j-->0;) {
 						Iterator<Integer> x=a[j].iterator();
 						while(x.hasNext()) {
-							if(p<x.next())R++;
+							System.out.println("\t"+(e=x.next()));
+							if(p<e)R++;
 						}
 					}
 				}
 			}
-			System.out.println("Test case "+m+" "+R);
+			System.out.println("Test case "+m+": "+R);
 		}
 	}
 
