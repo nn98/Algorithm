@@ -24,10 +24,10 @@ public class P1517_4 {
 			}else if(j>e) {
 				b[p]=a[i++];
 				r+=c;
-			}else if(a[i]<a[j]) {
+			}else if(a[i]<=a[j]) {
 				b[p]=a[i++];
 				r+=c;
-			}else if(a[j]<a[i]) {
+			}else{
 				b[p]=a[j++];
 				c++;
 			}
