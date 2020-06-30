@@ -7,7 +7,8 @@ public class MTest {
 
 	static int n,a[],b[],i,j,p,q;
 	static void o(int s,int e) {
-		if(s<e-1) {
+		System.out.println(s+" "+e);
+		if(s<e) {
 			int m=(s+e)/2;
 			o(s,m);
 			o(m+1,e);
@@ -15,7 +16,8 @@ public class MTest {
 		}
 	}
 	static void m(int s,int e,int m) {
-		
+		System.out.println("\t"+s+" "+e+" "+m);
+		System.out.println("\t"+Arrays.toString(a));
 		for(j=p=i=s,q=m;i<=e;i++) {
 			if(p==m)
 				b[i]=a[q++];
@@ -27,6 +29,7 @@ public class MTest {
 				b[i]=a[q++];
 		}
 		for(;j<e;a[j]=b[j++]);
+		System.out.println("\t"+Arrays.toString(a));
 	}
 	public static void main(String[] args) {
 		Scanner s=new Scanner(System.in);
