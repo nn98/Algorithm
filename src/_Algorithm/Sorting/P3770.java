@@ -5,7 +5,8 @@ import java.util.*;
 public class P3770 {
 	public static void main(String[] args)throws Exception{
 		BufferedReader r=new BufferedReader(new InputStreamReader(System.in));
-		int n=Integer.parseInt(r.readLine()),m=0,e,w,i,p,q,j,R;
+		int n=Integer.parseInt(r.readLine()),m=0,e,w,i,p,q,j;
+		long R;
 		while(m++<n) {
 			StringTokenizer t=new StringTokenizer(r.readLine());
 			e=Integer.parseInt(t.nextToken());
