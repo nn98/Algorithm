@@ -21,7 +21,7 @@ public class MTest0 {
 			if(i>m)b[x++]=a[j++];
 			else if(j>e)b[x++]=a[i++];
 			else b[x++]=a[i]<a[j]?a[i++]:a[j++];
-			while( )
+			while(s<=e)a[s++]=b[y++];
 	}
 	public static void main(String[] args) {
 		Scanner s=new Scanner(System.in);
