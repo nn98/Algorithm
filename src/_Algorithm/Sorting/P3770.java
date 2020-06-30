@@ -1,5 +1,7 @@
 package _Algorithm.Sorting;
 
+// 시벌 세그먼트로 풀어야되는 부분
+
 import java.io.*;
 import java.util.*;
 public class P3770 {
