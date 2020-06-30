@@ -18,10 +18,10 @@ public class MTest {
 	static void m(int s,int e,int m) {
 		System.out.println("\t"+s+" "+e+" "+m);
 		System.out.println("\t"+Arrays.toString(a));
-		for(j=p=i=s,q=m;i<=e;i++) {
+		for(j=p=i=s,q=m;i<e;i++) {
 			if(p==m)
 				b[i]=a[q++];
-			else if(q>e)
+			else if(q==e)
 				b[i]=a[p++];
 			else if(a[p]<a[q])
 				b[i]=a[p++];
@@ -38,7 +38,7 @@ public class MTest {
 		b=new int[n];
 		for(;i<n;a[i++]=s.nextInt());
 		System.out.println(Arrays.toString(a));
-		o(0,n-1);
+		o(0,n);
 		System.out.println(Arrays.toString(a));
 	}
 
