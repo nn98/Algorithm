@@ -29,6 +29,8 @@ public class MTest0 {
 		a=new int[n];
 		b=new int[n];
 		for(;i<n;a[i++]=s.nextInt());
+		o(0,n-1);
+		for(int z:a)System.out.println(z);
 	}
 
 }
