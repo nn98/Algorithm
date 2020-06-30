@@ -20,15 +20,15 @@ public class P3770 {
 				if(a[q]==null)a[q]=new PriorityQueue();
 				a[q].add(p);
 			}
-			System.out.println(Arrays.toString(a));
+//			System.out.println(Arrays.toString(a));
 			for(i=w;i-->0;) {
 				while(!a[i].isEmpty()) {
 					p=a[i].poll();
-					System.out.println(p);
+//					System.out.println(p);
 					for(j=i;j-->0;) {
 						Iterator<Integer> x=a[j].iterator();
 						while(x.hasNext()) {
-							System.out.println("\t"+(e=x.next()));
+//							System.out.println("\t"+(e=x.next()));
 							if(p<e)R++;
 						}
 					}
