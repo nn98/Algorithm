@@ -8,7 +8,7 @@ public class MTest {
 	static int n,a[],b[],i,j,p,q;
 	static void o(int s,int e) {
 		System.out.println(s+" "+e);
-		if(s<e) {
+		if(s<e-1) {
 			int m=(s+e)/2;
 			o(s,m);
 			o(m,e);
