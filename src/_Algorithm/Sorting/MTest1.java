@@ -15,6 +15,8 @@ public class MTest1 {
 		}
 	}
 	static void m(int s,int e,int m) {
+		System.out.println("\t"+s+" "+e+" "+m);
+		System.out.println("\t"+Arrays.toString(a));
 		i=s;
 		j=m;
 		p=q=0;
@@ -24,7 +26,9 @@ public class MTest1 {
 			else b[p]=a[i]<a[j]?a[i++]:a[j++];
 			p++;
 		}
+		System.out.println("b\t"+Arrays.toString(b));
 		while(s<e)a[s++]=b[q++];
+		System.out.println("\t"+Arrays.toString(a));
 	}
 	public static void main(String[] args) {
 		Scanner s=new Scanner(System.in);
