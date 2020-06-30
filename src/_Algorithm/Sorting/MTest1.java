@@ -31,6 +31,7 @@ public class MTest1 {
 		n=s.nextInt();
 		a=new int[n];
 		b=new int[n];
+		for(;i<n;a[i++]=s.nextInt());
 		o(0,n);
 		System.out.println(Arrays.toString(a));
 	}
