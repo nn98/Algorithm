@@ -10,19 +10,19 @@ public class P3770 {
 		while(m++<n) {
 			StringTokenizer t=new StringTokenizer(r.readLine());
 			e=Integer.parseInt(t.nextToken());
-			w=Integer.parseInt(t.nextToken());
+			w=Integer.parseInt(t.nextToken())+1;
 			i=Integer.parseInt(t.nextToken());
 			PriorityQueue<Integer>[]a=new PriorityQueue[w];
 			R=0;
 			while(i-->0) {
 				t=new StringTokenizer(r.readLine());
 				p=Integer.parseInt(t.nextToken());
-				q=Integer.parseInt(t.nextToken())-1;
+				q=Integer.parseInt(t.nextToken());
 				if(a[q]==null)a[q]=new PriorityQueue();
 				a[q].add(p);
 			}
 			//			System.out.println(Arrays.toString(a));
-			for(i=w;i-->0;) {
+			for(i=w;i-->1;) {
 				if(a[i]!=null) {
 					while(!a[i].isEmpty()) {
 						p=a[i].poll();
