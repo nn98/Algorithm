@@ -15,7 +15,7 @@ public class P3770 {
 			while(i-->0) {
 				t=new StringTokenizer(r.readLine());
 				p=Integer.parseInt(t.nextToken());
-				q=Integer.parseInt(t.nextToken());
+				q=Integer.parseInt(t.nextToken())-1;
 				if(a[q]==null)a[q]=new PriorityQueue();
 				a[q].add(p);
 			}
