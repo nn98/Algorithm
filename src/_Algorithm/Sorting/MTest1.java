@@ -20,7 +20,7 @@ public class MTest1 {
 		i=s;
 		j=m;
 		p=q=0;
-		while(!(i<m&&j<e)) {
+		while(i<m|j<e) {
 			if(i==m)b[p]=a[j++];
 			else if(j==e)b[p]=a[i++];
 			else b[p]=a[i]<a[j]?a[i++]:a[j++];
