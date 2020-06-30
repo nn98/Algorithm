@@ -28,10 +28,12 @@ public class P3770 {
 						p=a[i].poll();
 						//					System.out.println(p);
 						for(j=i;j-->0;) {
-							Iterator<Integer> x=a[j].iterator();
-							while(x.hasNext()) {
-								//							System.out.println("\t"+(e=x.next()));
-								if(p<x.next())R++;
+							if(a[j]!=null) {
+								Iterator<Integer> x=a[j].iterator();
+								while(x.hasNext()) {
+									//							System.out.println("\t"+(e=x.next()));
+									if(p<x.next())R++;
+								}
 							}
 						}
 					}
