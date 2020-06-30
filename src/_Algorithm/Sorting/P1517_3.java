@@ -37,9 +37,6 @@ public class P1517_3 {
 			}
 			p++;
 		}
-		if(s==0&e==n) {
-			for(int x:b)System.out.println(x);
-		}
 		while(s<e)a[s++]=b[q++];
 	}
 	public static void main(String[] args) {
