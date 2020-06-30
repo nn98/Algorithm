@@ -40,6 +40,8 @@ public class MTest2 {
 	public static void main(String[] args) {
 		Scanner s=new Scanner(System.in);
 		n=s.nextInt();
+		a=new int[n];
+		b=new int[n];
 		for(;i<n;a[i++]=s.nextInt());
 		o(0,n-1);
 		System.out.println(Arrays.toString(a));
