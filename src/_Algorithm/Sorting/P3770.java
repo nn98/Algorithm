@@ -22,7 +22,7 @@ public class P3770 {
 			}
 			System.out.println(Arrays.toString(a));
 			for(i=w;i-->0;) {
-				while(a[i].isEmpty()) {
+				while(!a[i].isEmpty()) {
 					p=a[i].poll();
 					System.out.println(p);
 					for(j=i;j-->0;) {
