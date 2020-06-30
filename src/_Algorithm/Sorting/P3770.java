@@ -20,6 +20,7 @@ public class P3770 {
 				if(a[q]==null)a[q]=new PriorityQueue();
 				a[q].add(p);
 			}
+			System.out.println(Arrays.toString(a));
 			for(i=w;i-->0;) {
 				while(a[i].isEmpty()) {
 					p=a[i].poll();
