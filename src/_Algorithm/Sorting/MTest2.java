@@ -19,7 +19,7 @@ public class MTest2 {
 		i=s;
 		j=m+1;
 		p=q=c=0;
-		while(i<=m&j<=e) {
+		while(i<=m|j<=e) {
 			if(i>m) {
 				b[p]=a[j++];
 				c++;
