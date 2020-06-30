@@ -1,4 +1,5 @@
 package _Algorithm.Sorting;
+// 채점기준 바꼈나
 
 import java.util.Scanner;
 
@@ -17,10 +18,11 @@ public class MTest0 {
 		i=s;
 		j=m+1;
 		x=y=0;
-		while(!(i>m&j>e))
+		while(!(i>m&j>e)) {
 			if(i>m)b[x++]=a[j++];
 			else if(j>e)b[x++]=a[i++];
 			else b[x++]=a[i]<a[j]?a[i++]:a[j++];
+		}
 			while(s<=e)a[s++]=b[y++];
 	}
 	public static void main(String[] args) {
