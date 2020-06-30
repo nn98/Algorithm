@@ -2,9 +2,7 @@ package _Algorithm.Sorting;
 // 걍 사이즈늘려서 돌리면 똑같나
 
 import java.util.Scanner;
-
 public class P7578_4 {
-
 	static int n,i,j=500001,p,q,c,a[]=new int[j],b[]=new int[j],A[]=new int[1000001];
 	static long r=0;
 	static void o(int s,int e) {
