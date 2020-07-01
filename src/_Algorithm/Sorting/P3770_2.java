@@ -36,5 +36,4 @@ public class P3770_2 {
 			System.out.println("Test case "+m+": "+R);
 		}
 	}
-
 }
