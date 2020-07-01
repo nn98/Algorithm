@@ -2,8 +2,6 @@ package _Algorithm.Sorting;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
-import java.util.Iterator;
-import java.util.PriorityQueue;
 import java.util.StringTokenizer;
 
 public class P3770_2 {
