@@ -26,6 +26,7 @@ public class P3770_2 {
 			//			System.out.println(Arrays.toString(a));
 			for(i=w;i-->0;) {
 				for(j=0;j<e;j++) {
+					System.out.println(i+" "+j);
 					if(a[i][j]>0) {
 						for(p=i;i-->0;) {
 							for(q=j;++q<e;R+=a[p][q]>0?1:0);
