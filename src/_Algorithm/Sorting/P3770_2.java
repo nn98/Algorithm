@@ -2,6 +2,7 @@ package _Algorithm.Sorting;
 // 리스트(큐)는 메모리
 // 배열은 시간
 // ㄴㄷ
+// 세그먼트 트리로
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
