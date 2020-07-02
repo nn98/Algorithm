@@ -1,4 +1,7 @@
 package _Algorithm.Sorting;
+// 리스트(큐)는 메모리
+// 배열은 시간
+// ㄴㄷ
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
