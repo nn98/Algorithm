@@ -11,7 +11,11 @@ public class P2812_3 {
 		Deque<Character>d=new LinkedList();
 		char[]a=s.next().toCharArray();
 		for(;i<n;) {
-			
+			while(!d.isEmpty())
+				if(d.peekLast()<a[i]&k>0) {
+					d.pollLast();
+					k--;
+				}
 		}
 		for(n=d.size()-k;n-->0;)
 			System.out.print(d.poll());
