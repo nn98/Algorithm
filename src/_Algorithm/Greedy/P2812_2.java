@@ -4,16 +4,15 @@ import java.util.*;
 public class P2812_2 {
 	public static void main(String[]z) {
 		Scanner s=new Scanner(System.in);
-		int n=s.nextInt(),k=s.nextInt(),t;
-		Deque<Integer>d=new LinkedList();
+		int n=s.nextInt(),k=s.nextInt();
+		Deque<Character>d=new LinkedList();
 		for(char c:s.next().toCharArray()) {
-			t=c-'0';
 			if(!d.isEmpty())
-				if(k>0&d.peekLast()<t) {
+				if(k>0&d.peekLast()<c) {
 					d.pollLast();
 					k--;
 				}
-			d.add(t);
+			d.add(c);
 		}
 		for(n=d.size()-k;n-->0;)
 			System.out.print(d.poll());
