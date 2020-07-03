@@ -23,3 +23,16 @@ public class P2812_C {
 			System.out.print(d.poll());
 	}
 }
+/*
+IT 학생회장 황해인입니다 
+	https://everytime.kr/378833/v/126526948
+	
+IT 학생임원장학금 관련(초장문,세줄요약o)
+	https://everytime.kr/378833/v/126684171
+	
+[단독] IT 임원 장학금을 회장단이 '낼름' 했다고요?
+	https://everytime.kr/378833/v/126774862(당근)
+	
+이야ㅋㅋ 어이가 없네
+	https://everytime.kr/378833/v/126853254
+*/
