@@ -16,6 +16,6 @@ public class P2812_2 {
 			d.add(t);
 		}
 		for(n=d.size()-k;n-->0;)
-			System.out.print(d.pop());
+			System.out.print(d.poll());
 	}
 }
