@@ -18,6 +18,7 @@ public class P2812_2 {
 					k--;
 				}
 			d.push(t);
+			System.out.println(d.toString());
 		}
 		for(;n-->0;)
 			System.out.print(d.pop());
