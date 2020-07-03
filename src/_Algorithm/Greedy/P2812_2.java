@@ -17,7 +17,7 @@ public class P2812_2 {
 					d.pollLast();
 					k--;
 				}
-			d.push(t);
+			d.add(t);
 			System.out.println(d.toString());
 		}
 		for(;n-->0;)
