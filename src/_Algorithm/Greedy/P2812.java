@@ -18,5 +18,4 @@ public class P2812 {
 			b[++j]=a[i];
 		}
 	}
-
 }
