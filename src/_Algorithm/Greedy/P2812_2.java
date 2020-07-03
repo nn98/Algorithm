@@ -7,11 +7,14 @@ public class P2812_2 {
 		int n=s.nextInt(),k=s.nextInt();
 		Deque<Character>d=new LinkedList();
 		for(char c:s.next().toCharArray()) {
-			if(!d.isEmpty())
-				if(k>0&d.peekLast()<c) {
-					d.pollLast();
-					k--;
-				}
+			while(true) {
+				if(!d.isEmpty())
+					if(k>0&d.peekLast()<c) {
+						d.pollLast();
+						k--;
+					}else break;
+				else break;
+			}
 			d.add(c);
 		}
 		for(n=d.size()-k;n-->0;)
