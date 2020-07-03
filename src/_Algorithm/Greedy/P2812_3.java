@@ -15,7 +15,7 @@ public class P2812_3 {
 				if(d.peekLast()<a[i]&k>0) {
 					d.pollLast();
 					k--;
-				}
+				}else break;
 			d.add(a[i++]);
 		}
 		for(n=d.size()-k;n-->0;)
