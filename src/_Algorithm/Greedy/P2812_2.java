@@ -8,7 +8,6 @@ public class P2812_2 {
 	public static void main(String[]z) {
 		Scanner s=new Scanner(System.in);
 		int n=s.nextInt(),k=s.nextInt(),t;
-		n=k;
 		Deque<Integer>d=new LinkedList();
 		for(char c:s.next().toCharArray()) {
 			t=c-'0';
@@ -19,7 +18,7 @@ public class P2812_2 {
 				}
 			d.add(t);
 		}
-		for(n=d.size()-n;n-->0;)
+		for(n=d.size()-k;n-->0;)
 			System.out.print(d.pop());
 	}
 }
