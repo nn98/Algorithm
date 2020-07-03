@@ -8,10 +8,11 @@ public class P2812_2 {
 		Deque<Integer>d=new LinkedList();
 		for(char c:s.next().toCharArray()) {
 			t=c-'0';
-			if(!d.isEmpty()&k>0&d.peekLast()<t) {
-				d.pollLast();
-				k--;
-			}
+			if(!d.isEmpty())
+				if(k>0&d.peekLast()<t) {
+					d.pollLast();
+					k--;
+				}
 			d.add(t);
 		}
 		for(n=d.size()-k;n-->0;)
