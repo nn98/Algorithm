@@ -1,9 +1,6 @@
 package _Algorithm.Greedy;
 
-import java.util.Deque;
-import java.util.LinkedList;
-import java.util.Scanner;
-
+import java.util.*;
 public class P2812_2 {
 	public static void main(String[]z) {
 		Scanner s=new Scanner(System.in);
