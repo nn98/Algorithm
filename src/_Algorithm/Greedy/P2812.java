@@ -7,7 +7,7 @@ public class P2812 {
 	public static void main(String[] args) {
 		Scanner s=new Scanner(System.in);
 		int n=s.nextInt(),k=s.nextInt(),i=0,j=-1,l=n-k;
-		char[]a=s.next().toCharArray(),b=new char[l];
+		char[]a=s.next().toCharArray(),b=new char[l+1];
 		for(;j<l;i++) {
 			if(j>=0) {
 				if(k>0&j!=0&b[j]<a[i]) {
@@ -17,5 +17,6 @@ public class P2812 {
 			}
 			b[++j]=a[i];
 		}
+		System.out.println(b);
 	}
 }
