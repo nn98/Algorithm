@@ -17,6 +17,7 @@ public class P2812_C {
 					k--;
 				}else break;
 			d.add(a[i++]);
+			System.out.println(d);
 		}
 		for(n=d.size()-k;n-->0;)
 			System.out.print(d.poll());
