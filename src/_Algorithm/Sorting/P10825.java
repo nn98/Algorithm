@@ -10,9 +10,6 @@ public class P10825 {
 	static class P implements Comparable<P>{
 		String n;
 		int a,b,c;
-//		p(int a,int b,int c){
-//			a=a;
-//		}
 		P(){
 			n=w;
 			a=x;
