@@ -6,20 +6,20 @@ public class P10825 {
 
 	static String w;
 	static int x,y,z;
-	static class p{
+	static class P{
 		String n;
 		int a,b,c;
 //		p(int a,int b,int c){
 //			a=a;
 //		}
-		p(){
+		P(){
 			n=w;
 			a=x;
 			b=y;
 			c=z;
 		}
 		@Override
-		public int compareTo(p p) {
+		public int compareTo(P p) {
 			if(a==p.a) {
 				if(b==p.b) {
 					if(c==p.c)
