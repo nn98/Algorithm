@@ -5,6 +5,7 @@ import java.util.Scanner;
 public class P9177 {
 
 	public static void main(String[] args) {
+		System.out.println((int)'z');
 		Scanner s=new Scanner(System.in);
 		int n=s.nextInt(),i=0,j,k;
 		char[]a;
