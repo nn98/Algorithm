@@ -1,5 +1,5 @@
 package _Algorithm.Sorting;
-
+// 문제를 제대로 읽자
 import java.util.Scanner;
 
 public class P9177 {
