@@ -25,11 +25,11 @@ public class P10825 {
 				if(b==p.b) {
 					if(c==p.c)
 						return n.compareTo(p.n);
-					return c-p.c;
+					return p.c-c;
 				}
-				return p.b-b;
+				return b-p.b;
 			}
-			return a-p.a;
+			return p.a-a;
 		}
 	}
 	public static void main(String[] args) {
