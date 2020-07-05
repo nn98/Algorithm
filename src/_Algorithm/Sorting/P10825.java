@@ -37,5 +37,4 @@ public class P10825 {
 		Arrays.sort(a);
 		for(i=0;i<n;System.out.println(a[i++].n));
 	}
-
 }
