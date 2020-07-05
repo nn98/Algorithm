@@ -24,5 +24,4 @@ public class P9177 {
 			System.out.println("Data set "+i+": "+(k>0?"yes":"no"));
 		}
 	}
-
 }
