@@ -1,5 +1,6 @@
 package _Algorithm.Sorting;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class P10825 {
@@ -30,12 +31,16 @@ public class P10825 {
 			}
 			return a=p.a;
 		}
+		void o() {
+			System.out.println(n+" "+a+" "+b+" "+c);
+		}
 	}
 	public static void main(String[] args) {
 		Scanner s=new Scanner(System.in);
 		int n=s.nextInt();
 		P[]a=new P[n];
 		for(;n-->0;w=s.next(),x=s.nextInt(),y=s.nextInt(),z=s.nextInt(),a[n]=new P());
+		Arrays.sort(a);
 	}
 
 }
