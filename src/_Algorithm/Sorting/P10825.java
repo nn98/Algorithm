@@ -37,10 +37,11 @@ public class P10825 {
 	}
 	public static void main(String[] args) {
 		Scanner s=new Scanner(System.in);
-		int n=s.nextInt();
+		int n=s.nextInt(),i=n;
 		P[]a=new P[n];
-		for(;n-->0;w=s.next(),x=s.nextInt(),y=s.nextInt(),z=s.nextInt(),a[n]=new P());
+		for(;i-->0;w=s.next(),x=s.nextInt(),y=s.nextInt(),z=s.nextInt(),a[i]=new P());
 		Arrays.sort(a);
+		for(;++i<n;a[i].o());
 	}
 
 }
