@@ -6,7 +6,7 @@ public class P10825 {
 
 	static String w;
 	static int x,y,z;
-	static class P{
+	static class P implements Comparable<P>{
 		String n;
 		int a,b,c;
 //		p(int a,int b,int c){
