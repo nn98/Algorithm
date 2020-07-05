@@ -34,8 +34,8 @@ public class P10825 {
 	public static void main(String[] args) {
 		Scanner s=new Scanner(System.in);
 		int n=s.nextInt();
-		P[]a=new P=new P[n];
-		for(;n-->0;)
+		P[]a=new P[n];
+		for(;n-->0;w=s.next(),x=s.nextInt(),y=s.nextInt(),z=s.nextInt(),a[n]=new P());
 	}
 
 }
