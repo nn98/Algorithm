@@ -31,9 +31,6 @@ public class P10825 {
 			}
 			return a=p.a;
 		}
-		void o() {
-			System.out.println(n+" "+a+" "+b+" "+c);
-		}
 	}
 	public static void main(String[] args) {
 		Scanner s=new Scanner(System.in);
@@ -41,7 +38,7 @@ public class P10825 {
 		P[]a=new P[n];
 		for(;i-->0;w=s.next(),x=s.nextInt(),y=s.nextInt(),z=s.nextInt(),a[i]=new P());
 		Arrays.sort(a);
-		for(;++i<n;a[i].o());
+		for(;++i<n;System.out.println(a[i].n));
 	}
 
 }
