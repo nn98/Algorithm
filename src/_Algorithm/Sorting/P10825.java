@@ -29,7 +29,7 @@ public class P10825 {
 				}
 				return p.b-b;
 			}
-			return a=p.a;
+			return a-p.a;
 		}
 	}
 	public static void main(String[] args) {
