@@ -14,6 +14,7 @@ public class P7453 {
 			StringTokenizer t=new StringTokenizer(r.readLine());
 			a=new BigInteger(t.nextToken());
 			for(i=0;i++<3;a=a.add(new BigInteger(t.nextToken())));
+			System.out.println(a);
 			x+=a.equals(BigInteger.ZERO)?1:0;
 		}
 		System.out.print(x);
