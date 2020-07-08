@@ -15,9 +15,11 @@ public class P11066 {
 			PriorityQueue<Integer> p=new PriorityQueue();
 			while(m-->0)p.add(Integer.parseInt(t.nextToken()));
 			while(p.size()>1) {
+				System.out.println(p);
 				a+=i=p.poll()+p.poll();
 				p.add(i);
 			}
+			System.out.println(p);
 			System.out.println(a);
 		}
 	}
