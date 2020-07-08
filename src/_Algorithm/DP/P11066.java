@@ -18,7 +18,6 @@ public class P11066 {
 				a+=i=p.poll()+p.poll();
 				p.add(i);
 			}
-			a+=p.poll();
 			System.out.println(a);
 		}
 	}
