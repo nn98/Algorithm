@@ -18,5 +18,3 @@ public class P11066_2 {
 		System.out.println(a);
 	}
 }
-
-}
