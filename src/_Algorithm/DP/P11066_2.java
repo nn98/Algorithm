@@ -15,6 +15,6 @@ public class P11066_2 {
 			StringTokenizer t=new StringTokenizer(r.readLine());
 			for(i=0;i<m;f[i++]=Integer.parseInt(t.nextToken()));
 		}
-		System.out.println(a);
+		System.out.println();
 	}
 }
