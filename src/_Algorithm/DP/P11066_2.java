@@ -5,7 +5,10 @@ import java.util.*;
 
 public class P11066_2 {
 
-	static int sum[],dp[],f[],n,m,i,a;
+	static int u[],dp[],f[],n,m,i,a;
+	static int o(int s,int e) {
+		return s==0?u[e]:u[e]-u[s-1]; 
+	}
 	public static void main(String[] args)throws Exception{
 		BufferedReader r=new BufferedReader(new InputStreamReader(System.in));
 		n=Integer.parseInt(r.readLine());
