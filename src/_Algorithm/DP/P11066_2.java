@@ -10,7 +10,7 @@ public class P11066_2 {
 		return s==0?u[e]:u[e]-u[s-1]; 
 	}
 	static int p() {
-		
+		h=new int[n][n];
 		return 0;
 	}
 	public static void main(String[] args)throws Exception{
