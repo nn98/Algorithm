@@ -11,7 +11,7 @@ public class P11066_2 {
 	}
 	static int p() {
 //		내가봐도 양심없다
-		h=new int[n][n];
+		h=new int[m][m];
 		return 0;
 	}
 	public static void main(String[] args)throws Exception{
