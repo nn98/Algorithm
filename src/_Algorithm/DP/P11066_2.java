@@ -8,7 +8,9 @@ public class P11066_2 {
 	static int u[],h[][],f[],n,m,i,j,k;
 	static int o(int s,int e) {
 		System.out.println(s+" "+e);
-		return u[e]-s==0?0:u[s-1];
+//		return u[e]-s==0?0:u[s-1];
+		if(s==0)return u[e];
+		else return u[e]-u[s-1];
 	}
 	static int p() {
 //		내가봐도 양심없다
