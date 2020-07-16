@@ -3,7 +3,7 @@ package _Algorithm.DP;
 import java.io.*;
 import java.util.*;
 
-public class P11066_2 {
+public class P11066_T {
 
 	static int u[],h[][],f[],n,m,i,j,k;
 	static int o(int s,int e) {
