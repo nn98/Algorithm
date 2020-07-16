@@ -18,8 +18,8 @@ public class P11066_T {
 		u[0]=f[0];
 		for(i=0;++i<m;u[i]=u[i-1]+f[i]);
 		for(i=0;i<m-1;h[i][i+1]=f[i]+f[i+++1]);
-		w.write(Arrays.toString(f));
-		w.write(Arrays.toString(u));
+		w.write(Arrays.toString(f)+"\n");
+		w.write(Arrays.toString(u)+"\n");
 		for(int[]a:h)w.write(Arrays.toString(a)+"\n");
 		w.flush();
 		for(i=1;++i<m;)
