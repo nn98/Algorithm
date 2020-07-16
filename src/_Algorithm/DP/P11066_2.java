@@ -16,12 +16,14 @@ public class P11066_2 {
 	}
 	public static void main(String[] args)throws Exception{
 		BufferedReader r=new BufferedReader(new InputStreamReader(System.in));
+		BufferedWriter w=new BufferedWriter(new OutputStreamWriter(System.out));
 		n=Integer.parseInt(r.readLine());
 		while(n-->0) {
 			m=Integer.parseInt(r.readLine());
 			f=new int[m];
 			StringTokenizer t=new StringTokenizer(r.readLine());
 			for(i=0;i<m;f[i++]=Integer.parseInt(t.nextToken()));
+			w.write(p()+"\n");
 		}
 		System.out.println();
 	}
