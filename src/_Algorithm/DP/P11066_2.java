@@ -19,6 +19,7 @@ public class P11066_2 {
 				for(k=j;k<i+j;k++)
 					if(h[j][i+j]==0)h[j][i+j]=h[j][k]+h[k+1][i+j]+o(j,i+j);
 					else h[j][i+j]=Math.min(h[j][i+j],h[j][k]+h[k+1][i+j]+o(j,i+j));
+//		¹¹ ÀÌµû±¸·Î ±«¶öÇØ
 		return h[0][m-1];
 	}
 	public static void main(String[] args)throws Exception{
