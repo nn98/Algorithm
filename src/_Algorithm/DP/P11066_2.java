@@ -7,6 +7,7 @@ public class P11066_2 {
 
 	static int u[],h[][],f[],n,m,i,j,k;
 	static int o(int s,int e) {
+		System.out.println(s+" "+e);
 		return u[e]-s==0?0:u[s-1];
 	}
 	static int p() {
