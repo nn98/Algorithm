@@ -25,6 +25,6 @@ public class P11066_2 {
 			for(i=0;i<m;f[i++]=Integer.parseInt(t.nextToken()));
 			w.write(p()+"\n");
 		}
-		System.out.println();
+		w.flush();
 	}
 }
