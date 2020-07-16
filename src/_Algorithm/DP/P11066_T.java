@@ -36,6 +36,7 @@ public class P11066_T {
 			h=new int[m][m];
 			StringTokenizer t=new StringTokenizer(r.readLine());
 			for(i=0;i<m;f[i++]=Integer.parseInt(t.nextToken()));
+			for(int[]a:h)w.write(Arrays.toString(a)+"\n");
 			w.write(p()+"\n");
 		}
 		w.flush();
