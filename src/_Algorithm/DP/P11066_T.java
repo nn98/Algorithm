@@ -30,7 +30,6 @@ public class P11066_T {
 					for(int[]a:h)w.write(Arrays.toString(a)+"\n");
 					w.flush();
 				}
-
 //		¹¹ ÀÌµû±¸·Î ±«¶öÇØ
 		return h[0][m-1];
 	}
