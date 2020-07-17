@@ -31,7 +31,6 @@ public class P11066_T {
 					w.flush();
 				}
 
-			
 //		¹¹ ÀÌµû±¸·Î ±«¶öÇØ
 		return h[0][m-1];
 	}
