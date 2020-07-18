@@ -21,6 +21,7 @@ public class P11066_T {
 		w.write(Arrays.toString(f)+"\n");
 		w.write(Arrays.toString(u)+"\n");
 		for(int[]a:h)w.write(Arrays.toString(a)+"\n");
+		w.newLine();
 		w.flush();
 		for(i=1;++i<m;)
 			for(j=0;i+j<m;j++)
