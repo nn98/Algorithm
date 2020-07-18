@@ -28,6 +28,7 @@ public class P11066_T {
 					if(h[j][i+j]==0)h[j][i+j]=h[j][k]+h[k+1][i+j]+o(j,i+j);
 					else h[j][i+j]=Math.min(h[j][i+j],h[j][k]+h[k+1][i+j]+o(j,i+j));
 					for(int[]a:h)w.write(Arrays.toString(a)+"\n");
+					w.newLine();
 					w.flush();
 				}
 //		¹¹ ÀÌµû±¸·Î ±«¶öÇØ
