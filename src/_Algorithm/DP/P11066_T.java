@@ -35,6 +35,7 @@ public class P11066_T {
 					w.flush();
 				}
 //		¹¹ ÀÌµû±¸·Î ±«¶öÇØ
+//		Á¹¶ó ¾î·Á¿ò
 		return h[0][m-1];
 	}
 	public static void main(String[] args)throws Exception{
