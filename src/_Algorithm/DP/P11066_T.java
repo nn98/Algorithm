@@ -22,7 +22,7 @@ public class P11066_T {
 		w.write(Arrays.toString(u)+"\t합 배열\n");
 		w.newLine();
 		for(int[]a:h)w.write(Arrays.toString(a)+"\n");
-		w.write("DP i행 i+1열에 입력 배열 i + i+1");
+		w.write("DP i행 i+1열에 입력 배열 i + i+1\n");
 		w.newLine();
 		w.flush();
 		for(i=1;++i<m;)
