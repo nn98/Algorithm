@@ -12,7 +12,7 @@ public class P11066_T2 {
 			m=s.nextInt()+1;
 			f=new int[m];
 			u=new int[m];
-			h=new int[502][502];
+			h=new int[m+1][m+1];
 			for(i=0;++i<m;f[i]=s.nextInt(),u[i]=f[i]+u[i-1]);
 //			System.out.println(Arrays.toString(f));
 //			System.out.println(Arrays.toString(u));
