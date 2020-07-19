@@ -1,6 +1,5 @@
 package _Algorithm.DP;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class P11066_3 {
