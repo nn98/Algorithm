@@ -1,5 +1,7 @@
 package _Algorithm.String;
 
+// 비회문을 찾으라니까 회문을 찾고있네 병신
+
 public class P15927 {
 
 	public static void main(String[] args) {
