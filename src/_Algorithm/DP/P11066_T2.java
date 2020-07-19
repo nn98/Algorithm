@@ -21,9 +21,10 @@ public class P11066_T2 {
 					System.out.println("j: "+j+" i: "+i+" v: "+h[j][i]);
 					h[j][i]=Integer.MAX_VALUE;
 					for(k=j-1;k++<i;) {
-						System.out.printf("k: %d h[%d][%d] => %d < ( %d + %d ) ? \n",k,j,i,h[j][i],h[j][k],h[k+1][i]);
+						System.out.printf("k: %d\th[%d][%d] => %d < ( %d + %d ) ? \n",k,j,i,h[j][i],h[j][k],h[k+1][i]);
 						h[j][i]=Math.min(h[j][i],h[j][k]+h[k+1][i]);
 					}
+					System.out.printf("\th[%d][%d] = %d + %d \n",j,i,h[j][i],u[i]-u[j-1]);
 					h[j][i]+=u[i]-u[j-1];
 					for(int[]a:h)System.out.println(Arrays.toString(a));
 					System.out.println();
