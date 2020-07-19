@@ -23,5 +23,4 @@ public class P11066_3 {
 			System.out.println(h[1][m-1]);
 		}
 	}
-
 }
