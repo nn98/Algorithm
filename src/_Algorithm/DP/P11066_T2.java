@@ -14,6 +14,8 @@ public class P11066_T2 {
 			u=new int[m];
 			h=new int[m+1][m+1];
 			for(i=0;++i<m;f[i]=s.nextInt(),u[i]=f[i]+u[i-1]);
+			for(i=0;++i<m;h[i][i]=f[i]);
+			for(int[]a:h)System.out.println(Arrays.toString(a));
 //			System.out.println(Arrays.toString(f));
 //			System.out.println(Arrays.toString(u));
 			for(i=1;++i<m;)
