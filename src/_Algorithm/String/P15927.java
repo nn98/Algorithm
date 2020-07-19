@@ -14,15 +14,16 @@ public class P15927 {
 					if(a[i]==a[j])v+=2;
 					else i=0;
 				r=r>v?r:v;
-			}else if(a[n-1]==a[n+1]) {
-				v=3;
-				i=n-1;
-				j=n+1;
-				while(--i>=0&&++j<m)
-					if(a[i]==a[j])v+=2;
-					else i=0;
-				r=r>v?r:v;
-			}
+			}else if(n+1!=m)
+				if(a[n-1]==a[n+1]) {
+					v=3;
+					i=n-1;
+					j=n+1;
+					while(--i>=0&&++j<m)
+						if(a[i]==a[j])v+=2;
+						else i=0;
+					r=r>v?r:v;
+				}
 		}
 		System.out.println(r);
 	}
