@@ -18,10 +18,13 @@ public class P11066_T2 {
 //			System.out.println(Arrays.toString(u));
 			for(i=1;++i<m;)
 				for(j=i;--j>0;) {
+					System.out.println("j: "+j+" i: "+i+" v: "+h[j][i]);
 					h[j][i]=Integer.MAX_VALUE;
-					for(k=j-1;k++<i;)h[j][i]=Math.min(h[j][i],h[j][k]+h[k+1][i]);
+					for(k=j-1;k++<i;) {
+						System.out.printf(" => %d < ( %d + %d ) ? \n",h[j][i],h[j][k],h[k+1][i]);
+						h[j][i]=Math.min(h[j][i],h[j][k]+h[k+1][i]);
+					}
 					h[j][i]+=u[i]-u[j-1];
-					System.out.println("i: "+i+" j: "+j);
 					for(int[]a:h)System.out.println(Arrays.toString(a));
 					System.out.println();
 				}
