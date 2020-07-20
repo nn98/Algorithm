@@ -10,5 +10,4 @@ public class Count {
 		}
 		System.out.println(a[1]+" "+a[2]+" "+a[3]);
 	}
-
 }
