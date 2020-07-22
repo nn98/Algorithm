@@ -34,5 +34,4 @@ public class P11066_T2 {
 			System.out.println(h[1][m-1]);
 		}
 	}
-
 }
