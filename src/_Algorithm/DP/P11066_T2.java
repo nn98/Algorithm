@@ -2,8 +2,7 @@ package _Algorithm.DP;
 
 import java.util.Arrays;
 import java.util.Scanner;
-
-public class P11066_T2 {
+public class P11066_T2{
 	public static void main(String[] args){
 		Scanner s=new Scanner(System.in);
 		int n=s.nextInt(),m,i,j,k,f[],u[],h[][];
