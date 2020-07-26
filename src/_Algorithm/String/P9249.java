@@ -8,5 +8,4 @@ public class P9249 {
 		Scanner s=new Scanner(System.in);
 		String a=s.next(),b=s.next();
 	}
-
 }
