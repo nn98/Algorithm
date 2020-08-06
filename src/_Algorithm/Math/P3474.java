@@ -1,5 +1,4 @@
 package _Algorithm.Math;
-
 import java.util.*;
 public class P3474{
 	public static void main(String[] args){
@@ -9,9 +8,9 @@ public class P3474{
 			a=s.nextInt();
 			c=0;
 			b=d=1;
-			while(++b<=a) {
+			while(++b<=a){
+				System.out.print(b+": "+d+" * "+b+" = "+d*b+" "+" -> ");
 				d*=b;
-				System.out.print(b+": "+d+" -> ");
 				e=1;
 				f=0;
 				while(d%(e*=10)==0)f++;
