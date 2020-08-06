@@ -14,7 +14,6 @@ public class P3474_G {
 				t+=m/i;
 			for(i=5;i<=m;i*=5)
 				f+=m/i;
-			System.out.println(t+" "+f);
 			System.out.println(f<t?f:t);
 		}
 		
