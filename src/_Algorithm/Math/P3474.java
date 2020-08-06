@@ -12,6 +12,7 @@ public class P3474{
 			while(++b<=a) {
 				d*=b;
 				c+=d%10==0?1:0;
+				while(d%10==0)d/=10;
 			}
 			System.out.println(c);
 		}
