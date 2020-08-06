@@ -12,7 +12,7 @@ public class P3474_3 {
 			i=s.nextInt();
 			r=j=0;
 			t=k=1;
-			while(j++<i) {
+			while(j++<=i) {
 				System.out.println("k= "+k+" j= "+j+" t= "+(t*=j));
 				if(k!=j)
 					if(k==5) {
