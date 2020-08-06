@@ -7,11 +7,14 @@ public class P3474{
 		int n=s.nextInt(),a,b,c,d;
 		while(n-->0) {
 			a=s.nextInt();
-			c=b=0;
-			d=1;
+			c=0;
+			b=d=1;
 			while(++b<=a) {
-				c+=d*b%10==0?1:0;
+				d*=b;
+				c+=d%10==0?1:0;
+				d%=10;
 			}
+			System.out.println(c);
 		}
 	}
 }
