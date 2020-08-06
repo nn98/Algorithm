@@ -17,8 +17,8 @@ public class P1213 {
 					y=i-1;
 				}
 		for(i=0;i<s;i++)
-			if(a[i]%2==0)
-				for(j=a[i]/2;j-->0;f.append((char)('A'+i)));
+			if(a[i]%2==0)for(j=a[i]/2;j-->0;f.append((char)('A'+i)));
+			else for(j=a[i]/2;j-->0;f.append((char)('A'+i)));
 		System.out.print(""+f+(x==1?(char)('A'+y):"")+f.reverse());
 	}
 
