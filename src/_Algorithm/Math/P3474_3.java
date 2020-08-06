@@ -7,13 +7,13 @@ public class P3474_3 {
 	public static void main(String[] args) {
 		Scanner s=new Scanner(System.in);
 		int n=s.nextInt(),i,j,k,a,b;
-		long r;
+		long r,t;
 		while(n-->0) {
 			i=s.nextInt();
 			r=j=0;
-			k=1;
+			t=k=1;
 			while(j++<i) {
-				System.out.println("k= "+k+" j= "+j);
+				System.out.println("k= "+k+" j= "+j+" t= "+(t*=j));
 				if(k!=j)
 					if(k==5) {
 						if(j==2||j==4||j==6||j==8)
