@@ -16,7 +16,5 @@ public class P3474_G {
 				f+=m/i;
 			System.out.println(f<t?f:t);
 		}
-		
 	}
-
 }
