@@ -8,20 +8,19 @@ public class P3474_2 {
 		Scanner s=new Scanner(System.in);
 		long n=s.nextLong(),a,b,c,d,e;
 		while(n-->0) {
-			b=a=s.nextLong()+1;
+			a=s.nextLong();
+			e=b=1;
 			c=0;
-			while(--a>1) {
-				b*=a;
+			while(b++<a) {
+				e*=b;
 				d=1;
-				e=0;
-				while(b%10==0) {
-					b/=10;
+				while(e%10==0) {
+					e/=10;
 					c++;
 				}
-				b%=10;
+				e%=10;
 			}
 			System.out.println(c);
 		}
 	}
-
 }
