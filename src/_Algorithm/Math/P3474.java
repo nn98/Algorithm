@@ -13,6 +13,7 @@ public class P3474{
 				d*=b;
 				c+=d%10==0?1:0;
 				while(d%10==0)d/=10;
+				if(d>10)d%=10;
 			}
 			System.out.println(c);
 		}
