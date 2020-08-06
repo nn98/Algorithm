@@ -20,6 +20,7 @@ public class P3474_2 {
 				}
 				b%=10;
 			}
+			System.out.println(c);
 		}
 	}
 
