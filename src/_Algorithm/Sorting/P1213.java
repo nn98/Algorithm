@@ -19,7 +19,7 @@ public class P1213 {
 		for(i=0;i<s;i++)
 			if(a[i]%2==0)
 				for(j=a[i]/2;j-->0;f.append((char)('A'+i)));
-		System.out.print(""+f+(x==1?'A'+y:"")+f.reverse());
+		System.out.print(""+f+(x==1?(char)('A'+y):"")+f.reverse());
 	}
 
 }
