@@ -8,7 +8,7 @@ public class P1297 {
 		Scanner s=new Scanner(System.in);
 		int a=s.nextInt(),b=s.nextInt(),c=s.nextInt();
 		double z=Math.sqrt(b*b+c*c);
-		System.out.println((int)a*b/z);
+		System.out.println((int)(a*b/z));
 	}
 
 }
