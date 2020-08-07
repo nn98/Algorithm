@@ -12,5 +12,4 @@ public class T {
 		}
 		System.out.println(b+" "+c);
 	}
-
 }
