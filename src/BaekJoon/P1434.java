@@ -21,5 +21,4 @@ public class P1434 {
 		for(i=0;i<n;j+=a[i++]);
 		System.out.print(j);
 	}
-
 }
