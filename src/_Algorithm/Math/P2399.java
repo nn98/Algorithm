@@ -13,7 +13,7 @@ public class P2399 {
 				r+=Math.abs(a[j]-a[i]);
 			i++;
 		}
-		System.out.print(r);
+		System.out.print(r*2);
 	}
 
 }
