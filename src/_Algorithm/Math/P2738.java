@@ -15,7 +15,7 @@ public class P2738 {
 				a[i][j++]+=s.nextInt();
 		for(i=0;i<n;i++)
 			for(j=0;j<m;)
-				System.out.print(a[i][j++]+j==m-1?"\n":" ");
+				System.out.print(a[i][j++]+(j==m-1?"\n":" "));
 	}
 
 }
