@@ -8,6 +8,7 @@ public class P1592 {
 		Scanner s=new Scanner(System.in);
 		int n=s.nextInt(),m=s.nextInt(),u=s.nextInt(),a[]=new int[n],r=0,i=0;
 		while(true) {
+			System.out.println(i);
 			a[i]++;
 			r++;
 			if(a[i]==m) {
@@ -19,5 +20,4 @@ public class P1592 {
 			if(i>=n)i-=n;
 		}
 	}
-
 }
