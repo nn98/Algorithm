@@ -15,7 +15,7 @@ public class P1592 {
 				System.out.println(r);
 				return;
 			}
-			i+=u*(i%2==0?-1:1);
+			i+=u*(a[i]%2==0?-1:1);
 			if(i<0)i=n-i;
 			if(i>=n)i-=n;
 		}
