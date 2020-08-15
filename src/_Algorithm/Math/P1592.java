@@ -6,7 +6,7 @@ public class P1592 {
 
 	public static void main(String[] args) {
 		Scanner s=new Scanner(System.in);
-		int n=s.nextInt(),m=s.nextInt(),u=s.nextInt(),a[]=new int[n],r=0,i=0;
+		int n=s.nextInt(),m=s.nextInt(),u=s.nextInt(),a[]=new int[n],r=-1,i=0;
 		while(true) {
 			System.out.println(i);
 			a[i]++;
