@@ -19,7 +19,7 @@ public class P15501 {
 			}
 		}
 		System.out.println(x+" "+y);
-		for(i=0;i<n;i++) {
+		for(i=0;++i<n;) {
 			if(x>=n)x-=n;
 			if(y>=n)y-=n;
 //			r+=a[x]==b[y]?1:0;
@@ -35,7 +35,7 @@ public class P15501 {
 		}
 		r=0;
 		System.out.println(X+" "+Y);
-		for(i=0;i<n;i++) {
+		for(i=0;++i<n;) {
 			if(X>=n)X-=n;
 			if(Y<0)Y+=n;
 //			r+=a[x]==b[y]?1:0;
