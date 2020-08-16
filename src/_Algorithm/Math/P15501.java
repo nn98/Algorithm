@@ -15,6 +15,7 @@ public class P15501 {
 			b[i]=s.nextInt();
 			if(b[i++]==1)y=i;
 		}
+		System.out.println(x+" "+y);
 		for(i=0;i<n;i++) {
 			if(x>=n)x-=n;
 			if(y>=n)y-=n;
