@@ -28,21 +28,21 @@ public class P15501 {
 			x++;
 			y++;
 		}
-		System.out.println(X+" "+Y);
 		System.out.println("Straight: "+r);
 		if(r==n-1) {
 			System.out.println("good puzzle");
 			return;
 		}
 		r=0;
+		System.out.println(X+" "+Y);
 		for(i=0;i<n;i++) {
-			if(x>=n)x-=n;
-			if(y<0)y+=n;
+			if(X>=n)X-=n;
+			if(Y<0)Y+=n;
 //			r+=a[x]==b[y]?1:0;
-			if(a[x]==b[y])r++;
+			if(a[X]==b[Y])r++;
 			else break;
-			x++;
-			y--;
+			X++;
+			Y--;
 		}
 		System.out.println("Back: "+r);
 		System.out.println(r==n-1?"good puzzle":"bad puzzle");
