@@ -24,6 +24,7 @@ public class P15501 {
 			x++;
 			y++;
 		}
+		System.out.println("Straight: "+r);
 		if(r==n-1) {
 			System.out.println("good puzzle");
 			return;
@@ -38,6 +39,7 @@ public class P15501 {
 			x++;
 			y--;
 		}
+		System.out.println("Back: "+r);
 		System.out.println(r==n-1?"good puzzle":"bad puzzle");
 //		System.out.println(x);
 	}
