@@ -8,6 +8,9 @@ import java.io.OutputStreamWriter;
 public class P5567 {
 
 	static int n,m,a[][],h[],i,j;
+	static void o(int x,int c) {
+		
+	}
 	public static void main(String[] args)throws Exception{
 		BufferedReader r=new BufferedReader(new InputStreamReader(System.in));
 		BufferedWriter w=new BufferedWriter(new OutputStreamWriter(System.out));
@@ -19,6 +22,7 @@ public class P5567 {
 			char[]b=r.readLine().toCharArray();
 			i=b[0]-'0';
 			j=b[2]-'0';
+			a[i][j]=a[j][i]=1;
 		}
 	}
 
