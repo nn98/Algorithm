@@ -33,7 +33,7 @@ public class P5567 {
 			j=b[2]-'0';
 			a[i][j]=a[j][i]=1;
 		}
-		for(int[]b:a)System.out.println(Arrays.toString(b));
+//		for(int[]b:a)System.out.println(Arrays.toString(b));
 		m=0;
 		h[1]++;
 		o(1,1);
