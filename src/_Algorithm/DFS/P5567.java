@@ -4,6 +4,7 @@ import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
+import java.util.Arrays;
 
 public class P5567 {
 
@@ -29,6 +30,7 @@ public class P5567 {
 			j=b[2]-'0';
 			a[i][j]=a[j][i]=1;
 		}
+		for(int[]b:a)System.out.println(Arrays.toString(b));
 		m=0;
 		o(0,1);
 		System.out.println(m);
