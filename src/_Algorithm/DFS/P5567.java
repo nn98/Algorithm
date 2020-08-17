@@ -35,6 +35,7 @@ public class P5567 {
 		}
 		for(int[]b:a)System.out.println(Arrays.toString(b));
 		m=0;
+		h[1]++;
 		o(1,1);
 		System.out.println(m);
 	}
