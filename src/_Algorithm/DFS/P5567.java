@@ -12,7 +12,10 @@ public class P5567 {
 	static void o(int x,int c) {
 		for(int i=0;i<n;i++) {
 			if(a[x][i]>0) {
-				m++;
+				if(h[i]==0) {
+					m++;
+					h[i]++;
+				}
 				if(c>0)o(i,0);
 			}
 		}
