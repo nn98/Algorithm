@@ -4,9 +4,7 @@ import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
-
 public class P5567 {
-
 	static int n,m,a[][],h[],i,j;
 	static void o(int x,int c) {
 		for(int i=0;i<n;i++) {
@@ -38,5 +36,4 @@ public class P5567 {
 		o(1,1);
 		System.out.println(m);
 	}
-
 }
