@@ -4,7 +4,6 @@ import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
-import java.util.Arrays;
 
 public class P5567 {
 
@@ -28,9 +27,9 @@ public class P5567 {
 		a=new int[n][n];
 		h=new int[n];
 		while(m-->0) {
-			char[]b=r.readLine().toCharArray();
-			i=b[0]-'0';
-			j=b[2]-'0';
+			String[]b=r.readLine().split(" ");
+			i=Integer.parseInt(b[0]);
+			j=Integer.parseInt(b[1]);
 			a[i][j]=a[j][i]=1;
 		}
 //		for(int[]b:a)System.out.println(Arrays.toString(b));
