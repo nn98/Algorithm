@@ -20,7 +20,7 @@ public class P5567 {
 	public static void main(String[] args)throws Exception{
 		BufferedReader r=new BufferedReader(new InputStreamReader(System.in));
 		BufferedWriter w=new BufferedWriter(new OutputStreamWriter(System.out));
-		n=Integer.parseInt(r.readLine());
+		n=Integer.parseInt(r.readLine())+1;
 		m=Integer.parseInt(r.readLine());
 		a=new int[n][n];
 		h=new int[n];
@@ -32,7 +32,7 @@ public class P5567 {
 		}
 		for(int[]b:a)System.out.println(Arrays.toString(b));
 		m=0;
-		o(0,1);
+		o(1,1);
 		System.out.println(m);
 	}
 
