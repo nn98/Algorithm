@@ -5,10 +5,11 @@ import java.util.Scanner;
 public class P9933_2 {
 	public static void main(String[] args) {
 		Scanner s=new Scanner(System.in);
-		int n=s.nextInt(),i=0,j,l,r;
+		int n=s.nextInt(),i=n,j,l,r;
 		s.nextLine();
 		StringBuffer[]a=new StringBuffer[n];
-		while(n-->0) {
+		while(i-->0)a[i]=new StringBuffer(s.nextLine());
+		for(i=0;i<n;i++) {
 			a[i]=new StringBuffer(s.nextLine());
 			l=a[i].length()-1;
 			if(a[i].charAt(0)==a[i].charAt(l)) {
@@ -30,7 +31,6 @@ public class P9933_2 {
 						}
 				}
 			}
-			i++;
 		}
 	}
 
