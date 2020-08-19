@@ -18,7 +18,6 @@ public class P9933_2 {
 						r++;
 				if(r==0) {
 					System.out.print(l+1+" "+a[i].charAt(l/2));
-					return;
 				}
 			}
 			if(i>0) {
@@ -26,11 +25,9 @@ public class P9933_2 {
 					if(a[j].charAt(0)==a[i].charAt(l))
 						if(a[j].reverse().toString().equals(a[i].toString())) {
 							System.out.print(l+1+" "+a[j].charAt(l/2));
-							return;
 						}
 				}
 			}
 		}
 	}
-
 }
