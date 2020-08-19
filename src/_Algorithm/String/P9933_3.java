@@ -14,7 +14,7 @@ public class P9933_3 {
 			for(j=0;j<=i;j++) {
 				if(a[i].length()==a[j].length()) {
 					b=a[j].reverse();
-					if(a[i].equals(b))
+					if(a[i].toString().equals(b.toString()))
 						System.out.println(l+1+" "+a[i].charAt(l/2));
 				}
 			}
