@@ -15,10 +15,10 @@ public class P9933 {
 			if(a[i].charAt(0)==a[i].charAt(l)) {
 				r=0;
 				for(j=0;j<l/2&&r==0;j++)
-					if(a[i].charAt(j)!=a[i].charAt(l-i))
+					if(a[i].charAt(j)!=a[i].charAt(l-j))
 						r++;
 				if(r==0) {
-					System.out.print(l+1+" "+a[j].charAt(l/2));
+					System.out.print(l+1+" "+a[i].charAt(l/2));
 					return;
 				}
 			}
