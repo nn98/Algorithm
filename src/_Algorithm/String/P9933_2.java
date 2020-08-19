@@ -10,7 +10,6 @@ public class P9933_2 {
 		StringBuffer[]a=new StringBuffer[n];
 		while(i-->0)a[i]=new StringBuffer(s.nextLine());
 		for(i=0;i<n;i++) {
-			a[i]=new StringBuffer(s.nextLine());
 			l=a[i].length()-1;
 			if(a[i].charAt(0)==a[i].charAt(l)) {
 				r=0;
