@@ -12,8 +12,8 @@ public class P1083 {
 		for(;i<n;a[i++]=s.nextInt());
 		for(i=s.nextInt();i>0;) {
 			j=0;
-			for(b=0;b<n-2;b++)
-				for(c=b;c<n-1;c++)
+			for(b=0;b<n-2&&i>0;b++)
+				for(c=b;c<n-1&&i>0;c++)
 					if(a[c]<a[c+1]) {
 						t=a[c];
 						a[c]=a[c+1];
