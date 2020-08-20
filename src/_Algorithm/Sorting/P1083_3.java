@@ -18,6 +18,7 @@ public class P1083_3 {
 			m=a[t];
 			for(j=0;j<=t;a[j+1]=a[j]);
 			a[0]=m;
+			i-=t;
 		}
 		for(int b:a)System.out.print(b+" ");
 	}
