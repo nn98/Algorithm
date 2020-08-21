@@ -16,7 +16,7 @@ public class P1083_3 {
 					if(j<=i)
 						t=j;
 			m=a[t];
-			for(j=0;j<=t;a[j+1]=a[j]);
+			for(j=0;j<=t;a[j+1]=a[j++]);
 			a[0]=m;
 			i-=t;
 		}
