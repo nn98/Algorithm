@@ -12,6 +12,7 @@ public class P1083_3 {
 		while(i>0) {
 			System.out.print("from:\t");
 			for(int b:a)System.out.print(b+" ");
+			System.out.println();
 			t=r;
 			for(j=t+1;j<n;j++)
 				if(a[j]>a[t])
