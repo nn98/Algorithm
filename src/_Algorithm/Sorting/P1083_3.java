@@ -17,6 +17,7 @@ public class P1083_3 {
 						t=j;
 			if(t==r) {
 				r++;
+				if(r==n)break;
 				continue;
 			}
 			m=a[t];
