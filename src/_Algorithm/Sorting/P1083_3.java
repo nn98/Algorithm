@@ -6,13 +6,13 @@ public class P1083_3 {
 
 	public static void main(String[] args) {
 		Scanner s=new Scanner(System.in);
-		int n=s.nextInt(),a[]=new int[n],i=0,j,r=0,t,m,u;
+		int n=s.nextInt(),a[]=new int[n],i=0,j,r=0,t,m,u,T;
 		for(;i<n;a[i++]=s.nextInt());
 		i=s.nextInt();
 		while(i>0) {
 			System.out.print("from:\t");
 			for(int b:a)System.out.print(b+" ");
-			System.out.println();
+			System.out.println(" at: "+r);
 			t=r;
 			for(j=t+1;j<n;j++)
 				if(a[j]>a[t])
@@ -23,13 +23,13 @@ public class P1083_3 {
 				if(r==n)break;
 				continue;
 			}
-			m=a[t];
+			m=a[T=t];
 			u=a[r];
 //			for(j=0;j<=t;a[j+1]=a[j++]);
 			for(;t>=r;a[t]=a[t--+1]);
 			a[r]=m;
-			a[t]=u;
-			i-=t;
+			a[T]=u;
+			i-=T;
 			System.out.print("now:\t");
 			for(int b:a)System.out.print(b+" ");
 			System.out.println();
