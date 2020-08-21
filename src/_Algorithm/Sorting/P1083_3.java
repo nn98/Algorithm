@@ -29,6 +29,7 @@ public class P1083_3 {
 			i-=t;
 			System.out.print("now:\t");
 			for(int b:a)System.out.print(b+" ");
+			System.out.println();
 		}
 		for(int b:a)System.out.print(b+" ");
 	}
