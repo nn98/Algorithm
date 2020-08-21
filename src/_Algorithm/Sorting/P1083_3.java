@@ -10,7 +10,7 @@ public class P1083_3 {
 		for(;i<n;a[i++]=s.nextInt());
 		i=s.nextInt();
 		while(i>0) {
-			System.out.print("from:\t");
+			System.out.print("past:\t");
 			for(int b:a)System.out.print(b+" ");
 			System.out.println(" at: "+r);
 			t=r;
@@ -29,10 +29,10 @@ public class P1083_3 {
 			for(;t>=r;a[t]=a[t--+1]);
 			a[r]=m;
 			a[T]=u;
-			i-=T;
 			System.out.print("now:\t");
 			for(int b:a)System.out.print(b+" ");
-			System.out.println();
+			i-=T;
+			System.out.println(" minus: "+T+" remain: "+i);
 		}
 		for(int b:a)System.out.print(b+" ");
 	}
