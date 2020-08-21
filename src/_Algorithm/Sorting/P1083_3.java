@@ -17,7 +17,7 @@ public class P1083_3 {
 			t=r;
 			for(j=t+1;j<n;j++)
 				if(a[j]>a[t])
-					if(j<=i)
+					if(j-r<=i)
 						t=j;
 			if(t==r) {
 				if(r==n)break;
