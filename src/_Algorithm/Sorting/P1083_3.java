@@ -10,15 +10,19 @@ public class P1083_3 {
 		for(;i<n;a[i++]=s.nextInt());
 		i=s.nextInt();
 		while(i>0) {
-			t=0;
-			for(j=1;j<n;j++)
+			t=r;
+			for(j=t+1;j<n;j++)
 				if(a[j]>a[t])
 					if(j<=i)
 						t=j;
-			if(t==0)break;
+			if(t==r) {
+				r++;
+				continue;
+			}
 			m=a[t];
-			for(j=0;j<=t;a[j+1]=a[j++]);
-			a[0]=m;
+//			for(j=0;j<=t;a[j+1]=a[j++]);
+			for(;t>r;a[t-1]=a[t--]);
+			a[r]=m;
 			i-=t;
 		}
 		for(int b:a)System.out.print(b+" ");
