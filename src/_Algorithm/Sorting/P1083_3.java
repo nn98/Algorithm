@@ -22,7 +22,7 @@ public class P1083_3 {
 			}
 			m=a[t];
 //			for(j=0;j<=t;a[j+1]=a[j++]);
-			for(;t>r;a[t]=a[t--+1]);
+			for(;t>=r;a[t]=a[t--+1]);
 			a[r]=m;
 			i-=t;
 		}
