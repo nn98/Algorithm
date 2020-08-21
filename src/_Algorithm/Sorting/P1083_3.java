@@ -6,10 +6,11 @@ public class P1083_3 {
 
 	public static void main(String[] args) {
 		Scanner s=new Scanner(System.in);
-		int n=s.nextInt(),a[]=new int[n],i=0,j,r=0,t,m,u,T;
+		int n=s.nextInt(),a[]=new int[n],i=0,j,r=-1,t,m,u,T;
 		for(;i<n;a[i++]=s.nextInt());
 		i=s.nextInt();
 		while(i>0) {
+			r++;
 			System.out.print("past:\t");
 			for(int b:a)System.out.print(b+" ");
 			System.out.println(" at: "+r);
@@ -19,7 +20,6 @@ public class P1083_3 {
 					if(j<=i)
 						t=j;
 			if(t==r) {
-				r++;
 				if(r==n)break;
 				continue;
 			}
