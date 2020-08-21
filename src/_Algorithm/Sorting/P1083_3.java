@@ -27,6 +27,7 @@ public class P1083_3 {
 			M=t-r;
 			u=a[r];
 //			for(j=0;j<=t;a[j+1]=a[j++]);
+			if(t==n-1)t--;
 			for(;t>=r;a[t]=a[t--+1]);
 			a[r]=m;
 			a[T]=u;
