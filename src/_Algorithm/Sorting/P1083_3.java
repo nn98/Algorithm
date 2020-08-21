@@ -22,5 +22,4 @@ public class P1083_3 {
 		}
 		for(int b:a)System.out.print(b+" ");
 	}
-
 }
