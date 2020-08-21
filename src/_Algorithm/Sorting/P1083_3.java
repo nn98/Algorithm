@@ -15,6 +15,7 @@ public class P1083_3 {
 				if(a[j]>a[t])
 					if(j<=i)
 						t=j;
+			if(t==0)break;
 			m=a[t];
 			for(j=0;j<=t;a[j+1]=a[j++]);
 			a[0]=m;
