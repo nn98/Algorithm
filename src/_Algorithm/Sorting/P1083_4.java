@@ -1,7 +1,6 @@
 package _Algorithm.Sorting;
 
 import java.util.Scanner;
-
 public class P1083_4 {
 	public static void main(String[] args) {
 		Scanner s=new Scanner(System.in);
