@@ -5,7 +5,7 @@ import java.util.Stack;
 public class P2504 {
 
 	public static void main(String[] args) {
-		int c=0,d=0,r=0,v,f=0;
+		int c=0,d=0,r=0,v=0,f=0;
 		Stack<Character>s=new Stack();
 		for(char a:new java.util.Scanner(System.in).next().toCharArray()) {
 			switch(a) {
@@ -13,6 +13,9 @@ public class P2504 {
 				if(f!=0) {
 					r+=f;
 					f=0;
+					if(c==0&&d==0) {
+						v+=r;
+					}
 				}
 				c++;
 				break;
