@@ -25,7 +25,7 @@ public class P1083_C {
 			}
 			a[i]=x;
 		}
-		for(int b:a)System.out.print(b+" ");
+		for(i=0;i<n;i++)System.out.print(a[i]+" ");
 	}
 
 }
