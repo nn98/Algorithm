@@ -8,7 +8,6 @@ public class P2504 {
 		int c=0,d=0,r=0,v=0,f=0;
 		Stack<Character>s=new Stack();
 		for(char a:new java.util.Scanner(System.in).next().toCharArray()) {
-			System.out.println(a+" "+v);
 			switch(a) {
 			case '(':
 				c++;
@@ -37,6 +36,7 @@ public class P2504 {
 				}
 				break;
 			}
+			System.out.println(a+" "+v);
 		}
 		System.out.print(r+v);
 	}
