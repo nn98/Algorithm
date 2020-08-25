@@ -40,9 +40,6 @@ public class P2504_2 {
 				if(s.isEmpty()) {
 					r+=c;
 					c=0;
-				}else {
-					d+=c;
-					c=0;
 				}
 				break;
 			case ']':
@@ -59,9 +56,6 @@ public class P2504_2 {
 				}
 				if(s.isEmpty()) {
 					r+=c;
-					c=0;
-				}else {
-					d+=c;
 					c=0;
 				}
 				break;
