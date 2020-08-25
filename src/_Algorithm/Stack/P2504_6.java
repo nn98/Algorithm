@@ -46,7 +46,11 @@ public class P2504_6 {
 				return;
 			}
 		}
+		try {
 		while(i-->0)v+=Integer.parseInt(a[i]);
+		}catch(Exception e) {
+			v=0;
+		}
 		System.out.println(v);
 	}
 
