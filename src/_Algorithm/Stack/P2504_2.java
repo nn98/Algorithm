@@ -33,8 +33,8 @@ public class P2504_2 {
 				}
 				if(c==0)c=2;
 				else {
-					if(d!=0)c+=d;
-					d=0;
+//					if(d!=0)c+=d;
+//					d=0;
 					c*=2;
 				}
 				if(s.isEmpty()) {
@@ -50,8 +50,8 @@ public class P2504_2 {
 				}
 				if(c==0)c=3;
 				else {
-					if(d!=0)c+=d;
-					d=0;
+//					if(d!=0)c+=d;
+//					d=0;
 					c*=3;
 				}
 				if(s.isEmpty()) {
