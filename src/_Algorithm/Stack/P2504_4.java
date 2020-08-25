@@ -6,6 +6,7 @@ public class P2504_4 {
 
 	public static void main(String[] args){
 		Stack<Character> s=new Stack();
+		s.pop();
 		int b,r=0;
 		for(char a:new java.util.Scanner(System.in).next().toCharArray()) {
 			try {
