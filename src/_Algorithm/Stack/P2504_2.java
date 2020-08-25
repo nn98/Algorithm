@@ -13,9 +13,17 @@ public class P2504_2 {
 			switch(a) {
 			case '(':
 				s.push(a);
+				if(c!=0) {
+					d+=c;
+					c=0;
+				}
 				break;
 			case '[':
 				s.push(a);
+				if(c!=0) {
+					d+=c;
+					c=0;
+				}
 				break;
 			case ')':
 				b=s.pop();
@@ -33,7 +41,7 @@ public class P2504_2 {
 					r+=c;
 					c=0;
 				}else {
-					d=c;
+					d+=c;
 					c=0;
 				}
 				break;
