@@ -1,5 +1,4 @@
 package _Algorithm.Stack;
-
 public class P2504_6{
 	public static void main(String[] args) {
 		String[]a=new String[32];
