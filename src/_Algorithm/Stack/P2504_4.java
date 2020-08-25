@@ -24,9 +24,9 @@ public class P2504_4 {
 				}
 				b=(char)s.peek();
 				if(b=='('||b=='[')
-					s.push(2);
+					s.push((char) 2);
 				else
-					s.push((int)s.pop()*2);
+					s.push((char) ((int)s.pop()*2));
 				break;
 			case ']':
 				b=(char)s.pop();
@@ -36,9 +36,9 @@ public class P2504_4 {
 				}
 				b=(char)s.peek();
 				if(b=='('||b=='[')
-					s.push(3);
+					s.push((char) 3);
 				else
-					s.push((int)s.pop()*3);
+					s.push((char) ((int)s.pop()*3));
 				break;
 			}
 			}catch(Exception e) {
