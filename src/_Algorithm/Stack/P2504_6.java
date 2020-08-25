@@ -1,6 +1,6 @@
 package _Algorithm.Stack;
 
-public class P2504_6 {
+public class P2504_6{
 	public static void main(String[] args) {
 		String[]a=new String[32];
 		int i=0,r=0,v=0;
@@ -53,5 +53,4 @@ public class P2504_6 {
 		}
 		System.out.println(v);
 	}
-
 }
