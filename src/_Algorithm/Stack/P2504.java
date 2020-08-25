@@ -42,7 +42,7 @@ public class P2504 {
 				}
 				break;
 			}
-			System.out.println(a+" "+v);
+			System.out.println(a+" "+v+" "+f);
 		}
 		System.out.print(r+v);
 	}
