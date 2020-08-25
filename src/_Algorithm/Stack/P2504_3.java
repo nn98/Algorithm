@@ -53,7 +53,6 @@ public class P2504_3 {
 				}
 				break;
 			}
-			System.out.println(a+" "+v+" "+f);
 		}
 		System.out.print((c==0&d==0)?r+v:0);
 	}
