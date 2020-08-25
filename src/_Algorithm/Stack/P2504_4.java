@@ -5,7 +5,7 @@ import java.util.Stack;
 public class P2504_4 {
 
 	public static void main(String[] args){
-		Stack s=new Stack();
+		Stack<Character> s=new Stack();
 		int b,r=0;
 		for(char a:new java.util.Scanner(System.in).next().toCharArray()) {
 			try {
