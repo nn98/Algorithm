@@ -43,7 +43,6 @@ public class P2504_4 {
 			}
 			}catch(Exception e) {
 				System.out.print(0);
-				return;
 			}
 		}
 		System.out.print((int)s.pop());
