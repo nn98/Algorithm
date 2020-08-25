@@ -22,11 +22,8 @@ public class P2504_6 {
 					}else if(a[i-1].equals("(")) {
 						a[--i]="2";			
 					}else {
-						System.out.println("from "+i);
 						while(!(a[--i].equals("(")))
 							v+=Integer.parseInt(a[i]);
-						System.out.println("to "+i);
-						System.out.println(2+" * "+v);
 						a[i]=""+v*2;
 						v=0;
 					}
@@ -40,7 +37,6 @@ public class P2504_6 {
 					}else {
 						while(!(a[--i].equals("[")))
 							v+=Integer.parseInt(a[i]);
-						System.out.println(3+" * "+v);
 						a[i]=""+v*3;
 						v=0;
 					}
@@ -51,10 +47,9 @@ public class P2504_6 {
 				System.out.print(0);
 				return;
 			}
-			System.out.println(Arrays.toString(a));
 		}
-		System.out.println(i);
-		System.out.println(Arrays.toString(a));
+		while(i-->0)v+=Integer.parseInt(a[i]);
+		System.out.println(v);
 	}
 
 }
