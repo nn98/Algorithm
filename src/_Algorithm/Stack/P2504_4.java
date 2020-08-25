@@ -19,7 +19,7 @@ public class P2504_4 {
 				b=s.pop();
 				if(b=='[') {
 					System.out.print(0);
-					break;
+					return;
 				}
 				b=s.peek();
 				if(b=='('||b=='[')
@@ -31,7 +31,7 @@ public class P2504_4 {
 				b=s.pop();
 				if(b=='[') {
 					System.out.print(0);
-					break;
+					return;
 				}
 				b=s.peek();
 				if(b=='('||b=='[')
