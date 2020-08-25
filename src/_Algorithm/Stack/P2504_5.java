@@ -11,10 +11,10 @@ public class P2504_5 {
 			try {
 				switch(b) {
 				case "(":
-					a[i]=b;
+					a[i++]=b;
 					break;
 				case "[":
-					a[i]=b;
+					a[i++]=b;
 					break;
 				case ")":
 					if(a[i-1].equals("[")) {
@@ -39,7 +39,6 @@ public class P2504_5 {
 					}
 					break;
 				}
-				i++;
 			}catch(Exception e) {
 				System.out.print(0);
 				return;
