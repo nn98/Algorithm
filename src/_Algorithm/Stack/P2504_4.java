@@ -24,8 +24,14 @@ public class P2504_4 {
 				b=s.peek();
 				if(b=='('||b=='[')
 					s.push(2);
-				else
-					s.push(s.pop()*2);
+				else {
+					do {
+						r+=b;
+						b=s.pop();
+					}while(b!='('||b!='[');
+					s.push(b);
+					s.push(r*2);
+				}
 				break;
 			case ']':
 				b=s.pop();
@@ -41,7 +47,8 @@ public class P2504_4 {
 						r+=b;
 						b=s.pop();
 					}while(b!='('||b!='[');
-					s.push((int)s.pop()*3);
+					s.push(b);
+					s.push(r*3);
 				}
 				break;
 
