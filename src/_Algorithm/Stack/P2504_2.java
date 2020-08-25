@@ -60,8 +60,8 @@ public class P2504_2 {
 				}
 				break;
 			}
-			r+=c;
 		}
+		r+=c;
 		System.out.print(r);
 	}
 
