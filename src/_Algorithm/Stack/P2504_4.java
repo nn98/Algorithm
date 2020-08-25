@@ -5,10 +5,6 @@ import java.util.Stack;
 public class P2504_4 {
 
 	public static void main(String[] args) {
-		System.out.println((int)'(');
-		System.out.println((int)')');
-		System.out.println((int)'[');
-		System.out.println((int)']');
 		Stack<Character>s=new Stack();
 		int b;
 		for(char a:new java.util.Scanner(System.in).next().toCharArray()) {
