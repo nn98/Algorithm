@@ -56,6 +56,7 @@ public class P2504 {
 			}
 			System.out.println(a+" "+v+" "+f);
 		}
+		
 		System.out.print(r+v);
 	}
 
