@@ -26,19 +26,31 @@ public class P2504 {
 			case ')':
 				c--;
 				if(f==0) f=2;
-				else f*=2;
-				if(c==0&d==0) {
-					v+=f;
-					f=0;
+				else {
+					if(c==0&d==0) {
+						f+=p;
+						p=0;
+						f*=2;
+						v+=f;
+						f=0;
+					}else {
+						f*=2;
+					}
 				}
 				break;
 			case ']':
 				d--;
 				if(f==0) f=3;
-				else f*=3;
-				if(c==0&d==0) {
-					v+=f;
-					f=0;
+				else {
+					if(c==0&d==0) {
+						f+=p;
+						p=0;
+						f*=3;
+						v+=f;
+						f=0;
+					}else {
+						f*=3;
+					}
 				}
 				break;
 			}
