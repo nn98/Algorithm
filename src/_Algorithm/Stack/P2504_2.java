@@ -33,13 +33,13 @@ public class P2504_2 {
 				}
 				if(c==0)c=2;
 				else {
+					if(s.isEmpty()) {
+						r+=c;
+						c=0;
+					}
 //					if(d!=0)c+=d;
 //					d=0;
 					c*=2;
-				}
-				if(s.isEmpty()) {
-					r+=c;
-					c=0;
 				}
 				break;
 			case ']':
@@ -50,13 +50,13 @@ public class P2504_2 {
 				}
 				if(c==0)c=3;
 				else {
+					if(s.isEmpty()) {
+						r+=c;
+						c=0;
+					}
 //					if(d!=0)c+=d;
 //					d=0;
 					c*=3;
-				}
-				if(s.isEmpty()) {
-					r+=c;
-					c=0;
 				}
 				break;
 			}
