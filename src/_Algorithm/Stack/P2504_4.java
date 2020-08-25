@@ -36,8 +36,13 @@ public class P2504_4 {
 				b=s.peek();
 				if(b=='('||b=='[')
 					s.push(3);
-				else
+				else {
+					do {
+						r+=b;
+						b=s.pop();
+					}while(b!='('||b!='[');
 					s.push((int)s.pop()*3);
+				}
 				break;
 
 			}
