@@ -9,6 +9,7 @@ public class P2504_2 {
 		int c=0,d=0,r=0;
 		Stack<Character>s=new Stack();
 		for(char a:new java.util.Scanner(System.in).next().toCharArray()) {
+			System.out.println(c+" "+d);
 			switch(a) {
 			case '(':
 				s.push(a);
@@ -27,7 +28,10 @@ public class P2504_2 {
 					if(d!=0)c+=d;
 					c*=2;
 				}
-				if(s.isEmpty())
+				if(s.isEmpty()) {
+					r+=c;
+					c=0;
+				}
 				break;
 			case ']':
 				b=s.pop();
@@ -35,8 +39,18 @@ public class P2504_2 {
 					System.out.print(0);
 					return;
 				}
+				if(c==0)c=3;
+				else {
+					if(d!=0)c+=d;
+					c*=3;
+				}
+				if(s.isEmpty()) {
+					r+=c;
+					c=0;
+				}
 				break;
 			}
+			System.out.print(r);
 		}
 	}
 
