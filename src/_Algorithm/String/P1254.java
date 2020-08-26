@@ -4,7 +4,7 @@ public class P1254 {
 
 	public static void main(String[] args) {
 		char[]a=new char[2000];
-		int i,j,l=0,c;
+		int i,j,l=0,c,s=0;
 		for(char b:new java.util.Scanner(System.in).next().toCharArray())
 			a[l++]=b;
 		l--;
@@ -18,6 +18,7 @@ public class P1254 {
 				System.out.print(a);
 				return;
 			}
+			a[++l]=a[s++];
 		}
 	}
 
