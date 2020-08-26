@@ -30,6 +30,7 @@ public class P2608 {
 		c[i++]=new N(500,"D");
 		c[i++]=new N(1000,"M");
 		for(;x<2;x++) {
+			System.out.println(x);
 			for(i=0;i<a[x].length();i++) {
 				v=0;
 				e=true;
@@ -50,7 +51,7 @@ public class P2608 {
 							i++;
 							break;
 						}
-					if(j==8){
+					if(j==p-1){
 						d=a[x].substring(i,i+1);
 						for(j=0;j<p;j++)
 							if(c[j].s.equals(d)) {
