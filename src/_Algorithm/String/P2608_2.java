@@ -62,5 +62,11 @@ public class P2608_2 {
 			}
 		}
 		System.out.println(r);
+		for(i=p;i-->0;) {
+			if(r>=c[i].v) {
+				System.out.print(c[i].s);
+				r-=c[i].v;
+			}
+		}
 	}
 }
