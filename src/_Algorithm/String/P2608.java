@@ -21,10 +21,10 @@ public class P2608 {
 		boolean e;
 		c[i++]=new N(1,"I");
 		c[i++]=new N(4,"IV");
-		c[i++]=new N(5,"IV");
+		c[i++]=new N(5,"V");
 		c[i++]=new N(10,"X");
 		c[i++]=new N(40,"XL");
-		c[i++]=new N(50,"IV");
+		c[i++]=new N(50,"L");
 		c[i++]=new N(100,"C");
 		c[i++]=new N(400,"CD");
 		c[i++]=new N(500,"D");
