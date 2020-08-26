@@ -51,7 +51,7 @@ public class P2608 {
 							i++;
 							break;
 						}
-					if(j==p-1){
+					if(j==p){
 						d=a[x].substring(i,i+1);
 						for(j=0;j<p;j++)
 							if(c[j].s.equals(d)) {
