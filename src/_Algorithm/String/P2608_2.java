@@ -1,7 +1,6 @@
 package _Algorithm.String;
-
+// ㅅㅂ 그냥 개노가다아녀
 import java.util.Scanner;
-
 public class P2608_2 {
 	static class N{
 		int v;
