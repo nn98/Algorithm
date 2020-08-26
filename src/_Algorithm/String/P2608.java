@@ -55,8 +55,8 @@ public class P2608 {
 							}
 					}
 				}
+				r+=v;
 			}
-			r+=v;
 		}
 		System.out.println(r);
 	}
