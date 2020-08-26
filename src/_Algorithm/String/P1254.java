@@ -9,6 +9,7 @@ public class P1254 {
 			a[l++]=b;
 		l--;
 		while(true) {
+			System.out.println(a);
 			c=i=0;
 			j=l;
 			while(i<=j&c==0)
@@ -19,6 +20,7 @@ public class P1254 {
 				return;
 			}
 			a[++l]=a[s++];
+			if(l>20)break;
 		}
 	}
 
