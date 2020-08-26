@@ -27,5 +27,4 @@ public class P1254 {
 			r++;
 		}
 	}
-
 }
