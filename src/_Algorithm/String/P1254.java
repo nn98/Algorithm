@@ -10,7 +10,7 @@ public class P1254 {
 		f=s=(r=l)*2;
 		l=0;
 		while(true) {
-			System.out.println(a);
+//			System.out.println(a);
 			c=i=0;
 			j=s;
 			while(i<=j&c==0) {
@@ -19,7 +19,7 @@ public class P1254 {
 					c++;
 			}
 			if(c==0) {
-				System.out.println(a);
+//				System.out.println(a);
 				System.out.println(r);
 				return;
 			}
