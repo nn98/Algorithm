@@ -19,7 +19,8 @@ public class P1254 {
 					c++;
 			}
 			if(c==0) {
-				System.out.print(a+" "+r);
+				System.out.println(a);
+				System.out.println(r);
 				return;
 			}
 			a[f--]=a[l++];
