@@ -63,6 +63,7 @@ public class P2608 {
 				}
 				r+=v;
 			}
+			System.out.println(r);
 		}
 		System.out.println(r);
 	}
