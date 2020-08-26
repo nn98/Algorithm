@@ -14,7 +14,7 @@ public class P2608_2 {
 	public static void main(String[] args) {
 		Scanner s=new Scanner(System.in);
 		String a[]=new String[2],d;
-		int i=0,j,v=0,x=0,r=0,p=11;
+		int i=0,j,v=0,x=0,r=0,p=13;
 		N c[]=new N[p];
 		for(;i<2;a[i++]=s.next());
 		i=0;
@@ -22,9 +22,11 @@ public class P2608_2 {
 		c[i++]=new N(1,"I");
 		c[i++]=new N(4,"IV");
 		c[i++]=new N(5,"V");
+		c[i++]=new N(9,"IX");
 		c[i++]=new N(10,"X");
 		c[i++]=new N(40,"XL");
 		c[i++]=new N(50,"L");
+		c[i++]=new N(90,"XC");
 		c[i++]=new N(100,"C");
 		c[i++]=new N(400,"CD");
 		c[i++]=new N(500,"D");
