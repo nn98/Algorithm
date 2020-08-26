@@ -2,8 +2,6 @@ package _Algorithm.String;
 
 import java.util.Scanner;
 
-import _Algorithm.String.P2608.N;
-
 public class P2608_2 {
 	static class N{
 		int v;
@@ -33,7 +31,6 @@ public class P2608_2 {
 		c[i++]=new N(900,"CM");
 		c[i++]=new N(1000,"M");
 		for(;x<2;x++) {
-			System.out.println(x);
 			for(i=0;i<a[x].length();i++) {
 				v=0;
 				e=true;
@@ -41,7 +38,6 @@ public class P2608_2 {
 					d=a[x].substring(i);
 					for(j=0;j<p;j++)
 						if(c[j].s.equals(d)) {
-							System.out.println(d+" "+c[j].v);
 							v+=c[j].v;
 							break;
 						}
@@ -49,7 +45,6 @@ public class P2608_2 {
 					d=a[x].substring(i,i+2);
 					for(j=0;j<p;j++)
 						if(c[j].s.equals(d)) {
-							System.out.println(d+" "+c[j].v);
 							v+=c[j].v;
 							i++;
 							break;
@@ -58,7 +53,6 @@ public class P2608_2 {
 						d=a[x].substring(i,i+1);
 						for(j=0;j<p;j++)
 							if(c[j].s.equals(d)) {
-								System.out.println(d+" "+c[j].v);
 								v+=c[j].v;
 								break;
 							}
@@ -66,7 +60,6 @@ public class P2608_2 {
 				}
 				r+=v;
 			}
-			System.out.println(r);
 		}
 		System.out.println(r);
 	}
