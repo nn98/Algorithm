@@ -14,7 +14,7 @@ public class P2608 {
 	public static void main(String[] args) {
 		Scanner s=new Scanner(System.in);
 		String a[]=new String[2],d;
-		N c[]=new N[7];
+		N c[]=new N[8];
 		int i=0,j,v=0,x=0,r=0;
 		for(;i<2;a[i++]=s.next());
 		i=0;
@@ -33,20 +33,20 @@ public class P2608 {
 				e=true;
 				if(i==a[x].length()-1) {
 					d=a[x].substring(i);
-					for(j=0;j<7;j++)
+					for(j=0;j<8;j++)
 						if(c[j].s.equals(d)) {
 							v+=c[j].v;
 							break;
 						}
 				}else {
 					d=a[x].substring(i,i+2);
-					for(j=0;j<7;j++)
+					for(j=0;j<8;j++)
 						if(c[j].s.equals(d)) {
 							v+=c[j].v;
 							i++;
 							break;
 						}
-					if(j==7){
+					if(j==8){
 						d=a[x].substring(i,i+1);
 						for(j=0;j<7;j++)
 							if(c[j].s.equals(d)) {
