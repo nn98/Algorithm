@@ -14,15 +14,17 @@ public class P2608 {
 	public static void main(String[] args) {
 		Scanner s=new Scanner(System.in);
 		String a[]=new String[2],d;
-		N c[]=new N[8];
-		int i=0,j,v=0,x=0,r=0;
+		N c[]=new N[10];
+		int i=0,j,v=0,x=0,r=0,p=10;
 		for(;i<2;a[i++]=s.next());
 		i=0;
 		boolean e;
 		c[i++]=new N(1,"I");
 		c[i++]=new N(4,"IV");
+		c[i++]=new N(5,"IV");
 		c[i++]=new N(10,"X");
 		c[i++]=new N(40,"XL");
+		c[i++]=new N(50,"IV");
 		c[i++]=new N(100,"C");
 		c[i++]=new N(400,"CD");
 		c[i++]=new N(500,"D");
@@ -33,7 +35,7 @@ public class P2608 {
 				e=true;
 				if(i==a[x].length()-1) {
 					d=a[x].substring(i);
-					for(j=0;j<8;j++)
+					for(j=0;j<p;j++)
 						if(c[j].s.equals(d)) {
 							System.out.println(d+" "+c[j].v);
 							v+=c[j].v;
@@ -41,7 +43,7 @@ public class P2608 {
 						}
 				}else {
 					d=a[x].substring(i,i+2);
-					for(j=0;j<8;j++)
+					for(j=0;j<p;j++)
 						if(c[j].s.equals(d)) {
 							System.out.println(d+" "+c[j].v);
 							v+=c[j].v;
@@ -50,7 +52,7 @@ public class P2608 {
 						}
 					if(j==8){
 						d=a[x].substring(i,i+1);
-						for(j=0;j<7;j++)
+						for(j=0;j<p;j++)
 							if(c[j].s.equals(d)) {
 								System.out.println(d+" "+c[j].v);
 								v+=c[j].v;
