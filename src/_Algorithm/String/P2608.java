@@ -35,6 +35,7 @@ public class P2608 {
 					d=a[x].substring(i);
 					for(j=0;j<8;j++)
 						if(c[j].s.equals(d)) {
+							System.out.println(d+" "+c[j].v);
 							v+=c[j].v;
 							break;
 						}
@@ -42,6 +43,7 @@ public class P2608 {
 					d=a[x].substring(i,i+2);
 					for(j=0;j<8;j++)
 						if(c[j].s.equals(d)) {
+							System.out.println(d+" "+c[j].v);
 							v+=c[j].v;
 							i++;
 							break;
@@ -50,6 +52,7 @@ public class P2608 {
 						d=a[x].substring(i,i+1);
 						for(j=0;j<7;j++)
 							if(c[j].s.equals(d)) {
+								System.out.println(d+" "+c[j].v);
 								v+=c[j].v;
 								break;
 							}
