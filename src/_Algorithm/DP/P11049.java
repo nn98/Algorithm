@@ -8,5 +8,4 @@ public class P11049 {
 		Scanner s=new Scanner(System.in);
 		int n=s.nextInt(),a=s.nextInt(),b=s.nextInt(),c=s.nextInt(),d=s.nextInt(),e=s.nextInt(),f=s.nextInt();
 	}
-
 }
