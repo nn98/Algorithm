@@ -21,8 +21,7 @@ public class P2493_5 {
 				x.push(i);
 			}else {
 				t.push(j);
-				System.out.print(x.peek()
-						+" ");
+				System.out.print(x.peek()+" ");
 				x.push(i);
 			}
 		}
