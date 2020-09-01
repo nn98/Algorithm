@@ -12,6 +12,7 @@ public class P2493_3 {
 		for(;++i<n;)a.push(s.nextInt());
 		b.push(s.nextInt());
 		while(!a.isEmpty()&!b.isEmpty()) {
+			n--;
 			System.out.println(a+"\t"+b);
 			if(a.isEmpty()) {
 				System.out.println(0);
@@ -33,7 +34,6 @@ public class P2493_3 {
 				}
 				b.push(k);
 			}
-			n--;
 		}
 		for(int c:r)System.out.print(c+" ");
 	}
