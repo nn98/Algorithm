@@ -19,6 +19,7 @@ public class P2493 {
 				}
 			if(k==0)f.append(k+" ");
 		}
+		f.delete(f.length()-1,f.length());
 		System.out.print(f.reverse());
 	}
 
