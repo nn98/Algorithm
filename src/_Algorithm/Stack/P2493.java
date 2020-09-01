@@ -19,7 +19,8 @@ public class P2493 {
 				}
 			if(k==0)f.append(k+" ");
 		}
-		f.delete(f.length()-1,f.length());
+//		f.delete(f.length()-1,f.length());
+		f.deleteCharAt(f.length()-1);
 		System.out.print(f.reverse());
 	}
 
