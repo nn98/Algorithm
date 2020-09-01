@@ -8,7 +8,7 @@ public class P2493_2 {
 	public static void main(String[] args)throws Exception{
 		BufferedReader r=new BufferedReader(new InputStreamReader(System.in));
 		int n=Integer.parseInt(r.readLine()),a[]=new int[n],i=0,j,k;
-		for(char c:r.readLine().toCharArray())a[i++]=c-'0';
+		for(String s:r.readLine().split(" "))a[i++]=Integer.parseInt(s);
 		for(i=n;i-->0;) {
 			k=0;
 			for(j=i;j-->0;)
