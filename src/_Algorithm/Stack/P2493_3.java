@@ -13,19 +13,19 @@ public class P2493_3 {
 		b.push(s.nextInt());
 		while(!a.isEmpty()&!b.isEmpty()) {
 			n--;
-			System.out.println(a+"\t"+b);
+//			System.out.println(a+"\t"+b);
 			if(a.isEmpty()) {
-				System.out.println(0);
+//				System.out.println(0);
 				while(b.isEmpty()) {
 					r[j--]=0;
 					b.pop();
 				}
 			}
 			else if(b.isEmpty()) {
-				System.out.println(1);
+//				System.out.println(1);
 				b.push(a.pop());
 			}else {
-				System.out.println(2);
+//				System.out.println(2);
 				k=a.pop();
 				while(b.peek()<=k) {
 					r[j--]=n;
