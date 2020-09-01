@@ -16,7 +16,7 @@ public class P2493_2 {
 					k=1;
 					break;
 				}
-			a[i]=0;
+			if(k==0)a[i]=0;
 		}
 //		System.out.println(Arrays.toString(b));
 		for(int c:a)System.out.print(c+" ");
