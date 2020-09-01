@@ -1,13 +1,14 @@
 package _Algorithm.Stack;
 
+import java.io.*;
 import java.util.Arrays;
 import java.util.Scanner;
 
 public class P2493_2 {
-	public static void main(String[] args) {
-		Scanner s=new Scanner(System.in);
-		int n=s.nextInt(),a[]=new int[n],i=0,j,k;
-		for(;i<n;a[i++]=s.nextInt());
+	public static void main(String[] args)throws Exception{
+		BufferedReader r=new BufferedReader(new InputStreamReader(System.in));
+		int n=Integer.parseInt(r.readLine()),a[]=new int[n],i=0,j,k;
+		for(char c:r.readLine().toCharArray())a[i++]=c-'0';
 		for(i=n;i-->0;) {
 			k=0;
 			for(j=i;j-->0;)
