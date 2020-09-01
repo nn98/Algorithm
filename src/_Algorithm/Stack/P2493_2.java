@@ -17,7 +17,8 @@ public class P2493_2 {
 					break;
 				}
 		}
-		System.out.println(Arrays.toString(b));
+//		System.out.println(Arrays.toString(b));
+		for(int c:b)System.out.print(c+" ");
 	}
 
 }
