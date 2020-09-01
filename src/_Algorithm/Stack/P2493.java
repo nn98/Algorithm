@@ -13,7 +13,7 @@ public class P2493 {
 			k=0;
 			for(j=i;j-->0;)
 				if(a[i]<=a[j]) {
-					f.append(j+" ");
+					f.append(j+1+" ");
 					k=1;
 					break;
 				}
