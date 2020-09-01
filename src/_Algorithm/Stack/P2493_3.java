@@ -29,6 +29,7 @@ public class P2493_3 {
 				while(b.peek()<=k) {
 					r[j--]=n;
 					b.pop();
+					if(b.isEmpty())break;
 				}
 				b.push(k);
 			}
