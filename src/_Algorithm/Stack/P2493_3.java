@@ -9,7 +9,8 @@ public class P2493_3 {
 		Scanner s=new Scanner(System.in);
 		int n=s.nextInt(),i=0,j=n-1,k,v,r[]=new int[n];
 		Stack<Integer> a=new Stack(),b=new Stack();
-		for(;i<n;i++)a.push(s.nextInt());
+		for(;++i<n;)a.push(s.nextInt());
+		b.push(s.nextInt());
 		while(!a.isEmpty()&!b.isEmpty()) {
 			System.out.println(a+"\t"+b);
 			if(a.isEmpty()) {
