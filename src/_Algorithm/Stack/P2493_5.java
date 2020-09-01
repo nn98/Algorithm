@@ -14,7 +14,7 @@ public class P2493_5 {
 				if(t.peek()<j) {
 					t.pop();
 					x.pop();
-				}
+				}else break;
 			if(t.isEmpty()) {
 				t.push(j);
 				System.out.print(0+" ");
