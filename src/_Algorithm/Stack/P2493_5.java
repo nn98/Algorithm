@@ -6,7 +6,7 @@ import java.util.*;
 
 public class P2493_5 {
 
-	public static void main(String[] args) {
+	public static void main(String[] args)throws Exception{
 		BufferedReader r=new BufferedReader(new InputStreamReader(System.in));
 //		Scanner s=new Scanner(System.in);
 		int n=Integer.parseInt(r.readLine()),i=0,j;
