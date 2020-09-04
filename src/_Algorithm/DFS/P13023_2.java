@@ -1,5 +1,36 @@
 package _Algorithm.DFS;
 
-public class P13023_2 {
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.InputStreamReader;
+import java.io.OutputStreamWriter;
+import java.util.StringTokenizer;
 
+public class P13023_2 {
+	static int n,m,a[][],h[],i,j;
+	static int o(int x,int d) {
+		if(h[x]>0)return h[x];
+		int y=0,z=0,w;
+		for(;y<n;y++) {
+			if(a[x][y]>0) {
+				w=o(y,d+1);
+				z=z>w?z:w;
+			}
+		}
+		return h[x]=z;
+	}
+	public static void main(String[] args)throws Exception{
+		BufferedReader r=new BufferedReader(new InputStreamReader(System.in));
+		StringTokenizer t=new StringTokenizer(r.readLine());
+		n=Integer.parseInt(t.nextToken());
+		m=Integer.parseInt(t.nextToken());
+		a=new int[n][n];
+		while(m-->0) {
+			t=new StringTokenizer(r.readLine());
+			i=Integer.parseInt(t.nextToken());
+			j=Integer.parseInt(t.nextToken());
+			a[i][j]=a[j][i]=1;
+		}
+		System.out.println(m);
+	}
 }
