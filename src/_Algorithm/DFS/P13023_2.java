@@ -16,7 +16,6 @@ public class P13023_2 {
 		if(x!=m)
 			if(h[x]>0)
 				return h[x];
-		h[x]=d;
 		int y=0,z=0,w;
 		for(;y<n;y++) {
 			if(a[x][y]>0) {
@@ -25,6 +24,7 @@ public class P13023_2 {
 			}
 		}
 		h[x]=h[x]>z?h[x]:z;
+		h[x]++;
 		System.out.println("\tat: "+x+" re: "+h[x]);
 		return h[x];
 	}
@@ -43,7 +43,7 @@ public class P13023_2 {
 			a[i][j]=a[j][i]=1;
 		}
 		i=0;
-		for(;++m<n;c=new int[n],System.out.println("go at:"+m),o(m,1),i=i>h[m]?i:h[m])
+		for(;++m<n;c=new int[n],System.out.println("go at:"+m),o(m,0),i=i>h[m]?i:h[m])
 			if(i>4)
 				break;
 		System.out.println(Arrays.toString(h));
