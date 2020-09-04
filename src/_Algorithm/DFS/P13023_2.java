@@ -21,7 +21,7 @@ public class P13023_2 {
 				z=z>w?z:w;
 			}
 		}
-		System.out.println("\tre"+h[x]);
+		System.out.println("\tre"+z);
 		return h[x]=z;
 	}
 	public static void main(String[] args)throws Exception{
