@@ -24,6 +24,7 @@ public class P13023_2 {
 			}
 		}
 		h[x]=h[x]>z?h[x]:z;
+		h[x]=h[x]>d?h[x]:d;
 		h[x]++;
 		System.out.println("\tat: "+x+" re: "+h[x]);
 		return h[x];
