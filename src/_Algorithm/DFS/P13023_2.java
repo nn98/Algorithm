@@ -13,7 +13,9 @@ public class P13023_2 {
 		if(c[x]>0)return 0;
 		System.out.println(x+" "+d);
 		c[x]=1;
-		if(h[x]>0)return h[x];
+		if(x!=m)
+			if(h[x]>0)
+				return h[x];
 		h[x]=d;
 		int y=0,z=0,w;
 		for(;y<n;y++) {
