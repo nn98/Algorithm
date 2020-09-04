@@ -17,7 +17,7 @@ public class P13023 {
 			c=Integer.parseInt(t.nextToken());
 			a[b]=a[c]=Math.max(a[b],a[c])+1;
 			d=d>a[b]?d:a[b];
-//			System.out.println(Arrays.toString(a));
+//			³ë¾ç½É ÄÆ
 		}
 		System.out.println(d>3?1:0);
 	}
