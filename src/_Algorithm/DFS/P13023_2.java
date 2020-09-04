@@ -19,12 +19,12 @@ public class P13023_2 {
 		int y=0,z=0,w;
 		for(;y<n;y++) {
 			if(a[x][y]>0) {
-				w=o(y,d+1);
+				if(h[y]>0)w=h[y];
+				else w=o(y,d+1);
 				z=z>w?z:w;
 			}
 		}
 		h[x]=h[x]>z?h[x]:z;
-		h[x]=h[x]>d?h[x]:d;
 		h[x]++;
 		System.out.println("\tat: "+x+" re: "+h[x]);
 		return h[x];
