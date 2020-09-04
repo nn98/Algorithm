@@ -14,6 +14,7 @@ public class P13023_2 {
 		System.out.println(x+" "+d);
 		c[x]=1;
 		if(h[x]>0)return h[x];
+		h[x]=d;
 		int y=0,z=0,w;
 		for(;y<n;y++) {
 			if(a[x][y]>0) {
@@ -21,9 +22,9 @@ public class P13023_2 {
 				z=z>w?z:w;
 			}
 		}
-		z+=d;
-		System.out.println("\tat: "+x+" re: "+z);
-		return h[x]=z;
+		h[x]=h[x]>z?h[x]:z;
+		System.out.println("\tat: "+x+" re: "+h[x]);
+		return h[x];
 	}
 	public static void main(String[] args)throws Exception{
 		BufferedReader r=new BufferedReader(new InputStreamReader(System.in));
