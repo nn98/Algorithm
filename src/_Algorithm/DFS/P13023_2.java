@@ -11,7 +11,7 @@ public class P13023_2 {
 	static int n,m,a[][],h[],i,j,c[];
 	static int o(int x,int d) {
 		if(c[x]>0)return 0;
-		System.out.println(x+" "+d);
+		System.out.println("from \t"+m+" "+x+" "+d);
 		c[x]=1;
 		if(x!=m)
 			if(h[x]>0)
