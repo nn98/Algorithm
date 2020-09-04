@@ -4,6 +4,7 @@ import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
+import java.util.Arrays;
 import java.util.StringTokenizer;
 
 public class P13023_2 {
@@ -31,6 +32,11 @@ public class P13023_2 {
 			j=Integer.parseInt(t.nextToken());
 			a[i][j]=a[j][i]=1;
 		}
-		System.out.println(m);
+		i=0;
+		for(;++m<n;o(m,1),i=i>h[m]?i:h[m])
+			if(i>4)
+				break;
+		System.out.println(Arrays.toString(h));
+		System.out.println(i>4?1:0);
 	}
 }
