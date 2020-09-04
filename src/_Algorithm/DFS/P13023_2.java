@@ -10,6 +10,7 @@ import java.util.StringTokenizer;
 public class P13023_2 {
 	static int n,m,a[][],h[],i,j,c[];
 	static int o(int x,int d) {
+		System.out.println(x+" "+d);
 		if(c[x]>0)return 0;
 		c[x]=1;
 		if(h[x]>0)return h[x];
@@ -20,6 +21,7 @@ public class P13023_2 {
 				z=z>w?z:w;
 			}
 		}
+		System.out.println("\tre"+h[x]);
 		return h[x]=z;
 	}
 	public static void main(String[] args)throws Exception{
