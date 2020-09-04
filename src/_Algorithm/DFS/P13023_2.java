@@ -43,7 +43,7 @@ public class P13023_2 {
 			a[i][j]=a[j][i]=1;
 		}
 		i=0;
-		for(;++m<n;c=new int[n],System.out.println("go at:"+m),o(m,0),i=i>h[m]?i:h[m])
+		for(;++m<n;c=new int[n],System.out.println("go at:\t"+m),o(m,0),i=i>h[m]?i:h[m])
 			if(i>4)
 				break;
 		System.out.println(Arrays.toString(h));
