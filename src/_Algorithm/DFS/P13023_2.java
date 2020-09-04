@@ -10,8 +10,8 @@ import java.util.StringTokenizer;
 public class P13023_2 {
 	static int n,m,a[][],h[],i,j,c[];
 	static int o(int x,int d) {
-		System.out.println(x+" "+d);
 		if(c[x]>0)return 0;
+		System.out.println(x+" "+d);
 		c[x]=1;
 		if(h[x]>0)return h[x];
 		int y=0,z=0,w;
