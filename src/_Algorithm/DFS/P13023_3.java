@@ -2,7 +2,6 @@ package _Algorithm.DFS;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
-import java.util.Arrays;
 import java.util.StringTokenizer;
 
 public class P13023_3 {
@@ -11,9 +10,9 @@ public class P13023_3 {
 		if(c[x]>0)return 0;
 //		System.out.println("from \t"+m+" "+x+" "+d);
 		c[x]=1;
-		if(x!=m)
-			if(h[x]>0)
-				return h[x];
+//		if(x!=m)
+//			if(h[x]>0)
+//				return h[x];
 		int y=0,z=0,w;
 		for(;y<n;y++) {
 			if(a[x][y]>0) {
