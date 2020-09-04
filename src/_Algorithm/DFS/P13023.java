@@ -19,7 +19,7 @@ public class P13023 {
 			d=d>a[b]?d:a[b];
 			System.out.println(Arrays.toString(a));
 		}
-		System.out.println(d>4?1:0);
+		System.out.println(d>3?1:0);
 	}
 
 }
