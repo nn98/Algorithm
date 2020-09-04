@@ -1,6 +1,7 @@
 package _Algorithm.DFS;
 
 import java.io.*;
+import java.util.Arrays;
 import java.util.StringTokenizer;
 
 public class P13023 {
@@ -17,6 +18,7 @@ public class P13023 {
 			a[b]=a[c]=Math.max(a[b],a[c])+1;
 			d=d>a[b]?d:a[b];
 		}
+		System.out.println(Arrays.toString(a));
 		System.out.println(d>4?1:0);
 	}
 
