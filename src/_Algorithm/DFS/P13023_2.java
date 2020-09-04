@@ -13,6 +13,7 @@ public class P13023_2 {
 		if(h[x]>0)return h[x];
 		int y=0,z=0,w;
 		for(;y<n;y++) {
+			if(y==x)continue;
 			if(a[x][y]>0) {
 				w=o(y,d+1);
 				z=z>w?z:w;
