@@ -8,12 +8,13 @@ import java.util.Arrays;
 import java.util.StringTokenizer;
 
 public class P13023_2 {
-	static int n,m,a[][],h[],i,j;
+	static int n,m,a[][],h[],i,j,c[];
 	static int o(int x,int d) {
+		if(c[x]>0)return 0;
+		c[x]=1;
 		if(h[x]>0)return h[x];
 		int y=0,z=0,w;
 		for(;y<n;y++) {
-			if(y==x)continue;
 			if(a[x][y]>0) {
 				w=o(y,d+1);
 				z=z>w?z:w;
@@ -27,6 +28,7 @@ public class P13023_2 {
 		n=Integer.parseInt(t.nextToken());
 		m=Integer.parseInt(t.nextToken());
 		h=new int[n];
+		c=new int[n];
 		a=new int[n][n];
 		while(m-->0) {
 			t=new StringTokenizer(r.readLine());
@@ -35,7 +37,7 @@ public class P13023_2 {
 			a[i][j]=a[j][i]=1;
 		}
 		i=0;
-		for(;++m<n;o(m,1),i=i>h[m]?i:h[m])
+		for(;++m<n;c=new int[n],o(m,1),i=i>h[m]?i:h[m])
 			if(i>4)
 				break;
 		System.out.println(Arrays.toString(h));
