@@ -11,6 +11,8 @@ public class P13023_3 {
 		if(c[x]>0)return 0;
 		if(d>4) {
 			E=1;
+			i=d;
+			return 0;
 		}
 //		System.out.println("from \t"+m+" "+x+" "+d);
 		c[x]=1;
@@ -23,7 +25,8 @@ public class P13023_3 {
 //				if(h[y]>0)w=h[y];
 //				if(y<m)w=f[y];
 //				else 
-					w=o(y,d+1);
+				w=o(y,d+1);
+				if(E>0)return 0;
 				z=z>w?z:w;
 			}
 		}
