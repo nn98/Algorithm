@@ -6,9 +6,12 @@ import java.util.Arrays;
 import java.util.StringTokenizer;
 
 public class P13023_3 {
-	static int n,m,a[][],h[],i,j,c[],f[];
+	static int n,m,a[][],h[],i,j,c[],f[],E;
 	static int o(int x,int d) {
 		if(c[x]>0)return 0;
+		if(d>4) {
+			E=1;
+		}
 //		System.out.println("from \t"+m+" "+x+" "+d);
 		c[x]=1;
 //		if(x!=m)
