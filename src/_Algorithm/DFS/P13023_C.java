@@ -13,7 +13,7 @@ public class P13023_C {
 			System.exit(0);
 		}
 		for(int j=0;j<v[i].size();j++) {
-			if(h[j]<1)
+			if(h[v[i].get(j)]<1)
 				o(v[i].get(j),x+1);
 		}
 		h[i]=0;
