@@ -1,9 +1,7 @@
 package _Algorithm.DFS;
 
 import java.util.Scanner;
-
 public class P13023_C {
-
 	static int n,m,a,b,v[][],h[];
 	static void o(int i,int x) {
 		h[i]=1;
@@ -32,5 +30,4 @@ public class P13023_C {
 		for(;++m<n;o(m,0));
 		System.out.print(0);
 	}
-
 }
