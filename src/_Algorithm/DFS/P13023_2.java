@@ -20,8 +20,9 @@ public class P13023_2 {
 		for(;y<n;y++) {
 			if(a[x][y]>0) {
 //				if(h[y]>0)w=h[y];
-				if(y<m)w=f[y];
-				else w=o(y,d+1);
+//				if(y<m)w=f[y];
+//				else 
+					w=o(y,d+1);
 				z=z>w?z:w;
 			}
 		}
