@@ -8,14 +8,14 @@ import java.util.Arrays;
 import java.util.StringTokenizer;
 
 public class P13023_2 {
-	static int n,m,a[][],h[],i,j,c[];
+	static int n,m,a[][],h[],i,j,c[],f[];
 	static int o(int x,int d) {
 		if(c[x]>0)return 0;
 		System.out.println("from \t"+m+" "+x+" "+d);
 		c[x]=1;
-		if(x!=m)
-			if(h[x]>0)
-				return h[x];
+//		if(x!=m)
+//			if(h[x]>0)
+//				return h[x];
 		int y=0,z=0,w;
 		for(;y<n;y++) {
 			if(a[x][y]>0) {
@@ -24,18 +24,18 @@ public class P13023_2 {
 				z=z>w?z:w;
 			}
 		}
-		h[x]=h[x]>z?h[x]:z;
-		h[x]++;
-		System.out.println("\tat: "+x+" re: "+h[x]);
-		return h[x];
+//		h[x]=h[x]>z?h[x]:z;
+//		h[x]++;
+		d=d>z?d:z;
+		System.out.println("\tat: "+x+" re: "+d);
+		return d;
 	}
 	public static void main(String[] args)throws Exception{
 		BufferedReader r=new BufferedReader(new InputStreamReader(System.in));
 		StringTokenizer t=new StringTokenizer(r.readLine());
 		n=Integer.parseInt(t.nextToken());
 		m=Integer.parseInt(t.nextToken());
-		h=new int[n];
-		c=new int[n];
+		f=new int[n];
 		a=new int[n][n];
 		while(m-->0) {
 			t=new StringTokenizer(r.readLine());
@@ -44,10 +44,10 @@ public class P13023_2 {
 			a[i][j]=a[j][i]=1;
 		}
 		i=0;
-		for(;++m<n;c=new int[n],System.out.println("go at:\t"+m),o(m,0),i=i>h[m]?i:h[m])
+		for(;++m<n;c=new int[n],h=new int[n],System.out.println("go at:\t"+m),f[m]=o(m,0),i=i>f[m]?i:f[m])
 			if(i>4)
 				break;
-		System.out.println(Arrays.toString(h));
+		System.out.println(Arrays.toString(f));
 		System.out.println(i>4?1:0);
 	}
 }
