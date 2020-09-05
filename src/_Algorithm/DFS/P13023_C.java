@@ -13,7 +13,8 @@ public class P13023_C {
 		}
 		for(int j=0;j<n;j++) {
 			if(v[i][j]>0)
-				o(j,x+1);
+				if(h[j]<1)
+					o(j,x+1);
 		}
 		h[i]=0;
 	}
