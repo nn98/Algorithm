@@ -1,5 +1,5 @@
 package _Algorithm.DFS;
-
+// 복잡하게 생각할 필요도 이유도 없고 그냥 실력부족
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
