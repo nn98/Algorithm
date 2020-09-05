@@ -19,7 +19,8 @@ public class P13023_2 {
 		int y=0,z=0,w;
 		for(;y<n;y++) {
 			if(a[x][y]>0) {
-				if(h[y]>0)w=h[y];
+//				if(h[y]>0)w=h[y];
+				if(y<m)w=f[y];
 				else w=o(y,d+1);
 				z=z>w?z:w;
 			}
@@ -27,7 +28,7 @@ public class P13023_2 {
 //		h[x]=h[x]>z?h[x]:z;
 //		h[x]++;
 		d=d>z?d:z;
-		System.out.println("\tat: "+x+" re: "+d);
+//		System.out.println("\tat: "+x+" re: "+d);
 		return d;
 	}
 	public static void main(String[] args)throws Exception{
@@ -44,7 +45,7 @@ public class P13023_2 {
 			a[i][j]=a[j][i]=1;
 		}
 		i=0;
-		for(;++m<n;c=new int[n],h=new int[n],System.out.println("go at:\t"+m),f[m]=o(m,0),i=i>f[m]?i:f[m])
+		for(;++m<n;c=new int[n],h=new int[n],System.out.println("go at:\t"+m),f[m]=o(m,1),System.out.println(Arrays.toString(f)),i=i>f[m]?i:f[m])
 			if(i>4)
 				break;
 		System.out.println(Arrays.toString(f));
