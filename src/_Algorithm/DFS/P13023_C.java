@@ -30,6 +30,7 @@ public class P13023_C {
 			v[a][b]=v[b][a]=1;
 		}
 		for(;++m<n;o(m,0));
+		System.out.print(0);
 	}
 
 }
