@@ -12,7 +12,7 @@ public class Test {
 	
 	static void o(int x) {
 		
-		if(x==n) {
+		if(x==m) {
 			for(int b:a)
 				System.out.print(b+" ");
 			System.out.println();
@@ -28,7 +28,7 @@ public class Test {
 	
 	static void p(int x) {
 
-		if(x==n) {
+		if(x==m) {
 			for(int b:a)
 				System.out.print(b+" ");
 			System.out.println();
