@@ -36,7 +36,7 @@ public class Test {
 		
 		else {
 			for(int y=0;y<n;) {
-				while(h[++y]==0);
+				while(h[++y]!=0);
 				a[x]=y;
 				h[y]=1;
 				o(x+1);
