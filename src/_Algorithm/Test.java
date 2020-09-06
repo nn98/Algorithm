@@ -35,7 +35,7 @@ public class Test {
 		}
 		
 		else {
-			for(int y=0;y<n;y++) {
+			for(int y=1;y<=n;y++) {
 				if(h[y]>0)continue;
 				a[x]=y;
 				h[y]=1;
@@ -62,7 +62,7 @@ public class Test {
 
 //		for(;i<n;h=new int[n],o(i++));
 		
-		for(;i<n;h=new int[n],p(i++));
+		for(;i<n;h=new int[n+1],p(i++));
 		
 	}
 
