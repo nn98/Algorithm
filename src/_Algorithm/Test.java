@@ -6,16 +6,16 @@ public class Test {
 
 	static int n,m,i,j,k,a[],h[];
 	
-	static void o(int x,int c) {
+	static void o(int x) {
 		
-		if(c==n) {
+		if(x==n) {
 			for(int b:a)
 				System.out.print(b+" ");
 			System.out.println();
 		}
 		
 		else {
-			for(int y=0;y<n;a[x]=++y,o(x+1,c+1));
+			for(int y=0;y<n;a[x]=++y,o(x+1));
 		}
 		
 	}
@@ -34,7 +34,7 @@ public class Test {
 		
 		a=new int[n];
 		
-		for(;i<n;h=new int[n],o(i++,0));
+		for(;i<n;h=new int[n],o(i++));
 		
 	}
 
