@@ -4,7 +4,11 @@ import java.util.Scanner;
 
 public class Test {
 
+//	20-09-06 BackTraking
+	
 	static int n,m,i,j,k,a[],h[];
+	
+//	Duplicate
 	
 	static void o(int x) {
 		
@@ -20,16 +24,38 @@ public class Test {
 		
 	}
 	
+//	N-Duplicate
+	
+	static void p(int x) {
+
+		if(x==n) {
+			for(int b:a)
+				System.out.print(b+" ");
+			System.out.println();
+		}
+		
+		else {
+			for(int y=0;y<n;) {
+				while(h[++y]==0);
+				a[x]=y;
+				h[y]=1;
+				o(x+1);
+				h[y]=0;
+			}
+		}
+		
+	}
+	
 	public static void main(String[] args) {
 		
 		Scanner s=new Scanner(System.in);
 		
-//		BackTracking Test
+//		1
 
-		System.out.print("Number :\t");
+		System.out.print("Number:\t");
 		n=s.nextInt();
 
-		System.out.print("Number :\t");
+		System.out.print("Count:\t");
 		m=s.nextInt();
 		
 		a=new int[n];
