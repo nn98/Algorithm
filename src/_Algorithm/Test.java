@@ -1,5 +1,6 @@
 package _Algorithm;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Test {
@@ -27,6 +28,9 @@ public class Test {
 //	N-Duplicate
 	
 	static void p(int x) {
+
+		System.out.println("a "+Arrays.toString(a));
+		System.out.println("h "+Arrays.toString(h));
 
 		if(x==m) {
 			for(int b:a)
