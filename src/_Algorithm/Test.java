@@ -15,7 +15,7 @@ public class Test {
 		
 		if(x==m) {
 			for(int b:a)
-				System.out.print(b+" ");
+				System.out.print(b==0?"":b+" ");
 			System.out.println();
 		}
 		
@@ -31,7 +31,7 @@ public class Test {
 
 		if(x==m) {
 			for(int b:a)
-				System.out.print(b+" ");
+				System.out.print(b==0?"":b+" ");
 			System.out.println();
 		}
 		
