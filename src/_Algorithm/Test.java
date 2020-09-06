@@ -66,7 +66,11 @@ public class Test {
 
 //		for(;i<n;h=new int[n],o(i++));
 		
-		for(;i<n;h=new int[n+1],p(i++));
+//		for(;i<n;h=new int[n+1],p(i++));
+		
+		h=new int[n+1];
+		
+		p(i);
 		
 	}
 
