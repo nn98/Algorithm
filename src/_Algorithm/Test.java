@@ -29,9 +29,6 @@ public class Test {
 	
 	static void p(int x) {
 
-		System.out.println("a "+Arrays.toString(a));
-		System.out.println("h "+Arrays.toString(h));
-
 		if(x==m) {
 			for(int b:a)
 				System.out.print(b+" ");
