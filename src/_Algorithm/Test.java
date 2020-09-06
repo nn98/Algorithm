@@ -63,14 +63,14 @@ public class Test {
 		m=s.nextInt();
 		
 		a=new int[n];
-
-//		for(;i<n;h=new int[n],o(i++));
-		
-//		for(;i<n;h=new int[n+1],p(i++));
 		
 		h=new int[n+1];
 		
-		p(i);
+		o(0);
+		
+		System.out.println();
+		
+		p(0);
 		
 	}
 
