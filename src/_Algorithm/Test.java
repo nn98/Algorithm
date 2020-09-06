@@ -15,7 +15,7 @@ public class Test {
 		}
 		
 		else {
-			for(int y=0;y<n;a[x]=(char)y++,o(x+1,c+1));
+			for(int y=0;y<n;a[x]=++y,o(x+1,c+1));
 		}
 		
 	}
