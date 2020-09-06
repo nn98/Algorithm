@@ -59,8 +59,10 @@ public class Test {
 		m=s.nextInt();
 		
 		a=new int[n];
+
+//		for(;i<n;h=new int[n],o(i++));
 		
-		for(;i<n;h=new int[n],o(i++));
+		for(;i<n;h=new int[n],p(i++));
 		
 	}
 
