@@ -43,7 +43,7 @@ public class Test {
 				if(h[y]>0)continue;
 				a[x]=y;
 				h[y]=1;
-				o(x+1);
+				p(x+1);
 				h[y]=0;
 			}
 		}
