@@ -1,11 +1,10 @@
 package _Algorithm;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class Test {
 
-//	20-09-06 BackTraking
+//	20-09-06 1. BackTracking
 	
 	static int n,m,i,j,k,a[],h[];
 	
@@ -51,7 +50,7 @@ public class Test {
 		
 		Scanner s=new Scanner(System.in);
 		
-//		1
+//		1. BackTracking
 
 		System.out.print("Number:\t");
 		n=s.nextInt();
