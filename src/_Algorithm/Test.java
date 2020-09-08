@@ -96,7 +96,7 @@ public class Test {
 
 			System.out.println("2. Segment Tree_");
 
-			System.out.println("Number:\t");
+			System.out.print("Number:\t");
 			num=s.nextInt();
 
 			while((size*=2)<num)temp=size;
