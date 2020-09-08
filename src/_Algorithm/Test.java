@@ -48,12 +48,16 @@ public class Test {
 
 	//	20-09-08 2. Segment Tree
 
-	static int tree[],value,num,size=1,temp;
+	static int tree[],value,num,size=1,half,temp;
 
-	static int set(int n,int l,int r,int f,int t) {
+	static int getSeg(int n,int l,int r,int f,int t) {
 
 		return 0;
 
+	}
+	
+	static void setSeg() {
+		
 	}
 
 	public static void main(String[] args) {
@@ -99,9 +103,15 @@ public class Test {
 			System.out.print("Number:\t");
 			num=s.nextInt();
 
-			while((size*=2)<num)temp=size;
+			while((size*=2)<num)temp=half;
 
-			System.out.println(size+"\t"+temp);
+			System.out.println(size+"\t"+half);
+			
+			System.out.println("value_");
+			
+			tree=new int[size];
+			
+			while(temp<num)tree[temp+++half]=s.nextInt();
 
 			break;
 
