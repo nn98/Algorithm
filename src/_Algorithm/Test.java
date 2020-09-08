@@ -64,7 +64,7 @@ public class Test {
 		
 		while(n++<Task.length) System.out.println(n+". "+Task[n-1]);
 
-		System.out.println();
+		System.out.print("Task:\t");
 		
 		switch(s.nextInt()) {
 
