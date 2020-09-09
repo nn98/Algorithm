@@ -58,6 +58,8 @@ public class Test {
 	
 	static void setSeg() {
 		
+		
+		
 	}
 
 	public static void main(String[] args) {
