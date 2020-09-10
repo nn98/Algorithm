@@ -131,8 +131,6 @@ public class Test {
 			
 			while(temp<num)tree[temp+++half]=s.nextInt();
 			
-//			System.out.println(Arrays.toString(tree));
-			
 			for(int i=0;i<num;temp=i+half,setSeg(),i++);
 			
 			System.out.print("Change at(0~): ");
