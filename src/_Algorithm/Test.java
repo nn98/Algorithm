@@ -58,7 +58,13 @@ public class Test {
 	
 	static void setSeg() {
 		
-		
+		while(temp>0) {
+			
+			tree[temp/2]=temp%2==1?tree[temp]+tree[temp+1]:tree[temp]+tree[temp-1];
+			
+			temp/=2;
+			
+		}
 		
 	}
 
@@ -105,7 +111,10 @@ public class Test {
 			System.out.print("Number:\t");
 			num=s.nextInt();
 
-			while((size*=2)<num)temp=half;
+			while(half<num) {
+				half=size;
+				size*=2;
+			}
 
 			System.out.println(size+"\t"+half);
 			
@@ -114,6 +123,8 @@ public class Test {
 			tree=new int[size];
 			
 			while(temp<num)tree[temp+++half]=s.nextInt();
+			
+//			for(int i=0;);
 
 			break;
 
