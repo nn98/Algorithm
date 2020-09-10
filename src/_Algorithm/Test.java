@@ -135,6 +135,18 @@ public class Test {
 			
 			for(int i=0;i<num;temp=i+half,setSeg(),i++);
 			
+			System.out.print("Change at(0~): ");
+			
+			temp=half+s.nextInt();
+			
+			System.out.print("Value: ");
+			
+			tree[temp]=s.nextInt();
+			
+			setSeg();
+			
+			System.out.println(Arrays.toString(tree));
+			
 			break;
 
 		}
