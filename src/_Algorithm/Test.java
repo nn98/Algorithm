@@ -123,7 +123,7 @@ public class Test {
 			
 			tree=new int[size+1];
 			
-			while(temp<num)tree[temp+++half]=s.nextInt();
+			while(temp<num)tree[++temp+half]=s.nextInt();
 			
 			System.out.println(Arrays.toString(tree));
 			
