@@ -1,5 +1,6 @@
 package _Algorithm;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Test {
@@ -60,7 +61,7 @@ public class Test {
 		
 		while(temp>0) {
 			
-			tree[temp/2]=temp%2==1?tree[temp]+tree[temp+1]:tree[temp]+tree[temp-1];
+			tree[temp/2]=temp%2==1?tree[temp]+tree[temp-1]:tree[temp]+tree[temp+1];
 			
 			temp/=2;
 			
@@ -120,11 +121,15 @@ public class Test {
 			
 			System.out.println("value_");
 			
-			tree=new int[size];
+			tree=new int[size+1];
 			
 			while(temp<num)tree[temp+++half]=s.nextInt();
 			
-//			for(int i=0;);
+			System.out.println(Arrays.toString(tree));
+			
+			for(int i=0;i<n;temp=i+half,setSeg(),i++);
+			
+			System.out.println(Arrays.toString(tree));
 
 			break;
 
