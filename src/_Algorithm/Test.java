@@ -61,7 +61,13 @@ public class Test {
 		
 		while(temp>0) {
 			
-			tree[temp/2]=temp%2==1?tree[temp]+tree[temp+1]:tree[temp]+tree[temp-1];
+//			tree[temp/2]=temp%2==1?tree[temp]+tree[temp+1]:tree[temp]+tree[temp-1];
+			
+			if(temp%2==1)
+				tree[temp/2]=tree[temp]+tree[temp+1];
+			
+			else 
+				tree[(temp-1)/2]=tree[temp]+tree[temp-1];
 			
 			temp/=2;
 			
