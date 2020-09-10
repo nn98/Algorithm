@@ -58,15 +58,21 @@ public class Test {
 	}
 	
 	static void setSeg() {
-		
+
+		System.out.println("\t"+Arrays.toString(tree));
+
 		while(temp>1) {
 			
 			temp/=2;
 			
+			System.out.println("index: "+temp);
+			
 			tree[temp]=tree[temp*2]+tree[temp*2+1];
 			
 		}
-		
+
+		System.out.println("\t"+Arrays.toString(tree));
+
 	}
 
 	public static void main(String[] args) {
@@ -125,12 +131,10 @@ public class Test {
 			
 			while(temp<num)tree[temp+++half]=s.nextInt();
 			
-			System.out.println(Arrays.toString(tree));
+//			System.out.println(Arrays.toString(tree));
 			
-			for(int i=0;i<n;temp=i+half,setSeg(),i++);
+			for(int i=0;i<num;temp=i+half,setSeg(),i++);
 			
-			System.out.println(Arrays.toString(tree));
-
 			break;
 
 		}
