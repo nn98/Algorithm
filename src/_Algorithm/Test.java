@@ -121,9 +121,11 @@ public class Test {
 			
 			System.out.println("value_");
 			
-			tree=new int[size+1];
+			tree=new int[size-1];
 			
-			while(temp<num)tree[++temp+half]=s.nextInt();
+			half--;
+			
+			while(temp<num)tree[temp+++half]=s.nextInt();
 			
 			System.out.println(Arrays.toString(tree));
 			
