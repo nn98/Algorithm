@@ -129,8 +129,6 @@ public class Test {
 			
 			tree=new int[size];
 			
-			half;
-			
 			while(temp<num)tree[temp+++half]=s.nextInt();
 			
 			System.out.println(Arrays.toString(tree));
