@@ -52,6 +52,8 @@ public class Test {
 	static int tree[],value,num,size=1,half,temp;
 
 	static int getSeg(int n,int l,int r,int f,int t) {
+		
+		
 
 		return 0;
 
