@@ -53,7 +53,9 @@ public class Test {
 
 	static int getSeg(int n,int l,int r,int f,int t) {
 		
-		
+		if(l<r) {
+			
+		}
 
 		return 0;
 
