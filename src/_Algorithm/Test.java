@@ -53,10 +53,11 @@ public class Test {
 
 	static int getSeg(int n,int l,int r,int f,int t) {
 		
-		if(r<l)return 0;
-		if(r<t)return 0;
-
-		return tree[n];
+		if(t<l|r<f)return 0;
+		
+		if(l<=f&t<=r)return tree[n];
+		
+		return getSeg(n*2,l,r/2,f,t)+getSeg(n*2+1,l/2,r,f,t);
 
 	}
 	
