@@ -53,10 +53,19 @@ public class Test {
 
 	static int getSeg(int n,int l,int r,int f,int t) {
 		
-		if(t<l|r<f)return 0;
+		System.out.println(n+" "+l+" "+r+" "+f+" "+t);
 		
-		if(l<=f&t<=r)return tree[n];
+		if(t<l|r<f) {
+			System.out.println("re 0");
+			return 0;
+		}
 		
+		if(l<=f&t<=r) {
+			System.out.println("re t[n]");
+			return tree[n];
+		}
+		
+		System.out.println("seperate");
 		return getSeg(n*2,l,r/2,f,t)+getSeg(n*2+1,l/2,r,f,t);
 
 	}
@@ -137,22 +146,38 @@ public class Test {
 			
 			for(int i=0;i<num;temp=i+half,setSeg(),i++);
 			
-			System.out.print("Change at(0~): ");
+			System.out.println("Set: 1");
 			
-			temp=half+s.nextInt();
+			System.out.println("Get: 2");
 			
-			System.out.print("Value: ");
+			switch(s.nextInt()) {
 			
-			tree[temp]=s.nextInt();
-			
-			setSeg();
-			
-			System.out.println(Arrays.toString(tree));
-			
-			System.out.print("get:\t");
-			
-			for(int i=s.nextInt();i-->0;System.out.print("from: "),from=s.nextInt(),
-					System.out.print("to: "),to=s.nextInt(),System.out.println(getSeg(1,1,half,from,to)));
+			case 1:
+				
+				System.out.print("Change at(0~): ");
+				
+				temp=half+s.nextInt();
+				
+				System.out.print("Value: ");
+				
+				tree[temp]=s.nextInt();
+				
+				setSeg();
+				
+				System.out.println(Arrays.toString(tree));
+				
+				break;
+				
+			case 2:
+				
+				System.out.print("get:\t");
+				
+				for(int i=s.nextInt();i-->0;System.out.print("from: "),from=s.nextInt(),
+						System.out.print("to: "),to=s.nextInt(),System.out.println(getSeg(1,1,half,from,to)));
+				
+				break;
+				
+			}
 			
 			break;
 
