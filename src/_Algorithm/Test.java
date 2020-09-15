@@ -68,7 +68,7 @@ public class Test {
 		}
 		
 		System.out.println("seperate");
-		return getSeg(n*2,l,r/2,f,t)+getSeg(n*2+1,l/2,r,f,t);
+		return getSeg(n*2,l,r/2,f,t)+getSeg(n*2+1,r/2+1,r,f,t);
 
 	}
 	
