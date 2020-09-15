@@ -57,7 +57,7 @@ public class Test {
 		
 		System.out.println(n+" "+l+" "+r+" "+f+" "+t);
 		
-		if(l<t|f<r) {
+		if(t>r|f<l) {
 			System.out.println("re 0");
 			return 0;
 		}
