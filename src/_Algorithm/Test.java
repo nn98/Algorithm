@@ -57,12 +57,12 @@ public class Test {
 		
 		System.out.println(n+" "+l+" "+r+" "+f+" "+t);
 		
-		if(t<l|r<f) {
+		if(l<t|f<r) {
 			System.out.println("re 0");
 			return 0;
 		}
 		
-		if(l<=f&t<=r) {
+		if(f<=l&r<=t) {
 			System.out.println("re t[n]");
 			return tree[n];
 		}
