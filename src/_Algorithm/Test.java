@@ -49,9 +49,11 @@ public class Test {
 
 	//	20-09-08 2. Segment Tree
 
-	static int tree[],value,num,size=1,half,temp,from,to;
+	static int tree[],value,num,size=1,half,temp,from,to,broke;
 
 	static int getSeg(int n,int l,int r,int f,int t) {
+		
+		if(++broke>20) return 0;
 		
 		System.out.println(n+" "+l+" "+r+" "+f+" "+t);
 		
