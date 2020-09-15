@@ -62,7 +62,7 @@ public class Test {
 			return 0;
 		}
 		
-		if(l==f&t==r) {
+		if(l>=f&t>=r) {
 			System.out.println("re t[n]");
 			return tree[n];
 		}
