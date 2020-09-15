@@ -35,7 +35,7 @@ public class P2042_4 {
 				t[i]=j;
 				o();
 			}else {
-				System.out.println(p(1,1,n));
+				System.out.println(p(1,1,l));
 			}
 		}
 	}
