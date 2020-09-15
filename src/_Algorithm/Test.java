@@ -57,18 +57,19 @@ public class Test {
 		
 		System.out.println(n+" "+l+" "+r+" "+f+" "+t);
 		
-		if(t<l|r<f|l<1|r<1|r<l) {
+		if(t<l|r<f) {
 			System.out.println("re 0");
 			return 0;
 		}
 		
-		if(l>=f&t>=r) {
+		if(l<=f&t<=r) {
 			System.out.println("re t[n]");
 			return tree[n];
 		}
 		
 		System.out.println("seperate");
-		return getSeg(n*2,l,r/2,f,t)+getSeg(n*2+1,r/2+1,r,f,t);
+//		return getSeg(n*2,l,r/2,f,t)+getSeg(n*2+1,r/2+1,r,f,t); Wrong
+		return getSeg(n*2,l,(l+r)/2,f,t)+getSeg(n*2+1,(l+r)/2+1,r,f,t);
 
 	}
 	
