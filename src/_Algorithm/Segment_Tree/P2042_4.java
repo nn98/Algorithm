@@ -34,7 +34,8 @@ public class P2042_4 {
 				i+=l-1;
 				t[i]=j;
 				o();
-				System.out.println(Arrays.toString(t));
+			}else {
+				System.out.println(p(1,1,n));
 			}
 		}
 	}
