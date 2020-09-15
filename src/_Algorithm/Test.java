@@ -49,7 +49,7 @@ public class Test {
 
 	//	20-09-08 2. Segment Tree
 
-	static int tree[],value,num,size=1,half,temp;
+	static int tree[],value,num,size=1,half,temp,from,to;
 
 	static int getSeg(int n,int l,int r,int f,int t) {
 		
@@ -148,6 +148,11 @@ public class Test {
 			setSeg();
 			
 			System.out.println(Arrays.toString(tree));
+			
+			System.out.print("get:\t");
+			
+			for(int i=s.nextInt();i-->0;System.out.print("from: "),from=s.nextInt(),
+					System.out.print("to: "),to=s.nextInt(),System.out.println(getSeg(1,1,half,from,to)));
 			
 			break;
 
