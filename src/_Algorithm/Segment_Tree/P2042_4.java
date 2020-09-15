@@ -1,6 +1,5 @@
 package _Algorithm.Segment_Tree;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class P2042_4 {
