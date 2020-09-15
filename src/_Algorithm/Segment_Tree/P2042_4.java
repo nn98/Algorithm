@@ -23,9 +23,7 @@ public class P2042_4 {
 		for(i=1;i<n;l=i*=2);
 		t=new long[l*2];
 		for(;j<n;t[l+j++]=s.nextInt());
-//		System.out.println(Arrays.toString(t));
 		for(;k<n;i=l+k++,o());
-//		System.out.println(Arrays.toString(t));
 		while(m-->0) {
 			k=s.nextInt();
 			i=s.nextInt();
@@ -41,3 +39,4 @@ public class P2042_4 {
 	}
 
 }
+// 되긴 하네
