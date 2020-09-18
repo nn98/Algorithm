@@ -1,7 +1,5 @@
 package _Algorithm.Segment_Tree;
-
 import java.util.Scanner;
-
 public class P2042_4 {
 	static int n,m,i,j,k,l;
 	static long t[];
