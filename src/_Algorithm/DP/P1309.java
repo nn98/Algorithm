@@ -7,7 +7,7 @@ public class P1309 {
 		a[0]=3;
 		a[1]=7;
 		for(;i<n;a[i]=(a[i-1]*2+a[i++-2])%9901);
-		System.out.print(a[n]);
+		System.out.print(a[n-1]);
 	}
 
 }
