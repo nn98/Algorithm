@@ -19,3 +19,4 @@ public class P1699 {
 	}
 
 }
+//DP로는 최소 개수 x
