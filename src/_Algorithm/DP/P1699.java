@@ -15,6 +15,7 @@ public class P1699 {
 				j++;
 			}
 		}
+		System.out.print(j);
 	}
 
 }
