@@ -10,7 +10,8 @@ public class P1699_2 {
 		for(i=2;i<=n;i++)
 			for(j=2;j*j<=i;j++)
 				a[i]=Math.min(a[i],a[i-j*j]+1);
-		System.out.println(Arrays.toString(a));
+//		System.out.println(Arrays.toString(a));
+		System.out.print(a[n]);
 	}
 
 }
