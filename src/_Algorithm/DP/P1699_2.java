@@ -1,7 +1,5 @@
 package _Algorithm.DP;
 
-import java.util.Arrays;
-
 public class P1699_2 {
 
 	public static void main(String[] args) {
