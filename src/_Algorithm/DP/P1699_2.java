@@ -1,5 +1,5 @@
 package _Algorithm.DP;
-public class P1699_2 {
+public class P1699_2{
 	public static void main(String[] args) {
 		int n=new java.util.Scanner(System.in).nextInt(),i=1,j,a[]=new int[n+1];
 		for(;i<=n;a[i]=i++);
