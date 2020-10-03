@@ -7,6 +7,9 @@ public class P2170 {
 		while(n-->0) {
 			a=s.nextInt();
 			b=s.nextInt();
+			while(a<=b) {
+				
+			}
 		}
 	}
 }
