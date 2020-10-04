@@ -9,6 +9,7 @@ public class P2170 {
 			b=s.nextInt();
 			while(a<=b) {
 				
+				
 			}
 		}
 	}
