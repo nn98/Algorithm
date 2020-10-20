@@ -3,7 +3,8 @@ package _Algorithm.Math;
 public class P11687 {
 
 	public static void main(String[] args) {
-		int n=new java.util.Scanner(System.in).nextInt(),f=0,v=0,i;
+		int f=0;
+		long v=0,i,n=new java.util.Scanner(System.in).nextInt();
 		for(;;) {
 			v+=5;
 			for(i=v;i>4;i/=5,f++);
