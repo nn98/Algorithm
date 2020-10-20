@@ -1,5 +1,4 @@
 package _Algorithm.Math;
-
 import java.util.*;
 public class P2004_2 {
 	static long o(long n) {
