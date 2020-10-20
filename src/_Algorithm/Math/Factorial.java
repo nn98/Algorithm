@@ -12,6 +12,8 @@ public class Factorial {
 		}
 		for(i=2;i<=m;i*=2)t+=m/i;
 		for(i=5;i<=m;i*=5)f+=m/i;
+		System.out.println(t);
+		System.out.println(f);
 		System.out.println(t<f?t:f);
 		System.out.println(a);
 	}
