@@ -1,10 +1,13 @@
 package _Algorithm.Math;
 
+import java.math.BigInteger;
+
 public class P2052 {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+		BigInteger m=new BigInteger("2");
+		m=m.pow(new java.util.Scanner(System.in).nextInt());
+		System.out.println(BigInteger.ONE.divide(m));
 	}
 
 }
