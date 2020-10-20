@@ -8,10 +8,10 @@ public class P11687 {
 		for(;;) {
 			v+=5;
 			for(i=v;i>4;) {
+				f++;
 				System.out.println(f+" "+i);
 				if(i%5==0)i/=5;
 				i=1;
-				f++;
 			}
 			if(f>=n){
 				if(f>n)n=-1;
