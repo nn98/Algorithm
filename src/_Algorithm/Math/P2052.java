@@ -8,7 +8,6 @@ public class P2052 {
 		BigDecimal m=new BigDecimal("2");
 		int n;
 		m=m.pow(new java.util.Scanner(System.in).nextInt());
-		System.out.println(m);
 		System.out.println(BigDecimal.ONE.divide(m));
 	}
 
