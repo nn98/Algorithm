@@ -19,3 +19,4 @@ public class Factorial {
 	}
 
 }
+//	count of 0 == count of 5 from each number
