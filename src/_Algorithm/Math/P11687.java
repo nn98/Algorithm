@@ -7,7 +7,11 @@ public class P11687 {
 		long v=0,i,n=new java.util.Scanner(System.in).nextInt();
 		for(;;) {
 			v+=5;
-			for(i=v;i>4;i/=5,f++);
+			for(i=v;i>4;) {
+				if(i%5==0)i/=5;
+				i=1;
+				f++;
+			}
 			if(f>=n){
 				if(f>n)n=-1;
 				else n=v;
