@@ -6,9 +6,13 @@ public class Factorial {
 
 	public static void main(String[] args) {
 		BigInteger a=BigInteger.ONE;
-		for(int n=new java.util.Scanner(System.in).nextInt()+1;n-->2;) {
+		int m=new java.util.Scanner(System.in).nextInt(),n=m+1,t=0,f=0,i;
+		for(;n-->2;) {
 			a=a.multiply(new BigInteger(""+n));
 		}
+		for(i=2;i<=m;i*=2)t+=m/i;
+		for(i=5;i<=m;i*=5)f+=m/i;
+		System.out.println(t<f?t:f);
 		System.out.println(a);
 	}
 
