@@ -6,7 +6,7 @@ public class P2004 {
 
 	public static void main(String[] args) {
 		Scanner s=new Scanner(System.in);
-		int n=s.nextInt(),m=s.nextInt(),f=0,t=0,i,b=n-m;
+		long n=s.nextInt(),m=s.nextInt(),f=0,t=0,i,b=n-m;
 		if(b>m) {
 			i=b;
 			b=m;
