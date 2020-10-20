@@ -6,7 +6,7 @@ public class P2004 {
 
 	public static void main(String[] args) {
 		Scanner s=new Scanner(System.in);
-		int n=s.nextInt(),m=s.nextInt(),f=0,i,b=n-m;
+		int n=s.nextInt(),m=s.nextInt(),f=0,t=0,i,b=n-m;
 		if(b>m) {
 			i=b;
 			b=m;
@@ -18,6 +18,11 @@ public class P2004 {
 				i/=5;
 				f++;
 			}
+			i=m;
+			while(i%2==0) {
+				i/=2;
+				t++;
+			}
 		}
 		for(;b>4;b--) {
 			i=b;
@@ -25,8 +30,13 @@ public class P2004 {
 				i/=5;
 				f--;
 			}
+			i=m;
+			while(i%2==0) {
+				i/=2;
+				t--;
+			}
 		}
-		System.out.println(f);
+		System.out.println(f<t?f:t);
 	}
 
 }
