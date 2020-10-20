@@ -9,7 +9,7 @@ public class P11687 {
 			v+=5;
 			for(i=v;i>4;) {
 				f++;
-				System.out.println(f+" "+i);
+//				System.out.println(f+" "+i);
 				if(i/5%5==0)i/=5;
 				else i=1;
 			}
