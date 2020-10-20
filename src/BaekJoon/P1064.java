@@ -8,7 +8,7 @@ class P1064{
 		double a=Math.hypot(X-c,Y-u),b=Math.hypot(c-x, u-y),C=Math.hypot(x-X,y-Y);
 		System.out.println(a+" "+b+" "+C);
 		String r="-1";
-		if(!((X-x)*(u-y)==(Y-y)*(c-x)))r=String.format("%f",(Math.max(a,b>C?b:C)-Math.min(a,b<C?b:C))*2);
+		if(!((X-x)*(u-y)==(Y-y)*(c-x)))r=String.format("%.10f",(Math.max(a,b>C?b:C)-Math.min(a,b<C?b:C))*2);
 		System.out.print(r);
 	}
 }
