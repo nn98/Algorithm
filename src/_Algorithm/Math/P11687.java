@@ -10,7 +10,7 @@ public class P11687 {
 			for(i=v;i>4;) {
 				f++;
 				System.out.println(f+" "+i);
-				if(i%5==0)i/=5;
+				if(i/5%5==0)i/=5;
 				else i=1;
 			}
 			if(f>=n){
