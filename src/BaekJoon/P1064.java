@@ -10,4 +10,4 @@ class P1064{
 		if(!((X-x)*(u-y)==(Y-y)*(c-x)))r=String.format("%.10f",(Math.max(a,b>C?b:C)-Math.min(a,b<C?b:C))*2);
 		System.out.print(r);
 	}
-}
+}// 나는 수포자다
