@@ -11,7 +11,7 @@ public class P11687 {
 				f++;
 				System.out.println(f+" "+i);
 				if(i%5==0)i/=5;
-				i=1;
+				else i=1;
 			}
 			if(f>=n){
 				if(f>n)n=-1;
