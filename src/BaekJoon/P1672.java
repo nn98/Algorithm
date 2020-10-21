@@ -10,7 +10,7 @@ public class P1672 {
 		char[]a=s.next().toCharArray(),b[]=new char[20][20];
 		b[0][0]=b[6][19]=b[19][6]=b[0][2]=b[2][0]=65;
 		b[2][2]=b[0][6]=b[6][0]=67;
-		b[6][6]=b[0][19]=b[19][0]=b[2][6]=b[6][2]=71;
+		b[6][6]=b[2][19]=b[19][2]=b[0][19]=b[19][0]=71;
 		b[19][19]=b[2][6]=b[6][2]=84;
 		for(;++i<n;System.out.println(a[i-1]-65+" "+(a[i]-65)+" "+b[a[i-1]-65][a[i]-65]+" "),a[i]=b[a[i-1]-65][a[i]-65],System.out.println(a));
 		System.out.println(a[n-1]);
