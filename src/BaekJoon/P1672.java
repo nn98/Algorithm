@@ -1,6 +1,6 @@
 package BaekJoon;
 import java.util.*;
-public class P1672 {
+public class P1672{
 	public static void main(String[] args) {
 		Scanner s=new Scanner(System.in);
 		int n=s.nextInt(),i=0;
