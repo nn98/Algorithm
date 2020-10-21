@@ -14,7 +14,5 @@ public class P1672 {
 		b[0][0]=b[0][0]=b[0][0]=84;
 		for(;i++<n;a[i]=b[a[i-1]-65][a[i]-65]);
 		System.out.println(a[n-1]);
-		
 	}
-
 }
