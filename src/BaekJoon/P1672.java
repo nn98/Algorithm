@@ -1,7 +1,7 @@
 package BaekJoon;
 import java.util.*;
 public class P1672{
-	public static void main(String[] args){
+	public static void main(String[]z){
 		Scanner s=new Scanner(System.in);
 		int n=s.nextInt(),i=0;
 		char[]a=s.next().toCharArray(),b[]=new char[20][20];
