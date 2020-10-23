@@ -11,7 +11,6 @@ public class P1672{
 		b[19][19]=b[2][6]=b[6][2]=84;
 //		System.out.println(a[i-1]-65+" "+(a[i]-65)+" "+b[a[i-1]-65][a[i]-65]+" ")
 //		System.out.println(a)
-		System.out.println(a);
 		for(;--n>1;a[n-1]=b[a[n-1]-65][a[n]-65],a[n]=0,System.out.println(a));
 		System.out.println(a[0]);
 	}
