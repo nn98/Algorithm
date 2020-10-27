@@ -10,7 +10,7 @@ public class P1645 {
 		
 		int n=s.nextInt();
 		
-		while(n-->0)
+		while(n-->0);
 		
 	}
 
