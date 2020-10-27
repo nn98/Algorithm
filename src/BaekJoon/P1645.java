@@ -8,6 +8,8 @@ public class P1645 {
 		
 		Scanner s=new Scanner(System.in);
 		
+		int n=s.nextInt();
+		
 	}
 
 }
