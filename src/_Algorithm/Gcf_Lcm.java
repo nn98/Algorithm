@@ -13,6 +13,7 @@ public class Gcf_Lcm {
 			j=k;
 		}
 		System.out.println(i+" "+j);
+		System.out.println(a*b/i);
 	}
 
 }
