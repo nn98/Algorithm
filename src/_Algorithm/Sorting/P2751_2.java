@@ -10,7 +10,7 @@ public class P2751_2 {
 		while(n-->0)
 			a[Integer.parseInt(r.readLine())+v]++;
 		while(++n<m)
-			if(a[n]>0)System.out.println(n+v);
+			if(a[n]>0)System.out.println(n-v);
 	}
 
 }
