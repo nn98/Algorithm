@@ -15,7 +15,7 @@ public class P1645 {
 			if(a[i]<=i)break;
 			i++;
 		}
-		System.out.println(i==n?0:a[i]);
+		System.out.println(i==n?0:i);
 	}
 
 }
