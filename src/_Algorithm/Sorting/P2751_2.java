@@ -9,8 +9,8 @@ public class P2751_2 {
 		int n=Integer.parseInt(r.readLine()),m=2000001,v=1000000,a[]=new int[m];
 		while(n-->0)
 			a[Integer.parseInt(r.readLine())+v]++;
-		while(n++<m)
-			System.out.print(a[n]>0?n+v:"");
+		while(++n<m)
+			if(a[n]>0)System.out.println(n+v);
 	}
 
 }
