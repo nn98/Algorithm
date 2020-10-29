@@ -12,7 +12,7 @@ public class P1645 {
 		Arrays.sort(a);
 		i=0;
 		while(i<n) {
-			if(a[i]<=i-1)break;
+			if(a[i]<=i)break;
 			i++;
 		}
 		System.out.println(i==n?0:a[i]);
