@@ -1,5 +1,6 @@
 package _Algorithm.Sweeping;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class P1645 {
@@ -8,11 +9,12 @@ public class P1645 {
 		Scanner s=new Scanner(System.in);
 		int n=s.nextInt(),i=0,a[]=new int[n],t[]=new int[n],j=0;
 		while(i<n)a[i++]=s.nextInt();
+		Arrays.sort(a);
 		i=0;
-		t[0]=a[0];
-		while(++i<n) {
-			if(a[i]>t[j]);
+		while(i<n) {
+			if(a[i]<=i+2)break;
 		}
+		System.out.println(i==n?0:a[i]);
 	}
 
 }
