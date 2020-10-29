@@ -10,7 +10,7 @@ public class P1645 {
 		while(n-->0)a[s.nextInt()]++;
 		while(++i<x)
 			if(a[i]>i)break;
-		System.out.print(i+1);
+		System.out.print(i==x?0:i+1);
 	}
 
 }
