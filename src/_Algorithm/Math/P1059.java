@@ -10,6 +10,7 @@ public class P1059{
 			if(a[i]>0)i++;
 			if(a[j]>0)j--;
 		}
+		
 		System.out.print(i+" "+j);
 	}
 }
