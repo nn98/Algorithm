@@ -11,6 +11,7 @@ public class P1059{
 			if(a[j]>0)j--;
 		}
 		
+		
 		System.out.print(i+" "+j);
 	}
 }
