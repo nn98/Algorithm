@@ -5,6 +5,7 @@ import java.io.*;
 
 public class P10244_3 {
 	static int o(int a,int b) {
+		int t;
 		while(b>0) {
 			t=a%b;
 			a=b;
