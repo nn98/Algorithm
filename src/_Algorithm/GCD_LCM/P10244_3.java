@@ -1,8 +1,7 @@
 package _Algorithm.GCD_LCM;
-
+//TimeOver
 import java.util.*;
 import java.io.*;
-
 public class P10244_3 {
 	static int o(int a,int b) {
 		int t;
