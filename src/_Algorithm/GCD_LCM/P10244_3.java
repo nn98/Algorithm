@@ -29,5 +29,4 @@ public class P10244_3 {
 			System.out.println(t.size());
 		}
 	}
-
 }
