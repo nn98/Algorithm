@@ -1,5 +1,7 @@
 package _Algorithm.GCD_LCM;
 
+import java.util.Scanner;
+
 public class P10244 {
 
 	static int t;
@@ -12,7 +14,8 @@ public class P10244 {
 		return a;
 	}
 	public static void main(String[] args) {
-		System.out.println(o(17,3));
+		Scanner s=new Scanner(System.in);
+		System.out.println(o(s.nextInt(),s.nextInt()));
 	}
 
 }
