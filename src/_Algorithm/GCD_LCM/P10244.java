@@ -25,6 +25,11 @@ public class P10244 {
 			System.out.println(Arrays.toString(a));
 			System.out.println(Arrays.toString(b));
 			System.out.println(t.toString());
+			for(;--i>0;) {
+				m=a[i];
+				for(j=i;++j<=n;t.add(m=o(m,a[j])));
+			}
+			System.out.println(t.toString());
 		}
 	}
 
