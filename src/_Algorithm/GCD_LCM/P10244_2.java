@@ -8,7 +8,6 @@ import java.util.Set;
 public class P10244_2 {
 	static int t;
 	static int o(int a,int b) {
-		System.out.println(a+" "+b);
 		while(b>0) {
 			t=a%b;
 			a=b;
