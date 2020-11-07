@@ -12,7 +12,7 @@ public class P10244 {
 		return a;
 	}
 	public static void main(String[] args) {
-		System.out.println(o(24,8));
+		System.out.println(o(13,7));
 	}
 
 }
