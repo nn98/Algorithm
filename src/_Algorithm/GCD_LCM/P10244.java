@@ -23,7 +23,7 @@ public class P10244 {
 			b=new int[n+1];
 			for(;i++<n;t.add(a[i]=s.nextInt()),t.add(b[i]=o(a[i-1],a[i])));
 			System.out.println(Arrays.toString(a));
-			System.out.println(Arrays.toString(a));
+			System.out.println(Arrays.toString(b));
 			System.out.println(t.toString());
 		}
 	}
