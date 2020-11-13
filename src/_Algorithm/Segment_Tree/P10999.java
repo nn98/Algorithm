@@ -7,7 +7,7 @@ public class P10999 {
 	static long a[];
 	static void u() {
 		System.out.println(Arrays.toString(a));
-		for(;i>0;i/=2,a[i]=a[i*2]+a[i*2+1]);
+		for(;i>1;i/=2,a[i]=a[i*2]+a[i*2+1]);
 	}
 	public static void main(String[] args)throws Exception{
 		BufferedReader r=new BufferedReader(new InputStreamReader(System.in));
