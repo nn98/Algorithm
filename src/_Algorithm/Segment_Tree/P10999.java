@@ -5,6 +5,9 @@ public class P10999 {
 
 	static int n,m,l,h,i;
 	static long a[];
+	static void u() {
+		while(i>0)a[i/=2]=a[i*2]+a[i*2+1];
+	}
 	public static void main(String[] args)throws Exception{
 		BufferedReader r=new BufferedReader(new InputStreamReader(System.in));
 		BufferedWriter w=new BufferedWriter(new OutputStreamWriter(System.out));
@@ -13,8 +16,9 @@ public class P10999 {
 		m=Integer.parseInt(t.nextToken())+Integer.parseInt(t.nextToken());
 		for(l=2;l<n;l*=2);
 		a=new long[l*2];
-		System.out.println(l+" "+h);
 		while(i<n)a[l+i++]=Integer.parseInt(r.readLine());
+		System.out.println(Arrays.toString(a));
+		for(i=l;i<n;u());
 		System.out.println(Arrays.toString(a));
 	}
 
