@@ -19,7 +19,7 @@ public class P10999 {
 		a=new long[l*2];
 		while(i<n)a[l+i++]=Integer.parseInt(r.readLine());
 		System.out.println(Arrays.toString(a));
-		for(i=l;i<l*2;u(),i++);
+		for(h=0;h<n;i=l+h,u(),h++);
 		System.out.println(Arrays.toString(a));
 	}
 
