@@ -14,7 +14,7 @@ public class P10999 {
 		for(l=2;l<n;l*=2);
 		a=new long[l*2];
 		System.out.println(l+" "+h);
-		while(i++<n)a[l+i]=Integer.parseInt(r.readLine());
+		while(i<n)a[l+i++]=Integer.parseInt(r.readLine());
 		System.out.println(Arrays.toString(a));
 	}
 
