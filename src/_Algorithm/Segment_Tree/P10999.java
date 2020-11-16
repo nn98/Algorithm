@@ -25,6 +25,8 @@ public class P10999 {
 			switch(t.nextToken()) {
 			case "1":
 				break;
+			case "2":
+				break;
 			}
 		}
 	}
