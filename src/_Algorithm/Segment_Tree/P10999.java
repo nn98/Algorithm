@@ -22,6 +22,10 @@ public class P10999 {
 		System.out.println(Arrays.toString(a));
 		while(m-->0) {
 			t=new StringTokenizer(r.readLine());
+			switch(t.nextToken()) {
+			case "1":
+				break;
+			}
 		}
 	}
 }
