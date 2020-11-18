@@ -32,8 +32,9 @@ public class P10999{
 				x=Integer.parseInt(t.nextToken());
 				y=Integer.parseInt(t.nextToken());
 				z=Integer.parseInt(t.nextToken());
-				for(;x<=y;x+=2) {
-					i=x;
+				for(;x<=y;x++) {
+					a[l+x]+=z;
+					i=x+l;
 					u();
 				}
 				if(y%2==1)u();
