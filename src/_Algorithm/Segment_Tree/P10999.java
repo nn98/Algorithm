@@ -5,8 +5,9 @@ public class P10999{
 	static int n,m,l,h,i,x,y,z;
 	static long a[];
 	static void u() {
-		System.out.println(Arrays.toString(a));
+		System.out.println(" "+Arrays.toString(a));
 		for(;i>1;i/=2,a[i]=a[i*2]+a[i*2+1]);
+		System.out.println(">"+Arrays.toString(a));
 	}
 	static long o(int n,int l,int r) {
 		if(r<x|l>y)return 0;
