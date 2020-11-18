@@ -8,11 +8,12 @@ public class P10999{
 		for(;i>1;i/=2,a[i]=a[i*2]+a[i*2+1]);
 		System.out.println(">"+Arrays.toString(a));
 	}
-	static long o(int n,int l,int r) {
-		if(l>y|r<x)return 0;
-		else if(l<=x&y<=r)return a[n];
-		int m=(l+r)/2;
-		return o(n*2,l,m)+o(n*2+1,m+1,r);
+	static long o(int n,int s,int e) {
+//		if(s>y|e<x)return 0;
+		if(y<s|x>e)return 0;
+		else if(x<=s&e<=y)return a[n];
+		int m=(s+e)/2;
+		return o(n*2,s,m)+o(n*2+1,m+1,e);
 	}
 	public static void main(String[] args)throws Exception{
 		BufferedReader r=new BufferedReader(new InputStreamReader(System.in));
