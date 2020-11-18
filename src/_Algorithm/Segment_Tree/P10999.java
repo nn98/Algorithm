@@ -2,11 +2,16 @@ package _Algorithm.Segment_Tree;
 import java.io.*;
 import java.util.*;
 public class P10999{
-	static int n,m,l,h,i,x,y;
+	static int n,m,l,h,i,x,y,z;
 	static long a[];
 	static void u() {
 		System.out.println(Arrays.toString(a));
 		for(;i>1;i/=2,a[i]=a[i*2]+a[i*2+1]);
+	}
+	static long o(int n,int l,int r) {
+		if(r<x|l>y)return 0;
+		else if(l<=x&y<=r)return a[n];
+		else return o(n*2,l,r/2)+o(n*2+1,l/2,r);
 	}
 	public static void main(String[] args)throws Exception{
 		BufferedReader r=new BufferedReader(new InputStreamReader(System.in));
@@ -26,14 +31,20 @@ public class P10999{
 			case "1":
 				x=Integer.parseInt(t.nextToken());
 				y=Integer.parseInt(t.nextToken());
-				
+				z=Integer.parseInt(t.nextToken());
+				for(;x<=y;x+=2) {
+					i=x;
+					u();
+				}
+				if(y%2==1)u();
 				break;
 			case "2":
 				x=Integer.parseInt(t.nextToken());
 				y=Integer.parseInt(t.nextToken());
-				
+				w.write(""+o(1,1,n)+"\n");
 				break;
 			}
 		}
+		w.flush();
 	}
 }
