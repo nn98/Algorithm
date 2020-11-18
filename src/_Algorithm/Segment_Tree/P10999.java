@@ -25,6 +25,7 @@ public class P10999{
 		System.out.println(Arrays.toString(a));
 		for(h=0;h<n;i=l+h,u(),h++);
 		System.out.println(Arrays.toString(a));
+		System.out.println();
 		while(m-->0) {
 			t=new StringTokenizer(r.readLine());
 			switch(t.nextToken()) {
