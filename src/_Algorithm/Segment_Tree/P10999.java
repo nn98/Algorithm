@@ -2,7 +2,7 @@ package _Algorithm.Segment_Tree;
 import java.io.*;
 import java.util.*;
 public class P10999{
-	static int n,m,l,h,i;
+	static int n,m,l,h,i,x,y;
 	static long a[];
 	static void u() {
 		System.out.println(Arrays.toString(a));
@@ -24,8 +24,14 @@ public class P10999{
 			t=new StringTokenizer(r.readLine());
 			switch(t.nextToken()) {
 			case "1":
+				x=Integer.parseInt(t.nextToken());
+				y=Integer.parseInt(t.nextToken());
+				
 				break;
 			case "2":
+				x=Integer.parseInt(t.nextToken());
+				y=Integer.parseInt(t.nextToken());
+				
 				break;
 			}
 		}
