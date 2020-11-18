@@ -5,7 +5,6 @@ public class P10999{
 	static int n,m,l,h,i,x,y,z;
 	static long a[];
 	static void u() {
-		System.out.println(" "+Arrays.toString(a));
 		for(;i>1;i/=2,a[i]=a[i*2]+a[i*2+1]);
 		System.out.println(">"+Arrays.toString(a));
 	}
@@ -25,7 +24,7 @@ public class P10999{
 		while(i<n)a[l+i++]=Integer.parseInt(r.readLine());
 		System.out.println(Arrays.toString(a));
 		for(h=0;h<n;i=l+h,u(),h++);
-		System.out.println(Arrays.toString(a));
+		System.out.println(" "+Arrays.toString(a));
 		System.out.println();
 		while(m-->0) {
 			t=new StringTokenizer(r.readLine());
@@ -35,8 +34,8 @@ public class P10999{
 				y=Integer.parseInt(t.nextToken());
 				z=Integer.parseInt(t.nextToken());
 				for(;x<=y;x++) {
-					a[l+x]+=z;
-					i=x+l;
+					a[l+x-1]+=z;
+					i=x+l-1;
 					u();
 				}
 				if(y%2==1)u();
