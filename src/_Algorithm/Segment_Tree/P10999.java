@@ -44,7 +44,7 @@ public class P10999{
 			case "2":
 				x=Integer.parseInt(t.nextToken());
 				y=Integer.parseInt(t.nextToken());
-				w.write(""+o(1,1,n)+"\n");
+				w.write(""+o(1,x,y)+"\n");
 				break;
 			}
 		}
