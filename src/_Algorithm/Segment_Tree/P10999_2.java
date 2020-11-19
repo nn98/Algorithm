@@ -1,6 +1,6 @@
 package _Algorithm.Segment_Tree;
 //TimeOut
-
+// Lazy Segment Tree Alg?
 import java.io.*;
 import java.util.*;
 public class P10999_2{
