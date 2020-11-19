@@ -1,4 +1,5 @@
 package _Algorithm.Segment_Tree;
+//TimeOut
 
 import java.io.*;
 import java.util.*;
@@ -7,10 +8,8 @@ public class P10999_2{
 	static long a[];
 	static void u() {
 		for(;i>1;i/=2,a[i]=a[i*2]+a[i*2+1]);
-		System.out.println(">"+Arrays.toString(a));
 	}
 	static long o(int n,int s,int e) {
-//		if(s>y|e<x)return 0;
 		if(y<s|x>e)return 0;
 		else if(x<=s&e<=y)return a[n];
 		int m=(s+e)/2;
@@ -25,10 +24,7 @@ public class P10999_2{
 		for(l=2;l<n;l*=2);
 		a=new long[l*2];
 		while(i<n)a[l+i++]=Integer.parseInt(r.readLine());
-		System.out.println(Arrays.toString(a));
 		for(h=0;h<n;i=l+h,u(),h++);
-		System.out.println(" "+Arrays.toString(a));
-		System.out.println();
 		while(m-->0) {
 			t=new StringTokenizer(r.readLine());
 			switch(t.nextToken()) {
