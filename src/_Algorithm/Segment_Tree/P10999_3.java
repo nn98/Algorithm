@@ -1,10 +1,7 @@
 package _Algorithm.Segment_Tree;
 
-import java.io.BufferedReader;
-import java.io.BufferedWriter;
-import java.io.InputStreamReader;
-import java.io.OutputStreamWriter;
-import java.util.StringTokenizer;
+import java.io.*;
+import java.util.*;
 
 public class P10999_3 {
 	static int n,m,l,h,i,x,y,z;
