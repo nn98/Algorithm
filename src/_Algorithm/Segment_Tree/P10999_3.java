@@ -1,9 +1,7 @@
 package _Algorithm.Segment_Tree;
-
 import java.io.*;
 import java.util.*;
-
-public class P10999_3 {
+public class P10999_3{
 	static int n,m,l,h,i,x,y,z;
 	static long a[];
 	static void u() {
