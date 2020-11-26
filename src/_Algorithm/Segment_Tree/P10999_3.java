@@ -14,6 +14,7 @@ public class P10999_3{
 		return o(n*2,s,m)+o(n*2+1,m+1,e);
 	}
 	public static void main(String[] args)throws Exception{
+//		업데이트에서 구간 노드를 업데이트
 		BufferedReader r=new BufferedReader(new InputStreamReader(System.in));
 		BufferedWriter w=new BufferedWriter(new OutputStreamWriter(System.out));
 		StringTokenizer t=new StringTokenizer(r.readLine());
