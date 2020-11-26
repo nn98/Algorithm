@@ -7,6 +7,7 @@ public class _Lazy_Propagation {
 	public static void main(String[] args) {
 		
 //		아 그냥 구간에 구간변경값을
+//		한번킬때마다 세팅 개오래걸리네
 		
 	}
 
