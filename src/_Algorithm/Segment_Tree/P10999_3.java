@@ -15,6 +15,7 @@ public class P10999_3{
 	}
 	public static void main(String[] args)throws Exception{
 //		업데이트에서 구간 노드를 업데이트
+		
 		BufferedReader r=new BufferedReader(new InputStreamReader(System.in));
 		BufferedWriter w=new BufferedWriter(new OutputStreamWriter(System.out));
 		StringTokenizer t=new StringTokenizer(r.readLine());
