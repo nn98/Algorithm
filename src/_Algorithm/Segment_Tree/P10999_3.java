@@ -5,6 +5,9 @@ public class P10999_3{
 	static int n,m,l,h,i,x,y,z;
 	static long a[];
 	static void u() {
+		
+//		노드의 범위 계산?
+		
 		for(;i>1;i/=2,a[i]=a[i*2]+a[i*2+1]);
 	}
 	static long o(int n,int s,int e) {
@@ -14,6 +17,7 @@ public class P10999_3{
 		return o(n*2,s,m)+o(n*2+1,m+1,e);
 	}
 	public static void main(String[] args)throws Exception{
+		
 //		업데이트에서 구간 노드를 업데이트
 		
 		BufferedReader r=new BufferedReader(new InputStreamReader(System.in));
