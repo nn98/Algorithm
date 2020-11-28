@@ -9,6 +9,7 @@ public class P10999_3{
 //		노드의 범위 계산?
 		
 		for(;i>1;i/=2,a[i]=a[i*2]+a[i*2+1]);
+		
 	}
 	static long o(int n,int s,int e) {
 		if(y<s|x>e)return 0;
