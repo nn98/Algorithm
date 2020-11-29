@@ -11,6 +11,14 @@ public class P10999_3{
 		for(;i>1;i/=2,a[i]=a[i*2]+a[i*2+1]);
 		
 	}
+	
+	static long p(int n,int s,int e) {
+		if(y<s|x>e)return 0;
+		else if(x<=s&e<=y)return a[n];
+		int m=(s+e)/2;
+		return o(n*2,s,m)+o(n*2+1,m+1,e);
+	}
+	
 	static long o(int n,int s,int e) {
 		if(y<s|x>e)return 0;
 		else if(x<=s&e<=y)return a[n];
