@@ -13,9 +13,9 @@ public class P10999_3{
 		
 	}
 	
-	static long p(int n,int s,int e) {
+	static void p(int n,int s,int e) {
 		
-		if(y<s|x>e)return 0;
+		if(y<s|x>e)return;
 		else if(x<=s&e<=y)return a[n];
 		int m=(s+e)/2;
 		return o(n*2,s,m)+o(n*2+1,m+1,e);
