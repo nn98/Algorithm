@@ -20,6 +20,7 @@ public class P10999_3{
 		else if(x<=s&e<=y)return a[n];
 		
 		int m=(s+e)/2;
+		
 		return o(n*2,s,m)+o(n*2+1,m+1,e);
 		
 	}
