@@ -15,7 +15,6 @@ public class P10999_3{
 	
 	static void p(int n,int s,int e) {
 		
-		
 	}
 	
 	static long o(int n,int s,int e) {
