@@ -42,6 +42,7 @@ public class P10999_3{
 		m=Integer.parseInt(t.nextToken())+Integer.parseInt(t.nextToken());
 		for(l=2;l<n;l*=2);
 		a=new long[l*2];
+		b=new long[l*2];
 		while(i<n)a[l+i++]=Integer.parseInt(r.readLine());
 		for(h=0;h<n;i=l+h,u(),h++);
 		while(m-->0) {
