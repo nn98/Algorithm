@@ -17,6 +17,8 @@ public class P10999_3{
 		
 		if(b[n]>0) {
 			
+			
+			
 		}
 		
 	}
