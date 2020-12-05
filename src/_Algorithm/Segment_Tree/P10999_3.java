@@ -15,6 +15,10 @@ public class P10999_3{
 	
 	static void p(int n,int s,int e) {
 		
+		if(b[n]>0) {
+			
+		}
+		
 	}
 	
 	static long o(int n,int s,int e) {
