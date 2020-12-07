@@ -16,14 +16,16 @@ public class P10999_3{
 	static void p(int n,int s,int e) {
 		
 		if(b[n]>0) {
-			
+			/*
 			for(i=0;i<l*2;i*=2) {
 
-				a[i*2]+=b[n];
+//				a[i*2]+=b[n];
 				
-				a[i*2+1]+=b[n];
+//				a[i*2+1]+=b[n];
 				
 			}
+			*/
+//			가 아닌 범위 내 노드만
 			
 		}
 		
