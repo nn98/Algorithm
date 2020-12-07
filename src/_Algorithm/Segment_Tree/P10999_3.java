@@ -18,8 +18,10 @@ public class P10999_3{
 		if(b[n]>0) {
 			
 			for(i=0;i<l*2;i*=2) {
+
+				a[i*2]+=b[n];
 				
-				
+				a[i*2+1]+=b[n];
 				
 			}
 			
