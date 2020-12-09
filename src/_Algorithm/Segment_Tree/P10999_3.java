@@ -15,19 +15,11 @@ public class P10999_3{
 	
 	static void p(int n,int s,int e) {
 		
-		if(b[n]>0) {
-			/*
-			for(i=0;i<l*2;i*=2) {
-
-//				a[i*2]+=b[n];
-				
-//				a[i*2+1]+=b[n];
-				
-			}
-			*/
-//			가 아닌 범위 내 노드만
-			
-		}
+		if(y<s|x>e)return;
+		else if(x<=s&e<=y)a[n]+=b[n];
+		int m=(s+e)/2;
+		o(n*2,s,m);
+		o(n*2+1,m+1,e);
 		
 	}
 	
