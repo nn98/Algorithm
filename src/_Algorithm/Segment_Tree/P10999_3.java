@@ -24,6 +24,9 @@ public class P10999_3{
 	}
 	
 	static long o(int n,int s,int e) {
+		if(b[n]!=0) {
+			
+		}
 		if(y<s|x>e)return 0;
 		else if(x<=s&e<=y)return a[n];
 		int m=(s+e)/2;
