@@ -24,6 +24,7 @@ public class P10999_3{
 	}
 	
 	static long o(int n,int s,int e) {
+		
 		if(b[n]!=0) {
 			a[n]+=(y-x+1)*b[n];
 			if(x!=y) {
@@ -32,10 +33,12 @@ public class P10999_3{
 			}
 			b[n]=0;
 		}
+		
 		if(y<s|x>e)return 0;
 		else if(x<=s&e<=y)return a[n];
 		int m=(s+e)/2;
 		return o(n*2,s,m)+o(n*2+1,m+1,e);
+		
 	}
 	public static void main(String[] args)throws Exception{
 		
