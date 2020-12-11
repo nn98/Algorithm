@@ -17,6 +17,7 @@ public class P10999_3{
 		
 		if(y<s|x>e)return;
 		else if(x<=s&e<=y)a[n]+=b[n];
+		
 		int m=(s+e)/2;
 		o(n*2,s,m);
 		o(n*2+1,m+1,e);
