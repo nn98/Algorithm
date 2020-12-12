@@ -16,6 +16,7 @@ public class P10999_3{
 	static void p(int n,int s,int e) {
 		
 		if(y<s|x>e)return;
+		
 		else if(x<=s&e<=y)a[n]+=b[n];
 		
 		int m=(s+e)/2;
