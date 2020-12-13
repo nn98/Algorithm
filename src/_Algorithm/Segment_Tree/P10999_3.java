@@ -22,6 +22,7 @@ public class P10999_3{
 		int m=(s+e)/2;
 		
 		o(n*2,s,m);
+		
 		o(n*2+1,m+1,e);
 		
 	}
