@@ -13,6 +13,8 @@ public class P10999_3{
 		
 	}
 	
+//	업데이트 범위?
+	
 	static void p(int n,int s,int e) {
 		
 		if(y<s|x>e)return;
