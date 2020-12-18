@@ -18,7 +18,6 @@ public class P10999_3{
 //	업데이트 범위?
 	
 	static void t(int n,int s,int e) {
-		System.out.println(n+" "+s+" "+e);
 		if(s==e) {
 			if(s-c>N)a[n]=0;
 			else a[n]=A[s-c];
@@ -89,7 +88,6 @@ public class P10999_3{
 		while(i<N)A[++i]=Integer.parseInt(r.readLine());
 		c=l-1;
 		t(1,c+1,l*2-1);
-		System.out.println(Arrays.toString(a));
 //		for(h=0;h<N;i=l+h,u(),h++);
 //		for(h=1;h<=N;A[h])
 		while(m-->0) {
