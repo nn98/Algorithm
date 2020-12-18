@@ -19,8 +19,8 @@ public class P10999_3{
 	
 	static void t(int n,int s,int e) {
 		if(s==e) {
-			if(s-l-1>N)a[n]=0;
-			else a[n]=A[s-l-1];
+			if(s-(l-1)>N)a[n]=0;
+			else a[n]=A[s-(l-1)];
 			return;
 		}
 		int m=(s+e)/2;
