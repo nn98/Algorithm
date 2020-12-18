@@ -37,6 +37,8 @@ public class P10999_3{
 	
 	static void o(int n,int s,int e) {
 		
+		System.out.println(n+" "+s+" "+e);
+		
 		if(b[n]!=0) {
 			a[n]+=(e-s+1)*b[n];
 			if(x!=y) {
