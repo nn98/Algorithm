@@ -47,6 +47,7 @@ public class P10999_3{
 		}
 		
 		if(y<s|x>e)return;
+		
 		if(x<=s&e<=y){
 			a[n]+=(e-s+1)*z;
 			if(s!=e) {
@@ -77,9 +78,9 @@ public class P10999_3{
 		for(h=0;h<n;i=l+h,u(),h++);
 		while(m-->0) {
 			w.write(m+":\n");
-			for(int Q=0;Q<l*2;w.write(a[Q]+" "),Q++);
+			for(int Q=0;Q<l*2;w.write(a[Q]+"\t"),Q++);
 			w.write("\n");
-			for(int Q=0;Q<l*2;w.write(b[Q]+" "),Q++);
+			for(int Q=0;Q<l*2;w.write(b[Q]+"\t"),Q++);
 			w.write("\n");
 			t=new StringTokenizer(r.readLine());
 			switch(t.nextToken()) {
