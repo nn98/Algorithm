@@ -20,7 +20,7 @@ public class P10999_3{
 	static long p(int n,int s,int e) {
 		
 		if(b[n]!=0) {
-			a[n]+=(y-x+1)*b[n];
+			a[n]+=(e-s+1)*b[n];
 			if(x!=y) {
 				b[n*2]+=b[n];
 				b[n*2+1]+=b[n];
@@ -38,7 +38,7 @@ public class P10999_3{
 	static void o(int n,int s,int e) {
 		
 		if(b[n]!=0) {
-			a[n]+=(y-x+1)*b[n];
+			a[n]+=(e-s+1)*b[n];
 			if(x!=y) {
 				b[n*2]+=b[n];
 				b[n*2+1]+=b[n];
