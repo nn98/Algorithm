@@ -84,6 +84,7 @@ public class P10999_3{
 		b=new long[l*2];
 		while(i<N)a[l+i++]=Integer.parseInt(r.readLine());
 		t(1,l,l*2-1);
+		System.out.println(Arrays.toString(a));
 //		for(h=0;h<N;i=l+h,u(),h++);
 //		for(h=1;h<=N;A[h])
 		while(m-->0) {
