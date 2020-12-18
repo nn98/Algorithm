@@ -20,7 +20,7 @@ public class P10999_3{
 	static void t(int n,int s,int e) {
 		if(s==e) {
 			if(s-l-1>N)a[n]=0;
-			else a[n]=a[s-l-1];
+			else a[n]=A[s-l-1];
 			return;
 		}
 		int m=(s+e)/2;
@@ -82,7 +82,9 @@ public class P10999_3{
 		for(l=2;l<N;l*=2);
 		a=new long[l*2];
 		b=new long[l*2];
-		while(i<N)a[l+i++]=Integer.parseInt(r.readLine());
+		A=new long[N+1];
+//		while(i<N)a[l+i++]=Integer.parseInt(r.readLine());
+		while(i<N)A[++i]=Integer.parseInt(r.readLine());
 		t(1,l,l*2-1);
 //		for(h=0;h<N;i=l+h,u(),h++);
 //		for(h=1;h<=N;A[h])
