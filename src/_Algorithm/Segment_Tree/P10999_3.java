@@ -7,27 +7,31 @@ public class P10999_3{
 	
 	static long a[],b[];
 	
-//	static void u() {
-//		
-//		노드의 범위 계산?
-//		
-//		for(;i>1;i/=2,a[i]=a[i*2]+a[i*2+1]);
-//		
-//	}
+	static void u() {
+		
+		노드의 범위 계산?
+		
+		for(;i>1;i/=2,a[i]=a[i*2]+a[i*2+1]);
+		
+	}
 	
 //	업데이트 범위?
 	
-	static void p(int n,int s,int e) {
+	static long p(int n,int s,int e) {
 		
-		if(y<s|x>e)return;
+		if(b[n]!=0) {
+			a[n]+=(y-x+1)*b[n];
+			if(x!=y) {
+				b[n*2]+=b[n];
+				b[n*2+1]+=b[n];
+			}
+			b[n]=0;
+		}
 		
-		else if(x<=s&e<=y)a[n]+=b[n];
-		
+		if(x>e|y<s)return 0;
+		if(x<=s&e<=y)return a[n];
 		int m=(s+e)/2;
-		
-		o(n*2,s,m);
-		
-		o(n*2+1,m+1,e);
+		return p(n*2,s,m)+p(n*2+1,m+1,e);
 		
 	}
 	
@@ -89,7 +93,7 @@ public class P10999_3{
 			case "2":
 				x=Integer.parseInt(t.nextToken());
 				y=Integer.parseInt(t.nextToken());
-				w.write(""+o(1,1,l)+"\n");
+				w.write(""+p(1,1,l)+"\n");
 				break;
 			}
 		}
