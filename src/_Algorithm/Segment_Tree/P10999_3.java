@@ -3,9 +3,9 @@ import java.io.*;
 import java.util.*;
 public class P10999_3{
 	
-	static int n,m,l,h,i,x,y,z;
+	static int N,m,l,h,i,x,y,z;
 	
-	static long a[],b[];
+	static long a[],b[],A[];
 	
 	static void u() {
 		
@@ -16,6 +16,17 @@ public class P10999_3{
 	}
 	
 //	업데이트 범위?
+	
+	static void t(int n,int s,int e) {
+		if(s==e) {
+			if(s-l-1>N)a[n]=0;
+			else a[n]=a[s-l-1];
+			return;
+		}
+		int m=(s+e)/2;
+		t(n*2,s,m);
+		t(n*2+1,m+1,e);
+	}
 	
 	static void l(int n,int s,int e) {
 		if(b[n]!=0) {
@@ -66,13 +77,14 @@ public class P10999_3{
 		BufferedReader r=new BufferedReader(new InputStreamReader(System.in));
 		BufferedWriter w=new BufferedWriter(new OutputStreamWriter(System.out));
 		StringTokenizer t=new StringTokenizer(r.readLine());
-		n=Integer.parseInt(t.nextToken());
+		N=Integer.parseInt(t.nextToken());
 		m=Integer.parseInt(t.nextToken())+Integer.parseInt(t.nextToken());
-		for(l=2;l<n;l*=2);
+		for(l=2;l<N;l*=2);
 		a=new long[l*2];
 		b=new long[l*2];
-		while(i<n)a[l+i++]=Integer.parseInt(r.readLine());
-		for(h=0;h<n;i=l+h,u(),h++);
+		while(i<N)a[l+i++]=Integer.parseInt(r.readLine());
+		for(h=0;h<N;i=l+h,u(),h++);
+//		for(h=1;h<=N;A[h])
 		while(m-->0) {
 //			w.write(m+":\n");
 //			for(int Q=0;Q<l*2;w.write(a[Q]+"\t"),Q++);
