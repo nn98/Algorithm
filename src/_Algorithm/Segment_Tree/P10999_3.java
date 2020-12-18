@@ -17,16 +17,20 @@ public class P10999_3{
 	
 //	업데이트 범위?
 	
-	static long p(int n,int s,int e) {
-		
+	static void l(int n,int s,int e) {
 		if(b[n]!=0) {
 			a[n]+=(e-s+1)*b[n];
-			if(x!=y) {
+			if(s!=e) {
 				b[n*2]+=b[n];
 				b[n*2+1]+=b[n];
 			}
 			b[n]=0;
 		}
+	}
+	
+	static long p(int n,int s,int e) {
+		
+		l(n,s,e);
 		
 		if(x>e|y<s)return 0;
 		if(x<=s&e<=y)return a[n];
@@ -41,7 +45,7 @@ public class P10999_3{
 		
 		if(b[n]!=0) {
 			a[n]+=(e-s+1)*b[n];
-			if(x!=y) {
+			if(s!=e) {
 				b[n*2]+=b[n];
 				b[n*2+1]+=b[n];
 			}
