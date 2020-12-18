@@ -41,14 +41,7 @@ public class P10999_3{
 	
 	static void o(int n,int s,int e) {
 		
-		if(b[n]!=0) {
-			a[n]+=(e-s+1)*b[n];
-			if(s!=e) {
-				b[n*2]+=b[n];
-				b[n*2+1]+=b[n];
-			}
-			b[n]=0;
-		}
+		l(n,s,e);
 		
 		if(y<s|x>e)return;
 		
