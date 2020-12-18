@@ -81,7 +81,7 @@ public class P10999_3{
 //			for(int Q=0;Q<l*2;w.write(a[Q]+"\t"),Q++);
 //			w.write("\n");
 //			for(int Q=0;Q<l*2;w.write(b[Q]+"\t"),Q++);
-			w.write("\n");
+//			w.write("\n");
 			t=new StringTokenizer(r.readLine());
 			switch(t.nextToken()) {
 			case "1":
