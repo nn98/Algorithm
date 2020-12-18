@@ -3,7 +3,7 @@ import java.io.*;
 import java.util.*;
 public class P10999_3{
 	
-	static int N,m,l,h,i,x,y,z;
+	static int N,m,l,h,i,x,y,z,c;
 	
 	static long a[],b[],A[];
 	
@@ -19,8 +19,8 @@ public class P10999_3{
 	
 	static void t(int n,int s,int e) {
 		if(s==e) {
-			if(s-(l-1)>N)a[n]=0;
-			else a[n]=a[s-(l-1)];
+			if(s-c>N)a[n]=0;
+			else a[n]=a[s-c];
 			return;
 		}
 		int m=(s+e)/2;
@@ -83,7 +83,8 @@ public class P10999_3{
 		a=new long[l*2];
 		b=new long[l*2];
 		while(i<N)a[l+i++]=Integer.parseInt(r.readLine());
-		t(1,l,l*2-1);
+		c=l-1;
+		t(1,c+1,l*2-1);
 		System.out.println(Arrays.toString(a));
 //		for(h=0;h<N;i=l+h,u(),h++);
 //		for(h=1;h<=N;A[h])
