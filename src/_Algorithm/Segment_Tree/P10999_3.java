@@ -9,7 +9,7 @@ public class P10999_3{
 	
 	static void u() {
 		
-		노드의 범위 계산?
+//		노드의 범위 계산?
 		
 		for(;i>1;i/=2,a[i]=a[i*2]+a[i*2+1]);
 		
