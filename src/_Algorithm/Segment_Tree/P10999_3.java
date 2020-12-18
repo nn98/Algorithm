@@ -83,7 +83,8 @@ public class P10999_3{
 		a=new long[l*2];
 		b=new long[l*2];
 		while(i<N)a[l+i++]=Integer.parseInt(r.readLine());
-		for(h=0;h<N;i=l+h,u(),h++);
+		t(1,l,l*2-1);
+//		for(h=0;h<N;i=l+h,u(),h++);
 //		for(h=1;h<=N;A[h])
 		while(m-->0) {
 //			w.write(m+":\n");
