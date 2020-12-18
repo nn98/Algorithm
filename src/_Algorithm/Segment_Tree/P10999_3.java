@@ -27,6 +27,7 @@ public class P10999_3{
 		int m=(s+e)/2;
 		t(n*2,s,m);
 		t(n*2+1,m+1,e);
+		a[n]=a[n*2]+a[n*2+1];
 	}
 	
 	static void l(int n,int s,int e) {
