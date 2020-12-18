@@ -18,6 +18,7 @@ public class P10999_3{
 //	업데이트 범위?
 	
 	static void t(int n,int s,int e) {
+		System.out.println(n+" "+s+" "+e);
 		if(s==e) {
 			if(s-c>N)a[n]=0;
 			else a[n]=A[s-c];
