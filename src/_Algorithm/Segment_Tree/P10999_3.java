@@ -76,6 +76,7 @@ public class P10999_3{
 		while(i<n)a[l+i++]=Integer.parseInt(r.readLine());
 		for(h=0;h<n;i=l+h,u(),h++);
 		while(m-->0) {
+			System.out.println("go at:\t"+Arrays.toString(a)+"\n"+Arrays.toString(b));
 			t=new StringTokenizer(r.readLine());
 			switch(t.nextToken()) {
 			case "1":
