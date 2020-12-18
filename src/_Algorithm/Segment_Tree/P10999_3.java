@@ -7,13 +7,13 @@ public class P10999_3{
 	
 	static long a[],b[];
 	
-	static void u() {
-		
+//	static void u() {
+//		
 //		노드의 범위 계산?
-		
-		for(;i>1;i/=2,a[i]=a[i*2]+a[i*2+1]);
-		
-	}
+//		
+//		for(;i>1;i/=2,a[i]=a[i*2]+a[i*2+1]);
+//		
+//	}
 	
 //	업데이트 범위?
 	
@@ -31,7 +31,7 @@ public class P10999_3{
 		
 	}
 	
-	static long o(int n,int s,int e) {
+	static void o(int n,int s,int e) {
 		
 		if(b[n]!=0) {
 			a[n]+=(y-x+1)*b[n];
@@ -42,10 +42,19 @@ public class P10999_3{
 			b[n]=0;
 		}
 		
-		if(y<s|x>e)return 0;
-		else if(x<=s&e<=y)return a[n];
+		if(y<s|x>e)return;
+		if(x<=s&e<=y){
+			a[n]+=(e-s+1)*z;
+			if(s!=e) {
+				b[n*2]+=z;
+				b[n*2+1]+=z;
+			}
+			return;
+		}
 		int m=(s+e)/2;
-		return o(n*2,s,m)+o(n*2+1,m+1,e);
+		o(n*2,s,m);
+		o(n*2+1,m+1,e);
+		a[n]=a[n*2]+a[n*2+1];
 		
 	}
 	public static void main(String[] args)throws Exception{
@@ -69,12 +78,13 @@ public class P10999_3{
 				x=Integer.parseInt(t.nextToken());
 				y=Integer.parseInt(t.nextToken());
 				z=Integer.parseInt(t.nextToken());
-				for(;x<=y;x++) {
-					a[l+x-1]+=z;
-					i=x+l-1;
-					u();
-				}
-				if(y%2==1)u();
+//				for(;x<=y;x++) {
+//					a[l+x-1]+=z;
+//					i=x+l-1;
+//					u();
+//				}
+//				if(y%2==1)u();
+				o(1,1,l);
 				break;
 			case "2":
 				x=Integer.parseInt(t.nextToken());
