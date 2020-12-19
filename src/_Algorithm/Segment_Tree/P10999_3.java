@@ -72,7 +72,7 @@ public class P10999_3{
 		
 	}
 	
-//	tq
+//	¤µ¤²
 	
 	public static void main(String[] args)throws Exception{
 		
