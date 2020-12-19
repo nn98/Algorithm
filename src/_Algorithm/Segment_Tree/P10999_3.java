@@ -71,6 +71,9 @@ public class P10999_3{
 		a[n]=a[n*2]+a[n*2+1];
 		
 	}
+	
+//	tq
+	
 	public static void main(String[] args)throws Exception{
 		
 //		업데이트에서 구간 노드를 업데이트
