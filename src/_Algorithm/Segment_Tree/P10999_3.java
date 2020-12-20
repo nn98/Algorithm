@@ -1,6 +1,8 @@
 package _Algorithm.Segment_Tree;
+
 import java.io.*;
 import java.util.*;
+
 public class P10999_3{
 	
 	static int N,m,l,h,i,x,y,z,c;
