@@ -11,6 +11,8 @@ public class P10999_4 {
 		BufferedWriter w=new BufferedWriter(new OutputStreamWriter(System.out));
 		StringTokenizer t=new StringTokenizer(r.readLine());
 		
+//		풀이대로?
+		
 	}
 
 }
