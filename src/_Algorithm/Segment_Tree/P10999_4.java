@@ -13,8 +13,6 @@ public class P10999_4 {
 		
 //		풀이대로?
 		
-		 Saved?
-		
 	}
 
 }
