@@ -3,9 +3,9 @@ package _Algorithm.Segment_Tree;
 import java.io.*;
 import java.util.*;
 
-static long a[];
-
 public class P10999_4 {
+	
+	static long a[];
 
 	public static void main(String[] args)throws Exception{
 		
