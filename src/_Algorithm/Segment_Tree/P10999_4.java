@@ -5,7 +5,7 @@ import java.util.*;
 
 public class P10999_4 {
 	
-	static long a[];
+	static long[]a,b,c;
 
 	public static void main(String[] args)throws Exception{
 		
