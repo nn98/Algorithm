@@ -19,6 +19,10 @@ public class P10999_4 {
 		m=Integer.parseInt(t.nextToken())+Integer.parseInt(t.nextToken());
 		while(i<n)a[i++]=Integer.parseInt(r.readLine());
 		
+		while(m-->0) {
+			
+		}
+		
 	}
 
 }
