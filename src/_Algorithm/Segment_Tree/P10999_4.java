@@ -6,7 +6,7 @@ import java.util.*;
 public class P10999_4 {
 	
 	static long[]a,b,c;
-	static int n,i,m;
+	static int n,i,m,N;
 
 	public static void main(String[] args)throws Exception{
 		
@@ -22,6 +22,7 @@ public class P10999_4 {
 		while(m-->0) {
 			
 			t=new StringTokenizer(r.readLine());
+			N=Integer.parseInt(t.nextToken());
 			
 		}
 		
