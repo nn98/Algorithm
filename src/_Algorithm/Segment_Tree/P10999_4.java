@@ -21,6 +21,8 @@ public class P10999_4 {
 		
 		while(m-->0) {
 			
+			t=new StringTokenizer(r.readLine());
+			
 		}
 		
 	}
