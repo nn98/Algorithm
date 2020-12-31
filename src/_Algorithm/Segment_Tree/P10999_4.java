@@ -24,6 +24,7 @@ public class P10999_4 {
 			t=new StringTokenizer(r.readLine());
 			N=Integer.parseInt(t.nextToken());
 			
+			
 		}
 		
 	}
