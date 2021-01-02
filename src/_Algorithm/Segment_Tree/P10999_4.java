@@ -25,7 +25,9 @@ public class P10999_4 {
 			N=Integer.parseInt(t.nextToken());
 			if(N==1) {
 				
+				
 			}else {
+				
 				
 			}
 			
