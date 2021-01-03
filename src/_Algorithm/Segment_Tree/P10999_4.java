@@ -26,7 +26,9 @@ public class P10999_4 {
 			if(N==1) {
 				
 				
+				
 			}else {
+				
 				
 				
 			}
