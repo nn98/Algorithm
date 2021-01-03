@@ -7,6 +7,10 @@ public class P10999_4 {
 	
 	static long[]a,b,c;
 	static int n,i,m,N;
+	
+	static void t() {
+		
+	}
 
 	public static void main(String[] args)throws Exception{
 		
