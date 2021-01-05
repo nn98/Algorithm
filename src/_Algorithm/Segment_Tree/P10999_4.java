@@ -26,8 +26,8 @@ public class P10999_4 {
 		l=1;
 		while(l<n*2)l*=2;
 		L=l/2;
-		a=new long[L];
 		b=new long[L];
+		c=new long[L];
 		
 		while(m-->0) {
 			
