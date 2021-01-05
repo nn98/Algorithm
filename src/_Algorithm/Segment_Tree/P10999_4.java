@@ -10,6 +10,8 @@ public class P10999_4 {
 	
 	static void t() {
 		
+		
+		
 	}
 
 	public static void main(String[] args)throws Exception{
