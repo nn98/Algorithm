@@ -10,7 +10,7 @@ public class P10999_4 {
 	
 	static void t() {
 		
-		
+		if() {}
 		
 	}
 
