@@ -6,11 +6,13 @@ import java.util.*;
 public class P10999_4 {
 	
 	static long[]a,b,c;
-	static int n,i,m,N,l,L;
+	static int n,i,m,N,l,L,x,y;
 	
-	static void t() {
+	static void t(int n,int s,int e) {
 		
-		if() {}
+		if(s>y) {
+			
+		}
 		
 	}
 
