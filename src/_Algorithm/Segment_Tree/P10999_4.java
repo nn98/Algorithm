@@ -12,6 +12,8 @@ public class P10999_4 {
 		
 		if(s>y|e<x) {
 			
+			
+			
 		}
 		
 	}
