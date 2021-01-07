@@ -10,7 +10,7 @@ public class P10999_4 {
 	
 	static void t(int n,int s,int e) {
 		
-		if(s>y) {
+		if(s>y|e<x) {
 			
 		}
 		
