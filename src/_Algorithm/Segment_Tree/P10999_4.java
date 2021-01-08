@@ -6,7 +6,11 @@ import java.util.*;
 public class P10999_4 {
 	
 	static long[]a,b,c;
-	static int n,i,m,N,l,L,x,y;
+	static int n,i,m,N,l,S,x,y;
+	
+	static void o(){
+		for(;x>0;x/=2,a[x]=a[x*2]+a[x*2+1]);
+	}
 	
 	static void t(int n,int s,int e) {
 		
@@ -28,10 +32,17 @@ public class P10999_4 {
 		while(i<n)a[i++]=Integer.parseInt(r.readLine());
 		
 		l=1;
-		while(l<n*2)l*=2;
-		L=l/2;
-		b=new long[L];
-		c=new long[L];
+// 		while(l<n*2)l*=2;
+// 		L=l/2;
+// 		b=new long[L];
+// 		c=new long[L];
+		
+		while(l<=n)l*=2;
+		b=new long[l];
+		c=new long[l];
+		S=l/2;
+		
+		for(i=0;i<n;x=i+S,o());
 		
 		while(m-->0) {
 			
