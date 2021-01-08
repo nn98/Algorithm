@@ -3,6 +3,8 @@ package _Algorithm.Segment_Tree;
 import java.io.*;
 import java.util.*;
 
+// crash?
+
 public class P10999_4 {
 	
 	static long[]a,b,c;
