@@ -62,7 +62,9 @@ public class P5676_2 {
 					long X=p(1,1,l);
 //					w.write(F==0?"0":"");
 //					if(F>0)w.write(i>0?"+":"-");
-					w.write((X==0)?"0":(X>0?"+":"-"));
+					if(X>0)w.write("+");
+					else if(X<0)w.write("-");
+					else w.write(0);
 				}
 			}
 			w.flush();
