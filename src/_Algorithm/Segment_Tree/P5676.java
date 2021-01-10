@@ -42,7 +42,7 @@ public class P5676 {
 			while(m-->0) {
 				t=new StringTokenizer(r.readLine());
 				if(t.nextToken().equals("C")) {
-					j=Integer.parseInt(t.nextToken())+l;
+					j=Integer.parseInt(t.nextToken())+l-1;
 					a[j]=Integer.parseInt(t.nextToken());
 					o();
 				}else {
