@@ -55,8 +55,12 @@ public class P5676 {
 					y=Integer.parseInt(t.nextToken())-1;
 					i=p(1,0,n-1);
 					w.write(F==0?"0":"");
-					if(F>0)
+					System.out.print(F==0?"0":"");
+					if(F>0) {
 						w.write(i>0?"+":"-");
+						System.out.print(i>0?"+":"-");
+					}
+					System.out.println();
 				}
 			}
 			w.flush();
