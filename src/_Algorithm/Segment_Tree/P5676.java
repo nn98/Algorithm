@@ -45,11 +45,9 @@ public class P5676 {
 					i=Integer.parseInt(t.nextToken());
 					a[j]=i>0?1:-1;
 					if(i==0)a[j]=i;
-					F=1;
 					o();
 //					System.out.println(Arrays.toString(a));
 				}else {
-					F=1;
 					x=Integer.parseInt(t.nextToken());
 					y=Integer.parseInt(t.nextToken());
 					long X=p(1,1,l);
