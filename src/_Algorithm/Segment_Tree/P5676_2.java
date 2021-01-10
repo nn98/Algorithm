@@ -38,8 +38,15 @@ public class P5676_2 {
 			a=new int[l*2];
 			t=new StringTokenizer(r.readLine());
 			Arrays.fill(a,1);
-			for(i=0;i<n;j=l+i++,x=Integer.parseInt(t.nextToken()),a[j]=(x==0?0:(x>0)?1:-1),o());
-//			System.out.println(Arrays.toString(a));
+			for(i=0;i<n;) {
+				int A=Integer.parseInt(t.nextToken());
+				j=l+i++;
+				if(A>0)a[j]=1;
+				else if(A<0)a[j]=-1;
+				else a[j]=0;
+				o();
+			}
+			System.out.println(Arrays.toString(a));
 			while(m-->0) {
 				t=new StringTokenizer(r.readLine());
 				if(t.nextToken().equals("C")) {
