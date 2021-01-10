@@ -39,7 +39,9 @@ public class P5676 {
 			t=new StringTokenizer(r.readLine());
 			Arrays.fill(a,1);
 			for(i=0;i<n;j=l+i++,a[j]=Integer.parseInt(t.nextToken()),F=1,o());
+			System.out.println(Arrays.toString(a));
 			while(m-->0) {
+				System.out.println(m);
 				t=new StringTokenizer(r.readLine());
 				if(t.nextToken().equals("C")) {
 					j=Integer.parseInt(t.nextToken())+l-1;
