@@ -16,8 +16,8 @@ public class P5676 {
 			StringTokenizer t=new StringTokenizer(r.readLine());
 			n=Integer.parseInt(t.nextToken());
 			m=Integer.parseInt(t.nextToken());
-			for(l=1;l<=n;l*=2);
-			a=new int[l];
+			for(l=1;l<n;l*=2);
+			a=new int[l*2];
 			l/=2;
 			t=new StringTokenizer(r.readLine());
 			for(i=0;i<n;j=l+i++,a[j]=Integer.parseInt(t.nextToken()),o());
