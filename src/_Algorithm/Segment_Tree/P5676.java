@@ -53,7 +53,7 @@ public class P5676 {
 					F=1;
 					x=Integer.parseInt(t.nextToken());
 					y=Integer.parseInt(t.nextToken());
-					i=p(1,1,n);
+					i=p(1,0,n-1);
 					w.write(F==0?"0":"");
 					if(F>0)
 						w.write(i>0?"+":"-");
