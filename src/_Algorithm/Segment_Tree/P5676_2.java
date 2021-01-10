@@ -49,10 +49,11 @@ public class P5676_2 {
 			while(m-->0) {
 				t=new StringTokenizer(r.readLine());
 				if(t.nextToken().equals("C")) {
-					j=Integer.parseInt(t.nextToken())+l-1;
+					j=Integer.parseInt(t.nextToken())+(l-1);
 					i=Integer.parseInt(t.nextToken());
-					a[j]=i>0?1:-1;
-					if(i==0)a[j]=i;
+					if(i>0)a[j]=1;
+					else if(i<0)a[j]=-1;
+					else a[j]=0;
 					o();
 				}else {
 					x=Integer.parseInt(t.nextToken());
