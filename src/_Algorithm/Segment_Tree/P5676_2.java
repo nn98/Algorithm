@@ -1,6 +1,6 @@
 package _Algorithm.Segment_Tree;
 
-// 撿檜 噢嫦 寥遽 瓣薄 偃億郭撿 營勾中仄囀楚切中六仄楫分中仄煎牆分之元傍升
+// 撿檜 噢嫦 寥遽 瓣薄 偃億郭撿 營勾中仄囀楚切中六仄楫分中仄煎牆分之元傍升 六六六六六六六六六六六六六六六六六六六六六六六六六六六六六六六六六
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
