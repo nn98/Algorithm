@@ -21,7 +21,7 @@ public class P5676 {
 		System.out.println(n+" "+s+" "+e);
 		if(F==0)return 0;
 		if(s>y|x>e)return 1;
-		if(s<=x&y<=e) {
+		if(x<=s&e<=y) {
 			if(a[n]==0)F=0;
 			return a[n];
 		}
