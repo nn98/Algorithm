@@ -70,5 +70,4 @@ public class P5676_2 {
 			w.flush();
 		}
 	}
-
 }
