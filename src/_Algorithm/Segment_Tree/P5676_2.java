@@ -55,7 +55,7 @@ public class P5676_2 {
 					a[j]=i>0?1:-1;
 					if(i==0)a[j]=i;
 					o();
-//					System.out.println(Arrays.toString(a));
+					System.out.println(Arrays.toString(a));
 				}else {
 					x=Integer.parseInt(t.nextToken());
 					y=Integer.parseInt(t.nextToken());
