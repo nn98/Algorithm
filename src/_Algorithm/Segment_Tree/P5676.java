@@ -21,6 +21,7 @@ public class P5676 {
 			l/=2;
 			t=new StringTokenizer(r.readLine());
 			for(i=0;i<n;j=l+i++,a[j]=Integer.parseInt(t.nextToken()),o());
+			System.out.println(Arrays.toString(a));
 		}
 		
 	}
