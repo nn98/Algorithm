@@ -18,6 +18,7 @@ public class P5676 {
 		for(;j>1&F==0;j/=2,a[j]=0);
 	}
 	static int p(int n,int s,int e) {
+		System.out.println(n+" "+s+" "+e);
 		if(F==0)return 0;
 		if(s>y|x>e)return 1;
 		if(s<=x&y<=e) {
