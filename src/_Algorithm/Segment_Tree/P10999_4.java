@@ -14,7 +14,7 @@ public class P10999_4 {
 		for(;x>0;x/=2,a[x]=a[x*2]+a[x*2+1]);
 	}
 	
-	static void t(int n,int s,int e) {
+	static void u(int n,int s,int e) {
 		
 		if(s>y|e<x) {
 			
