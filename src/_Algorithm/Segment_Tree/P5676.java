@@ -15,7 +15,7 @@ public class P5676 {
 			a[j]=x*y;
 			if(a[j]==0)F=0;
 		}
-		for(;j>1&F==0;a[j]=0);
+		for(;j>1&F==0;j/=2,a[j]=0);
 	}
 	public static void main(String[] args)throws Exception{
 		BufferedReader r=new BufferedReader(new InputStreamReader(System.in));
