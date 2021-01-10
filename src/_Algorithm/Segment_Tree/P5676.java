@@ -31,8 +31,10 @@ public class P5676 {
 	public static void main(String[] args)throws Exception{
 		BufferedReader r=new BufferedReader(new InputStreamReader(System.in));
 		BufferedWriter w=new BufferedWriter(new OutputStreamWriter(System.out));
-		while(true) {
-			StringTokenizer t=new StringTokenizer(r.readLine());
+		String s;
+		StringTokenizer t;
+		while((s=r.readLine())!=null) {
+			t=new StringTokenizer(s);
 			n=Integer.parseInt(t.nextToken());
 			m=Integer.parseInt(t.nextToken());
 			for(l=1;l<n;l*=2);
