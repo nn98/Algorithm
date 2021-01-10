@@ -1,5 +1,7 @@
 package _Algorithm.Segment_Tree;
 
+// ¾ßÀÌ ¾¾¹ß ¹éÁØ Ã¤Á¡ °³»õ³¢¾ß Àç¤Ä¤¤¤·ÄÚ·¡¤Á¤¤¤»¤··ª¤À¤¤¤··ÎÀð¤À¤§¤¸³Ä¤É
+
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.InputStreamReader;
