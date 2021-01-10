@@ -64,7 +64,7 @@ public class P5676_2 {
 //					if(F>0)w.write(i>0?"+":"-");
 					if(X>0)w.write("+");
 					else if(X<0)w.write("-");
-					else w.write(0);
+					else w.write("0");
 				}
 			}
 			w.flush();
