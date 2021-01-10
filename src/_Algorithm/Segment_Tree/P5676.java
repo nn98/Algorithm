@@ -57,9 +57,8 @@ public class P5676 {
 						w.write(i>0?"+":"-");
 				}
 			}
-			w.newLine();
+			w.flush();
 		}
-		w.flush();
 	}
 
 }
