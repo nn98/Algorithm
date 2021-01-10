@@ -7,20 +7,19 @@ import java.util.*;
 
 public class P10999_4 {
 	
-	static long[]a,b,c;
+	static long[]a,t,c;
 	static int n,i,m,N,l,S,x,y;
 	
 	static void o(){
-		for(;x>0;x/=2,a[x]=a[x*2]+a[x*2+1]);
+		for(;x>0;x/=2,t[x]=t[x*2]+t[x*2+1]);
 	}
 	
-	static void u(int n,int s,int e) {
+	static long u(int n,int s,int e) {
 		
-		if(s>y|e<x) {
-			
-			
-			
-		}
+		if(s>y|e<x)return 0;
+		if(s<=x&y<=e)return t[n];
+		int m=(s+e)/2;
+		return u(n*2,s,m)+u(n*2+1,m+1,e);
 		
 	}
 
@@ -28,11 +27,11 @@ public class P10999_4 {
 		
 		BufferedReader r=new BufferedReader(new InputStreamReader(System.in));
 		BufferedWriter w=new BufferedWriter(new OutputStreamWriter(System.out));
-		StringTokenizer t=new StringTokenizer(r.readLine());
+		StringTokenizer T=new StringTokenizer(r.readLine());
 		
-		n=Integer.parseInt(t.nextToken());
+		n=Integer.parseInt(T.nextToken());
 		a=new long[n];
-		m=Integer.parseInt(t.nextToken())+Integer.parseInt(t.nextToken());
+		m=Integer.parseInt(T.nextToken())+Integer.parseInt(T.nextToken());
 		while(i<n)a[i++]=Integer.parseInt(r.readLine());
 		
 		l=1;
@@ -42,7 +41,7 @@ public class P10999_4 {
 // 		c=new long[L];
 		
 		while(l<=n)l*=2;
-		b=new long[l];
+		t=new long[l];
 		c=new long[l];
 		S=l/2;
 		
@@ -50,8 +49,8 @@ public class P10999_4 {
 		
 		while(m-->0) {
 			
-			t=new StringTokenizer(r.readLine());
-			N=Integer.parseInt(t.nextToken());
+			T=new StringTokenizer(r.readLine());
+			N=Integer.parseInt(T.nextToken());
 			if(N==1) {
 				
 				
