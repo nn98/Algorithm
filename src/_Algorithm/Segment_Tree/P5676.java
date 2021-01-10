@@ -18,7 +18,7 @@ public class P5676 {
 		for(;j>1&F==0;j/=2,a[j]=0);
 	}
 	static int p(int n,int s,int e) {
-		System.out.println(n+" "+s+" "+e);
+//		System.out.println(n+" "+s+" "+e);
 		if(F==0)return 0;
 		if(s>y|x>e)return 1;
 		if(x<=s&e<=y) {
@@ -40,7 +40,7 @@ public class P5676 {
 			t=new StringTokenizer(r.readLine());
 			Arrays.fill(a,1);
 			for(i=0;i<n;j=l+i++,a[j]=Integer.parseInt(t.nextToken()),F=1,o());
-			System.out.println(Arrays.toString(a));
+//			System.out.println(Arrays.toString(a));
 			while(m-->0) {
 				t=new StringTokenizer(r.readLine());
 				if(t.nextToken().equals("C")) {
@@ -48,7 +48,7 @@ public class P5676 {
 					a[j]=Integer.parseInt(t.nextToken());
 					F=1;
 					o();
-					System.out.println(Arrays.toString(a));
+//					System.out.println(Arrays.toString(a));
 				}else {
 					F=1;
 					x=Integer.parseInt(t.nextToken());
