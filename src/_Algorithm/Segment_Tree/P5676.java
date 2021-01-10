@@ -59,7 +59,7 @@ public class P5676 {
 			}
 			w.newLine();
 		}
-		
+		w.flush();
 	}
 
 }
