@@ -57,9 +57,10 @@ public class P5676 {
 					F=1;
 					x=Integer.parseInt(t.nextToken());
 					y=Integer.parseInt(t.nextToken());
-					i=p(1,1,l);
-					w.write(F==0?"0":"");
-					if(F>0)w.write(i>0?"+":"-");
+					long X=p(1,1,l);
+//					w.write(F==0?"0":"");
+//					if(F>0)w.write(i>0?"+":"-");
+					w.write((X==0)?"0":(X>0?"+":"-"));
 				}
 			}
 			w.flush();
