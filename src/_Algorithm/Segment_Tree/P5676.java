@@ -47,6 +47,7 @@ public class P5676 {
 					j=Integer.parseInt(t.nextToken())+l-1;
 					a[j]=Integer.parseInt(t.nextToken());
 					o();
+					System.out.println(Arrays.toString(a));
 				}else {
 					F=1;
 					x=Integer.parseInt(t.nextToken());
