@@ -26,7 +26,6 @@ public class _Tree_View {
 //			for(i=n;i-->n/2;f.append(S[i]+(i==n/2?"\n":"  ")));
 //			n/=2;
 		}
-		System.out.println(f.reverse());;
 	}
 
 }
