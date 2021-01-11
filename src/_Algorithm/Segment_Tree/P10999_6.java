@@ -23,7 +23,7 @@ public class P10999_6 {
 	}
 
 	static void u(int n,int s,int e) {
-		System.out.println(n+" "+s+" "+e);
+//		System.out.println(n+" "+s+" "+e);
 		if(b[n]!=0) {
 			a[n]+=(e-s+1)*b[n];
 			if(s!=e) {
@@ -74,8 +74,8 @@ public class P10999_6 {
 			if(s.equals("1")) {
 				i=Integer.parseInt(t.nextToken());
 				u(1,1,l);
-				System.out.println(Arrays.toString(a));
-				System.out.println(Arrays.toString(b));
+//				System.out.println(Arrays.toString(a));
+//				System.out.println(Arrays.toString(b));
 			}else {
 				System.out.println(p(1,1,l));
 			}
