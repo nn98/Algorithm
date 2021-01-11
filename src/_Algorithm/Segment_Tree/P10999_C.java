@@ -42,7 +42,7 @@ public class P10999_C {
 		
 		makeInit(1, cal+1, size-1);
 		
-		
+		print();
 		
 		for (int i = 0; i<Q; i++) {
 			
