@@ -6,6 +6,7 @@ public class _Tree_View {
 		String s=new java.util.Scanner(System.in).nextLine(),S[];
 		int n=1,i,b=0;
 		for(char c:s.toCharArray())if(c==',')n++;
+		System.out.println(s);
 		s.replaceAll("[","");
 		s.replaceAll("]","");
 		s.replaceAll(",","");
