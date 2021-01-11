@@ -29,12 +29,13 @@ public class P10999_5 {
 		StringTokenizer t=new StringTokenizer(r.readLine());
 		n=Integer.parseInt(t.nextToken());
 		m=Integer.parseInt(t.nextToken())+Integer.parseInt(t.nextToken());
-		L=new int[n];
-		while(i<n)L[i++]=Integer.parseInt(r.readLine());
+//		L=new int[n];
+//		while(i<n)L[i++]=Integer.parseInt(r.readLine());
 		l=1;
 		for(;l<n;l*=2);
 		a=new long[l*2];
 		b=new long[l*2];
+		for(;i<n;j=l+i++,a[j]=Integer.parseInt(r.readLine()),o());
 		while(m-->0) {
 			t=new StringTokenizer(r.readLine());
 			if(t.nextToken().equals("1")) {
