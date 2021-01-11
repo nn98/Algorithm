@@ -8,7 +8,7 @@ public class _Tree_View {
 		for(char c:s.toCharArray())if(c==',')n++;
 		System.out.println(s);
 		s=s.substring(1,s.length()-1);
-		s.replaceAll(",","");
+		s=s.replaceAll(",","");
 		S=s.split(" ");
 		System.out.println(s);
 		for(;n>0;b++) {
