@@ -1,27 +1,12 @@
 package _Algorithm.Segment_Tree;
-
-import java.io.BufferedReader;
-import java.io.BufferedWriter;
-import java.io.InputStreamReader;
-import java.io.OutputStreamWriter;
-import java.util.Arrays;
-import java.util.StringTokenizer;
-
-public class P10999_6 {
-	static int j,n,m,l,L[];
+import java.io.*;
+import java.util.*;
+class P10999_6{
+	static int j,n,m,l;
 	static long a[],b[],x,y,i;
-
-	static void o() {
+	static void o(){
 		for(;j>1;j/=2,a[j]=a[j*2]+a[j*2+1]);
 	}
-
-	static long p(int n,int s,int e) {
-		if(y<s|x>e)return 0;
-		if(x<=s&e<=y)return a[n]+(b[n]==0?0:b[n]*(e-s+1));
-		int m=(s+e)/2;
-		return p(n*2,s,m)+p(n*2+1,m+1,e);
-	}
-
 	static void u(int n,int s,int e) {
 //		System.out.println(n+" "+s+" "+e);
 		if(b[n]!=0) {
