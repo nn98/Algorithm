@@ -20,6 +20,7 @@ public class P10999_5 {
 	}
 	
 	static void u(int n,int s,int e) {
+		System.out.println(n+" "+s+" "+e);
 		if(y<s|x>e)return;
 		if(s==e)a[n]+=i;
 		else if(x<=s&e<=y)b[n]+=i;
