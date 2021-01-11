@@ -1,5 +1,7 @@
 package _Algorithm.Segment_Tree;
 
+import java.util.Arrays;
+
 public class _Tree_View {
 
 	public static void main(String[] args) {
@@ -9,6 +11,7 @@ public class _Tree_View {
 		s=s.substring(1,s.length()-1);
 		s=s.replaceAll(",","");
 		S=s.split(" ");
+		System.out.println(Arrays.toString(S));
 		StringBuffer f=new StringBuffer();
 		for(;n>0;b++) {
 //			n/=2;
