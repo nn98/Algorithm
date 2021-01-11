@@ -8,7 +8,8 @@ public class _Tree_View {
 		String s=new java.util.Scanner(System.in).nextLine(),S[];
 		int n=1,i,b=0,l;
 		for(char c:s.toCharArray())if(c==',')n++;
-		l=n>>2;
+//		l=n>>2;
+		for(b=2;b<n;b*=2,l++);
 		System.out.println(l);
 		s=s.substring(1,s.length()-1);
 		s=s.replaceAll(",","");
@@ -28,3 +29,4 @@ public class _Tree_View {
 
 }
 // [0, 15, 10, 5, 3, 7, 5, 0, 1, 2, 3, 4, 5, 0, 0, 0]
+// [0, 55, 36, 19, 10, 26, 19, 0, 3, 7, 11, 15, 19, 0, 0, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 0, 0, 0, 0, 0, 0]
