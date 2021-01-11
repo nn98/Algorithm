@@ -15,7 +15,7 @@ public class _Tree_View {
 		s=s.substring(1,s.length()-1);
 		s=s.replaceAll(",","");
 		S=s.split(" ");
-		for(;n>1;b++) {
+		for(;n>0;b++) {
 			f=new StringBuffer();
 			n/=2;
 			for(i=0;i++<b;f.append("  "));
