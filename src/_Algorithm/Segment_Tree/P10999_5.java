@@ -20,6 +20,14 @@ public class P10999_5 {
 	}
 	
 	static void u(int n,int s,int e) {
+		if(y<s|x>e)return;
+		if(s==e)a[n]+=i;
+		else if(x<=s&e<=y)b[n]+=i;
+		else {
+			int m=(s+e)/2;
+			u(n*2,s,m);
+			u(n*2+1,m+1,e);
+		}
 		
 	}
 	
