@@ -50,6 +50,21 @@ public class P10999_6 {
 		a[n]=a[n*2]+a[n*2+1];
 
 	}
+	
+	static long sum(int n,int s,int e) {
+		if(b[n]!=0) {
+			a[n]+=(e-s+1)*b[n];
+			if(s!=e) {
+				b[n*2]+=b[n];
+				b[n*2+1]+=b[n];
+			}
+			b[n]=0;
+		}
+		if(x>e|y<s)return 0;
+		if(x<=s&e<=y)return a[n];
+		int m=(s+e)/2;
+		return sum(n*2,s,m)+sum(n*2+1,m+1,e);
+	}
 
 	public static void main(String[] args)throws Exception{
 		BufferedReader r=new BufferedReader(new InputStreamReader(System.in));
