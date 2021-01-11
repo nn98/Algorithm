@@ -14,7 +14,7 @@ public class P10999_5 {
 	
 	static long p(int n,int s,int e) {
 		if(y<s|x>e)return 0;
-		if(x<=s&e<=y)return a[n];
+		if(x<=s&e<=y)return a[n]+b[n]==0?0:b[n];
 		int m=(s+e)/2;
 		return p(n*2,s,m)+p(n*2+1,m+1,e);
 	}
