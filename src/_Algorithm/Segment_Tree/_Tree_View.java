@@ -6,7 +6,7 @@ public class _Tree_View {
 
 	public static void main(String[] args) {
 		String s=new java.util.Scanner(System.in).nextLine(),S[];
-		int n=1,i,b=0,l=1,L;
+		int n=1,i,b=0,l=1,L,x;
 		for(char c:s.toCharArray())if(c==',')n++;
 //		l=n>>2;
 		for(b=2;b<n;b*=2,l++);
@@ -15,17 +15,21 @@ public class _Tree_View {
 		s=s.substring(1,s.length()-1);
 		s=s.replaceAll(",","");
 		S=s.split(" ");
-		for(;n>0;b++) {
+		for(;n>1;b++) {
 			f=new StringBuffer();
 			n/=2;
 			for(i=0;i++<b;f.append("  "));
-			for(i=n;i<n*2;f.append(S[i++]+(i==n*2?"\n":"  ")));
+			for(i=n;i<n*2;) {
+				f.append(S[i++]);
+				for(x=b;x-->0;f.append(" "));
+			}
+			f.append("\n");
 			F[--L]=f;
 //			for(i=0;i++<b;System.out.print("\t"));
 //			for(i=n;i-->n/2;f.append(S[i]+(i==n/2?"\n":"  ")));
 //			n/=2;
 		}
-		while(n<l)System.out.println(F[n++]);
+		while(n<=l)System.out.println(F[n++-1]);
 	}
 
 }
