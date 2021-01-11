@@ -51,6 +51,9 @@ public class P10999_5 {
 				x=Integer.parseInt(t.nextToken());
 				y=Integer.parseInt(t.nextToken());
 				i=Integer.parseInt(t.nextToken());
+				p(1,1,l);
+				System.out.println(Arrays.toString(a));
+				System.out.println(Arrays.toString(b));
 			}
 		}
 	}
