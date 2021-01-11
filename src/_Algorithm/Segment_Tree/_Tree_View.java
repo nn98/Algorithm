@@ -11,12 +11,13 @@ public class _Tree_View {
 //		l=n>>2;
 		for(b=2;b<n;b*=2,l++);
 		System.out.println(l);
+		StringBuffer f,F[]=new StringBuffer[l];
 		s=s.substring(1,s.length()-1);
 		s=s.replaceAll(",","");
 		S=s.split(" ");
 		System.out.println(Arrays.toString(S));
-		StringBuffer f=new StringBuffer();
 		for(;n>0;b++) {
+			f=new StringBuffer();
 //			n/=2;
 //			for(i=0;i++<b;System.out.print("\t"));
 //			for(i=n;i<n*2;System.out.print(S[i++]+(i==n*2?"\n":"  ")));
