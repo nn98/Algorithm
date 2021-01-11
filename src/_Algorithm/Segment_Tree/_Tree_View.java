@@ -10,21 +10,17 @@ public class _Tree_View {
 		for(char c:s.toCharArray())if(c==',')n++;
 //		l=n>>2;
 		for(b=2;b<n;b*=2,l++);
-		System.out.println(l);
 		b=0;
 		StringBuffer f,F[]=new StringBuffer[L=l];
 		s=s.substring(1,s.length()-1);
 		s=s.replaceAll(",","");
 		S=s.split(" ");
-		System.out.println(Arrays.toString(S));
 		for(;n>1;b++) {
 			f=new StringBuffer();
 			n/=2;
-			System.out.println(n);
 			for(i=0;i++<b;f.append("  "));
 			for(i=n;i<n*2;f.append(S[i++]+(i==n*2?"\n":"  ")));
 			F[--L]=f;
-			System.out.println(f);
 //			for(i=0;i++<b;System.out.print("\t"));
 //			for(i=n;i-->n/2;f.append(S[i]+(i==n/2?"\n":"  ")));
 //			n/=2;
