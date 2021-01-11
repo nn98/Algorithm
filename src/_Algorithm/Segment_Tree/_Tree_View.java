@@ -17,13 +17,14 @@ public class _Tree_View {
 		S=s.split(" ");
 		System.out.println(Arrays.toString(S));
 		for(;n>0;b++) {
+			l--;
 			f=new StringBuffer();
-//			n/=2;
-//			for(i=0;i++<b;System.out.print("\t"));
-//			for(i=n;i<n*2;System.out.print(S[i++]+(i==n*2?"\n":"  ")));
-			for(i=0;i++<b;System.out.print("\t"));
-			for(i=n;i-->n/2;f.append(S[i]+(i==n/2?"\n":"  ")));
 			n/=2;
+			for(i=0;i++<b;f.append("\t"));
+			for(i=n;i<n*2;f.append(S[i++]+(i==n*2?"\n":"  ")));
+//			for(i=0;i++<b;System.out.print("\t"));
+//			for(i=n;i-->n/2;f.append(S[i]+(i==n/2?"\n":"  ")));
+//			n/=2;
 		}
 		System.out.println(f.reverse());;
 	}
