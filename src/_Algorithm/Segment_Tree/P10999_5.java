@@ -5,8 +5,8 @@ import java.util.*;
 
 public class P10999_5 {
 
-	static int i,j,n,m,l,L[];
-	static long a[],b[],x,y;
+	static int j,n,m,l,L[];
+	static long a[],b[],x,y,i;
 	
 	static void o() {
 		for(;j>1;j/=2,a[j]=a[j*2]+a[j*2+1]);
@@ -55,6 +55,8 @@ public class P10999_5 {
 				u(1,1,l);
 				System.out.println(Arrays.toString(a));
 				System.out.println(Arrays.toString(b));
+			}else {
+				System.out.println();
 			}
 		}
 	}
