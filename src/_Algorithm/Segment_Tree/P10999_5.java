@@ -36,10 +36,13 @@ public class P10999_5 {
 		a=new long[l*2];
 		b=new long[l*2];
 		for(;i<n;j=l+i++,a[j]=Integer.parseInt(r.readLine()),o());
+		System.out.println(Arrays.toString(a));
 		while(m-->0) {
 			t=new StringTokenizer(r.readLine());
 			if(t.nextToken().equals("1")) {
-				x=Integer.parseInt(t.nextToken())
+				x=Integer.parseInt(t.nextToken());
+				y=Integer.parseInt(t.nextToken());
+				i=Integer.parseInt(t.nextToken());
 			}
 		}
 	}
