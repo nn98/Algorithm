@@ -10,31 +10,47 @@ import java.util.StringTokenizer;
 public class P10999_6 {
 	static int j,n,m,l,L[];
 	static long a[],b[],x,y,i;
-	
+
 	static void o() {
 		for(;j>1;j/=2,a[j]=a[j*2]+a[j*2+1]);
 	}
-	
+
 	static long p(int n,int s,int e) {
 		if(y<s|x>e)return 0;
 		if(x<=s&e<=y)return a[n]+(b[n]==0?0:b[n]*(e-s+1));
 		int m=(s+e)/2;
 		return p(n*2,s,m)+p(n*2+1,m+1,e);
 	}
-	
+
 	static void u(int n,int s,int e) {
 		System.out.println(n+" "+s+" "+e);
+		if(b[n]!=0) {
+			a[n]+=(e-s+1)*b[n];
+			if(s!=e) {
+				b[n*2]+=b[n];
+				b[n*2+1]+=b[n];
+			}
+			b[n]=0;
+		}
 		if(y<s|x>e)return;
-		if(s==e)a[n]+=i;
-		else if(x<=s&e<=y)b[n]+=i;
-		else {
-			int m=(s+e)/2;
-			u(n*2,s,m);
-			u(n*2+1,m+1,e);
+		//		if(s==e)a[n]+=i;
+		if(x<=s&e<=y) {
+			//			b[n]+=i;
+			a[n]+=(e-s+1)*i;
+			if(s!=e) {
+				b[n*2]+=i;
+				b[n*2+1]+=i;
+			}
+			return;
 		}
 		
+		int m=(s+e)/2;
+		u(n*2,s,m);
+		u(n*2+1,m+1,e);
+		a[n]=a[n*2]+a[n*2+1];
+
 	}
-	
+
 	public static void main(String[] args)throws Exception{
 		BufferedReader r=new BufferedReader(new InputStreamReader(System.in));
 		BufferedWriter w=new BufferedWriter(new OutputStreamWriter(System.out));
@@ -42,8 +58,8 @@ public class P10999_6 {
 		String s;
 		n=Integer.parseInt(t.nextToken());
 		m=Integer.parseInt(t.nextToken())+Integer.parseInt(t.nextToken());
-//		L=new int[n];
-//		while(i<n)L[i++]=Integer.parseInt(r.readLine());
+		//		L=new int[n];
+		//		while(i<n)L[i++]=Integer.parseInt(r.readLine());
 		l=1;
 		for(;l<n;l*=2);
 		a=new long[l*2];
