@@ -6,7 +6,7 @@ public class _Tree_View {
 
 	public static void main(String[] args) {
 		String s=new java.util.Scanner(System.in).nextLine(),S[];
-		int n=1,i,b=0,l;
+		int n=1,i,b=0,l=0;
 		for(char c:s.toCharArray())if(c==',')n++;
 //		l=n>>2;
 		for(b=2;b<n;b*=2,l++);
