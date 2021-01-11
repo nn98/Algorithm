@@ -3,6 +3,7 @@ package _Algorithm.Segment_Tree;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.Arrays;
 import java.util.StringTokenizer;
 
 public class P10999_C {
@@ -41,6 +42,8 @@ public class P10999_C {
 		lazy = new long [size];
 		
 		makeInit(1, cal+1, size-1);
+		
+		System.out.println(Arrays.toString(tree));
 		
 		print();
 		
