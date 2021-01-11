@@ -1,5 +1,10 @@
 package _Algorithm.Segment_Tree;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.StringTokenizer;
+
 public class P10999_C {
 	static int N;
 	static int Q;
