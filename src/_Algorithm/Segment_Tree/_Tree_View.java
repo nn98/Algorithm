@@ -7,10 +7,10 @@ public class _Tree_View {
 		int n=1,i,b=0;
 		for(char c:s.toCharArray())if(c==',')n++;
 		System.out.println(s);
-		s.replaceAll("[","");
-		s.replaceAll("]","");
+		s=s.substring(1,s.length()-1);
 		s.replaceAll(",","");
 		S=s.split(" ");
+		System.out.println(s);
 		for(;n>0;) {
 			for(i=0;i++<b;System.out.print("\t"));
 			for(i=n;i<n*2;System.out.print(S[i]+" "));
