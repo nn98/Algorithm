@@ -5,8 +5,8 @@ import java.util.*;
 
 public class P10999_5 {
 
-	static int n,m,i,j,x,y,l,L[];
-	static long a[],b[];
+	static int i,j,n,m,l,L[];
+	static long a[],b[],x,y;
 	
 	static void o() {
 		for(;j>1;j/=2,a[j]=a[j*2]+a[j*2+1]);
@@ -35,6 +35,12 @@ public class P10999_5 {
 		for(;l<n;l*=2);
 		a=new long[l*2];
 		b=new long[l*2];
+		while(m-->0) {
+			t=new StringTokenizer(r.readLine());
+			if(t.nextToken().equals("1")) {
+				x=Integer.parseInt(t.nextToken())
+			}
+		}
 	}
 
 }
