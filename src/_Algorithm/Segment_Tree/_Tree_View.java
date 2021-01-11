@@ -6,8 +6,10 @@ public class _Tree_View {
 
 	public static void main(String[] args) {
 		String s=new java.util.Scanner(System.in).nextLine(),S[];
-		int n=1,i,b=0;
+		int n=1,i,b=0,l;
 		for(char c:s.toCharArray())if(c==',')n++;
+		l=Math.floorMod(n, 2);
+		System.out.println(l);
 		s=s.substring(1,s.length()-1);
 		s=s.replaceAll(",","");
 		S=s.split(" ");
