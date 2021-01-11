@@ -21,7 +21,7 @@ public class _Tree_View {
 			for(i=0;i++<b;f.append("  "));
 			for(i=n;i<n*2;) {
 				f.append(S[i++]);
-				for(x=b;x-->0;f.append(" "));
+				for(x=b;x-->=0;f.append(" "));
 			}
 			f.append("\n");
 			F[--L]=f;
