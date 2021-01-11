@@ -36,6 +36,7 @@ public class P10999_5 {
 		BufferedReader r=new BufferedReader(new InputStreamReader(System.in));
 		BufferedWriter w=new BufferedWriter(new OutputStreamWriter(System.out));
 		StringTokenizer t=new StringTokenizer(r.readLine());
+		String s;
 		n=Integer.parseInt(t.nextToken());
 		m=Integer.parseInt(t.nextToken())+Integer.parseInt(t.nextToken());
 //		L=new int[n];
@@ -48,15 +49,16 @@ public class P10999_5 {
 		System.out.println(Arrays.toString(a));
 		while(m-->0) {
 			t=new StringTokenizer(r.readLine());
-			if(t.nextToken().equals("1")) {
-				x=Integer.parseInt(t.nextToken());
-				y=Integer.parseInt(t.nextToken());
+			s=t.nextToken();
+			x=Integer.parseInt(t.nextToken());
+			y=Integer.parseInt(t.nextToken());
+			if(s.equals("1")) {
 				i=Integer.parseInt(t.nextToken());
 				u(1,1,l);
 				System.out.println(Arrays.toString(a));
 				System.out.println(Arrays.toString(b));
 			}else {
-				System.out.println();
+				System.out.println(p(1,1,l));
 			}
 		}
 	}
