@@ -7,7 +7,7 @@ public class P14652 {
 	public static void main(String[] args) {
 		Scanner s=new Scanner(System.in);
 		int x=s.nextInt(),y=s.nextInt(),z=s.nextInt()+1;
-		System.out.print(z%x+" "+z%y);
+		System.out.print(z/x-1+" "+z%y);
 	}
 
 }
