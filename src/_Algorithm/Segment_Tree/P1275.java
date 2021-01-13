@@ -31,7 +31,7 @@ public class P1275 {
 			t=new StringTokenizer(r.readLine());
 			i=Integer.parseInt(t.nextToken());
 			j=Integer.parseInt(t.nextToken());
-			if(j>i) {
+			if(i>j) {
 				n=i;
 				i=j;
 				j=n;
