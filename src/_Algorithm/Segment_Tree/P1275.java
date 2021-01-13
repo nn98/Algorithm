@@ -11,7 +11,10 @@ public class P1275 {
 		for(;j>1;j/=2,a[j]=a[j*2]+a[j*2+1]);
 	}
 	static long p(int n,int s,int e) {
-		
+		if(s>j|e<i)return 0;
+		if(i<=s&j>=e)return a[n];
+		int m=(s+e)/2;
+		return p(n*2,s,m)+p(n*2+1,m+1,e);
 	}
 	public static void main(String[] args)throws Exception{
 		BufferedReader r=new BufferedReader(new InputStreamReader(System.in));
