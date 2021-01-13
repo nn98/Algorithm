@@ -41,6 +41,7 @@ public class P1275 {
 			a[j]=Integer.parseInt(t.nextToken());
 			o();
 		}
+		w.flush();
 	}
 
 }
