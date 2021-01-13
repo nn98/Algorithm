@@ -5,7 +5,6 @@ import java.io.UnsupportedEncodingException;
 public class P11283 {
 
 	public static void main(String[] args) throws UnsupportedEncodingException {
-		System.out.printf("%d",'힣');
 		String word = "무궁화 꽃이 피었습니다.";
 
 		System.out.println("utf-8 -> euc-kr        : " + new String(word.getBytes("utf-8"), "euc-kr"));
