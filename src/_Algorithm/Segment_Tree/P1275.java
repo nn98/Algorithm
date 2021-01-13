@@ -1,5 +1,8 @@
 package _Algorithm.Segment_Tree;
 
+// 원트
+// 기본 세그먼트 트리는 ㄱㅊ
+
 import java.io.*;
 import java.util.*;
 
