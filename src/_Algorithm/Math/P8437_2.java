@@ -11,7 +11,7 @@ public class P8437_2 {
 				,c=a.divide(new BigInteger("2")),d=b.divide(new BigInteger("2"));
 		if(a.mod(new BigInteger("2")).equals(BigInteger.ZERO))
 			System.out.print(c.add(d)+"\n"+c.subtract(d));
-		else System.out.print(c.add(d).add(BigInteger.ONE)+"\n"+c.subtract(b).subtract(BigInteger.ONE));
+		else System.out.print(c.add(d).add(BigInteger.ONE)+"\n"+c.subtract(d).subtract(BigInteger.ONE));
 	}
 
 }
