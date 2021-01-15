@@ -4,6 +4,8 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.Scanner;
 
+// 거꾸로긴 했지만 정렬은 됐네 대충
+
 public class P1931 {
 
 	static class T implements Comparable<T>{
