@@ -39,7 +39,7 @@ public class P1931 {
 		Scanner s=new Scanner(System.in);
 		int n=s.nextInt(),i=0;
 		T[]t=new T[n];
-		while(i<n)T[i++]=new T(s.nextInt(),s.nextInt());
+		while(i<n)t[i++]=new T(s.nextInt(),s.nextInt());
 	}
 
 }
