@@ -1,6 +1,7 @@
 package _Algorithm.Sweeping;
 
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.Scanner;
 
 public class P1931 {
@@ -27,7 +28,9 @@ public class P1931 {
 		T[]t=new T[n];
 		while(i<n)t[i++]=new T(s.nextInt(),s.nextInt());
 		System.out.println(Arrays.toString(t));
-		Arrays.sort(t);
+//		Arrays.sort(t);
+//		Collections.sort(t);
+		System.out.println(t[0].compareTo(t[1]));
 		System.out.println(Arrays.toString(t));
 	}
 
