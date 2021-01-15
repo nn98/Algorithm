@@ -30,7 +30,9 @@ public class P1931 {
 		System.out.println(Arrays.toString(t));
 //		Arrays.sort(t);
 //		Collections.sort(t);
+		System.out.println(t[0].compareTo(t[0]));
 		System.out.println(t[0].compareTo(t[1]));
+		System.out.println(t[1].compareTo(t[0]));
 		System.out.println(Arrays.toString(t));
 	}
 
