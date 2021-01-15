@@ -25,7 +25,7 @@ public class P19621 {
 			s.next();
 			a[i++]=s.nextInt();
 		}
-		for(i=0;i<n;o(i++,0));
+		o(0,0);
 		System.out.println(m);
 	}
 
