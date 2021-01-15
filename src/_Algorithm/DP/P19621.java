@@ -26,7 +26,7 @@ public class P19621 {
 			a[i++]=s.nextInt();
 		}
 		for(i=0;i<n;o(i++,0));
-		System.out.println(Arrays.toString(h));
+		System.out.println(m);
 	}
 
 }
