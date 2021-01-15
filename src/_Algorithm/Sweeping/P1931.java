@@ -16,6 +16,10 @@ public class P1931 {
 			if(this.e==t.e)return this.s-t.s;
 			return this.e-t.e;
 		}
+		@Override
+		public String toString() {
+			return String.format("[%d, %d]",s,e);
+		}
 	}
 	public static void main(String[] args) {
 		Scanner s=new Scanner(System.in);
