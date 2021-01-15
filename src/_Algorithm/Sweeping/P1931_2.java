@@ -8,9 +8,9 @@ public class P1931_2 {
 
 	public static void main(String[] args) {
 		Scanner s=new Scanner(System.in);
-		int n=s.nextInt(),a[][]=new int[n][2],i=0;
+		int n=s.nextInt(),a[][]=new int[n][2],i=0,j,c;
 		for(;i<n;a[i][0]=s.nextInt(),a[i++][1]=s.nextInt());
-		System.out.println(Arrays.toString(a[0])+"\n"+Arrays.toString(a[1]));
+		for(i=0;i<n;System.out.println(Arrays.toString(a[i++])));
 		Arrays.sort(a,new Comparator<int[]>() {
 			@Override
 			public int compare(int[] q,int[] w) {
@@ -18,7 +18,7 @@ public class P1931_2 {
 				return q[1]-w[1];
 			}
 		});
-		
+		for(i=0;i<n;System.out.println(Arrays.toString(a[i++])));
 	}
 
 }
