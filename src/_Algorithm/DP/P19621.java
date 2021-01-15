@@ -1,5 +1,6 @@
 package _Algorithm.DP;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class P19621 {
@@ -22,6 +23,7 @@ public class P19621 {
 			a[i++]=s.nextInt();
 		}
 		for(i=0;i<n;o(i++,0));
+		System.out.println(Arrays.toString(h));
 	}
 
 }
