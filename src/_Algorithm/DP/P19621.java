@@ -8,6 +8,7 @@ public class P19621 {
 	static int n,a[],h[],i;
 	static void o(int x,int b) {
 		h[x]=b;
+		if(x==n-1)return;
 		o(x+1,b);
 		if(h[x+2]<b+a[x])
 			o(x+2,b+a[x]);
