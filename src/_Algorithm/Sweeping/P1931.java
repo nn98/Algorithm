@@ -12,7 +12,7 @@ public class P1931 {
 			this.e=e;
 		}
 		@Override
-		public int comparTo(T t) {
+		public int compareTo(T t) {
 			if(this.e==t.e)return this.s-t.s;
 			return this.e-t.e;
 		}
