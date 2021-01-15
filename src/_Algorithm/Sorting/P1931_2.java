@@ -1,4 +1,4 @@
-package _Algorithm.Sweeping;
+package _Algorithm.Sorting;
 
 import java.util.Arrays;
 import java.util.Comparator;
