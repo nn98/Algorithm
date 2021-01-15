@@ -7,6 +7,7 @@ public class P19621 {
 
 	static int n,a[],h[],i,m;
 	static void o(int x,int b) {
+		System.out.println(x+" "+b);
 		if(x<n-1)o(x+1,b);
 		b+=a[x];
 		if(x<n-2)
