@@ -3,6 +3,8 @@ package _Algorithm.DP;
 import java.util.Arrays;
 import java.util.Scanner;
 
+// ±¦È÷ sum³Ö°í Áö¶ö
+
 public class P19621 {
 
 	static int n,a[],h[],i,m;
