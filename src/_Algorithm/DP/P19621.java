@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class P19621 {
 
-	static int n,a[],h[],i;
+	static int n,a[],h[],i,m;
 	static void o(int x,int b) {
 		if(x<n-1)o(x+1,b);
 		b+=a[x];
@@ -13,6 +13,7 @@ public class P19621 {
 			if(h[x+2]<b)
 				o(x+2,b);
 		h[x]=h[x]>b?h[x]:b;
+		m=m>h[x]?m:h[x];
 	}
 	public static void main(String[] args) {
 		Scanner s=new Scanner(System.in);
