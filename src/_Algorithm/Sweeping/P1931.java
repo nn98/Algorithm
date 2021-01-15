@@ -1,45 +1,30 @@
 package _Algorithm.Sweeping;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class P1931 {
 
-	static class T{
+	static class T implements Comparable<T>{
 		int s,e;
 		T(int s,int e){
 			this.s=s;
 			this.e=e;
 		}
 		@Override
-		public int hashCode() {
-			final int prime = 31;
-			int result = 1;
-			result = prime * result + e;
-			result = prime * result + s;
-			return result;
+		public int comparTo(T t) {
+			if(this.e==t.e)return this.s-t.s;
+			return this.e-t.e;
 		}
-		@Override
-		public boolean equals(Object obj) {
-			if (this == obj)
-				return true;
-			if (obj == null)
-				return false;
-			if (getClass() != obj.getClass())
-				return false;
-			T other = (T) obj;
-			if (e != other.e)
-				return false;
-			if (s != other.s)
-				return false;
-			return true;
-		}
-		
 	}
 	public static void main(String[] args) {
 		Scanner s=new Scanner(System.in);
 		int n=s.nextInt(),i=0;
 		T[]t=new T[n];
 		while(i<n)t[i++]=new T(s.nextInt(),s.nextInt());
+		System.out.println(Arrays.toString(t));
+		Arrays.sort(t);
+		System.out.println(Arrays.toString(t));
 	}
 
 }
