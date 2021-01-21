@@ -18,7 +18,7 @@ public class P17389 {
 				c=0;
 			}
 		}
-		System.out.println(r);
+		System.out.print(r);
 	}
 
 }
