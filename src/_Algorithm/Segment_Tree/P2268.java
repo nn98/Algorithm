@@ -26,6 +26,7 @@ public class P2268 {
 			if(x>0) {
 				a[j=s.nextInt()-1+l]=s.nextInt();
 				o();
+				System.out.println(Arrays.toString(a));
 			}else {
 				x=s.nextInt()-1;
 				y=s.nextInt()-1;
