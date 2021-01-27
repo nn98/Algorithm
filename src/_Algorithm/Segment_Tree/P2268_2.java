@@ -38,7 +38,7 @@ public class P2268_2 {
 				w.write(p(1,1,l)+"\n");
 			}
 		}
-		
+		w.flush();
 	}
 
 }
