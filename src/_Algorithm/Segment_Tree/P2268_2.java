@@ -22,19 +22,20 @@ public class P2268_2 {
 		BufferedReader r=new BufferedReader(new InputStreamReader(System.in));
 		BufferedWriter w=new BufferedWriter(new OutputStreamWriter(System.out));
 		StringTokenizer t=new StringTokenizer(r.readLine());
-		n=s.nextInt();
-		m=s.nextInt();
+		n=Integer.parseInt(t.nextToken());
+		m=Integer.parseInt(t.nextToken());
 		for(l=1;l<n;l*=2);
 		a=new int[l*2];
 		while(m-->0) {
-			x=s.nextInt();
+			t=new StringTokenizer(r.readLine());
+			x=Integer.parseInt(t.nextToken());
 			if(x>0) {
-				a[j=s.nextInt()-1+l]=s.nextInt();
+				a[j=Integer.parseInt(t.nextToken())-1+l]=Integer.parseInt(t.nextToken());;
 				o();
 			}else {
-				x=s.nextInt();
-				y=s.nextInt();
-				System.out.println(p(1,1,l));
+				x=Integer.parseInt(t.nextToken());;
+				y=Integer.parseInt(t.nextToken());;
+				w.write(p(1,1,l)+"\n");
 			}
 		}
 		
