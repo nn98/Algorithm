@@ -21,9 +21,13 @@ public class P2268 {
 		m=s.nextInt();
 		for(l=1;l<n;l*=2);
 		a=new int[l*2];
-		System.out.println(Arrays.toString(a));
-		for(;i<n;a[i+++l]=s.nextInt());
-		System.out.println(Arrays.toString(a));
+		while(m-->0) {
+			x=s.nextInt();
+			if(x>0) {
+				a[j=s.nextInt()-1+l]=s.nextInt();
+				o();
+			}else System.out.println(p(1,1,l));
+		}
 		
 	}
 
