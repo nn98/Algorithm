@@ -20,7 +20,7 @@ public class P2268 {
 		n=s.nextInt();
 		m=s.nextInt();
 		for(l=1;l<=n;l*=2);
-		a=new int[l/=2];
+		a=new int[l];
 		System.out.println(Arrays.toString(a));
 		for(;i<n;a[i+++l]=s.nextInt());
 		
