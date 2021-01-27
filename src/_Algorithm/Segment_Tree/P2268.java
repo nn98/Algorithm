@@ -10,7 +10,6 @@ public class P2268 {
 		for(;j>1;j/=2,a[j]=a[j*2]+a[j*2+1]);
 	}
 	static long p(int n,int s,int e) {
-		System.out.println(n+" "+s+" "+e);
 		if(s>y|x>e)return 0;
 		if(x<=s&e<=y)return a[n];
 		int m=(s+e)/2;
@@ -27,7 +26,6 @@ public class P2268 {
 			if(x>0) {
 				a[j=s.nextInt()-1+l]=s.nextInt();
 				o();
-				System.out.println(Arrays.toString(a));
 			}else {
 				x=s.nextInt();
 				y=s.nextInt();
