@@ -1,5 +1,8 @@
 package _Algorithm.Segment_Tree;
 
+//의외의 복병도
+//그지같은 함정도
+
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.InputStreamReader;
