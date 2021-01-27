@@ -28,8 +28,8 @@ public class P2268 {
 				o();
 				System.out.println(Arrays.toString(a));
 			}else {
-				x=s.nextInt()-1;
-				y=s.nextInt()-1;
+				x=s.nextInt();
+				y=s.nextInt();
 				System.out.println(p(1,1,l));
 			}
 		}
