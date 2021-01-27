@@ -36,6 +36,11 @@ public class P2268_2 {
 			}else {
 				x=Integer.parseInt(t.nextToken());;
 				y=Integer.parseInt(t.nextToken());;
+				if(x>y) {
+					j=x;
+					x=y;
+					y=j;
+				}
 				w.write(p(1,1,l)+"\n");
 			}
 		}
