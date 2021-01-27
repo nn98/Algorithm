@@ -78,5 +78,7 @@ https://mattlee.tistory.com/52
 </details>
 
 <details><summary>BaekJoon ~2021-01-21</summary>
+  
   [2268](https://www.acmicpc.net/problem/2268)
+  
   </details>
