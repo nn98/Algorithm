@@ -8,7 +8,8 @@ import java.util.StringTokenizer;
 
 public class P2268_2 {
 
-	static int n,m,i,j,x,y,l,a[];
+	static int n,m,i,j,x,y,l;
+	static long a[];
 	static void o() {
 		for(;j>1;j/=2,a[j]=a[j*2]+a[j*2+1]);
 	}
@@ -25,7 +26,7 @@ public class P2268_2 {
 		n=Integer.parseInt(t.nextToken());
 		m=Integer.parseInt(t.nextToken());
 		for(l=1;l<n;l*=2);
-		a=new int[l*2];
+		a=new long[l*2];
 		while(m-->0) {
 			t=new StringTokenizer(r.readLine());
 			x=Integer.parseInt(t.nextToken());
