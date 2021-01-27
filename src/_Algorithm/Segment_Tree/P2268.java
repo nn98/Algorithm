@@ -23,6 +23,7 @@ public class P2268 {
 		a=new int[l/=2];
 		System.out.println(Arrays.toString(a));
 		for(;i<n;a[i+++l]=s.nextInt());
+		
 	}
 
 }
