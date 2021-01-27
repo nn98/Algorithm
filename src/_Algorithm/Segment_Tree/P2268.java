@@ -26,7 +26,11 @@ public class P2268 {
 			if(x>0) {
 				a[j=s.nextInt()-1+l]=s.nextInt();
 				o();
-			}else System.out.println(p(1,1,l));
+			}else {
+				x=s.nextInt()-1;
+				y=s.nextInt()-1;
+				System.out.println(p(1,1,l));
+			}
 		}
 		
 	}
