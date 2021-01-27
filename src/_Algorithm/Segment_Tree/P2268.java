@@ -19,8 +19,8 @@ public class P2268 {
 		Scanner s=new Scanner(System.in);
 		n=s.nextInt();
 		m=s.nextInt();
-		for(l=1;l<=n;l*=2);
-		a=new int[l];
+		for(l=1;l<n;l*=2);
+		a=new int[l*2];
 		System.out.println(Arrays.toString(a));
 		for(;i<n;a[i+++l]=s.nextInt());
 		
