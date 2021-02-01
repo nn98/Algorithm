@@ -23,7 +23,16 @@ public class P15560 {
 		for(;i<n;j=l+i++,a[j]=Integer.parseInt(t.nextToken()),o());
 		System.out.println(Arrays.toString(a));
 		for(;m-->0;) {
-			
+			t=new StringTokenizer(r.readLine());
+			n=Integer.parseInt(t.nextToken());
+			i=Integer.parseInt(t.nextToken());
+			j=Integer.parseInt(t.nextToken());
+			switch(n) {
+			case 0:
+				break;
+			case 1:
+				
+			}
 		}
 	}
 
