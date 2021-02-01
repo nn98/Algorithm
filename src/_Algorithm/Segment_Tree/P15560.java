@@ -19,6 +19,9 @@ public class P15560 {
 		a=new int[l*2];
 		for(;i<n;j=l+i++,a[j]=s.nextInt(),o());
 		System.out.println(Arrays.toString(a));
+		for(;m-->0;) {
+			
+		}
 	}
 
 }
