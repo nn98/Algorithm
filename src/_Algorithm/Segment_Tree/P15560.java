@@ -12,13 +12,15 @@ public class P15560 {
 	public static void main(String[] args)throws Exception{
 		BufferedReader r=new BufferedReader(new InputStreamReader(System.in));
 		BufferedWriter w=new BufferedWriter(new OutputStreamWriter(System.out));
-		n=s.nextInt();
-		m=s.nextInt();
-		u=s.nextInt();
-		v=s.nextInt();
+		StringTokenizer t=new StringTokenizer(r.readLine());
+		n=Integer.parseInt(t.nextToken());
+		m=Integer.parseInt(t.nextToken());
+		u=Integer.parseInt(t.nextToken());
+		v=Integer.parseInt(t.nextToken());
 		for(l=1;l<n;l*=2);
 		a=new int[l*2];
-		for(;i<n;j=l+i++,a[j]=s.nextInt(),o());
+		t=new StringTokenizer(r.readLine());
+		for(;i<n;j=l+i++,a[j]=Integer.parseInt(t.nextToken()),o());
 		System.out.println(Arrays.toString(a));
 		for(;m-->0;) {
 			
