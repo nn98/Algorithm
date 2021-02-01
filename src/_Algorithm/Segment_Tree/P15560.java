@@ -1,7 +1,7 @@
 package _Algorithm.Segment_Tree;
 
-import java.util.Arrays;
-import java.util.Scanner;
+import java.util.*;
+import java.io.*;
 
 public class P15560 {
 
@@ -9,8 +9,9 @@ public class P15560 {
 	static void o() {
 		for(;j>1;j/=2,a[j]=a[j*2]+a[j*2+1]);
 	}
-	public static void main(String[] args) {
-		Scanner s=new Scanner(System.in);
+	public static void main(String[] args)throws Exception{
+		BufferedReader r=new BufferedReader(new InputStreamReader(System.in));
+		BufferedWriter w=new BufferedWriter(new OutputStreamWriter(System.out));
 		n=s.nextInt();
 		m=s.nextInt();
 		u=s.nextInt();
