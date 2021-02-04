@@ -29,6 +29,7 @@ public class P15560 {
 			j=Integer.parseInt(t.nextToken());
 			switch(n) {
 			case 0:
+				
 				break;
 			case 1:
 				
