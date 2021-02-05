@@ -10,7 +10,7 @@ public class P15560 {
 		for(;j>1;j/=2,a[j]=a[j*2]+a[j*2+1]);
 	}
 	static int p(int n,int s,int e) {
-		
+		if(i>e|s<j)return 0;
 	}
 	public static void main(String[] args)throws Exception{
 		BufferedReader r=new BufferedReader(new InputStreamReader(System.in));
