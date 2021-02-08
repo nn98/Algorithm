@@ -35,7 +35,7 @@ public class P15560 {
 			j=Integer.parseInt(t.nextToken());
 			switch(n) {
 			case 0:
-				
+				System.out.println(u*p(1,1,l)+v*(j-i));
 				break;
 			default:
 				n=l+i-1;
