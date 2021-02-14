@@ -14,17 +14,17 @@ public class P15560 {
 		if(i>e|j<s)return 0;
 		if(i<=s&e<=j) {
 			if(e<=N) {
-			E=u*a[n]+v*(e-s);
-			R=R>E?R:E;
+				E=u*a[n]+v*(e-s);
+				R=R>E?R:E;
 			}
 			return a[n];
 		}
 		int m=(s+e)/2;
 		E=p(n*2,s,m)+p(n*2+1,m+1,e);
 		if(e<=N) {
-		T=u*E+v*(e-s);
-		System.out.println(String.format("%d * %d + %d * (%d - %d)\n", u,E,v,e,s));
-		R=R>T?R:T;
+			T=u*E+v*(e-s);
+			System.out.println(String.format("%d * %d + %d * (%d - %d)\n", u,E,v,e,s));
+			R=R>T?R:T;
 		}
 		return E;
 	}
