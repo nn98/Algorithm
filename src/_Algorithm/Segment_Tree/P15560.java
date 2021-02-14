@@ -11,7 +11,7 @@ public class P15560 {
 	}
 	static int p(int n,int s,int e) {
 		System.out.println("P: "+n+" "+s+" "+e+" "+R);
-		if(i>e|s<j)return 0;
+		if(i>e|j<s)return 0;
 		if(i<=s&e<=j) {
 			E=u*a[n]+v*(e-s);
 			R=R>E?R:E;
