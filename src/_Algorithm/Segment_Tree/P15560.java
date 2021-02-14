@@ -55,7 +55,8 @@ public class P15560 {
 			switch(N) {
 			case 0:
 				p(1,1,l);
-				System.out.println(R);
+//				System.out.println(R);
+				w.write(""+R);
 				R=0;
 				break;
 			default:
