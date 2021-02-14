@@ -13,11 +13,13 @@ public class P15560 {
 		System.out.println("P: "+n+" "+s+" "+e+" "+R);
 		if(i>e|j<s)return 0;
 		if(i<=s&e<=j) {
-			if(e<=F) {
+			
+			if(e>F)
+				E=u*a[n]+v*(F-s);
+			else 
 				E=u*a[n]+v*(e-s);
-				R=R>E?R:E;
-			}
-			return a[n];
+			R=R>E?R:E;
+		return a[n];
 		}
 		int m=(s+e)/2;
 		E=p(n*2,s,m)+p(n*2+1,m+1,e);
