@@ -45,6 +45,7 @@ public class P15560 {
 			case 0:
 				p(1,1,l);
 				System.out.println(R);
+				R=0;
 				break;
 			default:
 				n=l+i-1;
