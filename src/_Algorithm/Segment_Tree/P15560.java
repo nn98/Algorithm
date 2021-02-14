@@ -5,7 +5,7 @@ import java.io.*;
 
 public class P15560 {
 
-	static int N,m,l,i,j,u,v,a[],R,E,T;
+	static int N,m,l,i,j,u,v,a[],R,E,T,F;
 	static void o() {
 		for(;j>1;j/=2,a[j]=a[j*2]+a[j*2+1]);
 	}
@@ -13,7 +13,7 @@ public class P15560 {
 		System.out.println("P: "+n+" "+s+" "+e+" "+R);
 		if(i>e|j<s)return 0;
 		if(i<=s&e<=j) {
-			if(e<=N) {
+			if(e<=F) {
 				E=u*a[n]+v*(e-s);
 				R=R>E?R:E;
 			}
@@ -21,7 +21,7 @@ public class P15560 {
 		}
 		int m=(s+e)/2;
 		E=p(n*2,s,m)+p(n*2+1,m+1,e);
-		if(e<=N) {
+		if(e<=F) {
 			T=u*E+v*(e-s);
 			System.out.println(String.format("%d * %d + %d * (%d - %d)\n", u,E,v,e,s));
 			R=R>T?R:T;
@@ -32,7 +32,7 @@ public class P15560 {
 		BufferedReader r=new BufferedReader(new InputStreamReader(System.in));
 		BufferedWriter w=new BufferedWriter(new OutputStreamWriter(System.out));
 		StringTokenizer t=new StringTokenizer(r.readLine());
-		N=Integer.parseInt(t.nextToken());
+		F=N=Integer.parseInt(t.nextToken());
 		m=Integer.parseInt(t.nextToken());
 		u=Integer.parseInt(t.nextToken());
 		v=Integer.parseInt(t.nextToken());
