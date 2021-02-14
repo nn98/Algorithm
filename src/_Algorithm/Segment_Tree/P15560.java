@@ -5,15 +5,22 @@ import java.io.*;
 
 public class P15560 {
 
-	static int n,m,l,i,j,u,v,a[];
+	static int n,m,l,i,j,u,v,a[],R,E,T;
 	static void o() {
 		for(;j>1;j/=2,a[j]=a[j*2]+a[j*2+1]);
 	}
 	static int p(int n,int s,int e) {
 		if(i>e|s<j)return 0;
-		if(i<=s&e<=j)return a[n];
+		if(i<=s&e<=j) {
+			E=u*a[n]+v*(e-i);
+			R=R>E?R:E;
+			return a[n];
+		}
 		int m=(s+e)/2;
-		return p(n*2,s,m)+p(n*2+1,m+1,e);
+		E=p(n*2,s,m)+p(n*2+1,m+1,e);
+		T=u*E+v*v*(e-i);
+		R=R>T?R:T;
+		return E;
 	}
 	public static void main(String[] args)throws Exception{
 		BufferedReader r=new BufferedReader(new InputStreamReader(System.in));
@@ -35,7 +42,8 @@ public class P15560 {
 			j=Integer.parseInt(t.nextToken());
 			switch(n) {
 			case 0:
-				System.out.println(u*p(1,1,l)+v*(j-i));
+				p(1,1,l);
+				System.out.println(R);
 				break;
 			default:
 				n=l+i-1;
