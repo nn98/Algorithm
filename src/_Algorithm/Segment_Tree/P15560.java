@@ -10,6 +10,7 @@ public class P15560 {
 		for(;j>1;j/=2,a[j]=a[j*2]+a[j*2+1]);
 	}
 	static int p(int n,int s,int e) {
+		System.out.println("P: "+n+" "+s+" "+e+" "+R);
 		if(i>e|s<j)return 0;
 		if(i<=s&e<=j) {
 			E=u*a[n]+v*(e-s);
