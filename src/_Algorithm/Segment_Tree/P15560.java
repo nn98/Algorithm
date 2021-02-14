@@ -12,13 +12,13 @@ public class P15560 {
 	static int p(int n,int s,int e) {
 		if(i>e|s<j)return 0;
 		if(i<=s&e<=j) {
-			E=u*a[n]+v*(e-i);
+			E=u*a[n]+v*(e-s);
 			R=R>E?R:E;
 			return a[n];
 		}
 		int m=(s+e)/2;
 		E=p(n*2,s,m)+p(n*2+1,m+1,e);
-		T=u*E+v*v*(e-i);
+		T=u*E+v*(e-s);
 		R=R>T?R:T;
 		return E;
 	}
