@@ -2,7 +2,7 @@ package _Algorithm.Segment_Tree;
 
 import java.util.*;
 import java.io.*;
-
+// tq
 public class P15560 {
 
 	static int N,m,l,i,j,u,v,a[],R,E,T,F;
