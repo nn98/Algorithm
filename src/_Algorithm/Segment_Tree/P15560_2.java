@@ -1,9 +1,7 @@
 package _Algorithm.Segment_Tree;
 
 import java.util.Scanner;
-
 public class P15560_2 {
-
 	public static void main(String[] args) {
 		Scanner s=new Scanner(System.in);
 		int n=s.nextInt(),m=s.nextInt(),u=s.nextInt(),v=s.nextInt(),i=0,a[]=new int[1001],j,k,r;
@@ -20,5 +18,4 @@ public class P15560_2 {
 			}
 		}
 	}
-
 }
