@@ -1,6 +1,7 @@
 package _Algorithm.Segment_Tree;
 
 import java.io.*;
+import java.util.*;
 
 public class P15561 {
 
