@@ -5,7 +5,7 @@ import java.util.*;
 
 public class P15561 {
 
-	static int n,m,i,j,x,y,l,p,q,a[];
+	static int n,m,i,j,x,y,l,p,q,a[],u,v;
 	static void o() {
 		for(;i>1;i/=2,a[i]=a[i*2]+a[i*2+1]);
 	}
@@ -19,6 +19,10 @@ public class P15561 {
 		BufferedReader r=new BufferedReader(new InputStreamReader(System.in));
 		BufferedWriter w=new BufferedWriter(new OutputStreamWriter(System.out));
 		StringTokenizer t=new StringTokenizer(r.readLine());
+		n=Integer.parseInt(t.nextToken());
+		m=Integer.parseInt(t.nextToken());
+		u=Integer.parseInt(t.nextToken());
+		v=Integer.parseInt(t.nextToken());
 	}
 
 }
