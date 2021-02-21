@@ -23,6 +23,8 @@ public class P15561 {
 		m=Integer.parseInt(t.nextToken());
 		u=Integer.parseInt(t.nextToken());
 		v=Integer.parseInt(t.nextToken());
+		l=1;
+		for(;l<=n;l*=2);
 		while(m-->0) {
 			t=new StringTokenizer(r.readLine());
 			
