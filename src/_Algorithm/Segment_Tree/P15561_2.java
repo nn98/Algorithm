@@ -1,7 +1,6 @@
 package _Algorithm.Segment_Tree;
 
 import java.util.Scanner;
-
 public class P15561_2 {
 	static int n,m,i,j,l,x,y,a[];
 	static class N{
@@ -23,6 +22,4 @@ public class P15561_2 {
 		b=new N[n];
 		for(;i<n;a[i++]=s.nextInt());
 	}
-
-
 }
