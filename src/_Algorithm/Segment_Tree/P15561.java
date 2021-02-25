@@ -25,10 +25,16 @@ public class P15561 {
 		v=Integer.parseInt(t.nextToken());
 		l=1;
 		for(;l<=n;l*=2);
-		
+		a=new int[l*2];
 		while(m-->0) {
 			t=new StringTokenizer(r.readLine());
-			
+			n=Integer.parseInt(t.nextToken());
+			i=Integer.parseInt(t.nextToken());
+			j=Integer.parseInt(t.nextToken());
+			if(n>0)a[l+i-1]=j;
+			else {
+				
+			}
 		}
 	}
 
