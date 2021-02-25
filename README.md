@@ -82,3 +82,28 @@ https://mattlee.tistory.com/52
   [2268](https://www.acmicpc.net/problem/2268)
   
   </details>
+  
+static int n,m,i,j,l,x,y,a[];
+static class N{
+  int l,r,v,a;
+  N(int q,int w,int e,int s){
+    l=q;
+    r=w;
+    v=e;
+    a=s;
+   }
+ }
+static N[]b;
+public static void main(String[]z){
+  Scanner s=new Scanner(System.in);
+  n=s.nextInt();
+  l=1;
+  for(;l<=n;l*=2);
+  a=new int[n];
+  b=new N[n];
+  for(;i<n;a[i++]=s.nextInt());
+}
+
+https://stonejjun.tistory.com/92
+https://viyoung.tistory.com/150
+https://moonrabbit2.tistory.com/4
