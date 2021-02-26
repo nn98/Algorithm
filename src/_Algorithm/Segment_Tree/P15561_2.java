@@ -21,6 +21,8 @@ public class P15561_2 {
 		a=new int[n];	
 		b=new N[n];
 		for(;i<n;a[i++]=s.nextInt());
-		
+		while(m-->0) {
+			
+		}
 	}
 }
