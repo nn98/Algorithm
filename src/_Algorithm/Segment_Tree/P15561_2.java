@@ -22,7 +22,7 @@ public class P15561_2 {
 		b=new N[n];
 		for(;i<n;a[i++]=s.nextInt());
 		while(m-->0) {
-			
+			n=s.nextInt();
 		}
 	}
 }
