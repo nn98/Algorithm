@@ -23,4 +23,4 @@ public class P1305 {
 		System.out.println(l);
 	}
 }
-//KMP Alg
+//Knuth Morris Prett Alg
