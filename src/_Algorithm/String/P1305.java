@@ -23,4 +23,4 @@ public class P1305 {
 		System.out.println(l);
 	}
 }
-//Knuth Morris Prett Alg
+//Knuth Morris Prett Alg?
