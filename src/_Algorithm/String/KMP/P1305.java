@@ -1,4 +1,4 @@
-package _Algorithm.String;
+package _Algorithm.String.KMP;
 
 import java.util.Scanner;
 
