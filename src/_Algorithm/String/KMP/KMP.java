@@ -45,6 +45,7 @@ public class KMP {
 		H=s.next().split("");
 		S=s.next().split("");
 		F();
+		System.out.println(Arrays.toString(f));
 		K();
 		System.out.println(Arrays.toString(r));
 //		String[]a=s.next().split(""),b=s.next().split("");
