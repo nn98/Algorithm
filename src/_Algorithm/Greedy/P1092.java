@@ -17,3 +17,4 @@ public class P1092 {
 	}
 
 }
+
