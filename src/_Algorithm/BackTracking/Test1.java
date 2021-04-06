@@ -33,9 +33,10 @@ public class Test1 {
 		m=s.nextInt();
 		b=new int[n];
 		a=new char[m];
-		c=new boolean[n];
+		c=new boolean[n+1];
 		o(0);
 		System.out.println();
+		a=new char[m];
 		p(0);
 	}
 
