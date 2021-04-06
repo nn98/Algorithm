@@ -15,6 +15,18 @@ public class Test1 {
 			}
 		else System.out.println(a);
 	}
+	static void p(int x) {
+		if(x<m)
+			for(int i=0;i++<n;) {
+				if(!c[i]) {
+					c[i]=true;
+					a[x]=(char) ('0'+i);
+					o(x+1);
+					c[i]=false;
+				}
+			}
+		else System.out.println(a);
+	}
 	public static void main(String[] args) {
 		Scanner s=new Scanner(System.in);
 		n=s.nextInt();
@@ -23,6 +35,8 @@ public class Test1 {
 		a=new char[m];
 		c=new boolean[n];
 		o(0);
+		System.out.println();
+		p(0);
 	}
 
 }
