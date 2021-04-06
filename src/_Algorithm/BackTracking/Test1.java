@@ -21,7 +21,7 @@ public class Test1 {
 				if(!c[i]) {
 					c[i]=true;
 					a[x]=(char) ('0'+i);
-					o(x+1);
+					p(x+1);
 					c[i]=false;
 				}
 			}
