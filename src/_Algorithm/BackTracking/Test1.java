@@ -19,6 +19,7 @@ public class Test1 {
 		n=s.nextInt();
 		m=s.nextInt();
 		b=new int[n];
+		a=new char[m];
 		o(0);
 	}
 
