@@ -5,6 +5,7 @@ import java.util.Scanner;
 public class Test1 {
 
 	static int n,m,b[],j;
+	static boolean[]c;
 	static char[]a;
 	static void o(int x) {
 		if(x<m)
@@ -20,6 +21,7 @@ public class Test1 {
 		m=s.nextInt();
 		b=new int[n];
 		a=new char[m];
+		c=new boolean[n];
 		o(0);
 	}
 
