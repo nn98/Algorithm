@@ -24,7 +24,6 @@ public class P1759 {
 				}
 		}else if(d[0]>0&d[1]>1)System.out.println(b);
 	}
-	
 	public static void main(String[] args) {
 		Scanner s=new Scanner(System.in);
 		n=s.nextInt();
@@ -41,5 +40,4 @@ public class P1759 {
 		Arrays.sort(a);
 		o(0,0);
 	}
-
 }
