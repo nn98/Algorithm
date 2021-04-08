@@ -1,10 +1,8 @@
 package _Algorithm.BackTracking;
-
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
-
 public class P1759 {
 	static int n,m,i,c[],d[]=new int[2];
 	static char[]a,b;
