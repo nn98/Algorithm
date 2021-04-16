@@ -1,10 +1,7 @@
 package _Algorithm.Segment_Tree;
-
 import java.io.*;
 import java.util.StringTokenizer;
-
 public class P2243 {
-
 	static int n,m,i,j,p,a[];
 	static void o() {
 		for(;i>1;i/=2,a[i]=a[i*2]+a[i*2+1]);
@@ -26,5 +23,4 @@ public class P2243 {
 			}
 		}
 	}
-
 }
