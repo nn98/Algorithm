@@ -23,9 +23,10 @@ public class P2243 {
 			StringTokenizer t=new StringTokenizer(r.readLine());
 			switch(t.nextToken()) {
 			case "1":
-				break;
-			case "2":
 				
+				break;
+			default:
+				o();
 			}
 		}
 	}
