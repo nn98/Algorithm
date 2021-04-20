@@ -24,6 +24,7 @@ public class P2243 {
 			switch(t.nextToken()) {
 			case "1":
 				
+				
 				break;
 			default:
 				o();
