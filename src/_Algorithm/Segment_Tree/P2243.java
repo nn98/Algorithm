@@ -21,12 +21,13 @@ public class P2243 {
 		n=Integer.parseInt(r.readLine());
 		while(n-->0) {
 			StringTokenizer t=new StringTokenizer(r.readLine());
-			switch(t.nextToken()) {
-			case "1":
-				
-				
+			m=Integer.parseInt(t.nextToken());
+			i=Integer.parseInt(t.nextToken());
+			j=Integer.parseInt(t.nextToken());
+			switch(m) {
+			case 1:
 				break;
-			default:
+			case 2:
 				o();
 			}
 		}
