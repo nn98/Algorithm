@@ -41,5 +41,6 @@ public class P2243 {
 				o(1,i,Integer.parseInt(t.nextToken()),1,M);
 			}
 		}
+		w.flush();
 	}
 }
