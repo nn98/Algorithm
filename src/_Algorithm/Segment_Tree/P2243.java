@@ -2,9 +2,17 @@ package _Algorithm.Segment_Tree;
 import java.io.*;
 import java.util.StringTokenizer;
 public class P2243 {
-	static int n,m,i,j,p,a[];
-	static void o() {
-		for(;i>1;i/=2,a[i]=a[i*2]+a[i*2+1]);
+	static int n,m,i,j,p,M=1000001,a[]=new int[M*4];
+//	static void o() {
+//		for(;i>1;i/=2,a[i]=a[i*2]+a[i*2+1]);
+//	}
+	static void o(int n,int t,int d,int s,int e) {
+		if(t<s|t>e)return;
+		a[n]+=d;
+		if(s==e)return;
+		int m=(s+e)/2;
+		o(n*2,t,d,s,m);
+		o(n*2+1,t,d,m+1,e);
 	}
 	static int p(int n,int s,int e) {
 		return 0;
@@ -23,12 +31,14 @@ public class P2243 {
 			StringTokenizer t=new StringTokenizer(r.readLine());
 			m=Integer.parseInt(t.nextToken());
 			i=Integer.parseInt(t.nextToken());
-			j=Integer.parseInt(t.nextToken());
 			switch(m) {
 			case 1:
+				m=q(1,i,1,M);
+				w.write(m+"\n");
+				o(1,i,-1,1,M);
 				break;
 			case 2:
-				o();
+				o(1,i,Integer.parseInt(t.nextToken()),1,M);
 			}
 		}
 	}
