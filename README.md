@@ -103,6 +103,7 @@ public static void main(String[]z){
   b=new N[n];
   for(;i<n;a[i++]=s.nextInt());
 }
+?
 
 https://stonejjun.tistory.com/92
 https://viyoung.tistory.com/150
