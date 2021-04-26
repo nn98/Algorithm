@@ -11,9 +11,6 @@ public class P2243{
 		o(n*2,t,d,s,m);
 		o(n*2+1,t,d,m+1,e);
 	}
-	static int p(int n,int s,int e) {
-		return 0;
-	}
 	static int q(int n,int t,int s,int e) {
 		if(s==e)return s;
 		int m=(s+e)/2;
