@@ -2,7 +2,7 @@ package _Algorithm.Segment_Tree;
 import java.io.*;
 import java.util.StringTokenizer;
 public class P2243{
-	static int n,m,i,j,p,M=1000001,a[]=new int[M*4];
+	static int n,m,i,M=1000001,a[]=new int[M*4];
 	static void o(int n,int t,int d,int s,int e) {
 		if(t<s|t>e)return;
 		a[n]+=d;
