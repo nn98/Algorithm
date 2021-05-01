@@ -1,9 +1,6 @@
 package _Algorithm.String.KMP;
-
 import java.util.Scanner;
-
 public class P1305_2 {
-
 	static void o() {
 		
 	}
@@ -15,5 +12,4 @@ public class P1305_2 {
 			
 		}
 	}
-
 }
