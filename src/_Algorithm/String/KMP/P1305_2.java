@@ -1,9 +1,10 @@
 package _Algorithm.String.KMP;
 import java.util.Scanner;
 public class P1305_2 {
-	static int[] k(String H,String S) {
-		int h=H.length(),s=S.length(),f[],r[],be=0,m=0;
+	static int[] k(char[]H,char[]S) {
+		int h=H.length,s=S.length,f[],r[],be=0,m=0;
 		while(be<=h-s) {
+			if(m<s&H[be+m]==S[m])
 			m++;
 		}
 	}
