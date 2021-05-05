@@ -7,6 +7,7 @@ public class P1305_2 {
 			if(m<s&H[be+m]==S[m])
 			m++;
 		}
+		return r;
 	}
 	public static void main(String[] args) {
 		Scanner s=new Scanner(System.in);
