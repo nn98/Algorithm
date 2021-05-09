@@ -9,6 +9,10 @@ public class P1305_2 {
 		}
 		return r;
 	}
+	static int[]r(char[]p){
+		int[]r=new int[p.length];
+		return r;
+	}
 	public static void main(String[] args) {
 		Scanner s=new Scanner(System.in);
 		int n=s.nextInt(),i=0,j,f[]=new int[n];
