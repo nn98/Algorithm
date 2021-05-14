@@ -11,7 +11,6 @@ public class P1305_2 {
 	}
 	static int[]r(char[]p){
 		int[]r=new int[p.length];
-		
 		return r;
 	}
 	public static void main(String[]Z){
