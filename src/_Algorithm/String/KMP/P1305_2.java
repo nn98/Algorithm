@@ -22,3 +22,4 @@ public class P1305_2 {
 		}
 	}
 }
+//https://baeharam.github.io/posts/algorithm/kmp/
