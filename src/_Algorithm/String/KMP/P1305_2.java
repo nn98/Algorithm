@@ -18,7 +18,9 @@ public class P1305_2 {
 		int n=s.nextInt(),i=0,j,f[]=new int[n];
 		String[]a=s.next().split(""),t=new String[n];
 		for(;;){
-			while(f[i]!=f[j]&j>0)
+			while(f[i]!=f[j]&j>0) {
+				
+			}
 		}
 	}
 }
