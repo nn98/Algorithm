@@ -15,7 +15,7 @@ public class P1305_2 {
 	}
 	public static void main(String[]Z){
 		Scanner s=new Scanner(System.in);
-		int n=s.nextInt(),i=0,j,f[]=new int[n];
+		int n=s.nextInt(),i=0,j=0,f[]=new int[n];
 		String[]a=s.next().split(""),t=new String[n];
 		for(;;){
 			while(f[i]!=f[j]&j>0) {
