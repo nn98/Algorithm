@@ -19,6 +19,7 @@ public class P1305_2 {
 		String[]a=s.next().split(""),t=new String[n];
 		for(;;){
 			while(f[i]!=f[j]&j>0){
+				
 			}
 		}
 	}
