@@ -1,5 +1,6 @@
 package _Algorithm.String.KMP;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 //P1786
@@ -20,7 +21,7 @@ public class Main {
 		// TODO Auto-generated method stub
 		Scanner s=new Scanner(System.in);
 		char[]c=s.nextLine().toCharArray(),p=s.nextLine().toCharArray();
-		System.out.println(getP(p));
+		System.out.println(Arrays.toString(getP(p)));
 		
 		
 		
