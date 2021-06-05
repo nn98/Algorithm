@@ -9,7 +9,9 @@ public class Main {
 	static int[]getP(char[]p){
 		int m=p.length,j=0;
 		int[]pi=new int[m];
+		System.out.println("go: "+Arrays.toString(p));
 		for(int i=1;i<m;i++) {
+			System.out.println("go: "+Arrays.toString(pi)+" i: "+i+" j: "+j);
 			while(j>0&p[i]!=p[j])
 				j=pi[j-1];
 			if(p[i]==p[j])
