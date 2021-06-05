@@ -44,7 +44,7 @@ public class Main {
 		System.out.println(Arrays.toString(getP(p)));
 		List<Integer> r=k(c,p);
 		System.out.println(r.size());
-		for(int i:r)System.out.print(i+" ");
+		for(int i:r)System.out.print(i+1+" ");
 		
 	}
 
