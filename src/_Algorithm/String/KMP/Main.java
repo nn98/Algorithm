@@ -41,7 +41,7 @@ public class Main {
 		// TODO Auto-generated method stub
 		Scanner s=new Scanner(System.in);
 		char[]c=s.nextLine().toCharArray(),p=s.nextLine().toCharArray();
-		System.out.println(Arrays.toString(getP(p)));
+//		System.out.println(Arrays.toString(getP(p)));
 		List<Integer> r=k(c,p);
 		System.out.println(r.size());
 		for(int i:r)System.out.print(i+1+" ");
