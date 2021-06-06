@@ -1,5 +1,6 @@
 package _Algorithm.String.KMP;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class P1305_3 {
@@ -20,7 +21,8 @@ public class P1305_3 {
 		Scanner s=new Scanner(System.in);
 		n=s.nextInt();
 		a=s.next().toCharArray();
-		
+		o();
+		System.out.println(Arrays.toString(b));
 	}
 
 }
