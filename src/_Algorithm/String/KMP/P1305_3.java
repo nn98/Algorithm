@@ -10,7 +10,8 @@ public class P1305_3 {
 	static void o() {
 		b=new int[n];
 		for(;++i<n;) {
-			while(j>0&a[i]!=a[j])j=b[j];
+//			while(j>0&a[i]!=a[j])j=b[j];	pi¹è¿­ÀÇ j-1.
+			while(j>0&a[i]!=a[j])j=b[j-1];
 			if(a[i]==a[j]) {
 				b[i]=++j;
 			}
