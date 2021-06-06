@@ -9,8 +9,7 @@ public class P1305_3 {
 	static char[]a;
 	static void o() {
 		b=new int[n];
-		for(;i<n;) {
-			i++;
+		for(;++i<n;) {
 			while(j>0&a[i]!=a[j])j=b[j];
 			if(a[i]==a[j]) {
 				b[i]=++j;
