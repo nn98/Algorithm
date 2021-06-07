@@ -28,7 +28,7 @@ public class P1305_3 {
 //		System.out.print(n-r); x
 		System.out.print(n-b[n-1]); // o
 //		??
-		
+//		최대값이 아니라 후미값??
 	}
 
 }
