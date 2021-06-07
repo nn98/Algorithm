@@ -23,6 +23,7 @@ public class P1305_3 {
 		a=s.next().toCharArray();
 		o();
 		System.out.println(Arrays.toString(b));
+//		pi ±¸ÇÏ°í 
 	}
 
 }
