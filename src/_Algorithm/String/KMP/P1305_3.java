@@ -25,7 +25,7 @@ public class P1305_3 {
 		o();
 //		System.out.println(Arrays.toString(b));
 //		pi ±¸ÇÏ°í 
-		System.out.print(n-r);
+		System.out.print(n-b[n-1]);
 	}
 
 }
