@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class P1305_3 {
 
-	static int n,i,j,b[];
+	static int n,i,j,b[],r=0;
 	static char[]a;
 	static void o() {
 		b=new int[n];
@@ -15,6 +15,7 @@ public class P1305_3 {
 			if(a[i]==a[j]) {
 				b[i]=++j;
 			}
+			r=r>b[i]?r:b[i];
 		}
 	}
 	public static void main(String[] args) {
@@ -22,8 +23,9 @@ public class P1305_3 {
 		n=s.nextInt();
 		a=s.next().toCharArray();
 		o();
-		System.out.println(Arrays.toString(b));
+//		System.out.println(Arrays.toString(b));
 //		pi ±¸ÇÏ°í 
+		System.out.print(n-r);
 	}
 
 }
