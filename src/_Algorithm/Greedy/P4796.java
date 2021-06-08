@@ -1,5 +1,5 @@
 package _Algorithm.Greedy;
-
+// 정답률은 믿을만한 지표다 ㄹㅇㄹ
 import java.io.*;
 import java.util.*;
 
