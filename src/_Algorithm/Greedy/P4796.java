@@ -15,7 +15,7 @@ public class P4796 {
 			for(;i<3;a[i++]=Integer.parseInt(t.nextToken()));
 			if(a[0]<1)break;
 			for(;a[2]>a[4]+a[1];a[4]+=a[1],a[3]++);
-			w.write("Case "+(++i)+": "+(a[0]*a[3]+(a[2]-a[4])%a[1]));
+			w.write("Case "+(++i)+": "+(a[0]*a[3]+(a[2]-a[4])%a[1])+"\n");
 		}
 		w.flush();
 	}
