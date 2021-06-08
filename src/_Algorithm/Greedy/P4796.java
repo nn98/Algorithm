@@ -14,8 +14,8 @@ public class P4796 {
 			int a[]=new int[5],i=0;
 			for(;i<3;a[i++]=Integer.parseInt(t.nextToken()));
 			if(a[0]<1)break;
-			for(;a[2]>a[4]+a[1];a[4]+=a[1],a[3]++);
-			Arrays.toString(a);
+			for(;a[2]>=a[4]+a[1];a[4]+=a[1],a[3]++);
+//			System.out.println(Arrays.toString(a));
 			w.write("Case "+(++n)+": "+(a[0]*a[3]+(a[2]-a[4])%a[1])+"\n");
 		}
 		w.flush();
