@@ -2,9 +2,7 @@ package _Algorithm.Greedy;
 // 정답률은 믿을만한 지표다 ㄹㅇㄹ
 import java.io.*;
 import java.util.*;
-
 public class P4796 {
-
 	public static void main(String[] args)throws Exception{
 		BufferedReader r=new BufferedReader(new InputStreamReader(System.in));
 		BufferedWriter w=new BufferedWriter(new OutputStreamWriter(System.out));
@@ -21,5 +19,4 @@ public class P4796 {
 		}
 		w.flush();
 	}
-
 }
