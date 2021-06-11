@@ -18,6 +18,7 @@ public class P9253 {
 				if(a[1][j]!=a[2][k])k=0;
 				i++;
 				j++;
+				k++;
 			}
 			if(k==b[2])x++;
 		}
