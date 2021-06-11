@@ -1,6 +1,7 @@
 package _Algorithm.Greedy;
 
 import java.io.*;
+import java.util.Arrays;
 
 public class P9253_2 {
 
@@ -18,6 +19,8 @@ public class P9253_2 {
 		b=r.readLine().toCharArray();
 		p=r.readLine().toCharArray();
 		l=p.length;
+		g();
+		System.out.println(Arrays.toString(pi));
 	}
 
 }
