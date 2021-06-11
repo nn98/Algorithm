@@ -14,6 +14,10 @@ public class P9253 {
 			while(a[0][i]==a[2][k])i++;
 			while(a[1][j]==a[2][k])j++;
 			for(;i<b[0]&j<b[1]&k<b[2];) {
+				System.out.println("i: "+a[0][i]);
+				System.out.println("j: "+a[1][j]);
+				System.out.println("k: "+a[2][k]);
+				System.out.println();
 				if(a[0][i]!=a[2][k])k=0;
 				if(a[1][j]!=a[2][k])k=0;
 				i++;
