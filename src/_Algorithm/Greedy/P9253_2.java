@@ -8,7 +8,7 @@ public class P9253_2 {
 	static char[]a,b,p;
 	static int i,j,l,pi[];
 	static void g() {
-		for(;i<l;) {
+		for(;i<l;i++) {
 			while(j>0&p[j]!=p[i])j=pi[j-1];
 			if(p[j]==p[i])pi[j]=++j;
 		}
