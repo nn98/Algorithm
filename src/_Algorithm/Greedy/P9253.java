@@ -13,7 +13,7 @@ public class P9253 {
 		for(i=0;i<b[0]&j<b[1]&x<1;) {
 			while(a[0][i]==a[2][k])i++;
 			while(a[1][j]==a[2][k])j++;
-			for(;k<b[2];) {
+			for(;i<b[0]&j<b[1]&k<b[2];) {
 				if(a[0][i]!=a[2][k])k=0;
 				if(a[1][j]!=a[2][k])k=0;
 				i++;
