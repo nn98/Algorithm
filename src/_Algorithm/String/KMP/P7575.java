@@ -1,4 +1,4 @@
-package _Algorithm.Greedy;
+package _Algorithm.String.KMP;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;

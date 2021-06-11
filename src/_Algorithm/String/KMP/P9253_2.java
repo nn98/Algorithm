@@ -1,4 +1,4 @@
-package _Algorithm.Greedy;
+package _Algorithm.String.KMP;
 
 import java.io.*;
 import java.util.Arrays;
