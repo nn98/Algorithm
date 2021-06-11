@@ -19,6 +19,7 @@ public class P9253_2 {
 		b=r.readLine().toCharArray();
 		p=r.readLine().toCharArray();
 		l=p.length;
+		pi=new int[l];
 		g();
 		System.out.println(Arrays.toString(pi));
 	}
