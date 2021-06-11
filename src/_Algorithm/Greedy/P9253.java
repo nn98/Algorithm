@@ -2,7 +2,7 @@ package _Algorithm.Greedy;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
-
+// 야매 실패
 public class P9253 {
 
 	public static void main(String[] args)throws Exception{
