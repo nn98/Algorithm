@@ -12,8 +12,11 @@ public class P7575 {
 		BufferedReader r=new BufferedReader(new InputStreamReader(System.in));
 		StringTokenizer t=new StringTokenizer(r.readLine());
 		int n=Integer.parseInt(t.nextToken()),k=Integer.parseInt(t.nextToken()),
-				i=0,j;
-		
+				i,j,x=0;
+		while(x<1&n-->0) {
+			i=Integer.parseInt(r.readLine());
+			char[]a=r.readLine().toCharArray();
+		}
 	}
 
 }
