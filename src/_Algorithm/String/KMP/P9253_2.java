@@ -10,7 +10,7 @@ public class P9253_2 {
 	static void g() {
 		for(;++i<l;) {
 			while(j>0&p[j]!=p[i])j=pi[j-1];
-			if(p[j]==p[i])pi[j]=++j;
+			if(p[j]==p[i])pi[i]=++j;
 		}
 	}
 	public static void main(String[] args)throws Exception{
