@@ -13,7 +13,7 @@ public class P9253_2 {
 			if(p[j]==p[i])pi[i]=++j;
 		}
 	}
-
+//	KMP
 	static void K() {
 		int h=H.length,s=S.length,be=0,m=0,i=0;
 		r=new int[h-s+1];
