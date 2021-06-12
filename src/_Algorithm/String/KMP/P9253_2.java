@@ -13,6 +13,23 @@ public class P9253_2 {
 			if(p[j]==p[i])pi[i]=++j;
 		}
 	}
+
+	static void K() {
+		int h=H.length,s=S.length,be=0,m=0,i=0;
+		r=new int[h-s+1];
+		while(be<=h-s) {
+			if(m<s&H[be+m]==S[m]) {
+				m++;
+				if(m==s)r[i++]=be;
+			}else
+				if(m==0)be++;
+				else {
+					be+=(m-f[m-1]);
+					m=f[m-1];
+				}
+		}
+	}
+	
 	public static void main(String[] args)throws Exception{
 		BufferedReader r=new BufferedReader(new InputStreamReader(System.in));
 		a=r.readLine().toCharArray();
