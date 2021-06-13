@@ -13,9 +13,12 @@ public class P9253_2 {
 			if(p[j]==p[i])pi[i]=++j;
 		}
 	}
+	
 //	KMP
 	static void K() {
+		
 		int h=a.length,s=p.length,be=0,m=0,i=0;
+		
 		r=new int[h-s+1];
 		while(be<=h-s) {
 			if(m<s&a[be+m]==p[m]) {
