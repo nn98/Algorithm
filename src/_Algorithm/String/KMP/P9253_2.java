@@ -50,7 +50,6 @@ public class P9253_2 {
 		l=p.length;
 		pi=new int[l];
 		g();
-		System.out.println(Arrays.toString(pi));
 		i=0;
 		boolean r=k();
 		i++;
