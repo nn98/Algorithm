@@ -8,7 +8,7 @@ public class KMP_2 {
 	static char[]s,p;
 	static int i,j,pi[],S,P;
 	static void g() {
-		for(;i<P;i++) {
+		for(;++i<P;) {
 			while(j>0&p[i]!=p[j])j=pi[j-1];
 			if(p[i]==p[j])pi[i]=++j;
 		}
