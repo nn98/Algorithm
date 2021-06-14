@@ -5,7 +5,7 @@ import java.util.Arrays;
 
 public class P9253_2 {
 
-	static char[]a,b,p;
+	static char[]a[]=new char[2][],p;
 	static int i,j,l,pi[],r[];
 	static void g() {
 		for(;++i<l;) {
@@ -17,11 +17,10 @@ public class P9253_2 {
 //	KMP
 	static void K() {
 		
-		int h=a.length,s=p.length,be=0,m=0,i=0;
-		
+		int h=a[i].length,s=p.length,be=0,m=0,i=0;
 		r=new int[h-s+1];
 		while(be<=h-s) {
-			if(m<s&a[be+m]==p[m]) {
+			if(m<s&a[i][be+m]==p[m]) {
 				m++;
 				if(m==s)r[i++]=be;
 			}else
@@ -34,14 +33,15 @@ public class P9253_2 {
 	}
 	
 	public static void main(String[] args)throws Exception{
-		BufferedReader r=new BufferedReader(new InputStreamReader(System.in));
-		a=r.readLine().toCharArray();
-		b=r.readLine().toCharArray();
-		p=r.readLine().toCharArray();
+		BufferedReader R=new BufferedReader(new InputStreamReader(System.in));
+		while(j<2)a[j++]=R.readLine().toCharArray();
+		p=R.readLine().toCharArray();
 		l=p.length;
 		pi=new int[l];
 		g();
 		System.out.println(Arrays.toString(pi));
+		K();
+		System.out.println(Arrays.toString(r));
 	}
 
 }
