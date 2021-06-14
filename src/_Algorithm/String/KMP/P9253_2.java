@@ -6,7 +6,7 @@ import java.util.Arrays;
 public class P9253_2 {
 
 	static char[]a[]=new char[2][],p;
-	static int I,j,l,pi[],r[];
+	static int i,j,l,pi[],r[];
 	static void g() {
 		for(;++i<l;) {
 			while(j>0&p[j]!=p[i])j=pi[j-1];
@@ -17,7 +17,7 @@ public class P9253_2 {
 //	KMP
 	static void K() {
 		
-		int h=a[I].length,s=p.length,be=0,m=0,i=0;
+		int h=a[i].length,s=p.length,be=0,m=0,i=0;
 		r=new int[h-s+1];
 		while(be<=h-s) {
 			if(m<s&a[i][be+m]==p[m]) {
@@ -40,6 +40,7 @@ public class P9253_2 {
 		pi=new int[l];
 		g();
 		System.out.println(Arrays.toString(pi));
+		i=0;
 		K();
 		System.out.println(Arrays.toString(r));
 	}
