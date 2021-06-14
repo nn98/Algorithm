@@ -3,6 +3,8 @@ package _Algorithm.String.KMP;
 import java.io.*;
 import java.util.Arrays;
 
+// tq
+
 public class P9253_2 {
 
 	static char[]a[]=new char[2][],p;
