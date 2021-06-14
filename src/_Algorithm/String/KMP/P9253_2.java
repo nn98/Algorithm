@@ -16,24 +16,6 @@ public class P9253_2 {
 		}
 	}
 	
-//	KMP
-//	static void K() {
-//		
-//		int h=a[i].length,s=p.length,be=0,m=0,i=0;
-//		r=new int[h-s+1];
-//		while(be<=h-s) {
-//			if(m<s&a[i][be+m]==p[m]) {
-//				m++;
-//				if(m==s)r[i++]=be;
-//			}else
-//				if(m==0)be++;
-//				else {
-//					be+=(m-pi[m-1]);
-//					m=pi[m-1];
-//				}
-//		}
-//	}
-	
 	static boolean k() {
 		int x=0,y=0;
 		for(;x<a[i].length;x++) {
