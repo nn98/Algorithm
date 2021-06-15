@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class P16172_2 {
 	static char[]a,b;
-	static int i,j,p[],A,B;
+	static int i,j,p[],A,B,r;
 	
 	static void g() {
 		for(;++i<B;) {
@@ -15,9 +15,9 @@ public class P16172_2 {
 
 	static void k() {
 		i=j=0;
-		for(;i<A;i++) {
+		for(;i<A&r<1;i++) {
 			while(j>0&a[i]!=b[j])j=p[j-1];
-			if(j==B-1)return;
+			if(j==B-1)r++;
 			else j++;
 		}
 	}
@@ -32,7 +32,7 @@ public class P16172_2 {
 		p=new int[B];
 		g();
 		k();
-		System.out.print(j==B-1?1:0);
+		System.out.print(r);
 	}
 
 }
