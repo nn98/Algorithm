@@ -2,7 +2,13 @@ package _Algorithm.String.KMP;
 
 import java.util.Scanner;
 import java.util.regex.Pattern;
-
+/*
+이상태에서 
+1q2w3e4r5t6y
+qwerty
+== 1 나옴
+??
+ */
 public class P16172 {
 	
 	static char[]a,b;
