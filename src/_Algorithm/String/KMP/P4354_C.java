@@ -8,6 +8,7 @@ public class P4354_C {
 	static int p[],i,j,l;
 	static void o() {
 		l=c.length;
+		p=new int[l];
 		i=1;
 		j=0;
 		while(i+j<l) {
