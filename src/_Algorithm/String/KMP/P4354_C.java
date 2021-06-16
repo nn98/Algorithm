@@ -13,7 +13,8 @@ public class P4354_C {
 		j=0;
 		while(i+j<l) {
 			if(c[i+j]==c[j]) {
-				p[i+j-1]=++j;
+				j++;
+				p[i+j-1]=j;
 			}else {
 				if(j==0)i++;
 				else {
