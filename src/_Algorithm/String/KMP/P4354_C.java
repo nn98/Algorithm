@@ -28,6 +28,8 @@ public class P4354_C {
 		while(!(z=s.next()).equals(".")) {
 			c=z.toCharArray();
 			o();
+			System.out.println(p[l-1]==0|p[l-1]%(l-p[l-1])>0?
+					1:l/(l-p[l-1]));
 		}
 	}
 
