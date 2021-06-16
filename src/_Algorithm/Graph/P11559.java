@@ -2,9 +2,7 @@ package _Algorithm.Graph;
 
 public class P11559 {
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+	public static void main(String[] args){
 	}
 
 }
