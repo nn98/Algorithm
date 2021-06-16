@@ -12,7 +12,8 @@ public class P2846 {
 			if(j==0)j=a[i];
 			if(i>0)
 				if(a[i]<=a[i-1]) {
-					r=r>a[i]-j?r:a[i]-j;
+					System.out.println("i: "+i+" j: "+j);
+					r=r>(a[i]-j)?r:(a[i]-j);
 					j=a[i];
 				}
 		}
