@@ -1,9 +1,7 @@
 package _Algorithm.String.KMP;
 // 머리로만 이해
 import java.util.Scanner;
-
 public class P4354_C {
-
 	static char[]c;
 	static int p[],i,j,l;
 	static void o() {
