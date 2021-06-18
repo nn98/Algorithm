@@ -22,7 +22,7 @@ public class P4354_C {
 			}
 		}
 	}
-	public static void main(String[] args) {
+	public static void main(String[]¤») {
 		Scanner s=new Scanner(System.in);
 		String z;
 		while(!(z=s.next()).equals(".")) {
