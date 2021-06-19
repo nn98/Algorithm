@@ -1,5 +1,9 @@
 package _Algorithm.String.KMP;
-// 머리로만 이해
+/*
+머리로만 이해
+접미사 배열
+https://jaimemin.tistory.com/630
+*/
 import java.util.Scanner;
 public class P4354_C {
 	static char[]c;
