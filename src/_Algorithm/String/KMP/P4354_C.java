@@ -4,7 +4,7 @@ package _Algorithm.String.KMP;
 접미사 배열
 https://jaimemin.tistory.com/630
 */
-import java.util.Scanner;
+import java.util.*;
 public class P4354_C {
 	static char[]c;
 	static int p[],i,j,l;
