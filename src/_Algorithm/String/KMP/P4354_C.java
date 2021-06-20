@@ -11,11 +11,15 @@ public class P4354_C {
 	static void o() {
 		l=c.length;
 		p=new int[l];
+//		tail
 		i=1;
+//		head
 		j=0;
 		while(i+j<l) {
+//			같은동안 tail++ 
 			if(c[i+j]==c[j]) {
 				j++;
+//				pi배열 에 현재인덱스에 tail+1
 				p[i+j-1]=j;
 			}else {
 				if(j==0)i++;
