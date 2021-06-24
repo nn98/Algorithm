@@ -13,6 +13,7 @@ public class KMP_2 {
 			if(p[i]==p[j])pi[i]=++j;
 		}
 	}
+	
 	static void K() {
 		int i=0,j=1;
 		for(;i<S;i++) {
