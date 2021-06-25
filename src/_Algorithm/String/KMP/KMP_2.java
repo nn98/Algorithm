@@ -21,6 +21,7 @@ public class KMP_2 {
 		}
 	}
 	public static void main(String[] args)throws Exception{
+		
 		BufferedReader r=new BufferedReader(new InputStreamReader(System.in));
 		s=r.readLine().toCharArray();
 		p=r.readLine().toCharArray();
@@ -28,6 +29,7 @@ public class KMP_2 {
 		P=p.length;
 		pi=new int[P];
 		g();
+		
 		System.out.println(Arrays.toString(pi));
 	}
 
