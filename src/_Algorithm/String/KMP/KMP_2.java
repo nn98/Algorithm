@@ -15,9 +15,15 @@ public class KMP_2 {
 	}
 	
 	static void K() {
-		int i=0,j=1;
+		int i=0,j=0,a[];
 		for(;i<S;i++) {
-			
+			while(j>0&s[i]!=p[j])j=pi[j-1];
+			if(s[i]==p[j]) {
+				/*Searching*/
+				if(j==P-1) {
+					j=pi[j];
+				}else j++;
+			}
 		}
 	}
 	public static void main(String[] args)throws Exception{
