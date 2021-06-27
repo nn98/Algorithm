@@ -21,6 +21,7 @@ public class KMP_2 {
 			if(s[i]==p[j]) {
 				/*Searching*/
 				if(j==P-1) {
+					/*for keep searching*/
 					j=pi[j];
 				}else j++;
 			}
