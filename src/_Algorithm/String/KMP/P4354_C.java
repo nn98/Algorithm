@@ -3,11 +3,19 @@ package _Algorithm.String.KMP;
 머리로만 이해
 접미사 배열
 https://jaimemin.tistory.com/630
+
+접두사/접미사인 부분문자열 길이 저장- pi
+at index length-1, 접두/접미인 부분문자열
+length-1일때 해당 부분문자열의 길이 빼고 n제곱하면 length 나와야
+= length/(length-pi[length-1])
 */
+
 import java.util.*;
 public class P4354_C {
 	static char[]c;
 	static int p[],i,j,l;
+//	부분 일치를 통해 pi 계산
+//	pi[i]=문자열 해당 인덱스까지의 접미/접두사인 문자열 최대 길이 
 	static void o() {
 		l=c.length;
 		p=new int[l];
@@ -30,12 +38,13 @@ public class P4354_C {
 			}
 		}
 	}
-	public static void main(String[]ㅋ) {
+	public static void main(String[]x) {
 		Scanner s=new Scanner(System.in);
 		String z;
 		while(!(z=s.next()).equals(".")) {
 			c=z.toCharArray();
 			o();
+//			부분문자열이 없거나 마지막 나눴을때 나누어 떨어지지 않으면 1 
 			System.out.println(p[l-1]==0|p[l-1]%(l-p[l-1])>0?
 					1:l/(l-p[l-1]));
 		}
