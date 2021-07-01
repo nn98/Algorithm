@@ -24,6 +24,8 @@ public class P4354_C {
 //		head
 		j=0;
 		while(i+j<l) {
+			System.out.print(c);
+			System.out.println(" begin: "+j+" matched: "+i);
 //			같은동안 tail++ 
 			if(c[i+j]==c[j]) {
 				j++;
@@ -36,8 +38,7 @@ public class P4354_C {
 					j=p[j-1];
 				}
 			}
-			System.out.println(c);
-			System.out.println("begin: "+j+" matched: "+i+"\n"+Arrays.toString(p));
+			System.out.println(Arrays.toString(p));
 		}
 	}
 	public static void main(String[]x) {
