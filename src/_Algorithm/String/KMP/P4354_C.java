@@ -37,7 +37,7 @@ public class P4354_C {
 				}
 			}
 			System.out.println(c);
-			System.out.println("i: "+i+" j: "+j+"\n"+Arrays.toString(p));
+			System.out.println("begin: "+j+" matched: "+i+"\n"+Arrays.toString(p));
 		}
 	}
 	public static void main(String[]x) {
