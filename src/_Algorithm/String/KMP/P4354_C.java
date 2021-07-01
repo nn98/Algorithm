@@ -38,7 +38,7 @@ public class P4354_C {
 					j=p[j-1];
 				}
 			}
-			System.out.println(Arrays.toString(p));
+			System.out.println(Arrays.toString(p)+" begin: "+j+" matched: "+i);
 		}
 	}
 	public static void main(String[]x) {
