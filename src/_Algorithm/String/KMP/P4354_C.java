@@ -41,7 +41,7 @@ public class P4354_C {
 			System.out.println(Arrays.toString(p)+" begin: "+j+" matched: "+i);
 		}
 	}
-	public static void main(String[]x) {
+	public static void main(String[]x){
 		Scanner s=new Scanner(System.in);
 		String z;
 		while(!(z=s.next()).equals(".")) {
