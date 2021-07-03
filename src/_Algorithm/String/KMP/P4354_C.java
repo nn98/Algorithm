@@ -38,6 +38,7 @@ public class P4354_C {
 					j=p[j-1];
 				}
 			}
+//			문자열 제곱이니 결과판별은 p[l-1]로
 			System.out.println(Arrays.toString(p)+" begin: "+j+" matched: "+i);
 		}
 	}
