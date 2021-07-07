@@ -9,7 +9,6 @@ at index length-1, 접두/접미인 부분문자열
 length-1일때 해당 부분문자열의 길이 빼고 n제곱하면 length 나와야
 = length/(length-pi[length-1])
 */
-
 import java.util.*;
 public class P4354_C {
 	static char[]c;
@@ -40,7 +39,6 @@ public class P4354_C {
 			}
 //			문자열 제곱이니 결과판별은 p[l-1]로
 			System.out.println(Arrays.toString(p)+" begin: "+j+" matched: "+i);
-			
 		}
 	}
 	public static void main(String[]x){
@@ -55,5 +53,4 @@ public class P4354_C {
 					1:l/(l-p[l-1]));
 		}
 	}
-
 }
