@@ -3,7 +3,6 @@ package _Algorithm.String.KMP;
 머리로만 이해
 접미사 배열
 https://jaimemin.tistory.com/630
-
 접두사/접미사인 부분문자열 길이 저장- pi
 at index length-1, 접두/접미인 부분문자열
 length-1일때 해당 부분문자열의 길이 빼고 n제곱하면 length 나와야
