@@ -46,7 +46,6 @@ public class P4354_C {
 		while(!(z=s.next()).equals(".")) {
 			c=z.toCharArray();
 			o();
-			
 //			부분문자열이 없거나 마지막 나눴을때 나누어 떨어지지 않으면 1 
 			System.out.println(p[l-1]==0|p[l-1]%(l-p[l-1])>0?
 					1:l/(l-p[l-1]));
