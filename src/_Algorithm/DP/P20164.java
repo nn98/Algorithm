@@ -6,6 +6,7 @@ public class P20164 {
 	
 	static void o() {
 		
+		
 	}
 
 	public static void main(String[] args) {
