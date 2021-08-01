@@ -10,12 +10,12 @@ public class P3085 {
 	static boolean[][]h;
 	static void o(int x,int y,int v,int r) {
 		d[x][y]=++v;
-		if(r>0) {
+		if(r>0&x<n-1) {
 			if(a[x+1][y]==a[x][y])
 				if(d[x+1][y]<v)
 					o(x+1,y,v,1);
 		}
-		if(r==1)return;
+		if(r==1|y==n-1)return;
 		if(a[x][y+1]==a[x][y])
 			if(d[x][y+1]<v)
 				o(x,y+1,v,0);
