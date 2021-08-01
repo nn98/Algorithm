@@ -15,12 +15,12 @@ public class P3085 {
 		if(r>0&x<n-1) {
 			if(a[x+1][y]==a[x][y])
 				if(d[x+1][y]<v)
-					o(x+1,y,v,1);
+					o(x+1,y,v,r);
 		}
 		if(r==0&y<n-1)
 			if(a[x][y+1]==a[x][y])
 				if(d[x][y+1]<v)
-					o(x,y+1,v,0);
+					o(x,y+1,v,r);
 	}
 	public static void main(String[] args)throws Exception{
 		BufferedReader r=new BufferedReader(new InputStreamReader(System.in));
@@ -32,7 +32,7 @@ public class P3085 {
 		for(char[]b:a)
 			System.out.println(b);
 		for(;++i<n;)
-			for(j=0;j<n;) {
+			for(j=0;j<n;j++) {
 				char t=a[i][j];
 				a[i][j]=a[i+1][j];
 				a[i+1][j]=t;
