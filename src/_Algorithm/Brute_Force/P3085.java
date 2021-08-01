@@ -9,6 +9,7 @@ public class P3085 {
 	static char[][]a;
 	static boolean[][]h;
 	static void o(int x,int y,int v,int r) {
+		System.out.println(x+" "+y);
 		d[x][y]=++v;
 		if(r>0&x<n-1) {
 			if(a[x+1][y]==a[x][y])
