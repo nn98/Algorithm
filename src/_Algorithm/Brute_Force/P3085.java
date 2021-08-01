@@ -1,6 +1,7 @@
 package _Algorithm.Brute_Force;
 
 import java.io.*;
+import java.util.Arrays;
 
 public class P3085 {
 
@@ -22,11 +23,14 @@ public class P3085 {
 	public static void main(String[] args)throws Exception{
 		BufferedReader r=new BufferedReader(new InputStreamReader(System.in));
 		i=n=Integer.parseInt(r.readLine());
+		d=new int[n][n];
 		a=new char[n][];
 		h=new boolean[n][n];
 		while(i-->0)a[i]=r.readLine().toCharArray();
 		for(;++i<n;)
 			for(;j<n;o(i,j++,0,2));
+		for(int[]b:d)
+			System.out.println(Arrays.toString(b));
 	}
 
 }
