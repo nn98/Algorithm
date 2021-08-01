@@ -33,6 +33,8 @@ public class P3085 {
 		a=new char[n][];
 		h=new boolean[n][n];
 		while(i-->0)a[i]=r.readLine().toCharArray();
+		for(char[]b:a)
+			System.out.println(b);
 		for(;++i<n;)
 			for(j=0;j<n;o(i,j++,0,2));
 		for(int[]b:d)
