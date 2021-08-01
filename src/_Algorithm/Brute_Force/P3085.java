@@ -11,7 +11,7 @@ public class P3085 {
 	static void o(int x,int y,int v,int r) {
 		System.out.print(x+" "+y+" ");
 		if(++v>d[x][y])d[x][y]=v;
-		System.out.println(d[x][y]);
+		System.out.println(d[x][y]+" r: "+r);
 		if(r>0&x<n-1) {
 			if(a[x+1][y]==a[x][y])
 				if(d[x+1][y]<v)
