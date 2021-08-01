@@ -31,8 +31,8 @@ public class P3085 {
 		while(i-->0)a[i]=r.readLine().toCharArray();
 		for(char[]b:a)
 			System.out.println(b);
-		for(;++i<n;)
-			for(j=0;j<n;j++) {
+		for(;++i<n-1;)
+			for(j=0;j<n-1;j++) {
 				char t=a[i][j];
 				a[i][j]=a[i+1][j];
 				a[i+1][j]=t;
