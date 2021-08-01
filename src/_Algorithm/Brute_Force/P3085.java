@@ -17,10 +17,10 @@ public class P3085 {
 				if(d[x+1][y]<v)
 					o(x+1,y,v,1);
 		}
-		if(r==1|y==n-1)return;
-		if(a[x][y+1]==a[x][y])
-			if(d[x][y+1]<v)
-				o(x,y+1,v,0);
+		if(r==0&y<n-1)
+			if(a[x][y+1]==a[x][y])
+				if(d[x][y+1]<v)
+					o(x,y+1,v,0);
 	}
 	public static void main(String[] args)throws Exception{
 		BufferedReader r=new BufferedReader(new InputStreamReader(System.in));
@@ -32,7 +32,23 @@ public class P3085 {
 		for(char[]b:a)
 			System.out.println(b);
 		for(;++i<n;)
-			for(j=0;j<n;o(i,j++,0,2));
+			for(j=0;j<n;) {
+				char t=a[i][j];
+				a[i][j]=a[i+1][j];
+				a[i+1][j]=t;
+				o(i,j,0,1);
+				t=a[i][j];
+				a[i][j]=a[i+1][j];
+				a[i+1][j]=t;
+				
+				t=a[i][j];
+				a[i][j]=a[i][j+1];
+				a[i][j+1]=t;
+				o(i,j,0,0);
+				t=a[i][j+1];
+				a[i][j]=a[i][j+1];
+				a[i][j+1]=t;
+			}
 		for(int[]b:d)
 			System.out.println(Arrays.toString(b));
 	}
