@@ -10,7 +10,7 @@ public class P3085 {
 	static boolean[][]h;
 	static void o(int x,int y,int v,int r) {
 		System.out.println(x+" "+y);
-		d[x][y]=++v;
+		if(++v>d[x][y])d[x][y]=v;
 		if(r>0&x<n-1) {
 			if(a[x+1][y]==a[x][y])
 				if(d[x+1][y]<v)
@@ -29,7 +29,7 @@ public class P3085 {
 		h=new boolean[n][n];
 		while(i-->0)a[i]=r.readLine().toCharArray();
 		for(;++i<n;)
-			for(;j<n;o(i,j++,0,2));
+			for(j=0;j<n;o(i,j++,0,2));
 		for(int[]b:d)
 			System.out.println(Arrays.toString(b));
 	}
