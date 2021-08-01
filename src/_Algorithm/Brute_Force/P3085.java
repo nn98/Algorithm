@@ -8,16 +8,16 @@ public class P3085 {
 	static char[][]a;
 	static boolean[][]h;
 	static void o(int x,int y,int v,int r) {
-		d[x][y]=v;
-		if(r<0) {
+		d[x][y]=++v;
+		if(r>0) {
 			if(a[x+1][y]==a[x][y])
-				if(d[x+1][y]<v+1)
-					o(x+1,y,v+1,0);
+				if(d[x+1][y]<v)
+					o(x+1,y,v,1);
 		}
-		else
-			if(a[x][y+1]==a[x][y])
-				if(d[x][y+1]<v+1)
-					o(x,y+1,v+1,1);
+		if(r==1)return;
+		if(a[x][y+1]==a[x][y])
+			if(d[x][y+1]<v)
+				o(x,y+1,v,0);
 	}
 	public static void main(String[] args)throws Exception{
 		BufferedReader r=new BufferedReader(new InputStreamReader(System.in));
@@ -25,7 +25,8 @@ public class P3085 {
 		a=new char[n][];
 		h=new boolean[n][n];
 		while(i-->0)a[i]=r.readLine().toCharArray();
-		System.out.println(i);
+		for(;++i<n;)
+			for(;j<n;o(i,j++,0,2));
 	}
 
 }
