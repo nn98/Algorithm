@@ -37,6 +37,7 @@ public class P3085 {
 				a[i][j]=a[i+1][j];
 				a[i+1][j]=t;
 				o(i,j,0,1);
+				o(i,j,0,0);
 				t=a[i][j];
 				a[i][j]=a[i+1][j];
 				a[i+1][j]=t;
@@ -44,6 +45,7 @@ public class P3085 {
 				t=a[i][j];
 				a[i][j]=a[i][j+1];
 				a[i][j+1]=t;
+				o(i,j,0,1);
 				o(i,j,0,0);
 				t=a[i][j+1];
 				a[i][j]=a[i][j+1];
