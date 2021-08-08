@@ -7,7 +7,9 @@ public class P3085_2 {
 	static int n,d[][],i,r;
 	static char a[][];
 	static void o(int i,int j,int n) {
-		
+		if(n>0) {
+			
+		}
 	}
 	public static void main(String[] args)throws Exception{
 		BufferedReader r=new BufferedReader(new InputStreamReader(System.in));
