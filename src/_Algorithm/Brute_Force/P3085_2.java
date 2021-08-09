@@ -38,6 +38,7 @@ public class P3085_2 {
 					System.out.println();
 					o(i,0,0,1);
 					o(0,j,0,1);
+					if(j==n-2)o(0,j+1,0,1);
 					a[i][j+1]=a[i][j];
 					a[i][j]=t;
 				}
@@ -51,6 +52,7 @@ public class P3085_2 {
 					System.out.println();
 					o(i,0,0,1);
 					o(0,j,0,1);
+					if(i==n-2)o(i+1,0,0,1);
 					a[i+1][j]=a[i][j];
 					a[i][j]=t;
 				}
