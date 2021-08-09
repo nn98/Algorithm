@@ -14,8 +14,6 @@ public class P3085_3 {
 		for(;i<n;i++,j=0)
 			for(char b:r.readLine().toCharArray())
 				a[i][j++]=b;
-		for(char[]b:a)
-			System.out.println(b);
 		for(i=0;i<n;i++)
 			for(j=0;j<n;j++) {
 				t=a[i][j];
