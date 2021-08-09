@@ -30,12 +30,18 @@ public class P3085_2 {
 				t=a[i][j];
 				a[i][j]=a[i][j+1];
 				a[i][j+1]=t;
+				for(char[]b:a)
+					System.out.println(b);
+				System.out.println();
 				o(i,j,0,1);
 				a[i][j+1]=a[i][j];
 				a[i][j]=t;
 				
 				a[i][j]=a[i+1][j];
 				a[i+1][j]=t;
+				for(char[]b:a)
+					System.out.println(b);
+				System.out.println();
 				o(i,j,1,1);
 				a[i+1][j]=a[i][j];
 				a[i][j]=t;
