@@ -4,10 +4,10 @@ import java.io.*;
 
 public class P3085_2 {
 
-	static int n,d[][],i,r,j;
+	static int n,d[][],i,R,j;
 	static char a[][],t;
 	static void o(int i,int j,int n,int c) {
-		r=r>++c?r:c;
+		R=R>++c?R:c;
 		if(n>0) {
 			if(j<n+1)
 				if(a[i][j+1]==a[i][j])
