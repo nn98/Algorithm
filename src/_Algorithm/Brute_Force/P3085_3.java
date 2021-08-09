@@ -30,16 +30,27 @@ public class P3085_3 {
 						R=R>k?R:k;
 					}
 				}
+//				for(y=0;y<n;y++) {
+//					k=1;
+//					for(x=1;x<n;x++) {
+//						if(a[x][y]==a[x-1][y])k++;
+//						else {
+//							R=R>k?R:k;
+//							k=1;
+//						}
+//						R=R>k?R:k;
+//					}
+//				}
 				for(y=0;y<n;y++) {
 					k=1;
-					for(x=1;x<n;x++) {
-						if(a[x][y]==a[x-1][y])k++;
+					for(x=0;x<n-1;x++) {
+						if(a[x+1][i]==a[x][y])k++;
 						else {
-							R=R>k?R:k;
-							k=1;
+							R=R>t?R:t;
+					k=1;
 						}
-						R=R>k?R:k;
 					}
+					R=R>t?R:t;
 				}
 			}
 		System.out.println(R);
