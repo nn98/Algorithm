@@ -8,7 +8,7 @@ public class P3085_2 {
 	static char a[][],t;
 	static void o(int i,int j,int v,int c) {
 		System.out.println(i+" "+j+" "+v+" "+c);
-		R=R>c++?R:c;
+		R=R>c?R:c++;
 		if(v>0) {
 			if(i<n-1)
 				o(i+1,j,v,a[i+1][j]==a[i][j]?c:1);
