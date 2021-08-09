@@ -6,7 +6,7 @@ public class P3085_3 {
 
 	static int n,i,j,R,k,x,y;
 	static char t,a[][];
-	
+
 	public static void main(String[] args)throws Exception{
 		BufferedReader r=new BufferedReader(new InputStreamReader(System.in));
 		n=Integer.parseInt(r.readLine());
@@ -23,12 +23,24 @@ public class P3085_3 {
 						if(a[x][y]==a[x][y-1])k++;
 						else {
 							R=R>k?R:k;
-					k=1;
+							k=1;
 						}
+						R=R>k?R:k;
 					}
 				}
-					
+				for(y=0;y<n;y++) {
+					k=1;
+					for(x=1;x<n;x++) {
+						if(a[x][y]==a[x-1][y])k++;
+						else {
+							R=R>k?R:k;
+							k=1;
+						}
+						R=R>k?R:k;
+					}
+				}
 			}
+		System.out.println(R);
 	}
 
 }
