@@ -49,7 +49,7 @@ public class P3085_3 {
 							R=R>k?R:k;
 							k=1;
 						}
-					R=R>t?R:t;
+					R=R>k?R:k;
 				}
 			}
 		System.out.println(R);
