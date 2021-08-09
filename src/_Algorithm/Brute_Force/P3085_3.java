@@ -19,6 +19,10 @@ public class P3085_3 {
 				t=a[i][j];
 				a[i][j]=a[i][j+1];
 				a[i][j+1]=t;
+				System.out.println();
+				for(char[]b:a)
+					System.out.println(b);
+				System.out.println();
 				for(x=0;x<n;x++) {
 					k=1;
 					for(y=1;y<n;y++) {
@@ -46,6 +50,10 @@ public class P3085_3 {
 
 				a[i][j]=a[i+1][j];
 				a[i+1][j]=t;
+				System.out.println();
+				for(char[]b:a)
+					System.out.println(b);
+				System.out.println();
 				for(x=0;x<n;x++) {
 					k=1;
 					for(y=1;y<n;y++) {
