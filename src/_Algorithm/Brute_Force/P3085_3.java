@@ -1,13 +1,9 @@
 package _Algorithm.Brute_Force;
-
 import java.io.*;
-
-public class P3085_3 {
-
+public class P3085_3{
 //	지랄말고 BF부터
 	static int n,i,j,R,k,x,y;
 	static char t,a[][];
-
 	public static void main(String[] args)throws Exception{
 		BufferedReader r=new BufferedReader(new InputStreamReader(System.in));
 		n=Integer.parseInt(r.readLine());
@@ -74,5 +70,4 @@ public class P3085_3 {
 			}
 		System.out.println(R);
 	}
-
 }
