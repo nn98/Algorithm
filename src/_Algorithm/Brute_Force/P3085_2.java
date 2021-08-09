@@ -7,7 +7,7 @@ public class P3085_2 {
 	static int n,d[][],i,R,j;
 	static char a[][],t;
 	static void o(int i,int j,int v,int c) {
-		System.out.println(i+" "+j+" "+v+" "+c);
+//		System.out.println(i+" "+j+" "+v+" "+c);
 		R=R>c?R:c;
 		c++;
 		if(v>0) {
@@ -34,9 +34,9 @@ public class P3085_2 {
 				{
 					a[i][j]=a[i][j+1];
 					a[i][j+1]=t;
-					for(char[]b:a)
-						System.out.println(b);
-					System.out.println();
+//					for(char[]b:a)
+//						System.out.println(b);
+//					System.out.println();
 					o(i,0,0,1);
 					o(0,j,1,1);
 					if(j==n-2)o(0,j+1,0,1);
@@ -48,9 +48,9 @@ public class P3085_2 {
 				{
 					a[i][j]=a[i+1][j];
 					a[i+1][j]=t;
-					for(char[]b:a)
-						System.out.println(b);
-					System.out.println();
+//					for(char[]b:a)
+//						System.out.println(b);
+//					System.out.println();
 					o(i,0,0,1);
 					o(0,j,1,1);
 					if(i==n-2)o(i+1,0,1,1);
