@@ -6,16 +6,16 @@ public class P3085_2 {
 
 	static int n,d[][],i,R,j;
 	static char a[][],t;
-	static void o(int i,int j,int n,int c) {
+	static void o(int i,int j,int v,int c) {
 		System.out.println(i+" "+j+" "+n+" "+c);
 		R=R>c?R:c++;
-		if(n>0) {
+		if(v>0) {
 			if(i<n+1)
-				o(i+1,j,n,a[i+1][j]==a[i][j]?c:0);
+				o(i+1,j,v,a[i+1][j]==a[i][j]?c:0);
 		}
 		else
 			if(j<n+1)
-				o(i,j+1,n,a[i][j+1]==a[i][j]?c:0);
+				o(i,j+1,v,a[i][j+1]==a[i][j]?c:0);
 		
 		
 	}
