@@ -10,9 +10,11 @@ public class P3085_3 {
 	public static void main(String[] args)throws Exception{
 		BufferedReader r=new BufferedReader(new InputStreamReader(System.in));
 		n=Integer.parseInt(r.readLine());
-		a=new char[n][n];
-		while(j<n)a[j++]=r.readLine().toCharArray();
-		for(;i<n;i++)
+		a=new char[n+1][n+1];
+		for(;i<n;i++,j=0)
+			for(char b:r.readLine().toCharArray())
+				a[i][j++]=b;
+		for(i=0;i<n;i++)
 			for(j=0;j<n;j++) {
 				t=a[i][j];
 				a[i][j]=a[i][j+1];
