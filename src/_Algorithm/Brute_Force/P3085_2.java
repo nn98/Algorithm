@@ -7,7 +7,7 @@ public class P3085_2 {
 	static int n,d[][],i,R,j;
 	static char a[][],t;
 	static void o(int i,int j,int n,int c) {
-		R=R>++c?R:c;
+		R=R>c?R:c++;
 		if(n>0) {
 			if(j<n+1)
 				if(a[i][j+1]==a[i][j])
@@ -30,13 +30,13 @@ public class P3085_2 {
 				t=a[i][j];
 				a[i][j]=a[i][j+1];
 				a[i][j+1]=t;
-				o(i,j,0,0);
+				o(i,j,0,1);
 				a[i][j+1]=a[i][j];
 				a[i][j]=t;
 				
 				a[i][j]=a[i+1][j];
 				a[i+1][j]=t;
-				o(i,j,1,0);
+				o(i,j,1,1);
 				a[i+1][j]=a[i][j];
 				a[i][j]=t;
 			}
