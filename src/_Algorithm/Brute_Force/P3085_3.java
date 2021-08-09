@@ -46,7 +46,7 @@ public class P3085_3 {
 					for(x=0;x<n-1;x++)
 						if(a[x+1][i]==a[x][y])k++;
 						else {
-							R=R>t?R:t;
+							R=R>k?R:k;
 							k=1;
 						}
 					R=R>t?R:t;
