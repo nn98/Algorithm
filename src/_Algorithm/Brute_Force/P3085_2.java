@@ -10,6 +10,7 @@ public class P3085_2 {
 		if(n>0) {
 			
 		}
+		
 	}
 	public static void main(String[] args)throws Exception{
 		BufferedReader r=new BufferedReader(new InputStreamReader(System.in));
