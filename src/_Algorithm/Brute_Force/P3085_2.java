@@ -31,7 +31,7 @@ public class P3085_2 {
 			for(j=0;j<n;j++) {
 				t=a[i][j];
 				if(j<n-1)
-				if(a[i][j]!=a[i][j+1]) {
+				{
 					a[i][j]=a[i][j+1];
 					a[i][j+1]=t;
 					for(char[]b:a)
@@ -45,7 +45,7 @@ public class P3085_2 {
 				}
 
 				if(i<n-1)
-				if(a[i][j]!=a[i+1][j]) {
+				{
 					a[i][j]=a[i+1][j];
 					a[i+1][j]=t;
 					for(char[]b:a)
