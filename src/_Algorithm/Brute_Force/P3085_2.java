@@ -11,11 +11,11 @@ public class P3085_2 {
 		R=R>c++?R:c;
 		if(v>0) {
 			if(i<n-1)
-				o(i+1,j,v,a[i+1][j]==a[i][j]?c:0);
+				o(i+1,j,v,a[i+1][j]==a[i][j]?c:1);
 		}
 		else
 			if(j<n-1)
-				o(i,j+1,v,a[i][j+1]==a[i][j]?c:0);
+				o(i,j+1,v,a[i][j+1]==a[i][j]?c:1);
 
 
 	}
