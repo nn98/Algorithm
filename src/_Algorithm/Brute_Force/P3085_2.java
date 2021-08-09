@@ -40,7 +40,7 @@ public class P3085_2 {
 				a[i+1][j]=a[i][j];
 				a[i][j]=t;
 			}
-		System.out.println(r);
+		System.out.println(R);
 	}
 
 }
