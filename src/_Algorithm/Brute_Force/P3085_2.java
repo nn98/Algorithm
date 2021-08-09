@@ -24,7 +24,7 @@ public class P3085_2 {
 		i=n=Integer.parseInt(r.readLine());
 		d=new int[n][n];
 		a=new char[n][n];
-		while(i-->0)a[n]=r.readLine().toCharArray();
+		while(i-->0)a[i]=r.readLine().toCharArray();
 		for(i=0;i<n;i++)
 			for(j=0;j<n;j++) {
 				t=a[i][j];
