@@ -7,6 +7,7 @@ public class P3085_2 {
 	static int n,d[][],i,R,j;
 	static char a[][],t;
 	static void o(int i,int j,int n,int c) {
+		System.out.println(i+" "+j+" "+n+" "+c);
 		R=R>c?R:c++;
 		if(n>0) {
 			if(j<n+1)
