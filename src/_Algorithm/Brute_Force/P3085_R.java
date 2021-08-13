@@ -5,11 +5,11 @@ import java.io.InputStreamReader;
 
 public class P3085_R {
 
-	static int n;
 	public static void main(String[] args)throws Exception{
 		BufferedReader r=new BufferedReader(new InputStreamReader(System.in));
-		n=Integer.parseInt(r.readLine());
-		
+		int n=Integer.parseInt(r.readLine()),i=0,j;
+		char a[][]=new char[n][],t;
+		for(;i<n;a[i++]=r.readLine().toCharArray());
 	}
 
 }
