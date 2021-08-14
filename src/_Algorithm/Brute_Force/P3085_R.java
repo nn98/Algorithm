@@ -10,6 +10,10 @@ public class P3085_R {
 		int n=Integer.parseInt(r.readLine()),i=0,j;
 		char a[][]=new char[n][],t;
 		for(;i<n;a[i++]=r.readLine().toCharArray());
+		for(i=0;i<n;i++)
+			for(j=0;j<n;j++) {
+				
+			}
 	}
 
 }
