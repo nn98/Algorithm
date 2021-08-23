@@ -9,7 +9,6 @@ public class P3085_R {
 		for(;i<n;a[i++]=r.readLine().toCharArray());
 		for(i=0;i<n;i++)
 			for(j=0;j<n;j++) {
-				
 			}
 	}
 }
