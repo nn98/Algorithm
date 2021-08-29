@@ -2,7 +2,7 @@ package _Algorithm.Brute_Force;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 public class P3085_R {
-	public static void main(String[] args)throws Exception{
+	public static void main(String[]Z)throws Exception{
 		BufferedReader r=new BufferedReader(new InputStreamReader(System.in));
 		int n=Integer.parseInt(r.readLine()),i=0,j;
 		char a[][]=new char[n][],t;
