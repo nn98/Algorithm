@@ -16,7 +16,7 @@ public class P2531 {
 			a[i]=Integer.parseInt(r.readLine());
 			if(i+1>-k) {
 				HashSet<Integer>s=new HashSet();
-				for(j=i;i-j!=k;s.add(a[j--]));
+				for(j=i;i-j!=k-1;s.add(a[j--]));
 				s.add(c);
 				R=R>s.size()?R:s.size();
 			}
