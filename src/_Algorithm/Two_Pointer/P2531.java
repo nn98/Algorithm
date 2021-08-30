@@ -1,6 +1,7 @@
 package _Algorithm.Two_Pointer;
 
 // 투 포인터 이름으로 생각해보면 시작점 s 끝점 e 두고 하나씩 움직여가면서 개수 비교
+// 정답, 시간초과
 
 import java.io.*;
 import java.util.*;
