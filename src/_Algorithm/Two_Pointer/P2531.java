@@ -18,7 +18,7 @@ public class P2531 {
 				HashSet<Integer>s=new HashSet();
 				for(j=i,p=k;p>0;System.out.print(a[j]+" "),s.add(a[j--]),p--);
 				s.add(c);
-				System.out.println("\nfrom "+(j+1)+" to "+i+" kind: "+s.size());
+//				System.out.println("\nfrom "+(j+1)+" to "+i+" kind: "+s.size());
 				R=R>s.size()?R:s.size();
 			}
 		}
@@ -29,7 +29,7 @@ public class P2531 {
 				s.add(a[p--]);
 				p=p<0?n+p:p;
 			}
-			System.out.println("from "+j+" to "+p+" kind - "+s.size());
+//			System.out.println("from "+j+" to "+p+" kind - "+s.size());
 			R=R>s.size()?R:s.size();
 		}
 		System.out.println(R);
