@@ -11,7 +11,7 @@ public class P2531 {
 		StringTokenizer t=new StringTokenizer(r.readLine());
 		int n=Integer.parseInt(t.nextToken()),d=Integer.parseInt(t.nextToken()),
 				k=Integer.parseInt(t.nextToken()),c=Integer.parseInt(t.nextToken()),
-				a[]=new int[n],i=0,j,R=0;
+				a[]=new int[n],i=0,j,R=0,p;
 		for(;i<n;i++) {
 			a[i]=Integer.parseInt(r.readLine());
 			if(i+1>k) {
@@ -23,7 +23,13 @@ public class P2531 {
 		}
 		System.out.println(R);
 		for(i=0;i<k;i++) {
-			
+			HashSet<Integer>s=new HashSet();
+			s.add(c);
+			for(p=j=i;j<k+i;j++) {
+				s.add(a[p--]);
+				p=p<0?n+p:p;
+			}
+			R=R>s.size()?R:s.size();
 		}
 	}
 
