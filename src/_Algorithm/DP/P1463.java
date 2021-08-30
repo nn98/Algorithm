@@ -1,5 +1,7 @@
 package _Algorithm.DP;
 
+// 역순으로 2 -> n 까지 DP
+
 public class P1463 {
 
 	public static void main(String[] args) {
