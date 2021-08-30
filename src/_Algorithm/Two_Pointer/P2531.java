@@ -14,11 +14,11 @@ public class P2531 {
 				a[]=new int[n],i=0,j,R=0,p;
 		for(;i<n;i++) {
 			a[i]=Integer.parseInt(r.readLine());
-			if(i+1>k) {
+			if(i-1>k) {
 				HashSet<Integer>s=new HashSet();
-				for(j=i;i-j!=k-1;s.add(a[j--]));
+				for(j=i;i-j!=k-1;System.out.print(a[j]+" "),s.add(a[j--]));
 				s.add(c);
-				System.out.println("from "+j+" to "+i+" kind - "+s.size());
+				System.out.println("\nfrom "+j+" to "+i+" kind - "+s.size());
 				R=R>s.size()?R:s.size();
 			}
 		}
