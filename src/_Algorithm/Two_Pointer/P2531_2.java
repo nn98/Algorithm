@@ -10,7 +10,7 @@ public class P2531_2 {
 		StringTokenizer t=new StringTokenizer(r.readLine());
 		int n=Integer.parseInt(t.nextToken()),d=Integer.parseInt(t.nextToken()),
 				k=Integer.parseInt(t.nextToken()),c=Integer.parseInt(t.nextToken()),
-				a[]=new int[n],i=0,j,R=0,p;
+				a[]=new int[n],i=0,x,y,R=0;
 		for(;i<n;i++) {
 			a[i]=Integer.parseInt(r.readLine());
 		}
