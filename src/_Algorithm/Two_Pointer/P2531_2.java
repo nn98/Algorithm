@@ -19,8 +19,14 @@ public class P2531_2 {
 		System.out.println(h.toString());
 		System.out.println(Arrays.toString(b));
 		for(i=0;i<n;i++) {
-			
+			R=R>h.size()?R:h.size();
+			b[a[j]]+=h.contains(a[j])?1:0;
+			h.add(a[j++]);
+			j%=n;
+			if(b[a[i]]>0)b[a[i]]--;
+			else h.remove(a[i]);
 		}
+		System.out.println(R);
 	}
 
 }
