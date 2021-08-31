@@ -20,7 +20,7 @@ public class P2531_2 {
 //		System.out.println(h.toString());
 //		System.out.println(Arrays.toString(b));
 		for(i=0;i<n;i++) {
-			System.out.println(h.toString());
+//			System.out.println(h.toString());
 			R=R>h.size()?R:h.size();
 			++j;
 			j%=n;
