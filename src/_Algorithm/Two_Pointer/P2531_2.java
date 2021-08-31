@@ -22,9 +22,10 @@ public class P2531_2 {
 		for(i=0;i<n;i++) {
 			System.out.println(h.toString());
 			R=R>h.size()?R:h.size();
-			b[a[++j]]+=h.contains(a[j])?1:0;
-			h.add(a[j]);
+			++j;
 			j%=n;
+			b[a[j]]+=h.contains(a[j])?1:0;
+			h.add(a[j]);
 			if(b[a[i]]>0)b[a[i]]--;
 			else if(a[i]!=c)h.remove(a[i]);
 		}
