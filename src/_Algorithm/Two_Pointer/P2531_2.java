@@ -15,7 +15,7 @@ public class P2531_2 {
 			a[i]=Integer.parseInt(r.readLine());
 		}
 		HashSet<Integer>h=new HashSet();
-		for(i=0;i<=j;h.add(a[i]),b[a[i]]+=h.contains(a[i++])?1:0);
+		for(i=0;i<=j;b[a[i]]+=h.contains(a[i])?1:0,h.add(a[i++]));
 		System.out.println(h.toString());
 		System.out.println(Arrays.toString(b));
 		for(i=0;i<n;i++) {
