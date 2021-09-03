@@ -17,11 +17,13 @@ public class P2811 {
 					V=j;
 				}
 			}else {
-				
+				if(I-j*2<0)k+=I;
+				else k+=j*2;
 				j=0;
 			}
+			System.out.println(k);
 		}
-			System.out.println("V: "+V+" J: "+J);
+		System.out.println("V: "+V+" J: "+J);
 	}
 
 }
