@@ -12,7 +12,7 @@ public class P12005 {
 		Arrays.sort(a);
 		for(i=0;i<n;i++) {
 			if(a[i]-a[j]>k)j++;
-			r=r>i-k+1?r:i-k+1;
+			r=r>i-j+1?r:i-j+1;
 		}
 		System.out.print(r);
 	}
