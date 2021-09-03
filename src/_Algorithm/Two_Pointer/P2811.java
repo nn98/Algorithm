@@ -23,6 +23,7 @@ public class P2811 {
 			}
 			System.out.println(k);
 		}
+		
 		System.out.println("V: "+V+" J: "+J);
 	}
 
