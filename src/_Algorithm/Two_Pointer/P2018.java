@@ -13,6 +13,6 @@ public class P2018 {
 			if(v<n)v+=++j;
 			else v-=i++;
 		}
-		System.out.println(r);
+		System.out.print(r);
 	}
 }
