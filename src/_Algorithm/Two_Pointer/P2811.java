@@ -7,7 +7,7 @@ public class P2811 {
 	public static void main(String[] args) {
 		Scanner s=new Scanner(System.in);
 		int n=s.nextInt(),a[]=new int[n],i=0,j=0,k,J,V=0;
-		for(;i<n;) {
+		for(;i<n;i++) {
 			a[i]=s.nextInt();
 			if(a[i]<0) {
 				j++;
