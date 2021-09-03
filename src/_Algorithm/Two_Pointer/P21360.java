@@ -8,7 +8,7 @@ public class P21360 {
 		Scanner s=new Scanner(System.in);
 		int n=s.nextInt(),i=0,j=0;
 		char[]a=s.next().toCharArray();
-		for(;i==0;i=a[j++]=='.'?j:0);
+		for(;i==0;i=a[j]=='.'?+j++:0);
 		System.out.println(i+" "+j);
 	}
 
