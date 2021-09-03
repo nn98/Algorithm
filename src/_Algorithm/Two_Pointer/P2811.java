@@ -27,7 +27,7 @@ public class P2811 {
 			if(I-j*2<0)k+=I;
 			else k+=j*2;
 		}
-		System.out.println("V: "+V+" J: "+J);
+		System.out.println("V: "+V+" J: "+J+" k: "+k);
 	}
 
 }
