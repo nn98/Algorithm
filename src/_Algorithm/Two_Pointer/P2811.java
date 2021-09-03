@@ -17,7 +17,7 @@ public class P2811 {
 				}
 			}else j=0;
 		}
-		System.out.println("V: "+v+" J: "+j);
+		System.out.println("V: "+V+" J: "+j);
 	}
 
 }
