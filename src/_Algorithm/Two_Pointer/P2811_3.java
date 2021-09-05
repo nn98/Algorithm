@@ -17,7 +17,10 @@ public class P2811_3 {
 					V=j;
 					J=I;
 				}
-			}else for(j*=2;--I>=0&j>0;b[I]++);
+			}else {
+				for(j*=2;--I>=0&j>0;b[I]++);
+				I=j=0;
+			}
 			a[i]=-j;
 		}
 		System.out.println(Arrays.toString(a));
