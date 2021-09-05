@@ -1,5 +1,6 @@
 package _Algorithm.Two_Pointer;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class P8726 {
@@ -9,6 +10,7 @@ public class P8726 {
 		int n=s.nextInt(),m=s.nextInt(),i=0,j,c;
 		s.next();
 		String[]a=s.nextLine().split(" ");
+		System.out.println(Arrays.toString(a));
 	}
 
 }
