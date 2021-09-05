@@ -14,7 +14,7 @@ public class P8726 {
 			if(a[i].equals("0")) {
 				System.out.println("go: "+i);
 				j=i+1;
-				while(c<=m&j<n) {
+				while(c<m&j<n) {
 					if(a[j].equals("1")) {
 						v++;
 					}else {
