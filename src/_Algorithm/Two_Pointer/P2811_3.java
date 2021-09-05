@@ -20,11 +20,11 @@ public class P2811_3 {
 			}else {
 				for(j*=2;--I>=0&j-->0;b[I]++);
 				I=j=0;
-				
 			}
 			a[i]=-j;
 			System.out.println(Arrays.toString(b));
 		}
+		for(j*=2;--I>=0&j-->0;b[I]++);
 		System.out.println(Arrays.toString(a));
 		System.out.println(Arrays.toString(b));
 	}
