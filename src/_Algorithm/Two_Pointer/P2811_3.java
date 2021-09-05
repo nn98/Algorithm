@@ -22,17 +22,16 @@ public class P2811_3 {
 				I=j=0;
 			}
 			a[i]=-j;
-			System.out.println(Arrays.toString(b));
 		}
 		for(j*=2;--I>=0&j-->0;b[I]++);
 		for(i=0;i<n;i++)
 			if(a[i]==-V) {
 				I=0;
 				c=V*3;
-				for(j=i+a[i];j>=0&c-->0;I+=b[j]>0?0:1);
+				for(j=i+a[i];j>=0&c-->0;I+=b[j--]>0?0:1);
 				r=r>I?r:I;
 			}
-		for(i=0;i<n;r+=a[i++]>0?1:0);
+		for(i=0;i<n;r+=b[i++]>0?1:0);
 		System.out.print(r);
 	}
 }
