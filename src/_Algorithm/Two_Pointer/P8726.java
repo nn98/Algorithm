@@ -10,7 +10,7 @@ public class P8726 {
 		int n=s.nextInt(),m=s.nextInt(),i=0,j,c=1,v=0,r=n;
 		s.nextLine();
 		String[]a=s.nextLine().split(" ");
-		for(;i<n;) {
+		for(;i<n-1;) {
 			if(a[i].equals("0")) {
 				j=i+1;
 				while(c<m&j<n) {
@@ -24,7 +24,7 @@ public class P8726 {
 				r=r<v?r:v;
 				System.out.println(v);
 			}
-			for(;++i<n-1&a[i].equals("1");v--);
+			for(;++i<n-1&a[i].equals("1");v--)if(i==n-1)break;
 			c--;
 		}
 		System.out.println(r);
