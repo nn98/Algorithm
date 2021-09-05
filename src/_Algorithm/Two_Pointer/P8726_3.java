@@ -10,7 +10,7 @@ public class P8726_3 {
 		String[]a=s.nextLine().split(" ");
 		c=a[0].equals("0")?1:0;
 		for(;i<n-1;) {
-			while(c<k&v<n) {
+			while(c<k&v<n-1) {
 				v++;
 				if(a[v].equals("0"))c++;
 			}
