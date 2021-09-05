@@ -26,7 +26,7 @@ public class P2811_2 {
 			a[i]=-j;
 //			System.out.println("I: "+I+" j: "+j);
 		}
-		System.out.println(Arrays.toString(a));
+//		System.out.println(Arrays.toString(a));
 		if(j>0)for(j*=2;--I>=0&j-->0;b[I]++);
 //		if(V>0)for(V*=3;--J>=0&V-->0;b[J]++);
 //		System.out.println(V);
