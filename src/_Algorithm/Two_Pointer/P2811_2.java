@@ -19,13 +19,13 @@ public class P2811_2 {
 				}
 			}else {
 				for(;I-->0&j>0;b[j--]++);
+				j=I=0;
 			}
 //			System.out.println(k);
 		}
-//		if(j>0) {
-//			if(I-j*2<0)k+=I;
-//			else k+=j*2;
-//		}
+		if(j>0) {
+			for(;I-->0&j>0;b[j--]++);
+		}
 //		i=J-V*2;
 //		if(i>=0) {
 //			if(i-V<0)k+=i;
