@@ -32,7 +32,6 @@ public class P2811_2 {
 //		System.out.println(V);
 		for(i=0;i<n;i++) {
 			if(a[i]==-V) {
-				System.out.println("\t"+i);
 				I=0;
 				k=V*3;
 				for(j=i-1;j>=0&k-->0;I+=b[j--]>0?0:1);
