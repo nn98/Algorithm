@@ -29,17 +29,17 @@ public class P2811_2 {
 		System.out.println(Arrays.toString(a));
 		if(j>0)for(j*=2;--I>=0&j-->0;b[I]++);
 //		if(V>0)for(V*=3;--J>=0&V-->0;b[J]++);
-		System.out.println(V);
+//		System.out.println(V);
 		for(i=0;i<n;i++) {
 			if(a[i]==-V) {
 				System.out.println("\t"+i);
 				I=0;
 				k=V*3;
-				for(j=i-1;j>=0&k-->0;System.out.print("\t "+j+" "+b[j]),I+=b[j--]>0?0:1);
+				for(j=i-1;j>=0&k-->0;I+=b[j--]>0?0:1);
 				r=I>r?I:r;
 			}
 		}
-		System.out.println(r);
+//		System.out.println(r);
 		//			if(I-j*2<0)k+=I;
 		//			else k+=j*2;
 
@@ -50,7 +50,7 @@ public class P2811_2 {
 		//		}
 		//		System.out.println("V: "+V+" J: "+J+" k: "+k);
 		for(i=0;i<n;r+=b[i++]>0?1:0);
-		System.out.println(Arrays.toString(b));
+//		System.out.println(Arrays.toString(b));
 		System.out.println(r);
 	}
 
