@@ -1,5 +1,7 @@
 package _Algorithm.Two_Pointer;
 
+// 졸라 열심히 분석한다 개시발롬아
+
 import java.util.Scanner;
 
 public class P8726_3 {
