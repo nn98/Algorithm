@@ -18,6 +18,7 @@ public class P2811_2 {
 					V=j;
 				}
 			}else {
+				System.out.println("I: "+I+" j: "+j);
 				for(;I>0&j-->0;b[I--]++);
 			}
 			//			System.out.println(k);
