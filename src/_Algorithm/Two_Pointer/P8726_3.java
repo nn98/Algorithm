@@ -18,7 +18,7 @@ public class P8726_3 {
 			if(a[i].equals("0"))c--;
 			i++;
 		}
-		System.out.print(r==n+1?"NIE":r);
+		System.out.print(r==n+1?"NIE":r-k);
 	}
 
 }
