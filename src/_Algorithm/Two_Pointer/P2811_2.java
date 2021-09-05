@@ -7,7 +7,7 @@ public class P2811_2 {
 
 	public static void main(String[] args) {
 		Scanner s=new Scanner(System.in);
-		int n=s.nextInt(),a[]=new int[n],i=0,j=0,I=0,J=0,V=0,b[]=new int[n],r=0;
+		int n=s.nextInt(),a[]=new int[n],i=0,j=0,I=0,k,J=0,V=0,b[]=new int[n],r=0;
 		for(;i<n;i++) {
 			a[i]=s.nextInt();
 			if(a[i]<0) {
@@ -28,7 +28,15 @@ public class P2811_2 {
 		}
 		System.out.println(Arrays.toString(a));
 		if(j>0)for(j*=2;--I>=0&j-->0;b[I]++);
-		if(V>0)for(V*=3;--J>=0&V-->0;b[J]++);
+//		if(V>0)for(V*=3;--J>=0&V-->0;b[J]++);
+		for(i=0;i<n;i++) {
+			if(a[i]==-V) {
+				I=0;
+				k=V*3;
+				for(j=i-1;j>=0&k-->0;I+=b[j]>0?0:1);
+				r=I>r?I:r;
+			}
+		}
 		//			if(I-j*2<0)k+=I;
 		//			else k+=j*2;
 
