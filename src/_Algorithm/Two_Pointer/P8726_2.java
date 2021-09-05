@@ -10,6 +10,7 @@ public class P8726_2 {
 		s.nextLine();
 		String[]a=new String[n+1];
 		for(String b:s.nextLine().split(" "))a[i++]=b;
+		a[i]="0";
 		dz=a[0].equals("0")?1:0;
 		while(ko<n) {
 			while(dz<k&po<n) {
