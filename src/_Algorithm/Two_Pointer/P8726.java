@@ -22,7 +22,6 @@ public class P8726 {
 					j++;
 				}
 				r=r<v?r:v;
-				System.out.println(v);
 			}
 			for(;++i<n-1&a[i].equals("1");v--)if(i==n-1)break;
 			c--;
