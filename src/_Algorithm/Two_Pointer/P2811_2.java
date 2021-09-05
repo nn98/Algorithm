@@ -18,13 +18,13 @@ public class P2811_2 {
 					V=j;
 				}
 			}else {
-				a[i]=-j;
-				System.out.println("I: "+I+" j: "+j);
 				for(j*=2;--I>=0&j-->0;b[I]++);
 				I=j=0;
 				System.out.println(Arrays.toString(b));
 			}
 			//			System.out.println(k);
+			a[i]=-j;
+			System.out.println("I: "+I+" j: "+j);
 		}
 		System.out.println(Arrays.toString(a));
 		if(j>0)for(j*=2;--I>=0&j-->0;b[I]++);
