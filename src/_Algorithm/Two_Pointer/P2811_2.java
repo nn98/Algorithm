@@ -20,6 +20,7 @@ public class P2811_2 {
 			}else {
 				System.out.println("I: "+I+" j: "+j);
 				for(;I>0&j-->0;b[I--]++);
+				I=j=0;
 			}
 			//			System.out.println(k);
 		}
