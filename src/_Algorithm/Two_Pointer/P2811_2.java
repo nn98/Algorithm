@@ -1,5 +1,7 @@
 package _Algorithm.Two_Pointer;
 
+// ºý´ë°¡·ò
+
 import java.util.Arrays;
 import java.util.Scanner;
 
