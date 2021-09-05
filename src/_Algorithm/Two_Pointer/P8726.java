@@ -13,7 +13,7 @@ public class P8726 {
 		for(;i<n-1;) {
 			if(a[i].equals("0")) {
 				j=i+1;
-				while(c<m&j<n) {
+				while(c<=m&j<n) {
 					if(a[j].equals("1")) {
 						v++;
 					}else {
