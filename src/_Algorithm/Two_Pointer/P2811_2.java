@@ -35,7 +35,9 @@ public class P2811_2 {
 		//			else k+=V;
 		//		}
 		//		System.out.println("V: "+V+" J: "+J+" k: "+k);
+		for(i=0;i<n;r+=b[i++]>0?1:0);
 		System.out.println(Arrays.toString(b));
+		System.out.println(r);
 	}
 
 }
