@@ -28,7 +28,7 @@ public class P8726 {
 			for(;++i<n-1&a[i].equals("1");v--)if(i==n-1)break;
 			c--;
 		}
-		System.out.println(r==n?"NO":r);
+		System.out.println(r==n?"NIE":r);
 	}
 
 }
