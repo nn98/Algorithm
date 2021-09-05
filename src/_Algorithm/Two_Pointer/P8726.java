@@ -7,7 +7,7 @@ public class P8726 {
 
 	public static void main(String[] args) {
 		Scanner s=new Scanner(System.in);
-		int n=s.nextInt(),m=s.nextInt(),i=0,j,c=0,v=0,r=-1;
+		int n=s.nextInt(),m=s.nextInt(),i=0,j,c=1,v=0,r=-1;
 		s.nextLine();
 		String[]a=s.nextLine().split(" ");
 		for(;i<n;) {
@@ -23,6 +23,8 @@ public class P8726 {
 				}
 				System.out.println(v);
 			}
+			for(;a[++i].equals("1");v--);
+			c--;
 		}
 	}
 
