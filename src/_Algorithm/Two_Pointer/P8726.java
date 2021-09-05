@@ -24,7 +24,7 @@ public class P8726 {
 				r=r<v?r:v;
 				System.out.println(v);
 			}
-			for(;++i<n&a[i].equals("1");v--);
+			for(;++i<n-1&a[i].equals("1");v--);
 			c--;
 		}
 		System.out.println(r);
