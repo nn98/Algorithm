@@ -18,12 +18,12 @@ public class P2811_2 {
 					V=j;
 				}
 			}else {
-				for(;I-->0&j>0;b[j--]++);
+				for(;I>0&j-->0;b[I--]++);
 			}
 			//			System.out.println(k);
 		}
 		if(j>0) {
-			for(;I-->0&j>0;b[j--]++);
+			for(;I>0&j-->0;b[I--]++);
 		}
 		//			if(I-j*2<0)k+=I;
 		//			else k+=j*2;
