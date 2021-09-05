@@ -9,8 +9,9 @@ public class P8726 {
 		Scanner s=new Scanner(System.in);
 		int n=s.nextInt(),m=s.nextInt(),i=0,j=-1,c=1,v=0,r=n;
 		s.nextLine();
-		String[]a=s.nextLine().split(" ");
-		for(;i<n-1;) {
+		String[]a=new String[n+1];
+		for(String b:s.nextLine().split(" "))a[i++]=b;
+		for(i=0;i<n-1;) {
 			if(a[i].equals("0")) {
 //				System.out.println("go: "+i+" from: "+j+" c: "+c+" v: "+v);
 				j=j==-1?i+1:j;
