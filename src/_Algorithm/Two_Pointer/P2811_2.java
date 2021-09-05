@@ -15,7 +15,7 @@ public class P2811_2 {
 				j++;
 				if(j>=V) {
 					J=I;
-					V=j;
+					V=j*2;
 				}
 			}else {
 				System.out.println("I: "+I+" j: "+j);
