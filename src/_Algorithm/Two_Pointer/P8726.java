@@ -12,7 +12,7 @@ public class P8726 {
 		String[]a=s.nextLine().split(" ");
 		for(;i<n-1;) {
 			if(a[i].equals("0")) {
-				System.out.println("go: "+i);
+				System.out.println("go: "+i+" c: "+c+" v: "+v);
 				j=i+1;
 				while(c<m&j<n) {
 					if(a[j].equals("1")) {
