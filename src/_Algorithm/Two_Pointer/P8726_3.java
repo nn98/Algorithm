@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class P8726_3 {
 	public static void main(String[] args) {
 		Scanner s=new Scanner(System.in);
-		int n=s.nextInt(),k=s.nextInt(),i=1,j=-1,c,v=0,r=n+1;
+		int n=s.nextInt(),k=s.nextInt(),i=0,j=-1,c,v=0,r=n+1;
 		s.nextLine();
 		String[]a=s.nextLine().split(" ");
 		c=a[0].equals("0")?1:0;
