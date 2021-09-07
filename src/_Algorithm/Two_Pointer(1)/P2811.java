@@ -2,11 +2,11 @@ package _Algorithm.Two_Pointer;
 
 import java.util.Scanner;
 
-public class P2811_2 {
+public class P2811 {
 
 	public static void main(String[] args) {
 		Scanner s=new Scanner(System.in);
-		int n=s.nextInt(),a[]=new int[n],i=0,j=0,I=0,J=0,V=0,b[]=new int[n],r=0;
+		int n=s.nextInt(),a[]=new int[n],i=0,j=0,I=0,k=0,J=0,V=0,b[]=new int[n];
 		for(;i<n;i++) {
 			a[i]=s.nextInt();
 			if(a[i]<0) {
@@ -17,6 +17,8 @@ public class P2811_2 {
 					V=j;
 				}
 			}else {
+				if(I-j*2<0)k+=I;
+				else k+=j*2;
 				j=0;
 			}
 //			System.out.println(k);
