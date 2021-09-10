@@ -2,7 +2,7 @@ package _Algorithm.DP;
 
 // 역순으로 2 -> n 까지 DP
 
-public class P1463 {
+public class P1463_2 {
 
 	public static void main(String[] args) {
 		int n=new java.util.Scanner(System.in).nextInt(),i=2,d[]=new int[n+2];
