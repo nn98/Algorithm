@@ -9,9 +9,8 @@ public class P1940 {
 		Scanner s=new Scanner(System.in);
 		int n=s.nextInt(),m=s.nextInt(),a[]=new int[n],i=0,j=n-1,r=0;
 		for(;i<n;a[i++]=s.nextInt());
-		Arrays.toString(a);
+		Arrays.sort(a);
 		n=i=0;
-		System.out.println(Arrays.toString(a));
 		for(;i<j;i++,j--) {
 			System.out.println(a[i]+" "+a[j]);
 			n=a[i]+a[j];
