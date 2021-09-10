@@ -12,7 +12,6 @@ public class P1940 {
 		Arrays.sort(a);
 		n=i=0;
 		for(;i<j;i++,j--) {
-			System.out.println(a[i]+" "+a[j]);
 			n=a[i]+a[j];
 			if(n==m)r++;
 			else if(n<m)j++;
