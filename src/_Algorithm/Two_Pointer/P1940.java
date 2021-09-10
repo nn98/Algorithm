@@ -11,6 +11,7 @@ public class P1940 {
 		for(;i<n;a[i++]=s.nextInt());
 		Arrays.toString(a);
 		n=i=0;
+		System.out.println(Arrays.toString(a));
 		for(;i<j;i++,j--) {
 			System.out.println(a[i]+" "+a[j]);
 			n=a[i]+a[j];
