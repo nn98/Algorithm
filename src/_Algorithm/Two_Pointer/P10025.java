@@ -10,7 +10,7 @@ public class P10025 {
 				r=0,u=0;
 		for(;n-->0;j=s.nextInt(),a[s.nextInt()]=j);
 		for(j=0;j<l;u+=a[j++]);
-		for(;j<v;) {
+		for(;j<v-1;) {
 			r=r>u?r:u;
 			u-=a[i++];
 			u+=a[++j];
