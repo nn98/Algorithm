@@ -12,11 +12,9 @@ public class P10025 {
 		for(j=0;j<l;u+=a[j++]);
 		j--;
 		for(;j<v-1;) {
-			System.out.printf("%d - %d : %d\n",i,j,u);
 			r=r>u?r:u;
 			u-=a[i++];
 			u+=a[++j];
-			if(j>15)break;
 		}
 		System.out.println(r);
 	}
