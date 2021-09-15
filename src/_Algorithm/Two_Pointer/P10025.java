@@ -1,5 +1,4 @@
 package _Algorithm.Two_Pointer;
-
 import java.util.Scanner;
 public class P10025 {
 	public static void main(String[] args) {
