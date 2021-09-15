@@ -1,9 +1,7 @@
 package _Algorithm.Two_Pointer;
 
 import java.util.Scanner;
-
 public class P10025 {
-
 	public static void main(String[] args) {
 		Scanner s=new Scanner(System.in);
 		int n=s.nextInt(),m=s.nextInt(),v=1000000,i=0,l=m*2+1,j,a[]=new int[v],
@@ -19,5 +17,4 @@ public class P10025 {
 		}
 		System.out.println(r);
 	}
-
 }
