@@ -1,10 +1,13 @@
 package _Algorithm.Two_Pointer;
 
+import java.util.Scanner;
+
 public class P17164 {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+		Scanner s=new Scanner(System.in);
+		int n=s.nextInt();
+		char[]a=s.next().toCharArray();
 	}
 
 }
