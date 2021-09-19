@@ -9,5 +9,4 @@ public class P17164 {
 		int n=s.nextInt(),i=0,j,k;
 		char[]a=s.next().toCharArray();
 	}
-
 }
