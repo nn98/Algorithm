@@ -7,7 +7,7 @@ public class P14246_4 {
 
 	static int n,a[],t[],l=1,i,j,r;
 	static void o() {
-		while(j>0)t[j/=2]=t[j*2]+t[j*2+1];
+		while(j>1)t[j/=2]=t[j*2]+t[j*2+1];
 	}
 	public static void main(String[] args) {
 		Scanner s=new Scanner(System.in);
