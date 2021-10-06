@@ -16,7 +16,7 @@ public class P14246 {
 				for(k=i;k<n;b[j][k++]+=a);
 		}
 		k=s.nextInt();
-//		for(int[]c:b)System.out.println(Arrays.toString(c));
+		for(int[]c:b)System.out.println(Arrays.toString(c));
 		a=0;
 		for(i=0;i<n;i++)
 			for(j=i;++j<n;a+=b[i][j]>k?1:0);
