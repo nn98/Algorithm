@@ -9,6 +9,12 @@ public class P14246_4 {
 	static void o() {
 		while(j>1)t[j/=2]=t[j*2]+t[j*2+1];
 	}
+	static int p(int n,int s,int e) {
+		if(s>=i&e<=j)return t[n];
+		if(j<s|i>e)return 0;
+		int m=(s+e)/2;
+		return p(n*2,s,m)+p(n*2+1,m+1,e);
+	}
 	public static void main(String[] args) {
 		Scanner s=new Scanner(System.in);
 		n=s.nextInt();
