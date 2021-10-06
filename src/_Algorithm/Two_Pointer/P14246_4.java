@@ -3,6 +3,8 @@ package _Algorithm.Two_Pointer;
 import java.util.Arrays;
 import java.util.Scanner;
 
+// Á¿ °°³×
+
 public class P14246_4 {
 
 	static int n,a[],t[],l=1,i,j,r,k;
