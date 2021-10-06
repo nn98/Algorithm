@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class P14246_4 {
 
-	static int n,a[],t[],l=1,i,j,r;
+	static int n,a[],t[],l=1,i,j,r,k;
 	static void o() {
 		while(j>1)t[j/=2]=t[j*2]+t[j*2+1];
 	}
@@ -22,9 +22,11 @@ public class P14246_4 {
 		for(;l<n;l*=2);
 		t=new int[l*2];
 		for(;i<n;j=l+i++,t[j]=s.nextInt(),o());
+		k=s.nextInt();
 		System.out.println(Arrays.toString(t));
+//		System.out.println(i+" "+j+" : "+p(1,0,l-1))
 		for(i=0;i<n;i++)
-			for(j=i;j<n;System.out.println(i+" "+j+" : "+p(1,0,l-1)),j++);
+			for(j=i;j<n;r+=p(1,0,l-1)>k?1:0,j++);
 	}
 
 }
