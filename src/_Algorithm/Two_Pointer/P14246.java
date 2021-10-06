@@ -18,6 +18,7 @@ public class P14246 {
 		a=0;
 		for(i=0;i<n;i++)
 			for(j=i;++j<n;a+=b[i][j]>k?1:0);
+		System.out.println(a);
 	}
 
 }
