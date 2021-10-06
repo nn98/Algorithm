@@ -19,9 +19,8 @@ public class P14246_4 {
 		Scanner s=new Scanner(System.in);
 		n=s.nextInt();
 		a=new int[n];
-		for(;l<=n;l*=2);
-		t=new int[l];
-		l/=2;
+		for(;l<n;l*=2);
+		t=new int[l*2];
 		for(;i<n;j=l+i++,t[j]=s.nextInt(),o());
 		System.out.println(Arrays.toString(t));
 		for(i=0;i++<n;)
