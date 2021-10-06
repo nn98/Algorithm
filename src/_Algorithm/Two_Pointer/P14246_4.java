@@ -11,7 +11,7 @@ public class P14246_4 {
 	}
 	static int p(int n,int s,int e) {
 		if(s>=i&e<=j)return t[n];
-		if(j<s|i>e)return 0;
+		if(j<s|e<i)return 0;
 		int m=(s+e)/2;
 		return p(n*2,s,m)+p(n*2+1,m+1,e);
 	}
