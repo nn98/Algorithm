@@ -24,6 +24,9 @@ public class P14246_4 {
 		l/=2;
 		for(;i<n;j=l+i++,t[j]=s.nextInt(),o());
 		System.out.println(Arrays.toString(t));
+		i=1;
+		j=n;
+		System.out.println(p(1,1,n));
 	}
 
 }
