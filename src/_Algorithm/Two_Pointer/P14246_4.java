@@ -23,10 +23,11 @@ public class P14246_4 {
 		t=new int[l*2];
 		for(;i<n;j=l+i++,t[j]=s.nextInt(),o());
 		k=s.nextInt();
-		System.out.println(Arrays.toString(t));
+//		System.out.println(Arrays.toString(t));
 //		System.out.println(i+" "+j+" : "+p(1,0,l-1))
 		for(i=0;i<n;i++)
 			for(j=i;j<n;r+=p(1,0,l-1)>k?1:0,j++);
+		System.out.println(r);
 	}
 
 }
