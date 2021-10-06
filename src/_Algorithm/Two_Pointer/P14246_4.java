@@ -25,7 +25,7 @@ public class P14246_4 {
 		for(;i<n;j=l+i++,t[j]=s.nextInt(),o());
 		System.out.println(Arrays.toString(t));
 		for(i=0;i++<n;)
-			for(j=i;j<=n;System.out.println(i+" "+j+" : "+p(1,1,n)));
+			for(j=i;j<=n;System.out.println(i+" "+j+++" : "+p(1,1,n)));
 	}
 
 }
