@@ -1,5 +1,7 @@
 package _Algorithm.Two_Pointer;
 
+//wtf
+
 import java.util.Scanner;
 
 public class P14246_3 {
