@@ -21,3 +21,6 @@ public class P14246_C {
 
 }
 // 걍 다 long쓰지 시발련들아
+// exceed_96
+// https://github.com/exceed96/baekjoon-judge
+// https://www.acmicpc.net/user/exceed_96
