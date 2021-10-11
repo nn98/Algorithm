@@ -1,7 +1,7 @@
 package _Algorithm.Two_Pointer;
 
 import java.util.Scanner;
-
+// 시발 어이가없네
 public class P14246_C {
 
 	public static void main(String[] args) {
