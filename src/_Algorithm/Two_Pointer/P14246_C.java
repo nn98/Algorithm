@@ -20,3 +20,4 @@ public class P14246_C {
 	}
 
 }
+// 걍 다 long쓰지 시발련들아
