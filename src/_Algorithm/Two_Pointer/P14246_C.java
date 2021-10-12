@@ -1,9 +1,7 @@
 package _Algorithm.Two_Pointer;
-
 import java.util.Scanner;
 // 시발 어이가없네
 public class P14246_C {
-
 	public static void main(String[] args) {
 		Scanner s=new Scanner(System.in);
 		int n=s.nextInt(),a[]=new int[100001],i=0,j=0,k,u=0;
@@ -18,7 +16,6 @@ public class P14246_C {
 		}
 		System.out.println(r);
 	}
-
 }
 // 걍 다 long쓰지 시발련들아
 // exceed_96
