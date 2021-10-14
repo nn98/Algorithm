@@ -10,7 +10,7 @@ public class P3273 {
 		for(;i<n;a[i++]=s.nextInt());
 		k=s.nextInt();
 		for(i=0;i<n-1;i++)
-			for(j=n+1;j<n;j++)
+			for(j=i+1;j<n;j++)
 				r+=a[i]+a[j]==k?1:0;
 		System.out.println(r);
 	}
