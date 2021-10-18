@@ -87,3 +87,5 @@ https://www.acmicpc.net/user/q9922000
 https://stonejjun.tistory.com/92
 https://viyoung.tistory.com/150
 https://moonrabbit2.tistory.com/4
+
+21-10-13 ~ 21-10-16 busan vacance
