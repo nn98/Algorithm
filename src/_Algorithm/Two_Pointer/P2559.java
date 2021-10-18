@@ -14,7 +14,7 @@ public class P2559 {
 				r-=a[i++];
 			}
 		}
-		System.out.println(R);
+		System.out.print(R);
 	}
 
 }
