@@ -10,6 +10,7 @@ public class P2559 {
 		for(;i<n;a[i++]=s.nextInt());
 		for(i=0;i<n-k;r+=a[j++]) {
 			if(j-i==k-1) {
+				System.out.println(r);
 				R=r>R?r:R;
 				r-=a[i++];
 			}
