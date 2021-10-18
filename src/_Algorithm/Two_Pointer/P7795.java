@@ -18,7 +18,7 @@ public class P7795 {
 				y=Integer.parseInt(t.nextToken());
 				for(int c:a)j+=c>y?1:0;
 			}
-			w.write(""+j);
+			w.write(j+"\n");
 		}
 		w.flush();
 	}
