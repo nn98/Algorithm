@@ -1,9 +1,7 @@
 package _Algorithm.Two_Pointer;
 
 import java.util.Scanner;
-
 public class P2559 {
-
 	public static void main(String[] args) {
 		Scanner s=new Scanner(System.in);
 		int n=s.nextInt(),k=s.nextInt(),i=0,j=0,r=0,a[]=new int[n],R=Integer.MIN_VALUE;
@@ -16,5 +14,4 @@ public class P2559 {
 		}
 		System.out.print(R);
 	}
-
 }
