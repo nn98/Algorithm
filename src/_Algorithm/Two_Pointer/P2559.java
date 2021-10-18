@@ -1,5 +1,6 @@
 package _Algorithm.Two_Pointer;
 
+// 코드를 이쁘게
 import java.util.Scanner;
 public class P2559 {
 	public static void main(String[] args) {
