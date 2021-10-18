@@ -17,7 +17,8 @@ public class P7795 {
 			for(j=0;j<x;a[j++]=Integer.parseInt(t.nextToken()));
 			t=new StringTokenizer(r.readLine());
 			for(j=0;t.hasMoreTokens();) {
-				for(int c:a)j+=c>Integer.parseInt(t.nextToken())?1:0;
+				y=Integer.parseInt(t.nextToken());
+				for(int c:a)j+=c>y?1:0;
 			}
 			System.out.println(j);
 		}
