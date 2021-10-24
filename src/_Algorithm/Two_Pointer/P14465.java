@@ -10,6 +10,7 @@ public class P14465 {
 			for(;j<i+k;u+=a[j++]?1:0);
 			r=r<u?r:u;
 		}
+		System.out.println(i+" "+j);
 		System.out.println(r);
 	}
 }
