@@ -10,7 +10,7 @@ public class P22114 {
 		s.nextLine();
 		for(String b:s.nextLine().split(" "))a[i++]=Integer.parseInt(b);
 		i=0;
-		for(;j<n;) {
+		for(;j<n-1;) {
 			if(a[j++]>k) {
 				if(p==0){
 					for(;p==0;) {
