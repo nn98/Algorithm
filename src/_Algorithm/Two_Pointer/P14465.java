@@ -9,7 +9,7 @@ public class P14465 {
 		i=0;
 		for(;j<k;u+=a[j++]?1:0);
 		r=r<u?r:u;
-		for(;j<n;u-=a[i++]?1:0,u+=a[j++]?1:0,r=r<u?r:u)
+		for(;j<n;u-=a[i++]?1:0,u+=a[j++]?1:0,r=r<u?r:u);
 		System.out.println(i+" "+j);
 		System.out.println(r);
 	}
