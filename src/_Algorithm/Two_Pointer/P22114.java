@@ -25,5 +25,4 @@ public class P22114 {
 		}
 		System.out.println(r);
 	}
-
 }
