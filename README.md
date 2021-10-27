@@ -83,7 +83,6 @@ https://mattlee.tistory.com/52
   
   </details>
   
-https://www.acmicpc.net/user/q9922000
 https://stonejjun.tistory.com/92
 https://viyoung.tistory.com/150
 https://moonrabbit2.tistory.com/4
