@@ -1,4 +1,11 @@
 # Algorithm
+
+Baekjoon 
+https://github.com/nn98/Algorithm/tree/master/src/BaekJoon
+
+Sep by Alg
+https://github.com/nn98/Algorithm/tree/master/src/_Algorithm
+
 https://mattlee.tistory.com/52
 * * *
 <details><summary>BaekJoon ~2021-01-21</summary>
@@ -83,7 +90,6 @@ https://mattlee.tistory.com/52
   
   </details>
   
-https://www.acmicpc.net/user/q9922000
 https://stonejjun.tistory.com/92
 https://viyoung.tistory.com/150
 https://moonrabbit2.tistory.com/4
