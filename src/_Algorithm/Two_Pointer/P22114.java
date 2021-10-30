@@ -10,7 +10,7 @@ public class P22114 {
 		for(;j<n;) {
 			if(a[j++]>k)p--;
 			if(p<0) {
-				while(a[i++]<=k)u--;
+				for(;a[i]<=k;i++,u--);
 			}
 //			if(a[j++]>k) {
 //				if(p==0){
