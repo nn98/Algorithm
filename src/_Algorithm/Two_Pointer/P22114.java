@@ -26,7 +26,7 @@ public class P22114 {
 //			}
 			u++;
 			r=r>u?r:u;
-			System.out.println(i+" "+j+" "+u+" "+p);
+//			System.out.println(i+" "+j+" "+u+" "+p);
 		}
 		System.out.println(r);
 	}
