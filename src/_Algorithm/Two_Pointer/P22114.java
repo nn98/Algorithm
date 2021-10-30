@@ -13,6 +13,7 @@ public class P22114 {
 				t=i;
 				for(;a[i++]<=k;);
 				u-=i-t;
+				p++;
 			}
 //			if(a[j++]>k) {
 //				if(p==0){
