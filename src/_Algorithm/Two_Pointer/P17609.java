@@ -14,7 +14,7 @@ public class P17609 {
 			for(;x<y&c<2;) {
 				if(a[x]!=a[y]) {
 					if(a[x+1]==a[y])x++;
-					if(a[x]==a[y-1])y--;
+					else if(a[x]==a[y-1])y--;
 					else c=1;
 					c++;
 				}
