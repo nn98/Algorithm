@@ -1,7 +1,7 @@
 package _Algorithm.Two_Pointer;
 import java.util.Scanner;
 public class P17609_2 {
-	public static void main(String[] args) {
+	public static void main(String[] args){
 		Scanner s=new Scanner(System.in);
 		int n=s.nextInt(),i,x,y,c;
 		for(;n-->0;) {
@@ -35,7 +35,7 @@ public class P17609_2 {
 					break;
 				}
 			}
-			System.out.println(c);
+			System.out.print(c);
 		}
 	}
 }
