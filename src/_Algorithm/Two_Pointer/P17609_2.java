@@ -1,6 +1,6 @@
 package _Algorithm.Two_Pointer;
 import java.util.Scanner;
-public class P17609_2 {
+public class P17609_2{
 	public static void main(String[] args){
 		Scanner s=new Scanner(System.in);
 		int n=s.nextInt(),i,x,y,c;
