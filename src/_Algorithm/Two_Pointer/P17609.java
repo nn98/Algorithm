@@ -21,6 +21,7 @@ public class P17609 {
 			}
 		}
 		if(i>0) {
+			if(X>0)return c;
 			c++;
 			X++;
 			t=f;
