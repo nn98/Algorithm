@@ -21,7 +21,7 @@ public class P17609 {
 		}
 		if(i>0) {
 			if(++X>1)return X;
-			t=new StringBuffer(f);
+			t=new StringBuffer(f.toString());
 			f=f.deleteCharAt(x);
 			a=o(X);
 			f=t.deleteCharAt(y);
