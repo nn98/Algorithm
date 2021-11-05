@@ -7,7 +7,7 @@ public class P17609 {
 	static int n,x,y,c,r,i;
 	static StringBuffer f,t;
 	static int o(int X) {
-		if(X>1)return;
+		if(X>1)return c;
 		i=x=0;
 		y=f.length()-1;
 		for(;x<y&i<1;) {
@@ -27,7 +27,8 @@ public class P17609 {
 			c--;
 			f=t.deleteCharAt(y);
 			o(X);
-		}else return c;
+		}
+		return c;
 	}
 
 	public static void main(String[] args) {
