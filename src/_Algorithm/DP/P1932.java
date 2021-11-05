@@ -19,7 +19,7 @@ public class P1932 {
 			}
 		}
 		for(;i-->0;) {
-			for(j=0;j<i;System.out.println(Arrays.toString(b[i])),j++)
+			for(j=0;j<i;System.out.println(Arrays.toString(b[i-1])),j++)
 				b[i-1][j]=b[i][j]>b[i][j+1]?b[i][j]:b[i][j+1]+a[i-1][j];
 		}
 		for(int[]c:b)System.out.println(Arrays.toString(c));
