@@ -47,5 +47,6 @@ public class P2042_5 {
 				w.write(p(1,1,l)+"\n");
 			}
 		}
+		w.flush();
 	}
 }
