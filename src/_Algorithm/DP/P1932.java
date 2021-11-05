@@ -22,6 +22,6 @@ public class P1932 {
 			for(j=0;j<i;j++)
 				b[i-1][j]=(b[i][j]>b[i][j+1]?b[i][j]:b[i][j+1])+a[i-1][j];
 		}
-		System.out.println(b[0][0]);
+		System.out.print(b[0][0]);
 	}
 }
