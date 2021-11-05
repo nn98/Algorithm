@@ -29,7 +29,6 @@ public class P2042_5 {
 			a[j]=Integer.parseInt(r.readLine());
 			if(i%2==0|i==n)o();
 		}
-		System.out.println(Arrays.toString(a));
 		for(;m-->0;) {
 			t=new StringTokenizer(r.readLine());
 			n=Integer.parseInt(t.nextToken());
@@ -41,7 +40,6 @@ public class P2042_5 {
 				j=i+l-1;
 				a[j]=n;
 				o();
-				System.out.println(Arrays.toString(a));
 				break;
 			case 2:
 				w.write(p(1,1,l)+"\n");
