@@ -6,7 +6,7 @@ import java.util.StringTokenizer;
 public class P2042_5 {
 
 	static int n,m,i,j,l;
-	static long a[];
+	static long a[],b;
 	static void o() {
 		for(;j>1;j/=2,a[j]=a[j*2]+a[j*2+1]);
 	}
@@ -26,22 +26,22 @@ public class P2042_5 {
 		a=new long[l*2];
 		for(;i<n;) {
 			j=l+i++;
-			a[j]=Integer.parseInt(r.readLine());
+			a[j]=Long.parseLong(r.readLine());
 			if(i%2==0|i==n)o();
 		}
 		for(;m-->0;) {
 			t=new StringTokenizer(r.readLine());
 			n=Integer.parseInt(t.nextToken());
 			i=Integer.parseInt(t.nextToken());
-			j=Integer.parseInt(t.nextToken());
+			b=Long.parseLong(r.readLine());
 			switch(n) {
 			case 1:
-				n=j;
 				j=i+l-1;
-				a[j]=n;
+				a[j]=b;
 				o();
 				break;
 			case 2:
+				j=(int)b;
 				w.write(p(1,1,l)+"\n");
 			}
 		}
