@@ -4,13 +4,11 @@ import java.util.Scanner;
 
 public class P17609 {
 	
-	static int n,x,y,r,i;
+	static int n,r,i;
 	static StringBuffer f,t;
 	static int o(int X) {
 		System.out.println(X+" "+f);
-		int i=0,a,b;
-		x=0;
-		y=f.length()-1;
+		int i=0,a,b,x=0,y=f.length()-1;
 		for(;x<y&i<1;) {
 			System.out.println(x+" "+f.charAt(x)+" "+y+" "+f.charAt(y));
 			if(!(f.charAt(x)==f.charAt(y)))i++;
