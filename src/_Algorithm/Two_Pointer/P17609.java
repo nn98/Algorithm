@@ -1,11 +1,7 @@
 package _Algorithm.Two_Pointer;
-
 // static 쓴다고 깝치지 말자
-
 import java.util.Scanner;
-
 public class P17609 {
-	
 	static int n,r,i;
 	static StringBuffer f,t;
 	static int o(int X) {
@@ -28,7 +24,6 @@ public class P17609 {
 		}
 		return X;
 	}
-
 	public static void main(String[] args) {
 		Scanner s=new Scanner(System.in);
 		n=s.nextInt();
@@ -37,5 +32,4 @@ public class P17609 {
 			System.out.println(o(0));
 		}
 	}
-
 }
