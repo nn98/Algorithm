@@ -36,6 +36,9 @@ public class P2042_5 {
 				a[j]=n;
 				o();
 				System.out.println(Arrays.toString(a));
+				break;
+			case 2:
+				w.write(p(1,1,l));
 			}
 		}
 	}
