@@ -37,6 +37,7 @@ public class P17609 {
 		for(;i++<n;) {
 			f=new StringBuffer(s.next());
 			c=0;
+			o(0);
 			System.out.println(c);
 		}
 	}
