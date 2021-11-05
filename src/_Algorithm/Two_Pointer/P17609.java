@@ -11,6 +11,7 @@ public class P17609 {
 		i=x=0;
 		y=f.length()-1;
 		for(;x<y&i<1;) {
+			System.out.println(x+" "+f.charAt(x)+" "+y+" "+f.charAt(y));
 			if(!(f.charAt(x)==f.charAt(y)))i++;
 			else {
 				x++;
