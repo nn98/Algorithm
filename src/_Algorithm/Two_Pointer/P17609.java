@@ -20,12 +20,14 @@ public class P17609 {
 			}
 		}
 		if(i>0) {
+			System.out.println(x+" "+y);
 			if(++X>1)return X;
 			t=new StringBuffer(f.toString());
-			System.out.println(f+"\n"+f.deleteCharAt(x)+"\n"+f.deleteCharAt(y));
-			f=f.deleteCharAt(x);
+			f.deleteCharAt(x);
+			System.out.println(1+" "+f);
 			a=o(X);
-			f=t.deleteCharAt(y);
+			f=new StringBuffer(t.deleteCharAt(y));
+			System.out.println(2+" "+f);
 			b=o(X);
 			return a<b?a:b;
 		}
