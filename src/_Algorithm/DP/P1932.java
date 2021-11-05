@@ -12,7 +12,7 @@ public class P1932 {
 			a[i]=new int[i+1];
 			b[i]=new int[i+++1];
 			StringTokenizer t=new StringTokenizer(r.readLine());
-			for(;j<i;a[i][j++]=Integer.parseInt(t.nextToken()));
+			for(;j<i;a[i-1][j++]=Integer.parseInt(t.nextToken()));
 		}
 	}
 
