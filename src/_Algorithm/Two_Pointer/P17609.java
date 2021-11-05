@@ -7,6 +7,7 @@ public class P17609 {
 	static int n,x,y,c,r,i;
 	static StringBuffer f,t;
 	static int o(int X) {
+		System.out.println(X+" "+c);
 		if(X>1)return c;
 		int i=0;
 		x=0;
