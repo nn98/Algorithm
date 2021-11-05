@@ -8,7 +8,8 @@ public class P17609 {
 	static StringBuffer f,t;
 	static int o(int X) {
 		if(X>1)return c;
-		i=x=0;
+		int i=0;
+		x=0;
 		y=f.length()-1;
 		for(;x<y&i<1;) {
 			System.out.println(x+" "+f.charAt(x)+" "+y+" "+f.charAt(y));
