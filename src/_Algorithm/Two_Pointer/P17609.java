@@ -21,7 +21,7 @@ public class P17609 {
 			c++;
 			X++;
 			t=f;
-			f=t.deleteCharAt(x);
+			f=f.deleteCharAt(x);
 			o(X);
 			if(c<2)return c;
 			c--;
