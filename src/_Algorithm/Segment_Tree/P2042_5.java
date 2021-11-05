@@ -33,7 +33,7 @@ public class P2042_5 {
 			t=new StringTokenizer(r.readLine());
 			n=Integer.parseInt(t.nextToken());
 			i=Integer.parseInt(t.nextToken());
-			b=Long.parseLong(r.readLine());
+			b=Long.parseLong(t.nextToken());
 			switch(n) {
 			case 1:
 				j=i+l-1;
