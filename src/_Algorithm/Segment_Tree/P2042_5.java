@@ -44,7 +44,7 @@ public class P2042_5 {
 				System.out.println(Arrays.toString(a));
 				break;
 			case 2:
-				w.write(p(1,1,l));
+				w.write(p(1,1,l)+"\n");
 			}
 		}
 	}
