@@ -1,5 +1,7 @@
 package _Algorithm.Two_Pointer;
 
+// static 쓴다고 깝치지 말자
+
 import java.util.Scanner;
 
 public class P17609 {
