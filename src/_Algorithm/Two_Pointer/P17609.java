@@ -4,12 +4,11 @@ import java.util.Scanner;
 
 public class P17609 {
 	
-	static int n,x,y,c,r,i;
+	static int n,x,y,r,i;
 	static StringBuffer f,t;
 	static int o(int X) {
-		System.out.println(X+" "+c);
-		if(X>1)return c;
-		int i=0;
+		System.out.println(X+" "+f);
+		int i=0,a,b;
 		x=0;
 		y=f.length()-1;
 		for(;x<y&i<1;) {
@@ -21,18 +20,15 @@ public class P17609 {
 			}
 		}
 		if(i>0) {
-			if(X>0)return c;
-			c++;
-			X++;
+			if(++X>1)return X;
 			t=f;
 			f=f.deleteCharAt(x);
-			o(X);
-			if(c<2)return c;
-			c--;
+			a=o(X);
 			f=t.deleteCharAt(y);
-			o(X);
+			b=o(X);
+			return a<b?a:b;
 		}
-		return c;
+		return X;
 	}
 
 	public static void main(String[] args) {
@@ -40,9 +36,7 @@ public class P17609 {
 		n=s.nextInt();
 		for(;i++<n;) {
 			f=new StringBuffer(s.next());
-			c=0;
-			o(0);
-			System.out.println(c);
+			System.out.println(o(0));
 		}
 	}
 
