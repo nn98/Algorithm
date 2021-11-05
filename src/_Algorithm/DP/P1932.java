@@ -14,7 +14,7 @@ public class P1932 {
 			StringTokenizer t=new StringTokenizer(r.readLine());
 			for(;j<i;j++) {
 				a[i-1][j]=Integer.parseInt(t.nextToken());
-				if(i==n)b[1][j]=a[i-1][j];
+				if(i==n)b[i-1][j]=a[i-1][j];
 			}
 		}
 		for(;i-->0;) {
