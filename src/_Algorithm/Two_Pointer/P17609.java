@@ -27,6 +27,7 @@ public class P17609 {
 			System.out.println(1+" "+f);
 			a=o(X);
 			f=new StringBuffer(t.deleteCharAt(y));
+			System.out.println("t "+t);
 			System.out.println(2+" "+f);
 			b=o(X);
 			return a<b?a:b;
