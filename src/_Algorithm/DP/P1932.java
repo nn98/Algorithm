@@ -1,6 +1,7 @@
 package _Algorithm.DP;
 
 import java.io.*;
+import java.util.Arrays;
 import java.util.StringTokenizer;
 public class P1932 {
 
@@ -21,6 +22,7 @@ public class P1932 {
 			for(j=0;j<i;j++)
 				b[i-1][j]=b[i][j]>b[i][j+1]?b[i][j]:b[i][j+1]+a[i-1][j];
 		}
+		for(int[]c:b)System.out.println(Arrays.toString(c));
 		System.out.println(b[0][0]);
 	}
 }
