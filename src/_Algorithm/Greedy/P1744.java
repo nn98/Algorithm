@@ -19,14 +19,12 @@ public class P1744 {
 		}
 		Collections.sort(l1);
 		Collections.sort(l2);
-		System.out.println(l1+"\n"+l2+"\n"+z);
 		while(l1.size()>1) {
 			i=l1.remove(l1.size()-1);
 			j=l1.remove(l1.size()-1);
 			if(i>1&j>1)	r+=i*j;
 			else r+=i+j;
 		}while(!l1.isEmpty())r+=l1.remove(l1.size()-1);
-		System.out.println(r);
 		while(l2.size()>1) {
 			i=l2.remove(0);
 			j=l2.remove(0);
@@ -35,7 +33,6 @@ public class P1744 {
 			i=l2.remove(0);
 			r+=z-->0?0:i;
 		}
-		System.out.println(l1+"\n"+l2+"\n"+z);
 		System.out.println(r);
 	}
 
