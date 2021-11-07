@@ -1,11 +1,10 @@
 # *Algorithm  [Algorism?](https://mattlee.tistory.com/52)*
 
-##### BaekJoon
+#### BaekJoon
 
-###### [Sep by Alg](https://github.com/nn98/Algorithm/tree/master/src/_Algorithm)
-
+###### [Sep by Alg](https://github.com/nn98/Algorithm/tree/master/src/_Algorithm)   
 ###### [Before Sep](https://github.com/nn98/Algorithm/tree/master/src/BaekJoon)   
-
+https://stonejjun.tistory.com/92 https://viyoung.tistory.com/150 https://moonrabbit2.tistory.com/4
 <details><summary>Solved</summary>
   
 [1000](https://www.acmicpc.net/problem/1000) [1001](https://www.acmicpc.net/problem/1001) [1002](https://www.acmicpc.net/problem/1002) [1003](https://www.acmicpc.net/problem/1003) [1004](https://www.acmicpc.net/problem/1004) [1005](https://www.acmicpc.net/problem/1005) [1008](https://www.acmicpc.net/problem/1008) [1009](https://www.acmicpc.net/problem/1009) [1010](https://www.acmicpc.net/problem/1010) [1011](https://www.acmicpc.net/problem/1011)
@@ -81,13 +80,4 @@
 [19621](https://www.acmicpc.net/problem/19621) [19622](https://www.acmicpc.net/problem/19622) [20001](https://www.acmicpc.net/problem/20001) [21360](https://www.acmicpc.net/problem/21360) [22114](https://www.acmicpc.net/problem/22114) 
 
 </details>
-
 * * *
-
-  
-https://stonejjun.tistory.com/92
-
-https://viyoung.tistory.com/150
-
-https://moonrabbit2.tistory.com/4
-
