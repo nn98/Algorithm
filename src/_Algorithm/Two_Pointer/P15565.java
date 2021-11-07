@@ -10,11 +10,13 @@ public class P15565 {
 		for(;i<n;a[i++]=s.nextInt());
 		for(j=i=0;i<n|j<n;) {
 			c++;
-			if(c>=k)r=r<c?r:c;
-			for(;c>k;c--,i++);
+			b+=a[j]>1?1:0;
+			if(b>=k)r=r<c?r:c;
+			for(;b>k;c--,b-=a[i++]>1?1:0);
 			if(j<n)j++;
 			else {
-				for(;i<n;)
+				for(;i<n;c--,b-=a[i++]>1?1:0)
+					if(b>=k)r=r<c?r:c;
 			}
 		}
 		System.out.println(Integer.MAX_VALUE==r?-1:r);
