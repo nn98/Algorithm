@@ -13,7 +13,7 @@ public class P15565 {
 			b+=a[j]>1?1:0;
 			if(b>=k)r=r<c?r:c;
 			for(;b>k;c--,b-=a[i++]>1?1:0);
-			if(j<n)j++;
+			if(++j<n);
 			else {
 				for(;i<n;c--,b-=a[i++]>1?1:0)
 					if(b>=k)r=r<c?r:c;
