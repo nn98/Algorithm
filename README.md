@@ -1,4 +1,4 @@
-# Algorithm  *https://mattlee.tistory.com/52*
+# Algorithm  *[Algorism?](https://mattlee.tistory.com/52)*
 
 ##### BaekJoon
 
