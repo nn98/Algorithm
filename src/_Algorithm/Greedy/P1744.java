@@ -9,7 +9,7 @@ public class P1744 {
 
 	public static void main(String[] args) {
 		Scanner s=new Scanner(System.in);
-		int n=s.nextInt(),i=0,j=0,z=0;
+		int n=s.nextInt(),i=0,j,z=0,r=0;
 		List<Integer>l1=new ArrayList(),l2=new ArrayList();
 		for(;i++<n;) {
 			j=s.nextInt();
@@ -19,11 +19,24 @@ public class P1744 {
 		}
 		Collections.sort(l1);
 		Collections.sort(l2);
-		while(!l1.isEmpty()) {
+		System.out.println(l1+"\n"+l2+"\n"+z);
+		while(l1.size()>1) {
 			i=l1.remove(l1.size()-1);
 			j=l1.remove(l1.size()-1);
+			if(i>1&j>1)	r+=i*j;
+			else r+=i+j;
+		}while(!l1.isEmpty())r+=l1.remove(l1.size()-1);
+		System.out.println(r);
+		while(l2.size()>1) {
+			i=l2.remove(0);
+			j=l2.remove(0);
+			r+=i*j;
+		}while(!l2.isEmpty()) {
+			i=l2.remove(0);
+			r+=z-->0?0:i;
 		}
 		System.out.println(l1+"\n"+l2+"\n"+z);
+		System.out.println(r);
 	}
 
 }
