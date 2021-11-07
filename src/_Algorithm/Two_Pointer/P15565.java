@@ -11,12 +11,12 @@ public class P15565 {
 		for(j=i=0;i<n|j<n;) {
 			System.out.println(i+" "+j+" "+c+" "+b);
 			c++;
-			b+=a[j]>1?1:0;
+			b+=a[j]<2?1:0;
 			if(b>=k)r=r<c?r:c;
-			for(;b>k;c--,b-=a[i++]>1?1:0);
+			for(;b>k;c--,b-=a[i++]<2?1:0);
 			if(++j<n);
 			else {
-				for(;i<n;c--,b-=a[i++]>1?1:0)
+				for(;i<n;c--,b-=a[i++]<2?1:0)
 					if(b>=k)r=r<c?r:c;
 			}
 		}
