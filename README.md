@@ -1,11 +1,12 @@
 # Algorithm  *https://mattlee.tistory.com/52*
 
+##### BaekJoon
+
 ###### [Sep by Alg](https://github.com/nn98/Algorithm/tree/master/src/_Algorithm)
 
-###### [Before Sep](https://github.com/nn98/Algorithm/tree/master/src/BaekJoon)
+###### [Before Sep](https://github.com/nn98/Algorithm/tree/master/src/BaekJoon)   
 
-* * *
-<details><summary>BaekJoon Solved</summary>
+<details><summary>Solved</summary>
   
   [1000](https://www.acmicpc.net/problem/1000) [1001](https://www.acmicpc.net/problem/1001) [1002](https://www.acmicpc.net/problem/1002) [1003](https://www.acmicpc.net/problem/1003) [1004](https://www.acmicpc.net/problem/1004) [1005](https://www.acmicpc.net/problem/1005) [1008](https://www.acmicpc.net/problem/1008) [1009](https://www.acmicpc.net/problem/1009) [1010](https://www.acmicpc.net/problem/1010) [1011](https://www.acmicpc.net/problem/1011)
 [1012](https://www.acmicpc.net/problem/1012) [1015](https://www.acmicpc.net/problem/1015) [1016](https://www.acmicpc.net/problem/1016) [1018](https://www.acmicpc.net/problem/1018) [1021](https://www.acmicpc.net/problem/1021) [1026](https://www.acmicpc.net/problem/1026) [1032](https://www.acmicpc.net/problem/1032) [1037](https://www.acmicpc.net/problem/1037) [1038](https://www.acmicpc.net/problem/1038) [1049](https://www.acmicpc.net/problem/1049)
@@ -80,6 +81,9 @@
 [19621](https://www.acmicpc.net/problem/19621) [19622](https://www.acmicpc.net/problem/19622) [20001](https://www.acmicpc.net/problem/20001) [21360](https://www.acmicpc.net/problem/21360) [22114](https://www.acmicpc.net/problem/22114) 
 
 </details>
+
+* * *
+
   
 https://stonejjun.tistory.com/92
 
