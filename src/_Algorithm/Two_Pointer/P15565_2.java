@@ -7,9 +7,13 @@ public class P15565_2 {
 
 	public static void main(String[] args) {
 		Scanner s=new Scanner(System.in);
-		int n=s.nextInt(),k=s.nextInt(),a[]=new int[n],i=0,j=0;
+		int n=s.nextInt(),k=s.nextInt(),a[]=new int[n],i=0,j=0,r=1000001,c;
 		for(;i++<n;)if(s.nextInt()<2)a[j++]=i;
-		System.out.println(Arrays.toString(a));
+		for(;j-->3;) {
+			c=a[j]-a[j-2]+1;
+			r=r<c?r:c;
+		}
+		System.out.println(r==1000001?-1:r);
 	}
 
 }
