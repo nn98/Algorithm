@@ -1,8 +1,8 @@
 # Algorithm  *https://mattlee.tistory.com/52*
 
-###### Sep by Alg https://github.com/nn98/Algorithm/tree/master/src/_Algorithm
+###### [Sep by Alg](https://github.com/nn98/Algorithm/tree/master/src/_Algorithm)
 
-###### Before Sep https://github.com/nn98/Algorithm/tree/master/src/BaekJoon
+###### [Before Sep](https://github.com/nn98/Algorithm/tree/master/src/BaekJoon)
 
 * * *
 <details><summary>BaekJoon Solved</summary>
