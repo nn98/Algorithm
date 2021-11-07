@@ -20,8 +20,8 @@ public class P1744 {
 		Collections.sort(l1);
 		Collections.sort(l2);
 		while(!l1.isEmpty()) {
-			i=l1.remove(l1.size());
-			j=l1.remove(l1.size());
+			i=l1.remove(l1.size()-1);
+			j=l1.remove(l1.size()-1);
 		}
 		System.out.println(l1+"\n"+l2+"\n"+z);
 	}
