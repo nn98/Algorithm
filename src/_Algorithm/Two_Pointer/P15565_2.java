@@ -9,7 +9,8 @@ public class P15565_2 {
 		Scanner s=new Scanner(System.in);
 		int n=s.nextInt(),k=s.nextInt()-1,a[]=new int[n],i=0,j=0,r=1000001,c;
 		for(;i++<n;)if(s.nextInt()<2)a[j++]=i;
-		for(;j-->3;) {
+		System.out.println(j+" "+Arrays.toString(a));
+		for(;--j>=k;) {
 			c=a[j]-a[j-k]+1;
 			r=r<c?r:c;
 		}
