@@ -1,4 +1,4 @@
-# Algorithm
+# Algorithm  https://mattlee.tistory.com/52
 
 Baekjoon 
 https://github.com/nn98/Algorithm/tree/master/src/BaekJoon
@@ -6,11 +6,9 @@ https://github.com/nn98/Algorithm/tree/master/src/BaekJoon
 Sep by Alg
 https://github.com/nn98/Algorithm/tree/master/src/_Algorithm
 
-https://mattlee.tistory.com/52
 * * *
-<details><summary>BaekJoon ~2021-01-21</summary>
+<details><summary>BaekJoon Solved</summary>
   
-      
 [1000](https://www.acmicpc.net/problem/1000) [1001](https://www.acmicpc.net/problem/1001) [1002](https://www.acmicpc.net/problem/1002) [1003](https://www.acmicpc.net/problem/1003) [1004](https://www.acmicpc.net/problem/1004) [1005](https://www.acmicpc.net/problem/1005) [1008](https://www.acmicpc.net/problem/1008) [1009](https://www.acmicpc.net/problem/1009) [1010](https://www.acmicpc.net/problem/1010) [1011](https://www.acmicpc.net/problem/1011)
 [1012](https://www.acmicpc.net/problem/1012) [1015](https://www.acmicpc.net/problem/1015) [1016](https://www.acmicpc.net/problem/1016) [1018](https://www.acmicpc.net/problem/1018) [1021](https://www.acmicpc.net/problem/1021) [1026](https://www.acmicpc.net/problem/1026) [1032](https://www.acmicpc.net/problem/1032) [1037](https://www.acmicpc.net/problem/1037) [1038](https://www.acmicpc.net/problem/1038) [1049](https://www.acmicpc.net/problem/1049)
 [1051](https://www.acmicpc.net/problem/1051) [1057](https://www.acmicpc.net/problem/1057) [1064](https://www.acmicpc.net/problem/1064) [1065](https://www.acmicpc.net/problem/1065) [1074](https://www.acmicpc.net/problem/1074) [1075](https://www.acmicpc.net/problem/1075) [1076](https://www.acmicpc.net/problem/1076) [1083](https://www.acmicpc.net/problem/1083) [1085](https://www.acmicpc.net/problem/1085) [1094](https://www.acmicpc.net/problem/1094)
@@ -79,19 +77,12 @@ https://mattlee.tistory.com/52
 [16561](https://www.acmicpc.net/problem/16561) [16673](https://www.acmicpc.net/problem/16673) [16916](https://www.acmicpc.net/problem/16916) [16953](https://www.acmicpc.net/problem/16953) [17072](https://www.acmicpc.net/problem/17072) [17103](https://www.acmicpc.net/problem/17103) [17173](https://www.acmicpc.net/problem/17173) [17174](https://www.acmicpc.net/problem/17174) [17175](https://www.acmicpc.net/problem/17175) [17176](https://www.acmicpc.net/problem/17176)
 [17201](https://www.acmicpc.net/problem/17201) [17202](https://www.acmicpc.net/problem/17202) [17204](https://www.acmicpc.net/problem/17204) [17206](https://www.acmicpc.net/problem/17206) [17212](https://www.acmicpc.net/problem/17212) [17293](https://www.acmicpc.net/problem/17293) [17294](https://www.acmicpc.net/problem/17294) [17295](https://www.acmicpc.net/problem/17295) [17362](https://www.acmicpc.net/problem/17362) [17363](https://www.acmicpc.net/problem/17363)
 [17389](https://www.acmicpc.net/problem/17389) [17478](https://www.acmicpc.net/problem/17478) [17496](https://www.acmicpc.net/problem/17496) [17497](https://www.acmicpc.net/problem/17497) [17502](https://www.acmicpc.net/problem/17502) [17504](https://www.acmicpc.net/problem/17504) [17874](https://www.acmicpc.net/problem/17874) [18108](https://www.acmicpc.net/problem/18108) [18222](https://www.acmicpc.net/problem/18222) [18245](https://www.acmicpc.net/problem/18245)
-[18258](https://www.acmicpc.net/problem/18258) [18406](https://www.acmicpc.net/problem/18406) [18883](https://www.acmicpc.net/problem/18883) [19621](https://www.acmicpc.net/problem/19621) [19622](https://www.acmicpc.net/problem/19622) [20001](https://www.acmicpc.net/problem/20001) 
+[18258](https://www.acmicpc.net/problem/18258) [18406](https://www.acmicpc.net/problem/18406) [18883](https://www.acmicpc.net/problem/18883) [19621](https://www.acmicpc.net/problem/19621) [19622](https://www.acmicpc.net/problem/19622) [20001](https://www.acmicpc.net/problem/20001) [2268](https://www.acmicpc.net/problem/2268)
 
 
 </details>
-
-<details><summary>BaekJoon 2021-01-21~</summary>
-  
-  [2268](https://www.acmicpc.net/problem/2268)
-  
-  </details>
   
 https://stonejjun.tistory.com/92
 https://viyoung.tistory.com/150
 https://moonrabbit2.tistory.com/4
 
-21-10-13 ~ 21-10-16 busan vacance
