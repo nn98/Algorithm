@@ -24,14 +24,19 @@ public class P2573 {
 		for(;i<n;i++) {
 			t=new StringTokenizer(r.readLine());
 			if(i>0&i<n-1)
-				for(j=0;j<n;j++)
+				for(j=0;j<m;j++)
 					a[i][j]=Integer.parseInt(t.nextToken());
 		}
 //		b=a.clone();
-		b=Arrays.copyOf(a,a.length);
+		for(i=0;i<n;System.arraycopy(a[i],0,b[i],0,a[i].length),i++);
+		System.out.println(Arrays.toString(a[2]));
+		System.out.println(Arrays.toString(b[2]));
 		a[2][4]=555;
-		for(int[]c:a)System.out.println(Arrays.toString(c));
-		for(int[]c:b)System.out.println(Arrays.toString(c));
+		System.out.println(Arrays.toString(a[2]));
+		System.out.println(Arrays.toString(b[2]));
+//		for(int[]c:a)System.out.println(Arrays.toString(c));
+//		for(int[]c:b)System.out.println(Arrays.toString(c));
+		
 	}
 
 }
