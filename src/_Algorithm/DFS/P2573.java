@@ -37,6 +37,11 @@ public class P2573 {
 		for(int[]c:a)System.out.println(Arrays.toString(c));
 		System.out.println();
 		for(int[]c:b)System.out.println(Arrays.toString(c));
+		System.out.println();
+		o();
+		for(int[]c:a)System.out.println(Arrays.toString(c));
+		System.out.println();
+		for(int[]c:b)System.out.println(Arrays.toString(c));
 		
 	}
 
