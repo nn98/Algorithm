@@ -14,10 +14,14 @@ public class P2573 {
 					a[i][j]-=b[i+x[k]][j+y[k]]==0?1:0;
 	}
 	static void d(int p,int q) {
+		System.out.println("d: "+p+" "+q);
 		v[p][q]++;
-		for(;p<n-1;p++)
-			for(;q<m-1;q++)
-				if(v[p][q]==0) d(p,q);
+		int e=0,r,t;
+		for(;e<4;e++) {
+			r=p+x[e];
+			t=q+y[e];
+			if(v[r][t]==0&a[r][t]>0)d(r,t);
+		}
 	}
 
 	public static void main(String[] args)throws Exception{
@@ -40,17 +44,18 @@ public class P2573 {
 			c=0;
 			for(i=0;++i<n-1&c<2;c=0) {
 				for(j=0;++j<m-1&c<2;)
-					if(a[i][j]>0) {
+					if(a[i][j]>0&v[i][j]<1) {
 						c++;
+						System.out.println("DFS: "+i+" "+j+" "+c);
 						d(i,j);
 					}
 			}
 			if(c>1) {
-				System.out.print(R);
+				System.out.print("R "+R);
 				System.exit(0);
 			}
 			if(c<1) {
-				System.out.print(c);
+				System.out.print("c "+c);
 				System.exit(0);
 			}
 			R++;
