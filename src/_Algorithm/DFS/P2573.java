@@ -58,6 +58,7 @@ public class P2573 {
 				System.out.print("c "+c);
 				System.exit(0);
 			}
+			o();
 			R++;
 		}
 	}
