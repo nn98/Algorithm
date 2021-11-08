@@ -14,7 +14,6 @@ public class P2573 {
 					a[i][j]-=b[i+x[k]][j+y[k]]==0?1:0;
 	}
 	static void d(int p,int q) {
-		System.out.println("d: "+p+" "+q);
 		v[p][q]++;
 		int e=0,r,t;
 		for(;e<4;e++) {
@@ -46,16 +45,13 @@ public class P2573 {
 				for(j=0;++j<m-1&c<2;)
 					if(a[i][j]>0&v[i][j]<1) {
 						c++;
-						System.out.println("DFS: "+i+" "+j+" "+c);
 						d(i,j);
 					}
 			}
 			if(c>1) {
-				System.out.print("R "+R);
 				System.exit(0);
 			}
 			if(c<1) {
-				System.out.print("c "+c);
 				System.exit(0);
 			}
 			o();
