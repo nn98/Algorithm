@@ -21,6 +21,7 @@ public class P2573 {
 		n=Integer.parseInt(t.nextToken());
 		m=Integer.parseInt(t.nextToken());
 		a=new int[n][m];
+		b=new int[n][m];
 		for(;i<n;i++) {
 			t=new StringTokenizer(r.readLine());
 			if(i>0&i<n-1)
