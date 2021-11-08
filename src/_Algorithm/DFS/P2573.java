@@ -12,6 +12,7 @@ public class P2573 {
 			for(j=0;++j<m-1;System.out.println(i+" "+j))
 				for(k=0;k<4;k++,a[i][j]=a[i][j]<1?0:a[i][j])
 					a[i][j]-=b[i+x[k]][j+y[k]]==0?1:0;
+		for(i=0;i<n;System.arraycopy(a[i],0,b[i],0,a[i].length),i++);
 	}
 	
 	public static void main(String[] args)throws Exception{
@@ -34,6 +35,11 @@ public class P2573 {
 //		a[2][4]=555;
 //		System.out.println(Arrays.toString(a[2]));
 //		System.out.println(Arrays.toString(b[2]));
+		for(int[]c:a)System.out.println(Arrays.toString(c));
+		System.out.println();
+		for(int[]c:b)System.out.println(Arrays.toString(c));
+		System.out.println();
+		o();
 		for(int[]c:a)System.out.println(Arrays.toString(c));
 		System.out.println();
 		for(int[]c:b)System.out.println(Arrays.toString(c));
