@@ -23,7 +23,7 @@ public class P2573 {
 		a=new int[n][m];
 		for(;i<n;i++) {
 			t=new StringTokenizer(r.readLine());
-			if(!(i>0|i<n-1))
+			if(i>0&i<n-1)
 				for(j=0;j<n;j++)
 					a[i][j]=Integer.parseInt(t.nextToken());
 		}
