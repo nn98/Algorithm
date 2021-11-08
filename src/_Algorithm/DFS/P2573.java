@@ -42,7 +42,7 @@ public class P2573 {
 			for(i=0;i<n;System.arraycopy(a[i],0,b[i],0,a[i].length),i++);
 			v=new int[n][m];
 			c=0;
-			for(i=0;++i<n-1&c<2;c=0) {
+			for(i=0;++i<n-1&c<2;) {
 				for(j=0;++j<m-1&c<2;)
 					if(a[i][j]>0&v[i][j]<1) {
 						c++;
