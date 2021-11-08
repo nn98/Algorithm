@@ -27,7 +27,7 @@ public class P2573 {
 				for(j=0;j<m;j++)
 					a[i][j]=Integer.parseInt(t.nextToken());
 		}
-//		b=a.clone();
+		b=a.clone();
 		for(i=0;i<n;System.arraycopy(a[i],0,b[i],0,a[i].length),i++);
 		System.out.println(Arrays.toString(a[2]));
 		System.out.println(Arrays.toString(b[2]));
