@@ -8,7 +8,7 @@ public class P20922 {
 		Scanner s=new Scanner(System.in);
 		int n=s.nextInt(),k=s.nextInt(),a[]=new int[n],d[]=new int[100001],i=0,j=0,r=0,v;
 		for(;i<n;a[i++]=s.nextInt());
-		for(;j<n;) {
+		for(;j<n;j++) {
 			d[a[j]]++;
 			for(;d[a[j]]>k;d[a[i++]]--);
 			v=j-i+1;
