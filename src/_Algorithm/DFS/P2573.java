@@ -49,9 +49,11 @@ public class P2573 {
 					}
 			}
 			if(c>1) {
+				System.out.print(R);
 				System.exit(0);
 			}
 			if(c<1) {
+				System.out.print(c);
 				System.exit(0);
 			}
 			o();
