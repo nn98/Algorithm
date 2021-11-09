@@ -28,12 +28,10 @@ public class P2667 {
 		n=Integer.parseInt(r.readLine());
 		a=new int[n+2][n+2];
 		v=new boolean[n+2][n+2];
-		System.out.println(a[0][0]);
 		for(;i++<n;j=0) {
 			for(char c:r.readLine().toCharArray())
 				a[i][++j]=c-'0';
 		}
-		for(int[]c:a)System.out.println(Arrays.toString(c));
 		for(i=0;i++<n;)
 			for(j=0;j++<n;)
 				if(!v[i][j]&a[i][j]>0) {
