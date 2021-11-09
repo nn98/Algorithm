@@ -5,19 +5,20 @@ import java.io.BufferedWriter;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
 public class P2667 {
-	static int n,i,j,c,X[]= {1,0,-1,0},Y[]= {0,1,0,-1};
-	static char a[][];
+	static int n,i,j,c,X[]= {1,0,-1,0},Y[]= {0,1,0,-1},a[][];
 	static boolean[][]v;
 	static List<Integer>l=new ArrayList();
 	static void o(int x,int y) {
+		System.out.println(x+" "+y);
 		c++;
 		v[x][y]=true;
 		for(int k=0;k<4;k++)
-			if(!v[x+X[k]][y+Y[k]]&a[i][j]>'0')
+			if(!v[x+X[k]][y+Y[k]]&a[x+X[k]][y+Y[k]]>0)
 				o(x+X[k],y+Y[k]);
 	}
 
@@ -25,15 +26,17 @@ public class P2667 {
 		BufferedReader r=new BufferedReader(new InputStreamReader(System.in));
 		BufferedWriter w=new BufferedWriter(new OutputStreamWriter(System.out));
 		n=Integer.parseInt(r.readLine());
-		a=new char[n+2][n+2];
+		a=new int[n+2][n+2];
 		v=new boolean[n+2][n+2];
-		for(;i<n;i++,j=0) {
+		System.out.println(a[0][0]);
+		for(;i++<n;j=0) {
 			for(char c:r.readLine().toCharArray())
-				a[i][j++]=c;
+				a[i][++j]=c-'0';
 		}
+		for(int[]c:a)System.out.println(Arrays.toString(c));
 		for(i=0;i++<n;)
 			for(j=0;j++<n;)
-				if(!v[i][j]&a[i][j]>'0') {
+				if(!v[i][j]&a[i][j]>0) {
 					o(i,j);
 					l.add(c);
 					c=0;
