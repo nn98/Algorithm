@@ -25,14 +25,14 @@ public class P2667 {
 		BufferedReader r=new BufferedReader(new InputStreamReader(System.in));
 		BufferedWriter w=new BufferedWriter(new OutputStreamWriter(System.out));
 		n=Integer.parseInt(r.readLine());
-		a=new char[n][n];
-		v=new boolean[n][n];
+		a=new char[n+2][n+2];
+		v=new boolean[n+2][n+2];
 		for(;i<n;i++,j=0) {
 			for(char c:r.readLine().toCharArray())
 				a[i][j++]=c;
 		}
-		for(i=0;i<n;i++)
-			for(j=0;j<n;j++)
+		for(i=0;i++<n;)
+			for(j=0;j++<n;)
 				if(!v[i][j]) {
 					o(i,j);
 					l.add(c);
