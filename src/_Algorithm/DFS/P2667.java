@@ -14,7 +14,6 @@ public class P2667 {
 	static boolean[][]v;
 	static List<Integer>l=new ArrayList();
 	static void o(int x,int y) {
-		System.out.println(x+" "+y);
 		c++;
 		v[x][y]=true;
 		for(int k=0;k<4;k++)
