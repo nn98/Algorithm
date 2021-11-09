@@ -17,7 +17,7 @@ public class P2667 {
 		c++;
 		v[x][y]=true;
 		for(int k=0;k<4;k++)
-			if(!v[x+X[k]][y+Y[k]])
+			if(!v[x+X[k]][y+Y[k]]&a[i][j]>'0')
 				o(x+X[k],y+Y[k]);
 	}
 
@@ -33,7 +33,7 @@ public class P2667 {
 		}
 		for(i=0;i++<n;)
 			for(j=0;j++<n;)
-				if(!v[i][j]) {
+				if(!v[i][j]&a[i][j]>'0') {
 					o(i,j);
 					l.add(c);
 					c=0;
