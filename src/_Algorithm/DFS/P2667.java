@@ -1,13 +1,7 @@
 package _Algorithm.DFS;
 
-import java.io.BufferedReader;
-import java.io.BufferedWriter;
-import java.io.InputStreamReader;
-import java.io.OutputStreamWriter;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.List;
+import java.io.*;
+import java.util.*;
 
 public class P2667 {
 	static int n,i,j,c,X[]= {1,0,-1,0},Y[]= {0,1,0,-1},a[][];
