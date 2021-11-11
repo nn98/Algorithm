@@ -1,5 +1,7 @@
 package _Algorithm.Binary_Search;
 
+// 재채점 개좋아하네
+
 import java.io.*;
 import java.util.*;
 
