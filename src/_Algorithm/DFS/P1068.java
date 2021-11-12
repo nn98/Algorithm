@@ -30,7 +30,7 @@ public class P1068 {
 //		for(int[]b:c)System.out.println(Arrays.toString(b));
 //		System.out.println(Arrays.toString(p));
 //		System.out.println(Arrays.toString(a));
-		System.out.println();
+//		System.out.println();
 		d(i=s.nextInt());
 		a[p[i]]--;
 //		for(int[]b:c)System.out.println(Arrays.toString(b));
