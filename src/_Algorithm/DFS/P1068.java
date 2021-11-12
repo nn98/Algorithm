@@ -1,4 +1,5 @@
 package _Algorithm.DFS;
+//BFS
 import java.util.Arrays;
 import java.util.Scanner;
 public class P1068 {
