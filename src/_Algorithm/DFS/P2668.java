@@ -7,14 +7,17 @@ public class P2668 {
 	static int n,a[],i,j,b[];
 	static  List<Integer>l=new ArrayList(),r=new ArrayList();
 	static void o(int x) {
-		b[x]=2;
-		l.add(x);
-		if(b[a[x]]>1) {
-			r.add(a[x]);
-			if(l.contains(a[a[x]]))r.add(a[a[x]]);
+		if(x==a[x])r.add(x);
+		else {
+			b[x]=2;
+			l.add(x);
+			if(b[a[x]]>1) {
+				r.add(a[x]);
+				if(l.contains(a[a[x]]))r.add(a[a[x]]);
+			}
+			else if(b[a[x]]==0)o(a[x]);
+			l.remove(l.indexOf(x));
 		}
-		else if(b[a[x]]==0)o(a[x]);
-		l.remove(l.indexOf(x));
 		b[x]=1;
 	}
 	public static void main(String[] args) {
@@ -28,7 +31,7 @@ public class P2668 {
 				o(i);
 		System.out.println(r);
 		System.out.println(Arrays.toString(b));
-		
+
 	}
 
 }
