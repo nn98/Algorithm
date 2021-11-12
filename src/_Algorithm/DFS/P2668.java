@@ -5,16 +5,15 @@ import java.util.*;
 public class P2668 {
 
 	static int n,a[],i,j,b[];
-	static  List<Integer>l=new ArrayList();
-	static Set<Integer>r=new HashSet();
+	static  List<Integer>l=new ArrayList(),r=new ArrayList();
 	static void o(int x) {
 //		System.out.println(x+" "+Arrays.toString(b)+" "+l);
 		if(x==a[x])r.add(x);
 		else {
 			b[x]++;
-			if(l.contains(x))r.add(x);
+			if(l.contains(x)&!r.contains(x))r.add(x);
 			l.add(x);
-			if(l.contains(a[x]))r.add(a[x]);
+			if(l.contains(a[x])&!r.contains(a[x]))r.add(a[x]);
 			l.add(a[x]);
 			if(b[a[x]]<2)o(a[x]);
 			l.remove(l.indexOf(x));
@@ -43,9 +42,8 @@ public class P2668 {
 		for(i=0;++i<n;)
 			if(b[i]<2)
 				o(i);
-		System.out.println(r);
-		System.out.println(Arrays.toString(b));
-
+		System.out.println(r.size());
+		
 	}
 
 }
