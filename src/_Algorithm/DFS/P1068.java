@@ -17,6 +17,12 @@ public class P1068 {
 		System.out.println(Arrays.toString(c));
 		System.out.println(r);
 		j=s.nextInt();
-		
+		if(c[j]<1)r--;
+		else {
+			for(i=0;i<n;i++) {
+				if(a[i][j]>0)if(c[i]<1)r--;
+			}
+		}
+		System.out.println(r);
 	}
 }
