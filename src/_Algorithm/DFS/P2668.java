@@ -8,7 +8,7 @@ public class P2668 {
 	static  List<Integer>l=new ArrayList();
 	static Set<Integer>r=new HashSet();
 	static void o(int x) {
-		System.out.println(x+" "+Arrays.toString(b)+" "+l);
+//		System.out.println(x+" "+Arrays.toString(b)+" "+l);
 		if(x==a[x])r.add(x);
 		else {
 			b[x]++;
