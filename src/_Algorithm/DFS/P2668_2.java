@@ -4,28 +4,26 @@ import java.util.*;
 
 public class P2668_2 {
 
-	static int n,a[],i,c[];
-	static List<Integer>l,r=new ArrayList();
-	static void o(int x) {
-		if(x==a[x]&!r.contains(x))r.add(x);
-		else{
-			c[x]++;
-			l.add(x);
-			if(c[a[x]]<1)o(a[x]);
-			if(l.contains(a[x])&!r.contains(a[x]))r.add(a[x]);
-		}
+	static int n,a[],i,c[],j;
+	static List<Integer>r=new ArrayList();
+	static void o(int x,int y) {
+		if(c[y]<1) {
+			c[y]++;
+			o(x,a[y]);
+		}else if(x==y)r.add(x);
 	}
 	public static void main(String[] args) {
 		Scanner s=new Scanner(System.in);
 		n=s.nextInt()+1;
+		a=new int[n];
 		for(;++i<n;a[i]=s.nextInt());
 		for(i=0;++i<n;) {
-			l=new ArrayList();
-			if(!r.contains(i))
-				o(i);
+			c=new int[n];
+			o(i,i);
 		}
+		Collections.sort(r);
 		System.out.println(r.size());
-		System.out.println(r);
+		for(int b:r)System.out.println(b);
 	}
 
 }
