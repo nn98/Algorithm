@@ -13,9 +13,6 @@ public class P1068 {
 				c[j]++;
 			}
 		}
-		for(int[]b:a)System.out.println(Arrays.toString(b));
-		System.out.println(Arrays.toString(c));
-		System.out.println(r);
 		j=s.nextInt();
 		if(c[j]<1)r--;
 		else {
