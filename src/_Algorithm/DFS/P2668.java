@@ -7,6 +7,7 @@ public class P2668 {
 	static int n,a[],i,j,b[];
 	static  List<Integer>l=new ArrayList(),r=new ArrayList();
 	static void o(int x) {
+		System.out.println(x+" "+Arrays.toString(b)+" "+l);
 		if(x==a[x])r.add(x);
 		else {
 			b[x]=2;
