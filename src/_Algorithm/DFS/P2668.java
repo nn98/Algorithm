@@ -42,8 +42,9 @@ public class P2668 {
 		for(i=0;++i<n;)
 			if(b[i]<2)
 				o(i);
+		Collections.sort(r);
 		System.out.println(r.size());
-		
+		for(int c:r)System.out.println(c);
 	}
 
 }
