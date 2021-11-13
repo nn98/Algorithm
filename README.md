@@ -80,5 +80,3 @@ https://stonejjun.tistory.com/92 https://viyoung.tistory.com/150 https://moonrab
 [19621](https://www.acmicpc.net/problem/19621) [19622](https://www.acmicpc.net/problem/19622) [20001](https://www.acmicpc.net/problem/20001) [21360](https://www.acmicpc.net/problem/21360) [22114](https://www.acmicpc.net/problem/22114) 
 
 </details>
-
-* * *
