@@ -1,10 +1,14 @@
 package _Algorithm.DFS;
 
+import java.io.*;
+import java.util.*;
 public class P15681 {
-
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+	static int N,R,Q,a;
+	public static void main(String[] args) throws Exception {
+		BufferedReader r = new BufferedReader(new InputStreamReader(System.in));
+		BufferedWriter w = new BufferedWriter(new OutputStreamWriter(System.out));
+		StringTokenizer t=new StringTokenizer(r.readLine());
+		
 	}
 
 }
