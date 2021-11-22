@@ -4,6 +4,16 @@ import java.io.*;
 import java.util.*;
 public class P10216 {
 	static int n,a[][],i,j,R,x,y,p[],X,Y,re;
+	static int P(int x) {
+		if(x==p[x])return x;
+		return p[x]=P(p[x]);
+	}
+	static void u(int x,int y) {
+		x=P(x);
+		y=P(y);
+		p[x]=x<y?x:y;
+		p[y]=x<y?x:y;
+	}
 	public static void main(String[] args) throws Exception {
 		BufferedReader r = new BufferedReader(new InputStreamReader(System.in));
 		BufferedWriter w = new BufferedWriter(new OutputStreamWriter(System.out));
@@ -25,9 +35,9 @@ public class P10216 {
 					Y=a[x][1]-a[y][1];
 					R=a[x][2]+a[y][2];
 					if(X*X+Y*Y<=R*R)
-						if(!(p[x]==p[y])) {
+						if(P(x)!=P(y)) {
 							re--;
-							p[x]=p[y];
+							u(x,y);
 						}
 				}
 			w.write(re+"\n");
