@@ -1,8 +1,7 @@
 package _Algorithm.DFS;
-
 import java.io.*;
 import java.util.*;
-public class P10216 {
+public class P10216{
 	static int n,a[][],i,j,R,x,y,p[],X,Y,re;
 	static int P(int x) {
 		if(x==p[x])return x;
@@ -44,5 +43,4 @@ public class P10216 {
 		}
 		w.flush();
 	}
-
 }
