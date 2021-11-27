@@ -10,6 +10,8 @@ public class P15681 {
 		BufferedReader r = new BufferedReader(new InputStreamReader(System.in));
 		BufferedWriter w = new BufferedWriter(new OutputStreamWriter(System.out));
 		StringTokenizer t=new StringTokenizer(r.readLine());
-		
+		N=Integer.parseInt(t.nextToken());
+		R=Integer.parseInt(t.nextToken());
+		Q=Integer.parseInt(t.nextToken());
 	}
 }
