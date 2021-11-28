@@ -13,5 +13,8 @@ public class P15681 {
 		N=Integer.parseInt(t.nextToken());
 		R=Integer.parseInt(t.nextToken());
 		Q=Integer.parseInt(t.nextToken());
+		for(;i++<N;) {
+			t=new StringTokenizer(r.readLine());
+		}
 	}
 }
