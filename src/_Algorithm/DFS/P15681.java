@@ -42,10 +42,10 @@ public class P15681 {
 			n=x;
 			for(Node n:c)n.o(N);
 		}
-		void getH() {
+		int getH() {
 			int x=1;
-			for(Node n:c)x+=n.c.size();
-			h[N]=x;
+			for(Node n:c)x+=n.getH();
+			return h[N]=x;
 		}
 		@Override
 		public String toString() {
@@ -70,11 +70,8 @@ public class P15681 {
 		System.out.println(Arrays.toString(l));
 		for(i=0;i++<Q;) {
 			j=Integer.parseInt(r.readLine());
-			if(h[j]==0) {
-				l[j].getH();
-			}
+			w.write((h[j]==0?l[j].getH():h[j])+"\n");
 			System.out.println(h[j]);
-			w.write(h[j]+"\n");
 		}
 		w.flush();
 	}
