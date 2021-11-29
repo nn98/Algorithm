@@ -23,16 +23,23 @@ public class P15681 {
 			l[x].c.add(l[y]);
 			l[y].c.add(l[x]);
 		}
+		System.out.println(l[x]);
+		System.out.println(l[y]);
 	}
 	static class Node{
 		Node p;
 		List<Node>c;
-		int r=0,n;
+		int r=0,n=-1;
 		void o(int x) {
 			if(c.contains(l[x]))
 				c.remove(l[x]);
 			p=l[x];
+			n=x;
 			r+=c.size();
+		}
+		@Override
+		public String toString() {
+			return String.format("P-%d, cSize-%d",n,r);
 		}
 	}
 	public static void main(String[] args) throws Exception {
@@ -46,6 +53,7 @@ public class P15681 {
 		for(;i++<N;) {
 			t=new StringTokenizer(r.readLine());
 			o(Integer.parseInt(t.nextToken()),Integer.parseInt(t.nextToken()));
+			
 		}
 	}
 }
