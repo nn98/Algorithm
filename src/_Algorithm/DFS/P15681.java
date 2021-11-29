@@ -7,12 +7,21 @@ public class P15681 {
 	static void o(int x,int y) {
 		if(l[x]==null)l[x]=new Node();
 		if(l[y]==null)l[y]=new Node();
-		if(l[x].p!=null) {
+		if(x==N) {
+			l[x].c.add(l[y]);
+			l[y].p=l[x];
+		}else if(y==N) {
+			l[y].c.add(l[x]);
+			l[x].p=l[y];
+		}else if(l[x].p!=null) {
 			l[x].c.add(l[y]);
 			l[y].p=l[x];
 		}else if(l[y].p!=null) {
 			l[y].c.add(l[x]);
 			l[x].p=l[y];
+		}else {
+			l[x].c.add(l[y]);
+			l[y].c.add(l[x]);
 		}
 	}
 	static class Node{
