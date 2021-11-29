@@ -25,8 +25,8 @@ public class P15681 {
 			l[x].c.add(l[y]);
 			l[y].c.add(l[x]);
 		}
-		System.out.println(l[x]);
-		System.out.println(l[y]);
+//		System.out.println(l[x]);
+//		System.out.println(l[y]);
 	}
 	static class Node{
 		Node p;
@@ -67,11 +67,11 @@ public class P15681 {
 			t=new StringTokenizer(r.readLine());
 			o(Integer.parseInt(t.nextToken()),Integer.parseInt(t.nextToken()));
 		}
-		System.out.println(Arrays.toString(l));
+//		System.out.println(Arrays.toString(l));
 		for(i=0;i++<Q;) {
 			j=Integer.parseInt(r.readLine());
 			w.write((h[j]==0?l[j].getH():h[j])+"\n");
-			System.out.println(h[j]);
+//			System.out.println(h[j]);
 		}
 		w.flush();
 	}
