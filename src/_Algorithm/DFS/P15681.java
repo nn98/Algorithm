@@ -2,7 +2,7 @@ package _Algorithm.DFS;
 import java.io.*;
 import java.util.*;
 public class P15681 {
-	static int N,R,Q,a[],i,j,k;
+	static int N,R,Q,a[],i,j,k,h[];
 	static Node[]l;
 	static void o(int x,int y) {
 		if(l[x]==null)l[x]=new Node(x);
