@@ -66,7 +66,9 @@ public class P15681 {
 		for(;++i<N;) {
 			t=new StringTokenizer(r.readLine());
 			o(Integer.parseInt(t.nextToken()),Integer.parseInt(t.nextToken()));
-		}for(i=0;i++<Q;) {
+		}
+		System.out.println(Arrays.toString(l));
+		for(i=0;i++<Q;) {
 			j=Integer.parseInt(r.readLine());
 			if(h[j]==0) {
 				l[j].getH();
