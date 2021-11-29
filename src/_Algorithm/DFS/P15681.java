@@ -62,7 +62,7 @@ public class P15681 {
 		Q=Integer.parseInt(t.nextToken());
 		h=new int[N+1];
 		l=new Node[N+1];
-		for(;i++<N;) {
+		for(;++i<N;) {
 			t=new StringTokenizer(r.readLine());
 			o(Integer.parseInt(t.nextToken()),Integer.parseInt(t.nextToken()));
 		}for(i=0;i++<Q;) {
