@@ -18,10 +18,10 @@ public class P15681 {
 			l[x].o(y);
 		}else if(l[x].p!=null) {
 			l[x].c.add(l[y]);
-			l[y].p=l[x];
+			l[y].o(x);
 		}else if(l[y].p!=null) {
 			l[y].c.add(l[x]);
-			l[x].p=l[y];
+			l[x].o(y);
 		}else {
 			l[x].c.add(l[y]);
 			l[y].c.add(l[x]);
