@@ -8,7 +8,6 @@ public class P15681 {
 		if(l[x]==null)l[x]=new Node(x);
 		if(l[y]==null)l[y]=new Node(y);
 		if(x==R) {
-			System.out.println(N+"Node ");
 			l[x].n=-1;
 			l[x].c.add(l[y]);
 			l[y].o(x);
@@ -41,6 +40,7 @@ public class P15681 {
 				c.remove(l[x]);
 			p=l[x];
 			n=x;
+			for(Node n:c)n.o(N);
 		}
 		@Override
 		public String toString() {
