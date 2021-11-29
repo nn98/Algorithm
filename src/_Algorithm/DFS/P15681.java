@@ -3,8 +3,13 @@ import java.io.*;
 import java.util.*;
 public class P15681 {
 	static int N,R,Q,a[],i,j;
+	static Node[]l;
 	static void o(int x) {
 		
+	}
+	class Node{
+		Node p,c,un0,un1;
+		int r=0,n;
 	}
 	public static void main(String[] args) throws Exception {
 		BufferedReader r = new BufferedReader(new InputStreamReader(System.in));
