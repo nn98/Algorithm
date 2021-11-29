@@ -28,7 +28,7 @@ public class P15681 {
 	}
 	static class Node{
 		Node p;
-		List<Node>c;
+		List<Node>c=new ArrayList();
 		int r=0,n=-1;
 		void o(int x) {
 			if(c.contains(l[x]))
