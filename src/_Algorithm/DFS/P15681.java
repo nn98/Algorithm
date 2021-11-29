@@ -2,7 +2,7 @@ package _Algorithm.DFS;
 import java.io.*;
 import java.util.*;
 public class P15681 {
-	static int N,R,Q,a[],i,j,k,h[];
+	static int N,R,Q,a[],i,j,h[];
 	static Node[]l;
 	static void o(int x,int y) {
 		if(l[x]==null)l[x]=new Node(x);
@@ -42,6 +42,10 @@ public class P15681 {
 			n=x;
 			for(Node n:c)n.o(N);
 		}
+		void getH() {
+			int x=1;
+			for(Node n:c)x+=n.c.size();
+		}
 		@Override
 		public String toString() {
 			StringBuffer f=new StringBuffer();
@@ -56,11 +60,19 @@ public class P15681 {
 		N=Integer.parseInt(t.nextToken());
 		R=Integer.parseInt(t.nextToken());
 		Q=Integer.parseInt(t.nextToken());
+		h=new int[N+1];
 		l=new Node[N+1];
 		for(;i++<N;) {
 			t=new StringTokenizer(r.readLine());
 			o(Integer.parseInt(t.nextToken()),Integer.parseInt(t.nextToken()));
-			
+		}for(i=0;i++<Q;) {
+			j=Integer.parseInt(r.readLine());
+			if(h[j]==0) {
+				l[j].getH();
+			}
+			System.out.println(h[j]);
+			w.write(h[j]+"\n");
 		}
+		w.flush();
 	}
 }
