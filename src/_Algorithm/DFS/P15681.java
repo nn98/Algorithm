@@ -9,10 +9,10 @@ public class P15681 {
 		if(l[y]==null)l[y]=new Node();
 		if(x==N) {
 			l[x].c.add(l[y]);
-			l[y].p=l[x];
+			l[y].o(x);
 		}else if(y==N) {
 			l[y].c.add(l[x]);
-			l[x].p=l[y];
+			l[x].o(y);
 		}else if(l[x].p!=null) {
 			l[x].c.add(l[y]);
 			l[y].p=l[x];
