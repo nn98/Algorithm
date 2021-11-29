@@ -44,7 +44,9 @@ public class P15681 {
 		}
 		@Override
 		public String toString() {
-			return String.format("Node %d, P-%d, cSize-%d",N,n,c.size());
+			StringBuffer f=new StringBuffer();
+			for(Node n:c)f.append(n.N+" ");
+			return String.format("Node %d, P-%d, c-%s",N,n,f);
 		}
 	}
 	public static void main(String[] args) throws Exception {
