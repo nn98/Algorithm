@@ -29,17 +29,16 @@ public class P15681 {
 	static class Node{
 		Node p;
 		List<Node>c=new ArrayList();
-		int r=0,n=-1;
+		int n=-1;
 		void o(int x) {
 			if(c.contains(l[x]))
 				c.remove(l[x]);
 			p=l[x];
 			n=x;
-			r+=c.size();
 		}
 		@Override
 		public String toString() {
-			return String.format("P-%d, cSize-%d",n,r);
+			return String.format("P-%d, cSize-%d",n,c.size());
 		}
 	}
 	public static void main(String[] args) throws Exception {
