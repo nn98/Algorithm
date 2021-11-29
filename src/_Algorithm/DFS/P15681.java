@@ -5,12 +5,15 @@ public class P15681 {
 	static int N,R,Q,a[],i,j,k;
 	static Node[]l;
 	static void o(int x,int y) {
-		if(l[x]==null)l[x]=new Node();
-		if(l[y]==null)l[y]=new Node();
-		if(x==N) {
+		if(l[x]==null)l[x]=new Node(x);
+		if(l[y]==null)l[y]=new Node(y);
+		if(x==R) {
+			System.out.println(N+"Node ");
+			l[x].n=-1;
 			l[x].c.add(l[y]);
 			l[y].o(x);
-		}else if(y==N) {
+		}else if(y==R) {
+			l[y].n=-1;
 			l[y].c.add(l[x]);
 			l[x].o(y);
 		}else if(l[x].p!=null) {
@@ -29,7 +32,10 @@ public class P15681 {
 	static class Node{
 		Node p;
 		List<Node>c=new ArrayList();
-		int n=-1;
+		Node(int N){
+			this.N=N;
+		}
+		int n=0,N;
 		void o(int x) {
 			if(c.contains(l[x]))
 				c.remove(l[x]);
@@ -38,7 +44,7 @@ public class P15681 {
 		}
 		@Override
 		public String toString() {
-			return String.format("P-%d, cSize-%d",n,c.size());
+			return String.format("Node %d, P-%d, cSize-%d",N,n,c.size());
 		}
 	}
 	public static void main(String[] args) throws Exception {
