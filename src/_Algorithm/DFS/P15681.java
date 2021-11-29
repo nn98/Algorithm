@@ -45,6 +45,7 @@ public class P15681 {
 		void getH() {
 			int x=1;
 			for(Node n:c)x+=n.c.size();
+			h[N]=x;
 		}
 		@Override
 		public String toString() {
