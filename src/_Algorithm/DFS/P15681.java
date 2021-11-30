@@ -26,8 +26,6 @@ public class P15681 {
 			l[x].c.add(l[y]);
 			l[y].c.add(l[x]);
 		}
-//		System.out.println(l[x]);
-//		System.out.println(l[y]);
 	}
 	static class Node{
 		Node p;
