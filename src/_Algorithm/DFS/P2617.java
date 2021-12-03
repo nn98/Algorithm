@@ -33,21 +33,21 @@ public class P2617 {
 			a[i][j]=-1;
 		}
 		m=0;
-		for(int[]b:a)System.out.println(Arrays.toString(b));
+//		for(int[]b:a)System.out.println(Arrays.toString(b));
 		for(j=0;++j<n;k=-1) {
 			v=new int[n];
-			System.out.print("h "+j);
+//			System.out.print("h "+j);
 			h(j);
-			System.out.println("\t"+k);
+//			System.out.println("\t"+k);
 			if(k>=n/2) {
 				m++;
 				continue;
 			}
 			k=-1;
 			v=new int[n];
-			System.out.print("l "+j);
+//			System.out.print("l "+j);
 			l(j);
-			System.out.println("\t"+k);
+//			System.out.println("\t"+k);
 			if(k>=n/2)m++;
 		}
 		System.out.println(m);
