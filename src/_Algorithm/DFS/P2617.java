@@ -3,7 +3,7 @@ package _Algorithm.DFS;
 import java.io.*;
 import java.util.*;
 public class P2617 {
-	static int n,m,i,j,k,a[][],v[];
+	static int n,m,i,j,k=-1,a[][],v[];
 	static void h(int x) {
 		k++;
 		v[x]++;
@@ -33,14 +33,24 @@ public class P2617 {
 			a[i][j]=-1;
 		}
 		m=0;
+		for(int[]b:a)System.out.println(Arrays.toString(b));
 		for(i=0;++i<n;) {
-			v=new int[n];
-			v[i]++;
-			for(j=0;++j<n;k=0,m+=k>=n/2?1:0)
-				if(a[i][j]>0)
-					h(j);
-				else if(a[i][j]<0)
-					l(j);
+			for(j=0;++j<n;k=-1) {
+				v=new int[n];
+				System.out.print("h "+j);
+				h(j);
+				System.out.println("\t"+k);
+				if(k>=n/2) {
+					m++;
+					continue;
+				}
+				k=-1;
+				v=new int[n];
+				System.out.print("l "+j);
+				l(j);
+				System.out.println("\t"+k);
+				if(k>=n/2)m++;
+			}
 		}
 		System.out.println(m);
 	}
