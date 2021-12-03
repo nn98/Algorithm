@@ -8,7 +8,7 @@ public class P2617 {
 		a[m][x]=v;
 		for(int i=0;++i<n;)
 			if(a[x][i]!=0)
-				o(x,a[x][i]);
+				o(i,a[x][i]);
 	}
 	public static void main(String[] args)throws Exception{
 		BufferedReader r=new BufferedReader(new InputStreamReader(System.in));
