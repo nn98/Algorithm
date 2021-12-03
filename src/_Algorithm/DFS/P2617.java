@@ -41,7 +41,13 @@ public class P2617 {
 //			for(k=0;++k<n;a[i][k]=a[j][k]<0?-1:a[i][k]);
 			for(int[]b:a)System.out.println(Arrays.toString(b));
 		}
-		k=0;
+		m=0;
+		for(int[]b:a) {
+			k=0;
+			for(int c:b)k+=c==0?1:0;
+			m+=k<=n/2?1:0;
+		}
+		System.out.println(m);
 //		for(m=0;++m<n;) {
 //			for(j=0;++j<n;) {
 //				if(a[m][j]!=0)
