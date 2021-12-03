@@ -34,6 +34,7 @@ public class P2617 {
 			a[i][j]=-1;
 			for(k=0;++k<n;a[i][k]=a[j][k]<0?-1:a[i][k]);
 		}
+		k=0;
 		for(int[]b:a)System.out.println(Arrays.toString(b));
 		for(m=0;++m<n;) {
 			for(j=0;++j<n;) {
@@ -41,7 +42,11 @@ public class P2617 {
 					if(a[m][j]>0)h(j);
 					else l(j);
 			}
+			i=0;
+			for(int b:a[m])i+=b==0?1:0;
+			k+=i<n/2?1:0;
 		}
+		System.out.println(k);
 		for(int[]b:a)System.out.println(Arrays.toString(b));
 	}
 
