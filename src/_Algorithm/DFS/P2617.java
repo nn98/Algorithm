@@ -3,19 +3,21 @@ package _Algorithm.DFS;
 import java.io.*;
 import java.util.*;
 public class P2617 {
-	static int n,m,i,j,k,a[][];
+	static int n,m,i,j,k,a[][],v[];
 	static void h(int x) {
+		v[x]++;
 		for(int i=0;++i<n;)
 			if(a[x][i]>0) {
 				a[m][i]=1;
-				h(i);
+				if(v[i]<1)h(i);
 			}
 	}
 	static void l(int x) {
+		v[x]++;
 		for(int i=0;++i<n;)
 			if(a[x][i]<0) {
 				a[m][i]=-1;
-				l(i);
+				if(v[i]<1)l(i);
 			}
 	}
 	public static void main(String[] args)throws Exception{
@@ -24,6 +26,7 @@ public class P2617 {
 		StringTokenizer t=new StringTokenizer(r.readLine());
 		n=Integer.parseInt(t.nextToken())+1;
 		m=Integer.parseInt(t.nextToken());
+		v=new int[n];
 		a=new int[n][n];
 		for(;m-->0;) {
 			t=new StringTokenizer(r.readLine());
@@ -38,9 +41,11 @@ public class P2617 {
 		for(int[]b:a)System.out.println(Arrays.toString(b));
 		for(m=0;++m<n;) {
 			for(j=0;++j<n;) {
-				if(a[m][j]!=0)
+				if(a[m][j]!=0) {
+					v=new int[n];
 					if(a[m][j]>0)h(j);
 					else l(j);
+				}
 			}
 			i=0;
 			for(int b:a[m])i+=b==0?1:0;
