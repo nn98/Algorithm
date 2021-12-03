@@ -44,6 +44,7 @@ public class P2617 {
 			}
 			i=0;
 			for(int b:a[m])i+=b==0?1:0;
+			System.out.println(m+" "+i);
 			k+=i<n/2?1:0;
 		}
 		System.out.println(k);
