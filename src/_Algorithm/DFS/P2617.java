@@ -3,8 +3,10 @@ package _Algorithm.DFS;
 import java.io.*;
 import java.util.*;
 public class P2617 {
-
 	static int n,m,i,j,k,a[][];
+	static void o(int x,int y) {
+		
+	}
 	public static void main(String[] args)throws Exception{
 		BufferedReader r=new BufferedReader(new InputStreamReader(System.in));
 		BufferedWriter w=new BufferedWriter(new OutputStreamWriter(System.out));
@@ -22,6 +24,9 @@ public class P2617 {
 			for(k=0;++k<n;a[i][k]=a[j][k]<0?-1:a[i][k]);
 		}
 		for(int[]b:a)System.out.println(Arrays.toString(b));
+		for(m=0;++m<n;) {
+			
+		}
 	}
 
 }
