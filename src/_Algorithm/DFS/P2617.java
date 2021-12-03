@@ -4,11 +4,19 @@ import java.io.*;
 import java.util.*;
 public class P2617 {
 	static int n,m,i,j,k,a[][];
-	static void o(int x,int v) {
-		a[m][x]=v;
+	static void h(int x) {
 		for(int i=0;++i<n;)
-			if(a[x][i]!=0)
-				o(i,a[x][i]);
+			if(a[x][i]>0) {
+				a[m][i]=1;
+				h(i);
+			}
+	}
+	static void l(int x) {
+		for(int i=0;++i<n;)
+			if(a[x][i]<0) {
+				a[m][i]=-1;
+				l(i);
+			}
 	}
 	public static void main(String[] args)throws Exception{
 		BufferedReader r=new BufferedReader(new InputStreamReader(System.in));
@@ -28,7 +36,11 @@ public class P2617 {
 		}
 		for(int[]b:a)System.out.println(Arrays.toString(b));
 		for(m=0;++m<n;) {
-			for(j=0;++j<n;o(j,a[m][j]));
+			for(j=0;++j<n;) {
+				if(a[m][j]!=0)
+					if(a[m][j]>0)h(j);
+					else l(j);
+			}
 		}
 		for(int[]b:a)System.out.println(Arrays.toString(b));
 	}
