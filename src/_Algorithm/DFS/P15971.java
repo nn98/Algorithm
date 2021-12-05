@@ -18,7 +18,7 @@ public class P15971 {
 		x=Integer.parseInt(t.nextToken());
 		y=Integer.parseInt(t.nextToken());
 		for(;i++<n;) {
-			t=new StringToknizer(r.readLine());
+			t=new StringTokenizer(r.readLine());
 		}
 	}
 
