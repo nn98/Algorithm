@@ -17,6 +17,9 @@ public class P15971 {
 		n=Integer.parseInt(t.nextToken());
 		x=Integer.parseInt(t.nextToken());
 		y=Integer.parseInt(t.nextToken());
+		for(;i++<n;) {
+			t=new StringToknizer(r.readLine());
+		}
 	}
 
 }
