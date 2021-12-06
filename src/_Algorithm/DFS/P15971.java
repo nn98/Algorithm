@@ -2,7 +2,7 @@ package _Algorithm.DFS;
 import java.io.*;
 import java.util.*;
 public class P15971 {
-	static int n,x,y,i,j,k,r,a[];
+	static int n,x,y,i,j,k,p,a[];
 	public static void main(String[] args)throws Exception{
 		BufferedReader r=new BufferedReader(new InputStreamReader(System.in));
 		BufferedWriter w=new BufferedWriter(new OutputStreamWriter(System.out));
@@ -14,7 +14,7 @@ public class P15971 {
 			t=new StringTokenizer(r.readLine());
 			j=Integer.parseInt(t.nextToken());
 			k=Integer.parseInt(t.nextToken());
-			r=Integer.parseInt(t.nextToken());
+			p=Integer.parseInt(t.nextToken());
 		}
 	}
 }
