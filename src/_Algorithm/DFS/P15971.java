@@ -10,6 +10,7 @@ public class P15971 {
 		n=Integer.parseInt(t.nextToken());
 		x=Integer.parseInt(t.nextToken());
 		y=Integer.parseInt(t.nextToken());
+		a=new int[n];
 		for(;i++<n;) {
 			t=new StringTokenizer(r.readLine());
 			j=Integer.parseInt(t.nextToken());
