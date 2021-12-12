@@ -19,7 +19,6 @@ public class P15971 {
 			j=Integer.parseInt(t.nextToken());
 			k=Integer.parseInt(t.nextToken());
 			p=Integer.parseInt(t.nextToken());
-			
 		}
 	}
 }
