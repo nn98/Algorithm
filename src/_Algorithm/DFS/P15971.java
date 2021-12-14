@@ -2,7 +2,7 @@ package _Algorithm.DFS;
 import java.io.*;
 import java.util.*;
 public class P15971 {
-	static int n,x,y,i,j,k,p,a[];
+	static int n,x,y,i,j,k,p,a[],b[][];
 	static void o(int x) {
 		
 	}
