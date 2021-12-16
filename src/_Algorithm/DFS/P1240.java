@@ -1,8 +1,6 @@
 package _Algorithm.DFS;
-
 import java.io.*;
 import java.util.*;
-
 public class P1240 {
 	static int n,x,y,i,j,k,p,a[],b[][];
 	static void o(int x) {
@@ -15,5 +13,4 @@ public class P1240 {
 		n=Integer.parseInt(t.nextToken());
 		x=Integer.parseInt(t.nextToken());
 	}
-
 }
