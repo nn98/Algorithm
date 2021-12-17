@@ -1,8 +1,8 @@
 package _Algorithm.DFS;
 import java.io.*;
 import java.util.*;
-public class P1240 {
-	static int n,m,i,j,k,p,v[];
+public class P1240{
+	static int n,m,i,j,l,v[];
 	static N[]a;
 	static class N{
 		List<L>l;
@@ -31,5 +31,12 @@ public class P1240 {
 		StringTokenizer t=new StringTokenizer(r.readLine());
 		n=Integer.parseInt(t.nextToken());
 		m=Integer.parseInt(t.nextToken());
+		while(m-->0) {
+			t=new StringTokenizer(r.readLine());
+			i=Integer.parseInt(t.nextToken());
+			j=Integer.parseInt(t.nextToken());
+			l=Integer.parseInt(t.nextToken());
+			
+		}
 	}
 }
