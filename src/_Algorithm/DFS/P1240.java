@@ -36,6 +36,7 @@ public class P1240{
 			i=Integer.parseInt(t.nextToken());
 			j=Integer.parseInt(t.nextToken());
 			l=Integer.parseInt(t.nextToken());
+			
 		}
 	}
 }
