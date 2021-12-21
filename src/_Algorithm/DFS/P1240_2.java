@@ -14,6 +14,8 @@ public class P1240_2 {
 		StringTokenizer t=new StringTokenizer(r.readLine());
 		n=Integer.parseInt(t.nextToken());
 		m=Integer.parseInt(t.nextToken());
+		v=new int[n];
+		a=new int[n][n];
 		while(m-->0) {
 			t=new StringTokenizer(r.readLine());
 			i=Integer.parseInt(t.nextToken());
