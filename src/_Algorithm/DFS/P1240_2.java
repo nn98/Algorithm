@@ -13,7 +13,7 @@ public class P1240_2 {
 		v[x]=u;
 		if(x!=i) {
 			for(int y=0;++y<n;) {
-				if(v[y]>u+a[x][y]&a[x][y]>0)
+				if((v[y]>u+a[x][y]|v[y]<1)&a[x][y]>0)
 					o(y,u+a[x][y]);
 			}
 		}
@@ -32,7 +32,7 @@ public class P1240_2 {
 			j=Integer.parseInt(t.nextToken());
 			a[i][j]=a[j][i]=Integer.parseInt(t.nextToken());
 		}while(m-->0) {
-			j=0;
+			j=Integer.MAX_VALUE;
 			v=new int[n];
 			t=new StringTokenizer(r.readLine());
 			i=Integer.parseInt(t.nextToken());
