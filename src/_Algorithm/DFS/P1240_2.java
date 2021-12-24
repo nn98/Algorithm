@@ -39,6 +39,7 @@ public class P1240_2 {
 			w.write(j+"\n");
 		}
 		w.flush();
+		w.close();
 	}
 
 }
