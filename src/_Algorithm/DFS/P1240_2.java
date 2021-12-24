@@ -9,6 +9,7 @@ import java.util.StringTokenizer;
 public class P1240_2 {
 	static int n,m,i,j,l,v[],a[][];
 	static void o(int x,int u) {
+		System.out.println(x+" "+u);
 		v[x]=u;
 		if(x!=i) {
 			for(int y=0;++y<n;) {
