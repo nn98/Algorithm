@@ -12,15 +12,15 @@ public class P1240_2 {
 		BufferedReader r=new BufferedReader(new InputStreamReader(System.in));
 		BufferedWriter w=new BufferedWriter(new OutputStreamWriter(System.out));
 		StringTokenizer t=new StringTokenizer(r.readLine());
-		n=Integer.parseInt(t.nextToken());
+		l=n=Integer.parseInt(t.nextToken());
 		m=Integer.parseInt(t.nextToken());
 		v=new int[n];
 		a=new int[n][n];
-		while(m-->0) {
+		while(--l>0) {
 			t=new StringTokenizer(r.readLine());
 			i=Integer.parseInt(t.nextToken());
 			j=Integer.parseInt(t.nextToken());
-			l=Integer.parseInt(t.nextToken());
+			a[i][j]=a[j][i]=Integer.parseInt(t.nextToken());
 		}
 	}
 
