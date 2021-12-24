@@ -16,8 +16,7 @@ public class P1240_2 {
 				if((v[y]>u+a[x][y]|v[y]<1)&a[x][y]>0)
 					o(y,u+a[x][y]);
 			}
-		}
-		j=j<v[x]?j:v[x];
+		}else j=j<v[x]?j:v[x];
 	}
 	public static void main(String[] args)throws Exception{
 		BufferedReader r=new BufferedReader(new InputStreamReader(System.in));
