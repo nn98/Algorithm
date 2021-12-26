@@ -5,7 +5,10 @@ public class P15971 {
 	static int n,x,y,i,j,k,p,a[],b[][];
 	static List<Integer>l;
 	static void o(int x) {
-		if(x==j|k==0)return;
+		if(x==y|k==0) {
+			k=0;
+			return;
+		}
 		a[x]++;
 		for(int i=0;++i<n;) {
 			if(b[x][i]>0&a[i]<1) {
@@ -33,7 +36,7 @@ public class P15971 {
 			p=Integer.parseInt(t.nextToken());
 			b[i][j]=b[j][i]=p;
 		}
-		o(i);
+		o(x);
 		System.out.println(l);
 	}
 }
