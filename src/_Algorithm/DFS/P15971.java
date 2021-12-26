@@ -5,6 +5,7 @@ public class P15971 {
 	static int n,x,y,i,j,k,p,a[],b[][];
 	static List<Integer>l;
 	static void o(int x) {
+		System.out.println(l);
 		if(x==y|k==0) {
 			k=0;
 			return;
