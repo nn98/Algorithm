@@ -47,5 +47,6 @@ public class P15971 {
 			else
 				p+=l.remove(j);
 		}
+		System.out.println(p);
 	}
 }
