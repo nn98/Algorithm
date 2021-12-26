@@ -11,6 +11,7 @@ public class P15971 {
 			if(b[x][i]>0&a[i]<1) {
 				l.add(b[x][i]);
 				o(i);
+				if(k>0)l.remove(l.size()-1);
 			}
 		}
 		a[x]--;
@@ -25,7 +26,7 @@ public class P15971 {
 		a=new int[n];
 		b=new int[n][n];
 		l=new ArrayList();
-		for(;k++<n;) {
+		for(;++k<n-1;) {
 			t=new StringTokenizer(r.readLine());
 			i=Integer.parseInt(t.nextToken());
 			j=Integer.parseInt(t.nextToken());
