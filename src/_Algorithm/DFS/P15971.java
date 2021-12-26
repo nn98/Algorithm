@@ -5,7 +5,7 @@ public class P15971 {
 	static int n,x,y,i,j,k,p,a[],b[][];
 	static List<Integer>l;
 	static void o(int x) {
-		System.out.println(l);
+//		System.out.println(l);
 		if(x==y|k==0) {
 			k=0;
 			return;
@@ -38,7 +38,7 @@ public class P15971 {
 			b[i][j]=b[j][i]=p;
 		}
 		o(x);
-		System.out.println(l);
+//		System.out.println(l);
 		p=0;
 		while(l.size()>1) {
 			if(l.get(0)<l.get(l.size()-1))
@@ -46,7 +46,7 @@ public class P15971 {
 			else
 				p+=l.remove(l.size()-1);
 		}
-		System.out.println(l);
+//		System.out.println(l);
 		System.out.println(p);
 	}
 }
