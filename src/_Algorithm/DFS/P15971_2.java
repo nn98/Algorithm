@@ -39,14 +39,18 @@ public class P15971_2 {
 		}
 		o(x);
 //		System.out.println(l);
-		p=0;
-		while(l.size()>1) {
-			if(l.get(0)<l.get(l.size()-1))
-				p+=l.remove(0);
-			else
-				p+=l.remove(l.size()-1);
+		k=p=0;
+		for(int z:l) {
+			p+=z;
+			k=k>z?k:z;
 		}
+//		while(l.size()>1) {
+//			if(l.get(0)<l.get(l.size()-1))
+//				p+=l.remove(0);
+//			else
+//				p+=l.remove(l.size()-1);
+//		}
 //		System.out.println(l);
-		System.out.println(p);
+		System.out.println(p-k);
 	}
 }
