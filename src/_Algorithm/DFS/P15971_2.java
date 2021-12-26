@@ -2,20 +2,16 @@ package _Algorithm.DFS;
 import java.io.*;
 import java.util.*;
 public class P15971_2 {
-	static int n,x,y,i,j,k,p,a[],b[][];
+	static int n,x,y,i,j,k,p,a[],b[][],d[],q[];
 	static List<Integer>l;
-	static void o(int x) {
+	static void o(int x,int u,int m) {
 //		System.out.println(l);
-		if(x==y|k==0) {
-			k=0;
-			return;
-		}
+		d[x]=u;
+		q[x]=m;
 		a[x]++;
 		for(int i=0;++i<n;) {
 			if(b[x][i]>0&a[i]<1) {
-				l.add(b[x][i]);
-				o(i);
-				if(k>0)l.remove(l.size()-1);
+				o(i,u+b[x][i],Math.max(b[x][i],m));
 			}
 		}
 		a[x]--;
@@ -28,6 +24,8 @@ public class P15971_2 {
 		x=Integer.parseInt(t.nextToken());
 		y=Integer.parseInt(t.nextToken());
 		a=new int[n];
+		d=new int[n];
+		q=new int[n];
 		b=new int[n][n];
 		l=new ArrayList();
 		for(;++k<n-1;) {
@@ -37,13 +35,13 @@ public class P15971_2 {
 			p=Integer.parseInt(t.nextToken());
 			b[i][j]=b[j][i]=p;
 		}
-		o(x);
+		o(x,0,0);
 //		System.out.println(l);
-		k=p=0;
-		for(int z:l) {
-			p+=z;
-			k=k>z?k:z;
-		}
+//		k=p=0;
+//		for(int z:l) {
+//			p+=z;
+//			k=k>z?k:z;
+//		}
 //		while(l.size()>1) {
 //			if(l.get(0)<l.get(l.size()-1))
 //				p+=l.remove(0);
@@ -51,6 +49,6 @@ public class P15971_2 {
 //				p+=l.remove(l.size()-1);
 //		}
 //		System.out.println(l);
-		System.out.println(p-k);
+		System.out.println(d[y]-q[y]);
 	}
 }
