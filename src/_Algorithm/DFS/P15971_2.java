@@ -4,7 +4,6 @@ import java.util.*;
 public class P15971_2 {
 	static int n,x,y,i,j,k,p,a[],b[][],d[],q[];
 	static void o(int x,int u,int m) {
-//		System.out.println(l);
 		d[x]=u;
 		q[x]=m;
 		a[x]++;
@@ -34,19 +33,6 @@ public class P15971_2 {
 			b[i][j]=b[j][i]=p;
 		}
 		o(x,0,0);
-//		System.out.println(l);
-//		k=p=0;
-//		for(int z:l) {
-//			p+=z;
-//			k=k>z?k:z;
-//		}
-//		while(l.size()>1) {
-//			if(l.get(0)<l.get(l.size()-1))
-//				p+=l.remove(0);
-//			else
-//				p+=l.remove(l.size()-1);
-//		}
-//		System.out.println(l);
 		System.out.println(d[y]-q[y]);
 	}
 }
