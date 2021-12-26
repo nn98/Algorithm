@@ -46,6 +46,7 @@ public class P15971 {
 			else
 				p+=l.remove(l.size()-1);
 		}
+		System.out.println(l);
 		System.out.println(p);
 	}
 }
