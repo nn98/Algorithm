@@ -3,7 +3,6 @@ import java.io.*;
 import java.util.*;
 public class P15971_2 {
 	static int n,x,y,i,j,k,p,a[],b[][],d[],q[];
-	static List<Integer>l;
 	static void o(int x,int u,int m) {
 //		System.out.println(l);
 		d[x]=u;
@@ -27,7 +26,6 @@ public class P15971_2 {
 		d=new int[n];
 		q=new int[n];
 		b=new int[n][n];
-		l=new ArrayList();
 		for(;++k<n-1;) {
 			t=new StringTokenizer(r.readLine());
 			i=Integer.parseInt(t.nextToken());
