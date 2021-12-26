@@ -39,5 +39,13 @@ public class P15971 {
 		}
 		o(x);
 		System.out.println(l);
+		p=i=0;
+		j=l.size()-1;
+		while(i<j) {
+			if(l.get(i)<l.get(j))
+				p+=l.remove(i);
+			else
+				p+=l.remove(j);
+		}
 	}
 }
