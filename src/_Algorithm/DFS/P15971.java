@@ -39,13 +39,12 @@ public class P15971 {
 		}
 		o(x);
 		System.out.println(l);
-		p=i=0;
-		j=l.size()-1;
-		while(i<j) {
-			if(l.get(i)<l.get(j))
-				p+=l.remove(i);
+		p=0;
+		while(l.size()>1) {
+			if(l.get(0)<l.get(l.size()-1))
+				p+=l.remove(0);
 			else
-				p+=l.remove(j);
+				p+=l.remove(l.size()-1);
 		}
 		System.out.println(p);
 	}
