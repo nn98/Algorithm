@@ -33,6 +33,6 @@ public class P15971_2 {
 			b[i][j]=b[j][i]=p;
 		}
 		o(x,0,0);
-		System.out.println(d[y]-q[y]);
+		System.out.print(d[y]-q[y]);
 	}
 }
