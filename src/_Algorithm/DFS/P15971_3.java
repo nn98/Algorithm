@@ -8,6 +8,9 @@ import java.util.StringTokenizer;
 
 public class P15971_3 {
 	static int n,x,y,i,j,k,p,a[],b[][],d[],q[];
+	static class N{
+		
+	}
 	static void o(int x,int u,int m) {
 		d[x]=u;
 		q[x]=m;
