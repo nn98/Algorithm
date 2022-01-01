@@ -5,7 +5,6 @@ import java.io.BufferedWriter;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 import java.util.StringTokenizer;
-
 public class P15971_3 {
 	static int n,x,y,i,j,k,p,a[],b[][],d[],q[];
 	static class N{
