@@ -6,6 +6,7 @@ import java.io.OutputStreamWriter;
 import java.util.StringTokenizer;
 public class P15971_3 {
 	static int n,x,y,i,j,k,p,v[];
+	static N[]b;
 	static class N{
 		int n,m;
 		N(int a,int b){
@@ -20,10 +21,8 @@ public class P15971_3 {
 		n=Integer.parseInt(t.nextToken())+1;
 		x=Integer.parseInt(t.nextToken());
 		y=Integer.parseInt(t.nextToken());
-		a=new int[n];
-		d=new int[n];
-		q=new int[n];
-		b=new int[n][n];
+		v=new int[n];
+		
 		for(;++k<n-1;) {
 			t=new StringTokenizer(r.readLine());
 			i=Integer.parseInt(t.nextToken());
