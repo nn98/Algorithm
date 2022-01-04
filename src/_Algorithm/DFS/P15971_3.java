@@ -17,6 +17,7 @@ public class P15971_3 {
 		}
 	}
 	static void o(int x,int m) {
+		System.out.println(x+" "+m);
 		if(x==y)p=m;
 		if(p>0)return;
 		v[x]++;
