@@ -3,6 +3,7 @@ import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.StringTokenizer;
 public class P15971_3 {
@@ -23,14 +24,15 @@ public class P15971_3 {
 		x=Integer.parseInt(t.nextToken());
 		y=Integer.parseInt(t.nextToken());
 		v=new int[n];
+		l=new List[n];
+		for(;++i<n;l[i]=new ArrayList());
 		for(;++k<n-1;) {
 			t=new StringTokenizer(r.readLine());
 			i=Integer.parseInt(t.nextToken());
 			j=Integer.parseInt(t.nextToken());
 			p=Integer.parseInt(t.nextToken());
-			b[i][j]=b[j][i]=p;
+			l[i].add(new N(j,p));
+			l[j].add(new N(i,p));
 		}
-		o(x,0,0);
-		System.out.print(d[y]-q[y]);
 	}
 }
