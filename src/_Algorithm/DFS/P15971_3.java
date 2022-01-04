@@ -27,6 +27,7 @@ public class P15971_3 {
 				m=m>n.m?m:n.m;
 				o(n.n,m);
 				if(p<1)k-=n.m;
+				if(p>0)return;
 			}
 		}
 		v[x]--;
