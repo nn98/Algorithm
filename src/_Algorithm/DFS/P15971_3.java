@@ -13,17 +13,6 @@ public class P15971_3 {
 			m=b;
 		}
 	}
-	static void o(int x,int u,int m) {
-		d[x]=u;
-		q[x]=m;
-		a[x]++;
-		for(int i=0;++i<n;) {
-			if(b[x][i]>0&a[i]<1) {
-				o(i,u+b[x][i],Math.max(b[x][i],m));
-			}
-		}
-		a[x]--;
-	}
 	public static void main(String[] args)throws Exception{
 		BufferedReader r=new BufferedReader(new InputStreamReader(System.in));
 		BufferedWriter w=new BufferedWriter(new OutputStreamWriter(System.out));
