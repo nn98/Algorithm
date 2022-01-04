@@ -61,5 +61,6 @@ public class P15971_4 {
 			l[a].add(new N(b,v,0));
 			l[b].add(new N(a,v,0));
 		}
+		System.out.println(R);
 	}
 }
