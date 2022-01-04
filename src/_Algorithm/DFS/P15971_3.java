@@ -7,7 +7,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.StringTokenizer;
 public class P15971_3 {
-	static int n,x,y,i,j,k,p,v[];
+	static int n,x,y,i,j,q,v[];
+	static long p,k;
 	static List<N>[]l;
 	static class N{
 		int n,m;
@@ -46,9 +47,9 @@ public class P15971_3 {
 			t=new StringTokenizer(r.readLine());
 			i=Integer.parseInt(t.nextToken());
 			j=Integer.parseInt(t.nextToken());
-			p=Integer.parseInt(t.nextToken());
-			l[i].add(new N(j,p));
-			l[j].add(new N(i,p));
+			q=Integer.parseInt(t.nextToken());
+			l[i].add(new N(j,q));
+			l[j].add(new N(i,q));
 		}
 		p=k=0;
 		o(x,0);
