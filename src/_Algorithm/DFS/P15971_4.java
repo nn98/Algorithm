@@ -22,6 +22,27 @@ public class P15971_4 {
 		}
 	}
 	
+	static void d() {
+		PriorityQueue<N>q=new PriorityQueue();
+		q.offer(new N(x,0,0));
+		while(!q.isEmpty()) {
+			L=q.poll();
+			a=L.x;
+			v=L.v;
+			b=L.m;
+			if(a==y) {
+				R=v-b;
+				break;
+			}
+			for(i=0;i<l[a].size();i++) {
+				int ne=l[a].get(i).x,nv=l[a].get(i).v;
+				if(d[ne]>v+nv) {
+					d[ne]=v+nv;
+					q.offer(new N(ne,v+nv,Math.max(b, nv)));
+				}
+			}
+		}
+	}
 	public static void main(String[] args)throws Exception{
 		BufferedReader r=new BufferedReader(new InputStreamReader(System.in));
 		BufferedWriter w=new BufferedWriter(new OutputStreamWriter(System.out));
