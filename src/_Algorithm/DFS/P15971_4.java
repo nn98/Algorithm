@@ -1,14 +1,10 @@
 package _Algorithm.DFS;
-
 import java.io.*;
 import java.util.*;
-
 public class P15971_4 {
-
 	static int n,x,y,i,R,v,a,b,d[];
 	static List<N>[]l;
 	static N L;
-	
 	static class N implements Comparable<N>{
 		int x,v,m;
 		N(int a,int b,int c){
@@ -21,7 +17,6 @@ public class P15971_4 {
 			return Integer.compare(v, n.v);
 		}
 	}
-	
 	static void d() {
 		PriorityQueue<N>q=new PriorityQueue();
 		q.offer(new N(x,0,0));
@@ -62,6 +57,6 @@ public class P15971_4 {
 			l[b].add(new N(a,v,0));
 		}
 		d();
-		System.out.println(R);
+		System.out.print(R);
 	}
 }
