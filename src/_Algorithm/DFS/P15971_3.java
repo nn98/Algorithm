@@ -16,6 +16,20 @@ public class P15971_3 {
 			m=b;
 		}
 	}
+	static void o(int x,int m) {
+		if(x==y)p=m;
+		if(p>0)return;
+		v[x]++;
+		for(N n:l[x]) {
+			if(v[n.n]<1) {
+				k+=n.m;
+				m=m>n.m?m:n.m;
+				o(n.n,m);
+				if(p<1)k-=n.m;
+			}
+		}
+		v[x]--;
+	}
 	public static void main(String[] args)throws Exception{
 		BufferedReader r=new BufferedReader(new InputStreamReader(System.in));
 		BufferedWriter w=new BufferedWriter(new OutputStreamWriter(System.out));
@@ -34,5 +48,8 @@ public class P15971_3 {
 			l[i].add(new N(j,p));
 			l[j].add(new N(i,p));
 		}
+		p=k=0;
+		o(x,0);
+		System.out.println(k-p);
 	}
 }
