@@ -8,7 +8,7 @@ import java.util.StringTokenizer;
 
 //BFS
 public class P17073 {
-
+	static int n,m,i,j,R;
 	public static void main(String[] args)throws Exception{
 		BufferedReader r=new BufferedReader(new InputStreamReader(System.in));
 		BufferedWriter w=new BufferedWriter(new OutputStreamWriter(System.out));
