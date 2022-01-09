@@ -11,9 +11,9 @@ public class P17073 {
 		BufferedReader r=new BufferedReader(new InputStreamReader(System.in));
 		BufferedWriter w=new BufferedWriter(new OutputStreamWriter(System.out));
 		StringTokenizer t=new StringTokenizer(r.readLine());
-		n=Integer.parseInt(t.nextToken())+1;
+		n=Integer.parseInt(t.nextToken());
 		m=Integer.parseInt(t.nextToken());
-		a=new int[n];
+		a=new int[n+1];
 		for(;++i<n;t=new StringTokenizer(r.readLine()),
 				a[Integer.parseInt(t.nextToken())]++,a[Integer.parseInt(t.nextToken())]++);
 		for(i=0;i++<n;)if(a[i]==1)R++;
