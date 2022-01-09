@@ -14,7 +14,7 @@ public class P17073 {
 		n=Integer.parseInt(t.nextToken())+1;
 		m=Integer.parseInt(t.nextToken());
 		a=new int[n];
-		for(;i++<n;t=new StringTokenizer(r.readLine()),
+		for(;++i<n;t=new StringTokenizer(r.readLine()),
 				a[Integer.parseInt(t.nextToken())]++,a[Integer.parseInt(t.nextToken())]++);
 		for(i=0;i++<n;)if(a[i]==1)R++;
 		System.out.println((double)m/R);
