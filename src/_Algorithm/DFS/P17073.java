@@ -17,6 +17,6 @@ public class P17073 {
 		for(;++i<n;t=new StringTokenizer(r.readLine()),
 				a[Integer.parseInt(t.nextToken())]++,a[Integer.parseInt(t.nextToken())]++);
 		for(i=0;i++<n;)if(a[i]==1)R++;
-		System.out.println((double)m/R);
+		System.out.println(String.format("%.10f",(double)m/R));
 	}
 }
