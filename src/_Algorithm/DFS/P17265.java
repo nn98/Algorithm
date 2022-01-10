@@ -49,8 +49,9 @@ public class P17265 {
 		A=new int[n][n];
 		for(int[]C:A)
 			Arrays.fill(C,Integer.MIN_VALUE);
-		for(int[]C:A)System.out.println(Arrays.toString(C));
 		B=new int[n][n];
+		for(int[]C:B)
+			Arrays.fill(C,Integer.MAX_VALUE);
 		d=new String[n][n];
 		for(;i<n;i++,j=0)
 			for(String s:r.readLine().split(" "))d[i][j++]=s;
