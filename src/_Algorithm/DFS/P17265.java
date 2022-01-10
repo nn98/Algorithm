@@ -17,6 +17,7 @@ public class P17265 {
 		}
 	}
 	static void p(int x,int y,int z) {
+		System.out.println(String.format("%d %d %d",x,y,z));
 		A[x][y]=z;
 		if(x<n-2) {
 			o(z,Integer.parseInt(d[x+2][y]),d[x+1][y]);
