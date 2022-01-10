@@ -53,5 +53,6 @@ public class P17265 {
 			for(String s:r.readLine().split(" "))d[i][j++]=s;
 		p(0,0,0);
 		q(0,0,0);
+		System.out.println(A[n-1][n-1]+" "+B[n-1][n-1]);
 	}
 }
