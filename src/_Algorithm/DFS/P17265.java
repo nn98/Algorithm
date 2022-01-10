@@ -51,6 +51,7 @@ public class P17265 {
 		d=new String[n][n];
 		for(;i<n;i++,j=0)
 			for(String s:r.readLine().split(" "))d[i][j++]=s;
-
+		p(0,0,0);
+		q(0,0,0);
 	}
 }
