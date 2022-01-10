@@ -17,7 +17,6 @@ public class P17265 {
 		}
 	}
 	static void p(int x,int y,int z) {
-		System.out.println(String.format("%d %d %d",x,y,z));
 		A[x][y]=z;
 		if(x<n-2) {
 			o(z,Integer.parseInt(d[x+2][y]),d[x+1][y]);
@@ -56,7 +55,6 @@ public class P17265 {
 		d=new String[n][n];
 		for(;i<n;i++,j=0)
 			for(String s:r.readLine().split(" "))d[i][j++]=s;
-		for(String[]z:d)System.out.println(Arrays.toString(z));
 		p(0,0,Integer.parseInt(d[0][0]));
 		q(0,0,Integer.parseInt(d[0][0]));
 		System.out.println(A[n-1][n-1]+" "+B[n-1][n-1]);
