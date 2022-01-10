@@ -47,7 +47,8 @@ public class P17265 {
 		BufferedWriter w=new BufferedWriter(new OutputStreamWriter(System.out));
 		n=Integer.parseInt(r.readLine());
 		A=new int[n][n];
-		Arrays.fill(A,Integer.MIN_VALUE);
+		for(int[]C:A)
+			Arrays.fill(C,Integer.MIN_VALUE);
 		for(int[]C:A)System.out.println(Arrays.toString(C));
 		B=new int[n][n];
 		d=new String[n][n];
