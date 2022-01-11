@@ -16,33 +16,14 @@ public class P17265_2 {
 			a=x*y;
 		}
 	}
-	static void p(int x,int y,int z) {
-		System.out.println(String.format("%d %d %d",x,y,z));
-		A[x][y]=z;
-		if(x<n-2) {
-			o(z,Integer.parseInt(d[x+2][y]),d[x+1][y]);
-			if(A[x+2][y]<a)
-				p(x+2,y,a);
-		}
-		if(y<n-2) {
-			o(z,Integer.parseInt(d[x][y+2]),d[x][y+1]);
-			if(A[x][y+2]<a)
-				p(x,y+2,a);
+	static void p(int x,int y) {
+		if(x%2>0&y%2>0) {
+			if(x>0) {
+				
+			}
 		}
 	}
-	static void q(int x,int y,int z) {
-		System.out.println(String.format("%d %d %d",x,y,z));
-		B[x][y]=z;
-		if(x<n-2) {
-			o(z,Integer.parseInt(d[x+2][y]),d[x+1][y]);
-			if(B[x+2][y]>a)
-				q(x+2,y,a);
-		}
-		if(y<n-2) {
-			o(z,Integer.parseInt(d[x][y+2]),d[x][y+1]);
-			if(B[x][y+2]>a)
-				q(x,y+2,a);
-		}
+	static void q(int x,int y) {
 	}
 	public static void main(String[] args)throws Exception{
 		BufferedReader r=new BufferedReader(new InputStreamReader(System.in));
@@ -57,8 +38,8 @@ public class P17265_2 {
 		d=new String[n][n];
 		for(;i<n;i++,j=0)
 			for(String s:r.readLine().split(" "))d[i][j++]=s;
-		p(0,0,Integer.parseInt(d[0][0]));
-		q(0,0,Integer.parseInt(d[0][0]));
+		p(0,0);
+		q(0,0);
 		System.out.println(A[n-1][n-1]+" "+B[n-1][n-1]);
 	}
 }
