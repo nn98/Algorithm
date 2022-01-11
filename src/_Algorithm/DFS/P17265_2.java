@@ -1,8 +1,6 @@
 package _Algorithm.DFS;
-
 import java.io.*;
 import java.util.*;
-
 public class P17265_2 {
 	static int n,i,j,a,A[][],B[][];
 	static String[][]d;
