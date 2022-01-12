@@ -23,8 +23,6 @@ public class P17265_2 {
 			}
 		}
 	}
-	static void q(int x,int y) {
-	}
 	public static void main(String[] args)throws Exception{
 		BufferedReader r=new BufferedReader(new InputStreamReader(System.in));
 		BufferedWriter w=new BufferedWriter(new OutputStreamWriter(System.out));
