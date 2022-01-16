@@ -1,8 +1,5 @@
 package _Algorithm.DFS;
-import java.io.BufferedReader;
-import java.io.BufferedWriter;
-import java.io.InputStreamReader;
-import java.io.OutputStreamWriter;
+import java.io.*;
 public class P17265_3 {
 	static int n;
 	public static void main(String[] args)throws Exception{
