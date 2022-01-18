@@ -38,5 +38,6 @@ public class P17265_3 {
 		for(;i<n;a[i++]=r.readLine().split(" "));
 		i=0;
 		o(0,0);
+		System.out.print(L+" "+S);
 	}
 }
