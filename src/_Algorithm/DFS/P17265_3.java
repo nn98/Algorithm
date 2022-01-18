@@ -1,13 +1,12 @@
 package _Algorithm.DFS;
 import java.io.*;
 public class P17265_3 {
-	static int n,i,j,r,L,S;
+	static int n,i,j,r,L,S=5^5;
 	static String[][]a;
 	static char[]b;
 	static void o(int x,int y) {
 		b[i++]=a[x][y].charAt(0);
 		if(x==n-1&y==n-1) {
-			System.out.println(b);
 			r=b[0]-'0';
 			for(j=0;++j<n*2-1;) {
 				switch(b[j++]){
@@ -21,7 +20,6 @@ public class P17265_3 {
 					r*=b[j]-'0';
 				}
 			}
-//			System.out.println("\t"+r);
 			L=L>r?L:r;
 			S=S<r?S:r;
 		}else {
