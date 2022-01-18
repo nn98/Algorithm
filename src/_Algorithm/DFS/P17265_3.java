@@ -29,7 +29,6 @@ public class P17265_3 {
 		i--;
 	}
 	public static void main(String[] args)throws Exception{
-		System.out.println(S);
 		BufferedReader r=new BufferedReader(new InputStreamReader(System.in));
 		BufferedWriter w=new BufferedWriter(new OutputStreamWriter(System.out));
 		n=Integer.parseInt(r.readLine());
