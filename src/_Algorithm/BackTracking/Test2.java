@@ -11,7 +11,7 @@ public class Test2 {
 			System.out.println(b);
 		else 
 			for(int j=0;++j<n;) {
-				if(a[j]<1) {
+				if(true) {
 					a[j]++;
 					b[i++]=(char)(j+'0');
 					o();
