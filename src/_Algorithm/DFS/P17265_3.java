@@ -1,6 +1,6 @@
 package _Algorithm.DFS;
 import java.io.*;
-public class P17265_3 {
+public class P17265_3{
 	static int n,i,j,r,L=Integer.MIN_VALUE,S=Integer.MAX_VALUE;
 	static String[][]a;
 	static char[]b;
