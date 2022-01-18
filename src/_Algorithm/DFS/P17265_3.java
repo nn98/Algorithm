@@ -1,7 +1,7 @@
 package _Algorithm.DFS;
 import java.io.*;
 public class P17265_3 {
-	static int n,i,j,r,L,S=5^5;
+	static int n,i,j,r,L,S=3125;
 	static String[][]a;
 	static char[]b;
 	static void o(int x,int y) {
