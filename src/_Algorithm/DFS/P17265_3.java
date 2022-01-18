@@ -25,7 +25,7 @@ public class P17265_3 {
 			S=S<r?S:r;
 		}else {
 			if(x<n-1)o(x+1,y);
-			if(y<n-1)o(x,y+1);
+			else if(y<n-1)o(x,y+1);
 		}
 		i--;
 	}
