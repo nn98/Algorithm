@@ -9,8 +9,8 @@ public class P17265_3 {
 		if(x==n-1&y==n-1) {
 			System.out.println(b);
 			r=b[0]-'0';
-			for(j=1;j<n*2-1;j+=2) {
-				switch(b[j]){
+			for(j=0;++j<n*2-1;) {
+				switch(b[j++]){
 				case '+':
 					r+=b[j]-'0';
 					break;
@@ -21,6 +21,7 @@ public class P17265_3 {
 					r*=b[j]-'0';
 				}
 			}
+//			System.out.println("\t"+r);
 			L=L>r?L:r;
 			S=S<r?S:r;
 		}else {
