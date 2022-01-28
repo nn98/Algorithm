@@ -11,7 +11,7 @@ public class P22352 {
 		StringTokenizer t=new StringTokenizer(r.readLine());
 		n=Integer.parseInt(t.nextToken());
 		m=Integer.parseInt(t.nextToken());
-		a=new int[n][m];
+		a=new int[2][n][m];
 		for(;i<2;i++)
 			for(j=0;j<n;j++) {
 				t=new StringTokenizer(r.readLine());
