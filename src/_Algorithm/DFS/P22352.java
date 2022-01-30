@@ -15,7 +15,7 @@ public class P22352 {
 		for(;i<2;i++)
 			for(j=0;j<n;j++) {
 				t=new StringTokenizer(r.readLine());
-				for(k=0;j<n;a[i][j][k++]=Integer.parseInt(t.nextToken()));
+				for(k=0;j<m;a[i][j][k++]=Integer.parseInt(t.nextToken()));
 			}
 		o(0);
 	}
