@@ -4,6 +4,7 @@ import java.util.*;
 public class P22352 {
 	static int n,m,i,j,k,a[][][];
 	static void o(int x) {
+		
 	}
 	public static void main(String[] args)throws Exception{
 		BufferedReader r=new BufferedReader(new InputStreamReader(System.in));
