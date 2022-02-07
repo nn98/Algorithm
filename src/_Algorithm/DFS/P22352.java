@@ -2,7 +2,7 @@ package _Algorithm.DFS;
 import java.io.*;
 import java.util.*;
 public class P22352 {
-	static int n,m,i,j,k,a[][][];
+	static int n,m,i,j,k,a[][][],R;
 	static void o(int x) {
 		
 	}
@@ -18,5 +18,6 @@ public class P22352 {
 				for(k=0;j<m;a[i][j][k++]=Integer.parseInt(t.nextToken()));
 			}
 		o(0);
+		System.out.println(R==0?"NO":"YES");
 	}
 }
