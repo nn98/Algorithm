@@ -18,6 +18,6 @@ public class P22352 {
 				for(k=0;j<m;a[i][j][k++]=Integer.parseInt(t.nextToken()));
 			}
 		o(0);
-		System.out.println(R==0?"NO":"YES");
+		System.out.print(R==0?"NO":"YES");
 	}
 }
