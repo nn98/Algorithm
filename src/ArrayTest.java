@@ -29,7 +29,7 @@ public class ArrayTest { //메인클라스 ArrayTest
 				
 			    /*above[] = i;//배열 above에 저장*/
 			}
-			System.out.println("평균 이상 = " + above[i]); // 평균 이상인 정수배열 above 출력
+			/*System.out.println("평균 이상 = " + above[i]); // 평균 이상인 정수배열 above 출력*/
 		}
 		scanner.close(); //스캐너 닫기
 
