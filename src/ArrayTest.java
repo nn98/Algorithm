@@ -26,7 +26,8 @@ public class ArrayTest { //메인클라스 ArrayTest
 		//평균 이상 출력
 		for(int i=0; i<=array.length; i++) {
 			if (array[i] >= avg) {//만약 i가 평균보다 크다면
-				above[] = i;//배열 above에 저장
+				
+			    /*above[] = i;//배열 above에 저장*/
 			}
 			System.out.println("평균 이상 = " + above[i]); // 평균 이상인 정수배열 above 출력
 		}
