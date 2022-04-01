@@ -1,6 +1,5 @@
 
 import java.util.*;
-
 public class ArrayTest { //메인클라스 ArrayTest
 	public static void main(String[] args) {
 		System.out.println("hw3_2 : 황창훈");
