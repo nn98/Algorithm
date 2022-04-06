@@ -10,7 +10,7 @@ public class DBTest {
 		try {
 			Connection con = null;
 			con = DriverManager.getConnection("jdbc:mysql://localhost:3306/?serverTimezone=UTC&useSSL=false &allowPublicKeyRetrieval=true",
-					"Y_Home", "q192837q*");
+					"root", "qq192837qq*");
 			java.sql.Statement st = null;
 			ResultSet rs = null;
 			st = con.createStatement();
