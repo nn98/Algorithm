@@ -15,7 +15,7 @@ public class DBTest {
 			ResultSet rs = null;
 			st = con.createStatement();
 			
-			st.executeQuery("use 6202_pc;");
+			st.executeUpdate("use 6202_pc;");
 			for(int i=1;i<43;i++) {
 				sql = "create table pc"+String.format("%02d", i)+" (" + 
 						"PC_NUMBER int(3) unsigned not null," + 
