@@ -1,62 +1,81 @@
+import java.util.ArrayList;
 public class Main {
-
 	public static void main(String[] args) {
-		System.out.println("hw3_2: 성현우");
-		
-		//정수 배열
-		int[] array1 = {10, 20, 30, 999, 50, 60, 999, 70, 999, 90};
-		int[] array2 = {90, 20, 30, 40, 50, 60, 70, 10};
-		int[] array3 = {-20, -30, -40, -50, -60, -70, -80, -90, -10};
-		
-		// printArr 호출 및 배열의 원소 출력하기
-		printArr(array1);
+		System.out.println("hw5_1 : 김예훈");
+		ArrayList<Integer> list1 = new ArrayList<Integer>();
+
+		for (int i =1; i<11; i++)
+			list1.add(i);
+
+
+		System.out.println(list1);
+		list1.add(10,777);
+		list1.add(0,888);
+		list1.add(5,999);
+		System.out.println(list1);
+		int sum=list1.remove(12);
+		sum+=list1.remove(4);
+		sum+=list1.remove(0);
+		System.out.println(list1 + " 삭제원소합 = "+sum);
 		System.out.println();
-		
-		//max 호출 후 array1의 최대값을 인덱스에 저장
-		int maxIndex1 = max(array1);
-		System.out.print("최대값 인덱스 = " + maxIndex1 + " "); // 인덱스
-		System.out.print("최대값 = " + array1[maxIndex1]); // 최대값
-		System.out.println();
-		
-		
-		printArr(array2);
-		System.out.println();
-		
-		int maxIndex2 = max(array2);
-		System.out.print("최대값 인덱스 = " + maxIndex2 + " "); // 인덱스
-		System.out.print("최대값 = " + array2[maxIndex2]); // 최대값
-		System.out.println();
-		
-		
-		printArr(array3);
-		System.out.println();
-		
-		int maxIndex3 = max(array3);
-		System.out.print("최대값 인덱스 = " + maxIndex3 + " "); // 인덱스
-		System.out.print("최대값 = " + array3[maxIndex3]); // 최대값
+
+		//		
+		MyArrayList list2 = new MyArrayList(100);
+		for (int i =1; i<11; i++)
+			list2.add(i);
+		System.out.println(list2);
+		list2.add(10,777);
+		list2.add(0,888);
+		list2.add(5,999);
+		System.out.println(list2);
+		sum=list2.remove(12);
+		sum+=list2.remove(4);
+		sum+=list2.remove(0);
+		System.out.println(list2 + " 삭제원소합 = "+sum);
 		System.out.println();
 	}
 
-		// 정수 배열을 매개 변수로 받아서 배열 원소를 모두 출력
-		private static void printArr(int[] array) {
-			for (int i = 0; i < array.length; i++) { // 배열 길이 만큼 반복후 모두 출력
-				System.out.print(array[i] + " ");
-			}
+}
+
+class MyArrayList{
+	private int[] listArray;
+	private int listLength;
+
+	public MyArrayList(int capacity) {
+		listArray = new int[capacity];
+		listLength=0;
+	}
+
+	public void add(int item) {
+		listArray[listLength++] = item;
+	}
+
+	public void add (int i,int j) {
+		for(int y=listLength; y>i; y--) {
+			listArray[y] = listArray[y-1];
 		}
-		
-		// 정수 배열을 매개 변수로 받아서 최대값 원소 인덱스를 리턴
-		
-		private static int max(int[] array) {
-			int maxIndex = 0;
-			int maxValue = array[0]; 
-			
-			
-			for(int i = 1; i < array.length; i++) {		// i = 1
-				if (maxValue < array[i]) {
-						maxValue = array[i];
-						maxIndex = i;
-				}
-			}
-			return maxIndex;	
+		listArray[i] = j;
+		listLength++;
+	}
+
+	public int remove(int i) {
+		int d = listArray[i]; 
+		for(int j = i; j< listLength-1; j++)
+			listArray[j] = listArray[j+1];
+		listLength--;
+		return d;
+	}
+
+	@Override 
+	public String toString() {
+		String result = "(";
+		for(int i =0; i<listLength-1; i++) {
+			result+=listArray[i];
+			result+=", ";
 		}
+		result+= listArray[listLength-1];
+		result+=")";
+		return result;
+
+	}
 }
