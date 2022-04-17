@@ -88,7 +88,7 @@ public class MyLinkedList {
     	Node temp = head;
     	if(listLength > 0) {
     		for(int i=0;i<listLength-1;i++) {
-    			result.append(i+", ");
+    			result.append(temp.data+", ");
     			temp = temp.link;
     		}
     		result.append(temp.data);
