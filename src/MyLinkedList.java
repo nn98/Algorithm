@@ -51,9 +51,7 @@ public class MyLinkedList {
 		Node temp = node(index-1);
 		Node delData = temp.link;
 		int returnData = delData.data; //삭제할값 리턴
-//		while (temp.link != null) {
-//			temp = temp.link;
-//		}
+		while(temp.link!=null)temp=temp.link;
 		temp.link=delData.link;
 		delData = null;
 		listLength--;
