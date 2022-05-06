@@ -8,7 +8,10 @@ public class P2018_2 {
 	    System.out.println(u);
 	    while(u<n)u+=j++;
 	    while(u>n)u-=i++;
-	    if(n==u)r++;
+	    if(n==u) {
+		r++;
+		u-=i++;
+	    }
 	}
 	System.out.println(r);
     }
