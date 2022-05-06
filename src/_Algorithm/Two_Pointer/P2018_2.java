@@ -10,6 +10,7 @@ public class P2018_2 {
 	    while(u>n)u-=i++;
 	    if(n==u) {
 		r++;
+		System.out.println(u+" "+j+" -"+i);
 		u-=i++;
 	    }
 	}
