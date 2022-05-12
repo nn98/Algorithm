@@ -57,7 +57,6 @@ public class P10999_7 {
 	a=new long[l*2];
 	b=new long[l*2];
 	for(;i<n;j=l+(int)i++,a[j]=Long.parseLong(r.readLine()),o());
-	System.out.println(Arrays.toString(a));
 	while(m-->0){
 	    t=new StringTokenizer(r.readLine());
 	    s=t.nextToken();
