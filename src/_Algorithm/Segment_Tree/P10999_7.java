@@ -66,7 +66,7 @@ public class P10999_7 {
 	    x=Integer.parseInt(t.nextToken());
 	    y=Integer.parseInt(t.nextToken());
 	    if(s.equals("1")){
-		i=Integer.parseInt(t.nextToken());
+		i=Long.parseLong(t.nextToken());
 		u(1,1,l);
 	    }else System.out.println(U(1,1,l));
 	}
