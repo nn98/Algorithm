@@ -1,9 +1,6 @@
 package _Algorithm.Greedy;
-
-import java.util.*;
 import java.io.*;
 public class P11047 {
-
     static int a[]=new int[2],b[],i,j;
     public static void main(String[] args)throws Exception{
 	BufferedReader r=new BufferedReader(new InputStreamReader(System.in));
@@ -13,5 +10,4 @@ public class P11047 {
 	for(i=a[0];i-->0&a[1]>0;j+=a[1]/b[i],a[1]%=b[i]);
 	System.out.print(j);
     }
-
 }
