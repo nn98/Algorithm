@@ -11,7 +11,7 @@ public class P17300 {
 	    j=Integer.parseInt(i)-1;
 	    a[j/3][j%3]++;
 	}
-	for(String[]i:a) {
+	for(int[]i:a) {
 	    System.out.println(Arrays.toString(i));
 	}
     }
