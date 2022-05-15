@@ -6,16 +6,17 @@ public class P1388_2 {
 
     static int n[]=new int[2],i,j,h[][],R;
     static char[][]a;
-    static void o(int i,int j,char c) {
+    static void o(int i,int j,int x) {
 	h[i][j]++;
-	char d=a[i][j];
-	System.out.print(i+" "+j+" c:"+c+" d:"+d);
-	R+=c==d?0:1;
-	System.out.println(c==d?"":"+1");
-	if(i<n[0]-1)if(h[i+1][j]<1)o(i+1,j,d=='|'?d:0);
-	if(j<n[1]-1)if(h[i][j+1]<1)o(i,j+1,d=='-'?d:0);
-	if(i>0)if(h[i-1][j]<1)o(i-1,j,d=='|'?d:0);
-	if(j>0)if(h[i][j-1]<1)o(i,j-1,d=='-'?d:0);
+	R+=x;
+	if(i<n[0]-1)if(h[i+1][j]<1)if(a[i+1][j]=='|')o(i+1,j,0);
+	if(i>0)if(h[i-1][j]<1)if(a[i-1][j]=='|')o(i-1,j,0);
+    }
+    static void p(int i,int j,int x) {
+	h[i][j]++;
+	R+=x;
+	if(j<n[1]-1)if(h[i][j+1]<1)if(a[i][j+1]=='-')p(i,j+1,0);
+	if(j>0)if(h[i][j-1]<1)if(a[i][j-1]=='-')p(i,j-1,0);
     }
     public static void main(String[] args)throws Exception{
 	BufferedReader r=new BufferedReader(new InputStreamReader(System.in));
@@ -23,7 +24,7 @@ public class P1388_2 {
 	h=new int[n[0]][n[1]];
 	a=new char[n[0]][];
 	for(;i<n[0];a[i++]=r.readLine().toCharArray());
-	o(0,0,'0');
+	for(;j<n[0];j++)for(i=0;i<n[1];i++)if(h[j][i]<1)if(a[j][i]=='|')o(j,i,1);else p(j,i,1);
 	System.out.println(R);
     }
 
