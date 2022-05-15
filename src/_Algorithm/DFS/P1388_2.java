@@ -22,6 +22,13 @@ public class P1388_2 {
     }
     static void p(int i,int j,int x) {
 	h[i][j]++;
+	for(int[]b:h)System.out.println(Arrays.toString(b));
+	try {
+	    Thread.sleep(500);
+	} catch (InterruptedException e) {
+	    // TODO Auto-generated catch block
+	    e.printStackTrace();
+	}
 	R+=x;
 	if(j<n[1]-1)if(h[i][j+1]<1)if(a[i][j+1]=='-')p(i,j+1,0);
 	if(j>0)if(h[i][j-1]<1)if(a[i][j-1]=='-')p(i,j-1,0);
@@ -32,7 +39,7 @@ public class P1388_2 {
 	h=new int[n[0]][n[1]];
 	a=new char[n[0]][];
 	for(;i<n[0];a[i++]=r.readLine().toCharArray());
-	for(;j<n[0];j++)for(i=0;i<n[1];i++)if(h[j][i]<1)if(a[j][i]=='|')o(j,i,1);else p(j,i,1);
+	for(j=0;j<n[0];j++)for(i=0;i<n[1];i++)if(h[j][i]<1)if(a[j][i]=='|')o(j,i,1);else p(j,i,1);
 	System.out.println(R);
     }
 
