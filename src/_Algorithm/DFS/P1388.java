@@ -10,8 +10,9 @@ public class P1388 {
     static void o(int i,int j,char c) {
 	h[i][j]++;
 	char d=a[i][j];
+	System.out.print(i+" "+j+" c:"+c+" d:"+d);
 	R+=c==d?0:1;
-	System.out.println(i+" "+j+" c:"+c+" d:"+d);
+	System.out.println(c==d?"":"+1");
 	if(i<n[0]-1)if(h[i+1][j]<1)o(i+1,j,d=='|'?d:0);
 	if(j<n[1]-1)if(h[i][j+1]<1)o(i,j+1,d=='-'?d:0);
     }
