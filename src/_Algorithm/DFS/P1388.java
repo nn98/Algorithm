@@ -15,6 +15,8 @@ public class P1388 {
 	System.out.println(c==d?"":"+1");
 	if(i<n[0]-1)if(h[i+1][j]<1)o(i+1,j,d=='|'?d:0);
 	if(j<n[1]-1)if(h[i][j+1]<1)o(i,j+1,d=='-'?d:0);
+	if(i>0)if(h[i-1][j]<1)o(i-1,j,d=='|'?d:0);
+	if(j>0)if(h[i][j-1]<1)o(i,j-1,d=='-'?d:0);
     }
     public static void main(String[] args)throws Exception{
 	BufferedReader r=new BufferedReader(new InputStreamReader(System.in));
