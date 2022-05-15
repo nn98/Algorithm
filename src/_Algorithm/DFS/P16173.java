@@ -1,10 +1,7 @@
 package _Algorithm.DFS;
-
 import java.io.*;
 import java.util.*;
-
 public class P16173 {
-
     static int n,m,i,j,k,a[][],h[][],R;
     static void o(int x,int y) {
 	if(a[x][y]==-1|R>0) {
@@ -29,5 +26,4 @@ public class P16173 {
 	o(0,0);
 	System.out.println(R==0?"Hing":"HaruHaru");
     }
-
 }
