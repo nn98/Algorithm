@@ -10,6 +10,7 @@ public class P1388_2 {
     static void o(int i,int j,int x) {
 	h[i][j]++;
 	for(int[]b:h)System.out.println(Arrays.toString(b));
+	System.out.println();
 	try {
 	    Thread.sleep(500);
 	} catch (InterruptedException e) {
