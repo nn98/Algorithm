@@ -12,7 +12,7 @@ public class P1388_2 {
 	for(int[]b:h)System.out.println(Arrays.toString(b));
 	System.out.println();
 	try {
-	    Thread.sleep(500);
+	    Thread.sleep(300);
 	} catch (InterruptedException e) {
 	    // TODO Auto-generated catch block
 	    e.printStackTrace();
@@ -25,7 +25,7 @@ public class P1388_2 {
 	h[i][j]++;
 	for(int[]b:h)System.out.println(Arrays.toString(b));
 	try {
-	    Thread.sleep(500);
+	    Thread.sleep(300);
 	} catch (InterruptedException e) {
 	    // TODO Auto-generated catch block
 	    e.printStackTrace();
