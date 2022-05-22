@@ -5,6 +5,7 @@
 ###### [Sep by Alg](https://github.com/nn98/Algorithm/tree/master/src/_Algorithm)   
 ###### [Before Sep](https://github.com/nn98/Algorithm/tree/master/src/BaekJoon)   
 https://stonejjun.tistory.com/92 https://viyoung.tistory.com/150 https://moonrabbit2.tistory.com/4
+[Repo is corrupted](https://forums.spirent.com/questions/10736/could-not-launch-the-product-because-the-specified.html)
 <details><summary>Solved List</summary>
   
 [1000](https://www.acmicpc.net/problem/1000) [1001](https://www.acmicpc.net/problem/1001) [1002](https://www.acmicpc.net/problem/1002) [1003](https://www.acmicpc.net/problem/1003) [1004](https://www.acmicpc.net/problem/1004) [1005](https://www.acmicpc.net/problem/1005) [1008](https://www.acmicpc.net/problem/1008) [1009](https://www.acmicpc.net/problem/1009) [1010](https://www.acmicpc.net/problem/1010) [1011](https://www.acmicpc.net/problem/1011)
