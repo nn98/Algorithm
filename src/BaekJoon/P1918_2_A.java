@@ -1,8 +1,7 @@
 package BaekJoon;
+importaekJoon.P1918.Node;
 
-import java.util.Scanner;
-
-public class P1918_2_A {
+public class P1918 {
 	
 	static class Node{
 		String v;

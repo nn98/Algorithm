@@ -1,7 +1,7 @@
 package BaekJoon;
 import java.util.Scanner;
 
-public class P6064_2_A {
+public class P6064 {
 
 	static int GCD(int a,int b) {
 		while(b!=0) {

@@ -7,7 +7,7 @@ import java.io.OutputStreamWriter;
 import java.math.BigInteger;
 import java.util.Scanner;
 
-public class P15964_A {
+public class P15964 {
 
 	public static void main(String[] args) throws IOException {
 		// TODO Auto-generated method stub

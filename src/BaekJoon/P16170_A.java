@@ -1,6 +1,6 @@
 package BaekJoon;
 
-public class P16170_A {
+public class P16170 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub

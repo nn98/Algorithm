@@ -1,6 +1,6 @@
 package BaekJoon;
 
-public class P15596_A {
+public class P15596 {
 
 	static long sum(int[] a) {
 		int r=0;

@@ -1,5 +1,4 @@
 package BaekJoon;
-
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.IOException;
@@ -10,7 +9,7 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.StringTokenizer;
 
-public class P1764_2_A {
+public class P1764 {
 
 	public static void main(String[] args) throws IOException {
 		BufferedReader bf=new BufferedReader(new InputStreamReader(System.in));
