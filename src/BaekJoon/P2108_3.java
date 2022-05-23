@@ -3,7 +3,7 @@ package BaekJoon;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class P2108 {
+public class P2108_3 {
 	
 	static void swap(int[] arr,int i,int j) {
 		int t=arr[i];

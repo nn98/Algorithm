@@ -1,7 +1,6 @@
 package BaekJoon;
-importaekJoon.P1918.Node;
 
-public class P1918 {
+public class P1918_2_A {
 	
 	static class Node{
 		String v;

@@ -1,7 +1,7 @@
 package BaekJoon;
 import java.util.Scanner;
 
-public class P1697 {
+public class P1697_3 {
 
 	static int t,min=Integer.MAX_VALUE;
 	static boolean f=false;

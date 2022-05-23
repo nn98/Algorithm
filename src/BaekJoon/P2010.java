@@ -1,4 +1,4 @@
-package insert;
+package BaekJoon;
 
 import java.math.BigInteger;
 import java.util.Scanner;

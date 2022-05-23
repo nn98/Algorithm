@@ -1,7 +1,7 @@
 package BaekJoon;
 import java.util.Scanner;
 
-public class P14490 {
+public class P14490_A {
 	
 	static int GCF(int a,int b) {
 		while(b!=0) {

@@ -2,7 +2,7 @@ package BaekJoon;
 
 import java.util.Scanner;
 
-public class P15668 {
+public class P15668_2 {
 
 	static boolean sol(int a,int b) {
 		int[] arr=new int[10];

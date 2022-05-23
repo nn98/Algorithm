@@ -1,9 +1,9 @@
-package Baekjoon;
+package BaekJoon;
 
 import java.util.Scanner;
 
 public class P1436_C {
-	//6의 개수
+	//6�� 媛���
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Scanner s=new Scanner(System.in);

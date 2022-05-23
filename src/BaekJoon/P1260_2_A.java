@@ -5,7 +5,7 @@ import java.util.Collections;
 import java.util.Queue;
 import java.util.Scanner;
 
-public class P1260 {
+public class P1260_2_A {
 
 	static int N;
 	static ArrayList<Integer>[] arr;
