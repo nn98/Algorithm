@@ -1,4 +1,4 @@
-package insert;
+package BaekJoon;
 
 public class Example1 { 
 	static void print(int[] a) { 
