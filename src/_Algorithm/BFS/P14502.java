@@ -31,10 +31,10 @@ public class P14502{
 	a=new String[n+2][m+2];
 	for(;i++<n;) {
 	    t=new StringTokenizer(r.readLine());
-	    for(j=0;j++<m;S+=(a[i][j]=t.nextToken()).equals("0")?1:0);
+	    for(j=0;j++<m;S+=(a[i][j]=t.nextToken()).equals("1")?1:0);
 	}
 	//	for(String[]s:a)System.out.println(Arrays.toString(s));
-	System.out.println(R+" "+S);
+//	System.out.println(R+" "+S);
 	for(int a1=0;a1++<n;)
 	    for(int a2=0;a2++<m;) {
 		if(a[a1][a2].equals("0")) {
@@ -58,20 +58,19 @@ public class P14502{
 //							    for(int[]ZZ:h)System.out.println(Arrays.toString(ZZ));
 //						    s+=P<1?0:C;
 						    if(P>0) {
-							System.out.print("°¨¿° +"+C);
+//							System.out.print("°¨¿° +"+C);
 							s+=C;
-						    }else System.out.print(" ºñ°¨¿° +"+C);
+						    }
+//						    else System.out.print(" ºñ°¨¿° +"+C);
 							}
 						}
 					    }
-						System.out.println(
-							String.format(
-								" = ÃÑ °¨¿°:%d",s));
+//						System.out.println(String.format(" = ÃÑ °¨¿°:%d",s));
 						if(s==0)return;
 //						R=R<s?R:s;
 						if(s<R) {
-						    System.out.println("ÃÖÀúÄ¡ °æ½Å: "+s);
-						    for(String[]s:a)System.out.println(Arrays.toString(s));
+//						    System.out.println("ÃÖÀúÄ¡ °æ½Å: "+s);
+//						    for(String[]s:a)System.out.println(Arrays.toString(s));
 						    R=s;
 						}
 						s=0;
@@ -84,6 +83,7 @@ public class P14502{
 		    a[a1][a2]="0";
 		}
 	    }
-	System.out.println("°¨¿° ÃÖÀúÄ¡: "+R);
+//	System.out.println("°¨¿° ÃÖÀúÄ¡: "+R);
+	System.out.println(n*m-R-S-3);
     }
 }
