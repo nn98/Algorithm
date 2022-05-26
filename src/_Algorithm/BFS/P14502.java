@@ -47,19 +47,21 @@ public class P14502{
 				    for(int c2=b2;c2++<m;)
 					if(a[c1][c2].equals("0")) {
 					    a[c1][c2]="1";
-					    for(i=0;i++<n;) {
-						for(j=0;j++<m;j++) {
-						    P=0;
-						    C=0;
-						    if(h[i][j]<1)
-							if(!a[i][j].equals("1"))
-							    o(i,j);
-						    s+=P<1?0:C;
-						}
-						System.out.println(String.format("R:%d S:%d s:%d",R,S,s));
-						R=R>S-s?R:S-s;
-						    s=0;
-					    }
+					    for(String[]s:a)System.out.println(Arrays.toString(s));
+					    System.out.println();
+//					    for(i=0;i++<n;) {
+//						for(j=0;j++<m;j++) {
+//						    P=0;
+//						    C=0;
+//						    if(h[i][j]<1)
+//							if(!a[i][j].equals("1"))
+//							    o(i,j);
+//						    s+=P<1?0:C;
+//						}
+//						System.out.println(String.format("R:%d S:%d s:%d",R,S,s));
+//						R=R>S-s?R:S-s;
+//						    s=0;
+//					    }
 					}
 			    }
 			}
