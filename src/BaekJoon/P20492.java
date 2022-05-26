@@ -1,4 +1,4 @@
-package szdf;
+package BaekJoon;
 
 import java.util.Scanner;
 
