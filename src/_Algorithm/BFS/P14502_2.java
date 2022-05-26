@@ -67,9 +67,7 @@ public class P14502_2{
 						}
 						//						System.out.println(String.format(" = ÃÑ °¨¿°:%d",s));
 						//						if(s==0)return;
-						//						R=R<s?R:s;
-						for(int zk=0;zk++<n;)
-						    for(int kz=0;kz++<m)
+						//			
 						if(s<R) {
 						    //						    System.out.println("ÃÖÀúÄ¡ °æ½Å: "+s);
 						    //						    for(String[]s:a)System.out.println(Arrays.toString(s));
