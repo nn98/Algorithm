@@ -2,7 +2,7 @@ package BaekJoon;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class P17363 {
+public class P17363_A {
 
 	static String sol(String t) {
 		switch(t) {

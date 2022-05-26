@@ -1,8 +1,8 @@
-package Baekjoon;
+package BaekJoon;
 
 import java.util.Scanner;
 
-public class P15668 {
+public class AP15668 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub

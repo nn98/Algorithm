@@ -1,4 +1,4 @@
-package insert;
+package BaekJoon;
 
 public class P2998 {
 

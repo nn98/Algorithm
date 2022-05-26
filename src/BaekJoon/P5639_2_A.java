@@ -1,9 +1,7 @@
 package BaekJoon;
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.ioaekJoon.P5639.Node;
+import java.io.*;
 
-public class P5639 {
+public class P5639_2_A {
 
 	static class Node{
 		int v;

@@ -2,7 +2,7 @@ package BaekJoon;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class P2981 {
+public class P2981_2_A {
 
 	static long 최대공약수(long a, long b){
 		while (b != 0) {

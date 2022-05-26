@@ -1,7 +1,7 @@
 package BaekJoon;
 import java.util.Scanner;
 
-public class P2609 {
+public class P2609_2_A {
 
 	static int GCD(int a,int b) {
 		while(b!=0) {

@@ -2,7 +2,7 @@ package BaekJoon;
 
 import java.util.Scanner;
 
-public class P12755 {
+public class AP12755 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub

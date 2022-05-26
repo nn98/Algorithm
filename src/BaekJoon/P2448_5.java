@@ -27,7 +27,7 @@ for(int i=1;i<=N;i++) {
  */
 import java.util.Scanner;
 
-public class P2448 {
+public class P2448_5 {
 	static Scanner s=new Scanner(System.in);
 	static int N;
 	static void star(int i) {

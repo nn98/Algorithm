@@ -1,9 +1,9 @@
-package Baekjoon;
+package BaekJoon;
 
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class P2750 {
+public class AP2750 {
 
 	static void sort(int[] arr,int f,int t) {
 		if(f==t) return;

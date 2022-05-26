@@ -1,10 +1,10 @@
 package BaekJoon;
 
-public class P2161 {
+public class AP14579 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-
+		
 	}
 
 }

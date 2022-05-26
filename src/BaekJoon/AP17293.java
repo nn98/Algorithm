@@ -1,4 +1,4 @@
-package Seminar;
+package BaekJoon;
 
 /*
  * 	P -	17293 ∏∆¡÷ 99∫¥
@@ -15,7 +15,7 @@ package Seminar;
  */
 import java.util.Scanner;
 
-public class P17293 {
+public class AP17293 {
 	public static void main(String[] args) {
 
 		Scanner s=new Scanner(System.in);

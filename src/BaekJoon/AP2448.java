@@ -5,7 +5,7 @@ import java.io.IOException;
 import java.io.OutputStreamWriter;
 import java.util.Scanner;
 
-public class P2448 {
+public class AP2448 {
 
 	public static void main(String[] args) throws IOException {
 		Scanner s=new Scanner(System.in);

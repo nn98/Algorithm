@@ -1,10 +1,7 @@
 package BaekJoon;
-import java.util.ArrayDeque;
-import java.util.ArrayList;
-import java.util.Queue;
-importaekJoon.P2644.Node;
+import java.util.*;
 
-public class P2644 {
+public class P2644_2 {
 	
 	static ArrayList<Integer>[] arr;
 	static int N;

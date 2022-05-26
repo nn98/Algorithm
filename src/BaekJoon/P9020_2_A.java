@@ -1,7 +1,7 @@
 package BaekJoon;
 import java.util.Scanner;
 
-public class P9020 {
+public class P9020_2_A {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
