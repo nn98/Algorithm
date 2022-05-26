@@ -26,12 +26,12 @@ public class P14502{
 	StringTokenizer t=new StringTokenizer(r.readLine());
 	n=Integer.parseInt(t.nextToken());
 	m=Integer.parseInt(t.nextToken());
-	R=0;
+	R=n*m;
 	h=new int[n+2][m+2];
 	a=new String[n+2][m+2];
 	for(;i++<n;) {
 	    t=new StringTokenizer(r.readLine());
-	    for(j=0;j++<m;S=(a[i][j]=t.nextToken()).equals("0")?1:0);
+	    for(j=0;j++<m;S+=(a[i][j]=t.nextToken()).equals("0")?1:0);
 	}
 	//	for(String[]s:a)System.out.println(Arrays.toString(s));
 	System.out.println(R+" "+S);
@@ -39,33 +39,51 @@ public class P14502{
 	    for(int a2=0;a2++<m;) {
 		if(a[a1][a2].equals("0")) {
 		    a[a1][a2]="1";
-		    for(int b1=a1;b1++<n;)
-			for(int b2=a2;b2++<m;) {
+		    for(int b1=a1;b1<n+1;b1++)
+			for(int b2=a1==b1?a2:0;b2++<m;) {
 			    if(a[b1][b2].equals("0")) {
 				a[b1][b2]="1";
-				for(int c1=b1;c1++<n;)
-				    for(int c2=b2;c2++<m;)
+				for(int c1=b1;c1<n+1;c1++)
+				    for(int c2=b1==c1?b2:0;c2++<m;)
 					if(a[c1][c2].equals("0")) {
 					    a[c1][c2]="1";
-					    for(String[]s:a)System.out.println(Arrays.toString(s));
-					    System.out.println();
-//					    for(i=0;i++<n;) {
-//						for(j=0;j++<m;j++) {
-//						    P=0;
-//						    C=0;
-//						    if(h[i][j]<1)
-//							if(!a[i][j].equals("1"))
-//							    o(i,j);
+					    for(i=0;i++<n;) {
+						for(j=0;j++<m;j++) {
+						    P=0;
+						    C=0;
+						    if(h[i][j]<1)
+							if(!a[i][j].equals("1")) {
+							    
+							    o(i,j);
+//							    for(int[]ZZ:h)System.out.println(Arrays.toString(ZZ));
 //						    s+=P<1?0:C;
-//						}
-//						System.out.println(String.format("R:%d S:%d s:%d",R,S,s));
-//						R=R>S-s?R:S-s;
-//						    s=0;
-//					    }
+						    if(P>0) {
+							System.out.print("°¨¿° +"+C);
+							s+=C;
+						    }else System.out.print(" ºñ°¨¿° +"+C);
+							}
+						}
+					    }
+						System.out.println(
+							String.format(
+								" = ÃÑ °¨¿°:%d",s));
+						if(s==0)return;
+//						R=R<s?R:s;
+						if(s<R) {
+						    System.out.println("ÃÖÀúÄ¡ °æ½Å: "+s);
+						    for(String[]s:a)System.out.println(Arrays.toString(s));
+						    R=s;
+						}
+						s=0;
+						h=new int[n+2][m+2];
+					    a[c1][c2]="0";
 					}
+				a[b1][b2]="0";
 			    }
 			}
+		    a[a1][a2]="0";
 		}
 	    }
+	System.out.println("°¨¿° ÃÖÀúÄ¡: "+R);
     }
 }
