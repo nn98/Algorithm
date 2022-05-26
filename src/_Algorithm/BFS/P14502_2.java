@@ -87,3 +87,4 @@ public class P14502_2{
 		System.out.println(n*m-R-S-3);
 	    }
     }
+}
