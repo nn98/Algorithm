@@ -1,11 +1,8 @@
 package _Algorithm.BFS;
-
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
-
 public class P2178 {
-
     static int n,m,i,j,h[][],p[]= {0,1,0,-1},q[]= {1,0,-1,0};
     static void o(int i,int j,int v) {
 //	System.out.println(i+" "+j+" "+v);
@@ -30,5 +27,4 @@ public class P2178 {
 	o(0,0,1);
 	System.out.println(h[n-1][m-1]);
     }
-
 }
