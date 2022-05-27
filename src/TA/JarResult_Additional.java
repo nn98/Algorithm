@@ -25,7 +25,7 @@ public class JarResult_Additional {
 		    flag=0;
 		}
 		if(flag>0){
-		    sb.append(line+i<1?line.split(":")[0].trim().equals(arr));
+		    sb.append(line+(i<1?(line.split(":")[0].trim().equals(code)?1:0):""));
 		    sb.append("\n");
 		}
 		i++;
