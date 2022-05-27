@@ -14,7 +14,7 @@ public class P2178 {
 	for(;x<4;x++) {
 	    I=i+p[x];
 	    J=j+q[x];
-		System.out.println(I+" "+J+" "+v);
+	    System.out.println(I+" "+J+" "+v);
 	    if(I>=0&I<n&J>=0&J<m)if(a[I][J]=='1')if(h[I][J]==0|v<h[I][J])o(I,J,v);
 	}
     }
