@@ -46,7 +46,7 @@ public class JarResult_Additional {
 	option=s.nextInt();
 	System.out.println("Program is running...");
 	execCmd("dir /b/oe/on");
-	System.out.println("\nResult: \n\n"+sb);
+	System.out.print("\nResult: \n\n"+sb);
 
     }
 
