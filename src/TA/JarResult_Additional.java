@@ -40,9 +40,9 @@ public class JarResult_Additional {
     }
     public static void main(String[] args) {
 	Scanner s=new Scanner(System.in);
-	System.out.println("Input code: ");
+	System.out.print("Input code: ");
 	code=s.nextLine();
-	System.out.println("Input option(0-all 1-only result: ");
+	System.out.print("Input option(0-all 1-only result: ");
 	option=s.nextInt();
 	System.out.println("Program is running...");
 	execCmd("dir /b/oe/on");
