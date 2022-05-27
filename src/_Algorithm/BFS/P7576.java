@@ -32,4 +32,5 @@ public class P7576{
 	    t=new StringTokenizer(r.readLine());
 	    for(j=0;j++<m;a[i][j]=t.nextToken());
 	}
+    }
 }
