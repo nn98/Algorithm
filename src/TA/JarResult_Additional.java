@@ -31,7 +31,7 @@ public class JarResult_Additional {
 		i++;
 	    }
 	    if(i<1)sb.append("line is empty. might error.\n");
-	    sb.append("\n");
+	    sb.append(flag>0?"\n":"");
 	} catch (Exception e) {
 	    System.out.println("err");
 	    e.printStackTrace();
@@ -46,7 +46,7 @@ public class JarResult_Additional {
 	option=s.nextInt();
 	System.out.println("Program is running...");
 	execCmd("dir /b/oe/on");
-	System.out.println("Result: \n"+sb);
+	System.out.println("\nResult: \n\n"+sb);
 
     }
 
