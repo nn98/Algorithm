@@ -6,7 +6,10 @@ import java.util.StringTokenizer;
 
 public class P2178 {
 
-    static int n,m,i,j,h[][];
+    static int n,m,i,j,h[][],p[]= {0,1,0,-1},q[]= {1,0,-1,0};
+    static void o(int i,int j,int v) {
+	h[i][j]=v;
+    }
     static char[][]a;
     public static void main(String[] args)throws Exception{
 	BufferedReader r=new BufferedReader(new InputStreamReader(System.in));
