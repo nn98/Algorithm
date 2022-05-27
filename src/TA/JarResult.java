@@ -3,11 +3,10 @@ package TA;
 import java.io.*;
 import java.util.*;
 
-public class JarResult_Additional {
+public class JarResult {
 
     static StringBuffer sb = new StringBuffer();
-    static String code;
-    static int flag,option;
+    static int flag;
     public static void execCmd(String cmd) {
 	System.out.println(cmd);
 	try {
@@ -15,9 +14,10 @@ public class JarResult_Additional {
 	    BufferedReader reader = new BufferedReader(
 		    new InputStreamReader(process.getInputStream()));
 	    String line = null;
-	    sb.append(option<1?cmd+"\n\n":"");
+	    sb.append(cmd+"\n\n");
 	    int i=0;
 	    while ((line = reader.readLine()) != null) {
+		i++;
 		String[]arr=line.split("\\.");
 		if(arr[arr.length-1].equals("jar")){
 		    flag=1;
@@ -25,10 +25,9 @@ public class JarResult_Additional {
 		    flag=0;
 		}
 		if(flag>0){
-		    sb.append(line+(i<1?(line.split(":")[0].trim().equals(code)?1:0):""));
+		    sb.append(line);
 		    sb.append("\n");
 		}
-		i++;
 	    }
 	    if(i<1)sb.append("line is empty. might error.\n");
 	    sb.append("\n");
@@ -39,11 +38,6 @@ public class JarResult_Additional {
 	return;
     }
     public static void main(String[] args) {
-	Scanner s=new Scanner(System.in);
-	System.out.println("Input code: ");
-	code=s.nextLine();
-	System.out.println("Input option(0-all 1-only result: ");
-	option=s.nextInt();
 	System.out.println("Program is running...");
 	execCmd("dir /b/oe/on");
 	System.out.println("Result: \n"+sb);
