@@ -1,3 +1,5 @@
+package ssafy;
+
 import java.io.*;
 import java.util.*;
 
