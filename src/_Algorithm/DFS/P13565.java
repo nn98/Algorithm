@@ -15,7 +15,7 @@ public class P13565 {
 			for(;i<4;i++) {
 				X=x+p[i];
 				Y=y+q[i];
-				if(X>=0&X<n&Y>=0&Y<m)if(a[X][Y]<'1')o(X,Y);
+				if(X>=0&X<n&Y>=0&Y<m)if(a[X][Y]<'1'&b[X][Y]<1)o(X,Y);
 			}
 		}
 	}
