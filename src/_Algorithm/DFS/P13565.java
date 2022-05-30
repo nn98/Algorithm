@@ -23,7 +23,7 @@ public class P13565 {
 		String[]c=r.readLine().split(" ");
 		n=Integer.parseInt(c[0]);
 		m=Integer.parseInt(c[0]);
-		a=new char[n][];
+		a=new char[n][m];
 		for(;i<n;a[i++]=r.readLine().toCharArray());
 		b=new int[n][m];
 		for(i=0;i<m;i++)if(a[0][i]<'1')o(0,i);
