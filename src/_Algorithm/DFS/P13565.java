@@ -7,7 +7,6 @@ public class P13565 {
 	static int n,m,i,j,p[]= {0,1,0,-1},q[]= {1,0,-1,0},b[][];
 	static char[][]a;
 	static void o(int x,int y) {
-		System.out.println(x+" "+y);
 		if(x==n-1)j++;
 		if(j<1) {
 			b[x][y]++;
@@ -28,7 +27,6 @@ public class P13565 {
 		for(;i<n;a[i++]=r.readLine().toCharArray());
 		b=new int[n][m];
 		for(i=0;i<m;i++)if(a[0][i]<'1')o(0,i);
-		for(int[]d:b)System.out.println(Arrays.toString(d));
 		System.out.println(j<1?"NO":"YES");
 	}
 }
