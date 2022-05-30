@@ -1,9 +1,8 @@
 package BaekJoon;
-
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class P2981 {
+public class P2981_2_A0 {
 
 //	static long �ִ�����(long a, long b){
 //		while (b != 0) {
