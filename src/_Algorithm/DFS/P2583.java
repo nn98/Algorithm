@@ -20,7 +20,7 @@ public class P2583 {
 	public static void main(String[] args)throws Exception{
 		BufferedReader r=new BufferedReader(new InputStreamReader(System.in));
 		StringTokenizer t=new StringTokenizer(r.readLine());
-		StringBuffer f=new StringBuffer();
+		List<Integer>l=new ArrayList();
 		n=Integer.parseInt(t.nextToken());
 		m=Integer.parseInt(t.nextToken());
 		a=new int[n][m];
@@ -40,9 +40,10 @@ public class P2583 {
 			I=0;
 			p(i,j);
 			o++;
-			f.append(I+" ");
+			l.add(I);
 		}
-		System.out.println(o+"\n"+f);
+		Collections.sort(l);
+		System.out.println(o+"\n"+l);
 	}
 
 }
