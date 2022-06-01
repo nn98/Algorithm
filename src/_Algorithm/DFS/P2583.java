@@ -43,7 +43,10 @@ public class P2583 {
 			l.add(I);
 		}
 		Collections.sort(l);
-		System.out.println(o+"\n"+l);
+		J=0;
+		for(int R:l) {
+			System.out.println(J++<1?o+"\n":""+R+" ");
+		}
 	}
 
 }
