@@ -45,7 +45,7 @@ public class P2583 {
 		Collections.sort(l);
 		J=0;
 		for(int R:l) {
-			System.out.println(J++<1?o+"\n":""+R+" ");
+			System.out.println((J++<1?o+"\n":"")+R+" ");
 		}
 	}
 
