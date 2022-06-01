@@ -7,7 +7,7 @@ public class JarResult_Additional {
 
     static StringBuffer sb = new StringBuffer(),sbR=new StringBuffer();
     static String code;
-    static int flag,option;
+    static int flag,option,cor,incor;
     public static void execCmd(String cmd) {
 	System.out.println(cmd);
 	try {
@@ -28,12 +28,16 @@ public class JarResult_Additional {
 		    sb.append(line+(i<1?"\tcode is "+(line.split(":")[0].trim().equals(code)?1:0):""));
 		    sb.append("\n");
 		}
-		if(i<1)sbR.append("0\n");
+		if(i<1){
+			sbR.append("0\n");
+			cor++;
+		}
 		i++;
 	    }
 	    if(i<1){
 		sb.append("line is empty. might error.\n");
 		sbR.append("1\n");
+		incor++;
 	}
 	    sb.append(flag>0?"\n":"");
 	} catch (Exception e) {
@@ -51,7 +55,7 @@ public class JarResult_Additional {
 	System.out.println("Program is running...");
 	execCmd("dir /b/oe/on");
 	System.out.println("\nResult code: \n\n"+sb);
-	System.out.println("\nResult score: \n\n"+sbR);
+	System.out.println("Result score: \n"+sbR+"\ncorrect: "+cor+"\nincorrect: "+incor);
     }
 
 }
