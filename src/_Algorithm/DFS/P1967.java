@@ -17,11 +17,10 @@ public class P1967 {
 	}
 	public static void main(String[] args)throws Exception{
 		BufferedReader r=new BufferedReader(new InputStreamReader(System.in));
-		StringTokenizer t=new StringTokenizer(r.readLine());
 		n=Integer.parseInt(r.readLine());
 		a=new int[n][n];
 		while(m++<n) {
-			t=new StringTokenizer(r.readLine());
+			StringTokenizer t=new StringTokenizer(r.readLine());
 			i=Integer.parseInt(r.readLine())-1;
 			j=Integer.parseInt(r.readLine())-1;
 			v=Integer.parseInt(r.readLine());
