@@ -34,7 +34,6 @@ public class P2583 {
 			I=Integer.parseInt(t.nextToken());
 			for(;i<I;i++)for(o=j;o<J;o++)a[i][o]++;
 		}
-		for(int[]c:a)System.out.println(Arrays.toString(c));
 		o=0;
 		for(i=0;i<n;i++)for(j=0;j<m;j++)if(a[i][j]<1)if(h[i][j]<1) {
 			I=0;
