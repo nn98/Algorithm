@@ -14,7 +14,7 @@ public class P2583 {
 		for(;i<4;i++) {
 			X=x+p[i];
 			Y=y+q[i];
-			if(X>=0&X<n&Y>=0&Y<m)if(h[X][Y]<1)p(i,j);
+			if(X>=0&X<n&Y>=0&Y<m)if(a[X][Y]<1)if(h[X][Y]<1)p(X,Y);
 		}
 	}
 	public static void main(String[] args)throws Exception{
@@ -36,7 +36,7 @@ public class P2583 {
 		}
 		for(int[]c:a)System.out.println(Arrays.toString(c));
 		o=0;
-		for(i=0;i<n;i++)for(j=0;j<m;j++)if(h[i][j]<1) {
+		for(i=0;i<n;i++)for(j=0;j<m;j++)if(a[i][j]<1)if(h[i][j]<1) {
 			I=0;
 			p(i,j);
 			o++;
