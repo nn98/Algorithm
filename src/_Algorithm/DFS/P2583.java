@@ -9,14 +9,18 @@ public class P2583 {
 
 	static void p(int x,int y) {
 		h[x][y]++;
+		I++;
 		int i=0,X,Y;
 		for(;i<4;i++) {
-			
+			X=x+p[i];
+			Y=y+q[i];
+			if(X>=0&X<n&Y>=0&Y<m)if(h[X][Y]<1)p(i,j);
 		}
 	}
 	public static void main(String[] args)throws Exception{
 		BufferedReader r=new BufferedReader(new InputStreamReader(System.in));
 		StringTokenizer t=new StringTokenizer(r.readLine());
+		StringBuffer f=new StringBuffer();
 		n=Integer.parseInt(t.nextToken());
 		m=Integer.parseInt(t.nextToken());
 		a=new int[n][m];
@@ -33,9 +37,12 @@ public class P2583 {
 		for(int[]c:a)System.out.println(Arrays.toString(c));
 		o=0;
 		for(i=0;i<n;i++)for(j=0;j<m;j++)if(h[i][j]<1) {
+			I=0;
 			p(i,j);
 			o++;
+			f.append(I+" ");
 		}
+		System.out.println(o+"\n"+f);
 	}
 
 }
