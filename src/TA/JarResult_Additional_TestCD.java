@@ -3,7 +3,7 @@ package TA;
 import java.io.*;
 import java.util.*;
 
-public class JarResult_Additional {
+public class JarResult_Additional_TestCD {
 
     static StringBuffer sb = new StringBuffer(),sbR=new StringBuffer();
     static String code;
@@ -53,7 +53,7 @@ public class JarResult_Additional {
 	System.out.print("Input option(0-all 1-only result: ");
 	option=s.nextInt();
 	System.out.println("Program is running...");
-	execCmd("dir /b/oe/on");
+	execCmd("chcp 65001 & cd \"C:\\Users\\nn\\OneDrive - 성공회대학교\\TA\\22_1학기\\_알고리즘\\[2022-1학기-알고리즘-01][hw4_1]예약정보정렬\" & dir /b/oe/on");
 	System.out.println("\nResult code: \n\n"+sb);
 	System.out.println("Result score: \n"+sbR+"\ncorrect: "+cor+"\nincorrect: "+incor);
     }
