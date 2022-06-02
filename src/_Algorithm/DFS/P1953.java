@@ -7,7 +7,7 @@ public class P1953 {
 
 	static int n,m,i,j,R,a[][],b[],h[];
 	static void o(int x) {
-		System.out.println(x+Arrays.toString(b));
+//		System.out.println(x+Arrays.toString(b));
 		h[x]++;
 		for(int i=0;++i<n;) {
 			b[i]=a[x][i];
@@ -19,7 +19,7 @@ public class P1953 {
 		}
 	}
 	static void p(int y) {
-		System.out.println(y+Arrays.toString(b));
+//		System.out.println(y+Arrays.toString(b));
 		h[y]++;
 		for(int i=0;++i<n;) {
 			if(a[y][i]>0)b[i]=1;
@@ -46,9 +46,9 @@ public class P1953 {
 				a[i][j]=a[j][i]=1;
 			}
 		}
-		for(int[]b:a)System.out.println(Arrays.toString(b));
+//		for(int[]b:a)System.out.println(Arrays.toString(b));
 		o(1);
-		System.out.println(Arrays.toString(b));
+//		System.out.println(Arrays.toString(b));
 		for(i=0;++i<n;R+=b[i]<1?1:0)if(b[i]<1)f.append(i+" ");
 		System.out.println(R+"\n"+f);
 		R=0;
