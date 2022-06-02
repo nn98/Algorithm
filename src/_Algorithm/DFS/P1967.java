@@ -21,9 +21,9 @@ public class P1967 {
 		a=new int[n][n];
 		while(m++<n) {
 			StringTokenizer t=new StringTokenizer(r.readLine());
-			i=Integer.parseInt(r.readLine())-1;
-			j=Integer.parseInt(r.readLine())-1;
-			v=Integer.parseInt(r.readLine());
+			i=Integer.parseInt(t.nextToken())-1;
+			j=Integer.parseInt(t.nextToken())-1;
+			v=Integer.parseInt(t.nextToken());
 			a[i][j]=a[j][i]=v;
 			h=new int[n];
 			o(j,v);
