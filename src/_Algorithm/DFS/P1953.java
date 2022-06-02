@@ -5,13 +5,14 @@ import java.util.*;
 
 public class P1953 {
 
-	static int n,m,i,j,R,a[][],b[];
+	static int n,m,i,j,R,a[][],b[],h[];
 	static void o(int x) {
+		h[x]++;
 		for(int i=0;++i<n;) {
 			b[i]=a[x][i];
 		}
 		for(int i=0;++i<n;) {
-			if(a[x][i]<1) {
+			if(a[x][i]<1)if(h[i]<1){
 				p(i);
 			}
 		}
@@ -21,7 +22,7 @@ public class P1953 {
 			b[i]=a[y][i];
 		}
 		for(int i=0;++i<n;) {
-			if(a[y][i]<1) {
+			if(a[y][i]<1)if(h[i]<1){
 				p(i);
 			}
 		}
@@ -30,6 +31,7 @@ public class P1953 {
 		BufferedReader r=new BufferedReader(new InputStreamReader(System.in));
 		BufferedWriter w=new BufferedWriter(new OutputStreamWriter(System.out));
 		n=Integer.parseInt(r.readLine())+1;
+		h=new int[n];
 		b=new int[n];
 		a=new int[n][n];
 		for(;++i<n;) {
