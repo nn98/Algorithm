@@ -10,6 +10,8 @@ public class P1953 {
 		BufferedReader r=new BufferedReader(new InputStreamReader(System.in));
 		BufferedWriter w=new BufferedWriter(new OutputStreamWriter(System.out));
 		n=Integer.parseInt(r.readLine());
+		b=new int[n];
+		a=new int[n][n];
 		for(;i<n;i++) {
 			StringTokenizer t=new StringTokenizer(r.readLine());
 			m=Integer.parseInt(t.nextToken());
