@@ -12,8 +12,7 @@ public class IDConverter {
 		String s;
 		StringBuffer f=new StringBuffer("[");
 		while(!(s=r.readLine()).equals("0")) {
-//			if(s.equals(""))continue;
-			f.append("\""+s+"\",");
+			f.append("\""+(s.equals("")?"itcantbetrueitsundifinezzzzzz":s)+"\",");
 			if(++i%5==0)f.append("\n");
 		}
 		f.replace(i%5==0?f.length()-2:f.length()-1,f.length(),"]");
