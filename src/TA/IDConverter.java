@@ -11,6 +11,7 @@ public class IDConverter {
 		String s;
 		StringBuffer f=new StringBuffer("[");
 		while(!(s=r.readLine()).equals("0")) {
+			if(s.equals(""))continue;
 			f.append("\""+s+"\",");
 		}
 		f.append("]");
