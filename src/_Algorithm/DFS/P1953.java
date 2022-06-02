@@ -49,11 +49,12 @@ public class P1953 {
 		for(int[]b:a)System.out.println(Arrays.toString(b));
 		o(1);
 		System.out.println(Arrays.toString(b));
-		for(i=0;++i<n;R+=b[i]<1?1:0,f.append(i+" "));
+		for(i=0;++i<n;R+=b[i]<1?1:0)if(b[i]<1)f.append(i+" ");
 		System.out.println(R+"\n"+f);
 		R=0;
 		f=new StringBuffer();
-		for(i=0;++i<n;R+=b[i]>0?1:0,f.append(i+" "));
+		for(i=0;++i<n;R+=b[i]>0?1:0)if(b[i]>0)f.append(i+" ");
+		System.out.println(R+"\n"+f);
 	}
 
 }
