@@ -10,13 +10,13 @@ public class P14438 {
 		for(;j>1;j/=2,a[j]=Math.min(a[j*2],a[j*2+1]));
 	}
 	static int p(int n,int l,int r) {
-		System.out.println(n+" "+l+" "+r);
+//		System.out.println(n+" "+l+" "+r);
 		if(l>i|j>r) {
-			System.out.println("re 0");
+//			System.out.println("re 0");
 			return M;
 		}
 		if(j<=l&r<=i) {
-			System.out.println("re "+a[n]);
+//			System.out.println("re "+a[n]);
 			return a[n];
 		}
 		int m=(l+r)/2;
@@ -32,7 +32,7 @@ public class P14438 {
 		Arrays.fill(a,M);
 		StringTokenizer t=new StringTokenizer(r.readLine());
 		for(;i<n;j=l+i++,a[j]=Integer.parseInt(t.nextToken()),o());
-		System.out.println(Arrays.toString(a));
+//		System.out.println(Arrays.toString(a));
 		for(n=Integer.parseInt(r.readLine());n-->0;) {
 			t=new StringTokenizer(r.readLine());
 			k=Integer.parseInt(t.nextToken());
@@ -45,7 +45,7 @@ public class P14438 {
 				j+=l-1;
 				a[j]=i;
 				o();
-				System.out.println(Arrays.toString(a));
+//				System.out.println(Arrays.toString(a));
 			}
 		}
 		w.flush();
