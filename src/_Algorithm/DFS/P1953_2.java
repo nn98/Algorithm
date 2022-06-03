@@ -41,7 +41,7 @@ public class P1953_2 {
 		for(i=0;++i<n;)m+=b[i]>0?1:0;
 		System.out.println(m);
 		for(i=0;++i<n;)if(b[i]>0)System.out.print(i+" ");
-		System.out.println(n-m-1);
+		System.out.println("\n"+(n-m-1));
 		for(i=0;++i<n;)if(b[i]<0)System.out.print(i+" ");
 	}
 
