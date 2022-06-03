@@ -42,10 +42,11 @@ public class P1953_2 {
 //		System.out.println(Arrays.toString(b));
 //		System.out.println(Arrays.toString(h));
 		for(i=0;++i<n;)m+=b[i]>0?1:0;
-		System.out.println(m);
-		for(i=0;++i<n;)if(b[i]>0)System.out.print(i+" ");
-		System.out.println("\n"+(n-m-1));
-		for(i=0;++i<n;)if(b[i]<0)System.out.print(i+" ");
+		w.write(m+"\n");
+		for(i=0;++i<n;)if(b[i]>0)w.write(i+" ");
+		w.write("\n"+(n-m-1));
+		for(i=0;++i<n;)if(b[i]<0)w.write(i+" ");
+		w.flush();
 	}
 
 }
