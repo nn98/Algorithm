@@ -7,12 +7,12 @@ public class P1953_2 {
 
 	static int n,m,i,j,R,a[][],b[],h[];
 	static void o(int x,int t) {
-		System.out.println("x: "+x+" t: "+t);
+//		System.out.println("x: "+x+" t: "+t);
 		b[x] = t;
 		h[x] = 1;
 		for(int i=0;++i<n;) {
-			System.out.println(a[x][i]>0);
-			System.out.println(h[i]<1);
+//			System.out.println(a[x][i]>0);
+//			System.out.println(h[i]<1);
 			if(a[x][i]>0&h[i]<1)o(i,-t);
 		}
 	}
@@ -33,11 +33,11 @@ public class P1953_2 {
 		h=new int[n];
 		b=new int[n];
 		for(i=0;++i<n;)if(h[i]<1) {
-			System.out.println("o");
+//			System.out.println("o");
 			o(i,1);
 		}
-		System.out.println(Arrays.toString(b));
-		System.out.println(Arrays.toString(h));
+//		System.out.println(Arrays.toString(b));
+//		System.out.println(Arrays.toString(h));
 		for(i=0;++i<n;)m+=b[i]>0?1:0;
 		System.out.println(m);
 		for(i=0;++i<n;)if(b[i]>0)System.out.print(i+" ");
