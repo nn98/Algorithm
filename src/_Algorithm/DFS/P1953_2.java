@@ -44,7 +44,7 @@ public class P1953_2 {
 		for(i=0;++i<n;)m+=b[i]>0?1:0;
 		w.write(m+"\n");
 		for(i=0;++i<n;)if(b[i]>0)w.write(i+" ");
-		w.write("\n"+(n-m-1));
+		w.write("\n"+(n-m-1)+"\n");
 		for(i=0;++i<n;)if(b[i]<0)w.write(i+" ");
 		w.flush();
 	}
