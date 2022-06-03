@@ -19,7 +19,7 @@ public class P14427 {
 		n=Integer.parseInt(r.readLine());
 		for(;l<n;l*=2);
 		a=new int[l*2];
-		a[0]=Integer.MAX_VALUE;
+//		a[0]=Integer.MAX_VALUE;
 //		Arrays.fill(a,Integer.MAX_VALUE);
 		StringTokenizer t=new StringTokenizer(r.readLine());
 		for(;i<n;j=l+i++,a[j]=Integer.parseInt(t.nextToken()),o());
