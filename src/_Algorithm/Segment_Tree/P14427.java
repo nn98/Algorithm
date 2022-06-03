@@ -1,8 +1,7 @@
 package _Algorithm.Segment_Tree;
 
 import java.io.*;
-import java.util.Arrays;
-import java.util.StringTokenizer;
+import java.util.*;
 
 public class P14427 {
 	static int n,a[],l=1,i,j,k;
