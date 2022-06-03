@@ -10,8 +10,15 @@ public class P14438 {
 		for(;j>1;j/=2,a[j]=Math.min(a[j*2],a[j*2+1]));
 	}
 	static int p(int n,int l,int r) {
-		if(l>i|j>r)return 0;
-		if(j<=l&r<=i)return a[n];
+		System.out.println(n+" "+l+" "+r);
+		if(l>i|j>r) {
+			System.out.println("re 0");
+			return 0;
+		}
+		if(j<=l&r<=i) {
+			System.out.println("re "+a[n]);
+			return a[n];
+		}
 		int m=(l+r)/2;
 		return Math.min(p(n*2,l,m),p(n*2+1,m+1,r));
 	}
@@ -32,12 +39,12 @@ public class P14438 {
 			j=Integer.parseInt(t.nextToken());
 			i=Integer.parseInt(t.nextToken());
 			if(k>1) {
-				w.write(p(1,1,l));
+				w.write(p(1,1,l)+"\n");
 			}
 			else {
 				a[j]=i;
 				o();
-//				System.out.println(Arrays.toString(a));
+				System.out.println(Arrays.toString(a));
 			}
 		}
 		w.flush();
