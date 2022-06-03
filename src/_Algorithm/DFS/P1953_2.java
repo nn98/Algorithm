@@ -28,6 +28,8 @@ public class P1953_2 {
 		h=new int[n];
 		b=new int[n];
 		for(i=0;++i<n;)if(h[i]<1)o(i,1);
+		System.out.println(Arrays.toString(b));
+		System.out.println(Arrays.toString(h));
 		for(i=0;++i<n;)m+=b[i]>0?1:0;
 		System.out.println(m);
 		for(i=0;++i<n;)if(b[i]>0)System.out.print(i+" ");
