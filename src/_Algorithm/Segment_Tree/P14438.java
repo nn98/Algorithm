@@ -8,6 +8,12 @@ public class P14438 {
 	static void o() {
 		for(;j>1;j/=2,a[j]=(a[j*2]==0?Integer.MAX_VALUE:a[j*2])<=(a[j*2+1]==0?Integer.MAX_VALUE:a[j*2+1])?a[j*2]:a[j*2+1]);
 	}
+	static int p(int n,int l,int r) {
+		if(l>i|j>r)return 0;
+		if(j<=l&r<=i)return a[n];
+		int m=(l+r)/2;
+		return Math.min(p(n*2,l,m),p(n*2+1,m+1,r));
+	}
 	public static void main(String[] args)throws Exception{
 		BufferedReader r=new BufferedReader(new InputStreamReader(System.in));
 		BufferedWriter w=new BufferedWriter(new OutputStreamWriter(System.out));
@@ -18,7 +24,7 @@ public class P14438 {
 //		Arrays.fill(a,Integer.MAX_VALUE);
 		StringTokenizer t=new StringTokenizer(r.readLine());
 		for(;i<n;j=l+i++,a[j]=Integer.parseInt(t.nextToken()),o());
-//		System.out.println(Arrays.toString(a));
+		System.out.println(Arrays.toString(a));
 		for(n=Integer.parseInt(r.readLine());n-->0;) {
 			t=new StringTokenizer(r.readLine());
 			k=Integer.parseInt(t.nextToken());
