@@ -4,7 +4,7 @@ import java.io.*;
 import java.util.*;
 
 public class P14438 {
-	static int n,a[],l=1,i,j,k;
+	static int n,a[],l=1,i,j,k,M=Integer.MAX_VALUE;
 	static void o() {
 //		for(;j>1;j/=2,a[j]=(a[j*2]==0?Integer.MAX_VALUE:a[j*2])<=(a[j*2+1]==0?Integer.MAX_VALUE:a[j*2+1])?a[j*2]:a[j*2+1]);
 		for(;j>1;j/=2,a[j]=Math.min(a[j*2],a[j*2+1]));
@@ -13,7 +13,7 @@ public class P14438 {
 		System.out.println(n+" "+l+" "+r);
 		if(l>i|j>r) {
 			System.out.println("re 0");
-			return 0;
+			return M;
 		}
 		if(j<=l&r<=i) {
 			System.out.println("re "+a[n]);
@@ -29,7 +29,7 @@ public class P14438 {
 		for(;l<n;l*=2);
 		a=new int[l*2];
 //		a[0]=Integer.MAX_VALUE;
-		Arrays.fill(a,Integer.MAX_VALUE);
+		Arrays.fill(a,M);
 		StringTokenizer t=new StringTokenizer(r.readLine());
 		for(;i<n;j=l+i++,a[j]=Integer.parseInt(t.nextToken()),o());
 		System.out.println(Arrays.toString(a));
