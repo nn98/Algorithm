@@ -42,6 +42,7 @@ public class P14438 {
 				w.write(p(1,1,l)+"\n");
 			}
 			else {
+				j+=l-1;
 				a[j]=i;
 				o();
 				System.out.println(Arrays.toString(a));
