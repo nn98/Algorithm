@@ -7,6 +7,10 @@ import java.util.StringTokenizer;
 public class P14427 {
 	static int n,a[],l=1,i,j;
 	static void o() {
+		if(j>=l) {
+			j/=2;
+			a[j]=a[j*2]<=a[j*2+1]?j*2:j*2+1;
+		}
 		for(;j>2;j/=2,a[j]=a[a[j*2]]<=a[a[j*2+1]]?j*2:j*2+1);
 	}
 	public static void main(String[] args)throws Exception{
