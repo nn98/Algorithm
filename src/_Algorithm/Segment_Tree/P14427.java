@@ -10,7 +10,7 @@ public class P14427 {
 		BufferedReader r=new BufferedReader(new InputStreamReader(System.in));
 		BufferedWriter w=new BufferedWriter(new OutputStreamWriter(System.out));
 		n=Integer.parseInt(r.readLine());
-		for(;l<i;l*=2);
+		for(;l<n;l*=2);
 		a=new int[l*2];
 		StringTokenizer t=new StringTokenizer(r.readLine());
 		for(;i<n;a[l+i++]=Integer.parseInt(t.nextToken()));
