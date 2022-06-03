@@ -17,7 +17,14 @@ public class P1953_2 {
 		StringBuffer f=new StringBuffer();
 		n=Integer.parseInt(r.readLine())+1;
 		a=new int[n][n];
-		for(;++i<n;)for(j=0;++j<n;a[j][i]=a[i][j]=1);
+		for(;++i<n;) {
+			StringTokenizer t=new StringTokenizer(r.readLine());
+			R=Integer.parseInt(t.nextToken());
+			for(;R-->0;) {
+				j=Integer.parseInt(t.nextToken());
+				a[i][j]=a[j][i]=1;
+			}
+		}
 		h=new int[n];
 		b=new int[n];
 		for(i=0;++i<n;)if(h[i]<1)o(i,1);
