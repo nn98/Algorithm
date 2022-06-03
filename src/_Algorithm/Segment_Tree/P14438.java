@@ -6,11 +6,7 @@ import java.util.*;
 public class P14438 {
 	static int n,a[],l=1,i,j,k;
 	static void o() {
-		if(j>=l) {
-			j/=2;
-			a[j]=(a[j*2]==0?Integer.MAX_VALUE:a[j*2])<=(a[j*2+1]==0?Integer.MAX_VALUE:a[j*2+1])?j*2:j*2+1;
-		}
-		for(;j>1;j/=2,a[j]=(a[a[j*2]]==0?Integer.MAX_VALUE:a[a[j*2]])<=(a[a[j*2+1]]==0?Integer.MAX_VALUE:a[a[j*2+1]])?a[j*2]:a[j*2+1]);
+		for(;j>1;j/=2,a[j]=(a[j*2]==0?Integer.MAX_VALUE:a[j*2])<=(a[j*2+1]==0?Integer.MAX_VALUE:a[j*2+1])?a[j*2]:a[j*2+1];
 	}
 	public static void main(String[] args)throws Exception{
 		BufferedReader r=new BufferedReader(new InputStreamReader(System.in));
