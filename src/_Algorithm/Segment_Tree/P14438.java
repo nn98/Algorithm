@@ -6,7 +6,8 @@ import java.util.*;
 public class P14438 {
 	static int n,a[],l=1,i,j,k;
 	static void o() {
-		for(;j>1;j/=2,a[j]=(a[j*2]==0?Integer.MAX_VALUE:a[j*2])<=(a[j*2+1]==0?Integer.MAX_VALUE:a[j*2+1])?a[j*2]:a[j*2+1]);
+//		for(;j>1;j/=2,a[j]=(a[j*2]==0?Integer.MAX_VALUE:a[j*2])<=(a[j*2+1]==0?Integer.MAX_VALUE:a[j*2+1])?a[j*2]:a[j*2+1]);
+		for(;j>1;j/=2,a[j]=Math.min(a[j*2],a[j*2+1]));
 	}
 	static int p(int n,int l,int r) {
 		if(l>i|j>r)return 0;
@@ -21,16 +22,20 @@ public class P14438 {
 		for(;l<n;l*=2);
 		a=new int[l*2];
 //		a[0]=Integer.MAX_VALUE;
-//		Arrays.fill(a,Integer.MAX_VALUE);
+		Arrays.fill(a,Integer.MAX_VALUE);
 		StringTokenizer t=new StringTokenizer(r.readLine());
 		for(;i<n;j=l+i++,a[j]=Integer.parseInt(t.nextToken()),o());
 		System.out.println(Arrays.toString(a));
 		for(n=Integer.parseInt(r.readLine());n-->0;) {
 			t=new StringTokenizer(r.readLine());
 			k=Integer.parseInt(t.nextToken());
-			if(k>1)w.write(a[1]+"\n");
+			j=Integer.parseInt(t.nextToken());
+			i=Integer.parseInt(t.nextToken());
+			if(k>1) {
+				w.write(p(1,1,l));
+			}
 			else {
-				a[j=Integer.parseInt(t.nextToken())+l-1]=Integer.parseInt(t.nextToken());
+				a[j]=i;
 				o();
 //				System.out.println(Arrays.toString(a));
 			}
