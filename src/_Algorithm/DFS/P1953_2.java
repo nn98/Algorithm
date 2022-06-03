@@ -1,5 +1,8 @@
 package _Algorithm.DFS;
-
+// 이새끼 천재네
+// 싫어하는놈 = -1
+// 싫어하는놈이 싫어하는놈 = --1
+// 이게 해답일듯
 import java.io.*;
 import java.util.*;
 
