@@ -27,7 +27,7 @@ public class IDConverter {
 "ckswlszla123","asdz9908","msy7378","phs5145","vamos",
 "itcantbetrueitsundifinezzzzzz","qkrtnqja","cindy1078","smjsih","heejeong3394",
 "anysong1","songjuhwan33","a26214165","itcantbetrueitsundifinezzzzzz","impjs17",
-"iyuna6577","dlwldbs8015@gmail.com","yjy5923","itcantbetrueitsundifinezzzzzz","qwe916",
+"iyuna6577","dlwldbs8015","yjy5923","itcantbetrueitsundifinezzzzzz","qwe916",
 "reperfection","koreanwi","itcantbetrueitsundifinezzzzzz","zoeyourlife","hahnsh64",
 "3021062","hun5078"]
 */
