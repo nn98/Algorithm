@@ -9,7 +9,7 @@ public class P1654 {
 		BufferedReader r=new BufferedReader(new InputStreamReader(System.in));
 		String[]s=r.readLine().split(" ");
 		int n=Integer.parseInt(s[0]),m=Integer.parseInt(s[1]),a[]=new int[n],i=0,M=0,N=1,D;
-		for(;i<n;a[i]=Integer.parseInt(r.readLine()),M=M>a[i]?M:a[i],i++);
+		for(;i<n;a[i]=Integer.parseInt(r.readLine()),M=M>a[i]?M:a[i]+1,i++);
 		for(;N<M;) {
 			D=N+(M-N)/2;
 			long c=0;
