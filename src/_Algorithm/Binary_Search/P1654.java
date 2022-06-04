@@ -12,7 +12,12 @@ public class P1654 {
 		for(;i<n;a[i]=Integer.parseInt(r.readLine()),M=M>a[i]?M:a[i],i++);
 		for(;N<M;) {
 			D=N+(M-N)/2;
+			long c=0;
+			for(i=0;i<n;c+=a[i++]/D);
+			if(c<m)M=D;
+			else N=D+1;
 		}
+		System.out.println(M);
 	}
 
 }
