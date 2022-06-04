@@ -23,7 +23,7 @@ public class P2805 {
 			if(c>m)N=D+1;
 			else M=D;
 		}
-		System.out.println(N-1);
+		System.out.println(N);
 	}
 
 }
