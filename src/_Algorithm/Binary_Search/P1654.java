@@ -17,7 +17,7 @@ public class P1654 {
 			if(c<m)M=D;
 			else N=D+1;
 		}
-		System.out.println(M);
+		System.out.println(N);
 	}
 
 }
