@@ -14,7 +14,7 @@ public class P1654 {
 		M++;
 		for(;N<M;) {
 			D=N+(M-N)/2;
-			System.out.println(D);
+			System.out.println(String.format("min: %d max: %d mid: %d",N,M,D));
 			c=0;
 			for(i=0;i<n;c+=a[i++]/D);
 			if(c<m)M=D;
