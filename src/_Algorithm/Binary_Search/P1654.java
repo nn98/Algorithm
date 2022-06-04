@@ -14,6 +14,7 @@ public class P1654 {
 		M++;
 		for(;N<M;) {
 			D=N+(M-N)/2;
+			System.out.println(D);
 			c=0;
 			for(i=0;i<n;c+=a[i++]/D);
 			if(c<m)M=D;
