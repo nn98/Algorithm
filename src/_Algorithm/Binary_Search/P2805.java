@@ -20,10 +20,10 @@ public class P2805 {
 			c=0;
 			for(i=0;i<n;d=a[i++]-D,c+=d>0?d:0);;
 //			System.out.println("c = "+c+" ^ "+m);
-			if(c>m)N=D+1;
-			else M=D;
+			if(c<m)M=D;
+			else N=D+1;
 		}
-		System.out.println(N);
+		System.out.println(N-1);
 	}
 
 }
