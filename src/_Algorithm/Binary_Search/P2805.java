@@ -16,10 +16,10 @@ public class P2805 {
 		M++;
 		for(;N<M;) {
 			D=N+(M-N)/2;
-			System.out.println(String.format("min: %d max: %d mid: %d",N,M,D));
+//			System.out.println(String.format("min: %d max: %d mid: %d",N,M,D));
 			c=0;
-			for(i=0;i<n;d=a[i++]-D,System.out.println(d),c+=d>0?d:0);;
-			System.out.println("c = "+c+" ^ "+m);
+			for(i=0;i<n;d=a[i++]-D,c+=d>0?d:0);;
+//			System.out.println("c = "+c+" ^ "+m);
 			if(c>m)N=D+1;
 			else M=D;
 		}
