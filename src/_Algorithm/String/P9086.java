@@ -8,7 +8,7 @@ public class P9086 {
 		Scanner s=new Scanner(System.in);
 		int n=s.nextInt(),i=0;
 		String a;
-		for(;n-->0;a=s.next(),System.out.println(a.substring(0,1)+a.substring(a.length()-2)));
+		for(;n-->0;a=s.next(),System.out.println(a.substring(0,1)+a.substring(a.length()-1)));
 	}
 
 }
