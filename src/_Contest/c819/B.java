@@ -42,11 +42,11 @@ public class B {
 			h+=m/60;
 			m%=60;
 			h%=12;
-			System.out.println(t+" "+h+" "+m);
+//			System.out.println(t+" "+h+" "+m);
 		}
 		i=0;for(int x:b)i+=x;
 		for(j=i=0;i<6;j+=b[i++]);
-		System.out.println(j);
+		System.out.println(j>100?100:j);
 //		System.out.println(Arrays.toString(b));
 	}
 }
