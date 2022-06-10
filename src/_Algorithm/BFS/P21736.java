@@ -1,7 +1,6 @@
 package _Algorithm.BFS;
-import java.io.BufferedReader;
-import java.io.InputStreamReader;
-import java.util.Arrays;
+import java.io.*;
+import java.util.*;
 public class P21736 {
 	static int n,m,i,j,h[][],p[]= {0,1,0,-1},q[]= {1,0,-1,0},R;
 	static char[][]a;
