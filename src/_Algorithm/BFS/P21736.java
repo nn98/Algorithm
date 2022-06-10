@@ -23,6 +23,8 @@ public class P21736 {
 		m=Integer.parseInt(b[0]);
 		a=new char[n][];
 		for(;i<n;a[i++]=r.readLine().toCharArray());
+		for(;j<n;j++)for(i=0;i<m;i++)if(a[j][i]=='I')o(j,i);
+		System.out.println(r<1?"TT":r);
 	}
 
 }
