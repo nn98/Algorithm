@@ -13,7 +13,7 @@ public class P21736 {
 		for(;i<4;i++) {
 			X=x+p[i];
 			Y=y+q[i];
-			if(X>=0&X<n&Y>=0&Y<m)if(h[X][Y]<1)o(X,Y);
+			if(X>=0&X<n&Y>=0&Y<m)if(a[X][Y]!='X'&h[X][Y]<1)o(X,Y);
 		}
 	}
 	public static void main(String[] args)throws Exception{
