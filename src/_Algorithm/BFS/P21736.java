@@ -1,9 +1,7 @@
 package _Algorithm.BFS;
-
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.Arrays;
-
 public class P21736 {
 	static int n,m,i,j,h[][],p[]= {0,1,0,-1},q[]= {1,0,-1,0},R;
 	static char[][]a;
@@ -30,5 +28,4 @@ public class P21736 {
 //		for(int[]c:h)System.out.println(Arrays.toString(c));
 		System.out.println(R<1?"TT":R);
 	}
-
 }
