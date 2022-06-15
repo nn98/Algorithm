@@ -24,6 +24,8 @@ public class P11659 {
 		t=new StringTokenizer(r.readLine());
 		for(;i<n;j=i+++l,a[j]=Integer.parseInt(t.nextToken()),o());
 		System.out.println(Arrays.toString(a));
+		i=1;
+		j=l;
 		for(;m-->0;t=new StringTokenizer(r.readLine()),System.out.println(p(1,Integer.parseInt(t.nextToken()),Integer.parseInt(t.nextToken()))));
 	}
 
