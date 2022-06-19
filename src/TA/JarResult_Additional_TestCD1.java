@@ -3,7 +3,7 @@ package TA;
 import java.io.*;
 import java.util.*;
 
-public class JarResult_Additional_TestCD {
+public class JarResult_Additional_TestCD1 {
 
     static StringBuffer sb = new StringBuffer(),sbR=new StringBuffer();
     static String code;
@@ -19,10 +19,9 @@ public class JarResult_Additional_TestCD {
 	    int i=0;
 	    while ((line = reader.readLine()) != null) {
 		String[]arr=line.split("\\.");
+	    flag=1;
 		if(arr[arr.length-1].equals("jar")){
-		    flag=1;
 		    execCmd("java -jar "+line);
-		    flag=0;
 		}
 		if(flag>0){
 		    sb.append(line+(i<1?"\tcode is "+(line.split(":")[0].trim().equals(code)?1:0):""));
@@ -53,7 +52,19 @@ public class JarResult_Additional_TestCD {
 	System.out.print("Input option(0-all 1-only result: ");
 	option=s.nextInt();
 	System.out.println("Program is running...");
-	execCmd("cd \"C:\\Users\\nn\\OneDrive - 성공회대학교\\TA\\22_1학기\\_자료구조\\[2022-1학기-자료구조-01][hw11_1]정렬\" & dir /b/oe/on");
+	execCmd("cd \"C:\\Users\\nn\\OneDrive - 성공회대학교\\TA\\22_1학기\\_자료구조\\[2022-1학기-자료구조-01][hw11_1]정렬\" & java -jar 16.[박태현-201813036]hw11_1-1.jar\n"
+			+ "10\n"
+			+ "201899011\n"
+			+ "201988011\n"
+			+ "202077022\n"
+			+ "201988022\n"
+			+ "202099022\n"
+			+ "202176123\n"
+			+ "201876125\n"
+			+ "202077001\n"
+			+ "9599002\n"
+			+ "201988010\n"
+			+ "");
 	System.out.println("\nResult code: \n\n"+sb);
 	System.out.println("Result score: \n"+sbR+"\ncorrect: "+cor+"\nincorrect: "+incor);
     }
