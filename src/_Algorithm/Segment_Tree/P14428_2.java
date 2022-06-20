@@ -21,6 +21,8 @@ public class P14428_2 {
 		for(;i<n;j=i+++l,b[i]=Integer.parseInt(t.nextToken()),a[j]=i,o());
 		System.out.println(Arrays.toString(a));
 		System.out.println(Arrays.toString(b));
+		m=Integer.parseInt(r.readLine());
+		
 	}
 
 }
