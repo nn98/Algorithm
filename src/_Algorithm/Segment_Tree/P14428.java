@@ -40,7 +40,7 @@ public class P14428 {
 			j=Integer.parseInt(t.nextToken());
 			i=Integer.parseInt(t.nextToken());
 			if(k>1) {
-				w.write(p(1,j,i)-l+"\n");
+				w.write(p(1,1,l)-l+"\n");
 			}
 			else {
 				j+=l-1;
