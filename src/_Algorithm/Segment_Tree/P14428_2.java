@@ -3,7 +3,6 @@ package _Algorithm.Segment_Tree;
 // 수열과 쿼리 16
 import java.io.*;
 import java.util.*;
-
 public class P14428_2 {
 	static int n,m,k,i,j,l,a[],b[];
 	static void o() {
@@ -42,5 +41,4 @@ public class P14428_2 {
 		}
 		w.flush();
 	}
-
 }
