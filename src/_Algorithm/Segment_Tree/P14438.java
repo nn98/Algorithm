@@ -7,20 +7,20 @@ public class P14438 {
 	static int n,a[],l=1,i,j,k,M=Integer.MAX_VALUE;
 	static void o() {
 //		for(;j>1;j/=2,a[j]=(a[j*2]==0?Integer.MAX_VALUE:a[j*2])<=(a[j*2+1]==0?Integer.MAX_VALUE:a[j*2+1])?a[j*2]:a[j*2+1]);
-		for(;j>1;j/=2,a[j]=Math.min(a[j*2],a[j*2+1]));
+		for(;j>1;j/=2,a[j]=a[a[j*2]]<a[a[j*2+1]]?a[j*2]:a[j*2+1]);
 	}
 	static int p(int n,int l,int r) {
 //		System.out.println(n+" "+l+" "+r);
 		if(l>i|j>r) {
 //			System.out.println("re 0");
-			return M;
+			return 0;
 		}
 		if(j<=l&r<=i) {
 //			System.out.println("re "+a[n]);
 			return a[n];
 		}
-		int m=(l+r)/2;
-		return Math.min(p(n*2,l,m),p(n*2+1,m+1,r));
+		int m=(l+r)/2,x=p(n*2,l,m),y=p(n*2+1,m+1,r);
+		return a[x]<a[y]?x:y;
 	}
 	public static void main(String[] args)throws Exception{
 		BufferedReader r=new BufferedReader(new InputStreamReader(System.in));
