@@ -11,7 +11,7 @@ public class P14428 {
 		for(;j>1;j/=2,a[j]=a[a[j*2]]<a[a[j*2+1]]?a[j*2]:a[j*2+1]);
 	}
 	static int p(int n,int l,int r) {
-//		System.out.println(n+" "+l+" "+r);
+		System.out.println(n+" "+l+" "+r);
 		if(l>i|j>r) {
 //			System.out.println("re 0");
 			return 0;
