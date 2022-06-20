@@ -1,5 +1,6 @@
 package _Algorithm.Segment_Tree;
-
+// https://www.acmicpc.net/problem/14428
+// 수열과 쿼리 16
 import java.io.*;
 import java.util.*;
 
