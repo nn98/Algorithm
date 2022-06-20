@@ -15,8 +15,8 @@ public class P14428_2 {
 		StringTokenizer t=new StringTokenizer(r.readLine());
 		for(l=1;l<n;l*=2);
 		a=new int[l*2];
-		Arrays.fill(b,Integer.MAX_VALUE);
 		b=new int[l];
+		Arrays.fill(b,Integer.MAX_VALUE);
 		for(;i<n;j=i+l,b[i]=Integer.parseInt(t.nextToken()),a[j]=i++,o());
 		System.out.println(Arrays.toString(a));
 		System.out.println(Arrays.toString(b));
