@@ -30,11 +30,11 @@ public class P18436 {
 		c=new int[l*2];
 		Arrays.fill(a,l,l*2,-1);
 		Arrays.fill(c,l,l*2,-1);
-		for(;i<n;j=i+++l,c[j]=a[j]=Integer.parseInt(t.nextToken())%2,j/=2,
+		for(;i<n;j=i+++l,c[j]=Integer.parseInt(t.nextToken())%2,a[j]=c[j]==1?0:1,j/=2,
 				a[j]=(a[j*2]==0?1:0)+(a[j*2+1]==0?1:0),
 						c[j]=(c[j*2]==1?1:0)+(c[j*2+1]==1?1:0),o());
-		System.out.println(Arrays.toString(a));
-		System.out.println(Arrays.toString(c));
+//		System.out.println(Arrays.toString(a));
+//		System.out.println(Arrays.toString(c));
 		for(m=Integer.parseInt(r.readLine());m-->0;) {
 			t=new StringTokenizer(r.readLine());
 			k=Integer.parseInt(t.nextToken());
@@ -43,10 +43,11 @@ public class P18436 {
 			if(k<2) {
 				j+=l-1;
 				i%=2;
-				a[j]=c[j]=i;
-				j/=2;
-				a[j]=(a[j*2]==0?1:0)+(a[j*2+1]==0?1:0);
-				c[j]=(c[j*2]==1?1:0)+(c[j*2+1]==1?1:0);
+				c[j]=i;
+				a[j]=c[j]==1?0:1;
+//				j/=2;
+//				a[j]=(a[j*2]==0?1:0)+(a[j*2+1]==0?1:0);
+//				c[j]=(c[j*2]==1?1:0)+(c[j*2+1]==1?1:0);
 				o();
 //				System.out.println(Arrays.toString(a));
 			}else w.write((k<3?p(1,1,l):q(1,1,l))+"\n");
