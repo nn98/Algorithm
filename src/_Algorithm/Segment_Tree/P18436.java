@@ -48,7 +48,7 @@ public class P18436 {
 				a[j]=(a[j*2]==0?1:0)+(a[j*2+1]==0?1:0);
 				c[j]=(c[j*2]==1?1:0)+(c[j*2+1]==1?1:0);
 				o();
-				System.out.println(Arrays.toString(a));
+//				System.out.println(Arrays.toString(a));
 			}else w.write((k<3?p(1,1,l):q(1,1,l))+"\n");
 		}
 		w.flush();
