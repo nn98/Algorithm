@@ -6,8 +6,7 @@ import java.util.*;
 public class P18436 {
 	static int n,m,k,i,j,l,a[],c[];
 	static void o() {
-		
-		for(;j>1;j/=2,a[j]=a[j*2]+a[j*2+1],c[j]=c[j*2]+c[j*2+1],System.out.println(Arrays.toString(c)));
+		for(;j>1;j/=2,a[j]=a[j*2]+a[j*2+1],c[j]=c[j*2]+c[j*2+1]);
 	}
 	static int p(int n,int x,int y) {
 		if(y<j|x>i)return 0;
@@ -43,10 +42,14 @@ public class P18436 {
 			i=Integer.parseInt(t.nextToken());
 			if(k<2) {
 				j+=l-1;
-				a[j]=i;
+				i%=2;
+				a[j]=c[j]=i;
+				j/=2;
+				a[j]=(a[j*2]==0?1:0)+(a[j*2+1]==0?1:0);
+				c[j]=(c[j*2]==1?1:0)+(c[j*2+1]==1?1:0);
 				o();
 				System.out.println(Arrays.toString(a));
-			}else w.write(p(1,1,l)+"\n");
+			}else w.write((k<3?p(1,1,l):q(1,1,l))+"\n");
 		}
 		w.flush();
 	}
