@@ -53,7 +53,7 @@ public class JarResult_Additional_TestCD {
 	System.out.print("Input option(0-all 1-only result: ");
 	option=s.nextInt();
 	System.out.println("Program is running...");
-	execCmd("cd \"C:\\Users\\nn\\OneDrive - 성공회대학교\\TA\\22_1학기\\_자료구조\\[2022-1학기-자료구조-01][hw11_1]정렬\" & dir /b/oe/on");
+	execCmd("cd \"C:\\Users\\nn\\OneDrive - 성공회대학교\\TA\\22_1학기\\_알고리즘\\[2022-1학기-알고리즘-01][hw7_1]해시테이블참고코드첨부\" & dir /b/oe/on");
 	System.out.println("\nResult code: \n\n"+sb);
 	System.out.println("Result score: \n"+sbR+"\ncorrect: "+cor+"\nincorrect: "+incor);
     }
