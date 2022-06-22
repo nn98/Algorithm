@@ -7,7 +7,6 @@ public class P18436_2 {
 	static int n,m,k,i,j,l,a[];
 	static void o() {
 		for(;j>1;j/=2,a[j]=a[j*2]+a[j*2+1]);
-		System.out.println(Arrays.toString(a));
 	}
 	static int p(int n,int x,int y) {
 		if(y<j|x>i)return 0;
