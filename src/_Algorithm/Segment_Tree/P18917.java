@@ -11,11 +11,10 @@ public class P18917 {
 //		System.out.println(0^3^1^4);
 		BufferedReader r=new BufferedReader(new InputStreamReader(System.in));
 		BufferedWriter w=new BufferedWriter(new OutputStreamWriter(System.out));
-		int n=Integer.parseInt(r.readLine()),i,j,u=0,o=0,x=1;
+		long n=Integer.parseInt(r.readLine()),j,u=0,o=0,x=1;
 		for(;n-->0;) {
 			StringTokenizer t=new StringTokenizer(r.readLine());
-			i=Integer.parseInt(t.nextToken());
-			switch(i) {
+			switch(Integer.parseInt(t.nextToken())) {
 			case 1:
 				j=Integer.parseInt(t.nextToken());
 				u+=j;
