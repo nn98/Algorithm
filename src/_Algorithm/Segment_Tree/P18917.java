@@ -33,6 +33,7 @@ public class P18917 {
 				w.write(o+"\n");
 			}
 		}
+		w.flush();
 	}
 
 }
