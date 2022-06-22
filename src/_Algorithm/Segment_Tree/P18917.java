@@ -1,6 +1,6 @@
 package _Algorithm.Segment_Tree;
-//https://www.acmicpc.net/problem/18436
-//수열과 쿼리 37
+//https://www.acmicpc.net/problem/18917
+//수열과 쿼리 38
 import java.io.*;
 import java.util.*;
 public class P18917 {
