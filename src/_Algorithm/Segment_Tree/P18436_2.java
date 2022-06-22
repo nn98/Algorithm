@@ -6,7 +6,8 @@ import java.util.*;
 public class P18436_2 {
 	static int n,m,k,i,j,l,a[],c[];
 	static void o() {
-		for(;j>1;j/=2,a[j]=a[j*2]+a[j*2+1],c[j]=c[j*2]+c[j*2+1]);
+		for(;j>1;j/=2,a[j]=a[j*2]+a[j*2+1]);
+		System.out.println(Arrays.toString(a));
 	}
 	static int p(int n,int x,int y) {
 		if(y<j|x>i)return 0;
@@ -27,31 +28,11 @@ public class P18436_2 {
 		StringTokenizer t=new StringTokenizer(r.readLine());
 		for(l=1;l<n;l*=2);
 		a=new int[l*2];
-		c=new int[l*2];
-		Arrays.fill(a,l,l*2,-1);
-		Arrays.fill(c,l,l*2,-1);
-		for(;i<n;j=i+++l,c[j]=Integer.parseInt(t.nextToken())%2,a[j]=c[j]==1?0:1,j/=2,
-				a[j]=(a[j*2]==0?1:0)+(a[j*2+1]==0?1:0),
-						c[j]=(c[j*2]==1?1:0)+(c[j*2+1]==1?1:0),o());
+//		for(;i<n;j=i+++l,c[j]=Integer.parseInt(t.nextToken())%2,a[j]=c[j]==1?0:1,j/=2,
+//				a[j]=(a[j*2]==0?1:0)+(a[j*2+1]==0?1:0),
+//						c[j]=(c[j*2]==1?1:0)+(c[j*2+1]==1?1:0),o());
 //		System.out.println(Arrays.toString(a));
 //		System.out.println(Arrays.toString(c));
-		for(m=Integer.parseInt(r.readLine());m-->0;) {
-			t=new StringTokenizer(r.readLine());
-			k=Integer.parseInt(t.nextToken());
-			j=Integer.parseInt(t.nextToken());
-			i=Integer.parseInt(t.nextToken());
-			if(k<2) {
-				j+=l-1;
-				i%=2;
-				c[j]=i;
-				a[j]=c[j]==1?0:1;
-//				j/=2;
-//				a[j]=(a[j*2]==0?1:0)+(a[j*2+1]==0?1:0);
-//				c[j]=(c[j*2]==1?1:0)+(c[j*2+1]==1?1:0);
-				o();
-//				System.out.println(Arrays.toString(a));
-			}else w.write((k<3?p(1,1,l):q(1,1,l))+"\n");
-		}
-		w.flush();
+		for(;i<n;j=i+++l,a[j]=Integer.parseInt(t.nextToken())%2,o());
 	}
 }
