@@ -22,11 +22,6 @@ public class P18436_2 {
 		StringTokenizer t=new StringTokenizer(r.readLine());
 		for(l=1;l<n;l*=2);
 		a=new int[l*2];
-//		for(;i<n;j=i+++l,c[j]=Integer.parseInt(t.nextToken())%2,a[j]=c[j]==1?0:1,j/=2,
-//				a[j]=(a[j*2]==0?1:0)+(a[j*2+1]==0?1:0),
-//						c[j]=(c[j*2]==1?1:0)+(c[j*2+1]==1?1:0),o());
-//		System.out.println(Arrays.toString(a));
-//		System.out.println(Arrays.toString(c));
 		for(;i<n;j=i+++l,a[j]=Integer.parseInt(t.nextToken())%2,o());
 		for(m=Integer.parseInt(r.readLine());m-->0;) {
 			t=new StringTokenizer(r.readLine());
@@ -36,11 +31,7 @@ public class P18436_2 {
 			if(k<2) {
 				j+=l-1;
 				a[j]=i%2;
-//				j/=2;
-//				a[j]=(a[j*2]==0?1:0)+(a[j*2+1]==0?1:0);
-//				c[j]=(c[j*2]==1?1:0)+(c[j*2+1]==1?1:0);
 				o();
-//				System.out.println(Arrays.toString(a));
 			}else w.write((k<3?i-j+1-p(1,1,l):p(1,1,l))+"\n");
 		}
 		w.flush();
