@@ -1,5 +1,4 @@
 package Programmers;
-
 public class P42883_2 {
     static char a[];
     static int i,l;
@@ -25,7 +24,6 @@ public class P42883_2 {
     }
 	public static String solution(String number, int k) {
 		l=number.length()-k;
-        String answer = "";
         a=number.toCharArray();
         o(0,k);
         return s;
@@ -33,5 +31,4 @@ public class P42883_2 {
 	public static void main(String[] args) {
 		System.out.println(solution("1924",2));
 	}
-
 }
