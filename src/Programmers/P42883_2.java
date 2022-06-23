@@ -10,6 +10,7 @@ public class P42883_2 {
     		o(x+1,v-1);
     	}else {
     		d=a.toString().replaceAll("X","");
+    		System.out.println(d);
     		if(s==null)s=d;
     		else s=s.compareTo(d)>0?d:s;
     	}
