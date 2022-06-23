@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class P42883 {
 	public static String solution(String number, int k) {
-		StringBuffer answer = new StringBuffer(number);
+		StringBuffer answer = new StringBuffer();
 		int i=0,j=2,n=number.length()-k,a[]=new int[10];
 		for(;i<number.length();a[number.charAt(i++)-'0']++);
 		System.out.println(Arrays.toString(a)+n);
@@ -22,7 +22,7 @@ public class P42883 {
 				i--;
 			}else{
 				a[i]--;
-				number.replace(String.format("%d",i), 0)
+				answer.append(i);
 				k--;
 			}
 		}
