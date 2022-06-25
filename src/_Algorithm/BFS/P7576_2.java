@@ -39,7 +39,7 @@ public class P7576_2 {
 			R=Math.max(h[i][j],R);
 		}
 		System.out.println(Arrays.toString(s));
-		System.out.println(R-1);
+		System.out.println(s[1]<1?R-1:-1);
 	}
 
 }
