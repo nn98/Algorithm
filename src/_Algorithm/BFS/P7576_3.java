@@ -44,8 +44,8 @@ public class P7576_3 {
 			x=P.remove();
 			y=Q.remove();
 			for(;k<4;k++) {
-				i=x+p[i];
-				j=y+q[i];
+				i=x+p[k];
+				j=y+q[k];
 				if(i>=0&i<n&j>=0&j<m) {
 					if(a[i][j]==0) {
 						a[i][j]=a[x][y]+1;
@@ -55,18 +55,18 @@ public class P7576_3 {
 				}
 			}
 		}
-		for(i=0;i<n;i++)for(j=0;j<m;j++)if(a[i][j]==1)o(i,j,1);
+//		for(i=0;i<n;i++)for(j=0;j<m;j++)if(a[i][j]==1)o(i,j,1);
 //		System.out.println(Arrays.toString(s));
 //		for(int[]b:h)System.out.println(Arrays.toString(b));
+		s[2]=0;
 		for(i=0;i<n;i++)for(j=0;j<m;j++) {
-			if(a[i][j]>-1&h[i][j]>0) {
-				s[a[i][j]+1]--;
+			if(a[i][j]>0) {
 				s[2]++;
 			}
-			R=Math.max(h[i][j],R);
+			R=Math.max(a[i][j],R);
 		}
 //		System.out.println(Arrays.toString(s));
-		System.out.println(s[1]<1?R-1:-1);
+		System.out.println(s[2]+s[0]==n*m?R-1:-1);
 	}
 
 }
