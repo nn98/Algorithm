@@ -8,13 +8,12 @@ public class P7576_2 {
 	static void o(int x,int y,int v) {
 		System.out.println(x+" "+y+" "+v);
 		h[x][y]=v++;
-		R=R>h[x][y]?R:h[x][y];
 		int i=0,X,Y;
 		for(;i<4;) {
 			X=x+p[i];
 			Y=y+q[i++];
 			if(X>=0&X<n&Y>=0&Y<m) {
-				if(a[X][Y]>-1)if(h[X][Y]==0)o(X,Y,v);else if(h[X][Y]>v)o(X,Y,v);
+				if(a[X][Y]==0)if(h[X][Y]==0)o(X,Y,v);else if(h[X][Y]>v)o(X,Y,v);
 			}
 		}
 	}
@@ -32,6 +31,7 @@ public class P7576_2 {
 		for(i=0;i<n;i++)for(j=0;j<m;j++)if(a[i][j]==1)o(i,j,1);
 		System.out.println(Arrays.toString(s));
 		for(int[]b:h)System.out.println(Arrays.toString(b));
+		for(i=0;i<n;i++)for(j=0;j<m;j++)R=Math.max(h[i][j],R);
 		System.out.println(R-1);
 	}
 
