@@ -40,13 +40,18 @@ public class P7576_3 {
 			System.out.println(0);
 			return;
 		}
+		System.out.println(P.toString());
+		System.out.println(Q.toString());
 		while(!P.isEmpty()&!Q.isEmpty()) {
+//			System.out.println("9");
 			x=P.remove();
 			y=Q.remove();
-			for(;k<4;k++) {
+			for(k=0;k<4;k++) {
 				i=x+p[k];
 				j=y+q[k];
+				System.out.println(i+" "+j);
 				if(i>=0&i<n&j>=0&j<m) {
+					System.out.println("\t"+i+" "+j);
 					if(a[i][j]==0) {
 						a[i][j]=a[x][y]+1;
 						P.add(i);
@@ -54,10 +59,12 @@ public class P7576_3 {
 					}
 				}
 			}
+			System.out.println(P.toString());
+			System.out.println(Q.toString());
 		}
 //		for(i=0;i<n;i++)for(j=0;j<m;j++)if(a[i][j]==1)o(i,j,1);
 //		System.out.println(Arrays.toString(s));
-//		for(int[]b:h)System.out.println(Arrays.toString(b));
+		for(int[]b:a)System.out.println(Arrays.toString(b));
 		s[2]=0;
 		for(i=0;i<n;i++)for(j=0;j<m;j++) {
 			if(a[i][j]>0) {
@@ -65,7 +72,7 @@ public class P7576_3 {
 			}
 			R=Math.max(a[i][j],R);
 		}
-//		System.out.println(Arrays.toString(s));
+		System.out.println(Arrays.toString(s));
 		System.out.println(s[2]+s[0]==n*m?R-1:-1);
 	}
 
