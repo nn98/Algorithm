@@ -6,7 +6,7 @@ public class P7576_2 {
 
 	static int n,m,a[][],i,j,k,R,s[]=new int[3],h[][],p[]= {1,0,-1,0},q[]= {0,1,0,-1};
 	static void o(int x,int y,int v) {
-		System.out.println(x+" "+y+" "+v);
+//		System.out.println(x+" "+y+" "+v);
 		h[x][y]=v++;
 		int i=0,X,Y;
 		for(;i<4;) {
@@ -33,8 +33,8 @@ public class P7576_2 {
 			return;
 		}
 		for(i=0;i<n;i++)for(j=0;j<m;j++)if(a[i][j]==1)o(i,j,1);
-		System.out.println(Arrays.toString(s));
-		for(int[]b:h)System.out.println(Arrays.toString(b));
+//		System.out.println(Arrays.toString(s));
+//		for(int[]b:h)System.out.println(Arrays.toString(b));
 		for(i=0;i<n;i++)for(j=0;j<m;j++) {
 			if(a[i][j]>-1&h[i][j]>0) {
 				s[a[i][j]+1]--;
@@ -42,7 +42,7 @@ public class P7576_2 {
 			}
 			R=Math.max(h[i][j],R);
 		}
-		System.out.println(Arrays.toString(s));
+//		System.out.println(Arrays.toString(s));
 		System.out.println(s[1]<1?R-1:-1);
 	}
 
