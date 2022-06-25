@@ -1,7 +1,8 @@
 package _Algorithm.BFS;
 //https://www.acmicpc.net/problem/7576
 //토마토
-//익은 토마토 위치를 큐에 삽입해 정확히 순서대로 시뮬 - AC
+//익은 토마토 위치를 큐에 삽입해 정확히 순서대로 시뮬 - AC 
+//총 52분
 import java.io.*;
 import java.util.*;
 public class P7576_3 {
