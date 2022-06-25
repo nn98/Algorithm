@@ -28,12 +28,12 @@ public class P7576_2 {
 			t=new StringTokenizer(r.readLine());
 			for(j=0;j<m;a[i][j]=Integer.parseInt(t.nextToken()),s[a[i][j++]+1]++);
 		}
-		for(i=0;i<n;i++)for(j=0;j<m;j++)if(a[i][j]==1)o(i,j,1);
-		System.out.println(Arrays.toString(s));
 		if(n*m==(s[0]+s[2])) {
 			System.out.println(0);
 			return;
 		}
+		for(i=0;i<n;i++)for(j=0;j<m;j++)if(a[i][j]==1)o(i,j,1);
+		System.out.println(Arrays.toString(s));
 		for(int[]b:h)System.out.println(Arrays.toString(b));
 		for(i=0;i<n;i++)for(j=0;j<m;j++) {
 			if(a[i][j]>-1&h[i][j]>0) {
