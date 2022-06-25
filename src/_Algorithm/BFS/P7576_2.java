@@ -31,7 +31,14 @@ public class P7576_2 {
 		for(i=0;i<n;i++)for(j=0;j<m;j++)if(a[i][j]==1)o(i,j,1);
 		System.out.println(Arrays.toString(s));
 		for(int[]b:h)System.out.println(Arrays.toString(b));
-		for(i=0;i<n;i++)for(j=0;j<m;j++)R=Math.max(h[i][j],R);
+		for(i=0;i<n;i++)for(j=0;j<m;j++) {
+			if(a[i][j]>-1&h[i][j]>0) {
+				s[a[i][j]+1]--;
+				s[2]++;
+			}
+			R=Math.max(h[i][j],R);
+		}
+		System.out.println(Arrays.toString(s));
 		System.out.println(R-1);
 	}
 
