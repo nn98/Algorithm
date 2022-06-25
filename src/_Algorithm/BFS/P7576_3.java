@@ -64,7 +64,7 @@ public class P7576_3 {
 		}
 //		for(i=0;i<n;i++)for(j=0;j<m;j++)if(a[i][j]==1)o(i,j,1);
 //		System.out.println(Arrays.toString(s));
-		for(int[]b:a)System.out.println(Arrays.toString(b));
+//		for(int[]b:a)System.out.println(Arrays.toString(b));
 		s[2]=0;
 		for(i=0;i<n;i++)for(j=0;j<m;j++) {
 			if(a[i][j]>0) {
@@ -72,7 +72,7 @@ public class P7576_3 {
 			}
 			R=Math.max(a[i][j],R);
 		}
-		System.out.println(Arrays.toString(s));
+//		System.out.println(Arrays.toString(s));
 		System.out.println(s[2]+s[0]==n*m?R-1:-1);
 	}
 
