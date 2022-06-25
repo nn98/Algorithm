@@ -1,5 +1,7 @@
 package _Algorithm.BFS;
-
+// https://www.acmicpc.net/problem/7576
+// 토마토
+//BF 방식으로 시뮬하고 DP로 최소값 탐색 - 시간초과 
 import java.io.*;
 import java.util.*;
 public class P7576_2 {
