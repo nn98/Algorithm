@@ -34,8 +34,9 @@ public class P7569_2 {
 			System.out.println(0);
 			return;
 		}
-//		System.out.println(P.toString());
-//		System.out.println(Q.toString());
+		System.out.println(P.toString());
+		System.out.println(Q.toString());
+		System.out.println(W.toString());
 		while(!P.isEmpty()&!Q.isEmpty()&!W.isEmpty()) {
 //			System.out.println("9");
 			x=P.remove();
