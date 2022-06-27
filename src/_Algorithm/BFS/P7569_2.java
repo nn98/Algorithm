@@ -17,8 +17,8 @@ public class P7569_2 {
 		b=Integer.parseInt(t.nextToken());
 		a=new int[n][m][b];
 		for(;i<n;i++) {
-			t=new StringTokenizer(r.readLine());
 			for(j=0;j<m;j++) {
+				t=new StringTokenizer(r.readLine());
 				for(k=0;k<b;k++) {
 					a[i][j][k]=Integer.parseInt(t.nextToken());
 					if(a[i][j][k]==1) {
