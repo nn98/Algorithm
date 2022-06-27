@@ -15,11 +15,11 @@ public class P7569_2 {
 		m=Integer.parseInt(t.nextToken());
 		n=Integer.parseInt(t.nextToken());
 		b=Integer.parseInt(t.nextToken());
-		a=new int[n][m][b];
-		for(;i<n;i++) {
-			for(j=0;j<m;j++) {
+		a=new int[b][n][m];
+		for(;i<b;i++) {
+			for(j=0;j<n;j++) {
 				t=new StringTokenizer(r.readLine());
-				for(k=0;k<b;k++) {
+				for(k=0;k<m;k++) {
 					a[i][j][k]=Integer.parseInt(t.nextToken());
 					if(a[i][j][k]==1) {
 						P.add(i);
@@ -63,7 +63,7 @@ public class P7569_2 {
 //		System.out.println(Arrays.toString(s));
 //		for(int[]b:a)System.out.println(Arrays.toString(b));
 		s[2]=0;
-		for(i=0;i<n;i++)for(j=0;j<m;j++)for(k=0;k<b;k++) {
+		for(i=0;i<b;i++)for(j=0;j<n;j++)for(k=0;k<m;k++) {
 			if(a[i][j][k]>0) {
 				s[2]++;
 			}
