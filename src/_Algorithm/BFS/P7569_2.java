@@ -34,9 +34,9 @@ public class P7569_2 {
 			System.out.println(0);
 			return;
 		}
-		System.out.println(P.toString());
-		System.out.println(Q.toString());
-		System.out.println(W.toString());
+//		System.out.println(P.toString());
+//		System.out.println(Q.toString());
+//		System.out.println(W.toString());
 		while(!P.isEmpty()&!Q.isEmpty()&!W.isEmpty()) {
 //			System.out.println("9");
 			x=P.remove();
@@ -71,8 +71,8 @@ public class P7569_2 {
 			}
 			R=Math.max(a[i][j][k],R);
 		}
-		System.out.println(Arrays.toString(s));
-		System.out.println(R);
+//		System.out.println(Arrays.toString(s));
+//		System.out.println(R);
 		System.out.println(s[2]+s[0]==n*m*b?R-1:-1);
 	}
 
