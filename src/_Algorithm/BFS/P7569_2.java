@@ -2,6 +2,7 @@ package _Algorithm.BFS;
 //https://www.acmicpc.net/problem/7569
 //토마토
 //익은 토마토 위치를 큐에 삽입해 정확히 순서대로 시뮬 - AC
+//측정못함
 import java.io.*;
 import java.util.*;
 public class P7569_2 {
