@@ -7,36 +7,27 @@ import java.io.*;
 import java.util.*;
 public class P7569_2 {
 
-	static int n,m,a[][],i,j,k,x,y,R,s[]=new int[3],h[][],p[]= {1,0,-1,0},q[]= {0,1,0,-1};
-	static Queue<Integer>P=new LinkedList(),Q=new LinkedList();
-	static void o(int x,int y,int v) {
-//		System.out.println(x+" "+y+" "+v);
-		h[x][y]=v++;
-		int i=0,X,Y;
-		for(;i<4;) {
-			X=x+p[i];
-			Y=y+q[i++];
-			if(X>=0&X<n&Y>=0&Y<m) {
-				if(a[X][Y]==0)if(h[X][Y]==0)o(X,Y,v);else if(h[X][Y]>v)o(X,Y,v);
-			}
-		}
-	}
+	static int n,m,b,a[][][],i,j,k,x,y,z,c,R,s[]=new int[3],h[][],p[]= {1,0,-1,0,0,0},q[]= {0,1,0,-1,0,0},w[]= {0,0,0,0,1,-1};
+	static Queue<Integer>P=new LinkedList(),Q=new LinkedList(),W=new LinkedList();
 	public static void main(String[] args)throws Exception{
 		BufferedReader r=new BufferedReader(new InputStreamReader(System.in));
 		StringTokenizer t=new StringTokenizer(r.readLine());
 		m=Integer.parseInt(t.nextToken());
 		n=Integer.parseInt(t.nextToken());
-		a=new int[n][m];
-		h=new int[n][m];
+		b=Integer.parseInt(t.nextToken());
+		a=new int[n][m][b];
 		for(;i<n;i++) {
 			t=new StringTokenizer(r.readLine());
-			for(j=0;j<m;) {
-				a[i][j]=Integer.parseInt(t.nextToken());
-				if(a[i][j]==1) {
-					P.add(i);
-					Q.add(j);
+			for(j=0;j<m;j++) {
+				for(k=0;k<b;k++) {
+					a[i][j][k]=Integer.parseInt(t.nextToken());
+					if(a[i][j][k]==1) {
+						P.add(i);
+						Q.add(j);
+						W.add(k);
+					}
+					s[a[i][j][k]+1]++;
 				}
-				s[a[i][j++]+1]++;
 			}
 		}
 		if(n*m==(s[0]+s[2])) {
@@ -45,20 +36,23 @@ public class P7569_2 {
 		}
 //		System.out.println(P.toString());
 //		System.out.println(Q.toString());
-		while(!P.isEmpty()&!Q.isEmpty()) {
+		while(!P.isEmpty()&!Q.isEmpty()&!W.isEmpty()) {
 //			System.out.println("9");
 			x=P.remove();
 			y=Q.remove();
-			for(k=0;k<4;k++) {
+			z=W.remove();
+			for(k=0;k<6;k++) {
 				i=x+p[k];
 				j=y+q[k];
+				c=z+w[k];
 //				System.out.println(i+" "+j);
-				if(i>=0&i<n&j>=0&j<m) {
+				if(i>=0&i<n&j>=0&j<m&c>=0&c<b) {
 //					System.out.println("\t"+i+" "+j);
-					if(a[i][j]==0) {
-						a[i][j]=a[x][y]+1;
+					if(a[i][j][c]==0) {
+						a[i][j][c]=a[x][y][z]+1;
 						P.add(i);
 						Q.add(j);
+						W.add(c);
 					}
 				}
 			}
@@ -69,11 +63,11 @@ public class P7569_2 {
 //		System.out.println(Arrays.toString(s));
 //		for(int[]b:a)System.out.println(Arrays.toString(b));
 		s[2]=0;
-		for(i=0;i<n;i++)for(j=0;j<m;j++) {
-			if(a[i][j]>0) {
+		for(i=0;i<n;i++)for(j=0;j<m;j++)for(k=0;k<b;k++) {
+			if(a[i][j][k]>0) {
 				s[2]++;
 			}
-			R=Math.max(a[i][j],R);
+			R=Math.max(a[i][j][k],R);
 		}
 //		System.out.println(Arrays.toString(s));
 		System.out.println(s[2]+s[0]==n*m?R-1:-1);
