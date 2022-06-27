@@ -47,7 +47,7 @@ public class P7569_2 {
 				j=y+q[k];
 				c=z+w[k];
 //				System.out.println(i+" "+j);
-				if(i>=0&i<n&j>=0&j<m&c>=0&c<b) {
+				if(i>=0&i<b&j>=0&j<n&c>=0&c<m) {
 //					System.out.println("\t"+i+" "+j);
 					if(a[i][j][c]==0) {
 						a[i][j][c]=a[x][y][z]+1;
@@ -59,6 +59,7 @@ public class P7569_2 {
 			}
 //			System.out.println(P.toString());
 //			System.out.println(Q.toString());
+//			System.out.println(W.toString());
 		}
 //		for(i=0;i<n;i++)for(j=0;j<m;j++)if(a[i][j]==1)o(i,j,1);
 //		System.out.println(Arrays.toString(s));
@@ -70,8 +71,9 @@ public class P7569_2 {
 			}
 			R=Math.max(a[i][j][k],R);
 		}
-//		System.out.println(Arrays.toString(s));
-		System.out.println(s[2]+s[0]==n*m?R-1:-1);
+		System.out.println(Arrays.toString(s));
+		System.out.println(R);
+		System.out.println(s[2]+s[0]==n*m*b?R-1:-1);
 	}
 
 }
