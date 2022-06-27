@@ -6,7 +6,6 @@ package _Algorithm.BFS;
 import java.io.*;
 import java.util.*;
 public class P7569_2 {
-
 	static int n,m,b,a[][][],i,j,k,x,y,z,c,R,s[]=new int[3],h[][],p[]= {1,0,-1,0,0,0},q[]= {0,1,0,-1,0,0},w[]= {0,0,0,0,1,-1};
 	static Queue<Integer>P=new LinkedList(),Q=new LinkedList(),W=new LinkedList();
 	public static void main(String[] args)throws Exception{
@@ -34,11 +33,7 @@ public class P7569_2 {
 			System.out.println(0);
 			return;
 		}
-//		System.out.println(P.toString());
-//		System.out.println(Q.toString());
-//		System.out.println(W.toString());
 		while(!P.isEmpty()&!Q.isEmpty()&!W.isEmpty()) {
-//			System.out.println("9");
 			x=P.remove();
 			y=Q.remove();
 			z=W.remove();
@@ -46,9 +41,7 @@ public class P7569_2 {
 				i=x+p[k];
 				j=y+q[k];
 				c=z+w[k];
-//				System.out.println(i+" "+j);
 				if(i>=0&i<b&j>=0&j<n&c>=0&c<m) {
-//					System.out.println("\t"+i+" "+j);
 					if(a[i][j][c]==0) {
 						a[i][j][c]=a[x][y][z]+1;
 						P.add(i);
@@ -57,13 +50,7 @@ public class P7569_2 {
 					}
 				}
 			}
-//			System.out.println(P.toString());
-//			System.out.println(Q.toString());
-//			System.out.println(W.toString());
 		}
-//		for(i=0;i<n;i++)for(j=0;j<m;j++)if(a[i][j]==1)o(i,j,1);
-//		System.out.println(Arrays.toString(s));
-//		for(int[]b:a)System.out.println(Arrays.toString(b));
 		s[2]=0;
 		for(i=0;i<b;i++)for(j=0;j<n;j++)for(k=0;k<m;k++) {
 			if(a[i][j][k]>0) {
@@ -71,9 +58,6 @@ public class P7569_2 {
 			}
 			R=Math.max(a[i][j][k],R);
 		}
-//		System.out.println(Arrays.toString(s));
-//		System.out.println(R);
 		System.out.println(s[2]+s[0]==n*m*b?R-1:-1);
 	}
-
 }
