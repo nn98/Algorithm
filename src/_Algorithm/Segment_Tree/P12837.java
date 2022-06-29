@@ -3,11 +3,12 @@ package _Algorithm.Segment_Tree;
 import java.io.*;
 import java.util.*;
 public class P12837 {
-	static int n,m,i,j,a[],l=1;
+	static int j,l=1;
+	static long n,m,i,a[];
 	static void o() {
 		for(;j>1;j/=2,a[j]=a[j*2]+a[j*2+1]);
 	}
-	static int p(int n,int s,int e) {
+	static long p(int n,int s,int e) {
 		if(s>j|e<i)return 0;
 		if(s>=i&e<=j)return a[n];
 		int m=(s+e)/2;
@@ -19,7 +20,7 @@ public class P12837 {
 		StringTokenizer t=new StringTokenizer(r.readLine());
 		n=Integer.parseInt(t.nextToken());
 		for(;l<n;l*=2);
-		a=new int[l*2];
+		a=new long[l*2];
 		for(m=Integer.parseInt(t.nextToken());m-->0;) {
 			t=new StringTokenizer(r.readLine());
 			switch(t.nextToken()) {
