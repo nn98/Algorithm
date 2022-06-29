@@ -7,6 +7,7 @@ public class P12837 {
 	static long n,m,i,a[];
 	static void o() {
 		for(;j>1;j/=2,a[j]=a[j*2]+a[j*2+1]);
+		System.out.println(Arrays.toString(a));
 	}
 	static long p(int n,int s,int e) {
 		if(s>j|e<i)return 0;
@@ -18,19 +19,19 @@ public class P12837 {
 		BufferedReader r=new BufferedReader(new InputStreamReader(System.in));
 		BufferedWriter w=new BufferedWriter(new OutputStreamWriter(System.out));
 		StringTokenizer t=new StringTokenizer(r.readLine());
-		n=Integer.parseInt(t.nextToken());
+		n=Long.parseLong(t.nextToken());
 		for(;l<n;l*=2);
 		a=new long[l*2];
-		for(m=Integer.parseInt(t.nextToken());m-->0;) {
+		for(m=Long.parseLong(t.nextToken());m-->0;) {
 			t=new StringTokenizer(r.readLine());
 			switch(t.nextToken()) {
 			case "1":
 				j=Integer.parseInt(t.nextToken())+l-1;
-				a[j]=Integer.parseInt(t.nextToken());
+				a[j]=Long.parseLong(t.nextToken());
 				o();
 				break;
 			default:
-				i=Integer.parseInt(t.nextToken());
+				i=Long.parseLong(t.nextToken());
 				j=Integer.parseInt(t.nextToken());
 				w.write(p(1,1,l)+"\n");
 			}
