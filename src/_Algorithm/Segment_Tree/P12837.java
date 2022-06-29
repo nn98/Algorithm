@@ -27,7 +27,7 @@ public class P12837 {
 			switch(t.nextToken()) {
 			case "1":
 				j=Integer.parseInt(t.nextToken())+l-1;
-				a[j]=Long.parseLong(t.nextToken());
+				a[j]+=Long.parseLong(t.nextToken());
 				o();
 				break;
 			default:
