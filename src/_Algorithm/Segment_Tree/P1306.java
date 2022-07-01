@@ -10,7 +10,7 @@ public class P1306 {
 		for(;j>1;j/=2,a[j]=a[j*2]>a[j*2+1]?a[j*2]:a[j*2+1]);
 	}
 	static int p(int n,int s,int e) {
-		System.out.println(n+" "+s+" "+e);
+//		System.out.println(n+" "+s+" "+e);
 		if(e<x|y<s)return 0;
 		if(s>=x&e<=y)return a[n];
 		int m=(s+e)/2,a=p(n*2,s,m),b=p(n*2+1,m+1,e);
@@ -31,7 +31,7 @@ public class P1306 {
 		for(i=m;i<n-m;i++) {
 			x=i-m+1;
 			y=i+m+1;
-			System.out.println(i+" "+x+" "+y);
+//			System.out.println(i+" "+x+" "+y);
 			w.write(p(1,1,l)+" ");
 		}
 		w.flush();
