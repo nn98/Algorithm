@@ -20,13 +20,19 @@ public class P1306 {
 		BufferedWriter w=new BufferedWriter(new OutputStreamWriter(System.out));
 		StringTokenizer t=new StringTokenizer(r.readLine());
 		n=Integer.parseInt(t.nextToken());
-		m=Integer.parseInt(t.nextToken());
+		m=Integer.parseInt(t.nextToken())-1;
 		t=new StringTokenizer(r.readLine());
 		l=1;
 		for(;l<=n;l*=2);
 		a=new int[l*2];
 		for(;i<n;j=i+++l,a[j]=Integer.parseInt(t.nextToken()),o());
-		System.out.println(Arrays.toString(a));
+//		System.out.println(Arrays.toString(a));
+		for(i=m;i<n-m+2;i++) {
+			x=i-m;
+			y=i+m;
+			w.write(p(1,1,l)+" ");
+		}
+		w.flush();
 	}
 
 }
