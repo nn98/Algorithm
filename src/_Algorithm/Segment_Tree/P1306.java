@@ -27,7 +27,7 @@ public class P1306 {
 		for(;l<=n;l*=2);
 		a=new int[l*2];
 		for(;i<n;j=i+++l,a[j]=Integer.parseInt(t.nextToken()),o());
-		System.out.println(Arrays.toString(a));
+//		System.out.println(Arrays.toString(a));
 		for(i=m;i<n-m;i++) {
 			x=i-m+1;
 			y=i+m+1;
