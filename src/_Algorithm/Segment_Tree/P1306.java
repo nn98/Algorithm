@@ -7,7 +7,7 @@ public class P1306 {
 
 	static int n,m,i,j,x,y,l,p,q,a[],u,v;
 	static void o() {
-		for(;i>1;i/=2,a[i]=a[i*2]>a[i*2+1]?a[i*2]:a[i*2+1]);
+		for(;j>1;j/=2,a[j]=a[j*2]>a[j*2+1]?a[j*2]:a[j*2+1]);
 	}
 	static int p(int n,int s,int e) {
 		if(e<x|y<s)return 0;
@@ -25,7 +25,7 @@ public class P1306 {
 		l=1;
 		for(;l<=n;l*=2);
 		a=new int[l*2];
-		for(;i<n;j=i+++l,a[j]=Integer.parseInt(t.nextToken()),o(),System.out.println(i));
+		for(;i<n;j=i+++l,a[j]=Integer.parseInt(t.nextToken()),o());
 		System.out.println(Arrays.toString(a));
 	}
 
