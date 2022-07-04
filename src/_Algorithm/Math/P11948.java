@@ -1,9 +1,6 @@
 package _Algorithm.Math;
-
 import java.util.Scanner;
-
 public class P11948 {
-
 	public static void main(String[] args) {
 		Scanner s=new Scanner(System.in);
 		int m=100,u=0,n,i=0;
@@ -17,5 +14,4 @@ public class P11948 {
 		}
 		System.out.println(u);
 	}
-
 }
