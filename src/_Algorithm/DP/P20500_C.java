@@ -1,5 +1,4 @@
 package _Algorithm.DP;
-
 import java.util.Arrays;
 public class P20500_C {
 	public static void main(String[] args) {
