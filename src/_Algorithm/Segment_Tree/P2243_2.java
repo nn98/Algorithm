@@ -15,7 +15,7 @@ public class P2243_2{
 		if(s==e)return s;
 		int m=(s+e)/2;
 		if(t<=a[n*2])return q(n*2,t,s,m);
-		return q(n*2+1,t-a[n*2],m+1,e);
+		else return q(n*2+1,t-a[n*2],m+1,e);
 	}
 	public static void main(String[] args)throws Exception{
 		BufferedReader r=new BufferedReader(new InputStreamReader(System.in));
@@ -29,7 +29,7 @@ public class P2243_2{
 			case 1:
 				m=q(1,i,1,M);
 				w.write(m+"\n");
-				o(1,i,-1,1,M);
+				o(1,m,-1,1,M);
 				break;
 			case 2:
 				o(1,i,Integer.parseInt(t.nextToken()),1,M);
