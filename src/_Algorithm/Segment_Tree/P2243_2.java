@@ -1,6 +1,6 @@
 package _Algorithm.Segment_Tree;
 import java.io.*;
-import java.util.StringTokenizer;
+import java.util.*;
 public class P2243_2{
 	static int n,m,i,M=1000001,a[]=new int[M*4];
 	static void o(int n,int t,int d,int s,int e) {
