@@ -12,7 +12,7 @@ public class P9084_3{
 			p=s.nextInt();
 			d=new int[p+1];
 			d[0]=1;
-			for(i=0;i++<m;System.out.println(Arrays.toString(d)))
+			for(i=0;i++<m;)
 				for(j=a[i];j<=p;j++)
 					d[j]+=d[j-a[i]];
 			System.out.println(d[p]);
