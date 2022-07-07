@@ -2,6 +2,8 @@ package _Algorithm.DP;
 //https://steady-coding.tistory.com/339
 //https://kangwlgns.tistory.com/17
 
+import java.util.Arrays;
+
 public class P20500 {
 
 	public static void main(String[] args) {
@@ -11,9 +13,9 @@ public class P20500 {
 			return;
 		}
 		a[0][1]=a[1][1]=1;
-//		for(int[]b:a)System.out.println(Arrays.toString(b));
+		for(int[]b:a)System.out.println(Arrays.toString(b));
 		for(;++i<n-1;a[0][i+1]=(a[1][i]+a[2][i])%m,a[1][i+1]=(a[0][i]+a[2][i])%m,a[2][i+1]=(a[0][i]+a[1][i])%m);
-//		for(int[]b:a)System.out.println(Arrays.toString(b));
+		for(int[]b:a)System.out.println(Arrays.toString(b));
 		System.out.println(a[0][n-1]);
 	}
 
