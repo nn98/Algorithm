@@ -11,6 +11,17 @@ public class P17388 {
 			j=i;
 			n=m;
 		}
-		System.out.println(u>99?"OK":(j<1?"Soongsil":(j<2?"Korea":"Hanyang")));
+//		System.out.println(u>99?"OK":(j<1?"Soongsil":(j<2?"Korea":"Hanyang")));
+		if(u>99)System.out.println("OK");
+		else switch(j) {
+		case 0:
+			System.out.println("Soongsil");
+			break;
+		case 1:
+			System.out.println("Korea");
+			break;
+		case 2:
+			System.out.println("Hanyang");
+		}
 	}
 }
