@@ -17,6 +17,7 @@ public class P2832 {
 				j=k;
 			}
 		}
+		System.out.println(Arrays.toString(a));
 	}
 
 }
