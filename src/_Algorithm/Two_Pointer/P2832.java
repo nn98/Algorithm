@@ -13,8 +13,9 @@ public class P2832 {
 //		a=new int[n+1];
 //		a[n]=n+1;
 //		for(;i<n;a[i++]=Integer.parseInt(t.nextToken()));
-		for(;i<n;l.add(Integer.parseInt(t.nextToken())));
+		for(;i++<n;l.add(Integer.parseInt(t.nextToken())));
 		l.add(n+1);
+		l.add(0,10);
 		System.out.println(l);
 //		for(;++k<=n;) {
 //			System.out.println("k: "+k+" j: "+j);
