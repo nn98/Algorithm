@@ -13,7 +13,8 @@ public class P2832 {
 		for(;i<n;a[i++]=Integer.parseInt(t.nextToken()));
 		for(;++k<n-1;) {
 			if(a[k-1]<a[k]) {
-				for(i=k-1;i>=j;p=a[i],a[i]=a[j],a[j]=p);
+				for(i=k-1;i>=j;p=a[i],a[i]=a[j],a[j]=p,i--,j++);
+				j=k;
 			}
 		}
 	}
