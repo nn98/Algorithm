@@ -9,8 +9,9 @@ public class P17085 {
 	static char[][]a;
 	static List<Integer>l=new ArrayList();
 	static void o(int x,int y) {
+		System.out.println(x+" "+y);
 		int c=0,i,X,Y,v;
-		boolean C=true,O;
+		boolean C=true,O=false;
 		for(;C&++c<=(n<m?n/2:m/2);)for(i=0;C&i<4;i++) {
 			X=x+p[i]*c;
 			Y=y+q[i]*c;
@@ -18,14 +19,16 @@ public class P17085 {
 			if(C)C=a[X][Y]=='#';
 			if(C)O=h[X][Y]<c;
 		}
-		v=c-1;
-		System.out.println(v);
-		for(;c-->0;)for(i=0;i<4;i++) {
-			X=x+p[i]*c;
-			Y=y+q[i]*c;
-			h[X][Y]=v;
+		if(O) {
+			v=c-1;
+			System.out.println(v);
+			for(;c-->0;)for(i=0;i<4;i++) {
+				X=x+p[i]*c;
+				Y=y+q[i]*c;
+				h[X][Y]=v;
+			}
+			l.add(v);
 		}
-		l.add(v);
 	}
 	public static void main(String[] args)throws Exception{
 		BufferedReader r=new BufferedReader(new InputStreamReader(System.in));
@@ -37,7 +40,7 @@ public class P17085 {
 		for(;i<n;a[i++]=r.readLine().toCharArray());
 		for(;j<n;j++)for(i=0;i<m;i++)if(a[j][i]=='#')o(j,i);
 		for(char[]b:a)System.out.println(b);
-//		for(;k++<)
+		//		for(;k++<)
 	}
 
 }
