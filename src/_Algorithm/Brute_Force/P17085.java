@@ -18,6 +18,7 @@ public class P17085 {
 			C=X>=0&X<n&Y>=0&Y<m;
 			if(C)C=a[X][Y]=='#';
 			if(C)O=h[X][Y]<c;
+			if(C)System.out.println("\t"+"X: "+X+" Y: "+Y+" c: "+c);
 		}
 		if(O) {
 			v=c-1;
