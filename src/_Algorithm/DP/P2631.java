@@ -10,6 +10,7 @@ public class P2631 {
 			if(a[i]>a[x])h[x]=Math.max(h[x],h[i]);
 		}
 		h[x]++;
+		m=m>h[x]?m:h[x];
 	}
 	public static void main(String[] args) {
 		Scanner s=new Scanner(System.in);
@@ -18,7 +19,8 @@ public class P2631 {
 		h=new int[n];
 		for(;i<n;a[i++]=s.nextInt());
 		for(;i-->0;o(i));
-		System.out.println(Arrays.toString(h));
+//		System.out.println(Arrays.toString(h));
+		System.out.println(n-m);
 	}
 
 }
