@@ -1,7 +1,7 @@
 package _Algorithm.DP;
 //https://www.acmicpc.net/problem/2631
 //줄세우기
-import java.util.Scanner;
+import java.util.*;
 
 public class P18353 {
 	static int n,m,i,j,a[],h[];
@@ -19,7 +19,7 @@ public class P18353 {
 		h=new int[n];
 		for(;i<n;a[i++]=s.nextInt());
 		for(;i-->0;o(i));
-//		System.out.println(Arrays.toString(h));
+		System.out.println(Arrays.toString(h));
 		System.out.println(n-m);
 	}
 
