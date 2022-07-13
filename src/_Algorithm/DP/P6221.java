@@ -6,7 +6,9 @@ import java.util.Scanner;
 public class P6221 {
 	static int n,m,i,j,a[][],h[];
 	static void o(int x) {
+		System.out.println(x+" "+a[x][0]+" "+a[i][1]);
 		for(int i=0;i<n;i++) {
+			System.out.println(String.format("%d %d", a[i][0],a[i][1]));
 			if(a[i][0]>a[x][0]&a[i][1]>a[x][1])h[x]=h[i];
 		}
 		h[x]++;
