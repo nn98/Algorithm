@@ -1,6 +1,6 @@
 package _Algorithm.DP;
-
-import java.util.Arrays;
+//https://www.acmicpc.net/problem/2631
+//줄세우기
 import java.util.Scanner;
 
 public class P2631 {
