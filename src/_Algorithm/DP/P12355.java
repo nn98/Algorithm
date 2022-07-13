@@ -5,8 +5,9 @@ import java.util.Scanner;
 public class P12355 {
 	static int n,m,i,j,a[],r;
 	static void o(int x,int v) {
+		System.out.println(x+" "+v);
 		r=r>v?r:v;
-		for(int i=0;i<m;i++)if(a[i]>a[x])o(i,v+1);
+		for(int i=x;++i<m;)if(a[i]>a[x])o(i,v+1);
 	}
 	public static void main(String[] args) {
 		Scanner s=new Scanner(System.in);
