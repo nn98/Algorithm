@@ -28,7 +28,7 @@ public class P12355 {
 			r=0;
 			for(j=0;j<m;a[j++]=s.nextInt());
 			for(;j-->0;o(j,0));
-			System.out.println(Arrays.toString(h));
+//			System.out.println(Arrays.toString(h));
 			System.out.println("Case #"+i+": "+(m-r));
 		}
 	}
