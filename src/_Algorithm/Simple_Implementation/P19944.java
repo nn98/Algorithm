@@ -1,10 +1,13 @@
 package _Algorithm.Simple_Implementation;
 
+import java.util.Scanner;
+
 public class P19944 {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+		Scanner s=new Scanner(System.in);
+		int n=s.nextInt(),m=s.nextInt();
+		System.out.println(m==1|m==2?"NEWBIE!":(m<=n?"OLDBIE!":"TLE!"));
 	}
 
 }
