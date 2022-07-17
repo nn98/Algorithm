@@ -9,7 +9,7 @@ public class P13866 {
 		Scanner s=new Scanner(System.in);
 		int[]a={s.nextInt(),s.nextInt(),s.nextInt(),s.nextInt()};
 		Arrays.sort(a);
-		System.out.println(Math.abs(a[0]+a[3])-(a[1]+a[2]));
+		System.out.println(Math.abs((a[0]+a[3])-(a[1]+a[2])));
 	}
 
 }
