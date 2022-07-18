@@ -1,5 +1,6 @@
 package _Algorithm.LIS;
-import java.util.Scanner;
+import java.io.*;
+import java.util.*;
 
 public class P1818 {
 	static int n,m,i,j,a[],h[];
@@ -10,12 +11,13 @@ public class P1818 {
 		h[x]++;
 		m=m>h[x]?m:h[x];
 	}
-	public static void main(String[] args) {
-		Scanner s=new Scanner(System.in);
-		n=s.nextInt();
+	public static void main(String[] args)throws Exception{
+		BufferedReader r=new BufferedReader(new InputStreamReader(System.in));
+		n=Integer.parseInt(r.readLine());
 		a=new int[n];
 		h=new int[n];
-		for(;i<n;a[i++]=s.nextInt());
+		StringTokenizer t=new StringTokenizer(r.readLine());
+		for(;i<n;a[i++]=Integer.parseInt(t.nextToken()));
 		for(;i-->0;o(i));
 		System.out.println(n-m);
 	}
