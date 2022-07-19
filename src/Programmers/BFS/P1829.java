@@ -1,6 +1,8 @@
 package Programmers.BFS;
 import java.io.*;
 import java.util.*;
+//개쉬운문젠데 채점기가 개판이라 개오래걸림
+//프로그래머스 공통? 전역변수 무조건 초기화
 //https://school.programmers.co.kr/learn/courses/30/lessons/1829
 public class P1829 {
 	static int h[][],R,S,C,answer[]=new int[2],i,j,p[]={0,1,0,-1},q[]={1,0,-1,0},M,N,picture[][];
