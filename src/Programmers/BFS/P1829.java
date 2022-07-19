@@ -8,7 +8,7 @@ public class P1829 {
         M=m;
         N=n;
         h=new int[m][n];
-        for(;i<m;i++)for(j=0;j<n;j++)if(picture[i][j]>0&h[i][j]<1){
+        for(i=0;i<m;i++)for(j=0;j<n;j++)if(picture[i][j]>0&h[i][j]<1){
             o(i,j,picture);
             R=R>S?R:S;
             S=0;
@@ -19,13 +19,14 @@ public class P1829 {
         return answer;
     }
     static void o(int x,int y,int[][]P){
+    	System.out.println("o: "+x+" "+y);
         h[x][y]++;
         S++;
         int i=0,X,Y;
         for(;i<4;i++){
             X=x+p[i];
             Y=y+q[i];
-            if(X>=0&X<M&Y>=0&Y<N)if(P[X][Y]==P[x][y])o(X,Y,P);
+            if(X>=0&X<M&Y>=0&Y<N)if(P[X][Y]==P[x][y]&h[X][Y]<1)o(X,Y,P);
         }
     }
 	public static void main(String[] args)throws Exception{
