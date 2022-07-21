@@ -12,7 +12,7 @@ public class P42888 {
         	b=s.split(" ");
         	switch(b[0]) {
         	case "Enter":
-        		if(m.get(b[1])!=null)m.remove(b[1]);
+//        		if(m.get(b[1])!=null)m.remove(b[1]);
         		m.put(b[1],b[2]);
         		f.append(b[1]+e);
         		break;
@@ -20,7 +20,7 @@ public class P42888 {
         		f.append(b[1]+l);
         		break;
         	default:
-        		if(m.get(b[1])!=null)m.remove(b[1]);
+//        		if(m.get(b[1])!=null)m.remove(b[1]);
         		m.put(b[1],b[2]);
         	}
         }
