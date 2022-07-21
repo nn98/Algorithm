@@ -24,13 +24,18 @@ public class P42888 {
         		m.put(b[1],b[2]);
         	}
         }
-        b=f.toString().split("@");
-        for(String s:b) {
-        	int x=s.indexOf("님");
-        	System.out.println("SS: "+s.subSequence(0, x));
-        	s=s.replace(s.substring(0, x),m.get(s.substring(0, x)));
+        e=f.toString();
+        for(String s:m.keySet()) {
+        	e.replaceAll(s,m.get(s));
         }
-        return b;
+        return e.split("@");
+//        b=f.toString().split("@");
+//        for(String s:b) {
+//        	int x=s.indexOf("님");
+//        	System.out.println("SS: "+s.subSequence(0, x));
+//        	s=s.replace(s.substring(0, x),m.get(s.substring(0, x)));
+//        }
+//        return b;
     }
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
