@@ -22,6 +22,7 @@ public class P60057 {
                 }
             }
             r.append(c);
+            System.out.println(r);
             a=Math.min(a,r.length());
         }
         return a;
