@@ -31,16 +31,8 @@ public class P42888 {
         	e=e.replaceAll(s,m.get(s));
         }
         return e.split("@");
-//        b=f.toString().split("@");
-//        for(String s:b) {
-//        	int x=s.indexOf("님");
-//        	System.out.println("SS: "+s.subSequence(0, x));
-//        	s=s.replace(s.substring(0, x),m.get(s.substring(0, x)));
-//        }
-//        return b;
     }
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		String[]r= {"Enter uid1234 Muzi", "Enter uid4567 Prodo","Leave uid1234","Enter uid1234 Prodo","Change uid4567 Ryan"};
 		System.out.println(Arrays.toString(solution(r)));
 	}
