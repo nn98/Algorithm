@@ -25,9 +25,9 @@ public class P42888 {
         	}
         }
         e=f.toString();
-        System.out.println(e);
+//        System.out.println(e);
         for(String s:m.keySet()) {
-        	System.out.println(s+" "+m.get(s));
+//        	System.out.println(s+" "+m.get(s));
         	e=e.replaceAll(s,m.get(s));
         }
         return e.split("@");
@@ -36,5 +36,4 @@ public class P42888 {
 		String[]r= {"Enter uid1234 Muzi", "Enter uid4567 Prodo","Leave uid1234","Enter uid1234 Prodo","Change uid4567 Ryan"};
 		System.out.println(Arrays.toString(solution(r)));
 	}
-
 }
