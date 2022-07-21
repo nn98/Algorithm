@@ -28,7 +28,7 @@ public class P42888 {
         System.out.println(e);
         for(String s:m.keySet()) {
         	System.out.println(s+" "+m.get(s));
-        	e.replaceAll(s,m.get(s));
+        	e=e.replaceAll(s,m.get(s));
         }
         return e.split("@");
 //        b=f.toString().split("@");
