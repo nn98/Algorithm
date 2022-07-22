@@ -9,8 +9,7 @@ public class P1701 {
 			for(j=i+1;j<l;j++,r=k>r?k:r,n=0) {
 				if(a[i]==a[j]) {
 					for(k=1;i+k<l&j+k<l&n<1;n=a[i+k]==a[j+k]?0:1,k=n<1?k+1:k);
-					i+=k-1;
-					j+=k-1;
+					i=j-1;
 				}
 			}
 		}
