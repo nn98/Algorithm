@@ -9,28 +9,38 @@ public class P1325_3 {
 	public static void main(String[] args)throws Exception{
 		BufferedReader r=new BufferedReader(new InputStreamReader(System.in));
 		StringTokenizer t=new StringTokenizer(r.readLine());
-		n=Integer.parseInt(t.nextToken());
+		n=Integer.parseInt(t.nextToken())+1;
 		m=Integer.parseInt(t.nextToken());
 		h=new int[n];
 		v=new int[n];
 		l=new List[n];
 		for(;i<n;l[i++]=new ArrayList());
-		for(i=0;i<m;i++) {
+		for(;k<m;k++) {
 			t=new StringTokenizer(r.readLine());
 			i=Integer.parseInt(t.nextToken());
 			j=Integer.parseInt(t.nextToken());
-			l[i].add(j);
+//			l[i].add(j);
 			l[j].add(i);
 		}
-		for(i=0;i<n;i++) {
+		for(List L:l) {
+			System.out.println(L.toString());
+		}
+		for(i=0;++i<n;) {
+			k=1;
+			h[i]++;
+			q.add(i);
 			for(int x:l[i]) {
 				k++;
 				h[x]++;
 				q.add(x);
 				p.add(x);
 			}
+			System.out.println("q: "+q+"\tk: "+k);
 			while(!q.isEmpty()) {
-				for(int x:l[q.remove(0)]) {
+				j=q.remove(0);
+				System.out.println("at-"+j);
+				for(int x:l[j]) {
+					System.out.println("\tin-"+x);
 					if(h[x]<1) {
 						h[x]++;
 						k++;
@@ -39,8 +49,9 @@ public class P1325_3 {
 					}
 				}
 			}
+			System.out.println(Arrays.toString(h)+" "+k);
 			for(int x:p)v[x]=k;
-			k=0;
+			System.out.println(Arrays.toString(v));
 		}
 		System.out.println(Arrays.toString(v));
 	}
