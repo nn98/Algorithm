@@ -23,6 +23,7 @@ public class P1325_4 {
 		return v;
 	}
 	public static void main(String[] args)throws Exception{
+		long T=System.currentTimeMillis();
 		BufferedReader r=new BufferedReader(new InputStreamReader(System.in));
 		StringTokenizer t=new StringTokenizer(r.readLine());
 		n=Integer.parseInt(t.nextToken())+1;
@@ -46,6 +47,7 @@ public class P1325_4 {
 		}
 //		System.out.println(Arrays.toString(V));
 		for(i=0;++i<n;System.out.print(V[i]==j?i+" ":""));
+		System.out.println(System.currentTimeMillis()-T);
 	}
 
 }
