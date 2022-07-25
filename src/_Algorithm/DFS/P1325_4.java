@@ -35,7 +35,7 @@ public class P1325_4 {
 			i=Integer.parseInt(t.nextToken());
 			l[Integer.parseInt(t.nextToken())].add(i);
 		}
-//		for(List L:l)System.out.println(L.toString());
+		for(List L:l)System.out.println(L.toString());
 		for(i=0;++i<n;) {
 			h=new int[n];
 			if(h[i]<1) {
