@@ -17,9 +17,9 @@ public class P1325_4 {
 			}
 		}
 //		System.out.println("\tre-"+v);
-		j=j>v?j:v;
+//		j=j>v?j:v;
 //		System.out.println(" v:"+v);
-		V[x]=V[x]>v?V[x]:v;
+//		V[x]=V[x]>v?V[x]:v;
 		return v;
 	}
 	public static void main(String[] args)throws Exception{
@@ -40,7 +40,8 @@ public class P1325_4 {
 			h=new int[n];
 			if(h[i]<1) {
 //				System.out.println(i);
-				o(i);
+				V[i]=o(i);
+				j=V[i]>j?V[i]:j;
 			}
 		}
 //		System.out.println(Arrays.toString(V));
