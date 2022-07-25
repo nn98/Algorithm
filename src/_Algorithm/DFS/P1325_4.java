@@ -8,6 +8,7 @@ public class P1325_4 {
 	static int n,m,i,k,j,h[],V[];
 	static int o(int x) {
 //		System.out.print("at-"+x);
+		System.out.print("\t"+x);
 		h[x]++;
 		int v=1;
 		for(int y:l[x]) {
@@ -17,7 +18,8 @@ public class P1325_4 {
 		}
 //		System.out.println("\tre-"+v);
 		j=j>v?j:v;
-		V[x]=v;
+		System.out.println(" v:"+v);
+		V[x]=V[x]>v?V[x]:v;
 		return v;
 	}
 	public static void main(String[] args)throws Exception{
@@ -33,12 +35,15 @@ public class P1325_4 {
 			i=Integer.parseInt(t.nextToken());
 			l[Integer.parseInt(t.nextToken())].add(i);
 		}
-//		for(List L:l) {
-//			System.out.println(L.toString());
-//		}
+		for(List L:l) {
+			System.out.println(L.toString());
+		}
 		for(i=0;++i<n;) {
 			h=new int[n];
-			if(h[i]<1)o(i);
+			if(h[i]<1) {
+				System.out.println(i);
+				o(i);
+			}
 		}
 		System.out.println(Arrays.toString(V));
 		for(i=0;++i<n;System.out.print(V[i]==j?i+" ":""));
