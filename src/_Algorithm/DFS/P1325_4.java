@@ -46,7 +46,10 @@ public class P1325_4 {
 			}
 		}
 //		System.out.println(Arrays.toString(V));
-		for(i=0;++i<n;System.out.print(V[i]==j?i+" ":""));
+//		for(i=0;++i<n;System.out.print(V[i]==j?i+" ":""));
+		StringBuffer f=new StringBuffer();
+		for(i=0;++i<n;f.append(V[i]==j?i+" ":""));
+		System.out.println(f);
 		System.out.println(System.currentTimeMillis()-T);
 	}
 
