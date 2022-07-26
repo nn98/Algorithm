@@ -2,7 +2,7 @@ package _Algorithm.DFS;
 
 import java.io.*;
 import java.util.*;
-
+// 개 미친새끼들이네 의미없는 list 선언 없앴다고 시간초과나네
 public class P1325_5 {
 	static List<Integer>l[];
 	static int n,m,i,k,j,h[],V[],A[];
