@@ -4,7 +4,7 @@ import java.io.*;
 import java.util.*;
 
 public class P1325_4 {
-	static List<Integer>q=new ArrayList(),l[],p=new ArrayList();
+	static List<Integer>l[];
 	static int n,m,i,k,j,h[],V[];
 	static int o(int x) {
 //		System.out.print("at-"+x);

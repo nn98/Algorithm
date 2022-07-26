@@ -4,7 +4,7 @@ import java.io.*;
 import java.util.*;
 
 public class P1325_5 {
-	static List<Integer>q=new ArrayList(),l[],p=new ArrayList();
+	static List<Integer>l[];
 	static int n,m,i,k,j,h[],V[],A[];
 	static void o(int x) {
 //		System.out.print("at-"+x);
@@ -22,7 +22,6 @@ public class P1325_5 {
 //		V[x]=V[x]>v?V[x]:v;
 	}
 	public static void main(String[] args)throws Exception{
-		long T=System.currentTimeMillis();
 		BufferedReader r=new BufferedReader(new InputStreamReader(System.in));
 		StringTokenizer t=new StringTokenizer(r.readLine());
 		n=Integer.parseInt(t.nextToken())+1;
@@ -42,9 +41,10 @@ public class P1325_5 {
 			o(i);
 		}
 		for(int x:V)j=j>x?j:x;
-		System.out.println(Arrays.toString(V));
-		for(i=0;++i<n;System.out.print(V[i]==j?i+" ":""));
-		System.out.println(System.currentTimeMillis()-T);
+//		System.out.println(Arrays.toString(V));
+		StringBuffer f=new StringBuffer();
+		for(i=0;++i<n;f.append(V[i]==j?i+" ":""));
+		System.out.print(f);
 	}
 
 }
