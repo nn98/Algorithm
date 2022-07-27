@@ -52,5 +52,4 @@ public class P1835_S {
 		String[][]b= {{"N~F=0", "R~T>2"},{"M~C<2", "C~M>1"}};
 		for(int i=0;i<2;System.out.println(solution(a[i],b[i++])));
 	}
-
 }
