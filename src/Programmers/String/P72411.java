@@ -15,12 +15,15 @@ public class P72411 {
 //			h=new int[a.length];
 			Arrays.sort(a);
 			for(int c:course)r(String.valueOf(a),"",0,c);
-			System.out.println("\t"+t);
+		}
+		for(String s:m.keySet()) {
+			System.out.print(s+" "m.get(s));
 		}
 		return answer;
 	}
 	public static void r(String s, String r, int idx, int k){
         if(r.length() == k){
+        	System.out.println(r);
             m.put(r, m.getOrDefault(r, 0) + 1);
             return;
         }
