@@ -16,13 +16,13 @@ public class P72411 {
 			Arrays.sort(a);
 			for(int c:course)r(String.valueOf(a),"",0,c);
 		}
-//		System.out.println(Arrays.toString(v));
+		System.out.println(Arrays.toString(v));
 		for(String s:m.keySet()) {
 			if(v[s.length()]==m.get(s))R.add(s);
 //			System.out.println(s+" "+m.get(s));
 		}
 		Collections.sort(R);
-//		System.out.println(R);
+		System.out.println(R);
 		return R.stream().toArray(String[]::new);
 	}
 	public static void r(String s, String r, int idx, int k){
@@ -59,9 +59,11 @@ public class P72411 {
 //		}
 //	}
 	public static void main(String[] args) {
-		String[]a={"ABCFG", "AC", "CDE", "ACDE", "BCFG", "ACDEH"};
-		int[]o= {2,3,4};
-		System.out.println(Arrays.toString(solution(a,o)));
+		String[][]a={{"ABCFG", "AC", "CDE", "ACDE", "BCFG", "ACDEH"},
+				{"ABCDE", "AB", "CD", "ADE", "XYZ", "XYZ", "ACD"},
+				{"XYZ", "XWY", "WXA"}};
+		int[][]o= {{2,3,4},{2,3,5},{2,3,4}};
+		for(int i=0;i<3;solution(a[i],o[i++]));
 	}
 
 }
