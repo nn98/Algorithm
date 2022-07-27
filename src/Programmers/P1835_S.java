@@ -33,6 +33,7 @@ public class P1835_S {
 	static boolean p(String s){
 		boolean r=true;
 		for(String x:d) {
+			if(!r)break;
 			char n=x.charAt(0),u=x.charAt(2);
 			int dis=Integer.parseInt(x.substring(4)),rea=Math.abs(s.indexOf(n)-s.indexOf(u))-1;
 			switch(x.charAt(3)) {
