@@ -1,6 +1,5 @@
 package Programmers;
 
-
 public class P1835_S {	
 	static String[]d;
 	static char[]a,b;
@@ -12,11 +11,10 @@ public class P1835_S {
 		d=data.clone();
 		R=0;
 		o(0);
-        return R;
-    }
+		return R;
+	}
 	static void o(int x){
 		if(x==8) {
-//			System.out.println(b);
 			R+=p(String.valueOf(b))?1:0;
 		}
 		else {
