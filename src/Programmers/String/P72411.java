@@ -8,7 +8,7 @@ public class P72411 {
 	static char[]a,b,c;
 	static int i,j,v[]=new int[11],h[];
 	static public String[] solution(String[] orders, int[] course) {
-		String[] answer = {};
+		List<String> R = new ArrayList();
 		for(String s:orders) {
 			a=s.toCharArray();
 //			b=new char[a.length];
@@ -16,14 +16,19 @@ public class P72411 {
 			Arrays.sort(a);
 			for(int c:course)r(String.valueOf(a),"",0,c);
 		}
+//		System.out.println(Arrays.toString(v));
 		for(String s:m.keySet()) {
-			System.out.print(s+" "m.get(s));
+			if(v[s.length()]==m.get(s))R.add(s);
+//			System.out.println(s+" "+m.get(s));
 		}
-		return answer;
+		Collections.sort(R);
+//		System.out.println(R);
+		return R.stream().toArray(String[]::new);
 	}
 	public static void r(String s, String r, int idx, int k){
         if(r.length() == k){
-        	System.out.println(r);
+//        	System.out.println(r);
+            v[k]=Math.max(v[k],m.getOrDefault(r, 0) + 1);
             m.put(r, m.getOrDefault(r, 0) + 1);
             return;
         }
