@@ -18,7 +18,7 @@ public class P72411 {
 		}
 		System.out.println(Arrays.toString(v));
 		for(String s:m.keySet()) {
-			if(v[s.length()]==m.get(s))R.add(s);
+			if(v[s.length()]==m.get(s)&v[s.length()]>1)R.add(s);
 //			System.out.println(s+" "+m.get(s));
 		}
 		Collections.sort(R);
@@ -63,7 +63,7 @@ public class P72411 {
 				{"ABCDE", "AB", "CD", "ADE", "XYZ", "XYZ", "ACD"},
 				{"XYZ", "XWY", "WXA"}};
 		int[][]o= {{2,3,4},{2,3,5},{2,3,4}};
-		for(int i=0;i<3;solution(a[i],o[i++]));
+		for(int i=0;i<3;System.out.println("\t"+Arrays.toString(solution(a[i],o[i++]))));
 	}
 
 }
