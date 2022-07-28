@@ -11,7 +11,11 @@ public class P22352_2 {
 		for(;i<4;) {
 			X=x+p[i];
 			Y=y+q[i++];
-			if(X>=0&X<n&Y>=0&Y<m)if(h[X][Y]<1&a[X][Y]==Z&b[X][Y]==W)o(X,Y);
+			if(X>=0&X<n&Y>=0&Y<m)
+				if(h[X][Y]<1)
+					if(a[X][Y]==Z)
+						if(b[X][Y]==W)o(X,Y);
+						else R=2;
 		}
 	}
 	public static void main(String[] args)throws Exception{
