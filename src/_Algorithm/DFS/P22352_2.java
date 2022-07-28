@@ -5,11 +5,13 @@ public class P22352_2 {
 	static int n,m,i,j,a[][],b[][],R,p[]= {1,0,-1,0},q[]= {0,1,0,-1},h[][];
 	static void o(int x,int y) {
 		h[x][y]++;
-		int i=0,X,Y;
+		int i=0,X,Y,Z=a[x][y],W=b[x][y];
+		a[x][y]=-1;
+		b[x][y]=-1;
 		for(;i<4;) {
 			X=x+p[i];
 			Y=y+q[i++];
-			if(X>=0&X<n&Y>=0&Y<m)if(h[X][Y]<1&a[X][Y]==a[x][y]&b[X][Y]==b[x][y])o(X,Y);
+			if(X>=0&X<n&Y>=0&Y<m)if(h[X][Y]<1&a[X][Y]==Z&b[X][Y]==W)o(X,Y);
 		}
 	}
 	public static void main(String[] args)throws Exception{
