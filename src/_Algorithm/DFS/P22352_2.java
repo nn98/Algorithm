@@ -34,12 +34,12 @@ public class P22352_2 {
 			for(j=0;j<m&R<2;j++) {
 				if(h[i][j]<1) {
 					if(a[i][j]!=b[i][j]) {
-//						System.out.println("E: "+i+" "+j);
+						System.out.println("E: "+i+" "+j);
 						R++;
 					}
 					if(R<2) {
 						o(i,j);
-//						for(int[]c:h)System.out.println(Arrays.toString(c));
+						for(int[]c:h)System.out.println(Arrays.toString(c));
 					}
 				}
 			}
@@ -49,3 +49,12 @@ public class P22352_2 {
 	}
 
 }
+/*
+3 5
+1 1 1 2 2
+1 1 1 2 2
+1 1 1 1 1
+1 1 1 2 2
+1 1 1 2 2
+1 1 1 2 2
+*/
