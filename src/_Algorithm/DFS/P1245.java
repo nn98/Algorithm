@@ -5,7 +5,7 @@ public class P1245 {
 	static int n,m,i,j,a[][],R,p[]= {1,1,1,0,0,-1,-1,-1},q[]= {1,0,-1,1,-1,-1,0,1},h[][];
 	static boolean C;
 	static boolean o(int x,int y,int v,int f) {
-		System.out.print(String.format("x:%d y:%d v:%d\t",x,y,v));
+//		System.out.print(String.format("x:%d y:%d v:%d\t",x,y,v));
 		h[x][y]++;
 		int i=0,X,Y;
 		boolean c=true;
@@ -20,9 +20,9 @@ public class P1245 {
 					if(h[X][Y]<1)c=c&o(X,Y,v,0);
 				}
 		}
-		System.out.println("re "+c);
+//		System.out.println("re "+c);
 		if(f>0&c) {
-			System.out.println("\no in "+x+","+y+" re:"+c);
+//			System.out.println("\no in "+x+","+y+" re:"+c);
 			R+=c?1:0;
 		}
 		return c;
@@ -41,10 +41,10 @@ public class P1245 {
 		for(i=0;i<n;i++) {
 			for(j=0;j<m;j++) {
 				if(h[i][j]<1) {
-					System.out.println("o in "+i+","+j);
+//					System.out.println("o in "+i+","+j);
 					C=o(i,j,a[i][j],1);
-					System.out.println("o in "+i+","+j+" re:"+C);
-					for(int[]b:h)System.out.println(Arrays.toString(b));
+//					System.out.println("o in "+i+","+j+" re:"+C);
+//					for(int[]b:h)System.out.println(Arrays.toString(b));
 				}
 			}
 		}
