@@ -1,4 +1,5 @@
 package _Algorithm.DFS;
+// 원샷원틀
 import java.io.*;
 import java.util.*;
 public class P1245 {
