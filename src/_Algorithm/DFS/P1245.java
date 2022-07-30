@@ -3,6 +3,7 @@ import java.io.*;
 import java.util.*;
 public class P1245 {
 	static int n,m,i,j,a[][],R,p[]= {1,1,1,0,0,-1,-1,-1},q[]= {1,0,-1,1,-1,-1,0,1},h[][];
+	static boolean C;
 	static boolean o(int x,int y,int v) {
 		h[x][y]++;
 		int i=0,X,Y,Z=a[x][y];
@@ -36,11 +37,13 @@ public class P1245 {
 			for(j=0;j<m&R<2;j++) {
 				if(h[i][j]<1) {
 					System.out.print("o in "+i+","+j);
-					o(i,j,a[i][j]);
+					C=o(i,j,a[i][j]);
+					System.out.println("re:"+C);
+					R+=C?1:0;
 				}
 			}
 		}
-		System.out.println(R<2?"YES":"NO");
+		System.out.println(R);
 	}
 
 }
