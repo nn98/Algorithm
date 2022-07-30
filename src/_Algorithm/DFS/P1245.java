@@ -7,7 +7,7 @@ public class P1245 {
 	static boolean o(int x,int y,int v,int f) {
 		System.out.print(String.format("x:%d y:%d v:%d\t",x,y,v));
 		h[x][y]++;
-		int i=0,X,Y,Z=a[x][y];
+		int i=0,X,Y;
 		boolean c=true;
 		for(;i<8;) {
 			X=x+p[i];
@@ -38,14 +38,13 @@ public class P1245 {
 			t=new StringTokenizer(r.readLine());
 			for(j=0;j<m;a[i][j++]=Integer.parseInt(t.nextToken()));
 		}
-		for(i=0;i<n&R<2;i++) {
-			for(j=0;j<m&R<2;j++) {
+		for(i=0;i<n;i++) {
+			for(j=0;j<m;j++) {
 				if(h[i][j]<1) {
 					System.out.println("o in "+i+","+j);
 					C=o(i,j,a[i][j],1);
 					System.out.println("o in "+i+","+j+" re:"+C);
 					for(int[]b:h)System.out.println(Arrays.toString(b));
-					R+=C?1:0;
 				}
 			}
 		}
