@@ -40,6 +40,7 @@ public class P1245 {
 					System.out.println("o in "+i+","+j);
 					C=o(i,j,a[i][j]);
 					System.out.println("o in "+i+","+j+" re:"+C);
+					for(int[]b:h)System.out.println(Arrays.toString(b));
 					R+=C?1:0;
 				}
 			}
