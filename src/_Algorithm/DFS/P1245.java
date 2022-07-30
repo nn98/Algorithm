@@ -5,6 +5,7 @@ public class P1245 {
 	static int n,m,i,j,a[][],R,p[]= {1,1,1,0,0,-1,-1,-1},q[]= {1,0,-1,1,-1,-1,0,1},h[][];
 	static boolean C;
 	static boolean o(int x,int y,int v) {
+		System.out.println(String.format("x:%d y:%d v:%d",x,y,v));
 		h[x][y]++;
 		int i=0,X,Y,Z=a[x][y];
 		boolean c=true;
