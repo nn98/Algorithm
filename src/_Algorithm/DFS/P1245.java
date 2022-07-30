@@ -5,7 +5,7 @@ public class P1245 {
 	static int n,m,i,j,a[][],R,p[]= {1,1,1,0,0,-1,-1,-1},q[]= {1,0,-1,1,-1,-1,0,1},h[][];
 	static boolean C;
 	static boolean o(int x,int y,int v) {
-		System.out.println(String.format("x:%d y:%d v:%d",x,y,v));
+		System.out.print(String.format("x:%d y:%d v:%d\t",x,y,v));
 		h[x][y]++;
 		int i=0,X,Y,Z=a[x][y];
 		boolean c=true;
@@ -13,14 +13,14 @@ public class P1245 {
 			X=x+p[i];
 			Y=y+q[i++];
 			if(X>=0&X<n&Y>=0&Y<m)
-				if(h[X][Y]<1)
-					if(a[X][Y]>v) {
-						o(X,Y,a[X][Y]);
-						return false;
-					}else if(a[X][Y]==v) {
-						c=o(X,Y,v);
-					}
+				if(a[X][Y]>v) {
+					c=false;
+					if(h[X][Y]<1)o(X,Y,a[X][Y]);
+				}else if(a[X][Y]==v) {
+					if(h[X][Y]<1)c=c&o(X,Y,v);
+				}
 		}
+		System.out.println("re "+c);
 		return c;
 	}
 	public static void main(String[] args)throws Exception{
@@ -37,9 +37,9 @@ public class P1245 {
 		for(i=0;i<n&R<2;i++) {
 			for(j=0;j<m&R<2;j++) {
 				if(h[i][j]<1) {
-					System.out.print("o in "+i+","+j);
+					System.out.println("o in "+i+","+j);
 					C=o(i,j,a[i][j]);
-					System.out.println("re:"+C);
+					System.out.println("o in "+i+","+j+" re:"+C);
 					R+=C?1:0;
 				}
 			}
@@ -64,4 +64,4 @@ public class P1245 {
 1 1 1 2 2
 1 1 1 2 2
 1 1 1 1 1
-*/
+ */
