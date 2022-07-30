@@ -4,7 +4,7 @@ import java.util.*;
 public class P1245 {
 	static int n,m,i,j,a[][],R,p[]= {1,1,1,0,0,-1,-1,-1},q[]= {1,0,-1,1,-1,-1,0,1},h[][];
 	static boolean C;
-	static boolean o(int x,int y,int v) {
+	static boolean o(int x,int y,int v,int f) {
 		System.out.print(String.format("x:%d y:%d v:%d\t",x,y,v));
 		h[x][y]++;
 		int i=0,X,Y,Z=a[x][y];
@@ -15,12 +15,16 @@ public class P1245 {
 			if(X>=0&X<n&Y>=0&Y<m)
 				if(a[X][Y]>v) {
 					c=false;
-					if(h[X][Y]<1)o(X,Y,a[X][Y]);
+					if(h[X][Y]<1)o(X,Y,a[X][Y],1);
 				}else if(a[X][Y]==v) {
-					if(h[X][Y]<1)c=c&o(X,Y,v);
+					if(h[X][Y]<1)c=c&o(X,Y,v,0);
 				}
 		}
 		System.out.println("re "+c);
+		if(f>0&c) {
+			System.out.println("\no in "+x+","+y+" re:"+c);
+			R+=c?1:0;
+		}
 		return c;
 	}
 	public static void main(String[] args)throws Exception{
@@ -38,7 +42,7 @@ public class P1245 {
 			for(j=0;j<m&R<2;j++) {
 				if(h[i][j]<1) {
 					System.out.println("o in "+i+","+j);
-					C=o(i,j,a[i][j]);
+					C=o(i,j,a[i][j],1);
 					System.out.println("o in "+i+","+j+" re:"+C);
 					for(int[]b:h)System.out.println(Arrays.toString(b));
 					R+=C?1:0;
