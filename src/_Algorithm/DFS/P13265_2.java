@@ -65,6 +65,7 @@ public class P13265_2{
 					}
 				}
 			}
+			for(int[]b:a)System.out.println(Arrays.toString(b));
 			for(i=0;++i<n&R<1;o(i));
 			System.out.println(R<1?"possible":"impossible");
 			R=0;
