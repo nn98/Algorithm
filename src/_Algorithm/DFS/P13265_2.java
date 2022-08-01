@@ -28,7 +28,6 @@ public class P13265_2{
 				i=Integer.parseInt(t.nextToken());
 				j=Integer.parseInt(t.nextToken());
 				a[i][j]=a[j][i]=1;
-//				a[j][0]=a[i][0]<1?1:0;
 				switch(a[i][0]) {
 				case 0:
 					switch(a[j][0]) {
@@ -71,5 +70,4 @@ public class P13265_2{
 			R=0;
 		}
 	}
-
 }
