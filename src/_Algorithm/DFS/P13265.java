@@ -6,6 +6,7 @@ public class P13265 {
 	static void o(int x) {
 		v[x]++;
 		for(int i=0;++i<n&R<1;) {
+			if(i==x)continue;
 			if(a[x][i]>0) {
 				R=a[x][0]!=a[i][0]?0:1;
 				if(v[i]<1&R<1)o(i);
