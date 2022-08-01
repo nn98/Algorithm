@@ -3,13 +3,17 @@ import java.util.*;
 import java.io.*;
 public class P13265_3{
 	static int u,n,m,a[][],v[],i,j,R;
-	static void o(int x) {
+	static void o(int x,int c) {
 		v[x]++;
 		for(int i=0;++i<n&R<1;) {
 			if(i==x)continue;
 			if(a[x][i]>0) {
+				if(c==0) {
+					c=a[i][0]>1?1:2;
+					a[x][0]=c;
+				}
 				R=a[x][0]!=a[i][0]?0:1;
-				if(v[i]<1&R<1)o(i);
+				if(v[i]<1&R<1)o(i,c>1?1:2);
 			}
 		}
 	}
@@ -28,45 +32,9 @@ public class P13265_3{
 				i=Integer.parseInt(t.nextToken());
 				j=Integer.parseInt(t.nextToken());
 				a[i][j]=a[j][i]=1;
-				switch(a[i][0]) {
-				case 0:
-					switch(a[j][0]) {
-					case 0:
-						a[i][0]=1;
-						a[j][0]=2;
-						break;
-					case 1:
-						a[i][0]=2;
-						break;
-					case 2:
-						a[i][0]=1;
-					}
-					break;
-				case 1:
-					switch(a[j][0]) {
-					case 0:
-						a[j][0]=2;
-						break;
-					case 1:
-						R=1;
-						break;
-					case 2:
-					}
-					break;
-				case 2:
-					switch(a[j][0]) {
-					case 0:
-						a[j][0]=1;
-						break;
-					case 1:
-						break;
-					case 2:
-						R=1;
-					}
-				}
 			}
+			for(i=0;++i<n&R<1;)if(v[i]<1)o(i,0);
 			for(int[]b:a)System.out.println(Arrays.toString(b));
-			for(i=0;++i<n&R<1;o(i));
 			System.out.println(R<1?"possible":"impossible");
 			R=0;
 		}
