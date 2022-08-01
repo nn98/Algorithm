@@ -4,7 +4,7 @@ import java.io.*;
 public class P13265_3{
 	static int u,n,m,a[][],v[],i,j,R;
 	static void o(int x,int c) {
-		System.out.println(x+" "+c);
+//		System.out.println(x+" "+c);
 		v[x]++;
 		a[x][0]=c;
 		for(int i=0;++i<n&R<1;) {
@@ -36,7 +36,7 @@ public class P13265_3{
 				a[i][j]=a[j][i]=1;
 			}
 			for(i=0;++i<n&R<1;)if(v[i]<1)o(i,0);
-			for(int[]b:a)System.out.println(Arrays.toString(b));
+//			for(int[]b:a)System.out.println(Arrays.toString(b));
 			System.out.println(R<1?"possible":"impossible");
 			R=0;
 		}
