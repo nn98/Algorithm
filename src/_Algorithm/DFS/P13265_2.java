@@ -23,7 +23,7 @@ public class P13265_2{
 			m=Integer.parseInt(t.nextToken());
 			a=new int[n][n];
 			v=new int[n];
-			for(;m-->0;) {
+			for(;m-->0&R<1;) {
 				t=new StringTokenizer(r.readLine());
 				i=Integer.parseInt(t.nextToken());
 				j=Integer.parseInt(t.nextToken());
