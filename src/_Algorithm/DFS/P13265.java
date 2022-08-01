@@ -5,7 +5,7 @@ public class P13265 {
 	static int u,n,m,a[][],v[],i,j,R;
 	static void o(int x) {
 		v[x]++;
-		for(int i=0;i++<n&R<1;) {
+		for(int i=0;++i<n&R<1;) {
 			if(a[x][i]>0) {
 				R=a[x][0]!=a[i][0]?0:1;
 				if(v[i]<1&R<1)o(i);
@@ -29,7 +29,7 @@ public class P13265 {
 				a[i][j]=a[j][i]=1;
 				a[j][0]=a[i][0]<1?1:0;
 			}
-			for(i=0;i++<n&R<1;o(i));
+			for(i=0;++i<n&R<1;o(i));
 			System.out.println(R<1?"possible":"impossible");
 			R=0;
 		}
