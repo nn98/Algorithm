@@ -4,7 +4,9 @@ import java.io.*;
 public class P13265_3{
 	static int u,n,m,a[][],v[],i,j,R;
 	static void o(int x,int c) {
+		System.out.println(x+" "+c);
 		v[x]++;
+		a[x][0]=c;
 		for(int i=0;++i<n&R<1;) {
 			if(i==x)continue;
 			if(a[x][i]>0) {
