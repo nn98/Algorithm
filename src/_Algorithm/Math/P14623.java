@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class P14623 {
 
 	public static void main(String[] args) {
-		System.out.println('0');
+		System.out.println((int)'0');
 		Scanner s=new Scanner(System.in);
 		String n=s.next(),m=s.next();
 		int p=n.length(),q=m.length(),i=p;
