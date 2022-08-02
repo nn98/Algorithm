@@ -11,7 +11,7 @@ public class P14623 {
 		long r,N=0,M=0;
 		for(;i-->0;N+=n.charAt(i)>0?Math.pow(2,p-i):0);
 		for(i=q;i-->0;M+=m.charAt(i)>0?Math.pow(2,q-i):0);
-		System.out.println(N*M);
+		System.out.println(N+" "+M);
 	}
 
 }
