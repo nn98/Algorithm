@@ -8,12 +8,12 @@ public class P14623 {
 		Scanner s=new Scanner(System.in);
 		String n=s.next(),m=s.next();
 		int p=n.length(),q=m.length(),i=p;
-		long r,N=0,M=0;
+		long r,N=0,M=0,l=1;
 		for(;i-->0;N+=n.charAt(i)>48?Math.pow(2,p-i-1):0);
 		for(i=q;i-->0;M+=m.charAt(i)>48?Math.pow(2,q-i-1):0);
 		r=N*M;
-		for(i=1;i<r;i*=2);
-		for(;i>0;System.out.print(r/i),r%=i,i/=2);
+		for(l=1;l<=r;l*=2);
+		for(l/=2;l>0;System.out.print(r/l),r%=l,l/=2);
 	}
 
 }
