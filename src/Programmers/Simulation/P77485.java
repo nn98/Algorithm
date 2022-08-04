@@ -1,7 +1,5 @@
 package Programmers.Simulation;
-
 import java.util.Arrays;
-
 public class P77485 {
 	static public int[] solution(int n, int m, int[][]q) {
 		int i=0,j,k=0,r[]=new int[q.length],a[][]=new int[n][m],x,y,t,u,w,M,I=0;
@@ -52,5 +50,4 @@ public class P77485 {
 		System.out.println(Arrays.toString(solution(100,97,c)));
 		System.out.println(Arrays.toString(solution(3,4,a)));
 	}
-
 }
