@@ -10,15 +10,18 @@ public class P76502 {
 			for(j=i;j<i+l&g<1;j++) {
 				switch(f.charAt(j%l)) {
 				case ')':
-					if(t.peek()=='(')t.pop();
+					if(t.isEmpty())g++;
+					else if(t.peek()=='(')t.pop();
 					else g++;
 					break;
 				case '}':
-					if(t.peek()=='{')t.pop();
+					if(t.isEmpty())g++;
+					else if(t.peek()=='{')t.pop();
 					else g++;
 					break;
 				case ']':
-					if(t.peek()=='[')t.pop();
+					if(t.isEmpty())g++;
+					else if(t.peek()=='[')t.pop();
 					else g++;
 					break;
 				case '(':
