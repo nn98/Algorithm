@@ -16,7 +16,7 @@ public class P77485 {
 				a[i][u]=a[i][u-1];
 				M=Math.min(a[i][u],M);
 			}
-			for(int[]b:a)System.out.println(Arrays.toString(b));
+//			for(int[]b:a)System.out.println(Arrays.toString(b));
 			System.out.println();
 			w=a[x][y];
 			for(u=x;u>i;u--) {
@@ -25,7 +25,7 @@ public class P77485 {
 				M=Math.min(a[u][y],M);
 //				M=M<a[u][y]?M:a[u][y];
 			}
-			for(int[]b:a)System.out.println(Arrays.toString(b));
+//			for(int[]b:a)System.out.println(Arrays.toString(b));
 			System.out.println();
 			t=a[x][j];
 			for(u=j;u<y;u++) {
@@ -33,7 +33,7 @@ public class P77485 {
 				else a[x][u]=a[x][u+1];
 				M=Math.min(a[x][u],M);
 			}
-			for(int[]b:a)System.out.println(Arrays.toString(b));
+//			for(int[]b:a)System.out.println(Arrays.toString(b));
 			System.out.println();
 			w=a[x][y];
 			for(u=i;u<x;u++) {
@@ -41,7 +41,7 @@ public class P77485 {
 				else a[u][j]=a[u+1][j];
 				M=Math.min(a[u][j],M);
 			}
-			for(int[]b:a)System.out.println(Arrays.toString(b));
+//			for(int[]b:a)System.out.println(Arrays.toString(b));
 			System.out.println();
 			r[I++]=M;
 		}
