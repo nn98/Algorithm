@@ -3,7 +3,7 @@ package Programmers.BFS;
 import java.util.Arrays;
 
 public class P1844 {
-	static int n,m,a[][],h[][],p[]= {0,1,0,-1},q[]= {1,0,-1,0};
+	static int n,m,a[][],h[][],p[]= {0,1,0,-1},q[]= {1,0,-1,0},C;
 	static public int solution(int[][] maps) {
         int i=0,j;
         a=maps;
@@ -14,7 +14,9 @@ public class P1844 {
         return h[n-1][m-1]<1?-1:h[n-1][m-1];
     }
 	static void o(int x,int y,int v) {
+		C++;
 		h[x][y]=v++;
+		a[x][y]=0;
 		int i=0,X,Y;
 		for(;i<4;i++) {
 			X=p[i]+x;
@@ -25,6 +27,7 @@ public class P1844 {
 	public static void main(String[] args) {
 		int[][]a={{1,0,1,1,1},{1,0,1,0,1},{1,0,1,1,1},{1,1,1,0,1},{0,0,0,0,1}};
 		System.out.println(solution(a));
+		System.out.println(C);
 		for(int[]b:h)System.out.println(Arrays.toString(b));
 	}
 
