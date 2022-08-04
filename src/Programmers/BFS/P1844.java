@@ -19,7 +19,7 @@ public class P1844 {
 		for(;i<4;i++) {
 			X=p[i]+x;
 			Y=q[i]+y;
-			if(X>=0&X<n&Y>=0&Y<m)if(h[X][Y]<1|h[X][Y]>v&a[X][Y]>0)o(X,Y,v);
+			if(X>=0&X<n&Y>=0&Y<m)if((h[X][Y]<1|h[X][Y]>v)&a[X][Y]>0)o(X,Y,v);
 		}
 	}
 	public static void main(String[] args) {
