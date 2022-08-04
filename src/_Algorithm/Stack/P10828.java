@@ -28,12 +28,13 @@ public class P10828 {
 		}
 	}
 
-	public static void main(String[] args)throws Exception{
-		BufferedReader r=new BufferedReader(new InputStreamReader(System.in));
-		BufferedWriter w=new BufferedWriter(new OutputStreamWriter(System.out));
-		int n=Integer.parseInt(r.readLine());
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner s=new Scanner(System.in);
+		int n=s.nextInt();
+		s.nextLine();
 		for(int i=0;i<n;i++) {
-			String[] input=r.readLine().split(" ");
+			String[] input=s.nextLine().split(" ");
 			switch(input[0]) {
 			case "push":
 				if(root==null) {
@@ -52,10 +53,10 @@ public class P10828 {
 				else System.out.println(root.top());
 				break;
 			case "size":
-				w.write(size+"\n");
+				System.out.println(size);
 				break;
 			case "empty":
-				w.write((root==null?1:0)+"\n");
+				System.out.println(root==null?1:0);
 				break;
 			}
 		}
