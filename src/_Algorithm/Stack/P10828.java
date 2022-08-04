@@ -1,6 +1,6 @@
 package _Algorithm.Stack;
-import java.util.Scanner;
-
+import java.io.*;
+import java.util.*;
 public class P10828 {
 	
 	static Node root=null;
@@ -28,13 +28,12 @@ public class P10828 {
 		}
 	}
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		Scanner s=new Scanner(System.in);
-		int n=s.nextInt();
-		s.nextLine();
+	public static void main(String[] args)throws Exception{
+		BufferedReader r=new BufferedReader(new InputStreamReader(System.in));
+		BufferedWriter w=new BufferedWriter(new OutputStreamWriter(System.out));
+		int n=Integer.parseInt(r.readLine());
 		for(int i=0;i<n;i++) {
-			String[] input=s.nextLine().split(" ");
+			String[] input=r.readLine().split(" ");
 			switch(input[0]) {
 			case "push":
 				if(root==null) {
@@ -53,10 +52,10 @@ public class P10828 {
 				else System.out.println(root.top());
 				break;
 			case "size":
-				System.out.println(size);
+				w.write(size+"\n");
 				break;
 			case "empty":
-				System.out.println(root==null?1:0);
+				w.write((root==null?1:0)+"\n");
 				break;
 			}
 		}
