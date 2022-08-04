@@ -1,4 +1,5 @@
 package _Algorithm.Stack;
+// 아니 이 병신같은 백준은 도대체 왜 입출력으로 시간초과를쳐맥여 시발 재채점 좆같이하네
 import java.io.*;
 import java.util.*;
 public class P10828 {
