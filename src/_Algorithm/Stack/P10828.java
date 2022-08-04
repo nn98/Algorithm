@@ -45,7 +45,7 @@ public class P10828 {
 				break;
 			case "pop":
 				if(root==null)w.write(-1+"\n");
-				else w.write(root.top()+"\n");
+				else w.write(root.pop()+"\n");
 				break;
 			case "top":
 				if(root==null)w.write(-1+"\n");
