@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class P77485 {
 	static public int[] solution(int n, int m, int[][]q) {
-		int i=0,j,k=0,answer[]={},a[][]=new int[n][m],x,y,t,u;
+		int i=0,j,k=0,answer[]={},a[][]=new int[n][m],x,y,t,u,w;
 		for(;i<n;i++)for(j=0;j<m;a[i][j]=i*n+j+++1);
 		for(;k<q.length;k++) {
 			i=q[k][0]-1;
@@ -15,11 +15,29 @@ public class P77485 {
 			for(u=y;u>j;u--) {
 				a[i][u]=a[i][u-1];
 			}
+			for(int[]b:a)System.out.println(Arrays.toString(b));
+			System.out.println();
+			w=a[x][y];
 			for(u=x;u>i;u--) {
-				if(u==i+1) a[u][j]=t;
-				else a[u][j]=a[u-1][j];
+				if(u==i+1) a[u][y]=t;
+				else a[u][y]=a[u-1][y];
 			}
-//			for(int[]b:a)System.out.println(Arrays.toString(b));
+			for(int[]b:a)System.out.println(Arrays.toString(b));
+			System.out.println();
+			t=a[i][j];
+			for(u=j;u<y;u++) {
+				if(u==y-1) a[x][u]=w;
+				else a[x][u]=a[x][u+1];
+			}
+			for(int[]b:a)System.out.println(Arrays.toString(b));
+			System.out.println();
+			w=a[x][y];
+			for(u=i;u<x;u++) {
+				if(u==x-1) a[u][j]=t;
+				else a[u][j]=a[u+1][j];
+			}
+			for(int[]b:a)System.out.println(Arrays.toString(b));
+			System.out.println();
 		}
 		return answer;
 	}
