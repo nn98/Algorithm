@@ -28,13 +28,12 @@ public class P10828 {
 		}
 	}
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		Scanner s=new Scanner(System.in);
-		int n=s.nextInt();
-		s.nextLine();
+	public static void main(String[] args)throws Exception{
+		BufferedReader r=new BufferedReader(new InputStreamReader(System.in));
+		BufferedWriter w=new BufferedWriter(new OutputStreamWriter(System.out));
+		int n=Integer.parseInt(r.readLine());
 		for(int i=0;i<n;i++) {
-			String[] input=s.nextLine().split(" ");
+			String[] input=r.readLine().split(" ");
 			switch(input[0]) {
 			case "push":
 				if(root==null) {
@@ -45,20 +44,21 @@ public class P10828 {
 				else root.push(Integer.parseInt(input[1]));
 				break;
 			case "pop":
-				if(root==null) System.out.println(-1);
-				else System.out.println(root.pop());
+				if(root==null)w.write(-1+"\n");
+				else w.write(root.top()+"\n");
 				break;
 			case "top":
-				if(root==null) System.out.println(-1);
-				else System.out.println(root.top());
+				if(root==null)w.write(-1+"\n");
+				else w.write(root.top()+"\n");
 				break;
 			case "size":
-				System.out.println(size);
+				w.write(size+"\n");
 				break;
 			case "empty":
-				System.out.println(root==null?1:0);
+				w.write((root==null?1:0)+"\n");
 				break;
 			}
 		}
+		w.flush();
 	}
 }
