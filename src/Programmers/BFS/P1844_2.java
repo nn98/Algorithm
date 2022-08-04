@@ -1,7 +1,7 @@
 package Programmers.BFS;
 
 import java.util.*;
-
+// 확실히 큐쓰는게 효율적
 public class P1844_2 {
 	static int n,m,a[][],h[][],p[]= {0,1,0,-1},q[]= {1,0,-1,0},i,X,Y,b[],x,y;
 	static public int solution(int[][]s) {
