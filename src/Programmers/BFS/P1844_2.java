@@ -18,7 +18,7 @@ public class P1844_2 {
         	for(i=0;i<4;i++) {
         		X=x+p[i];
         		Y=y+q[i];
-        		if(X>=0&X<n&Y>=0&Y<m)if((h[X][Y]<1)&a[X][Y]>0) {
+        		if(X>=0&X<n&Y>=0&Y<m)if((h[X][Y]<1)&s[X][Y]>0) {
         			Q.add(new int[] {X,Y});
         			h[X][Y]=h[x][y]+1;
         		}
