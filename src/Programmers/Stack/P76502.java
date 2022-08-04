@@ -41,5 +41,9 @@ public class P76502 {
     }
 	public static void main(String[]z) {
 		System.out.println(solution("[({})]"));
+		System.out.println(solution("[](){}"));
+		System.out.println(solution("}]()[{"));
+		System.out.println(solution("[)(]"));
+		System.out.println(solution("}}}"));
 	}
 }
