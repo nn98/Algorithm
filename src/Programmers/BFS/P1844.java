@@ -20,7 +20,8 @@ public class P1844 {
 		}
 	}
 	public static void main(String[] args) {
-		
+		int[][]a={{1,0,1,1,1},{1,0,1,0,1},{1,0,1,1,1},{1,1,1,0,1},{0,0,0,0,1}};
+		System.out.println(solution(a));
 	}
 
 }
