@@ -1,5 +1,5 @@
 package _Algorithm.Simple_Implementation;
-
+// 원클의 즐거움
 import java.util.Scanner;
 
 public class P17300_2 {
