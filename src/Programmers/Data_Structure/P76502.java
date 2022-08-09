@@ -1,4 +1,4 @@
-package Programmers.Stack;
+package Programmers.Data_Structure;
 import java.util.*;
 public class P76502 {
 	static public int solution(String s) {
