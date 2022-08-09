@@ -16,7 +16,7 @@ public class P42587 {
 				}
 			System.out.println(Arrays.toString(p)+"\t"+Arrays.toString(a));
 		}
-		return j;
+		return l-1-j;
 	}
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
