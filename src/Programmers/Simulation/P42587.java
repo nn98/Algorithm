@@ -1,4 +1,4 @@
-package Programmers.Data_Structure;
+package Programmers.Simulation;
 import java.util.*;
 public class P42587 {
 	static public int solution(int[]p, int x) {
