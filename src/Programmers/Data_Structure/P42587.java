@@ -14,7 +14,7 @@ public class P42587 {
 					j--;
 					if(i%l==x)r++;
 				}
-			System.out.println(Arrays.toString(p)+"\t"+Arrays.toString(a));
+//			System.out.println(Arrays.toString(p)+"\t"+Arrays.toString(a));
 		}
 		return l-1-j;
 	}
