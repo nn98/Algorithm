@@ -14,7 +14,7 @@ public class P12981 {
         }
         i--;
         System.out.println(i);
-        return new int[] {i%n+1,i/n+1};
+        return new int[] {i==l-1?0:i%n+1,i==l-1?0:i/n+1};
     }
 	public static void main(String[] args) {
 		System.out.println(Arrays.toString(solution(3,new String[]{
