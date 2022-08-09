@@ -18,7 +18,7 @@ public class P15921 {
 			//			System.out.println(u);
 			//			System.out.println(r);
 		}
-		System.out.print(u/r);
+		System.out.print(n==0?"divide by zero":String.format("%.2f",u/r));
 	}
 
 }
