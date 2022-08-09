@@ -1,5 +1,5 @@
 package Programmers.Simulation;
-
+// dk tlqkf
 import java.util.Arrays;
 
 public class P12981 {
