@@ -14,7 +14,7 @@ public class P15921 {
 			u/=n;
 			System.out.println(Arrays.toString(a));
 			System.out.println(Arrays.toString(b));
-			for(i=0;i<n;r+=a[i]*((double)b[a[i++]]/n),System.out.println(r));
+			for(i=0;i<n;r+=a[i]*((double)b[a[i]]/n),b[a[i]]=0);//,System.out.println(r)
 			System.out.println(u);
 			System.out.println(r);
 		}
