@@ -12,7 +12,7 @@ public class P12981_2 {
         	}
         }
         i--;
-        System.out.println(i);
+//        System.out.println(i);
         return new int[] {r<1?0:i%n+1,r<1?0:i/n+1};
     }
 	public static void main(String[] args) {
