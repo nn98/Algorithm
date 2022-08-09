@@ -12,7 +12,8 @@ public class P12981 {
         			r+=w[c].equals(w[j])?1:0;
         		}
         }
-        return new int[] {r%n+1,i/n+1};
+        System.out.println(i);
+        return new int[] {i%n+1,i/n+1};
     }
 	public static void main(String[] args) {
 		System.out.println(Arrays.toString(solution(3,new String[]{
