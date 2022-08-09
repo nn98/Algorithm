@@ -12,6 +12,7 @@ public class P12981 {
         			r+=w[c].equals(w[j])?1:0;
         		}
         }
+        i--;
         System.out.println(i);
         return new int[] {i%n+1,i/n+1};
     }
