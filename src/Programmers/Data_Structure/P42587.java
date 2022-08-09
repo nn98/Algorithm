@@ -1,6 +1,5 @@
 package Programmers.Data_Structure;
 import java.util.*;
-import java.util.stream.Collectors;
 public class P42587 {
 	static public int solution(int[]p, int x) {
 		//		List<Integer>l=Arrays.stream(p).boxed().collect(Collectors.toList());
