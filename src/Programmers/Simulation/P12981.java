@@ -1,10 +1,26 @@
 package Programmers.Simulation;
 
+import java.util.Arrays;
+
 public class P12981 {
-
+	static public int[] solution(int n,String[]w) {
+        int r=0,i=0,j,c,l=w.length,e=0;
+        for(;r<1&++i<l;) {
+        	r+=w[i].charAt(0)!=w[i-1].charAt(w[i-1].length()-1)?1:0;
+        	for(j=i;r<1&j>=0;j-=n)
+        		for(c=j-n;r<1&c>=0;c-=n) {
+        			r+=w[c].equals(w[j])?1:0;
+        		}
+        }
+        return new int[] {r%n+1,i/n+1};
+    }
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+		System.out.println(Arrays.toString(solution(3,new String[]{
+				"tank", "kick", "know", "wheel", "land", "dream", "mother", "robot", "tank"})));
+		System.out.println(Arrays.toString(solution(5,new String[]{
+				"hello", "observe", "effect", "take", "either", "recognize", "encourage", "ensure", "establish", "hang", "gather", "refer", "reference", "estimate", "executive"})));
+		System.out.println(Arrays.toString(solution(2,new String[]{
+				"hello", "one", "even", "never", "now", "world", "draw"})));
 	}
 
 }
