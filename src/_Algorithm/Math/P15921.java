@@ -12,11 +12,12 @@ public class P15921 {
 		if(n>0) {
 			for(;i<n;u+=a[i]=s.nextInt(),b[a[i++]]++);
 			u/=n;
-			System.out.println(Arrays.toString(a));
-			System.out.println(Arrays.toString(b));
-			for(i=0;i<n;r+=a[i]*((double)b[a[i]]/n),b[a[i]]=0);//,System.out.println(r)
-			System.out.println(u);
-			System.out.println(r);
+//			System.out.println(Arrays.toString(a));
+//			System.out.println(Arrays.toString(b));
+			for(i=0;i<n;r+=a[i]*((double)b[a[i]]/n),b[a[i++]]=0);//,System.out.println(r)
+//			System.out.println(u);
+//			System.out.println(r);
+			System.out.print(u/r);
 		}
 		
 	}
