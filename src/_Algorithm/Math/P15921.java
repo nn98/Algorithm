@@ -17,6 +17,7 @@ public class P15921 {
 			for(i=0;i<n;r+=a[i]*((double)b[a[i]]/n),b[a[i++]]=0);//,System.out.println(r)
 			//			System.out.println(u);
 			//			System.out.println(r);
+			n=r==0?0:n;
 		}
 		System.out.print(n==0?"divide by zero":String.format("%.2f",u/r));
 	}
