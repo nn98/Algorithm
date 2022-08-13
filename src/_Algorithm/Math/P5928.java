@@ -1,10 +1,13 @@
 package _Algorithm.Math;
 
+import java.util.Scanner;
+
 public class P5928 {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+		System.out.println(24*60);
+		Scanner s=new Scanner(System.in);
+		int n=24*60*s.nextInt();
 	}
 
 }
