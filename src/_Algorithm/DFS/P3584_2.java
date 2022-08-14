@@ -1,6 +1,6 @@
 package _Algorithm.DFS;
 import java.io.*;
-public class P3584_2 {
+public class P3584_2{
 	static int n,m,K,i,j,a[],h[],R;
 	static void o(int x) {
 		if(h[x]>0)R=x;
@@ -28,5 +28,4 @@ public class P3584_2 {
 		}
 		w.flush();
 	}
-
 }
