@@ -1,12 +1,15 @@
 package _Algorithm.DFS;
 import java.io.*;
+import java.util.Arrays;
 public class P3584 {
 	static int n,m,K,i,j,a[][],h[],R;
 	static void o(int x) {
+		System.out.println(x+" "+h[x]);
 		if(h[x]>0)R=x;
 		else {
 			h[x]++;
-			for(int y=0;++y<n;)if(a[x][y]>0)o(y);
+			System.out.println(x+" "+h[x]);
+			for(int y=0;++y<n;System.out.println(y+" "+a[x][y]))if(a[x][y]>0)o(y);
 		}
 	}
 	public static void main(String[] args)throws Exception{
@@ -16,10 +19,12 @@ public class P3584 {
 			n=Integer.parseInt(r.readLine())+1;
 			String[]b;
 			a=new int[n][n];
-			for(;--n>0;) {
+			h=new int[n];
+			for(;--n>1;) {
 				b=r.readLine().split(" ");
 				a[Integer.parseInt(b[1])][Integer.parseInt(b[0])]++;
 			}
+			for(int[]c:a)System.out.println(Arrays.toString(c));
 			b=r.readLine().split(" ");
 			o(Integer.parseInt(b[0]));
 			o(Integer.parseInt(b[1]));
