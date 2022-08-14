@@ -1,6 +1,5 @@
 package _Algorithm.DFS;
 import java.io.*;
-import java.util.Arrays;
 public class P3584_2 {
 	static int n,m,K,i,j,a[],h[],R;
 	static void o(int x) {
