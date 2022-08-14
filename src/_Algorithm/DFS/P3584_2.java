@@ -4,7 +4,6 @@ import java.util.Arrays;
 public class P3584_2 {
 	static int n,m,K,i,j,a[],h[],R;
 	static void o(int x) {
-//		System.out.println(x+" "+h[x]);
 		if(h[x]>0)R=x;
 		else {
 			h[x]++;
@@ -23,11 +22,9 @@ public class P3584_2 {
 				b=r.readLine().split(" ");
 				a[Integer.parseInt(b[1])]=Integer.parseInt(b[0]);
 			}
-//			for(int[]c:a)System.out.println(Arrays.toString(c));
 			b=r.readLine().split(" ");
 			o(Integer.parseInt(b[0]));
 			o(Integer.parseInt(b[1]));
-//			System.out.println(R);
 			w.write(R+"\n");
 		}
 		w.flush();
