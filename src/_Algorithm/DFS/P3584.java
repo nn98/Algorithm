@@ -4,19 +4,19 @@ import java.util.Arrays;
 public class P3584 {
 	static int n,m,K,i,j,a[][],h[],R;
 	static void o(int x) {
-		System.out.println(x+" "+h[x]);
+//		System.out.println(x+" "+h[x]);
 		if(h[x]>0)R=x;
 		else {
 			h[x]++;
-			System.out.println(x+" "+h[x]);
-			for(int y=0;++y<n;System.out.println(y+" "+a[x][y]))if(a[x][y]>0)o(y);
+//			System.out.println(x+" "+h[x]);
+			for(int y=0;++y<m;System.out.println(y+" "+a[x][y]))if(a[x][y]>0)o(y);
 		}
 	}
 	public static void main(String[] args)throws Exception{
 		BufferedReader r=new BufferedReader(new InputStreamReader(System.in));
 		BufferedWriter w=new BufferedWriter(new OutputStreamWriter(System.out));
 		for(K=Integer.parseInt(r.readLine());K-->0;) {
-			n=Integer.parseInt(r.readLine())+1;
+			m=n=Integer.parseInt(r.readLine())+1;
 			String[]b;
 			a=new int[n][n];
 			h=new int[n];
