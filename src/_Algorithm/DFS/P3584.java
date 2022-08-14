@@ -28,8 +28,10 @@ public class P3584 {
 			b=r.readLine().split(" ");
 			o(Integer.parseInt(b[0]));
 			o(Integer.parseInt(b[1]));
-			System.out.println(R);
+//			System.out.println(R);
+			w.write(R+"\n");
 		}
+		w.flush();
 	}
 
 }
