@@ -8,7 +8,7 @@ public class P3584_2 {
 		if(h[x]>0)R=x;
 		else {
 			h[x]++;
-			o(a[x]);
+			if(a[x]>0)o(a[x]);
 		}
 	}
 	public static void main(String[] args)throws Exception{
