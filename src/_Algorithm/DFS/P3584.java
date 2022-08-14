@@ -9,7 +9,7 @@ public class P3584 {
 		else {
 			h[x]++;
 //			System.out.println(x+" "+h[x]);
-			for(int y=0;++y<m;System.out.println(y+" "+a[x][y]))if(a[x][y]>0)o(y);
+			for(int y=0;++y<m;)if(a[x][y]>0)o(y);
 		}
 	}
 	public static void main(String[] args)throws Exception{
@@ -24,7 +24,7 @@ public class P3584 {
 				b=r.readLine().split(" ");
 				a[Integer.parseInt(b[1])][Integer.parseInt(b[0])]++;
 			}
-			for(int[]c:a)System.out.println(Arrays.toString(c));
+//			for(int[]c:a)System.out.println(Arrays.toString(c));
 			b=r.readLine().split(" ");
 			o(Integer.parseInt(b[0]));
 			o(Integer.parseInt(b[1]));
