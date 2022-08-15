@@ -12,7 +12,7 @@ public class P25345 {
 			for(j=0;j<=i;j++)if(j==0|j==i)a[i][j]=1;else a[i][j]=(a[i-1][j-1]+a[i-1][j])%p;
 		}
 //		for(int[]b:a)System.out.println(Arrays.toString(b));
-		j=a[n][n/2];
+		j=a[n-1][n/2];
 		for(;--k>0;j=j*2%p);
 		System.out.println(j);
 	}
