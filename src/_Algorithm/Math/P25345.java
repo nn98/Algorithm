@@ -7,11 +7,14 @@ public class P25345 {
 
 	public static void main(String[] args) {
 		Scanner s=new Scanner(System.in);
-		int n=s.nextInt(),k=s.nextInt(),a[][]=new int[n][n],i=0,j,p;
+		int n=s.nextInt(),k=s.nextInt(),a[][]=new int[n][n],i=0,j,p=1000000007;
 		for(;i<n;i++) {
-			for(j=0;j<=i;j++)if(j==0|j==i)a[i][j]=1;else a[i][j]=a[i-1][j-1]+a[i-1][j];
+			for(j=0;j<=i;j++)if(j==0|j==i)a[i][j]=1;else a[i][j]=(a[i-1][j-1]+a[i-1][j])%p;
 		}
-		for(int[]b:a)System.out.println(Arrays.toString(b));
+//		for(int[]b:a)System.out.println(Arrays.toString(b));
+		j=a[n][n/2];
+		for(;--k>0;j=j*2%p);
+		System.out.println(j);
 	}
 
 }
