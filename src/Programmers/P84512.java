@@ -8,6 +8,7 @@ public class P84512 {
 		for(int i=0;i<6;i++) {
 			if(x<1)continue;
 			b[x]=a[i];
+			o(x+1);
 		}
 	}
 	public static void main(String[] args) {
