@@ -13,12 +13,12 @@ public class P84512 {
 		}
 	}
 	static int solution(String w) {
+		o(0);
 		int i=0;
 		for(;++i<3906;)if(l[i].equals(w))return i;
 		return i;
 	}
 	public static void main(String[] args) {
-		o(0);
 		System.out.println(solution("AAAAE"));
 		System.out.println(solution("AAAE"));
 		System.out.println(solution("I"));
