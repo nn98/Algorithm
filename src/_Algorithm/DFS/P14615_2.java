@@ -45,7 +45,7 @@ public class P14615_2 {
 			if(l[i]!=null) {
 				l[i].addAll(L[i]);
 			}
-			System.out.println(i+": "+l[i]);
+//			System.out.println(i+": "+l[i]);
 		}
 		for(i=Integer.parseInt(r.readLine());i-->0;) {
 			j=Integer.parseInt(r.readLine());
