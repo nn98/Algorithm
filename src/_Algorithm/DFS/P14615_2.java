@@ -45,9 +45,13 @@ public class P14615_2 {
 			if(l[i]!=null) {
 				l[i].addAll(L[i]);
 			}
-//			System.out.println(l[i]);
+			System.out.println(i+": "+l[i]);
 		}
-		for(i=Integer.parseInt(r.readLine());i-->0;j=Integer.parseInt(r.readLine()),w.write(l[1].contains(j)&l[j].contains(n)?"Defend the CTP\n":"Destroyed the CTP\n"));
+		for(i=Integer.parseInt(r.readLine());i-->0;) {
+			j=Integer.parseInt(r.readLine());
+			if(l[1]==null)w.write("Destroyed the CTP\n");
+			else w.write(l[1].contains(j)&l[j].contains(n)?"Defend the CTP\n":"Destroyed the CTP\n");
+		}
 		w.flush();
 		
 	}
