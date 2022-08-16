@@ -5,10 +5,10 @@ public class P14615_2 {
 	static int n,m,i,j,h[];
 	static Set<Integer>l[],z,L[];
 	static void o(int x) {
-		System.out.println(x+" "+z+" "+(l[x]!=null));
+//		System.out.println(x+" "+z+" "+(l[x]!=null));
 		h[x]++;
 		for(int p:z) {
-			System.out.println(x+" "+p+" "+l[p]);
+//			System.out.println(x+" "+p+" "+l[p]);
 			L[p].add(x);
 		}
 		z.add(x);
@@ -38,15 +38,17 @@ public class P14615_2 {
 			l[i].add(Integer.parseInt(a[1]));
 //			if(l[j]!=null)for(int c:l[j])l[i].add(c);
 		}
-		for(i=0;i++<n;System.out.println(l[i]));
-		System.out.println();
+//		for(i=0;i++<n;System.out.println(l[i]));
+//		System.out.println();
 		for(i=0;i++<n;h=new int[n+1],z=new HashSet(),o(i));
 		for(i=0;i++<n;) {
 			if(l[i]!=null) {
 				l[i].addAll(L[i]);
 			}
-			System.out.println(l[i]);
+//			System.out.println(l[i]);
 		}
+		j=Integer.parseInt(r.readLine());
+		w.write(l[1].contains(j)&l[j].contains(n)?"Defend the CTP\n":"Destroyed the CTP\n");
 	}
 
 }
