@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class P42583_3 {
 	static public int solution(int b, int w, int[] t) {
-		int a=1,j,r=1,i=0,v=0,c[]=new int[1001];
+		int a=1,j,r=1,i=0,v=0,c[]=new int[100000001];
 		for(;i<t.length|a>0;r++) {
 			if(i!=t.length)
 				if(c[r]+t[i]<=w) {
