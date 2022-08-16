@@ -12,7 +12,7 @@ public class P42583_3 {
 					i++;
 				}
 			if(c[r]<1)a=0;
-			System.out.println(Arrays.toString(c));
+//			System.out.println(Arrays.toString(c));
 		}
 		return --r;
 	}
