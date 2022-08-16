@@ -14,7 +14,7 @@ public class P84512 {
 	}
 	static int solution(String w) {
 		int i=0;
-		for(;i<3906;i++)if(l[i].equals(w))return i;
+		for(;++i<3906;)if(l[i].equals(w))return i;
 		return i;
 	}
 	public static void main(String[] args) {
