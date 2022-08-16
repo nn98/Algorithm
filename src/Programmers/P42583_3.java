@@ -1,7 +1,5 @@
 package Programmers;
 
-import java.util.Arrays;
-
 public class P42583_3 {
 	static public int solution(int b, int w, int[] t) {
 		int a=1,j,r=1,i=0,v=0,c[]=new int[100000001];
