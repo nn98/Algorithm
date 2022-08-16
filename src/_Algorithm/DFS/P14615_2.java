@@ -49,8 +49,12 @@ public class P14615_2 {
 		}
 		for(i=Integer.parseInt(r.readLine());i-->0;) {
 			j=Integer.parseInt(r.readLine());
-			if(l[1]==null)w.write("Destroyed the CTP\n");
-			else w.write(l[1].contains(j)&l[j].contains(n)?"Defend the CTP\n":"Destroyed the CTP\n");
+//			if(l[1]==null)w.write("Destroyed the CTP\n");
+			try{
+				w.write(l[1].contains(j)&l[j].contains(n)?"Defend the CTP\n":"Destroyed the CTP\n");
+			}catch(Exception e) {
+				w.write("Destroyed the CTP\n");
+			}
 		}
 		w.flush();
 		
