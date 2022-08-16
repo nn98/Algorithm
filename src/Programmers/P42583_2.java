@@ -2,16 +2,17 @@ package Programmers;
 
 public class P42583_2 {
 	static public int solution(int b, int w, int[] t) {
-		int answer = 0,r=0,i=0,j,v=0;
+		int a=1,r=0,i=0,j,v=0;
 		for(;i<t.length;) {
-			v+=t[i++];
-			if(v>w) {
-				v-=t[--i];
+			if(v+t[i]<=w) {
+				v+=t[i];
+			}else {
+				a++;
 				r++;
-				v=0;
+				v=t[i];
 			}
 		}
-		return ++r*b;
+		return a+b*r;
 	}
 	public static void main(String[] args) {
 		System.out.println(solution(2,10,new int[] {7,4,5,6}));
