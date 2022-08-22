@@ -12,15 +12,16 @@ public class P118668 {
 				if(h[i]<1) {
 					if(alp<p[i][0]|cop<p[i][1]) {
 						ti=0;
-						tt=11;
+						tt=100;
 						for(j=0;j<l;j++) {
-							if(h[i]>0) {
+							if(h[j]>0) {
 								for(k=0;++k<20;) {
 									if(alp+p[j][2]*k>=p[i][0]&cop+p[j][3]*k>=p[i][1]) {
-										if(k<tt) {
+										if(k*p[j][4]<tt) {
 											ti=j;
-											tt=k;
+											tt=k*p[j][4];
 										}
+										break;
 									}
 								}
 							}
@@ -28,20 +29,24 @@ public class P118668 {
 						k=0;
 						if(alp<p[i][0])k+=p[i][0]-alp;
 						if(cop<p[i][1])k+=p[i][1]-cop;
+						System.out.println(String.format("ti:%d tt:%d k:%d",ti,tt,k));
 						if(k<tt) {
+							System.out.println("sel k");
 							alp=p[i][0];
 							cop=p[i][1];
 							a+=k;
 						}else {
-							alp+=p[ti][2]*tt;
-							cop+=p[ti][3]*tt;
+							System.out.println("sel tt");
+							alp+=p[ti][2]*(tt/p[ti][4]);
+							cop+=p[ti][3]*(tt/p[ti][4]);
 							a+=tt;
 						}
 					}
 					h[i]++;
+					c++;
 				}
+				System.out.println(alp+" "+cop+" "+a+" "+Arrays.toString(h));
 			}
-			System.out.println(alp+" "+cop+" "+a+" "+Arrays.toString(h));
 		}
 		return a;
 	}
