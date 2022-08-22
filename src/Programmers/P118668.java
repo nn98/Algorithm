@@ -41,7 +41,7 @@ public class P118668 {
 					h[i]++;
 				}
 			}
-			System.out.println(alp+" "+cop+" "+a);
+			System.out.println(alp+" "+cop+" "+a+" "+Arrays.toString(h));
 		}
 		return a;
 	}
