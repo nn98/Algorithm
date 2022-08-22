@@ -1,5 +1,5 @@
 package Programmers;
-
+// 1차원적 생각 실패!
 import java.util.Arrays;
 
 public class P118668 {
