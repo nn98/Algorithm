@@ -5,8 +5,8 @@ import java.util.Arrays;
 public class P118668 {
 	static int solution(int alp, int cop, int[][] p) {
         int a=0,x=0,y=0,i=0;
-        Arrays.sort(p,(X,Y)->Y[0]-X[0]);
-        for(int[]b:p)System.out.println(Arrays.toString(b));
+        Arrays.sort(p,(X,Y)->X[0]==Y[0]?X[1]-Y[1]:X[0]-X[0]);
+//        for(int[]b:p)System.out.println(Arrays.toString(b));
         return a;
     }
 	public static void main(String[] args) {
