@@ -7,8 +7,8 @@ public class P2501 {
 	public static void main(String[] args) {
 		Scanner s=new Scanner(System.in);
 		int n=s.nextInt(),m=s.nextInt(),i=0,r=0;
-		for(;i++<n&r<3;)if(n%i==0)r++;
-		System.out.println(r<3?0:i-1);
+		for(;i++<n&r<m;)if(n%i==0)r++;
+		System.out.println(r<m?0:i-1);
 	}
 
 }
