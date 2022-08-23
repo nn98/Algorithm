@@ -1,9 +1,6 @@
 package _Algorithm.Simple_Implementation;
-
 import java.util.Scanner;
-
 public class P15953 {
-
 	public static void main(String[] args) {
 		Scanner s=new Scanner(System.in);
 		int n=s.nextInt(),i=0,p,j;
@@ -16,5 +13,4 @@ public class P15953 {
 			System.out.println(j*10000);
 		}
 	}
-
 }
