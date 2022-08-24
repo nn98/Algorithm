@@ -17,7 +17,8 @@ public class P118668_2 {
 			for(x=z[0]+z[2],y=z[1]+z[3];x<=A&y<=C;) {
 				b[x][y]=Math.min(b[x][y],g+z[4]);
 //				for(u=x,t=b[x][y];u<x+z[2]&u<151;u++,t++)for(n=u==x?y+1:y,q=u==x?t+1:t;n<y+z[3]&n<151;b[u][n++]=q++);
-//				for(n=x;n<A;b[++n][y]=b[n-1][y]+1)for(u=y+1;u<=C;System.out.println(n+" "+u+"="+(b[n][u-1]+1)),b[n][u]=b[n][u++-1]+1);
+//				System.out.println(n+" "+u+"="+(b[n][u-1]+1)),
+				for(n=x;n<A;b[++n][y]=b[n-1][y]+1)for(u=y+1;u<=C;b[n][u]=b[n][u++-1]+1);
 				x+=z[2];
 				y+=z[3];
 				g+=z[4];
