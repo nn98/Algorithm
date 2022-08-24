@@ -7,7 +7,7 @@ public class P118668_2 {
 		Arrays.sort(p,(X,Y)->X[0]==Y[0]?X[1]-Y[1]:X[0]-X[0]);
 		int r=0,b[][],i=0,j=0,x=a,y=c,u,n,g,t=0,q,A=0,C=0;
 		for(;i<p.length;A=Math.max(A,p[i][0]),C=Math.max(C,p[i++][1]));
-		System.out.println(A+" "+C);
+//		System.out.println(A+" "+C);
 		b=new int[A+1][C+1];
 		for(;x<=A;x++,t++)for(y=c,g=t;y<=C;b[x][y++]=g++);
 		for(int[]z:p) {
