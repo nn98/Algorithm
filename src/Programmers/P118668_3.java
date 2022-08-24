@@ -10,18 +10,16 @@ public class P118668_3 {
 //		System.out.println(A+" "+C);
 		b=new int[A+1][C+1];
 		for(int[]z:b)Arrays.fill(z,-1);
-		for(int[]z:b)System.out.println(Arrays.toString(z));
+//		for(int[]z:b)System.out.println(Arrays.toString(z));
 		for(;x<=A;x++,t++)for(y=c,g=t;y<=C;b[x][y++]=g++);
-		for(int[]z:p) {
-			g=b[z[0]][z[1]];
-			for(x=z[0]+z[2],y=z[1]+z[3];x<=A&y<=C;) {
-				b[x][y]=Math.min(b[x][y],g+z[4]);
-//				for(u=x,t=b[x][y];u<x+z[2]&u<151;u++,t++)for(n=u==x?y+1:y,q=u==x?t+1:t;n<y+z[3]&n<151;b[u][n++]=q++);
-//				System.out.println(n+" "+u+"="+(b[n][u-1]+1)),
-				for(n=x;n<A;b[++n][y]=b[n-1][y]+1)for(u=y+1;u<=C;b[n][u]=b[n][u++-1]+1);
-				x+=z[2];
-				y+=z[3];
-				g+=z[4];
+		for(x=a;x<=A;x++)for(y=c;y<=C;y++) {
+			for(int[]z:p) {
+				if(x>=z[0]&y>=z[1]) {
+					i=x-z[2];
+					j=y-z[3];
+					if(i>=0&j>=0)
+					if(b[i][j]>=0)b[x][y]=Math.min(b[x][y],b[x-z[2]][y-z[3]]+z[4]);
+				}
 			}
 		}
 		for(x=a;x<=A;System.out.println(),x++)for(y=c;y<=C;)System.out.print(b[x][y++]+"\t");
