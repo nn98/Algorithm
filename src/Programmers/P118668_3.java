@@ -22,7 +22,7 @@ public class P118668_3 {
 				}
 			}
 		}
-		for(x=a;x<=A;System.out.println(),x++)for(y=c;y<=C;)System.out.print(b[x][y++]+"\t");
+//		for(x=a;x<=A;System.out.println(),x++)for(y=c;y<=C;)System.out.print(b[x][y++]+"\t");
 //		for(int[]z:b)System.out.println(Arrays.toString(z));
 		return b[A][C];
 	}
