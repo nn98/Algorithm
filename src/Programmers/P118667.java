@@ -10,6 +10,7 @@ public class P118667 {
         int l=q.length,a[]=new int[l*2],i=0,x=0,y=l,r=0,c=0;
         long A=0,B=0;
         for(;i<l*2;a[i]=i<l?q[i]:p[i%l],A+=i<l?a[i]:0,B+=i<l?0:a[i],i++);
+        if((A+B)%2==1)return -1;
         for(;c<3000;r++,c++) {
 //            System.out.println(Arrays.toString(a)+" "+x+" "+y+" "+A+" "+B);
         	if(A<B) {
