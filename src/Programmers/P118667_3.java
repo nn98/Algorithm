@@ -22,7 +22,7 @@ public class P118667_3 {
         long A=0,B=0;
         for(;i<l*2;a[i]=i<l?q[i]:p[i%l],A+=i<l?a[i]:0,B+=i<l?0:a[i],i++);
         o(x,y,0,A,B);
-        System.out.println(Arrays.toString(a));
+//        System.out.println(Arrays.toString(a));
         return r==Integer.MAX_VALUE?-1:r;
     }
 	public static void main(String[] args) {
