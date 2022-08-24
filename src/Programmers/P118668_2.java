@@ -11,8 +11,6 @@ public class P118668_2 {
 		b=new int[A+1][C+1];
 		for(;x<=A;x++,t++)for(y=c,g=t;y<=C;b[x][y++]=g++);
 		for(int[]z:p) {
-			i=i>z[0]?i:z[0];
-			j=j>z[1]?j:z[1];
 			g=b[z[0]][z[1]];
 			for(x=z[0]+z[2],y=z[1]+z[3];x<=A&y<=C;) {
 				b[x][y]=Math.min(b[x][y],g+z[4]);
@@ -26,7 +24,7 @@ public class P118668_2 {
 		}
 		for(x=a;x<=A;System.out.println(),x++)for(y=c;y<=C;)System.out.print(b[x][y++]+"\t");
 //		for(int[]z:b)System.out.println(Arrays.toString(z));
-		return b[i][j];
+		return b[A][C];
 	}
 	public static void main(String[] args) {
 		System.out.println(solution(10,10,new int[][] {{10,15,2,1,2},{20,20,3,3,4}}));
