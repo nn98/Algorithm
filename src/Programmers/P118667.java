@@ -1,7 +1,7 @@
 package Programmers;
 
 import java.util.Arrays;
-
+//날먹 실패
 public class P118667 {
 //	static void o(int x,int y,int c,int X,int Y) {
 //		
