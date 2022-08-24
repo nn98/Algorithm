@@ -19,7 +19,7 @@ public class P118667_2 {
             	A-=a[x%(l*2)];
             	B+=a[x++%(l*2)];
             }else {
-                return r;        	
+                return r;
             }
         }
         return -1;
