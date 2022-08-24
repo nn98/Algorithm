@@ -1,7 +1,5 @@
 package Programmers;
 
-import java.util.Arrays;
-//날먹 실패
 public class P118667_3 {
 	static int h[][],r,a[],l;
 	static void o(int x,int y,int c,long X,long Y) {
