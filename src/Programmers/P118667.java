@@ -11,7 +11,7 @@ public class P118667 {
         long A=0,B=0;
         for(;i<l*2;a[i]=i<l?q[i]:p[i%l],A+=i<l?a[i]:0,B+=i<l?0:a[i],i++);
         for(;c<3000;r++,c++) {
-            System.out.println(Arrays.toString(a)+" "+x+" "+y+" "+A+" "+B);
+//            System.out.println(Arrays.toString(a)+" "+x+" "+y+" "+A+" "+B);
         	if(A<B) {
             	A+=a[y%(l*2)];
             	B-=a[y++%(l*2)];
