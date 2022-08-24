@@ -13,7 +13,7 @@ public class P118668_2 {
 			g=b[z[0]][z[1]];
 			for(x=z[0]+z[2],y=z[1]+z[3];x<151&y<151;b[x][y]=Math.min(b[x][y],g+z[4]),x+=z[2],y+=z[3],g+=z[4]);
 		}
-		for(x=a;x<151;System.out.println(),x++)for(y=c;y<151;)System.out.print(b[x][y++]+" ");
+		for(x=a;x<151;System.out.println(),x++)for(y=c;y<151;)System.out.print(b[x][y++]+"\t");
 //		for(int[]z:b)System.out.println(Arrays.toString(z));
 		return r;
 	}
