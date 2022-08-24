@@ -9,6 +9,8 @@ public class P118668_3 {
 		for(;i<p.length;A=Math.max(A,p[i][0]),C=Math.max(C,p[i++][1]));
 //		System.out.println(A+" "+C);
 		b=new int[A+1][C+1];
+		for(int[]z:b)Arrays.fill(z,-1);
+		for(int[]z:b)System.out.println(Arrays.toString(z));
 		for(;x<=A;x++,t++)for(y=c,g=t;y<=C;b[x][y++]=g++);
 		for(int[]z:p) {
 			g=b[z[0]][z[1]];
