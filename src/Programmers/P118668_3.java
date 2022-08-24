@@ -21,8 +21,9 @@ public class P118668_3 {
 					if(b[i][j]>=0)b[x][y]=Math.min(b[x][y],b[x-z[2]][y-z[3]]+z[4]);
 				}
 			}
+//			for(i=x,t=b[x][y];i<=A;i++,t++)for(j=y,g=t;j<=C;b[i][j++]=g++);
 		}
-//		for(x=a;x<=A;System.out.println(),x++)for(y=c;y<=C;)System.out.print(b[x][y++]+"\t");
+		for(x=a;x<=A;System.out.println(),x++)for(y=c;y<=C;)System.out.print(b[x][y++]+"\t");
 //		for(int[]z:b)System.out.println(Arrays.toString(z));
 		return b[A][C];
 	}
