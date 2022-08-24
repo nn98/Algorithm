@@ -10,7 +10,7 @@ public class P42626_2 {
 		for(;;) {
 			Collections.sort(t);
 			if(t.get(0)<K) {
-				System.out.println(t.size());
+//				System.out.println(t.size());
 				if(t.size()<3)return -1;
 				t.add(t.remove(0)+t.remove(1)*2);
 				a++;
