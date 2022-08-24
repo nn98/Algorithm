@@ -7,7 +7,7 @@ public class P118667_3 {
 	static void o(int x,int y,int c,long X,long Y) {
 		x%=l*2;
 		y%=l*2;
-		System.out.println(String.format("x:%d y:%d c:%d X:%d Y:%d %b",x,y,c,X,Y,X==Y));
+//		System.out.println(String.format("x:%d y:%d c:%d X:%d Y:%d %b",x,y,c,X,Y,X==Y));
 		h[x][y]++;
 		if(X==Y)r=r<c?r:c;
 		if(x<l*2-1)if(h[x+1][y]<1)o(x+1,y,c+1,X-a[x],Y+a[x]);
