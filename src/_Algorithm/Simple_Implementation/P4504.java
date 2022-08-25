@@ -9,7 +9,7 @@ public class P4504 {
 		int n=s.nextInt(),a;
 		do {
 			a=s.nextInt();
-			System.out.print(a>0?String.format("%d is %sa multiple of %d\n",a,(a%n==0?"":"NOT "),n):"");
+			System.out.print(a>0?String.format("%d is %sa multiple of %d.\n",a,(a%n==0?"":"NOT "),n):"");
 		}while(a>0);
 	}
 
