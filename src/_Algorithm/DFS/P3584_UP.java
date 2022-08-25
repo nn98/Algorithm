@@ -24,8 +24,8 @@ public class P3584_UP {
 			}
 //			for(int[]c:a)System.out.println(Arrays.toString(c));
 			입력=r.readLine().split(" ");
-			o(Integer.parseInt(b[0]));
-			o(Integer.parseInt(b[1]));
+			o(Integer.parseInt(입력[0]));
+			o(Integer.parseInt(입력[1]));
 //			System.out.println(R);
 			w.write(결과+"\n");
 		}
