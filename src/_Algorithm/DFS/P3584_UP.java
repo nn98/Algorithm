@@ -1,5 +1,35 @@
 package _Algorithm.DFS;
-
+import java.io.*;
+import java.util.Arrays;
 public class P3584_UP {
+	static int n,m,K,i,j,연결정보[][],h[],R;
+	static void o(int x) {
+		if(h[x]>0)R=x;
+		else {
+			h[x]++;
+			for(int y=0;++y<m;)if(연결정보[x][y]>0)o(y);
+		}
+	}
+	public static void main(String[] args)throws Exception{
+		BufferedReader r=new BufferedReader(new InputStreamReader(System.in));
+		BufferedWriter w=new BufferedWriter(new OutputStreamWriter(System.out));
+		for(K=Integer.parseInt(r.readLine());K-->0;) {
+			m=n=Integer.parseInt(r.readLine())+1;
+			String[]b;
+			연결정보=new int[n][n];
+			h=new int[n];
+			for(;--n>1;) {
+				b=r.readLine().split(" ");
+				연결정보[Integer.parseInt(b[1])][Integer.parseInt(b[0])]++;
+			}
+//			for(int[]c:a)System.out.println(Arrays.toString(c));
+			b=r.readLine().split(" ");
+			o(Integer.parseInt(b[0]));
+			o(Integer.parseInt(b[1]));
+//			System.out.println(R);
+			w.write(R+"\n");
+		}
+		w.flush();
+	}
 
 }
