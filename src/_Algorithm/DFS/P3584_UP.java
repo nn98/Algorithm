@@ -3,7 +3,7 @@ import java.io.*;
 import java.util.Arrays;
 public class P3584_UP {
 	static int 노드,노드개수,케이스,연결정보[][],기록[],결과;
-	static void o(int x) {
+	static void DFS(int x) {
 		if(기록[x]>0)결과=x;
 		else {
 			기록[x]++;
@@ -24,8 +24,8 @@ public class P3584_UP {
 			}
 //			for(int[]c:a)System.out.println(Arrays.toString(c));
 			입력=r.readLine().split(" ");
-			o(Integer.parseInt(입력[0]));
-			o(Integer.parseInt(입력[1]));
+			DFS(Integer.parseInt(입력[0]));
+			DFS(Integer.parseInt(입력[1]));
 //			System.out.println(R);
 			w.write(결과+"\n");
 		}
