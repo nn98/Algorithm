@@ -7,7 +7,7 @@ public class P3584_UP {
 		if(기록[x]>0)결과=x;
 		else {
 			기록[x]++;
-			for(int y=0;++y<노드개수;)if(연결정보[x][y]>0)o(y);
+			for(int y=0;++y<노드개수;)if(연결정보[x][y]>0)DFS(y);
 		}
 	}
 	public static void main(String[] args)throws Exception{
