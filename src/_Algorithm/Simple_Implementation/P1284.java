@@ -22,6 +22,7 @@ public class P1284 {
 				}
 				i++;
 			}
+			System.out.println(i);
 		}
 	}
 
