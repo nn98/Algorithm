@@ -1,7 +1,7 @@
 package _Algorithm.Simple_Implementation;
 import java.util.*;
 public class P1284 {
-	public static void main(String[] args) {
+	public static void main(String[]z){
 		Scanner s=new Scanner(System.in);
 		for(String a=s.next();!a.equals("0");a=s.next()) {
 			int i=1;
