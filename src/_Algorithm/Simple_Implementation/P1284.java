@@ -1,9 +1,6 @@
 package _Algorithm.Simple_Implementation;
-
 import java.util.Scanner;
-
 public class P1284 {
-
 	public static void main(String[] args) {
 		Scanner s=new Scanner(System.in);
 		for(String a=s.next();!a.equals("0");a=s.next()) {
@@ -25,5 +22,4 @@ public class P1284 {
 			System.out.println(i);
 		}
 	}
-
 }
