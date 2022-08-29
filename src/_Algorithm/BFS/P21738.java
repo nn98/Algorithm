@@ -4,6 +4,7 @@ import java.util.*;
 public class P21738 {
 	static int n,m,i,j,p,a[][],b[],x,y,d[];
 	static void o(int x) {
+		System.out.println(x);
 		j++;
 		b[x]++;
 		for(int i=0;i<n;i++)if(b[i]<1)o(i);
