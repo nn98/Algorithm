@@ -7,7 +7,7 @@ public class P21738 {
 		System.out.println("\t"+x);
 		j++;
 		b[x]++;
-		for(int i=0;i<n;i++)if(a[x][i]>0)if(b[i]<1)o(i);
+		for(int i=0;i<=n;i++)if(a[x][i]>0)if(b[i]<1)o(i);
 	}
 	public static void main(String[] args)throws Exception{
 		BufferedReader r=new BufferedReader(new InputStreamReader(System.in));
