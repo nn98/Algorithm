@@ -16,7 +16,7 @@ public class P21738 {
 		d=new int[m+1];
 		p=Integer.parseInt(t.nextToken());
 		a=new int[n][n];
-		b=new int[n];
+		b=new int[n--];
 		for(;++i<n;) {
 			t=new StringTokenizer(r.readLine());
 			x=Integer.parseInt(t.nextToken());
