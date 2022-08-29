@@ -24,7 +24,9 @@ public class P21738 {
 			y=Integer.parseInt(t.nextToken());
 			a[x][y]=a[y][x]=1;
 		}
+		for(int[]c:a)System.out.println(Arrays.toString(c));
 		b[p]++;
+		System.out.println(Arrays.toString(b));
 		for(;m>0;j=0,System.out.print(m),o(m),d[m]=j,m--);
 		System.out.println(Arrays.toString(d));
 	}
