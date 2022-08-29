@@ -24,7 +24,7 @@ public class P21738 {
 			a[x][y]=a[y][x]=1;
 		}
 		b[p]++;
-		for(;i>0;j=0,o(i),d[i]=j,i--);
+		for(;m>0;j=0,o(m),d[m]=j,m--);
 		System.out.println(Arrays.toString(d));
 	}
 
