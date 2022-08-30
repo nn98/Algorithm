@@ -19,13 +19,13 @@ public class P21738_2 {
 	public static void main(String[] args)throws Exception{
 		BufferedReader r=new BufferedReader(new InputStreamReader(System.in));
 		StringTokenizer t=new StringTokenizer(r.readLine());
-		n=Integer.parseInt(t.nextToken());
+		n=Integer.parseInt(t.nextToken())+1;
 		m=Integer.parseInt(t.nextToken());
 		p=Integer.parseInt(t.nextToken());
-		h=new int[n+1];
+		h=new int[n];
 		R=new int[m+1];
-		l=new List[n+1];
-		for(;++i<n;) {
+		l=new List[n];
+		for(;++i<n-1;) {
 			t=new StringTokenizer(r.readLine());
 			x=Integer.parseInt(t.nextToken());
 			y=Integer.parseInt(t.nextToken());
@@ -36,6 +36,8 @@ public class P21738_2 {
 		}
 		for(y=0;y++<m;o(y,1));
 		System.out.println(Arrays.toString(R));
+		Arrays.sort(R);
+		System.out.println(n-(R[0]+R[1]-1));
 //		h[p]++;
 //		for(int x:l[p])q.add(x);
 //		y=0;
