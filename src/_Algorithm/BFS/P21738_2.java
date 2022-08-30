@@ -11,7 +11,7 @@ public class P21738_2 {
 		n=Integer.parseInt(t.nextToken());
 		m=Integer.parseInt(t.nextToken());
 		p=Integer.parseInt(t.nextToken());
-		h=new int[m+1];
+		h=new int[n+1];
 		l=new List[n+1];
 		for(;++i<n;) {
 			t=new StringTokenizer(r.readLine());
@@ -27,7 +27,7 @@ public class P21738_2 {
 		for(int x:l[p])q.add(x);
 		while(R<2) {
 			x=q.remove();
-			System.out.println(x);
+			System.out.println("\t"+x);
 			y++;
 			if(x<m)R++;
 			h[x]++;
