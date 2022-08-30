@@ -6,7 +6,11 @@ public class P21738_2 {
 	static List<Integer>l[];
 	static Queue<Integer>q=new LinkedList();
 	static void o(int x,int d) {
-		if(x==p)R[y]=d;
+		System.out.println(y+" "+x);
+		if(x==p) {
+			System.out.println("\t"+y+" "+x+" "+d);
+			R[y]=d;
+		}
 		if(R[y]<1) {
 			h[x]++;
 			for(int a:l[x])if(h[a]<1)o(a,d+1);
