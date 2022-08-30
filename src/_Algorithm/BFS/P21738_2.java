@@ -35,8 +35,8 @@ public class P21738_2 {
 			l[y].add(x);
 		}
 		for(y=0;y++<m;o(y,1));
-		System.out.println(Arrays.toString(R));
 		Arrays.sort(R);
+		System.out.println(Arrays.toString(R));
 		System.out.println(n-(R[1]+R[2]-1));
 //		h[p]++;
 //		for(int x:l[p])q.add(x);
