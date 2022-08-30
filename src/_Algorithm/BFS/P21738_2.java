@@ -37,7 +37,7 @@ public class P21738_2 {
 		for(y=0;y++<m;o(y,1));
 		System.out.println(Arrays.toString(R));
 		Arrays.sort(R);
-		System.out.println(n-(R[0]+R[1]-1));
+		System.out.println(n-(R[1]+R[2]-1));
 //		h[p]++;
 //		for(int x:l[p])q.add(x);
 //		y=0;
