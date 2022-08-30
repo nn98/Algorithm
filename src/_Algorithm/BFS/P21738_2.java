@@ -22,5 +22,4 @@ public class P21738_2 {
 			l[y].add(x);
 		}
 	}
-
 }
