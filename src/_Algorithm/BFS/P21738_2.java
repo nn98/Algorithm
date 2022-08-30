@@ -22,9 +22,9 @@ public class P21738_2 {
 			if(l[y]==null)l[y]=new ArrayList();
 			l[y].add(x);
 		}
-		y=0;
 		h[p]++;
 		for(int x:l[p])q.add(x);
+		y=0;
 		while(R<2) {
 			x=q.remove();
 			System.out.println("\t"+x);
