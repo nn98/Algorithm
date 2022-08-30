@@ -2,9 +2,16 @@ package _Algorithm.BFS;
 import java.util.*;
 import java.io.*;
 public class P21738_2 {
-	static int n,m,p,i,x,y,h[],R;
+	static int n,m,p,i,x,y,h[],R[];
 	static List<Integer>l[];
 	static Queue<Integer>q=new LinkedList();
+	static void o(int x,int d) {
+		if(x==p)R[y]=d;
+		if(R[y]<1) {
+			h[x]++;
+			for(int a:l[x])if(h[a]<1)o(a,d+1);
+		}
+	}
 	public static void main(String[] args)throws Exception{
 		BufferedReader r=new BufferedReader(new InputStreamReader(System.in));
 		StringTokenizer t=new StringTokenizer(r.readLine());
@@ -12,6 +19,7 @@ public class P21738_2 {
 		m=Integer.parseInt(t.nextToken());
 		p=Integer.parseInt(t.nextToken());
 		h=new int[n+1];
+		R=new int[m+1];
 		l=new List[n+1];
 		for(;++i<n;) {
 			t=new StringTokenizer(r.readLine());
@@ -22,17 +30,19 @@ public class P21738_2 {
 			if(l[y]==null)l[y]=new ArrayList();
 			l[y].add(x);
 		}
-		h[p]++;
-		for(int x:l[p])q.add(x);
-		y=0;
-		while(R<2) {
-			x=q.remove();
-			System.out.println("\t"+x);
-			y++;
-			if(x<m)R++;
-			h[x]++;
-			for(int a:l[x])if(h[a]<1)q.add(a);
-		}
-		System.out.println(y);
+		for(y=0;y++<m;o(y,1));
+		System.out.println(Arrays.toString(R));
+//		h[p]++;
+//		for(int x:l[p])q.add(x);
+//		y=0;
+//		while(R<2) {
+//			x=q.remove();
+//			System.out.println("\t"+x);
+//			y++;
+//			if(x<m)R++;
+//			h[x]++;
+//			for(int a:l[x])if(h[a]<1)q.add(a);
+//		}
+//		System.out.println(y);
 	}
 }
