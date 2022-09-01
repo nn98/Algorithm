@@ -12,7 +12,7 @@ public class P5073 {
 			Arrays.sort(S);
 			int a=Integer.parseInt(S[0]),b=Integer.parseInt(S[1]),c=Integer.parseInt(S[2]),d=(a==b?1:0)+(b==c?1:0);
 			if(a+b+c<1)break;
-			System.out.println(a+b>c?(d>1?"Equilateral":(d<1?"Scalene":"Isosceles")):"invaild");
+			System.out.println(a+b>c?(d>1?"Equilateral":(d<1?"Scalene":"Isosceles")):"Invalid");
 		}
 	}
 
