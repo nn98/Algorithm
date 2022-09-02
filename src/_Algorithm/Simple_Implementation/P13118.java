@@ -1,3 +1,4 @@
+package _Algorithm.Simple_Implementation;
 import java.util.Scanner;
 class Main{
 public static void main(String[]z){
