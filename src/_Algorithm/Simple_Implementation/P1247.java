@@ -2,9 +2,7 @@ package _Algorithm.Simple_Implementation;
 
 import java.math.BigInteger;
 import java.util.Scanner;
-
 public class P1247 {
-
 	public static void main(String[] args) {
 		Scanner s=new Scanner(System.in);
 		int n=0,i;
@@ -14,5 +12,4 @@ public class P1247 {
 			System.out.println(j.signum()<0?"-":(j.signum()>0?"+":0));
 		}
 	}
-
 }
