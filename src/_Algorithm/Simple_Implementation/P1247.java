@@ -9,8 +9,9 @@ public class P1247 {
 		Scanner s=new Scanner(System.in);
 		int n=0,i;
 		for(;n++<3;) {
-			BigInteger j=BigInteger.ONE;
-			for(i=s.nextInt();i-->0;j=j.add(s.nextBigInteger()));
+			BigInteger j=BigInteger.ZERO;
+			for(i=s.nextInt();i-->0;j=j.add(new BigInteger(s.next())));
+			System.out.println(j);
 			System.out.println(j.signum());
 		}
 	}
