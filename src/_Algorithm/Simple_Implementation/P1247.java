@@ -11,8 +11,7 @@ public class P1247 {
 		for(;n++<3;) {
 			BigInteger j=BigInteger.ZERO;
 			for(i=s.nextInt();i-->0;j=j.add(s.nextBigInteger()));
-			System.out.println(j);
-			System.out.println(j.signum());
+			System.out.println(j.signum()<0?"-":(j.signum()>0?"+":0));
 		}
 	}
 
