@@ -1,5 +1,4 @@
 package _Algorithm.Simple_Implementation;
-
 import java.math.BigInteger;
 import java.util.Scanner;
 public class P1247 {
