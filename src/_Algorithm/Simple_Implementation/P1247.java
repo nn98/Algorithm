@@ -10,7 +10,7 @@ public class P1247 {
 		int n=0,i;
 		for(;n++<3;) {
 			BigInteger j=BigInteger.ZERO;
-			for(i=s.nextInt();i-->0;j=j.add(new BigInteger(s.next())));
+			for(i=s.nextInt();i-->0;j=j.add(s.nextBigInteger()));
 			System.out.println(j);
 			System.out.println(j.signum());
 		}
