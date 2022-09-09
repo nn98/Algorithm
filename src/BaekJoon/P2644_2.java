@@ -1,10 +1,5 @@
 package BaekJoon;
-
-import java.util.ArrayDeque;
-import java.util.ArrayList;
-import java.util.Queue;
-import java.util.Scanner;
-
+import java.util.*;
 
 public class P2644_2 {
 	

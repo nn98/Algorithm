@@ -1,5 +1,4 @@
 package BaekJoon;
-
 import java.util.*;
 public class P9084_3{
 	public static void main(String[]z){

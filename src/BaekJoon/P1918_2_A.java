@@ -1,7 +1,5 @@
 package BaekJoon;
-
-import java.util.Scanner;
-
+import java.util.*;
 public class P1918_2_A {
 	
 	static class Node{
