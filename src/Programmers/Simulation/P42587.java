@@ -18,7 +18,6 @@ public class P42587 {
 		return l-1-j;
 	}
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		System.out.println(solution(new int[] {2,1,3,2},2));
 		System.out.println(solution(new int[] {1,1,9,1,1,1},0));
 	}
