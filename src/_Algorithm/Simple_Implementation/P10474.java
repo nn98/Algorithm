@@ -5,7 +5,7 @@ public class P10474 {
 		Scanner s=new Scanner(System.in);
 		for(;;) {
 			int a=s.nextInt(),b=s.nextInt();
-			if(a+b<1)break;
+			if(a==0&b==0)break;
 			System.out.println(a/b+" "+a%b+" / "+b);
 		}
 	}
