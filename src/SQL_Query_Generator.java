@@ -14,9 +14,10 @@ public class SQL_Query_Generator {
             }
         	break;
         case "2":
+        	System.out.println("Input Lecture ID: ");
+        	String lID=r.readLine(),s;
             for(;;){
-            	System.out.println("Input Lecture ID: ");
-                String lID=r.readLine(),s=r.readLine();
+                s=r.readLine();
                 if(s.length()<2)break;
                 w.write(String.format("insert into Learn values (%s,\"%s\");\n", s,lID));
             }
