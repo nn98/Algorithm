@@ -1,6 +1,6 @@
 import java.io.*;
 
-public class ID_Converter {
+public class SQL_Query_Generator {
     public static void main(String[]z)throws Exception{
         BufferedReader r=new BufferedReader(new InputStreamReader(System.in));
         BufferedWriter w=new BufferedWriter(new OutputStreamWriter(System.out));
