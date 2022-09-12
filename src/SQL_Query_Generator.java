@@ -18,7 +18,7 @@ public class SQL_Query_Generator {
             	System.out.println("Input Lecture ID: ");
                 String lID=r.readLine(),s=r.readLine();
                 if(s.length()<2)break;
-                w.write(String.format("insert into Learn values (%s,\"%s\",\"%s\");\n", s));
+                w.write(String.format("insert into Learn values (%s,\"%s\");\n", s,lID));
             }
         	break;
         }
