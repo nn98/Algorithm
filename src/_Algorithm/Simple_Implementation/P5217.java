@@ -13,7 +13,7 @@ public class P5217 {
 			System.out.print("Pairs for "+i+":");
 			for(j=1;j<=i/2;j++) {
 				if(i-j!=j) {
-					System.out.print(c>0?",":""+" "+j+" "+(i-j));
+					System.out.print((c>0?",":"")+" "+j+" "+(i-j));
 					c++;
 				}
 			}
