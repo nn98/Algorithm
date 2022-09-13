@@ -11,7 +11,7 @@ public class P5217 {
 			i=s.nextInt();
 			System.out.print("Pairs for "+i+":");
 			for(j=1;j<i;j++) {
-				if(i-j!=j)System.out.print(" "+j);
+				if(i-j!=j)System.out.print(" "+j+" "+(i-j));
 			}
 		}
 	}
