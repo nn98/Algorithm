@@ -13,6 +13,7 @@ public class P5217 {
 			for(j=1;j<i;j++) {
 				if(i-j!=j)System.out.print(" "+j+" "+(i-j));
 			}
+			System.out.println();
 		}
 	}
 
