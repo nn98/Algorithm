@@ -10,7 +10,7 @@ public class P5217 {
 		for(;n-->0;) {
 			i=s.nextInt();
 			System.out.print("Pairs for "+i+":");
-			for(j=1;j<i;j++) {
+			for(j=1;j<i/2;j++) {
 				if(i-j!=j)System.out.print(" "+j+" "+(i-j));
 			}
 			System.out.println();
