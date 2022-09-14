@@ -4,7 +4,7 @@ import java.io.*;
 import java.util.*;
 
 public class P16234 {
-	static int n,L,R,i,j,c,a[][],p[]= {1,0,-1,0},q[]= {0,1,0,-1},b[][],l=1,u,v[],m[];
+	static int n,L,R,i,j,c,a[][],p[]= {1,0,-1,0},q[]= {0,1,0,-1},b[][],l=1,u,v[],m[],e;
 	static void o(int x,int y,int c) {
 		b[x][y]=c;
 		u+=a[x][y];
@@ -30,6 +30,7 @@ public class P16234 {
 			for(j=0;j<n;a[i][j++]=Integer.parseInt(t.nextToken()));
 		}
 		for(;l>0;) {
+			e++;
 			l=c=0;
 			b=new int[n][n];
 			v=new int[n*n+1];
