@@ -39,7 +39,9 @@ public class P16234 {
 						o(i,j,++c);
 						v[c]=u;
 					}
+			for(int[]c:b)System.out.println(Arrays.toString(c));
 			System.out.println(Arrays.toString(v));
+			c=0;
 		}
 	}
 
