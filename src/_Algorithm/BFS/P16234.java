@@ -4,7 +4,7 @@ import java.io.*;
 import java.util.*;
 
 public class P16234 {
-	static int n,L,R,i,j,c,a[][],p[]= {1,0,-1,0},q[]= {0,1,0,-1},b[][],l,u,v[];
+	static int n,L,R,i,j,c=1,a[][],p[]= {1,0,-1,0},q[]= {0,1,0,-1},b[][],l,u,v[];
 	static void o(int x,int y,int c) {
 		b[x][y]=c;
 		u+=a[x][y];
