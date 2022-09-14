@@ -43,11 +43,11 @@ public class P16234 {
 						v[c]=u;
 						l+=m[c]>1?1:0;
 					}
-			for(int[]c:b)System.out.println(Arrays.toString(c));
-			System.out.println(Arrays.toString(v));
-			System.out.println(Arrays.toString(m));
+//			for(int[]c:b)System.out.println(Arrays.toString(c));
+//			System.out.println(Arrays.toString(v));
+//			System.out.println(Arrays.toString(m));
 			for(i=0;i<n;i++)for(j=0;j<n;j++)if(m[b[i][j]]>1)a[i][j]=v[b[i][j]]/m[b[i][j]];
-			for(int[]c:a)System.out.println(Arrays.toString(c));
+//			for(int[]c:a)System.out.println(Arrays.toString(c));
 		}
 		System.out.print(e-1);
 	}
