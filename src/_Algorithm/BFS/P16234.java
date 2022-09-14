@@ -4,9 +4,18 @@ import java.io.*;
 import java.util.*;
 
 public class P16234 {
-	static int n,L,R,i,j,c,a[][],p[]= {1,0,-1,0},q[]= {0,1,0,-1},b[][],l,u;
+	static int n,L,R,i,j,c,a[][],p[]= {1,0,-1,0},q[]= {0,1,0,-1},b[][],l,u,v[];
 	static void o(int x,int y,int c) {
-		
+		b[x][y]=c;
+		u+=a[x][y];
+		int i=0,X,Y;
+		for(;i<4;) {
+			X=x+p[i];
+			Y=y+q[i++];
+			if(X>=0&X<n&Y>=0&Y<n)if(b[X][Y]<1)
+				if(Math.abs(a[x][y]-a[X][Y])>=L|Math.abs(a[x][y]-a[X][Y])<=R)
+					o(X,Y,c);
+		}
 	}
 	public static void main(String[] args)throws Exception{
 		BufferedReader r=new BufferedReader(new InputStreamReader(System.in));
@@ -19,9 +28,19 @@ public class P16234 {
 			t=new StringTokenizer(r.readLine());
 			for(j=0;j<n;a[i][j++]=Integer.parseInt(t.nextToken()));
 		}
-		for(i=0;i<n;i++)
-			for(j=0;j<n;j++)
-				if(b[i][j]<1)o(i,j,c);
+		for(;c>0;) {
+			c=0;
+			b=new int[n][n];
+			v=new int[n*n];
+			for(i=0;i<n;i++)
+				for(j=0;j<n;j++)
+					if(b[i][j]<1) {
+						u=0;
+						o(i,j,c++);
+						v[c]=u;
+					}
+			System.out.println(Arrays.toString(v));
+		}
 	}
 
 }
