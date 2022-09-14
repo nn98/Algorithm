@@ -29,8 +29,8 @@ public class P16234 {
 			t=new StringTokenizer(r.readLine());
 			for(j=0;j<n;a[i][j++]=Integer.parseInt(t.nextToken()));
 		}
-		for(;c<1;) {
-			c=0;
+		for(;l<1;) {
+			l=c=0;
 			b=new int[n][n];
 			v=new int[n*n+1];
 			m=new int[n*n+1];
@@ -40,6 +40,7 @@ public class P16234 {
 						u=0;
 						o(i,j,++c);
 						v[c]=u;
+						l+=m[c]>1?1:0;
 					}
 			for(int[]c:b)System.out.println(Arrays.toString(c));
 			System.out.println(Arrays.toString(v));
