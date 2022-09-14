@@ -10,6 +10,7 @@ public class P6321 {
 		for(;n-->0;) {
 			System.out.println("String #"+ ++i);
 			for(char c:s.next().toCharArray())System.out.print((char)(c>89?'A':c+1));
+			System.out.println();
 		}
 	}
 
