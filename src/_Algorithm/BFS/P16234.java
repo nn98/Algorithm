@@ -36,7 +36,7 @@ public class P16234 {
 				for(j=0;j<n;j++)
 					if(b[i][j]<1) {
 						u=0;
-						o(i,j,c++);
+						o(i,j,++c);
 						v[c]=u;
 					}
 			System.out.println(Arrays.toString(v));
