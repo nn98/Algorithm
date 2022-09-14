@@ -13,7 +13,7 @@ public class P16234 {
 			X=x+p[i];
 			Y=y+q[i++];
 			if(X>=0&X<n&Y>=0&Y<n)if(b[X][Y]<1)
-				if(Math.abs(a[x][y]-a[X][Y])>=L|Math.abs(a[x][y]-a[X][Y])<=R)
+				if(Math.abs(a[x][y]-a[X][Y])>=L&Math.abs(a[x][y]-a[X][Y])<=R)
 					o(X,Y,c);
 		}
 	}
