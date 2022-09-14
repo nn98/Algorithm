@@ -1,8 +1,6 @@
 package _Algorithm.BFS;
-
 import java.io.*;
 import java.util.*;
-
 public class P16234 {
 	static int n,L,R,i,j,c,a[][],p[]= {1,0,-1,0},q[]= {0,1,0,-1},b[][],l=1,u,v[],m[],e;
 	static void o(int x,int y,int c) {
@@ -43,13 +41,8 @@ public class P16234 {
 						v[c]=u;
 						l+=m[c]>1?1:0;
 					}
-//			for(int[]c:b)System.out.println(Arrays.toString(c));
-//			System.out.println(Arrays.toString(v));
-//			System.out.println(Arrays.toString(m));
 			for(i=0;i<n;i++)for(j=0;j<n;j++)if(m[b[i][j]]>1)a[i][j]=v[b[i][j]]/m[b[i][j]];
-//			for(int[]c:a)System.out.println(Arrays.toString(c));
 		}
 		System.out.print(e-1);
 	}
-
 }
