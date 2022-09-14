@@ -32,8 +32,8 @@ public class P16234 {
 		for(;c>0;) {
 			c=0;
 			b=new int[n][n];
-			v=new int[n*n];
-			m=new int[n*n];
+			v=new int[n*n+1];
+			m=new int[n*n+1];
 			for(i=0;i<n;i++)
 				for(j=0;j<n;j++)
 					if(b[i][j]<1) {
