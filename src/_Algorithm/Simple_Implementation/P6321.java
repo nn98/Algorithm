@@ -9,7 +9,7 @@ public class P6321 {
 		int n=s.nextInt(),i=0;
 		for(;n-->0;) {
 			char[]a=s.next().toCharArray();
-			System.out.print((i>0?"\n":"")+"String #"+ ++i);
+			System.out.print((i>0?"\n":"")+"String #"+ ++i+"\n");
 			for(char c:a)System.out.print((char)(c>89?'A':c+1));
 			System.out.println();
 		}
