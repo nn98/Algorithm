@@ -49,6 +49,7 @@ public class P16234 {
 			for(i=0;i<n;i++)for(j=0;j<n;j++)if(m[b[i][j]]>1)a[i][j]=v[b[i][j]]/m[b[i][j]];
 			for(int[]c:a)System.out.println(Arrays.toString(c));
 		}
+		System.out.println(e-1);
 	}
 
 }
