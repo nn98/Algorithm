@@ -4,9 +4,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
-
 public class P9517 {
-	
 	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		int K = Integer.parseInt(br.readLine());
@@ -27,7 +25,6 @@ public class P9517 {
 			
 			if(K == 9) K = 1;
 		}
-		System.out.println(K);
+		System.out.print(K);
 	}
-
 }
