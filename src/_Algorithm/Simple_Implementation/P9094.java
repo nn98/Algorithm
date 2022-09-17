@@ -12,7 +12,7 @@ public class P9094 {
 			a=s.nextInt();
 			b=s.nextInt();
 			for(i=0;++i<a-1;)for(j=i;++j<a;) {
-				System.out.println("\t"+i+" "+j+" "+i*i+j*j+b+" "+a*b);
+				System.out.println("\t"+i+" "+j+" "+(i*i+j*j+b)+" "+a*b+" "+(((i*i+j*j+b)/(a*b))%1==0));
 				if(((i*i+j*j+b)/(a*b))%1==0)r++;
 			}
 			System.out.println(r);
