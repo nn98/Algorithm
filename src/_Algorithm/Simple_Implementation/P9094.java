@@ -11,7 +11,7 @@ public class P9094 {
 			r=0;
 			a=s.nextInt();
 			b=s.nextInt();
-			for(i=0;++i<a-1;)for(j=i;++j<n;)if((i*i+j*j+b)/(a*b)%1==0)r++;
+			for(i=0;++i<a-1;)for(j=i;++j<n;)if(((i*i+j*j+b)/(a*b))%1==0)r++;
 			System.out.println(r);
 		}
 	}
