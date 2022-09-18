@@ -6,6 +6,7 @@ public class P13549 {
 	static String[]a=new java.util.Scanner(System.in).nextLine().split(" ");
 	static int n=Integer.parseInt(a[0]),m=Integer.parseInt(a[1]),l=100001,b[]=new int[l];
 	static void o(int x,int v) {
+		if(x>m)return;
 		b[x]=v;
 		System.out.println(Arrays.toString(b));
 		int X=x*2;
