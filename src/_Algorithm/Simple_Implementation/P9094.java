@@ -1,9 +1,6 @@
 package _Algorithm.Simple_Implementation;
-
 import java.util.Scanner;
-
 public class P9094 {
-
 	public static void main(String[] args) {
 		Scanner s=new Scanner(System.in);
 		double n=s.nextInt(),i,a,b,j,r;
@@ -19,5 +16,4 @@ public class P9094 {
 			System.out.println(r);
 		}
 	}
-
 }
