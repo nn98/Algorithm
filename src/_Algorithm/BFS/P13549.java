@@ -7,7 +7,7 @@ public class P13549 {
 	static int n=Integer.parseInt(a[0]),m=Integer.parseInt(a[1]),l=100001,b[]=new int[l];
 	static void o(int x,int v) {
 		b[x]=v;
-		System.out.println(Arrays.toString(b));
+//		System.out.println(Arrays.toString(b));
 		int X=x*2;
 		if(X<l&X<=m)if(b[x*2]>v|b[X]<0)o(x*2,v);
 		X=x+1;
