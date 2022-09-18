@@ -16,6 +16,7 @@ public class P13549 {
 		if(X>0)if(b[x-1]>v)o(x-1,v);
 	}
 	public static void main(String[] args) {
+		Arrays.fill(b,Integer.MAX_VALUE);
 		o(n,0);
 		System.out.println(Arrays.toString(b));
 		System.out.println(b[m]);
