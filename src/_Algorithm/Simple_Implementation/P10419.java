@@ -10,7 +10,7 @@ public class P10419 {
 		for(;n-->0;) {
 			i=s.nextInt();
 			for(j=0;;) {
-				if(++j*j>i) {
+				if(++j*j+j>i) {
 					System.out.println(j-1);
 					break;
 				}
