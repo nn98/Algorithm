@@ -9,7 +9,12 @@ public class P10419 {
 		int n=s.nextInt(),i,j;
 		for(;n-->0;) {
 			i=s.nextInt();
-			System.out.println((int)(Math.sqrt(i))>1?(int)(Math.sqrt(i)):0);
+			for(j=0;;) {
+				if(++j*j>i) {
+					System.out.println(j-1);
+					break;
+				}
+			}
 		}
 	}
 
