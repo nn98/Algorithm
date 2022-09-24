@@ -20,11 +20,19 @@ public class P01 {
         	B[0]=Integer.parseInt(C[0]);
         	B[1]=Integer.parseInt(C[1])+S[D[1].charAt(0)-'A'];
         	B[2]=Integer.parseInt(C[2])-1;
+        	if(B[2]==0) {
+        		B[1]-=1;
+        		B[2]=28;
+        	}
+        	if(B[1]==0) {
+        		B[0]-=1;
+        		B[1]=12;
+        	}
         	if(B[1]>12) {
         		B[1]-=12;
         		B[0]++;
         	}
-        	System.out.println(i+"B "+Arrays.toString(B));
+//        	System.out.println(i+"B "+Arrays.toString(B));
         	if(B[0]<A[0])
     			l.add(i+1);
         	else if(B[0]==A[0]){
@@ -39,7 +47,7 @@ public class P01 {
         		}
         	}
         }
-        System.out.println(l.toString());
+//        System.out.println(l.toString());
         r=l.stream()
                 .mapToInt(Integer::intValue)
                 .toArray();
