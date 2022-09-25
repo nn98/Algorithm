@@ -11,6 +11,7 @@ public class P6131 {
 			else if(J-I<n)j++;
 			else i++;
 		}
+		System.out.println(r);
 	}
 
 }
