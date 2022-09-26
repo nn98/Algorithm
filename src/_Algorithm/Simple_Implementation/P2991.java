@@ -11,10 +11,10 @@ public class P2991 {
 				m=s.nextInt(),n=s.nextInt(),i=0,j=0,l=1000,x[]=new int[l],k;
 		for(;i<l|j<l;) {
 			for(k=0;k<a&k+i<l;x[k+++i]++);
-			i+=k-1+b;
+			i+=k+b;
 			System.out.println(i);
 			for(k=0;k<c&k+j<l;x[k+++j]++);
-			j+=k-1+d;
+			j+=k+d;
 			System.out.println(j);
 		}
 		System.out.println(Arrays.toString(x));
