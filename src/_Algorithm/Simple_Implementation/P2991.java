@@ -12,12 +12,12 @@ public class P2991 {
 		for(;i<l|j<l;) {
 			for(k=0;k<a&k+i<l;x[k+++i]++);
 			i+=k+b;
-			System.out.println(i);
+//			System.out.println(i);
 			for(k=0;k<c&k+j<l;x[k+++j]++);
 			j+=k+d;
-			System.out.println(j);
+//			System.out.println(j);
 		}
-		System.out.println(Arrays.toString(x));
+//		System.out.println(Arrays.toString(x));
 		System.out.println(x[p-1]);
 		System.out.println(x[m-1]);
 		System.out.println(x[n-1]);
