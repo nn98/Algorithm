@@ -1,5 +1,6 @@
 package _Algorithm.Simple_Implementation;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class P2991 {
@@ -14,6 +15,7 @@ public class P2991 {
 			for(k=j;k<c&k<l;x[k++]++);
 			j+=k-1+d;
 		}
+		System.out.println(Arrays.toString(x));
 		System.out.println(x[p]);
 		System.out.println(x[m]);
 		System.out.println(x[n]);
