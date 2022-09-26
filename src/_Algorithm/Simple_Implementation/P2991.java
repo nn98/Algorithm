@@ -10,9 +10,9 @@ public class P2991 {
 		int a=s.nextInt(),b=s.nextInt(),c=s.nextInt(),d=s.nextInt(),p=s.nextInt(),
 				m=s.nextInt(),n=s.nextInt(),i=0,j=0,l=1000,x[]=new int[l],k;
 		for(;i<l|j<l;) {
-			for(k=i;k<a&k<l;x[k++]++);
+			for(k=0;k<a&k+i<l;x[k+++i]++);
 			i+=k-1+b;
-			for(k=j;k<c&k<l;x[k++]++);
+			for(k=0;k<c&k+j<l;x[k+++j]++);
 			j+=k-1+d;
 		}
 		System.out.println(Arrays.toString(x));
