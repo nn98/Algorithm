@@ -14,6 +14,9 @@ public class P2991 {
 			for(k=j;k<c&k<l;x[k++]++);
 			j+=k-1+d;
 		}
+		System.out.println(x[p]);
+		System.out.println(x[m]);
+		System.out.println(x[n]);
 	}
 
 }
