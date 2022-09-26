@@ -12,8 +12,10 @@ public class P2991 {
 		for(;i<l|j<l;) {
 			for(k=0;k<a&k+i<l;x[k+++i]++);
 			i+=k-1+b;
+			System.out.println(i);
 			for(k=0;k<c&k+j<l;x[k+++j]++);
 			j+=k-1+d;
+			System.out.println(j);
 		}
 		System.out.println(Arrays.toString(x));
 		System.out.println(x[p]);
