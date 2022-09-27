@@ -7,6 +7,7 @@ public class P17618 {
 		for(;i++<n;) {
 			j=0;
 			for(k=1;i/k>0;j+=i/k,k*=10);
+			System.out.println(j);
 			if(i%j<1)r++;
 		}
 		System.out.println(r);
