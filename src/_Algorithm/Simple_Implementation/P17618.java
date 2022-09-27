@@ -10,7 +10,7 @@ public class P17618 {
 //			System.out.println(j);
 			if(i%j<1)r++;
 		}
-		System.out.println(r);
+		System.out.print(r);
 	}
 
 }
