@@ -13,7 +13,7 @@ public class P1697 {
 		v++;
 		if(v<N) {
 			int X=x/2;
-			if(x>n)if(X<l&X<=l)if(b[x*2]>v|b[X]<0)o(x*2,v);
+			if(x>n)if(X<l&X<=l)if(b[x*2]>v|b[X]<0)o(X,v);
 			X=x+1;
 			if(x<n)if(X<l&X<=l)if(b[X]>v|b[X]<0)o(X,v);
 			X=x-1;
