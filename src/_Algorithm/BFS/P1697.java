@@ -6,7 +6,7 @@ public class P1697 {
 	static String[]a=new java.util.Scanner(System.in).nextLine().split(" ");
 	static int n=Integer.parseInt(a[0]),m=Integer.parseInt(a[1]),l=m*3,b[]=new int[l];
 	static void o(int x,int v) {
-		System.out.println(x);
+//		System.out.println(x);
 		b[x]=v;
 //		System.out.println(Arrays.toString(b));
 		int X=x*2;
