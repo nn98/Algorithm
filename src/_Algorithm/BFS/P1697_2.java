@@ -20,9 +20,18 @@ public class P1697_2 {
 				return;
 			}
 			else {
-				if(j>0&h[j-1]<1)q.add(j-1);
-				if(j+1<l&h[j+1]<1)q.add(j+1);
-				if(j*2+1<l&h[j*2]<1)q.add(j*2);
+				if(j>0&h[j-1]<1) {
+					q.add(j-1);
+					h[j-1]++;
+				}
+				if(j+1<l&h[j+1]<1) {
+					q.add(j+1);
+					h[j+1]++;
+				}
+				if(j*2+1<l&h[j*2]<1) {
+					q.add(j*2);
+					h[j*2]++;
+				}
 			}
 		}
 	}
