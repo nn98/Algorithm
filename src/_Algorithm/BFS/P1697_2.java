@@ -18,7 +18,7 @@ public class P1697_2 {
 				j=q.remove();
 				h[j]++;
 				if(j==m) {
-					System.out.println(i);
+					System.out.print(i-1);
 					return;
 				}
 				else {
