@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class P1697 {
 	static String[]a=new java.util.Scanner(System.in).nextLine().split(" ");
-	static int n=Integer.parseInt(a[0]),m=Integer.parseInt(a[1]),l=100001,b[]=new int[l],N;
+	static int n=Integer.parseInt(a[0]),m=Integer.parseInt(a[1]),l=100001,b[]=new int[l],N=Integer.MAX_VALUE;
 	static void o(int x,int v) {
 		System.out.println(x);
 		if(x==n)N=v;
