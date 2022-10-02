@@ -11,7 +11,7 @@ public class P1697 {
 		b[x]=v;
 		//		System.out.println(Arrays.toString(b));
 		v++;
-		if(v<N) {
+		if(v<=N) {
 			int X=x*2;
 			if(x<m)if(X<l&X<=l)if(b[x*2]>v|b[X]<0)o(X,v);
 			X=x+1;
