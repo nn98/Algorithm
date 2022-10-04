@@ -14,7 +14,7 @@ class P9501{
                 c=s.nextInt();
                 r+=a*b/c>=l?1:0;
             }
-            System.out.println(r);
+            System.out.println((int)r);
         }
     }
 }
