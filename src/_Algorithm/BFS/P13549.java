@@ -19,7 +19,7 @@ public class P13549 {
 	public static void main(String[] args) {
 		Arrays.fill(b,-1);
 		o(n,0);
-//		System.out.println(Arrays.toString(b));
+		System.out.println(Arrays.toString(b));
 		System.out.println(b[m]);
 	}
 
