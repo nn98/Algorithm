@@ -2,7 +2,9 @@
 public class TestMath {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		double a=100,b=0,c;
+		for(;b<30;c=a+b*b++,System.out.println(Math.sqrt(c)+" "+b));
+		
 
 	}
 
