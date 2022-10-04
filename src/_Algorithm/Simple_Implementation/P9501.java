@@ -12,7 +12,7 @@ class P9501{
                 a=s.nextInt();
                 b=s.nextInt();
                 c=s.nextInt();
-                r+=a*b/c>l?1:0;
+                r+=a*b/c>=l?1:0;
             }
             System.out.println(r);
         }
