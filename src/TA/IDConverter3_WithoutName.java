@@ -16,9 +16,9 @@ public class IDConverter3_WithoutName {
 		while(!(s=r.readLine()).equals("0")) {
 			t=new StringTokenizer(s);
 			System.out.println(s);
-			f.append(String.format("insert into Student (ID, bojid) values (%d, \"%s\");",
+			f.append(String.format("insert into student (ID, bojid) values (%d, \"%s\");",
 					sID=Integer.parseInt(t.nextToken()),t.nextToken()));
-			f.append(String.format("insert into Learn (Student_ID,Lecture_ID) values (%d,%d);", sID,lID));
+			f.append(String.format("insert into learn (Student_ID,Lecture_ID) values (%d,%d);", sID,lID));
 			if(++i%5==0)f.append("\n");
 		}
 		System.out.println(f);
