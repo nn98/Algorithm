@@ -6,5 +6,7 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="src/TA/[2022-2학기-자료구조-01][hw3_1]평균초과값출력/jar/01.김상윤-201914065_hw3-1-0.jar"/>
+	<classpathentry kind="lib" path="src/TA/[2022-2학기-자료구조-01][hw3_1]평균초과값출력/jar/03.김서연-202014066_hw3_3-0.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
