@@ -7,6 +7,7 @@ import java.io.*;
 public class TimeStamp {
 
 	public static void main(String[] args)throws Exception{
+		System.out.println(System.currentTimeMillis());
 		BufferedReader r=new BufferedReader(new InputStreamReader(System.in));
 		Timestamp ts=new Timestamp(System.currentTimeMillis());
 		for(;;) {
