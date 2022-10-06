@@ -13,6 +13,7 @@ public class TimeStamp {
 			Date d=new Date(ts.getTime());
 			System.out.println(d);
 			long l=Long.parseLong(r.readLine());
+			if(l<1)break;
 			ts=new Timestamp(l);
 		}
 	}
