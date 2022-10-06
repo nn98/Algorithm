@@ -13,7 +13,7 @@ public class TimeStamp {
 		for(;;) {
 			Date d=new Date(ts.getTime());
 			System.out.println(d);
-			long l=Long.parseLong(r.readLine());
+			long l=Long.parseLong(r.readLine())*1000;
 			if(l<1)break;
 			ts=new Timestamp(l);
 		}
