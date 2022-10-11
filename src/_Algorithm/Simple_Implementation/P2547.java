@@ -8,7 +8,6 @@ class P2547{
 		s.nextLine();
 		for(;s.hasNext();) {
 			String a=s.nextLine();
-			System.out.println(a);
 			if(a.equals("")){
 				System.out.println(i%j<1?"YES":"NO");
 				j=i=0;
