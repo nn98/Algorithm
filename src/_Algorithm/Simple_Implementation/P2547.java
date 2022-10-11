@@ -4,7 +4,7 @@ class P2547{
 	public static void main(String[] args){
 		Scanner s=new Scanner(System.in);
 		int n=s.nextInt(),i=0,j=0;
-		s.next();
+		s.nextLine();
 		for(;s.hasNext();) {
 			String a=s.next();
 			System.out.println();
