@@ -3,19 +3,10 @@ import java.util.*;
 class P2547{
 	public static void main(String[] args){
 		Scanner s=new Scanner(System.in);
-		int n=s.nextInt(),i=0,j=0;
-		s.nextLine();
-		s.nextLine();
-		for(;s.hasNext();) {
-			String a=s.nextLine();
-			if(a.equals("")){
-				System.out.println(i%j<1?"YES":"NO");
-				j=i=0;
-				n--;
-				continue;
-			}
-			i+=Integer.parseInt(a);
-			j++;
+		int n=s.nextInt(),i,j,u;
+		for(;n-->0;) {
+			for(i=s.nextInt(),j=0,u=0;i-->0;u+=s.nextInt(),j++);
+			System.out.println(u%j<1?"YES":"NO");
 		}
 	}
 }
