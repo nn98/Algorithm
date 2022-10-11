@@ -8,6 +8,7 @@ public class P2547 {
 		Scanner s=new Scanner(System.in);
 		int n=s.nextInt(),i=0,j=0;
 		s.nextLine();
+		s.nextLine();
 		for(;n>0;) {
 			String a=s.nextLine();
 			if(a.equals("")) {
