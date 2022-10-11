@@ -1,5 +1,5 @@
 package _Algorithm.Simple_Implementation;
-import java.math.BigInteger;
+import java.math.*;
 import java.util.*;
 class P2547{
 	public static void main(String[] args){
