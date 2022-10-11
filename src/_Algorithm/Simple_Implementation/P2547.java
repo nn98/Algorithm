@@ -5,8 +5,9 @@ class P2547{
 		Scanner s=new Scanner(System.in);
 		int n=s.nextInt(),i=0,j=0;
 		s.next();
-		for(;n>0;) {
+		for(;s.hasNext();) {
 			String a=s.next();
+			System.out.println();
 			if(a.equals("")){
 				System.out.println(i%j<1?"YES":"NO");
 				j=i=0;
