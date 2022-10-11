@@ -8,7 +8,7 @@ class P2547{
 		BigInteger u;
 		for(;n-->0;) {
 			for(i=s.nextInt(),j=0,u=BigInteger.ZERO;i-->0;u=u.add(s.nextBigInteger()),j++);
-			System.out.println(u.remainder(new BigInteger(""+j)).equals("0")?"YES":"NO");
+			System.out.println(u.remainder(new BigInteger(""+j)).equals(BigInteger.ZERO)?"YES":"NO");
 		}
 	}
 }
