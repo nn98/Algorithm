@@ -1,9 +1,6 @@
 package _Algorithm.Simple_Implementation;
-
 import java.util.Scanner;
-
 public class P10599 {
-
 	public static void main(String[] args) {
 		Scanner s=new Scanner(System.in);
 		for(;;) {
@@ -12,5 +9,4 @@ public class P10599 {
 			System.out.println(c-b+" "+(d-a));
 		}
 	}
-
 }
