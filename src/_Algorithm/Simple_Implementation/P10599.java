@@ -9,7 +9,7 @@ public class P10599 {
 		for(;;) {
 			int a=s.nextInt(),b=s.nextInt(),c=s.nextInt(),d=s.nextInt();
 			if(a==0&b==0&c==0&d==0)break;
-			System.out.println(c<d?c:d-a<b?b:a+" "+(c<d?d:c-a<b?a:b));
+			System.out.println(c-b+" "+(d-a));
 		}
 	}
 
