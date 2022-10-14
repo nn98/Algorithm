@@ -4,7 +4,7 @@ public class JCG {
 
 	public static void main(String[] args) {
 		int a = 3, b = 4, c = 3, d = 5;
-		System.out.println(1==b ^ c);
+		System.out.println(1==b ^ c!=d);
 		System.out.println(1 == b ^ c != d);
 		if((a == 2 | a == c) & !(c > d) & (1 == b ^ c != d)) {
 			a = b + c;
