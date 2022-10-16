@@ -1,12 +1,12 @@
 package _Algorithm.Simple_Implementation;
 public class P13698 {
-	static void o(int x,int y) {
+	static void o(int x,int y){
 		t=a[x];
 		a[x]=a[y];
 		a[y]=t;
 	}
 	static int t,a[]= {1,0,0,2};
-	public static void main(String[] args) {
+	public static void main(String[] args){
 		for(char c:new java.util.Scanner(System.in).next().toCharArray())
 			switch(c) {
 			case 'A':
