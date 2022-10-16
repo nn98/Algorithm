@@ -1,5 +1,4 @@
 package _Algorithm.Simple_Implementation;
-
 public class P13698 {
 	static void o(int x,int y) {
 		t=a[x];
