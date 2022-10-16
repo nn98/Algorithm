@@ -10,7 +10,7 @@ public class JCG_L {
 		String a,b="";
 		for(;;) {
 			a=s.nextLine().trim();
-			if(a.equals("")&b.equals(a))continue;
+			if(a.equals(""))continue;
 			if(a.equals("00"))break;
 			f.append(a+"\n");
 			b=a;
