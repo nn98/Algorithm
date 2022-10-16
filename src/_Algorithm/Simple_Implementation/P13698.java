@@ -32,5 +32,4 @@ public class P13698 {
 		for(t=0;t<4;System.out.print(a[t++]==1?t+"\n":""));
 		for(t=0;t<4;System.out.print(a[t++]==2?t:""));
 	}
-
 }
