@@ -12,5 +12,4 @@ for i in range(int(input())):
     else:
         a=float(a)*3.7854
         b='l'
-    print(round(a,4),b)
-
+    print(f'{a:.4f}',b)
