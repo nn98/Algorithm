@@ -1,5 +1,5 @@
 for i in range(int(input())):
-    r='Case #'+str(i)+': '
+    r='Case #'+str(i+1)+': '
     a=list(map(int,input().split()))
     a.sort()
     if a[2]>=a[0]+a[1]:
