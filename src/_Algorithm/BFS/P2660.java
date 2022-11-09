@@ -37,6 +37,7 @@ public class P2660 {
                 h[i]=h[i]>j?h[i]:j;
             }
         }
+        for(int[]a:c)System.out.println(Arrays.toString(a));
         for(j=0;++j<n;)m=m<h[j]?m:h[j];
         i=0;
         for(int j:h)i+=j==m?1:0;
