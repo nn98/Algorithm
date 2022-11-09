@@ -12,7 +12,6 @@ public class P2660 {
     static int n,i,j,m=Integer.MAX_VALUE,c[][],h[];
     static List<Integer>[]l;
     static void o(int i,int f,int v) {
-        System.out.println(i+" "+f+" "+v);
         c[f][i]=v++;
         for(int j:l[i])if(c[f][j]>v|c[f][j]<1)o(j,f,v);
     }
