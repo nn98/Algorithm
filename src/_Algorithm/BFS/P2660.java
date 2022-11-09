@@ -38,13 +38,14 @@ public class P2660 {
         for(i=0;++i<n;)for(int j:c[i]) {
             if(j>0) {
                 h[i]=h[i]>j?h[i]:j;
-                m=h[i]<m?h[i]:m;
             }
         }
-        System.out.println(Arrays.toString(h)+" "+m);
+        for(j=0;++j<n;)m=m<h[j]?m:h[j];
         i=0;
         for(int j:h)i+=j==m?1:0;
+        System.out.println(m+" "+i);
         for(j=0;++j<n;System.out.print(h[j]==m?j+" ":""));
     }
 
 }
+// 한놈이라도 친구관계 없으면 에러네
