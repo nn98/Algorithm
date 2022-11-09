@@ -36,8 +36,10 @@ public class P2660 {
         for(i=0;++i<n;)for(int j:l[i])o(j,i,1);
         for(int[]b:c)System.out.println(Arrays.toString(b));
         for(i=0;++i<n;)for(int j:c[i]) {
-            h[i]=h[i]>j?h[i]:j;
-            m=h[i]<m?h[i]:m;
+            if(j>0) {
+                h[i]=h[i]>j?h[i]:j;
+                m=h[i]<m?h[i]:m;
+            }
         }
         System.out.println(Arrays.toString(h)+" "+m);
         i=0;
