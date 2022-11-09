@@ -13,7 +13,7 @@ public class P2660 {
     static List<Integer>[]l;
     static void o(int i,int f,int v) {
         c[f][i]=v++;
-        for(int j:l[i])if(c[f][j]>v|c[f][j]<1)o(j,f,v);
+        for(int j:l[i])if(c[f][j]>v|c[f][j]<1&j!=f)o(j,f,v);
     }
     public static void main(String[] args)throws Exception{
         BufferedReader r=new BufferedReader(new InputStreamReader(System.in));
