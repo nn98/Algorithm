@@ -2,6 +2,11 @@ package _Algorithm.BFS;
 
 import java.util.Arrays;
 
+/* 66-100 -> 34|32 / 67-100 -> 33|34
+ * b-a > a*2-b 일때만 * 2하고 
+ * 크기는 2배? 어케해야 더 줄일수있으려나
+ */
+
 public class P13549 {
 	static String[]a=new java.util.Scanner(System.in).nextLine().split(" ");
 	static int n=Integer.parseInt(a[0]),m=Integer.parseInt(a[1]),l=100001,b[]=new int[l];
