@@ -1,7 +1,7 @@
 package TA;
 
 
-class MyBinarySearchTree {
+public class MyBinarySearchTreee {
 	//루트노드를 가르키는 변수 root
 	private Node root = null;
 	//노드의 구조 정의하는 클래스
