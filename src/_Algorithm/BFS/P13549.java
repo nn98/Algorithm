@@ -14,7 +14,7 @@ public class P13549 {
 		v++;
 		if(X<l&X<=m)if(b[X]>v|b[X]<0)o(X,v);
 		X=x-1;
-		if(X>0&X<=m)if(b[X]>v|b[X]<0)o(X,v);
+		if(X>=0&X<=m)if(b[X]>v|b[X]<0)o(X,v);
 	}
 	public static void main(String[] args) {
 		Arrays.fill(b,-1);
