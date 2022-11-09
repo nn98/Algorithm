@@ -15,7 +15,7 @@ public class P17087 {
     public static void main(String[] args) {
         Scanner s=new Scanner(System.in);
         int n=s.nextInt(),m=s.nextInt(),a[]=new int[n],i=0,r=0;
-        for(;i<n;a[i++]=s.nextInt(),r=r<1?a[i-1]:o(r,a[i-1]));
+        for(;i<n;a[i++]=Math.abs(s.nextInt()-m),r=r<1?a[i-1]:o(r,a[i-1]));
         System.out.println(r);
     }
 
