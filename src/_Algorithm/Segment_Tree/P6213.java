@@ -15,10 +15,9 @@ public class P6213 {
         String[]t=r.readLine().split(" ");
         n=Integer.parseInt(t[0]);
         for(l=1;l<=n;l*=2);
-        a=new int[l];
-        b=new int[l];
-        c=new int[l];
-        l/=2;
+        a=new int[l*2];
+        b=new int[l*2];
+        c=new int[l*2];
         for(;i<n;u=j=i+++l,b[j]=a[j]=Integer.parseInt(r.readLine()),p(),q());
         System.out.println(Arrays.toString(a));
         System.out.println(Arrays.toString(b));
