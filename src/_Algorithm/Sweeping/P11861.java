@@ -1,4 +1,4 @@
-package _Algorithm.Segment_Tree;
+package _Algorithm.Sweeping;
 import java.io.*;
 import java.util.*;
 
