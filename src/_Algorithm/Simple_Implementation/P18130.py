@@ -5,8 +5,8 @@ class Fan:
         self.additionalCost=additionalCost
     def calc(self,time):
         price=self.price
-        time=int((time-1)/self.additionalTime)
-        price+=(time*(time+1)/2)*self.additionalCost
+        time=int((time-1)//self.additionalTime)
+        price+=(time*(time+1)//2)*self.additionalCost
         return int(price)
 n,m=map(int,input().split())
 list=[]
