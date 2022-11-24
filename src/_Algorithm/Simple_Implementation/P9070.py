@@ -13,10 +13,11 @@ for _ in range(n):
         a,b=input().split()
         crab=Crab(int(a),int(b))
         list.append(crab)
-    v=list[0].calc()
     j=0
     for i in range(m):
-        if list[i].calc()<v:
+        if list[i].calc()<list[j].calc():
             j=i
-            v=list[i].calc()
+        elif list[i].calc()==list[j].calc():
+            if list[i].price<list[j].price:
+                j=i
     print(list[j].price)
