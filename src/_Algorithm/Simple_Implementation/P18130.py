@@ -15,4 +15,4 @@ j=0
 for i in range(n):
     if list[i].calc(m)<list[j].calc(m):
         j=i
-print(j,list[j].calc(m))
+print(j+1,list[j].calc(m))
