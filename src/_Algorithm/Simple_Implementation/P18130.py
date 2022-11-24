@@ -13,6 +13,6 @@ for _ in range(n):
     list.append(Fan(a,b,c))
 j=0
 for i in range(n):
-    if list[i].calc()<list[j].calc():
+    if list[i].calc(m)<list[j].calc(m):
         j=i
 print(j,list[j].calc(m))
