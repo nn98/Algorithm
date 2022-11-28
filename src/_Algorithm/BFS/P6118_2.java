@@ -40,6 +40,7 @@ public class P6118_2{
                 if(i==r) {
                     x++;
                 }
+                q.add(k);
             }
         }
         for(i=0;i<n;i++)if(h[i]==r)j=i;
