@@ -9,6 +9,7 @@ public class P6118 {
 
     static void o(int x, int v) {
         h[x] = v++;
+        r = r > h[x] ? r : h[x];
         for (int i = 0; i < n; i++) {
             if (a[x][i] > 0)
                 if (h[i] > v)
@@ -24,7 +25,14 @@ public class P6118 {
             a[i][j] = a[j][i] = 1;
         }
         o(0, 0);
+        i=j=0;
         System.out.println(Arrays.toString(h));
+        for (x = n; x-- > 0; x++) {
+            if (h[x] == r) {
+                i=x;
+                j++;
+        }
+        System.out.print(i+" "+r+" "+j);
     }
 
 }
