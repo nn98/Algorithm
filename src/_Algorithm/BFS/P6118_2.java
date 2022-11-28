@@ -3,7 +3,6 @@ package _Algorithm.BFS;
 // 부모 단계에서 추가한 값의 수 저장, 자식 단계에서 추가한 값의 수 저장, 부모 단계 0이면 자식 -> 부모 
 import java.io.*;
 import java.util.*;
-
 public class P6118_2{  
     static int n, m, i, j, x, h[], r,P,C;
     static List<Integer>l[];
@@ -54,7 +53,7 @@ public class P6118_2{
             j=i;
             break;
         }
-        System.out.println(j+1+" "+r+" "+x);
+        System.out.print(j+1+" "+r+" "+x);
     }
 
 }
