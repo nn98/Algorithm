@@ -3,7 +3,7 @@ package _Algorithm.BFS;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class P6118 {
+public class P6118_2 {
     static Scanner s = new Scanner(System.in);
     static int n = s.nextInt(), m = s.nextInt(), i, j, x, a[][] = new int[n][n], h[] = new int[n], r;
 
