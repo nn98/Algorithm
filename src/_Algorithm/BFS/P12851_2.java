@@ -1,7 +1,6 @@
 package _Algorithm.BFS;
 // 시 발 
 import java.util.*;
-
 public class P12851_2 {
     public static void main(String[] args) {
         Scanner s=new Scanner(System.in);
