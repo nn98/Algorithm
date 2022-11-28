@@ -8,11 +8,9 @@ public class P6118_2{
     static List<Integer>l[];
     static void o(int x, int v) {
         h[x] = v++;
-        for (int i = 0; i < n; i++) {
-            if (a[x][i] > 0)
-                if (h[i] > v)
-                    o(i, v);
-        }
+        for(int i:l[x])
+            if (h[i] > v)
+                o(i, v);
     }
 
     public static void main(String[] args) throws Exception {
