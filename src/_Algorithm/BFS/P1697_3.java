@@ -17,14 +17,14 @@ public class P1697_3 {
             i=a[j];
             if(j==m) {
                 if(r>i) {
-                    r=0;
+                    r=i;
                     R=0;
                 }
                 if(r==i) {
                     R++;
                 }
             }
-            if(i<r) {
+            if(i<=r) {
                 X=j*2;
                 i++;
                 if(X<l)if(a[X]<i|a[X]<0) {
@@ -32,12 +32,12 @@ public class P1697_3 {
                     a[X]=i;
                 }
                 X=j+1;
-                if(X<=m)if(a[X]<i|a[X]<0) {
+                if(a[X]<i|a[X]<0) {
                     q.add(X);
                     a[X]=i;
                 }
                 X=j-1;
-                if(X>0&X>m)if(a[X]<i|a[X]<0) {
+                if(X>0)if(a[X]<i|a[X]<0) {
                     q.add(X);
                     a[X]=i;
                 }
