@@ -1,5 +1,5 @@
 package _Algorithm.BFS;
-
+// 시 발 
 import java.util.*;
 
 public class P12851_2 {
@@ -11,7 +11,7 @@ public class P12851_2 {
         Queue<Integer>q=new LinkedList();
         q.add(n);
         if(n==m){
-            System.out.println(0);
+            System.out.println(0+"\n"+1);
             return;
         }
         while(!q.isEmpty()) {
