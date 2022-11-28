@@ -12,6 +12,7 @@ public class P1697_3 {
         Queue<Integer>q=new LinkedList();
         q.add(n);
         while(!q.isEmpty()) {
+            System.out.println(q);
             j=q.poll();
             i=a[j];
             if(j==m) {
@@ -42,7 +43,7 @@ public class P1697_3 {
                 }
             }
         }
-        
+        System.out.print(r+"\n"+R);
     }
 
 }
