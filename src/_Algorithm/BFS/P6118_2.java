@@ -49,10 +49,10 @@ public class P6118_2{
                 C=0;
                 i++;
             }
-            System.out.println(Arrays.toString(h)+" "+P+" "+C+" "+i);
+            System.out.println(Arrays.toString(h)+" "+P+" "+C+" "+i+" "+r);
         }
         for(i=0;i<n;i++)if(h[i]==r)j=i;
-        System.out.println(j-1+" "+r+" "+x);
+        System.out.println(j+1+" "+r+" "+x);
     }
 
 }
