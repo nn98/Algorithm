@@ -4,7 +4,7 @@ import java.io.*;
 import java.util.*;
 
 public class P6118_2{  
-    static int n, m, i, j, x, h[], r;
+    static int n, m, i, j, x, h[], r,P,C;
     static List<Integer>l[];
     static Queue<Integer> q=new LinkedList();
 
@@ -30,14 +30,20 @@ public class P6118_2{
         q.add(0);
         while(!q.isEmpty()) {
             System.out.println(q);
+            P--;
             j=q.poll();
             for(int k:l[j]) {
                 if(h[k]<1) {
                     h[k]=i;
                     q.add(k);
+                    C++;
                 }
             }
-            i+=1;
+            if(P<1) {
+                P=C;
+                C=0;
+                i++;
+            }
             System.out.println(Arrays.toString(h));
         }
         for(i=0;i<n;i++)if(h[i]==r)j=i;
