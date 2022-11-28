@@ -1,5 +1,6 @@
 package _Algorithm.BFS;
-
+// + depth 저장방식
+// 부모 단계에서 추가한 값의 수 저장, 자식 단계에서 추가한 값의 수 저장, 부모 단계 0이면 자식 -> 부모 
 import java.io.*;
 import java.util.*;
 
@@ -49,7 +50,7 @@ public class P6118_2{
                 i++;
             }
         }
-        for(i=0;i<n;i++)if(h[i]==r) {
+        for(i=0;++i<n;)if(h[i]==r) {
             j=i;
             break;
         }
