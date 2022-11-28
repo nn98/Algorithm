@@ -19,17 +19,11 @@ public class P1697 {
         v++;
         if(v<=N) {
             int X=x*2;
-            if(x<m)if(X<l&X<=l)
-                if(b[x*2]==v)c++;
-                else if(b[x*2]>v|b[X]<0)o(X,v);
+            if(x<m)if(X<l&X<=l)if(b[x*2]>v|b[X]<0)o(X,v);
             X=x+1;
-            if(x<m)if(X<l&X<=l)
-                if(b[x*2]==v)c++;
-                else if(b[X]>v|b[X]<0)o(X,v);
+            if(x<m)if(X<l&X<=l)if(b[X]>v|b[X]<0)o(X,v);
             X=x-1;
-            if(X>0&X<=l)
-                if(b[x*2]==v)c++;
-                else if(b[X]>v|b[X]<0)o(X,v);
+            if(X>0&X<=l)if(b[X]>v|b[X]<0)o(X,v);
         }
     }
     public static void main(String[] args) {
