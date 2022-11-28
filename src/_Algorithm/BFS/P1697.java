@@ -22,21 +22,21 @@ public class P1697 {
         if(v<=N) {
             int X=x*2;
             if(x<m)if(X<l&X<=l)
-                if(b[X]==v) {
+                if(b[X]==v|X==m) {
                     c++;
                     System.out.println(x+" "+v);
                 }
                 else if(b[X]>v|b[X]<0)o(X,v);
             X=x+1;
             if(x<m)if(X<l&X<=l)
-                if(b[X]==v) {
+                if(b[X]==v|X==m) {
                     c++;
                     System.out.println(x+" "+v);
                 }
                 else if(b[X]>v|b[X]<0)o(X,v);
             X=x-1;
             if(X>0&X<=l)
-                if(b[X]==v) {
+                if(b[X]==v|X==m) {
                     c++;
                     System.out.println(x+" "+v);
                 }
