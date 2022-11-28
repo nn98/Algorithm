@@ -11,11 +11,10 @@ public class P12851_2 {
         Queue<Integer>q=new LinkedList();
         q.add(n);
         if(n==m){
-            System.out.println(0+"\n"+1);
+            System.out.print(0+"\n"+1);
             return;
         }
         while(!q.isEmpty()) {
-//            System.out.println(q);
             j=q.poll();
             i=a[j];
             if(j==m) {
@@ -48,5 +47,4 @@ public class P12851_2 {
         }
         System.out.print(r+"\n"+R);
     }
-
 }
