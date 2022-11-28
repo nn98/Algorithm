@@ -51,7 +51,10 @@ public class P6118_2{
             }
             System.out.println(Arrays.toString(h)+" "+P+" "+C+" "+i+" "+r);
         }
-        for(i=0;i<n;i++)if(h[i]==r)j=i;
+        for(i=0;i<n;i++)if(h[i]==r) {
+            j=i;
+            break;
+        }
         System.out.println(j+1+" "+r+" "+x);
     }
 
