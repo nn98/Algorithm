@@ -22,7 +22,7 @@ public class P6118_2{
         h = new int[n];
         Arrays.fill(h, Integer.MAX_VALUE);
         for (; x < m; x++) {
-            String[]c=b.readLine().split(" ");
+            c=b.readLine().split(" ");
             i = Integer.parseInt(c[0])-1;
             j = Integer.parseInt(c[1])-1;
             if(l[i]==null)l[i]=new ArrayList();
