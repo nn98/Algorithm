@@ -4,12 +4,21 @@ import java.util.Arrays;
 
 public class P1697 {
     static String[]a=new java.util.Scanner(System.in).nextLine().split(" ");
-    static int n=Integer.parseInt(a[0]),m=Integer.parseInt(a[1]),l=100001,b[]=new int[l],N=Integer.MAX_VALUE;
+    static int n=Integer.parseInt(a[0]),m=Integer.parseInt(a[1]),l=100001,b[]=new int[l],N=Integer.MAX_VALUE,r=Integer.MAX_VALUE,c;
     static void o(int x,int v) {
-        System.out.println(x+" "+v);
-        if(x==m)N=v;
+//        System.out.println(x+" "+v);
         b[x]=v;
-        System.out.println(Arrays.toString(b));
+        if(x==m) {
+            N=v;
+            if(r>b[x]) {
+                r=b[x];
+                c=0;
+            }
+            if(r==b[x]) {
+                c++;
+            }
+        }
+//        System.out.println(Arrays.toString(b));
         v++;
         if(v<=N) {
             int X=x*2;
@@ -23,8 +32,8 @@ public class P1697 {
     public static void main(String[] args) {
         Arrays.fill(b,-1);
         o(n,0);
-        System.out.println(Arrays.toString(b));
-        System.out.println(b[m]);
+//        System.out.println(Arrays.toString(b));
+        System.out.print(b[m]+"\n"+c);
     }
 
 }
