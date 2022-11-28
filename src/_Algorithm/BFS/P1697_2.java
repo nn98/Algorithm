@@ -20,6 +20,7 @@ public class P1697_2 {
 			z=q.size();
 			for(k=0;k<z;k++) {
 				j=q.remove();
+				System.out.println(j);
 				h[j]++;
 				if(j-1==m|j+1==m|j*2==m) {
 					System.out.print(i-1);

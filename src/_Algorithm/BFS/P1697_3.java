@@ -12,7 +12,7 @@ public class P1697_3 {
         Queue<Integer>q=new LinkedList();
         q.add(n);
         while(!q.isEmpty()) {
-            System.out.println(q);
+//            System.out.println(q);
             j=q.poll();
             i=a[j];
             if(j==m) {
@@ -27,17 +27,17 @@ public class P1697_3 {
             if(i<r) {
                 X=j*2;
                 i++;
-                if(X<l)if(a[X]>i|a[X]<0) {
+                if(X<l)if(a[X]>=i|a[X]<0) {
                     q.add(X);
                     a[X]=i;
                 }
                 X=j+1;
-                if(a[X]>i|a[X]<0) {
+                if(a[X]>=i|a[X]<0) {
                     q.add(X);
                     a[X]=i;
                 }
                 X=j-1;
-                if(X>0)if(a[X]>i|a[X]<0) {
+                if(X>0)if(a[X]>=i|a[X]<0) {
                     q.add(X);
                     a[X]=i;
                 }
