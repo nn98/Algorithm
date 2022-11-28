@@ -45,6 +45,7 @@ public class P6118_2{
                 }
             }
         }
+        System.out.println(Arrays.toString(h));
         for(i=0;i<n;i++)if(h[i]==r)j=i;
         System.out.println(j+" "+r+" "+x);
     }
