@@ -6,11 +6,12 @@ public class P1697 {
     static String[]a=new java.util.Scanner(System.in).nextLine().split(" ");
     static int n=Integer.parseInt(a[0]),m=Integer.parseInt(a[1]),l=100001,b[]=new int[l],N=Integer.MAX_VALUE,r=Integer.MAX_VALUE,c;
     static void o(int x,int v) {
-//        System.out.println(x+" "+v);
+        System.out.println(x+" "+v);
         b[x]=v;
         if(x==m) {
             N=v;
             if(r>b[x]) {
+                System.out.println(x+" "+v);
                 r=b[x];
                 c=1;
             }
@@ -19,11 +20,26 @@ public class P1697 {
         v++;
         if(v<=N) {
             int X=x*2;
-            if(x<m)if(X<l&X<=l)if(b[x*2]>v|b[X]<0)o(X,v);
+            if(x<m)if(X<l&X<=l)
+                if(b[X]==v) {
+                    c++;
+                    System.out.println(x+" "+v);
+                }
+                else if(b[X]>v|b[X]<0)o(X,v);
             X=x+1;
-            if(x<m)if(X<l&X<=l)if(b[X]>v|b[X]<0)o(X,v);
+            if(x<m)if(X<l&X<=l)
+                if(b[X]==v) {
+                    c++;
+                    System.out.println(x+" "+v);
+                }
+                else if(b[X]>v|b[X]<0)o(X,v);
             X=x-1;
-            if(X>0&X<=l)if(b[X]>v|b[X]<0)o(X,v);
+            if(X>0&X<=l)
+                if(b[X]==v) {
+                    c++;
+                    System.out.println(x+" "+v);
+                }
+                else if(b[X]>v|b[X]<0)o(X,v);
         }
     }
     public static void main(String[] args) {
