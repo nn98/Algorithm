@@ -25,7 +25,6 @@ public class P6118 {
         }
         o(0, 0);
         i = j = 0;
-        System.out.println(Arrays.toString(h));
         for (x = 0; x < n; x++) {
             r = r > h[x] ? r : h[x];
         }
