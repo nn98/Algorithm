@@ -29,6 +29,7 @@ public class P6118_2{
         i=1;
         q.add(0);
         while(!q.isEmpty()) {
+            System.out.println(q);
             j=q.poll();
             for(int k:l[j]) {
                 h[k]=i;
