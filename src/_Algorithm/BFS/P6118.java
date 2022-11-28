@@ -25,14 +25,15 @@ public class P6118 {
             a[i][j] = a[j][i] = 1;
         }
         o(0, 0);
-        i=j=0;
+        i = j = 0;
         System.out.println(Arrays.toString(h));
-        for (x = n; x-- > 0; x++) {
+        for (x = n; x-- > 0;) {
             if (h[x] == r) {
-                i=x;
+                i = x;
                 j++;
+            }
         }
-        System.out.print(i+" "+r+" "+j);
+        System.out.print(i + " " + r + " " + j);
     }
 
 }
