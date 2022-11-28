@@ -1,11 +1,12 @@
 package _Algorithm.BFS;
 
+import java.io.BufferedReader;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class P6118_2 {
-    static Scanner s = new Scanner(System.in);
-    static int n = s.nextInt(), m = s.nextInt(), i, j, x, a[][] = new int[n][n], h[] = new int[n], r;
+public class P6118_2 {  
+    static BufferedReader b=new BufferedReader(new InputStreamReader(System.in));
+    static int n = Integer.parseInt(b.readLine()), m = s.nextInt(), i, j, x, a[][] = new int[n][n], h[] = new int[n], r;
 
     static void o(int x, int v) {
         h[x] = v++;
