@@ -34,6 +34,11 @@ public class P6118_2{
             j=q.poll();
             for(int k:l[j]) {
                 if(h[k]<1) {
+                    if(i>r) {
+                        r=i;
+                        x=0;
+                    }
+                    if(i==r)x++;
                     h[k]=i;
                     q.add(k);
                     C++;
