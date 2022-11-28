@@ -15,8 +15,9 @@ public class P6118_2{
 
     public static void main(String[] args) throws Exception {
         BufferedReader b=new BufferedReader(new InputStreamReader(System.in));
-        n = Integer.parseInt(b.readLine());
-        m = Integer.parseInt(b.readLine());
+        String[]c=b.readLine().split(" ");
+        n = Integer.parseInt(c[0]);
+        m = Integer.parseInt(c[1]);
         l=new List[n];
         h = new int[n];
         Arrays.fill(h, Integer.MAX_VALUE);
