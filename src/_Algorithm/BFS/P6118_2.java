@@ -32,6 +32,7 @@ public class P6118_2{
             System.out.println(q);
             j=q.poll();
             for(int k:l[j]) {
+                if(h[k]>0)continue;
                 h[k]=i;
                 if(i>r) {
                     r=i;
