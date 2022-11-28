@@ -46,7 +46,7 @@ public class P12851_2 {
                 }
             }
         }
-        System.out.print(r);
+        System.out.print(r+"\n"+R);
     }
 
 }
