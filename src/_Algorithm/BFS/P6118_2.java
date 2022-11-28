@@ -34,13 +34,6 @@ public class P6118_2{
             for(int k:l[j]) {
                 if(h[k]<1) {
                     h[k]=i;
-                    if(i>r) {
-                        r=i;
-                        x=0;
-                    }
-                    if(i==r) {
-                        x++;
-                    }
                     q.add(k);
                 }
             }
