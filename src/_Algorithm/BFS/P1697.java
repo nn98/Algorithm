@@ -6,6 +6,7 @@ public class P1697 {
     static String[]a=new java.util.Scanner(System.in).nextLine().split(" ");
     static int n=Integer.parseInt(a[0]),m=Integer.parseInt(a[1]),l=100001,b[]=new int[l],N=Integer.MAX_VALUE,r=Integer.MAX_VALUE,c;
     static void o(int x,int v) {
+        for(int i=0;i<v;i++,System.out.print("\t"));
         System.out.println(x+" "+v);
         b[x]=v;
         if(x==m) {
