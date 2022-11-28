@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class P6118 {
     static Scanner s = new Scanner(System.in);
-    static int n = s.nextInt(), m = s.nextInt(), i, j, x = 0, a[][] = new int[n][n], h[] = new int[n], r[] = new int[n];
+    static int n = s.nextInt(), m = s.nextInt(), i, j, x, a[][] = new int[n][n], h[] = new int[n], r;
 
     static void o(int x, int v) {
         h[x] = v++;
@@ -17,6 +17,7 @@ public class P6118 {
     }
 
     public static void main(String[] args) {
+        Arrays.fill(h, Integer.MAX_VALUE);
         for (; x < m; x++) {
             i = s.nextInt() - 1;
             j = s.nextInt() - 1;
