@@ -15,7 +15,6 @@ public class P6118_2{
         m = Integer.parseInt(c[1]);
         l=new List[n];
         h = new int[n];
-        Arrays.fill(h, Integer.MAX_VALUE);
         for (; x < m; x++) {
             c=b.readLine().split(" ");
             i = Integer.parseInt(c[0])-1;
@@ -27,21 +26,23 @@ public class P6118_2{
         }
         x=0;
         i=1;
+        h[0]=1;
         q.add(0);
         while(!q.isEmpty()) {
             System.out.println(q);
             j=q.poll();
             for(int k:l[j]) {
-                if(h[k]>0)continue;
-                h[k]=i;
-                if(i>r) {
-                    r=i;
-                    x=0;
+                if(h[k]<1) {
+                    h[k]=i;
+                    if(i>r) {
+                        r=i;
+                        x=0;
+                    }
+                    if(i==r) {
+                        x++;
+                    }
+                    q.add(k);
                 }
-                if(i==r) {
-                    x++;
-                }
-                q.add(k);
             }
         }
         for(i=0;i<n;i++)if(h[i]==r)j=i;
