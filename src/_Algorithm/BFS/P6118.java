@@ -35,7 +35,7 @@ public class P6118 {
                 j++;
             }
         }
-        System.out.print(i + " " + r + " " + j);
+        System.out.print(i + 1 + " " + r + " " + j);
     }
 
 }
