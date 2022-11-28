@@ -6,12 +6,7 @@ import java.util.*;
 public class P6118_2{  
     static int n, m, i, j, x, h[], r;
     static List<Integer>l[];
-    static void o(int x, int v) {
-        h[x] = v++;
-        for(int i:l[x])
-            if (h[i] > v)
-                o(i, v);
-    }
+    static Queue<Integer> q=new LinkedList();
 
     public static void main(String[] args) throws Exception {
         BufferedReader b=new BufferedReader(new InputStreamReader(System.in));
@@ -30,18 +25,24 @@ public class P6118_2{
             if(l[j]==null)l[j]=new ArrayList();
             l[j].add(i);
         }
-        o(0, 0);
-        i = j = 0;
-        for (x = 0; x < n; x++) {
-            r = r > h[x] ? r : h[x];
-        }
-        for (; x-- > 0;) {
-            if (h[x] == r) {
-                i = x;
-                j++;
+        x=0;
+        i=1;
+        q.add(0);
+        while(!q.isEmpty()) {
+            j=q.poll();
+            for(int k:l[j]) {
+                h[k]=i;
+                if(i>r) {
+                    r=i;
+                    x=0;
+                }
+                if(i==r) {
+                    x++;
+                }
             }
         }
-        System.out.print(i + 1 + " " + r + " " + j);
+        for(i=0;i<n;i++)if(h[i]==r)j=i;
+        System.out.println(j+" "+r+" "+x);
     }
 
 }
