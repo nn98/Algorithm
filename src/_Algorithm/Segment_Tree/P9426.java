@@ -11,7 +11,7 @@ public class P9426 {
     static List<Integer> l = new ArrayList<>();
 
     static void insert(int value, int s,int e) {
-//        System.out.println(value+" "+s+" "+e);
+        System.out.println(value+" "+s+" "+e);
         if(l.isEmpty())l.add(value);
         else if(e<=s){
             if(value>l.get(s)){
@@ -30,20 +30,22 @@ public class P9426 {
     static int check() {
         if(l.size()<k)return 0;
         int v=l.get((k+1)/2-1);
-        l.remove(0);
+        l.remove(new Integer(a[j++]));
         return v;
     }
 
     public static void main(String[] args) throws Exception {
         BufferedReader r = new BufferedReader(new InputStreamReader(System.in));
-        String[] a = r.readLine().split(" ");
-        n=Integer.parseInt(a[0]);
-        k=Integer.parseInt(a[1]);
+        String[] b = r.readLine().split(" ");
+        n=Integer.parseInt(b[0]);
+        k=Integer.parseInt(b[1]);
+        a=new int[n];
         for(;i<n;i++){
-            insert(Integer.parseInt(r.readLine()),0,l.size()-1);
-//            System.out.println(l);
+            a[i]=Integer.parseInt(r.readLine());
+            insert(a[i],0,l.size()-1);
+            System.out.println(l);
             R+=check();
-//            System.out.println(R);
+            System.out.println(R);
         }
         System.out.println(R);
     }
@@ -60,5 +62,22 @@ public class P9426 {
 2
 4
 8
+
+15 6
+84
+37
+61
+27
+38
+49
+72
+42
+41
+38
+94
+16
+72
+34
+85
 
  */
