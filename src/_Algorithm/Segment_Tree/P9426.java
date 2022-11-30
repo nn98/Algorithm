@@ -11,7 +11,7 @@ public class P9426 {
     static List<Integer> l = new ArrayList<>();
 
     static void insert(int value, int s,int e) {
-        System.out.println(value+" "+s+" "+e);
+//        System.out.println(value+" "+s+" "+e);
         if(l.isEmpty())l.add(value);
         else if(e<=s){
             if(value>l.get(s)){
@@ -41,9 +41,9 @@ public class P9426 {
         k=Integer.parseInt(a[1]);
         for(;i<n;i++){
             insert(Integer.parseInt(r.readLine()),0,l.size()-1);
-            System.out.println(l);
+//            System.out.println(l);
             R+=check();
-            System.out.println(R);
+//            System.out.println(R);
         }
         System.out.println(R);
     }
