@@ -1,9 +1,7 @@
 package _Algorithm.Segment_Tree;
 // 어케 맞았ㄴ노
-import java.io.BufferedReader;
-import java.io.InputStreamReader;
-import java.util.ArrayList;
-import java.util.List;
+import java.io.*;
+import java.util.*;
 
 public class P9426 {
     static int n, k, a[], i, j;
@@ -11,7 +9,6 @@ public class P9426 {
     static List<Integer> l = new ArrayList<>();
 
     static void insert(int value, int s,int e) {
-//        System.out.println(value+" "+s+" "+e);
         if(l.isEmpty())l.add(value);
         else if(e<=s){
             if(value>l.get(s)){
@@ -43,11 +40,9 @@ public class P9426 {
         for(;i<n;i++){
             a[i]=Integer.parseInt(r.readLine());
             insert(a[i],0,l.size()-1);
-//            System.out.println(l);
             R+=check();
-//            System.out.println(R);
         }
-        System.out.println(R);
+        System.out.print(R);
     }
 }
 /*
