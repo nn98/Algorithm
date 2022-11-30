@@ -1,5 +1,5 @@
 package _Algorithm.Segment_Tree;
-
+// 어케 맞았ㄴ노
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
