@@ -1,9 +1,8 @@
 package TA;
 
 import java.io.*;
-import java.util.*;
 
-public class JarResult {
+public class JarResult_Test {
 
     static StringBuffer sb = new StringBuffer();
     static int flag;
@@ -39,7 +38,7 @@ public class JarResult {
     }
     public static void main(String[] args) {
 	System.out.println("Program is running...");
-	execCmd("dir /b/oe/on");
+	execCmd("cd \"C:\\Users\\nn\\OneDrive - 성공회대학교\\TA\\22_1학기\\_알고리즘\\[2022-1학기-알고리즘-01][hw4_1]예약정보정렬\" & dir /b/oe/on");
 	System.out.print("Result: \n"+sb);
 
     }

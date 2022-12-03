@@ -25,6 +25,7 @@ public class Average {
 				System.out.print(over_avg+" ");
 			}
 		}
+		System.out.println(((char) 27)+"[2J");
 	}
 
 }
