@@ -2,55 +2,50 @@ package TA;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("hw6_1:최혜미");
-//        //TreeSet<Integer> tree = TreeSet<Integar>();
-//        MyBinarySearchTree tree=new MyBinarySearchTree();
-//        System.out.println(tree);//toString출력
-//        tree.contains(2);
-//        tree.add(5);
-//        tree.add(4);
-//        tree.add(3);
-//        tree.add(1);
-//        tree.add(2);
-//        tree.add(8);
-//        tree.add(6);
-//        tree.add(9);
-//        tree.add(7);
-//        tree.add(10);
-//        tree.add(1);
-//        tree.add(5);
-//        System.out.println(tree);
-//       tree.contains(2);
-//       tree.contains(6);
-//       tree.contains(5);
-//       tree.contains(11);
-//        
-//        tree.remove(9);
-//        System.out.println(tree);
-//        tree.remove(1);
-//        System.out.println(tree);
-//        tree.remove(5);
-//        
-//        System.out.println(tree);
-//        
-//        tree.remove(9);
-//        System.out.println(tree);
-//        tree.remove(6);
-//        System.out.println(tree);
-//        tree.remove(3); 
-//        System.out.println(tree);
-//        tree.remove(4);
-//        System.out.println(tree);
-//        tree.remove(2);
-//        System.out.println(tree);
-//        tree.remove(7);	
-//        System.out.println(tree);  
-//        tree.remove(8);
-//        System.out.println(tree);
-//        tree.remove(10);
-//        System.out.println(tree);
-//        tree.remove(11);
-//        System.out.println(tree);
-//        System.out.println(tree);
+        System.out.println("hw9_1 : 김서연");
+
+        // 입력할 원소들을 저장한 데이터 배열
+        int[] dataArray = {3, 2, 5, 7, 4, 8, -1, 0, 5, 9};
+
+        // 입력할 원소 수와 같은 용량의 공백 최대힙을 생성
+        MyMaxHeap heap = new MyMaxHeap(dataArray.length);
+
+        // 데이터 배열에 저장된 원소를 최대힙에 하나씩 삽입한 후, 힙 내용 출력
+        for(int item : dataArray) {
+            heap.add(item);
+            heap.print();
+        }
+    }
+}
+
+//정수 배열로 구현한 최대힙 클래스
+class MyMaxHeap {
+    private int[] array;    // 최대힙 원소를 저장할 배열
+    private int n;          // 최대힙에 저장된 원소 수
+
+
+    public MyMaxHeap(int capacity) {   // 용량이 capacity인 공백 최대힙을 생성
+        n = 0; // 빈 배열이므로 n=0으로 초기화
+        array = new int[capacity]; // 받은 크기의 배열 생성
+    }
+
+    public void add(int item) {        // 매개변수로 받은 원소 item을 최대힙에 삽입
+
+        array[n++] = item;
+        while ((n != 1) && (item > array[n / 2]))
+        {
+            Swap(array[n], array[n / 2]);
+        }
+    }
+
+    private void Swap(int i, int j) {
+
+    }
+
+    public void print() {      		   // 배열의 내용을 확인하기 위해 배열 원소들을 차례대로 한 줄에 출력
+        for(int i=0; i<n; i++) {
+            System.out.print(array[i] + " ");    // 원소와 공백 출력
+        }
+        System.out.println();
     }
 }
