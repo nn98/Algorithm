@@ -2,10 +2,9 @@ package TA;
 
 import java.io.*;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
-public class JarResultToFile {
+public class Assignment {
 
     final static int CMD_LINE = 65;
     static StringBuffer sb = new StringBuffer(), rb = new StringBuffer();
@@ -78,7 +77,7 @@ public class JarResultToFile {
         while (index < temp.length) {
 
             line = temp[index++];
-            if(index==temp.length){
+            if (index == temp.length) {
                 for (; ++lineCount < CMD_LINE; ) {
 //                        w.newLine();
                     buffer.append("\n");
@@ -87,6 +86,19 @@ public class JarResultToFile {
 //                    w.flush();
                 bufferList.add(buffer);
                 break;
+            }
+            if (line.length() > 2) {
+                if (line.substring(0, 3).equalsIgnoreCase("lab") || line.substring(0, 2).equals("jav")) {
+                    for (; ++lineCount < CMD_LINE; ) {
+//                        w.newLine();
+                        buffer.append("\n");
+                    }
+                    buffer.append("Enter - Next / Else - Prev");
+                    bufferList.add(buffer);
+
+                    buffer = new StringBuffer();
+                    lineCount = 1;
+                }
             }
             if (line.length() > 1) {
 //            intelliJ - toLowerCase.equals 대신 equalsIgnoreCase 굳
@@ -103,6 +115,7 @@ public class JarResultToFile {
                     lineCount = 1;
 //                    er.readLine();
                 }
+
             }
             buffer.append(line + "\n");
 //            w.write(line + "\n");
@@ -113,14 +126,27 @@ public class JarResultToFile {
 
         bufferList.add(buffer);
 
-        for (int i = 0; i < bufferList.size(); ) {
+        for (int i = 0; ; ) {
+            if (i < 0) {
+                w.write("********** First Page **********\n");
+                i = 0;
+            }
+            if (i >= bufferList.size()) {
+                w.write("********** Last Page **********\n");
+                i = bufferList.size() - 1;
+            }
             w.write(bufferList.get(i).toString());
             w.flush();
             String input = er.readLine();
             if (input.equals("")) {
                 i++;
+
             } else {
-                i--;
+                try {
+                    i = Integer.parseInt(input);
+                } catch (Exception e) {
+                    i--;
+                }
             }
         }
 
