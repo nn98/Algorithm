@@ -77,70 +77,72 @@ public class Assignment {
         while (index < temp.length) {
 
             line = temp[index++];
+
             if (index == temp.length) {
                 for (; ++lineCount < CMD_LINE; ) {
 //                        w.newLine();
                     buffer.append("\n");
                 }
-                buffer.append("Enter - Next / Else - Prev");
+                buffer.append("Page: " + bufferList.size() + "  \tEnter - Next / Else - Prev ");
 //                    w.flush();
                 bufferList.add(buffer);
                 break;
             }
-            if (line.length() > 2) {
-                if (line.substring(0, 3).equalsIgnoreCase("lab") || line.substring(0, 2).equals("jav")) {
-                    for (; ++lineCount < CMD_LINE; ) {
-//                        w.newLine();
-                        buffer.append("\n");
-                    }
-                    buffer.append("Enter - Next / Else - Prev");
-                    bufferList.add(buffer);
 
-                    buffer = new StringBuffer();
-                    lineCount = 1;
-                }
-            }
+            int flag = 0;
+
             if (line.length() > 1) {
 //            intelliJ - toLowerCase.equals 대신 equalsIgnoreCase 굳
                 if (line.substring(0, 2).equalsIgnoreCase("hw") || line.substring(0, 2).equals("ja")) {
-                    for (; ++lineCount < CMD_LINE; ) {
-//                        w.newLine();
-                        buffer.append("\n");
-                    }
-                    buffer.append("Enter - Next / Else - Prev");
-//                    w.flush();
-                    bufferList.add(buffer);
-
-                    buffer = new StringBuffer();
-                    lineCount = 1;
-//                    er.readLine();
+                    flag = 1;
                 }
 
+                if (line.length() > 2) {
+                    if (line.substring(0, 3).equalsIgnoreCase("lab") || line.substring(0, 3).equals("jav")) {
+                        flag = 2;
+                    }
+                }
+            }
+
+            if (flag > 0) {
+                for (; ++lineCount < CMD_LINE; ) {
+//                        w.newLine();
+                    buffer.append("\n");
+                }
+                buffer.append("Page: " + bufferList.size() + "  \tEnter - Next / Else - Prev ");
+//                    w.flush();
+                bufferList.add(buffer);
+
+                buffer = new StringBuffer(flag > 1 ? "!-----Code Err " : "");
+                lineCount = 1;
             }
             buffer.append(line + "\n");
-//            w.write(line + "\n");
             lineCount++;
-
-//            if(temp[index].equals("")&&temp[index+1].equals("")&&temp[index+2].equals("")&&temp[index+3].equals(""))break;
         }
 
         bufferList.add(buffer);
 
         for (int i = 0; ; ) {
-            if (i < 0) {
+            int flag = 0;
+            if (i < 1) {
+                ++flag;
                 w.write("********** First Page **********\n");
                 i = 0;
             }
-            if (i >= bufferList.size()) {
+            if (i >= bufferList.size() - 2) {
+                ++flag;
                 w.write("********** Last Page **********\n");
-                i = bufferList.size() - 1;
+                i = bufferList.size() - 2;
             }
-            w.write(bufferList.get(i).toString());
+            line = bufferList.get(i).toString();
+            if (flag < 1) {
+                w.newLine();
+            }
+            w.write(line);
             w.flush();
             String input = er.readLine();
             if (input.equals("")) {
                 i++;
-
             } else {
                 try {
                     i = Integer.parseInt(input);
