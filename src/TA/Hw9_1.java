@@ -17,7 +17,7 @@ public class Hw9_1 {
             int x = n -1;
             int y = x - 1 / 2;
             //i = n -1   i-1 = / 2 부모노드 알기 부모랑 비교 부모보다 크면 안됨 크면 자리 바꾸기 부모노드가 0일때까지 비교
-            while (x =<  )
+//            while (x =<  )
             array[n++] = item;
         }
 
