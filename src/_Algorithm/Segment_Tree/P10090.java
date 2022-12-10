@@ -31,6 +31,6 @@ public class P10090 {
             j=n;
             R+=p(1,1,l);
         }
-        System.out.println(R);
+        System.out.print(R);
     }
 }
