@@ -31,9 +31,6 @@ public class P10090 {
             t[j]++;
             o();
             j=n;
-            System.out.println(Arrays.toString(t));
-            System.out.println(i+" "+j);
-            System.out.println(p(1,1,l));
             R+=p(1,1,l);
         }
         System.out.println(R);
