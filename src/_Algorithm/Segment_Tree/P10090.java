@@ -2,6 +2,8 @@ package _Algorithm.Segment_Tree;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
+import java.lang.reflect.Array;
+import java.util.Arrays;
 
 public class P10090 {
     static int n, l=1, i, j, t[];
@@ -24,10 +26,15 @@ public class P10090 {
         for(;l<n;l*=2);
         t=new int[l*2];
         for(String s:r.readLine().split(" ")){
-            j=l+i++;
-            t[j]=Integer.parseInt(s);
+            i=Integer.parseInt(s);
+            j=i+l-1;
+            t[j]++;
             o();
-            R+=p(1,1,n);
+            j=n;
+            System.out.println(Arrays.toString(t));
+            System.out.println(i+" "+j);
+            System.out.println(p(1,1,l));
+            R+=p(1,1,l);
         }
         System.out.println(R);
     }
