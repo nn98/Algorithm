@@ -27,7 +27,7 @@ public class P10090 {
         t=new int[l*2];
         for(String s:r.readLine().split(" ")){
             i=Integer.parseInt(s);
-            j=i+l-1;
+            j=i+++l-1;
             t[j]++;
             o();
             j=n;
