@@ -1,5 +1,4 @@
-package TA;
-public class MainN {
+public class Main {
 	static class MatrixGraph {
 		private int[][] matrix;
 		private int n;

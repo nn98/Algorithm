@@ -4,24 +4,24 @@ import java.util.LinkedList;
 public class MainClass {
 
 	public static void main(String[] args) {
-		System.out.println("hw6_1: ¹é½Â¹Î");
+		System.out.println("hw6_1: ï¿½ï¿½Â¹ï¿½");
 		
-		LinkedList<Integer> list1 = new LinkedList<Integer>();//¸®½ºÆ® »ý¼º
-		System.out.println("ÃÊ±â »óÅÂ = " + list1);
+		LinkedList<Integer> list1 = new LinkedList<Integer>();//ï¿½ï¿½ï¿½ï¿½Æ® ï¿½ï¿½ï¿½ï¿½
+		System.out.println("ï¿½Ê±ï¿½ ï¿½ï¿½ï¿½ï¿½ = " + list1);
 		
 		for(int i = 1; i<=10; i++) {
-			list1.add(i*10);//10~100±îÁö ¸®½ºÆ®¿¡ ÀÔ·Â
+			list1.add(i*10);//10~100ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Æ®ï¿½ï¿½ ï¿½Ô·ï¿½
 		}
-		System.out.println("»ðÀÔ ÈÄ = " + list1);
+		System.out.println("ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ = " + list1);
 		
-		System.out.println("»èÁ¦ ¿ø¼Ò = " + list1.remove(9) +" "+ list1.remove(4) +" "+ list1.remove(3) +" "+ list1.remove(6)+" "+
+		System.out.println("ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ = " + list1.remove(9) +" "+ list1.remove(4) +" "+ list1.remove(3) +" "+ list1.remove(6)+" "+
 		list1.remove(0) +" "+ list1.remove(0) +" "+ list1.remove(0) +" "+ list1.remove(0) +" "+ list1.remove(1) +" "+ list1.remove(0));
-		//Á¤ÇØÁø ¼ø¼­´ë·Î Á¦°ÅÇÏ°í ±× °ªÀ» ¹ÝÈ¯
-		System.out.println("»èÁ¦ ÈÄ = " + list1);
+		//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï°ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½È¯
+		System.out.println("ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ = " + list1);
 		System.out.println();
 		
-		MyLinkedList2 list2 = new MyLinkedList2(); // list2 »ý¼º
-		System.out.println("ÃÊ±â»óÅÂ = " + list2);
+		MyLinkedList2 list2 = new MyLinkedList2(); // list2 ï¿½ï¿½ï¿½ï¿½
+		System.out.println("ï¿½Ê±ï¿½ï¿½ï¿½ï¿½ = " + list2);
 	}
 	static class MyLinkedList2{
 		private Node head;
@@ -36,20 +36,20 @@ public class MainClass {
 			head = null;
 			listLength = 0;
 		}
-		//¸®½ºÆ® ¿ø¼ÒµéÀ» ÇÏ³ªÀÇ ¹®ÀÚ¿­·Î ¸¸µé¾î ¸®ÅÏ
+		//ï¿½ï¿½ï¿½ï¿½Æ® ï¿½ï¿½ï¿½Òµï¿½ï¿½ï¿½ ï¿½Ï³ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ú¿ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 		@Override
 		public String toString() {
-			String result = "";//¹ÝÈ¯ÇÒ ¹®ÀÚ¿­ÀÌ ÀúÀåµÉ º¯¼ö
-			Node temp = head;//¹ÝÈ¯µÉ µ¥ÀÌÅÍ¸¦ °¡¸®Å°´Â ³ëµå
+			String result = "";//ï¿½ï¿½È¯ï¿½ï¿½ ï¿½ï¿½ï¿½Ú¿ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+			Node temp = head;//ï¿½ï¿½È¯ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Í¸ï¿½ ï¿½ï¿½ï¿½ï¿½Å°ï¿½ï¿½ ï¿½ï¿½ï¿½
 			
 			result += "(";
 			
-			if(listLength > 0) {//list°¡ °ø¹é ¸®½ºÆ®°¡ ¾Æ´Ï¶ó ³ªÅ¸³¾ ¿ø¼Ò°¡ ÀÖ´Â °æ¿ì
-				for(int i = 0; i<listLength-1; i++) {//¸®½ºÆ®ÀÇ ¸¶Áö¸· ¿ø¼Ò¸¦ Á¦¿ÜÇÏ°í
-					result += temp.data + ",";//¿ø¼Ò¸¦ ¹ÝÈ¯ÇÒ º¯¼ö result¿¡ ºÙÀÎ´Ù.
-					temp = temp.link;//ÀÌÈÄ temp°¡ ´ÙÀ½ ³ëµå¸¦ °¡¸®Å°°Ô ÇÑ´Ù.
+			if(listLength > 0) {//listï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Æ®ï¿½ï¿½ ï¿½Æ´Ï¶ï¿½ ï¿½ï¿½Å¸ï¿½ï¿½ ï¿½ï¿½ï¿½Ò°ï¿½ ï¿½Ö´ï¿½ ï¿½ï¿½ï¿½
+				for(int i = 0; i<listLength-1; i++) {//ï¿½ï¿½ï¿½ï¿½Æ®ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ò¸ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï°ï¿½
+					result += temp.data + ",";//ï¿½ï¿½ï¿½Ò¸ï¿½ ï¿½ï¿½È¯ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ resultï¿½ï¿½ ï¿½ï¿½ï¿½Î´ï¿½.
+					temp = temp.link;//ï¿½ï¿½ï¿½ï¿½ tempï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½å¸¦ ï¿½ï¿½ï¿½ï¿½Å°ï¿½ï¿½ ï¿½Ñ´ï¿½.
 				}
-				result+=temp.data;//¸®½ºÆ®ÀÇ ¸¶Áö¸· ¿ø¼Ò¸¦ º¯¼ö result¿¡ ºÙÀÎ´Ù.
+				result+=temp.data;//ï¿½ï¿½ï¿½ï¿½Æ®ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ò¸ï¿½ ï¿½ï¿½ï¿½ï¿½ resultï¿½ï¿½ ï¿½ï¿½ï¿½Î´ï¿½.
 			}
 			result+=")";
 			return result;
