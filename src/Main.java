@@ -1,55 +1,154 @@
+package TA;
+public class MainN {
+	static class MatrixGraph {
+		private int[][] matrix;
+		private int n;
 
-import java.util.LinkedList;
-public class Main {
+		public MatrixGraph(int n) {
+			matrix = new int[n][n];
+			this.n=n;
+		}
+		public void insertEdge(int v1, int v2) {
+			if(v1<0 || v1>=n||v2<0||v2>=n) {
+				System.out.println("ê·¸ë˜í”„ì— ì—†ëŠ” ì •ì ì…ë‹ˆë‹¤.");
+			}
+			else
+				matrix[v1][v2]=1;
+		}
+		public void printAdjMatrix(){
+			for (int i =0; i<n;i++) {
+				for(int j=0; j<n;j++) {
+					System.out.print(matrix[i][j]+"");
 
-	public static void main(String[] args) {
-		System.out.println("hw6_1 : È²Ã¢ÈÆ");
-		
-		//(1)
-		LinkedList<Integer> list1 = new LinkedList<Integer>();
-		System.out.println("ÃÊ±â »óÅÂ = " + list1);
-		
-		//(2)
-		for(int i = 1; i<=10; i++) {
-			list1.add(i*10);
+				}
+				System.out.println();
+			}
 		}
-		System.out.println("»ğÀÔ ÈÄ = " + list1);
-		
-		//(3)
-		int[] indexArray = {9, 4, 3, 6, 0, 0, 0, 0, 1, 0};
-		//»èÁ¦ÇÒ ÀÎµ¦½º¸¦ ¼ø¼­´ë·Î indexArray¿¡ ÀúÀåÇÑ´Ù.
-		System.out.print("»èÁ¦¿ø¼Ò = ");
-		for(int i : indexArray) {//indexArray¸¦ i°¡ µ¹¸ç i¹øÂ° ¿ø¼Ò¸¦ »èÁ¦ÇÑ´Ù.
-			System.out.print(list1.remove(i));//remove()ÀÇ ¹İÈ¯À» ¹Ş¾Æ¼­ Ãâ·ÂÇÑ´Ù.
-			System.out.print(" ");	
+
+		public boolean hasEdge(int v1,int v2) {
+			if(matrix[v1][v2]==1) {
+				return true;
+
+			}
+			else return false;
 		}
-		System.out.println();
-		
-		System.out.println("»èÁ¦ ÈÄ = " + list1);
-		System.out.println();
-		
-		//(4)
-		MyLinkedList list2 = new MyLinkedList();
-		System.out.println("ÃÊ±â»óÅÂ = " + list2);
-		
-		//(5)
-		for(int i = 1; i<=10; i++) {
-			list2.add(i*10);
+		public int outDegree(int v) {
+			int cnt = 0;
+			for(int i=0;i<n;i++) {
+				cnt = matrix[v][i]+cnt;
+
+			}
+			return cnt;
 		}
-		System.out.println("»ğÀÔ ÈÄ = " + list2);
-		
-		//(6)
-		System.out.print("»èÁ¦¿ø¼Ò = ");
-		for(int i : indexArray) {//indexArray¸¦ i°¡ µ¹¸ç i¹øÂ° ¿ø¼Ò¸¦ »èÁ¦ÇÑ´Ù.
-			System.out.print(list2.remove(i));//remove()ÀÇ ¹İÈ¯À» ¹Ş¾Æ¼­ Ãâ·ÂÇÑ´Ù.
-			System.out.print(" ");	
-		}
-		System.out.println();
-		
-		System.out.println("»èÁ¦ ÈÄ = " + list2);
-		System.out.println();
-		
-		
+
 	}
 
+	static class ListGraph {
+		private int[][] matrix;
+
+
+
+		private class Node{
+			int vertex;
+			Node link;
+		}
+
+		private Node[] list;
+		private int n;
+
+		public ListGraph(int n) {
+			list = new Node[n];
+			this.n=n;
+
+		}
+		public void insertEdge(int v1,int v2) {
+			if(v1<0||v1>=n||v2<0||v2>=n) {
+				System.out.println("ê·¸ë˜í”„ì— ì—†ëŠ” ì •ì ì…ë‹ˆë‹¤.");
+			}
+			else {
+				Node newNode = new Node();
+				newNode.vertex=v2;
+				newNode.link=list[v1];
+				list[v1]=newNode;
+
+			}
+		}
+
+		public void printAdjList() {
+			for(int i =0; i<n;i++) {
+				System.out.print("ì •ì "+i+"ì˜ ì¸ì ‘ë¦¬ìŠ¤íŠ¸");
+				for (Node temp = list[i]; temp != null; temp= temp.link) {
+					System.out.print("->"+temp.vertex);
+				}
+				System.out.println();
+			}
+		}
+		public boolean hasEdge(int v1,int v2) {
+			if(matrix[v1][v2]==1) {
+				return true;
+
+			}
+			else return false;
+		}
+		public int outDegree(int v) {
+			int cnt = 0;
+			for(int i=0;i<n;i++) {
+				cnt = matrix[v][i]+cnt;
+
+			}
+			return cnt;
+		}
+	}
+
+	public static void main(String[] args) {
+		System.out.println("lab10_1 : ì´í˜„ìš°");
+
+		// (1) ì •ì ìˆ˜ 5ì¸ ë°©í–¥ ê·¸ë˜í”„ MatrixGraph g1ì„ ìƒì„±í•˜ê³  ê°„ì„  ì‚½ì… í›„, ì¸ì ‘ í–‰ë ¬ ë‚´ìš© ì¶œë ¥
+		MatrixGraph g1 = new MatrixGraph(5);
+		g1.insertEdge(0,4);
+		g1.insertEdge(0,3);
+		g1.insertEdge(3,2);
+		g1.insertEdge(2,4);
+		g1.insertEdge(2,0);
+		g1.insertEdge(4,3);
+		g1.insertEdge(4,1);
+		System.out.println("ê·¸ë˜í”„ g1ì˜ ì¸ì ‘í–‰ë ¬ : ");
+		g1.printAdjMatrix();
+		System.out.println();
+
+		// (2) ì •ì ìˆ˜ 5ì¸ ë°©í–¥ ê·¸ë˜í”„ ListGraph g2ë¥¼ ìƒì„±í•˜ê³  ê°„ì„  ì‚½ì… í›„, ì¸ì ‘ ë¦¬ìŠ¤íŠ¸ ë‚´ìš© ì¶œë ¥
+		ListGraph g2 = new ListGraph(5);
+		g2.insertEdge(0,4);
+		g2.insertEdge(0,3);
+		g2.insertEdge(3,2);
+		g2.insertEdge(2,4);
+		g2.insertEdge(2,0);
+		g2.insertEdge(4,3);
+		g2.insertEdge(4,1);
+		System.out.println("ê·¸ë˜í”„ g2ì˜ ì¸ì ‘ë¦¬ìŠ¤íŠ¸ : ");
+		g2.printAdjList();
+		System.out.println();
+
+		// (3) g1ì— ê°„ì„  <0, 1>, <1, 2>, <4, 1>ê°€ ì¡´ì¬í•˜ëŠ”ì§€ ì—¬ë¶€ë¥¼ ì¶œë ¥
+		System.out.println(g1.hasEdge(0, 1));
+		System.out.println(g1.hasEdge(1, 2));
+		System.out.println(g1.hasEdge(4, 1));
+
+		// (4) g1ì˜ ì •ì  0, ì •ì  3ì˜ out-degreeë¥¼ ì¶œë ¥
+		System.out.println(g1.outDegree(0));
+		System.out.println(g1.outDegree(3));
+		System.out.println();
+
+		// (5) g2ì— ê°„ì„  <0, 3>, <1, 2>, <4, 3>, <4, 2>ê°€ ì¡´ì¬í•˜ëŠ”ì§€ ì—¬ë¶€ë¥¼ ì¶œë ¥
+		System.out.println(g1.hasEdge(0, 3));
+		System.out.println(g1.hasEdge(1, 2));
+		System.out.println(g1.hasEdge(4, 3));
+		System.out.println(g1.hasEdge(4, 2));
+
+		// (6) g2ì˜ ì •ì  1, ì •ì  4ì˜ out-degreeë¥¼ ì¶œë ¥
+		System.out.println(g1.outDegree(1));
+		System.out.println(g1.outDegree(4));
+		System.out.println();
+
+	}
 }
