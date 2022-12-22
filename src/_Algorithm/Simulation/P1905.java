@@ -2,6 +2,7 @@ package _Algorithm.Simulation;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
+import java.util.Arrays;
 import java.util.StringTokenizer;
 
 public class P1905 {
@@ -18,12 +19,20 @@ public class P1905 {
             int lz = Integer.parseInt(st.nextToken());
             int px = Integer.parseInt(st.nextToken());
             int py = Integer.parseInt(st.nextToken());
-            for(int i=px;i<lx;i++){
-                for(int j=py;j<ly;j++){
-                    matrix[i][j]+=lz;
+            int max=0;
+            for(int i=px;i<px+lx;i++){
+                for(int j=py;j<py+ly;j++){
+//                    matrix[i][j]+=lz;
+                    max=Math.max(max,matrix[i][j]);
+                }
+            }
+            for(int i=px;i<px+lx;i++){
+                for(int j=py;j<py+ly;j++){
+                    matrix[i][j]=max+lz;
                     result=Math.max(result,matrix[i][j]);
                 }
             }
+//            for(int[]m:matrix) System.out.println(Arrays.toString(m));
         }
         System.out.print(result);
     }
