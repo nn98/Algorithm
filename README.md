@@ -85,5 +85,6 @@ https://stonejjun.tistory.com/92 https://viyoung.tistory.com/150 https://moonrab
 <details><summary>Error List</summary>
 
 - [IntelliJ: Error: java: release version <?> not supported](https://www.inflearn.com/questions/15853/%EC%BB%B4%ED%8C%8C%EC%9D%BC-%EC%8B%9C-%EC%9E%90%EB%B0%94-version-%EB%AC%B8%EC%A0%9C%EA%B0%80-%EB%B0%9C%EC%83%9D%ED%95%98%EC%98%80%EC%8A%B5%EB%8B%88%EB%8B%A4)
+TQ
 
 </details>
