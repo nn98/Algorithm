@@ -9,7 +9,7 @@ import java.util.StringTokenizer;
 
 public class P11658 {
     static void o(int i,int j,int v,int[][]a){
-        for(int k=j;k>=0;a[i][k--]+=v);
+        for(int k=j;k<a[i].length;a[i][k++]+=v);
     }
     public static void main(String[] args) throws Exception{
         BufferedReader reader=new BufferedReader(new InputStreamReader(System.in));
@@ -21,7 +21,7 @@ public class P11658 {
             st=new StringTokenizer(reader.readLine());
             for(j=0;j<n;v[i][j]=Integer.parseInt(st.nextToken()),o(i,j,v[i][j++],a));
         }
-        for(int[]b:a) System.out.println(Arrays.toString(b));
+//        for(int[]b:a) System.out.println(Arrays.toString(b));
         for(;m-->0;){
             st=new StringTokenizer(reader.readLine());
             i=Integer.parseInt(st.nextToken());
@@ -32,6 +32,7 @@ public class P11658 {
                 int V=j-v[x1][y1];
                 v[x1][y1]=j;
                 o(x1,y1,V,a);
+//                for(int[]b:a) System.out.println(Arrays.toString(b));
             }else {
                 x2=Integer.parseInt(st.nextToken())-1;
                 if(x2<x1){
@@ -46,7 +47,7 @@ public class P11658 {
                     y2=t;
                 }
                 int V=0;
-                for(;x1<=x2;x1++,V+=y1-y2);
+                for(;x1<=x2;V+=a[x1][y2]-(y1<1?0:a[x1++][y1-1]));
                 writer.write(V+"\n");
             }
         }
