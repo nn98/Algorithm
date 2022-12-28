@@ -2,6 +2,8 @@ package _Algorithm.Segment_Tree;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
+import java.lang.reflect.Array;
+import java.util.Arrays;
 
 public class P10090 {
     static int n, l=1, i, j, t[];
@@ -29,6 +31,7 @@ public class P10090 {
             t[j]++;
             o();
             j=n;
+            System.out.println(Arrays.toString(t)+" "+p(1,1,l));
             R+=p(1,1,l);
         }
         System.out.print(R);
