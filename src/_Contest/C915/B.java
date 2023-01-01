@@ -8,7 +8,7 @@ public class B {
     static int n,m,i,a[],j,b[];
     static long r;
     static void o(int i,int j,long v){
-//        System.out.println(i+" "+j+" "+v);
+        System.out.println(i+" "+j+" "+v);
         b[i]=b[j]=1;
         r=r>v?r:v;
         if(i>0){
