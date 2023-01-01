@@ -24,6 +24,5 @@ public class B_2 {
                     l+=a[i];
             }
         }
-        System.out.println(r);
     }
 }
