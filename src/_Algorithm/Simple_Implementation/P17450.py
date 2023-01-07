@@ -9,7 +9,6 @@ c=b=0
 for i in range(3):
     if b<a[i]:
         b,c=a[i],i
-print(b,c)
 if c < 1:
     print('S')
 elif c < 2:
