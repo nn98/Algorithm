@@ -1,9 +1,21 @@
 a=[]
 b,c=map(int,input().split())
+b*=10
+c*=10
+if b>=5000:
+    b-=500
 a.append(c/b)
 b,c=map(int,input().split())
+b*=10
+c*=10
+if b>=5000:
+    b-=500
 a.append(c/b)
 b,c=map(int,input().split())
+b*=10
+c*=10
+if b>=5000:
+    b-=500
 a.append(c/b)
 c=b=0
 for i in range(3):
