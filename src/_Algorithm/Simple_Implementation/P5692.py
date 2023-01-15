@@ -1,8 +1,13 @@
+import sys
 fac=[1]
-fac=[fac[i-1]*i for i in range(1,10)]
+for i in range(1,10):
+    fac.append(i*fac[i-1])
+# print(fac)
 while True:
-    numbers=input()
-    if number == '0':
+    numbers=sys.stdin.readline()
+    if numbers == '0':
         break;
     result=0
-    for number in numbers:
+    for index in range(len(numbers)):
+        result+=fac[len(numbers)-index]*int(numbers[index])
+    print(result)
