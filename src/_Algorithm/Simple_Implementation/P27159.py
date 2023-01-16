@@ -15,4 +15,4 @@ while i<len(scores):
             break;
         j+=1
     i=j
-print(n,scores,result)
+print(result)
