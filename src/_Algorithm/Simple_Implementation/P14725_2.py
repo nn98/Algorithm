@@ -8,26 +8,28 @@ for i in range(n):
         a[line[1]]={}
     # depth=''
     # insert=[]
-    # depth=0
+    depth=0
     temp=a[line[1]]
     for j in range(2,count+1):
-
-        # depth+='--'
-        # depth+=1
-        # a[line[1]].append([depth,line[j]])
-        # insert.append([depth,line[j]])
-    a[line[1]].append(insert)
-    # print(a)
-a=dict(sorted(a.items()))
-# for key in a.keys():
-#     a[key].sort(key = lambda x : (x[0],x[1]))
+        depth+=1
+        # print(line[j] , temp, temp.keys())
+        if line[j] not in temp.keys():
+            temp[line[j]]= {}
+        # print(a)
+        temp=temp[line[j]]
+        # print(temp)
+# a=dict(sorted(a.items()))
 # print(a)
-# for key in a.keys():
-#     print(key)
-#     for data in a[key]:
-#         print(data[0]*'--'+data[1])
-for key in a.keys():
-    print(key)
-    for data in a[key]:
-        for detail in data:
-            print(detail[0]*'--'+detail[1])
+# print(len(a))
+# print(len(a['B']['A']))
+def printResult(cave,depth):
+    # print('pR:',dict,depth)
+    cave=dict(sorted(cave.items()))
+    for key in cave.keys():
+        print(depth*'--'+key)
+        if len(cave[key]) != 0:
+            printResult(cave[key],depth+1)
+printResult(a,0)
+# for v1 in a.keys():
+#     v1=dict(sorted(v1.items()))
+#     print(v1)
