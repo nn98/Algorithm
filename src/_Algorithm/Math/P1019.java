@@ -10,7 +10,6 @@ class Main {
         int point = 1;
         int start = 1;
         while (start <= page) {
-            // 끝자리 9로 만들기
             while (page % 10 != 9 && start <= page) {
                 cal(page, ans, point);
                 page--;
@@ -18,7 +17,6 @@ class Main {
             if (page < start) {
                 break;
             }
-            // 끝자리 0으로 만들기
             while (start % 10 != 0 && start <= page) {
                 cal(start, ans, point);
                 start++;
