@@ -19,16 +19,20 @@ public class P11437_2 {
     static boolean[] visited;
 
     static void dfs(int x) {
+//        누락
         locInTrip[x] = index++;
         serial2no[++sIndex] = x;
         no2serial[x] = sIndex;
+//        오답
         trip.add(no2serial[x]);
         System.out.println(x);
         visited[x] = true;
         for (int i : list[x]) {
             if (!visited[i]) {
                 dfs(i);
+//                  오답
                 trip.add(no2serial[x]);
+//                  누락
                 index++;
             }
         }
