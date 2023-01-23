@@ -1,10 +1,9 @@
-package LeetCode.Jun;
+package Algorithm_Practice.Jun;
 
 import java.awt.Toolkit;
 import java.awt.datatransfer.*;
 import java.io.*;
 import java.util.*;
-import LeetCode.Jun.*;
 
 public class Main {
 

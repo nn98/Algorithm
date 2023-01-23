@@ -1,4 +1,4 @@
-package Algorithm_Training;
+package Algorithm_Practice.Algorithm_Training;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 public class L_1_Line1 {
 	static Scanner s=new Scanner(System.in);
-	static void sol1(int n,String[] word) {	//À§Ä¡ ½Å°æ¾²Áö ¾ÊÀº ¾ÐÃà. HashMap »ç¿ëÇØ¼­ À§Ä¡ °í·Á °¡´É?
+	static void sol1(int n,String[] word) {	//ï¿½ï¿½Ä¡ ï¿½Å°æ¾²ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½. HashMap ï¿½ï¿½ï¿½ï¿½Ø¼ï¿½ ï¿½ï¿½Ä¡ ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½?
 		//int n=3;
 		//String[] word= {"AAAAAADDC","AADDKKJJLL","AJEKAL"};
 		for(int i=0;i<n;i++) {
@@ -15,9 +15,9 @@ public class L_1_Line1 {
 			//String[] w=word[i].split("");
 			for(int j=0;j<w.length;j++) {
 				//System.out.println(m.containsKey(w[j])+""+m.get(w[j]));
-				//±âÁ¸ ¸Þ¼Òµå´Â m.put(w[j],m.get(w[j]+1);
-				//--> °á°ú°ªÀÌ null. 
-				// = Integer°¡ ¾Æ´Ñ Object ¹ÝÈ¯ÇØ¼­?
+				//ï¿½ï¿½ï¿½ï¿½ ï¿½Þ¼Òµï¿½ï¿½ m.put(w[j],m.get(w[j]+1);
+				//--> ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ null. 
+				// = Integerï¿½ï¿½ ï¿½Æ´ï¿½ Object ï¿½ï¿½È¯ï¿½Ø¼ï¿½?
 				if(m.containsKey(w[j]))  {
 					int v=m.get(w[j])+1;
 					m.put(w[j], v);
@@ -30,7 +30,7 @@ public class L_1_Line1 {
 			System.out.println();
 		}
 	}
-	static void sol2(int n,String[] word) {	//À§Ä¡ °í·ÁÇÏÁö ¾ÊÀº ¾ÐÃà. CountingSort¹æ½Ä
+	static void sol2(int n,String[] word) {	//ï¿½ï¿½Ä¡ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½. CountingSortï¿½ï¿½ï¿½
 
 		for(int i=0;i<n;i++) {
 			int[] alp=new int[26];
@@ -43,7 +43,7 @@ public class L_1_Line1 {
 		}
 
 	}
-	static void sol3(int n,String[] word) {	//À§Ä¡ °í·ÁÇÑ ¾ÐÃà. CountingSort¹æ½Ä
+	static void sol3(int n,String[] word) {	//ï¿½ï¿½Ä¡ ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½. CountingSortï¿½ï¿½ï¿½
 		for(int i=0;i<n;i++) {
 			int[] alp=new int[26];
 			char[] w=word[i].toCharArray();
@@ -59,38 +59,38 @@ public class L_1_Line1 {
 		}
 	}
 	public static void convert(String s) {
-		char prev = 0; // ÇöÀç ¹®ÀÚ
-		int count = 0; // ÇöÀç ¹®ÀÚ°¡ ¹Ýº¹µÈ ¼ö
+		char prev = 0; // ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+		int count = 0; // ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ú°ï¿½ ï¿½Ýºï¿½ï¿½ï¿½ ï¿½ï¿½
 		for (int i = 0; i < s.length(); ++i) {
 			char c = s.charAt(i);
-			if (c == prev) // µ¿ÀÏÇÑ ¹®ÀÚ¸¦ ¸¸³ª¸é count Áõ°¡
+			if (c == prev) // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ú¸ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ count ï¿½ï¿½ï¿½ï¿½
 				++count;
-			else { // »õ ¹®ÀÚ¸¦ ¸¸³ª¸é, ±âÁ¸ÀÇ ¹®ÀÚ¿Í count Ãâ·Â
+			else { // ï¿½ï¿½ ï¿½ï¿½ï¿½Ú¸ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½, ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ú¿ï¿½ count ï¿½ï¿½ï¿½
 				if (count > 0)
 					System.out.printf("%d%c", count, prev);
-				prev = c; // ¹®ÀÚ¿Í count ÃÊ±âÈ­
+				prev = c; // ï¿½ï¿½ï¿½Ú¿ï¿½ count ï¿½Ê±ï¿½È­
 				count = 1;
 			}
 		}
-		//¸¶Áö¸· Ãâ·Â¿¡ \nºüÁü
-		System.out.printf("%d%c\n", count, prev); // ¸¶Áö¸· ¹®ÀÚ Ãâ·Â
+		//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Â¿ï¿½ \nï¿½ï¿½ï¿½ï¿½
+		System.out.printf("%d%c\n", count, prev); // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½
 	}
 	public static String toRLE(String s) {
 		StringBuilder builder = new StringBuilder();
-		char prev = 0; // ÇöÀç ¹®ÀÚ
-		int count = 0; // ÇöÀç ¹®ÀÚ°¡ ¹Ýº¹µÈ ¼ö
+		char prev = 0; // ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+		int count = 0; // ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ú°ï¿½ ï¿½Ýºï¿½ï¿½ï¿½ ï¿½ï¿½
 		for (int i = 0; i < s.length(); ++i) {
 			char c = s.charAt(i);
-			if (c == prev) // µ¿ÀÏÇÑ ¹®ÀÚ¸¦ ¸¸³ª¸é count Áõ°¡
+			if (c == prev) // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ú¸ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ count ï¿½ï¿½ï¿½ï¿½
 				++count;
-			else { // »õ ¹®ÀÚ¸¦ ¸¸³ª¸é, ±âÁ¸ÀÇ ¹®ÀÚ¿Í count Ãâ·Â
+			else { // ï¿½ï¿½ ï¿½ï¿½ï¿½Ú¸ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½, ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ú¿ï¿½ count ï¿½ï¿½ï¿½
 				if (count > 0)
 					builder.append(count).append(prev);
-				prev = c; // ¹®ÀÚ¿Í count ÃÊ±âÈ­
+				prev = c; // ï¿½ï¿½ï¿½Ú¿ï¿½ count ï¿½Ê±ï¿½È­
 				count = 1;
 			}
 		}
-		builder.append(count).append(prev); // ¸¶Áö¸· ¹®ÀÚ Ãâ·Â
+		builder.append(count).append(prev); // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½
 		return builder.toString();
 	}
 

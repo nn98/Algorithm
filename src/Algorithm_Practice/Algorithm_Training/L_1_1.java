@@ -1,4 +1,4 @@
-package Algorithm_Training;
+package Algorithm_Practice.Algorithm_Training;
 
 import java.util.Arrays;
 import java.util.Scanner;
@@ -35,14 +35,14 @@ public class L_1_1 {
 }
 /*
 public class Exam01 {
-		static final int[] ±Ý¾× = { 50000, 10000, 5000, 1000, 500, 100, 50, 10, 1 };
+		static final int[] ï¿½Ý¾ï¿½ = { 50000, 10000, 5000, 1000, 500, 100, 50, 10, 1 };
 		public static int[] solution(int money) {
-			int[] °¹¼ö = new int[9];
-			for (int i = 0; i < ±Ý¾×.length; ++i) {
-				°¹¼ö[i] = money / ±Ý¾×[i];
-				money = money % ±Ý¾×[i];
+			int[] ï¿½ï¿½ï¿½ï¿½ = new int[9];
+			for (int i = 0; i < ï¿½Ý¾ï¿½.length; ++i) {
+				ï¿½ï¿½ï¿½ï¿½[i] = money / ï¿½Ý¾ï¿½[i];
+				money = money % ï¿½Ý¾ï¿½[i];
 			}
-			return °¹¼ö;
+			return ï¿½ï¿½ï¿½ï¿½;
 		}
 		public static void main(String[] args) {
 			int[] a = { 50237, 15000 };

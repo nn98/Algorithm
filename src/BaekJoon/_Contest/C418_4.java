@@ -1,5 +1,4 @@
-package _Contest;
-import java.util.Arrays;
+package BaekJoon._Contest;
 import java.util.Scanner;
 
 public class C418_4 {

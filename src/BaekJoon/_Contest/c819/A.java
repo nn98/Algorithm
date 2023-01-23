@@ -1,7 +1,6 @@
-package _Contest.c819;
+package BaekJoon._Contest.c819;
 
 import java.io.*;
-import java.util.*;
 
 public class A {
 

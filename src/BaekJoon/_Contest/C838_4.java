@@ -1,4 +1,4 @@
-package _Contest;
+package BaekJoon._Contest;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;

@@ -1,9 +1,9 @@
-package Algorithm_Training;
+package Algorithm_Practice.Algorithm_Training;
 
 public class K_Example3 {
 	//static <T> T getMaxValue(T[] a) {
-		// ¾Æ¸¶ ¹è¿­ÀÌ ¹ºÁö°¡ Á¦´ë·Î ¾È³ª¿Í¼­
-		// Á¤´ä 
+		// ï¿½Æ¸ï¿½ ï¿½è¿­ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½È³ï¿½ï¿½Í¼ï¿½
+		// ï¿½ï¿½ï¿½ï¿½ 
 	static <T extends Comparable<T>> T getMaxValue(T[] a) {
 		T max = a[0];
 		for (int i = 1; i < a.length; ++i)

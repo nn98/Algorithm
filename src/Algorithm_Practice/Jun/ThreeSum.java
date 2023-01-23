@@ -1,17 +1,15 @@
-package LeetCode.Jun;
+package Algorithm_Practice.Jun;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
-import java.util.HashSet;
 import java.util.List;
-import java.util.Set;
 
-//ÀÌ¸§ºÁ ¤µ¤²
+//ï¿½Ì¸ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 public class ThreeSum {
 	public static List<List<Integer>> threeSum(int[] nums) {
 		List<List<Integer>>r=new ArrayList();
-//		Áßº¹Á¦°Å x
+//		ï¿½ßºï¿½ï¿½ï¿½ï¿½ï¿½ x
 		int i=0,j,k,l=nums.length;
 		for(;i<l-2;i++)
 			for(j=i+1;j<l-1;j++)
@@ -23,7 +21,7 @@ public class ThreeSum {
 							r.add(list);
 					}
 		
-//		Áßº¹Á¦°Å o
+//		ï¿½ßºï¿½ï¿½ï¿½ï¿½ï¿½ o
 //		Set<Integer>s=new HashSet(Arrays.asList(nums));
 //		List<Integer>L=new ArrayList(s);
 //		System.out.println(s.toString());

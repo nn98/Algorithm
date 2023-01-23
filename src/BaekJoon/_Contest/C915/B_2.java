@@ -1,4 +1,4 @@
-package _Contest.C915;
+package BaekJoon._Contest.C915;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;

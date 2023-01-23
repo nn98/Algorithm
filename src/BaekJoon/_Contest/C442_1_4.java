@@ -1,4 +1,4 @@
-package _Contest;
+package BaekJoon._Contest;
 
 import java.util.Arrays;
 import java.util.Scanner;

@@ -1,7 +1,7 @@
 package BaekJoon._Before_Tagging;
 
 //https://dundung.tistory.com/6
-//LinkedList + Iterator b
+//_Lecture.LinkedList + Iterator b
 import java.io.*;
 public class P1406_C{
 	static class Node{

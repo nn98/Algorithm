@@ -1,4 +1,4 @@
-package Algorithm_Training;
+package Algorithm_Practice.Algorithm_Training;
 
 import java.util.Scanner;
 

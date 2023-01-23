@@ -1,4 +1,4 @@
-package Algorithm_Training;
+package Algorithm_Practice.Algorithm_Training;
 
 public class L_4_1 {
 

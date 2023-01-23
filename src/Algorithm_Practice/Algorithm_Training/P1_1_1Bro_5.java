@@ -1,4 +1,4 @@
-package Algorithm_Practice;
+package Algorithm_Practice.Algorithm_Training;
 
 import java.util.Arrays;
 import java.util.Scanner;
@@ -6,7 +6,7 @@ import java.util.Scanner;
 public class P1_1_1Bro_5 {
 
 	/*
-	 * 3,6,9 ±¦È÷ %3¾²¸é ÇÇº½
+	 * 3,6,9 ï¿½ï¿½ï¿½ï¿½ %3ï¿½ï¿½ï¿½ï¿½ ï¿½Çºï¿½
 	 */
 	static int solution(int number) {
 		int result=0;
@@ -80,8 +80,8 @@ public class P1_1_1Bro_5 {
 		// TODO Auto-generated method stub
 		Scanner s=new Scanner(System.in);
 		int input=s.nextInt();
-		// ÄÄÆÄÀÏ ¿¹½Ã-1ºÎÅÍ~¼Ö·ç¼Ç±îÁö°¡ ³ª¿À°í ¼Ö·ç¼Ç ½ÇÇàµÇ´Â°Ô ¾Æ´Ñ ¼Ö·ç¼Ç ½ÇÇà ÈÄ Ãâ·Â.
-		System.out.println("1ºÎÅÍ "+input+"±îÁö ÃÑ "+solution(input)+"¹øÀÇ ¼Õ»ÁÀ» ÃÄ¾ß ÇÕ´Ï´Ù.");
+		// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½-1ï¿½ï¿½ï¿½ï¿½~ï¿½Ö·ï¿½Ç±ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ö·ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Ç´Â°ï¿½ ï¿½Æ´ï¿½ ï¿½Ö·ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½.
+		System.out.println("1ï¿½ï¿½ï¿½ï¿½ "+input+"ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ "+solution(input)+"ï¿½ï¿½ï¿½ï¿½ ï¿½Õ»ï¿½ï¿½ï¿½ ï¿½Ä¾ï¿½ ï¿½Õ´Ï´ï¿½.");
 	}
 
 }

@@ -1,4 +1,4 @@
-package LeetCode.Jun;
+package Algorithm_Practice.Jun;
 public class TwoSum {
 	public static int[] twoSum(int[] nums, int target) {
         int i=0,r[]=new int[2],j,l=nums.length;

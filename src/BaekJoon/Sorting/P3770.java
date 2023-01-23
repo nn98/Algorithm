@@ -41,7 +41,7 @@ public class P3770 {
 					}
 				}
 			}
-			System.out.println("Test case "+m+": "+R);
+			System.out.println("Algorithm_Practice._Another.Test case "+m+": "+R);
 		}
 	}
 
