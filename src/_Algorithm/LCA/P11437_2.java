@@ -1,5 +1,5 @@
 package _Algorithm.LCA;
-// 내 틀린 풀이
+// 풀이 수정
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.InputStreamReader;
@@ -25,7 +25,7 @@ public class P11437_2 {
         no2serial[x] = sIndex;
 //        오답
         trip.add(no2serial[x]);
-        System.out.println(x);
+//        System.out.println(x);
         visited[x] = true;
         for (int i : list[x]) {
             if (!visited[i]) {
@@ -84,15 +84,15 @@ public class P11437_2 {
 //        for(int[]a:list) System.out.println(Arrays.toString(a));
 //        System.out.println();
         dfs(1);
-        for (List a : list) System.out.println(a);
-        System.out.println("\n" + Arrays.toString(locInTrip));
-        System.out.println("\n" + Arrays.toString(no2serial));
-        System.out.println("\n" + Arrays.toString(serial2no));
-        System.out.println("\n" + trip);
         length = trip.size();
         tree = new int[getTreeSize(length)];
         init(0, length - 1, 1);
-        System.out.println("\n" + Arrays.toString(tree));
+//        for (List a : list) System.out.println(a);
+//        System.out.println("\n" + Arrays.toString(locInTrip));
+//        System.out.println("\n" + Arrays.toString(no2serial));
+//        System.out.println("\n" + Arrays.toString(serial2no));
+//        System.out.println("\n" + trip);
+//        System.out.println("\n" + Arrays.toString(tree));
 //        for(int[]a:pa) System.out.println(Arrays.toString(a));
 //        System.out.println();
 //        for(int i=0;i<19;i++){
