@@ -43,6 +43,7 @@ public class P11437_C {
         int len = trip.size();
         int size = getTreeSize(len);
         tree = new int[size];
+        System.out.println(size);
         init(0, len - 1, 1);
 
         StringBuilder sb = new StringBuilder();
