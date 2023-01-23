@@ -1,4 +1,0 @@
-INDEX VERSION 1.131+C:\_Git\Algorithm_Practice._School.Algorithm\.metadata\.plugins\org.eclipse.jdt.core
-3194838509.index
-2874946944.index
-1865797976.index
