@@ -1,25 +1,19 @@
 package BaekJoon.DFS;
-// 고급알고리즘을 이애하기엔 부족하지만 때려맞추기만은 할수있다
-
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 import java.util.StringTokenizer;
-
 public class P14942_3 {
     static class Connect {
         int target;
         int value;
-
         Connect(int target, int value) {
             this.target = target;
             this.value = value;
         }
-
         @Override
         public String toString() {
             return "Connect{" +
@@ -33,18 +27,14 @@ public class P14942_3 {
     static List<Connect>[] cave;
 
     static void o(int x,int p,List<Connect> c) {
-//        System.out.println(x+" "+p+" "+c);
         history[x]=1;
         if(p<=power[x])result[x]=1;
         else{
-//            System.out.println("도달불가");
             int P=p;
             int i=0;
             for(;P>power[x];){
-//                System.out.println("- "+c.get(i).value);
                 P-=c.get(i).value;
                 i++;
-//                System.out.println("index: "+i);
             }
             result[x]=c.get(i-1).target;
         }
@@ -75,16 +65,7 @@ public class P14942_3 {
             cave[from].add(new Connect(to, length));
             cave[to].add(new Connect(from, length));
         }
-
-//        writer.write(Arrays.toString(power)+"\n");
-//        for(List l:cave)writer.write(l.toString()+"\n");
-//        for(i=0;++i<number;){
-//            history = new int[number];
-//            o(i,0,0);
-//            writer.write(result+"\n");
-//        }
         o(1,0,new ArrayList<Connect>());
-//        System.out.println(Arrays.toString(result));
         for(i=0;++i<number; writer.write(result[i]+"\n"));
         writer.flush();
     }
