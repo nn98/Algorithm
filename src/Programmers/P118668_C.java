@@ -41,3 +41,9 @@ public class P118668_C {
 		System.out.println(cost);
 	}
 }
+//	Executing pre-compile tasks...
+//		Running 'before' tasks
+//		Checking sources
+//		Parsing java… [Algorism]
+//		java: Multiple encodings set for module chunk Algorism
+//"x-windows-949" will be used by compiler

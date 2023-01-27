@@ -49,7 +49,7 @@ public class BaekJoonSolveTest {
 				}
 				in=r.readLine();
 			}
-			System.out.println("ÃÑ: "+a+", ´ë»ı¼¼: "+c+", ÆÄÀÌ½ã: "+p);
+			System.out.println("ì´: "+a+", ëŒ€ìƒì„¸: "+c+", íŒŒì´ì¬: "+p);
 			System.out.println(a+"\t"+p);
 			System.out.println(a+"\t"+c);
 		}
