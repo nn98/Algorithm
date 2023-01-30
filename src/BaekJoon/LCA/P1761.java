@@ -7,7 +7,7 @@ import java.io.OutputStreamWriter;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.StringTokenizer;
-public class P14942_3 {
+public class P1761 {
     static class Connect {
         int target;
         int value;
@@ -25,9 +25,9 @@ public class P14942_3 {
     }
 
     static int number, power[], i, from, to, length, history[],result[];
-    static List<BaekJoon.DFS.P14942_3.Connect>[] cave;
+    static List<Connect>[] cave;
 
-    static void o(int x,int p,List<BaekJoon.DFS.P14942_3.Connect> c) {
+    static void o(int x,int p,List<Connect> c) {
         history[x]=1;
         if(p<=power[x])result[x]=1;
         else{
@@ -39,7 +39,7 @@ public class P14942_3 {
             }
             result[x]=c.get(i-1).target;
         }
-        for(BaekJoon.DFS.P14942_3.Connect C:cave[x]){
+        for(Connect C:cave[x]){
             if(history[C.target]<1){
                 int s=c.size();
                 c.add(s,C);
@@ -57,16 +57,16 @@ public class P14942_3 {
         result = new int[number];
         power = new int[number];
         cave = new List[number];
-        for (i = 0; ++i < number; power[i] = Integer.parseInt(reader.readLine()), cave[i] = new ArrayList<>()) ;
+        for (i = 0; ++i < number; cave[i] = new ArrayList<>()) ;
         for (i = 1; ++i < number; ) {
             StringTokenizer st = new StringTokenizer(reader.readLine());
             from = Integer.parseInt(st.nextToken());
             to = Integer.parseInt(st.nextToken());
             length = Integer.parseInt(st.nextToken());
-            cave[from].add(new BaekJoon.DFS.P14942_3.Connect(to, length));
-            cave[to].add(new BaekJoon.DFS.P14942_3.Connect(from, length));
+            cave[from].add(new Connect(to, length));
+            cave[to].add(new Connect(from, length));
         }
-        o(1,0,new ArrayList<BaekJoon.DFS.P14942_3.Connect>());
+        o(1,0,new ArrayList<Connect>());
         for(i=0;++i<number; writer.write(result[i]+"\n"));
         writer.flush();
     }

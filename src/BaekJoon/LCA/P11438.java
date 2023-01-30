@@ -5,6 +5,7 @@ import java.io.BufferedWriter;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class P11438 {
@@ -70,6 +71,10 @@ public class P11438 {
         length = trip.size();
         tree = new int[getTreeSize(length)];
         init(0, length - 1, 1);
+        System.out.println(Arrays.toString(no2serial));
+        System.out.println(Arrays.toString(serial2no));
+        System.out.println(Arrays.toString(locInTrip));
+        System.out.println(Arrays.toString(tree));
         int vertexes = Integer.parseInt(reader.readLine());
         for (int k = 0; k < vertexes; k++) {
             String[] input = reader.readLine().split(" ");
