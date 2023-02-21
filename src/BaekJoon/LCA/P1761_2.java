@@ -3,6 +3,7 @@ package BaekJoon.LCA;
 트리에서 루트부터 어떤 정점 x까지의 거리를 dist[x]라고 합시다.
 그러면 정점 u부터 v까지 경로의 길이는 dist[u] + dist[v] - 2dist[lca(u, v)] 입니다.
 왜죠 시발?
+dp_dists[a] + dp_dists[b] - 2*dp_dists[LCA(a,b)] ㅅㅂ 왜나교
  */
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -10,7 +11,6 @@ import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 import java.util.ArrayList;
 import java.util.List;
-
 public class P1761_2 {
     static class Connection{
         int target;
