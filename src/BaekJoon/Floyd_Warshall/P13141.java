@@ -21,8 +21,8 @@ public class P13141 {
             s[i] = Integer.parseInt(a[0]);
             e[i] = Integer.parseInt(a[1]);
             X[i] = Integer.parseInt(a[2]);
-            d[s[i]][e[i]] = Math.min(d[s[i]][e[i]], (int) X[i]);
-            d[e[i]][s[i]] = Math.min(d[e[i]][s[i]], (int) X[i]);
+            d[s[i]][e[i]] = Math.min(d[s[i]][e[i]], X[i]);
+            d[e[i]][s[i]] = Math.min(d[e[i]][s[i]], X[i]);
 //            for (int[] x : d) System.out.println(Arrays.toString(x));
 //            System.out.println(Arrays.toString(s));
 //            System.out.println(Arrays.toString(e));
@@ -35,6 +35,6 @@ public class P13141 {
             for (j = 1; j <= m; j++) mx = Math.max(mx, d[i][s[j]] + d[i][e[j]] + X[j]);
             mn = Math.min(mn, mx);
         }
-        System.out.println(mn / 2 + "." + mn % 2 * 5);
+        System.out.print(mn / 2 + "." + mn % 2 * 5);
     }
 }
