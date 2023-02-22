@@ -2,7 +2,7 @@ package BaekJoon.Fenwick_Tree;
 
 import java.io.*;
 import java.util.*;
-
+// https://loosie.tistory.com/647
 public class P1321 {
     public static void main(String[] args) throws Exception {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
