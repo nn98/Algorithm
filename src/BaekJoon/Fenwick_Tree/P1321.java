@@ -1,5 +1,5 @@
 package BaekJoon.Fenwick_Tree;
-
+// 굳
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.InputStreamReader;
@@ -28,14 +28,14 @@ public class P1321 {
                 tree.add(i, j);
 //                System.out.println(Arrays.toString(tree.tree));
             } else {
-//                case 1: O(n)
+//                case 1: O(n)      - TimeOut
 //                for (j = 0; j++ < n; ) {
 //                    if (tree.sum(j) >= i) {
 //                        bw.write(j + "\n");
 //                        break;
 //                    }
 //                }
-//                case 2: O(logN)
+//                case 2: O(logN)   - AC
                 int left = 1, right = n, mid = (left + right) / 2;
                 while (true) {
 //                    System.out.println(left+" "+right+" "+mid);
