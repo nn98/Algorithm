@@ -1,11 +1,7 @@
 package BaekJoon.Fenwick_Tree;
-// 굳
-import java.io.BufferedReader;
-import java.io.BufferedWriter;
-import java.io.InputStreamReader;
-import java.io.OutputStreamWriter;
-import java.util.Arrays;
-import java.util.StringTokenizer;
+
+import java.io.*;
+import java.util.*;
 
 public class P1321 {
     public static void main(String[] args) throws Exception {
@@ -15,9 +11,6 @@ public class P1321 {
         FenwickTree tree = new FenwickTree(n);
         StringTokenizer st = new StringTokenizer(br.readLine());
         for (; i < n; tree.add(++i, Integer.parseInt(st.nextToken()))) ;
-//        System.out.println(Arrays.toString(tree.tree));
-//        for (i = 0; i++ < n; System.out.println(tree.sum(i))) ;
-//        for (i = 0; i++ < n; System.out.println(tree.sum(i) - tree.sum(i - 1))) ;
         m = Integer.parseInt(br.readLine());
         for (; m-- > 0; ) {
             st = new StringTokenizer(br.readLine());
@@ -26,27 +19,16 @@ public class P1321 {
             if (f == 1) {
                 j = Integer.parseInt(st.nextToken());
                 tree.add(i, j);
-//                System.out.println(Arrays.toString(tree.tree));
             } else {
-//                case 1: O(n)      - TimeOut
-//                for (j = 0; j++ < n; ) {
-//                    if (tree.sum(j) >= i) {
-//                        bw.write(j + "\n");
-//                        break;
-//                    }
-//                }
-//                case 2: O(logN)   - AC
                 int left = 1, right = n, mid = (left + right) / 2;
                 while (true) {
-//                    System.out.println(left+" "+right+" "+mid);
                     if (tree.sum(mid) >= i) {
                         if (tree.sum(mid - 1) < i) {
                             bw.write(mid + "\n");
                             break;
                         }
                         right = mid - 1;
-                    }
-                    else {
+                    } else {
                         left = mid + 1;
                     }
                     mid = (left + right) / 2;
