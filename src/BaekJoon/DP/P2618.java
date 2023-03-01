@@ -25,7 +25,7 @@ public class P2618 {
     static StringBuffer rRoute;
 
     static void o(int x1, int y1, int x2, int y2, int index, int value, StringBuffer route) {
-        System.out.println(x1 + " " + y1 + " " + x2 + " " + y2 + " " + index + " " + value + "\n" + route);
+//        System.out.println(x1 + " " + y1 + " " + x2 + " " + y2 + " " + index + " " + value + "\n" + route);
         if (index == m) {
             if (r < 0 | r > value) {
                 r = value;
