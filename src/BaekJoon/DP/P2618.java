@@ -22,6 +22,7 @@ public class P2618 {
     static int[][] a;
     static boolean[][] h;
     static List<Coordinate> list = new ArrayList<>();
+//    Memory over
     static StringBuffer rRoute;
 
     static void o(int x1, int y1, int x2, int y2, int index, int value, StringBuffer route) {
