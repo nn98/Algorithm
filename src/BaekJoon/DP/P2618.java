@@ -19,14 +19,14 @@ public class P2618 {
         }
     }
 
-    static int n, m, i, r = -1;
+    static int n, m, i;
     static int[][] a;
     static Integer[][] h;
+    static StringBuffer[][] r;
     static List<Coordinate> list = new ArrayList<>();
-    static char[] route, rRoute;
 
     //    static void o(int x1, int y1, int x2, int y2, int index, int value) {
-////        System.out.println(x1 + " " + y1 + " " + x2 + " " + y2 + " " + index + " " + value + "\n" + route);
+//////        System.out.println(x1 + " " + y1 + " " + x2 + " " + y2 + " " + index + " " + value + "\n" + route);
 //        if (index == m) {
 //            if (r < 0 | r > value) {
 //                r = value;
@@ -43,17 +43,18 @@ public class P2618 {
 //        o(x1, y1, target.x, target.y, index + 1, value + distance);
 //    }
     static int o(int x1, int x2) {
-        System.out.println(x1 + 1 + " " + (x2 + 1));
+//        System.out.println(x1 + 1 + " " + (x2 + 1));
         if (h[x1 + 1][x2 + 1] != null) {
-            System.out.println("\t" + (x1 + 1) + " " + (x2 + 1));
-            for (Integer[] a : h) System.out.println("\t\t" + Arrays.toString(a));
+//            System.out.println("\t" + (x1 + 1) + " " + (x2 + 1));
+//            for (Integer[] a : h) System.out.println("\t\t" + Arrays.toString(a));
             return h[x1 + 1][x2 + 1];
         }
         int x = (x1 > x2 ? x1 : x2) + 1;
         if (x == m) {
             h[x1 + 1][x2 + 1] = 0;
-            System.out.println("\t" + (x1 + 1) + " " + (x2 + 1));
-            for (Integer[] a : h) System.out.println("\t\t" + Arrays.toString(a));
+            r[x1 + 1][x2 + 1] = new StringBuffer();
+//            System.out.println("\t" + (x1 + 1) + " " + (x2 + 1));
+//            for (Integer[] a : h) System.out.println("\t\t" + Arrays.toString(a));
 //            return h[x1 + 1][x2 + 1] = 0;
             return h[x1 + 1][x2 + 1];
         }
@@ -71,13 +72,19 @@ public class P2618 {
             j2 = target.y;
         }
         int distance1 = Math.abs(i - i1) + Math.abs(j - j1) + o(x, x2);
-        System.out.println("\td1: "+distance1);
+//        System.out.println("\td1: " + distance1);
         int distance2 = Math.abs(i - i2) + Math.abs(j - j2) + o(x1, x);
-        System.out.println("\td2: "+distance2);
-        h[x1 + 1][x2 + 1] = Math.min(distance1, distance2);
-//        System.out.println("\t"+x1 + " " + x2);
-        System.out.println("\t" + (x1 + 1) + " " + (x2 + 1));
-        for (Integer[] a : h) System.out.println("\t\t" + Arrays.toString(a));
+//        System.out.println("\td2: " + distance2);
+        if (distance1 < distance2) {
+            r[x1 + 1][x2 + 1] = r[x + 1][x2 + 1].append("1");
+            h[x1 + 1][x2 + 1] = distance1;
+        } else {
+            r[x1 + 1][x2 + 1] = r[x1 + 1][x + 1].append("2");
+            h[x1 + 1][x2 + 1] = distance2;
+        }
+////        System.out.println("\t"+x1 + " " + x2);
+//        System.out.println("\t" + (x1 + 1) + " " + (x2 + 1));
+//        for (Integer[] a : h) System.out.println("\t\t" + Arrays.toString(a));
         return h[x1 + 1][x2 + 1];
 //        return h[x1+1][x2+1]=Math.min(distance1,distance2);
     }
@@ -88,15 +95,17 @@ public class P2618 {
         n = Integer.parseInt(reader.readLine());
         m = Integer.parseInt(reader.readLine());
         a = new int[n][n];
-        route = new char[m];
         h = new Integer[m + 1][m + 1];
+        r = new StringBuffer[m + 1][m + 1];
         for (; i < m; i++) {
             String[] input = reader.readLine().split(" ");
             list.add(new Coordinate(Integer.parseInt(input[0]), Integer.parseInt(input[1])));
         }
-        r = o(-1, -1);
-        writer.write(r + "\n");
+        writer.write(o(-1, -1) + "\n");
 //        for (char c : rRoute) writer.write(c + "\n");
+//        for (String[] a : r) System.out.println(Arrays.toString(a));
+        StringBuffer result=r[0][0].reverse();
+        for(i=0;i<result.length(); writer.write(result.charAt(i++)+"\n"));
         writer.flush();
     }
 }
