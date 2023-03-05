@@ -9,6 +9,8 @@ public class P2494_C {
     static int n, i, a[], b[], h[][], r;
 
     static int o(int x, int v) {
+        System.out.println(x + " " + v);
+        for (int[] X : h) System.out.println("\t"+Arrays.toString(X));
         if(x==n) return 0;
         if(h[x][v]!=0) return h[x][v];
         int ch=(a[x]+v)%10;
@@ -17,6 +19,7 @@ public class P2494_C {
         int r=(di>=0)?10-di:-di;
         int le=l+o(x+1,(v+l)%10);
         int ri=r+o(x+1,v);
+        System.out.printf("\tl: %d r: %d, left: %d right: %d\n", l, r, le, ri);
         return h[x][v]=Math.min(le,ri);
     }
 
