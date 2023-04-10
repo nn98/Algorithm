@@ -1,2 +1,5 @@
-package BaekJoon.Simple_Implementation;public class P27939 {
+package BaekJoon.Simple_Implementation;
+
+public class P27939 {
+
 }
