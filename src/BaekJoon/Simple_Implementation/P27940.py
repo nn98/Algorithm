@@ -8,3 +8,4 @@ for i in range(m):
         exit()
 print(-1)
 # python3 로는 100,000 10만번도 시간초과가 나나
+# 13m08s7
