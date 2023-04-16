@@ -1,5 +1,7 @@
+package BaekJoon.Simple_Implementation;
+
 import java.util.Scanner;
-public class Main {
+public class P25495 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int N = sc.nextInt(); // 핸드폰에 연결한 횟수
