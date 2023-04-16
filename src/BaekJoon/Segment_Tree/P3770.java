@@ -27,7 +27,7 @@ public class P3770 {
     }
 
     static int solution() {
-
+        return 0;
     }
 
     public static void main(String[] args) {
