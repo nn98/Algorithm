@@ -29,8 +29,7 @@ public class P3770_2 {
     static int init() throws Exception {
         int caseCount = Integer.parseInt(IO.reader.readLine());
         for (int i = 0; i < caseCount; i++) {
-//            시발
-            IO.write(String.format("Test Case %d: ", i + 1));
+            IO.write(String.format("Test case %d: ", i + 1));
             solution();
         }
         return 0;
@@ -61,9 +60,6 @@ public class P3770_2 {
                 long inversion = sum(m) - sum(value);
                 res += inversion;
                 add(value, 1);
-                System.out.println(String.format("East: %d, West: %d",key,value));
-                System.out.println(String.format("Sum n: %d, Sum east: %d",sum(m),sum(value)));
-                System.out.println(Arrays.toString(tree) + "\t" + inversion);
             }
         }
         IO.write(res + "\n");
@@ -86,11 +82,7 @@ public class P3770_2 {
     }
 
     public static void main(String[] args) throws Exception {
-
         init();
         IO.flush();
-
     }
-
-
 }
