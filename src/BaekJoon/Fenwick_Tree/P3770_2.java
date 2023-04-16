@@ -29,6 +29,7 @@ public class P3770_2 {
     static int init() throws Exception {
         int caseCount = Integer.parseInt(IO.reader.readLine());
         for (int i = 0; i < caseCount; i++) {
+//            시발
             IO.write(String.format("Test Case %d: ", i + 1));
             solution();
         }
@@ -40,7 +41,7 @@ public class P3770_2 {
         int n = Integer.parseInt(tokenizer.nextToken());
         int m = Integer.parseInt(tokenizer.nextToken());
         int k = Integer.parseInt(tokenizer.nextToken());
-        tree = new int[n + 1];
+        tree = new int[m + 1];
         HashMap<Integer, List<Integer>> map = new HashMap<Integer, List<Integer>>();
         for (int i = 0; i < k; i++) {
             tokenizer = new StringTokenizer(IO.readLine());
@@ -53,22 +54,23 @@ public class P3770_2 {
         }
         List<Integer> keys = new ArrayList<>(map.keySet());
         Collections.sort(keys);
-        int res = 0;
+        long res = 0;
         for (int key : keys) {
+            Collections.sort(map.get(key));
             for (int value : map.get(key)) {
-                System.out.println(String.format("East: %d, West: %d",key,value));
-                System.out.println(String.format("Sum n: %d, Sum east: %d",sum(n),sum(key)));
-                int inversion = sum(n) - sum(key);
+                long inversion = sum(m) - sum(value);
                 res += inversion;
-                add(key, 1);
+                add(value, 1);
+                System.out.println(String.format("East: %d, West: %d",key,value));
+                System.out.println(String.format("Sum n: %d, Sum east: %d",sum(m),sum(value)));
                 System.out.println(Arrays.toString(tree) + "\t" + inversion);
             }
         }
         IO.write(res + "\n");
     }
 
-    static int sum(int idx) {
-        int res = 0;
+    static long sum(int idx) {
+        long res = 0;
         while (idx > 0) {
             res += tree[idx];
             idx &= (idx - 1);
