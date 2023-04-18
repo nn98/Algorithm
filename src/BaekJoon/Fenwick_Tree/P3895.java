@@ -1,5 +1,7 @@
 package BaekJoon.Fenwick_Tree;
 
+// 일단 하고 시간초과를 생각해야
+
 import java.io.*;
 import java.util.*;
 
