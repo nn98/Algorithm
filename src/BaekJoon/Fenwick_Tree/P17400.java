@@ -25,23 +25,12 @@ public class P17400 {
         int n = Integer.parseInt(st.nextToken());
         int q = Integer.parseInt(st.nextToken());
         flags = n;
-//        크기는 /2, 홀수배열은 2로 나눈 나머지를 더해서 계산
         oL = flags / 2 + flags % 2 + 1;
         eL = flags / 2 + 1;
-        /*
-        실질적 인덱스
-        X - 나눈 나머지가 있으면 0 없으면 1 << 비효율적
-        걍 거꾸로 뒤집어서 위가 짝수 아래가 홀수
-        [0, 1, 1, 9]
-        [3, 4, 5, 0]
-        염병 2가 0인덱스로드가네 2부터?
-        Y - 2로 나눈 값 +1 (1부터 시작)
-        ex) 7 > flag[0][4]
-         */
         flag[0] = new int[oL];
         flag[1] = new int[eL];
         st = new StringTokenizer(reader.readLine());
-        for (int i = 1; i++ <= flags; ) { // i++ < flags 로 1 ~ flags
+        for (int i = 1; i++ <= flags; ) { // 0 홀 1 짝 0 홀 ... + 제일 앞 비우기 == i=1; i++
             flag[i % 2][i / 2] = Integer.parseInt(st.nextToken());
         }
         System.out.println(Arrays.toString(flag[0]));
