@@ -30,13 +30,13 @@ public class CountingInversion {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         BufferedWriter writer = new BufferedWriter(new OutputStreamWriter(System.out));
         int size = Integer.parseInt(reader.readLine());
-        tree = new long[size+1];
+        tree = new long[size + 1];
         long result = 0;
-        StringTokenizer stringTokenizer =new StringTokenizer(reader.readLine());
+        StringTokenizer stringTokenizer = new StringTokenizer(reader.readLine());
         for (long i = 1; i <= size; i++) {
             int value = Integer.parseInt(stringTokenizer.nextToken());
             long inversion = sum(size) - sum(value);
-            add(value,1);
+            add(value, 1);
 //            System.out.println(Arrays.toString(tree)+" "+sum(size)+" "+sum(value)+" "+inversion);
             result += inversion;
         }

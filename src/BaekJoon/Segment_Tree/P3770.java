@@ -13,9 +13,11 @@ public class P3770 {
         static String readLine() throws Exception {
             return reader.readLine();
         }
+
         static void write(String line) throws Exception {
             writer.write(line);
         }
+
         static void flush(String line) throws Exception {
             writer.write(line);
         }
