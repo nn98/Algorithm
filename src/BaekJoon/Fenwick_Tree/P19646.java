@@ -1,5 +1,5 @@
 package BaekJoon.Fenwick_Tree;
-
+// ㅅㅂ 시간초과가 날 수도 아닐수도 있습니다
 import java.io.*;
 import java.util.*;
 
