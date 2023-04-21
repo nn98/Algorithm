@@ -1,12 +1,9 @@
 package BaekJoon.Fenwick_Tree;
 
-import BaekJoon.Segment_Tree.P3770;
-
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
-import java.util.Arrays;
 import java.util.StringTokenizer;
 
 public class P19646 {
@@ -60,9 +57,7 @@ public class P19646 {
         tree = new int[size + 1];
         IO.readLineToTokenizer();
         for (int i = 1; i <= size; i++) {
-//            tree[i] = Integer.parseInt(IO.nextToken());
             add(i, Integer.parseInt(IO.nextToken()));
-//            System.out.println(Arrays.toString(tree));
         }
         removeIndex = new int[size];
         IO.readLineToTokenizer();
@@ -88,14 +83,12 @@ public class P19646 {
     }
 
     static int find(int from, int to, int val) {
-//        System.out.print(from + " " + to + " " + val);
         int mid = (from + to) / 2;
         int midSum = sum(mid);
         int checkZero = 0;
         while (midSum != 0 && midSum == sum(mid - (checkZero + 1))) {
             checkZero += 1;
         }
-//        System.out.println(" cZ: " + checkZero);
         mid -= checkZero;
         if (midSum >= val) {
             if (sum(mid - 1) < val) {
@@ -109,9 +102,7 @@ public class P19646 {
 
     static void solution() {
         for (int i = 0; i < size; i++) {
-//            System.out.println(Arrays.toString(tree));
             int res = find(1, size, removeIndex[i]);
-//            System.out.println(res);
             IO.write(res + " ");
             add(res, -(sum(res) - sum(res - 1)));
         }
