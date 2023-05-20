@@ -22,6 +22,6 @@ public class P13222 {
     }
 
     public static void main(String[] args) throws Exception {
-        new Main().solution();
+        new P13222().solution();
     }
 }
