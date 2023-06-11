@@ -1,31 +1,50 @@
-n = int(input())
+import sys
 
-INF = int(1e9)
-dp = [[INF] * (1 << n) for _ in range(n)]
+def solution(N, W, dp):
+    for i in range(N):
+        for j in range(N):
+            if not W[i][j]:
+                W[i][j] = float('inf')
 
+    for i in range(1, N):
+        dp[i][0] = W[i][0]
 
-def dfs(x, visited):
-    if visited == (1 << n) - 1:
-        if graph[x][0]:
-            return graph[x][0]
-        else:
-            return INF
+    for k in range(1, N - 1):
+        for route in range(1, size):
+            if count(route, N) == k:
+                for i in range(1, N):
+                    if not isin(i, route):
+                        dp[i][route] = get_minimum(N, W, i, route, dp)
 
-    if dp[x][visited] != INF:
-        return dp[x][visited]
+    dp[0][size - 1] = get_minimum(N, W, 0, size - 1, dp)
+    
+    return dp[0][size - 1]
 
-    for i in range(1, n):
-        if not graph[x][i]:
-            continue
-        if visited & (1 << i):
-            continue
+def count(route, N):
+    cnt = 0
+    for n in range(1, N):
+        if route & (1 << n - 1) != 0:
+            cnt += 1
+    return cnt
 
-        dp[x][visited] = min(dp[x][visited], dfs(i, visited | (1 << i)) + graph[x][i])
-    return dp[x][visited]
+def isin(i, route):
+    if route & (1 << i - 1) != 0:
+        return True
+    else:
+        return False
 
+def get_minimum(N, W, i, route, dp):
+    minimum_dist = float('inf')
+    for j in range(1, N):
+        if isin(j, route):
+            before_route = route & ~(1 << j - 1)
+            dist = W[i][j] + dp[j][before_route]
+            if minimum_dist > dist:
+                minimum_dist = dist
+    return minimum_dist
 
-graph = []
-for i in range(n):
-    graph.append(list(map(int, input().split())))
-
-print(dfs(0, 1))
+N = int(sys.stdin.readline())
+W = [list((map(int, sys.stdin.readline().split()))) for _ in range(N)]
+size = 2 ** (N - 1)
+dp = [[float('inf')] * size for _ in range(N)]
+print(solution(N, W, dp))
