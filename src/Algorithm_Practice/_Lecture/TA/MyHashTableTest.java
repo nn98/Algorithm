@@ -1,4 +1,4 @@
-package Algorithm_Practice._School.TA;
+package Algorithm_Practice._Lecture.TA;
 // 정수형 해시 테이블인 MyHashTable 클래스를 정의하고 사용하는 프로그램
 public class MyHashTableTest {
 	public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package Algorithm_Practice._School.Algorithm;
+package Algorithm_Practice._Lecture.Algorithm;
 
 public class Test {
 	static void print(int[] a, int index) {

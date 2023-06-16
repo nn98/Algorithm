@@ -1,5 +1,5 @@
 //학생 코드 테스트용
-package Algorithm_Practice._School.TA;
+package Algorithm_Practice._Lecture.TA;
 import java.util.Random;
 
 public class ReservationSort {

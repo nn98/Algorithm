@@ -1,4 +1,4 @@
-package Algorithm_Practice._School.SWPJ_2022;
+package Algorithm_Practice._Lecture.SWPJ_2022;
 
 import java.sql.Timestamp;
 import java.util.*;

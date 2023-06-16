@@ -1,4 +1,4 @@
-package Algorithm_Practice._School.Algorithm;
+package Algorithm_Practice._Lecture.Algorithm;
 import java.util.Arrays;
 
 public class QuickSort_Partition {

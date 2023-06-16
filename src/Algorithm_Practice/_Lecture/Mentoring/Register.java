@@ -1,4 +1,4 @@
-package Algorithm_Practice._School.Mentoring;
+package Algorithm_Practice._Lecture.Mentoring;
 
 public class Register {
 	private String name; //�������̸�

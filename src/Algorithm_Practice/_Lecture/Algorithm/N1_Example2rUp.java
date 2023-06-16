@@ -1,4 +1,4 @@
-package Algorithm_Practice._School.Algorithm;
+package Algorithm_Practice._Lecture.Algorithm;
 
 public class N1_Example2rUp {
 	static void print(int[] a) {

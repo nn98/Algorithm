@@ -1,4 +1,4 @@
-package Algorithm_Practice._School.Algorithm_03_1;
+package Algorithm_Practice._Lecture.Algorithm_03_1;
 
 public class Example2 {
 	// �迭 a���� ���� ���� ���� ��ġ(index)�� �����Ѵ�.

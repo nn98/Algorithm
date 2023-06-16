@@ -1,4 +1,4 @@
-package Algorithm_Practice._School.Algorithm_03_2;
+package Algorithm_Practice._Lecture.Algorithm_03_2;
 
 public class Example1 {
 

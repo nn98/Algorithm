@@ -1,4 +1,4 @@
-package Algorithm_Practice._School;
+package Algorithm_Practice._Lecture;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

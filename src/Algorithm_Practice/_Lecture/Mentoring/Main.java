@@ -1,4 +1,4 @@
-package Algorithm_Practice._School.Mentoring;
+package Algorithm_Practice._Lecture.Mentoring;
 
 import java.util.ArrayList;
 import java.util.Iterator;

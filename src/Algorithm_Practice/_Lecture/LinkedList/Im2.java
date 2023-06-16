@@ -1,4 +1,4 @@
-package Algorithm_Practice._School.LinkedList;
+package Algorithm_Practice._Lecture.LinkedList;
 
 public class Im2 {
 	//3) prev ���� ���� insertOrdered �޼ҵ� ���� �����ϴ�.

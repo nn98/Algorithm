@@ -1,4 +1,4 @@
-package Algorithm_Practice._School.TA;
+package Algorithm_Practice._Lecture.TA;
 public class MyHashTable {
 	private class Node { // 연결리스트 노드 구조
 		int key;

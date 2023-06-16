@@ -1,4 +1,4 @@
-package Algorithm_Practice._School.TA;
+package Algorithm_Practice._Lecture.TA;
 
 public class MyHashTableTest0 {
 	static class MyHashTable {

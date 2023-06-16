@@ -1,4 +1,4 @@
-package Algorithm_Practice._School.TA;
+package Algorithm_Practice._Lecture.TA;
 
 class MyBinarySearchTree {
 	//루트노드를 가르키는 변수 root

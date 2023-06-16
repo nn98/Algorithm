@@ -1,4 +1,4 @@
-package Algorithm_Practice._School.Algorithm_01;
+package Algorithm_Practice._Lecture.Algorithm_01;
 
 import java.util.Random;
 

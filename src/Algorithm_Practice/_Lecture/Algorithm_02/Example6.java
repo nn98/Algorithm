@@ -1,4 +1,4 @@
-package Algorithm_Practice._School.Algorithm_02;
+package Algorithm_Practice._Lecture.Algorithm_02;
 
 import java.util.Scanner;
 public class Example6 {
