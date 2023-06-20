@@ -76,6 +76,7 @@
             - 도커 버전 확인 <br> docker version
             - 실행중인 컨테이너 확인 <br> docker ps
             - 최신버전의 nginx 이미지 기반 컨테이너 생성/싱행 <br> docker run -p 4567:80 -d nginx:latest <br> [결과 확인](127.0.0.1:4567) 호스트 포트:컨테이너 포트
+            - 
   </details>
 
   </details>
