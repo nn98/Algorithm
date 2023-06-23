@@ -87,6 +87,10 @@
             - 설치된 앱을 실행 || cmd 등에서 wsl -d Ubuntu 실행
             - __Shift+Insert__ 안먹음; 우클릭으로 붙여넣기 가능
             - __Nginx__ 수정했으면 꼭 재시작
+            - iptables 
+              - `!ERR` sudo iptables -I INPUT 5 -i ens3 -p tcp --dport 9818 -m state --state NEW,ESTABLISHED -j ACCEPT 
+              - `!ERRMSG` iptables: Index of insertion too big.
+              - `!SOL`sudo iptables -A INPUT -i ens3 -p tcp --dport 9818 -m state --state NEW,ESTABLISHED -j ACCEPT  
       </details>
       <details>
         <summary>th</summary>
