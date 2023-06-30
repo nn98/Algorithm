@@ -23,3 +23,4 @@ for bit in range(1 << n):
         #T가 더 많을 경우 뒤집기
         tsum += min(cnt, n-cnt)
     res = min(res, tsum)
+print(res)
