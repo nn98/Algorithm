@@ -93,6 +93,18 @@
               - `!SOL`sudo iptables -A INPUT -i ens3 -p tcp --dport 9818 -m state --state NEW,ESTABLISHED -j ACCEPT  
       </details>
       <details>
+        <summary>28th</summary>
+      
+        - Ubuntu
+          - Symbolic Link
+            - *윈도우의 바로가기 개념? 참조값?*
+            - !https용 pem 파일 복사/압축/압축해제/이동 등 작업 시도했더니 관련 오류 발생
+            - `심볼릭 링크를 생성할 수없습니다` `cannot operate on dangling symlink`
+            - 권한문제인줄 알았더니 심볼릭링크문제
+            - letsencrypt key 파일이 자동 갱신될때마다 아카이브 폴더에 새로운 pem 파일 생성.
+            - 생성된 최신 파일을 참조하는 pem 파일을 프로젝트에서 사용
+      </details>
+      <details>
         <summary>th</summary>
       
         - Theme
