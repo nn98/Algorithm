@@ -33,3 +33,10 @@ hs_err_pid*
 .idea/
 .org.*
 *.iml
+
+# IntelliJ Java class
+out/
+
+# IntelliJ Python 가상환경(Virtual Environment)
+venv/
+
