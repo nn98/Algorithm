@@ -19,7 +19,7 @@ A > B > C               A > B > C
 ~~~
 [오늘의 선생님](https://velog.io/@kimdukbae/BOJ-14725-%EA%B0%9C%EB%AF%B8%EA%B5%B4-Python)  
 ❗ 구조는 동일한데 문법이 신기하다
-~~~pycon
+~~~python
 def f(c,d):
  for e in sorted(c):print('--'*d+e);f(c[e],d+1)
 t={}
@@ -30,3 +30,12 @@ f(t,0)
 ~~~
 >이모티콘 박아가며 풀이 작성하니 웃기네
 </details>
+
+<details><summary>P17398</summary>
+
+2023-07-27
+- <u>***Data Structure***</u>
+- Union find
+[오늘의 선생님](https://atgane.tistory.com/72)  
+</details>
+
