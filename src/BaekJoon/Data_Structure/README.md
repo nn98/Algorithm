@@ -44,6 +44,6 @@ f(t,0)
 2023-08-12
 - <u>***Data Structure***</u>
 - Sparse Table
-[오 선]([https://atgane.tistory.com/72](https://rapun7el.tistory.com/220)https://rapun7el.tistory.com/220)  
+[오 선](https://atgane.tistory.com/72](https://rapun7el.tistory.com/220)https://rapun7el.tistory.com/220)  
 </details>
 
