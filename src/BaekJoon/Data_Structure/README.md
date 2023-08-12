@@ -39,3 +39,11 @@ f(t,0)
 [오늘의 선생님](https://atgane.tistory.com/72)  
 </details>
 
+<details><summary>P17398</summary>
+
+2023-08-12
+- <u>***Data Structure***</u>
+- Sparse Table
+[오 선]([https://atgane.tistory.com/72](https://rapun7el.tistory.com/220)https://rapun7el.tistory.com/220)  
+</details>
+
