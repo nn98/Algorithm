@@ -39,7 +39,7 @@ f(t,0)
 [오늘의 선생님](https://atgane.tistory.com/72)  
 </details>
 
-<details><summary>P17398</summary>
+<details><summary>P3117</summary>
 
 2023-08-12
 - <u>***Data Structure***</u>
