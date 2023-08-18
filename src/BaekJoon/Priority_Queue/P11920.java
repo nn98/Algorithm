@@ -21,7 +21,7 @@ public class P11920 {
                 writer.write(queue.poll() + " ");
             }
         }
-        while (queue.isEmpty()) {
+        while (!queue.isEmpty()) {
             writer.write(queue.poll() + " ");
         }
         writer.flush();
