@@ -1,7 +1,8 @@
+package BaekJoon.Math;
 import java.io.*;
 import java.util.HashMap;
 
-public class Main {
+public class P2086 {
     BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
     BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
@@ -61,7 +62,7 @@ public class Main {
     }
 
     public static void main(String[] args) throws IOException {
-        Main main = new Main();
+        P2086 main = new P2086();
         main.solve();
     }
 }
