@@ -1,4 +1,4 @@
-package Algorithm_Practice.ssafy;
+package Coding_Test.SSAFY.Test_2023-01-24;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
