@@ -19,6 +19,6 @@ def main():
             if j == 2:
                 dp_min[i][j] = min(dp_min[i-1][1], dp_min[i-1][2]) + matrix[i][j]
                 dp_max[i][j] = max(dp_max[i-1][1], dp_max[i-1][2]) + matrix[i][j]
-    print(min(dp_min[n-1]), max(dp_max[n-1]))
+    print(max(dp_max[n-1]), min(dp_min[n-1]))
 if __name__ == "__main__":
     main()
