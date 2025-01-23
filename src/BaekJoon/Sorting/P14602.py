@@ -15,7 +15,7 @@ def main():
                 arr.extend(matrix[i+w-1][j:j+w])
             temp = arr.copy()
             temp.sort()
-            print('i:',i,'j:',j,'arr:',arr)
+            # print('i:',i,'j:',j,'arr:',arr)
             result[i][j] = temp[w*w//2]
             arr = arr[w:]
     print('\n'.join(' '.join(map(str, val)) for val in result))
