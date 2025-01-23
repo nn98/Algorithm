@@ -10,13 +10,13 @@ def main():
         for i in range(n-w+1):
             if not arr:
                 for k in range(w):
-                    arr.extend(matrix[i][j:j+w])
+                    arr.extend(matrix[i+k][j:j+w])
             else:
-                arr.extend(matrix[i][j:j+w])
+                arr.extend(matrix[i+w-1][j:j+w])
             temp = arr.copy()
             temp.sort()
             print('i:',i,'j:',j,'arr:',arr)
-            result[j][i] = temp[w//2]
+            result[i][j] = temp[w*w//2]
             arr = arr[w:]
     print('\n'.join(' '.join(map(str, val)) for val in result))
 
