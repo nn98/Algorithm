@@ -27,7 +27,7 @@ def main():
                 if board[now+i]:
                     dp[board[now+i]] = count
                     q.append((board[now+i], count))
-    print(dp)
+    print(dp[100])
 
 if __name__ == "__main__":
     main()
