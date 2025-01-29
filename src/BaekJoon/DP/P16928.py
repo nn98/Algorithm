@@ -14,19 +14,20 @@ def main():
         board[start] = end
     q = deque()
     q.append((1,0))
+    dp[1] = 0
     while q:
         now, count = q.popleft()
         if dp[now] < count:
             continue
         count += 1
         for i in range(1,7):
-            if now+i > 100: break
-            if dp[now+i] > count:
-                dp[now+i] = count
-                q.append((now+i, count))
-                if board[now+i]:
-                    dp[board[now+i]] = count
-                    q.append((board[now+i], count))
+            next_pos = now + i
+            if next_pos > 100: continue
+            while board[next_pos]:
+                next_pos = board[next_pos]
+            if dp[next_pos] > count:
+                dp[next_pos] = count
+                q.append((next_pos, count))
     print(dp[100])
 
 if __name__ == "__main__":
