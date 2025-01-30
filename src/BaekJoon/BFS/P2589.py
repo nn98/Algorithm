@@ -5,7 +5,7 @@ readline = sys.stdin.readline
 def main():
     n, m = map(int,readline().split())
     ans = 0
-    treasure = [readline().split() for _ in range(n)]
+    treasure = [readline() for _ in range(n)]
     hist = [[1e9]*m for _ in range(n)]
     for i in range(n):
         for j in range(m):
