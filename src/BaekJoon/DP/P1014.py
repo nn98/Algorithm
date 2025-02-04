@@ -32,7 +32,7 @@ def main():
             if next_idx < m:
                 # 더 큰 값으로 업데이트 가능한 경우
                 if dp[next_idx] < dp[idx] + val[next_idx]:
-                    print(dp)
+                    # print(dp)
                     dp[next_idx] = dp[idx] + val[next_idx]
                     q.append(next_idx)
 
@@ -40,12 +40,12 @@ def main():
             next_idx = idx + 3
             if next_idx < m:
                 if dp[next_idx] < dp[idx] + val[next_idx]:
-                    print(dp)
+                    # print(dp)
                     dp[next_idx] = dp[idx] + val[next_idx]
                     q.append(next_idx)
 
         # 전체 DP 배열에서 최대값 출력
-        print(dp)
+        # print(dp)
         print(max(dp) if m > 0 else 0)
 
 if __name__ == "__main__":
