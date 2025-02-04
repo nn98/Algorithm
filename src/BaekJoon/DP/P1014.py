@@ -7,13 +7,13 @@ def main():
     for i in range(T):
         n, m = map(int,readline().split())
         matrix = [readline().rstrip() for _ in range(n)]
-        print(matrix)
+        # print(matrix)
         val = [0] * m
         for row in matrix:
             for j in range(m):
                 if row[j] == '.':
                     val[j] += 1
-        print(val)
+        # print(val)
         # DP 배열 초기화: 각 열에서 얻을 수 있는 최대 값
         dp = [0] * m
         q = deque()
