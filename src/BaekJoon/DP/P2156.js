@@ -4,12 +4,11 @@ const input = fs.readFileSync(filepath, { encoding : 'utf8' }).toString().trim()
 
 let n = Number(input[0]);
 let arr = input.slice(1).map(Number);
-console.log('arr',arr);
 let dp = Array.from({length: n}, () => new Array(3).fill(0));
 for (let i = 0; i < n; i++) {
   solution(i);
 }
-console.log(dp.join('\n'));
+console.log(Math.max(...dp[n-1]));
 
 function solution(idx) {
   if(idx == 0) {
