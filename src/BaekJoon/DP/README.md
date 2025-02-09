@@ -41,3 +41,7 @@
 >> - DP[현재 마을][우수] = DP[이전 마을][일반] + 현재 마을 인구수
 >> - 리프 노드까지 가서 역순으로 돌아오는 후위 연산 - DFS 필요
 >> - 오랜만에 DFS하니 힘드렁
+ 
+> ### <a href = "https://www.acmicpc.net/problem/2637"> <img src="https://static.solved.ac/tier_small/14.svg" width="30" height="20">1949 : 우수 마을</a> / [`코드1`](https://github.com/nn98/Algorithm/blob/main/src/BaekJoon/DP/P1949.py) / [`코드2(풀이)`](https://github.com/nn98/Algorithm/blob/main/src/BaekJoon/DP/P1949_2.py)
+> #### `Tree` / `DP in Tree`
+> `트리의 구조와 특성 활용하기`

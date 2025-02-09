@@ -1,42 +1,38 @@
 import sys
-from collections import defaultdict, deque
+from collections import deque, defaultdict
 
 def main():
-    readline = sys.stdin.readline
-    n = int(readline())
-    m = int(readline())
-
-    # parts: 각 부품이 어떤 하위 부품들로 구성되는지 저장
+    input = sys.stdin.readline
+    n = int(input())
+    m = int(input())
     parts = [[] for _ in range(n)]
+    indegree = [0] * n
+
     for _ in range(m):
-        x, y, k = map(int, readline().split())
-        parts[x-1].append((y-1, k))
+        x, y, k = map(int, input().split())
+        parts[y-1].append((x-1, k))  # y로 x를 만드는데 k개 필요
+        indegree[x-1] += 1
 
-    # 기본 부품(리프 노드) 확인
-    is_basic = [False] * n
-    for i in range(n):
-        if not parts[i]:
-            is_basic[i] = True
-            parts[i] = [(i, 1)]  # 자기 자신을 필요로 함
-    # print(parts)
-
-    # 필요한 기본 부품 수량 계산
-    required = defaultdict(int)
+    need = [[0]*n for _ in range(n)]
     q = deque()
-    q.append((n-1, 1))  # (부품 번호, 필요한 수량)
+
+    for i in range(n):
+        if indegree[i] == 0:
+            q.append(i)
+            need[i][i] = 1
 
     while q:
-        current, cnt = q.popleft()
-        for part, num in parts[current]:
-            if is_basic[part]:
-                required[part] += cnt * num
-            else:
-                q.append((part, cnt * num))
-    # print(required)
+        now = q.popleft()
+        for nxt, cnt in parts[now]:
+            for i in range(n):
+                need[nxt][i] += need[now][i] * cnt
+            indegree[nxt] -= 1
+            if indegree[nxt] == 0:
+                q.append(nxt)
 
-    # 결과 출력 (부품 번호 순으로 정렬)
-    for part in sorted(required):
-        print(part + 1, required[part])
+    for i in range(n):
+        if need[n-1][i]:
+            print(i+1, need[n-1][i])
 
 if __name__ == "__main__":
     main()
