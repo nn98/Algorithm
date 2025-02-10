@@ -4,7 +4,7 @@
 
 > ### [2515](https://www.acmicpc.net/problem/2515) - 전시장
 >#### DP 구현
->> 정렬 / DP / 이분탐색 삼위일체<br /><br />
+>> 정렬 / DP / 이분탐색 삼위일체<br /><bcr />
 > `정렬`<br />
 > 보일 수 있는 조건은 높이, 오름차순<br />
 > 선택 조건은 가치, 내림차순<br />
@@ -42,6 +42,6 @@
 >> - 리프 노드까지 가서 역순으로 돌아오는 후위 연산 - DFS 필요
 >> - 오랜만에 DFS하니 힘드렁
  
-> ### <a href = "https://www.acmicpc.net/problem/2637"> <img src="https://static.solved.ac/tier_small/14.svg" width="30" height="20">1949 : 우수 마을</a> / [`코드1`](https://github.com/nn98/Algorithm/blob/main/src/BaekJoon/DP/P1949.py) / [`코드2(풀이)`](https://github.com/nn98/Algorithm/blob/main/src/BaekJoon/DP/P1949_2.py)
-> #### `Tree` / `DP in Tree`
-> `트리의 구조와 특성 활용하기`
+> ### <a href = "https://www.acmicpc.net/problem/2637"> <img src="https://static.solved.ac/tier_small/14.svg" width="30" height="20">2637 : 장난감 조립</a> / [`코드1`](https://github.com/nn98/Algorithm/blob/main/src/BaekJoon/DP/2637.py) / [`코드2(풀이)`](https://github.com/nn98/Algorithm/blob/main/src/BaekJoon/DP/2637_S.py)
+> #### `Graph` / `Topology Sort`
+> `풀이는 맞았지만 기법은 몰라용`
