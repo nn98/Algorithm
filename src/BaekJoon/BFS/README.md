@@ -44,3 +44,9 @@ depth 1까지 가능 2 이상 추적 불가
 </tr>
 </tbody>
 </table>
+
+> ### <a href = "https://www.acmicpc.net/problem/1525"> <img src="https://static.solved.ac/tier_small/14.svg" width="30" height="20"> 1525 - 퍼즐 </a> / [코드1_메모리 초과](https://github.com/nn98/Algorithm/blob/main/src/BaekJoon/BFS/P1525.py) / [코드2](https://github.com/nn98/Algorithm/blob/main/src/BaekJoon/BFS/P1525_S.py)
+> `Data Structure` / `Graph` / `BFS` / `Set/Map`
+>> 0을 스왑하는 케이스 판별에 함수써서 모든 경우의 수를 다 새로만들었더니 바로 메모리 초과
+>>
+>> 실력부족
