@@ -23,4 +23,4 @@ for i in range(N-1, -1, -1):
     if dp[i] < pics[i][1]:
         sol(i, pics[i][0], 0)
 
-print(dp)
+print(max(dp))
