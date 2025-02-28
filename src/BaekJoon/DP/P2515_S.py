@@ -29,7 +29,7 @@ for i in range(N):
 
     # max_dp 갱신
     max_dp[i + 1] = max(max_dp[i], dp[i])
-    print('dp:\t',dp)
-    print('max_dp:\t',max_dp)
+    # print('dp:\t',dp)
+    # print('max_dp:\t',max_dp)
 
 print(max_dp[N])
