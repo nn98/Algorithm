@@ -1,19 +1,26 @@
 import sys
 
 readline = sys.stdin.readline
+size = 52
+half = size // 2
+matrix = [[0] * size for _ in range(size)]
 
-matrix = [[0] * 101 for _ in range(101)]
-
-for i in range(50, 101):
-    line = 1 if i == 50 else 1 + (i - 49) * 2
-    for j in range(50, 50+line):
+for i in range(half, size):
+    line = 1 if i == half else 1 + (i - half) * 2
+    minus = 0
+    for j in range(i, i+line):
         val = -1
         if i == j:
-            if i == 50:
+            if i == half:
                 val = 1
             else:
                 val = line * line
         else:
-            val = line * line - (i - 50)
-        matrix[i][100-j] = val
-print(matrix)
+            val = line * line - minus // 2
+        matrix[i][j - minus] = val
+        val -= (i - half) * 4
+        matrix[size-i][size-j+minus] = val
+        minus += 2
+
+
+print('\n'.join(' '.join(map(str, matrix[i])) for i in range(size)))
