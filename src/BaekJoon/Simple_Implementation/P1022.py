@@ -21,6 +21,11 @@ for i in range(half, size):
         val -= (i - half) * 4
         matrix[size-i][size-j+minus] = val
         minus += 2
+    for j in range(1, line - 1):
+        matrix[i-j][size-i] = matrix[i-j+1][size-i] - 1
+        # print('i-(line-1)+j:',i-(line-1)+j, 'i-(line)+j:', i-line+j, 'i:',i)
+        # print(len(matrix),len(matrix[i-(line-3)+j]))
+        matrix[i-(line-1)+j][i] = matrix[i-line+j][i] - 1
 
 
 print('\n'.join(' '.join(map(str, matrix[i])) for i in range(size)))
