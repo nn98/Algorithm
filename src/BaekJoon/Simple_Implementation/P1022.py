@@ -32,6 +32,7 @@ print('\n'.join(' '.join(map(str, matrix[i])) for i in range(size)))
 
 r1,c1,r2,c2 = map(lambda x: x+half, map(int,readline().split()))
 p_matrix = [row[c1:c2+1] for row in matrix[r1:r2+1]]
-print(max(p_matrix))
+m_digit = len(str(max(p_matrix)))
+print(max(p_matrix), m_digit)
 
-print(p_matrix)
+print('\n'.join(' '.join(map(str, f"{p_matrix[i:m_digit]}")) for i in range(r2-r1+1)))
