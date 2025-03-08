@@ -1,5 +1,6 @@
 import sys
 
+
 def get_value(x, y):
     k = max(abs(x), abs(y))
     if k == 0:
@@ -22,6 +23,7 @@ def get_value(x, y):
         offset = (k - 1 - y)
         return start + offset
 
+
 def main():
     r1, c1, r2, c2 = map(int, sys.stdin.readline().split())
     p_matrix = []
@@ -40,6 +42,7 @@ def main():
     for row in p_matrix:
         formatted_row = ' '.join(str(val).rjust(m_digit) for val in row)
         print(formatted_row)
+
 
 if __name__ == "__main__":
     main()
