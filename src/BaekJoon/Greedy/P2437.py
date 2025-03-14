@@ -8,7 +8,7 @@ weights.sort()
 cur_max = 0
 for weight in weights:
     if weight > cur_max+1:
-        print(weight)
+        print(cur_max+1)
         exit(0)
     cur_max += weight
 
