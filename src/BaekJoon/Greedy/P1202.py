@@ -1,4 +1,5 @@
 import sys
+import heapq
 readline = sys.stdin.readline
 
 N, K = map(int, readline().split())
@@ -10,18 +11,17 @@ for i in range(N):
     jewels.append([a, b])
 for i in range(K):
     bags.append(int(readline()))
-jewels.sort(key=lambda x: (-x[1], -x[0]))
+jewels.sort()
 bags.sort()
 # print(jewels)
 # print(bags)
 
+q = []
 ans = 0
-while bags:
-    for weight, value in jewels:
-        if bags[0] >= weight:
-            # print(weight, value, bags[0])
-            ans += value
-            bags.pop(0)
-            jewels.remove([weight, value])
-            break
+for bag in bags:
+    while jewels and jewels[0][0] <= bag:
+        heapq.heappush(q, -jewels[0][1])
+        heapq.heappop(jewels)
+    if q:
+        ans -= heapq.heappop(q)
 print(ans)
