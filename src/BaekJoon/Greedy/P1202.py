@@ -16,10 +16,13 @@ bags.sort(reverse=True)
 ans = 0
 for weight, value in jewels:
     if not bags: break
-    for bag in bags:
-        print(weight, value, bag)
-        if weight <= bag:
+    handle = False
+    for i in range(len(bags)):
+        if weight > bags[i] and handle:
+            print(weight, value, bags[i-1])
             ans += value
-            bags.remove(bag)
-            break
+            bags.remove(bags[i-1])
+            break;
+        else :
+            handle = True
 print(ans)
