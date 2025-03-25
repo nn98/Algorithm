@@ -8,7 +8,7 @@ for i in range(N):
     tasks.append([a, b])
 
 tasks.sort(key = lambda x: (-x[1], x[0]))
-his = [0] * (N + 1)
+his = [0] * 1001
 his[0] = 1
 ans = 0
 for time, score in tasks:
