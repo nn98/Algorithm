@@ -8,5 +8,5 @@ for i in range(N):
     tasks.append([a, b])
 
 print(tasks)
-tasks.sort(key = lambda x: (x[0], -x[1]))
+tasks.sort(key = lambda x: (-x[1], x[0]))
 print(tasks)
