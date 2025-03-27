@@ -10,3 +10,15 @@ for i in range(N):
 print(tasks)
 tasks.sort(key = lambda x: (-x[1], x[0]))
 print(tasks)
+
+his = [0] * (N + 1)
+his[0] = 1
+ans = 0
+for time, score in tasks:
+    while his[time]:
+        time -= 1
+        if time < 0: break
+    if time >= 0 and his[time] < 1:
+        his[time] = 1
+        ans += score
+print(ans)
