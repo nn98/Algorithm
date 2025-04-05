@@ -17,3 +17,11 @@ case_3 = min([dice[0] + dice[1] + dice[2],
               dice[5] + dice[2] + dice[4],
               dice[5] + dice[3] + dice[4]])
 print(case_1, case_2, case_3)
+
+if N == 1:
+    print(sum(dice)-max(dice))
+else:
+    ans = case_3 * 4
+    ans += case_2 * 2 * (N-3)
+    ans += case_1 * 5 * (N-2) ** 2
+    print(ans)
