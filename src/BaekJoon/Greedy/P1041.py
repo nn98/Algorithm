@@ -19,9 +19,12 @@ case_3 = min([dice[0] + dice[1] + dice[2],
 print(case_1, case_2, case_3)
 
 if N == 1:
-    print(sum(dice)-max(dice))
+    print(sum(dice) - max(dice))
 else:
     ans = case_3 * 4
-    ans += case_2 * 2 * (N-3)
-    ans += case_1 * 5 * (N-2) ** 2
-    print(ans)
+    print(case_3 * 4)
+    ans += case_2 * 4 * (2 * N - 3)
+    print(case_2 * 4 * (2 * N - 4))
+    ans += case_1 * ((N - 2) * (N - 2) + (N - 2) * (N - 1) * 4)
+    print(case_1 * ((N - 2) * (N - 2) + (N - 2) * (N - 1) * 4))
+    print('\t', ans)
