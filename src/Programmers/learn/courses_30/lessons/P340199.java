@@ -1,3 +1,5 @@
+package Programmers.learn.courses_30.lessons;
+
 class Solution {
     public int solution(int[] wallet, int[] bill) {
         int answer = 0;
