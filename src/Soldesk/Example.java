@@ -65,6 +65,21 @@ public class Example {
         int value = Integer.parseInt(inputLine(reader, "integer"));
         System.out.println(value>0?"Positive":value<0?"Negative":"Zero");
     }
+    void example06(BufferedReader reader) {
+        boolean isSunny = Boolean.parseBoolean(inputLine(reader, "sign"));
+        boolean isWarm = Boolean.parseBoolean(inputLine(reader, "sign"));
+        boolean isNiceWeather = isSunny&&isWarm;
+        System.out.println(isNiceWeather?"Nice weather":"Bad weather");
+    }
+    void example07(BufferedReader reader) {
+        int value = Integer.parseInt(inputLine(reader, "integer"));
+        System.out.println(value%2==0?"Even":"Odd");
+    }
+    void example08(BufferedReader reader) {
+        int num1 = Integer.parseInt(inputLine(reader, "integer"));
+        int num2 = Integer.parseInt(inputLine(reader, "integer"));
+        System.out.println(num1>num2?"num1 > num2":"num1 =< num2");
+    }
     public static void main(String[] args) {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         String exampleNumber = inputLine(reader, "");
