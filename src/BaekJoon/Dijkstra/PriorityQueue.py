@@ -6,6 +6,7 @@ num = int(input())
 INF = int(1e9)
 dist = [INF] * (num+1)
 g = [[] for _ in range(num+1)]
+
 for _ in range(num):
     start, end, cost = map(int, input().split())
     g[start].append((end, cost))
