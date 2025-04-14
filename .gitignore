@@ -40,3 +40,5 @@ out/
 # IntelliJ Python 가상환경(Virtual Environment)
 venv/
 
+# installed packages
+/node_modules
