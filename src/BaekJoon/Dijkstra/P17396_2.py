@@ -20,7 +20,7 @@ def dijkstra(start):
     dist[start] = 0
 
     while q:
-        now, cost = heapq.heappop(q)
+        cost, now = heapq.heappop(q)
         if dist[now] < cost: continue
         for next in graph[now]:
             nextArrival, nextCost = next
@@ -29,7 +29,7 @@ def dijkstra(start):
             newCost = nextCost + cost
             if dist[nextArrival] > newCost:
                 dist[nextArrival] = newCost
-                heapq.heappush(q, (nextArrival, newCost))
+                heapq.heappush(q, (newCost, nextArrival))
 
 dijkstra(0)
 # print(graph)

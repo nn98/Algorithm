@@ -1,12 +1,14 @@
 import sys
 import heapq
+from collections import defaultdict
 
 readLine = sys.stdin.readline
 num_city, num_bus = map(int, readLine().split())
-visible = readLine().split()
-INF = int(1e9)
+visible = list(map(int, input().split()))
+visible[num_city-1] = 0
+INF = float('inf')
 dist = [INF] * (num_city+1)
-graph = [[] for _ in range(num_city + 1)]
+graph = defaultdict(list)
 
 for _ in range(num_bus):
     departure, arrival, cost = map(int, readLine().split())
@@ -14,8 +16,7 @@ for _ in range(num_bus):
     graph[arrival].append((departure, cost))
 
 def dijkstra(start):
-    q = []
-    heapq.heappush(q, (start, 0))
+    q = [(0,0)]
     dist[start] = 0
 
     while q:
@@ -23,8 +24,9 @@ def dijkstra(start):
         if dist[now] < cost: continue
         for next in graph[now]:
             nextArrival, nextCost = next
-            if visible[nextArrival] == '1' and nextArrival != num_city-1: continue
-            newCost = nextCost + dist[now]
+            if visible[nextArrival] == 1 and nextArrival != num_city - 1 : continue
+            # newCost = nextCost + dist[now]
+            newCost = nextCost + cost
             if dist[nextArrival] > newCost:
                 dist[nextArrival] = newCost
                 heapq.heappush(q, (nextArrival, newCost))
