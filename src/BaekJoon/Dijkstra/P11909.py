@@ -1,6 +1,6 @@
 import sys
 import heapq
-
+# Timeout -> DP
 def dijkstra():
     q = []
     heapq.heappush(q, (0,0,0))
