@@ -1,3 +1,4 @@
+# 16/18
 import sys
 import heapq
 
