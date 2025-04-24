@@ -34,4 +34,6 @@ dijkstra(1)
 dijkstra(u)
 dijkstra(v)
 result = min(dist[1][u]+dist[u][v]+dist[v][n], dist[1][v]+dist[v][u]+dist[u][n])
+# result = min(dist[start][u]+dist[u][v]+dist[v][n], dist[start][v]+dist[v][u]+dist[u][n])
+# 경고를 띄웠는데도 안본 병신
 print(result if result < INF else -1)
