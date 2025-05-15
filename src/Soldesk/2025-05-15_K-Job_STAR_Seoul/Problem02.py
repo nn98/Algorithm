@@ -1,3 +1,4 @@
+# 정렬 / 단순 구현, 줄세우기 문제
 def main():
     x = int(input())
     sol = list(map(int,input().split()))

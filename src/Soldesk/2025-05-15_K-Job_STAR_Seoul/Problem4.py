@@ -1,3 +1,5 @@
+# DP, 색종이문제? 시간초과날듯ㅋㅋㅅ
+
 # DP로 가능할거같은데
 # 행번호가 우선이니 아래로 내려가면서 dp[x-1][y] + arr[x][y], 1이면 -1
 # zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz

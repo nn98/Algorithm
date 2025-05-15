@@ -1,3 +1,4 @@
+# 문자열 / 단순 구현, 열쇠 자물쇠 문제
 def main():
     x = int(input())
     key = input()
