@@ -1,6 +1,5 @@
 import sys
 from collections import deque
-
 readline = sys.stdin.readline
 
 def bfs(start):
@@ -15,6 +14,7 @@ def bfs(start):
 
 n , m = map(int, readline().split())
 rel = [set() for _ in range(n)]
+ans = int(1e9)
 
 for i in range(m):
     a, b = map(int, readline().split())
@@ -23,7 +23,6 @@ for i in range(m):
     rel[a].add(b)
     rel[b].add(a)
 
-ans = int(1e9)
 for i in range(n):
     visited = [0 for i in range(n)]
     bfs(i)
