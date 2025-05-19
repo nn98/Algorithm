@@ -1,4 +1,4 @@
-# BFS
+# Simple_Implementation
 * * *
 <table>
 <thead>
