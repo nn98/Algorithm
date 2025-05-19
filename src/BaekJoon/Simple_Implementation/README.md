@@ -39,7 +39,9 @@ G1
 난 왜 안되냐
 </td>
 <td>
-<a href="https://measurezero.tistory.com/475">틀림</a>
+알고리즘 분류 세그트리인거보니<br />
+세그트리로 뭔가 할수있는거같은데<br />
+<a href="https://measurezero.tistory.com/475">안ㅋ돼</a>
 </td>
 </tr>
 </tbody>
