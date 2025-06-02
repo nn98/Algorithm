@@ -30,6 +30,7 @@ def main():
     # 가장 큰 K-1개 간격 제거
     gaps.sort(reverse=True)
     total = total_span - sum(gaps[:K-1])
+    # print('gaps:',gaps,'\n','total_span:',total_span,'\n')
     print(total)
 
 if __name__ == "__main__":
