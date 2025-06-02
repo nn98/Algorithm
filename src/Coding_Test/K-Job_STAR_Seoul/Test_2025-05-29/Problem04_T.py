@@ -4,19 +4,26 @@ from collections import deque
 readline = sys.stdin.readline
 
 N, T = map(int, readline().split())
-time = list(map(int, readline().split()))
+times = list(map(int, readline().split()))
+time = 0
+count = -1
+q = deque()
+q.extend(times)
 ans = [0] * N
-repeat = 1
-while 0 in ans:
-    for i in range(N):
-        print('i:', i, 'repeat:', repeat, 'T*repeat:', T * repeat, 'time[i] / (T*repeat):', (time[i] / (T * repeat)),
-              'T*repeat - (time[i]%T):', T * repeat - (time[i] % T))
-        if ans[i] == 0 and time[i] / (T * repeat) <= 1:
-            ans[i] = (0 if i == 0 else i - 1) * repeat + (time[i] % T)
+while q:
+    count += 1
+    count %= N
+    if count % N == 0: print(q)
+    now = q.popleft()
+    if now == 0: continue
+    isSolve = now <= T
+    if isSolve:
+        time += now
+        ans[count] = time
+        now = 0
+    else:
+        time += T
+        now -= T
+    q.append(now)
 
-    print(ans)
-    repeat += 1
-    if repeat > 10: break
-
-for i in range(N):
-    print(ans[i], end=' ')
+print(ans)
