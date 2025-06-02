@@ -1,17 +1,30 @@
 import sys
+from collections import deque
 
 def main():
     N, T = map(int, sys.stdin.readline().split())
     times = list(map(int, sys.stdin.readline().split()))
 
-    total = 0
-    ans = []
-    for t in times:
-        cycles = (t + T - 1) // T  # 올림 계산
-        total += cycles * T
-        ans.append(str(total))
+    solve_times = [0] * N
+    q = deque()
+    for i in range(N):
+        if times[i] > 0:
+            q.append(i)
 
-    print(' '.join(ans))
+    total_time = 0
+    while q:
+        current_cycle_size = len(q)
+        for _ in range(current_cycle_size):
+            i = q.popleft()
+            spend = min(times[i], T)
+            total_time += spend
+            times[i] -= spend
+            if times[i] == 0:
+                solve_times[i] = total_time
+            else:
+                q.append(i)
+
+    print(' '.join(map(str, solve_times)))
 
 if __name__ == "__main__":
     main()
