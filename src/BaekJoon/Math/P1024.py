@@ -10,9 +10,10 @@ while True:
         const += i
     first = (n - const) / l
 
-    if first >= 0:
+    if first == int(first) and first >= 0:
         for i in range(l):
-            print(first + i, end=' ')
+            print(int(first + i), end=' ')
+        exit(0)
     else:
         if l == 100:
             print(-1)
