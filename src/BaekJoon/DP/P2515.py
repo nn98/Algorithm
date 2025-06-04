@@ -11,13 +11,13 @@ def sol(idx, hei, val):
 
 N, S = map(int, readline().split())
 pics = []
+
 for _ in range(N):
     height, value = map(int, readline().split())
     pics.append((height, value))
+
 pics.sort(key=lambda x: (x[0], -x[1]))
-print(pics)
 dp = [0] * len(pics)
-# his = [False] * len(pics)
 
 for i in range(N-1, -1, -1):
     if dp[i] < pics[i][1]:
