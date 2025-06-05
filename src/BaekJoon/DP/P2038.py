@@ -8,5 +8,5 @@ while sum_ < n:
     dp.append(1 + dp[i - dp[dp[i-1]]])
     sum_ += dp[i]
     i += 1
-print(dp)
+    
 print(i - 1)
