@@ -67,6 +67,7 @@ def main():
         print(-1)
         return
 
+    print(selected)
     # 각 도시의 도로 개수 출력
     degree = [0] * N
     for a, b in selected:
