@@ -46,16 +46,27 @@ def main():
 
     while road:
         temp_road.append(heappop(road))
-    remain = m - (n - 1)
-    adds += temp_road[:remain]
 
-    # 연결성을 재검증해야되나? 왜요?
-    parent = list(range(n))
-    for a, b in adds:
+    # 여기서 추가할 때 연결 여부를 파악해준다
+    remain = m - (n - 1)
+    for add in temp_road[:remain]:
+        a, b = add
         p_a = find(a)
         p_b = find(b)
         if p_a != p_b:
             parent[p_b] = p_a
+        adds.append((a, b))
+
+    # 연결성을 재검증해야되나? 왜요?
+    # 위에 남은 연결들 추가할 때 연결 여부를 파악 못했으니까요 ㅎㅎ
+    # 남은 연결들 추가할 때 연결 여부 파악하면 굳이 재검증할 필요는 없다네용
+    # parent = list(range(n))
+    # for a, b in adds:
+    #     p_a = find(a)
+    #     p_b = find(b)
+    #     if p_a != p_b:
+    #         parent[p_b] = p_a
+
     root = find(0)
     if any(root != find(i) for i in range(n)):
         print(-1)
