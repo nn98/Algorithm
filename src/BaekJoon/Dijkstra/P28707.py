@@ -5,9 +5,9 @@ readline = sys.stdin.readline
 
 def main():
     n = int(readline())
-    arr = list(int(x-1) for x in readline().split())
+    arr = list(int(x)-1 for x in readline().split())
     print(arr)
-    arr = [int(x-1) for x in readline().split()]
+    arr = [int(x)-1 for x in readline().split()]
     print(arr)
 
 if __name__ == '__main__':
