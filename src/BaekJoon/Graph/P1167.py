@@ -9,6 +9,7 @@ def main():
         road = list(map(int,readline().split()))
         for j in range(1,len(road)-1,2):
             roads[road[0]-1].append((road[j]-1,road[j+1]))
+
     q = []
     dist = [[int(1e9)] * n for _ in range(2)]
     dist[0][0] = 0
@@ -21,7 +22,6 @@ def main():
             if dist[0][n_node] > value+n_value:
                 dist[0][n_node] = value+n_value
                 heappush(q, (value+n_value, n_node))
-    # print(dist)
 
     m_value = max(dist[0])
     m_node = dist[0].index(m_value)
@@ -36,13 +36,7 @@ def main():
                 dist[1][n_node] = value+n_value
                 heappush(q, (value+n_value, n_node))
 
-    print(dist[0])
-    print(dist[1])
     print(max(dist[1]))
-    # for i in range(1,n-1):
-    #     for j in range(i+1,n):
-    #         ans = max(ans,dist[i]+dist[j])
-    # print(ans)
 
 if __name__ == '__main__':
     main()
