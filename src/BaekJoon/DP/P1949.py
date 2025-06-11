@@ -10,7 +10,7 @@ def main():
         a, b = map(lambda x: int(x)-1, readline().split())
         conn[a].append(b)
         conn[b].append(a)
-    dp = [[int(-1e9)]*n for _ in range(2)]
+    dp = [[int(-1e9)]*2 for _ in range(n)]
     visit = [False]*n
     q = deque()
     q.append((0,-1,-1))
@@ -23,10 +23,11 @@ def main():
         else:
             dp[now][0] = max(dp[before][1], 0 if b_before == -1 else dp[b_before][1])
             dp[now][1] = population[now] + dp[before][0]
-        for next in conn[now]:
-            if not visit[next]:
-                q.append((next, now, before))
-    print('\n'.join(map(str, dp)))
+        for next_node in conn[now]:
+            if not visit[next_node]:
+                q.append((next_node, now, before))
+        # print('\n'.join(map(str, dp))+'\n')
+    # print('\n'.join(map(str, dp)))
 
 if __name__ == '__main__':
     main()
