@@ -10,34 +10,28 @@ def main():
         a, b = map(lambda x: int(x)-1, readline().split())
         conn[a].append(b)
         conn[b].append(a)
-    dp = [[int(-1e9)]*2 for _ in range(n)]
+    dp = [[0]*n for _ in range(2)]
     visit = [False]*n
     circuit = deque()
-    circuit.append((0, -1, -1))
+    circuit.append((0, -1))
     visit[0] = True
-    q = [(0, -1, -1)]
+    q = [(0, -1)]
     while len(q) < n:
-        now, before, b_before = circuit.popleft()
+        now, before = circuit.popleft()
         for next_node in conn[now]:
             if not visit[next_node]:
                 visit[next_node] = True
-                circuit.append((next_node, now, before))
-                q.append((next_node, now, before))
-    # while q:
-    #     now, before, b_before = q.popleft()
-    #     visit[now] = True
-    #     if before == -1:
-    #         dp[now][0] = 0
-    #         dp[now][1] = population[now]
-    #     else:
-    #         dp[now][0] = max(dp[before][1], 0 if b_before == -1 else dp[b_before][1])
-    #         dp[now][1] = population[now] + dp[before][0]
-    #     for next_node in conn[now]:
-    #         if not visit[next_node]:
-    #             q.append((next_node, now, before))
-        # print('\n'.join(map(str, dp))+'\n')
-    # print('\n'.join(map(str, dp)))
-    print(q)
+                circuit.append((next_node, now))
+                q.append((next_node, now))
+    while q:
+        now, parent = q.pop()
+        for child in conn[now]:
+            if child == parent: continue
+            dp[0][now] += max(dp[0][child], dp[1][child])
+            dp[1][now] += dp[0][child]
+        dp[1][now] += population[now]
+
+    print('\n'.join(map(str, dp)))
 
 if __name__ == '__main__':
     main()
