@@ -10,7 +10,7 @@ def main():
         a, b = map(lambda x: int(x)-1, readline().split())
         conn[a].append(b)
         conn[b].append(a)
-    dp = [[0]*n for _ in range(2)]
+    dp = [[0]*2 for _ in range(n)]
     visit = [False]*n
     circuit = deque()
     circuit.append((0, -1))
@@ -27,11 +27,11 @@ def main():
         now, parent = q.pop()
         for child in conn[now]:
             if child == parent: continue
-            dp[0][now] += max(dp[0][child], dp[1][child])
-            dp[1][now] += dp[0][child]
-        dp[1][now] += population[now]
+            dp[now][0] += max(dp[child][0], dp[child][1])
+            dp[now][1] += dp[child][0]
+        dp[now][1] += population[now]
 
-    print('\n'.join(map(str, dp)))
+    print(max(dp[0]))
 
 if __name__ == '__main__':
     main()
