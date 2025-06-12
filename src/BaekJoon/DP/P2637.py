@@ -17,16 +17,17 @@ def main():
     # print(parts)
 
     ans = {}
-    q = [n-1]
+    q = [(n-1, 1)]
     while q:
-        num = q.pop()
+        num, need = q.pop()
         # print('num:',num,'len(parts[num]):',len(parts[num]),'parts[num][0]:',parts[num][0])
         for number, count in parts[num]:
             if parts[number][0][0] == number:
                 if number not in ans: ans[number] = 0
-                ans[number] += count
+                ans[number] += count * need
             else:
-                q.extend([number]*count)
+                q.append((number, count * need))
+                # q.extend([number]*count)
 
     for number, count in sorted(ans.items()):
         print(number+1, count)
