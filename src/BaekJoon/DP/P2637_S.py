@@ -18,7 +18,7 @@ def main():
         if not parts[i]:
             is_basic[i] = True
             parts[i] = [(i, 1)]  # 자기 자신을 필요로 함
-    print(parts)
+    # print(parts)
 
     # 필요한 기본 부품 수량 계산
     required = defaultdict(int)
@@ -32,7 +32,7 @@ def main():
                 required[part] += cnt * num
             else:
                 q.append((part, cnt * num))
-    print(required)
+    # print(required)
 
     # 결과 출력 (부품 번호 순으로 정렬)
     for part in sorted(required):
