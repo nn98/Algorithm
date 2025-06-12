@@ -5,29 +5,31 @@ readline = sys.stdin.readline
 def main():
     n = int(readline())
     m = int(readline())
-    # parts = [[] for _ in range(n)]
-    parts = {}
-    for _ in ragne(m):
-        x, y, k = map(int,readline().split())
-        parts[x-1] = (y-1, k)
+    parts = {i:[] for i in range(n)}
 
-    needs = [[] for _ in range(n)]
-    st = [n-1]
+    for _ in range(m):
+        x, y, k = map(int,readline().split())
+        parts[x-1].append((y-1, k))
 
     for i in range(n):
         if not parts[i]:
-            parts[i] = (i, 1)
+            parts[i] = [(i, 1)]
+    # print(parts)
 
-    print(parts)
+    ans = {}
+    q = [n-1]
+    while q:
+        num = q.pop()
+        # print('num:',num,'len(parts[num]):',len(parts[num]),'parts[num][0]:',parts[num][0])
+        for number, count in parts[num]:
+            if parts[number][0][0] == number:
+                if number not in ans: ans[number] = 0
+                ans[number] += count
+            else:
+                q.extend([number]*count)
 
-    # while st:
-    #     num = st.pop()
-    #     if not parts[num]:
-    #         needs[num].append((num, 1))
-    #     else:
-    #         for part in parts[num]:
-    #             st.
+    for number, count in sorted(ans.items()):
+        print(number+1, count)
 
-
-if __name__ == "main":
+if __name__ == "__main__":
     main()
