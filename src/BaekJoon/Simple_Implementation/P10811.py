@@ -6,7 +6,7 @@ def main():
     arr = [i+1 for i in range(n)]
     for _ in range(m):
         a, b = map(lambda x: int(x)-1, readline().split())
-        for i in range(0, (b-a)//2):
+        for i in range(0, (b-a)//2+1):
             arr[a+i], arr[b-i] = arr[b-i], arr[a+i]
     print(' '.join(map(str,arr)))
 
