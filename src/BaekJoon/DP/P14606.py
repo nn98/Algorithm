@@ -3,7 +3,7 @@ readline = sys.stdin.readline
 
 def main():
     n = int(readline())
-    dp = [0] * 10**9
+    dp = [0] * 11
     dp[2] = 1
     dp[3] = 3
     for i in range(4,11):
