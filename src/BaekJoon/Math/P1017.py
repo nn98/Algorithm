@@ -14,15 +14,20 @@ def main():
     print(prime)
     his = [False] * n
     his[0] = True
-    sum_val(0,arr,his,arr[0],prime)
+    sum_val(0,arr,his,prime)
 
-def sum_val(idx, arr, his, val, prime):
-    print(his, val)
+def sum_val(idx, arr, his, prime):
+    print(his, idx)
     for idx_next in range(len(arr)):
         if not his[idx_next]:
-            his[idx_next] = True
-            sum_val(idx_next, arr, his, val+arr[idx_next], prime)
-            his[idx_next] = False
+            if prime[arr[idx] + arr[idx_next]]:
+                his[idx_next] = True
+                print(arr[idx], arr[idx_next])
+                if False not in his:
+                    print('success!')
+                for idx_new in range(len(arr)):
+                    sum_val(idx_new, arr, his, prime)
+                his[idx_next] = False
 
 if __name__ == "__main__":
     main()
