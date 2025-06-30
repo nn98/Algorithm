@@ -22,6 +22,7 @@ def sum_val(idx, arr, his, val, prime):
         if not his[idx_next]:
             his[idx_next] = True
             sum_val(idx_next, arr, his, val+arr[idx_next], prime)
+            his[idx_next] = False
 
 if __name__ == "__main__":
     main()
