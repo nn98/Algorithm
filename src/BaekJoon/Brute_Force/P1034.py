@@ -4,10 +4,12 @@ readline = sys.stdin.readline
 
 def main():
     n, m = map(int,readline().split())
-    lamp = [readline() for _ in range(n)]
+    lamp = [list(map(int,readline().split())) for _ in range(n)]
     k = int(readline())
+    print(lamp)
     arr = np.array(lamp)
-    print(arr)
+    col_sums = arr.sum(axis=0)
+    print(col_sums)
 
 # def get_offed(col, lamp):
 #     result = 0
