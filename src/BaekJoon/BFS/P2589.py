@@ -5,7 +5,7 @@ readline = sys.stdin.readline
 def main():
     n, m = map(int,readline().split())
     ans = 0
-    treasure = [readline() for _ in range(n)]
+    treasure = [readline().strip() for _ in range(n)]
     hist = [[1e9]*m for _ in range(n)]
     for i in range(n):
         for j in range(m):
@@ -30,6 +30,7 @@ def bfs(treasure, i, j, hist, long):
         for i in range(4):
             next_x = x + X[i]
             next_y = y + Y[i]
+            print(next_x, next_y, len(treasure), len(treasure[0]))
             if 0 <= next_x < len(treasure) and 0 <= next_y < len(treasure[0]) and treasure[next_x][next_y]:
                 if hist[next_x][next_y] > dist:
                     hist[next_x][next_y] = dist
