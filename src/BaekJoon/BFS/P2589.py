@@ -10,7 +10,8 @@ def main():
     for i in range(n):
         for j in range(m):
             if treasure[i][j] == 'L' and hist[i][j] == 1e9:
-                ans = max(ans, bfs(treasure, i, j, hist, 0))
+                val = bfs(treasure, i, j, hist, 0)
+                ans = max(ans, val[0])
     print(ans)
 
 def bfs(treasure, i, j, hist, long):
@@ -30,11 +31,12 @@ def bfs(treasure, i, j, hist, long):
         for i in range(4):
             next_x = x + X[i]
             next_y = y + Y[i]
-            print(next_x, next_y, len(treasure), len(treasure[0]))
+            # print(next_x, next_y, len(treasure), len(treasure[0]), '\t', dist)
             if 0 <= next_x < len(treasure) and 0 <= next_y < len(treasure[0]) and treasure[next_x][next_y]:
                 if hist[next_x][next_y] > dist:
                     hist[next_x][next_y] = dist
                     q.append((dist, next_x, next_y))
+    print(i, j, max_data)
     return max_data if max_data[0] >= long else bfs(treasure, max_data[1], max_data[2], [[1e9]*len(treasure[0]) for _ in range(len(treasure))], max_data[0])
 
 if __name__ == "__main__":
