@@ -10,31 +10,32 @@ def main():
     n = int(readline())
     home = [readline().split() for _ in range(n)]
     dp = [[[0] * n for _ in range(n)] for _ in range(3)]
-    dp[0][0][1] = 1
-    print(dp)
-    ans = 0
+    dp[0][0][1] = 1   # (0,1)에 가로 방향으로 시작
     q = deque()
     q.append((0,1,0))
     while q:
         x, y, case = q.popleft()
-        if x == n-1 and y == n-1:
-            continue
-        else:
-            for next_x, next_y, next_case in get_next(home, x, y, case):
-                print(next_x, next_y, next_case)
-                dp[next_case][next_x][next_y] += dp[case][x][y]
-                q.append((next_x, next_y, next_case))
+        for next_x, next_y, next_case in get_next(home, x, y, case):
+            dp[next_case][next_x][next_y] += dp[case][x][y]
+            q.append((next_x, next_y, next_case))
     print(dp[0][n-1][n-1] + dp[1][n-1][n-1] + dp[2][n-1][n-1])
-    # print()
 
 def get_next(home, x, y, case):
+    n = len(home)
     result = []
     for move in move_case[case]:
         x_move, y_move = next_index[move]
-        x_move += x
-        y_move += y
-        if x_move < len(home) and y_move < len(home) and (home[x_move-1][y_move] == home[x_move][y_move-1] == home[x_move][y_move] == '0' if move == 2 else home[x_move][y_move] == '0'):
-            result.append((x_move, y_move, move))
+        nx = x + x_move
+        ny = y + y_move
+        if nx >= n or ny >= n:
+            continue
+        if move == 2:
+            if x >= 0 and y >= 0 and nx-1 >= 0 and ny-1 >= 0:
+                if home[nx][ny] == '0' and home[nx-1][ny] == '0' and home[nx][ny-1] == '0':
+                    result.append((nx, ny, move))
+        else:
+            if home[nx][ny] == '0':
+                result.append((nx, ny, move))
     return result
 
 if __name__ == "__main__":
