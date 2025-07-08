@@ -15,7 +15,7 @@ def main():
     while q:
         x, y, case = q.popleft()
         if x == n-1 and y == n-1:
-           ans += 1
+            ans += 1
         else:
             q.extend(get_next(home, x, y, case))
     print(ans)
