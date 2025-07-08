@@ -24,7 +24,7 @@ def main():
                 print(next_x, next_y, next_case)
                 dp[next_case][next_x][next_y] += dp[case][x][y]
                 q.append((next_x, next_y, next_case))
-    print(dp)
+    print(dp[0][n-1][n-1] + dp[1][n-1][n-1] + dp[2][n-1][n-1])
     # print()
 
 def get_next(home, x, y, case):
