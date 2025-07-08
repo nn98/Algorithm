@@ -26,7 +26,7 @@ def get_next(home, x, y, case):
         x_move, y_move = next_index[move]
         x_move += x
         y_move += y
-        if x_move < len(home) and y_move < len(home) and home[x_move][y_move] == '0':
+        if x_move < len(home) and y_move < len(home) and (home[x_move-1][y_move] == home[x_move][y_move-1] == '0' if move == 2 else home[x_move][y_move] == '0'):
             result.append((x_move, y_move, move))
     return result
 
