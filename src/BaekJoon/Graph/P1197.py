@@ -1,43 +1,43 @@
 import sys
-input = lambda: sys.stdin.readline().rstrip()
+input = sys.stdin.readline
+
+# 유니온-파인드(재귀 없이)
+def find(parent, x):
+    while parent[x] != x:
+        parent[x] = parent[parent[x]]  # 경로 압축
+        x = parent[x]
+    return x
+
+def union(parent, rank, a, b):
+    a = find(parent, a)
+    b = find(parent, b)
+    if a == b:
+        return False
+    if rank[a] < rank[b]:
+        parent[a] = b
+    else:
+        parent[b] = a
+        if rank[a] == rank[b]:
+            rank[a] += 1
+    return True
 
 V, E = map(int, input().split())
-
-# Kruskal Algorithm
-# https://techblog-history-younghunjo1.tistory.com/262
 edges = []
 for _ in range(E):
     A, B, C = map(int, input().split())
-    edges.append((A, B, C))
-edges.sort(key=lambda x: x[2]) # C(Cost)가 적은 것부터 정렬
+    edges.append((C, A-1, B-1))  # 0-indexed
 
+edges.sort()
+parent = [i for i in range(V)]
+rank = [0] * V
 
-# Union-Find
-parent = [i for i in range(V+1)]
+mst_weight = 0
+count = 0
+for cost, a, b in edges:
+    if union(parent, rank, a, b):
+        mst_weight += cost
+        count += 1
+        if count == V-1:
+            break
 
-def get_parent(x):
-    if parent[x] == x:
-        return x
-    parent[x] = get_parent(parent[x]) # get_parent 거슬러 올라가면서 parent[x] 값도 갱신
-    return parent[x]
-
-def union_parent(a, b):
-    a = get_parent(a)
-    b = get_parent(b)
-
-    if a < b: # 작은 쪽이 부모가 된다. (한 집합 관계라서 부모가 따로 있는 건 아님)
-        parent[b] = a
-    else:
-        parent[a] = b
-
-def same_parent(a, b):
-    return get_parent(a) == get_parent(b)
-
-
-answer = 0
-for a, b, cost in edges:
-    # cost가 작은 edge부터 하나씩 추가해가면서 같은 부모를 공유하지 않을 때(사이클 없을 때)만 확정
-    if not same_parent(a, b):
-        union_parent(a, b)
-        answer += cost
-print(answer)
+print(mst_weight)
