@@ -11,8 +11,7 @@ def main():
             dp_asc[i] = dp_asc[i-1] + 1
         if arr[i-1] >= arr[i]:
             dp_dsc[i] = dp_dsc[i-1] + 1
-    print(dp_asc)
-    print(dp_dsc)
+    print(max(max(dp_dsc),max(dp_asc)))
 
 if __name__ == "__main__":
     main()
