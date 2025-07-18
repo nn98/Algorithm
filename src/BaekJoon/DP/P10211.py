@@ -9,7 +9,7 @@ def main():
         dp = [0] * m
         dp[0] = arr[0]
         for i in range(1,m):
-            dp[i] = max(arr[i],dp[i-1])
+            dp[i] = max(arr[i],dp[i-1]+arr[i])
         print(max(dp))
 
 if __name__ == "__main__":
