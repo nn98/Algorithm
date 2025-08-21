@@ -1,4 +1,4 @@
-package Programmers.Test.Kakao2022_2;
+package Coding_Test.Kakao.Test_2022_05_19;
 
 import java.util.*;
 

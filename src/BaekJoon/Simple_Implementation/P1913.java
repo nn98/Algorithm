@@ -2,7 +2,7 @@ package BaekJoon.Simple_Implementation;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 
-public class Main {
+public class P1913 {
 	static int[][] arr;
 	static int n;
 	static int x;

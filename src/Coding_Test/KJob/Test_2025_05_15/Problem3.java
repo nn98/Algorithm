@@ -1,5 +1,5 @@
 // 구현, 페이지 뒤로가기 기록 오타주의
-package Coding_Test.K-Job_STAR_Seoul.Test_2025-05-15;
+package Coding_Test.KJob.Test_2025_05_15;
 import java.io.*;
 import java.util.*;
 // 검토가 중요하다

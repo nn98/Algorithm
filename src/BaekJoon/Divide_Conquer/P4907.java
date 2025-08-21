@@ -1,8 +1,10 @@
+package BaekJoon.Divide_Conquer;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-public class Main {
+public class P4907 {
 
     // Walsh 행렬의 (r, c) 원소 값: bitcount(r & c)가 짝수면 +1, 홀수면 -1
     static int walsh(int r, int c) {

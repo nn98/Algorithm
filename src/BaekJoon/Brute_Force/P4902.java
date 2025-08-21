@@ -1,3 +1,5 @@
+package BaekJoon.Brute_Force;
+
 import java.io.*;
 import java.util.StringTokenizer;
 
@@ -6,7 +8,7 @@ import java.util.StringTokenizer;
  *  Hint: 누적합 + 구현
  */
 
-public class BOJ4902 {
+public class P4902 {
     static int n;
     static int[][] arr, preSum;
 
