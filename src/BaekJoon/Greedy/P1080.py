@@ -22,4 +22,4 @@ for i in range(n-2):
             reversal(i, j)
             ans += 1
 
-print(arr1)
+print(ans)
