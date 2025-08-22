@@ -3,7 +3,7 @@ package BaekJoon.Graph;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.io.StringTokenizer;
+import java.util.StringTokenizer;
 import java.util.LinkedList;
 import java.util.Queue;
 
@@ -33,6 +33,7 @@ public class P1926 {
         System.out.println(count);
         System.out.println(max);
     }
+
     static int bfs(int i, int j, int[][] matrix, int[][] visited) {
         int result = 0;
         int[] dx = {-1, 0, 1, 0};
