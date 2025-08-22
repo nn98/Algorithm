@@ -3,14 +3,14 @@ package BaekJoon.Graph;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.io.StreamTokenizer;
+import java.io.StringTokenizer;
 import java.util.LinkedList;
 import java.util.Queue;
 
 public class P1926 {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        StreamTokenizer st = new StreamTokenizer(br.readLine());
+        StringTokenizer st = new StringTokenizer(br.readLine());
         int N = Integer.parseInt(st.nextToken());
         int M = Integer.parseInt(st.nextToken());
         int[][] matrix = new int[N][M];
@@ -18,7 +18,7 @@ public class P1926 {
         int count = 0;
         int max = 0;
         for (int i = 0; i < N; i++) {
-            st = new StreamTokenizer(br.readLine());
+            st = new StringTokenizer(br.readLine());
             for (int j = 0; j < M; j++) matrix[i][j] = Integer.parseInt(st.nextToken());
         }
         for (int i = 0; i < N; i++) {
@@ -30,6 +30,8 @@ public class P1926 {
                 }
             }
         }
+        System.out.println(count);
+        System.out.println(max);
     }
     static int bfs(int i, int j, int[][] matrix, int[][] visited) {
         int result = 0;
