@@ -58,5 +58,4 @@ public class P1926 {
         }
         return result;
     }
-
 }
