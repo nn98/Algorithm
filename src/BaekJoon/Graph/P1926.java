@@ -44,6 +44,7 @@ public class P1926 {
             int[] curr = q.poll();
             int currX = curr[0];
             int currY = curr[1];
+            if(visited[currX][currY] == 1) continue;
             visited[currX][currY] = 1;
             result++;
             for (int k = 0; k < 4; k++) {
@@ -55,5 +56,6 @@ public class P1926 {
                 }
             }
         }
+        return result;
     }
 }
