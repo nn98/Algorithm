@@ -1,9 +1,7 @@
 package BaekJoon.Greedy;
 
-import java.io.IOException;
-import java.util.Arrays;
-import java.util.Comparator;
-import java.util.StringTokenizer;
+import java.io.*;
+import java.util.*;
 
 public class P1101 {
     public static void main(String[] args) throws IOException {
@@ -20,11 +18,11 @@ public class P1101 {
         }
         Arrays.sort(arr, new Comparator<int[]>() {
             public int compare(int[] a, int[] b) {
-                return Arrays.stream(a)
+                return (Arrays.stream(a)
                         .filter(x -> x != 0)
-                        .count() - Arrays.stream(b)
+                        .count()) - (Arrays.stream(b)
                         .filter(x -> x != 0)
-                        .count();
+                        .count());
             }
         });
         System.out.println(Arrays.toString(arr));
