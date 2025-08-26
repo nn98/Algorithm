@@ -3,13 +3,13 @@ package BaekJoon.Greedy;
 import java.io.*;
 import java.util.*;
 
-public class P1101 {
+public class P1101_2 {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringTokenizer st = new StringTokenizer(br.readLine());
         int n = Integer.parseInt(st.nextToken());
         int m = Integer.parseInt(st.nextToken());
-        int[][] arr = new int[n][m+1];
+        int[][] arr = new int[n][m];
         for (int i = 0; i < n; i++) {
             st = new StringTokenizer(br.readLine());
             for (int j = 0; j < m; j++) {
@@ -24,15 +24,19 @@ public class P1101 {
                 int bCount = (int) Arrays.stream(b)
                         .filter(x -> x != 0)
                         .count();
-                a[m] = aCount;
-                b[m] = bCount;
                 return aCount - bCount;
             }
         });
+        long[] nonZero = new long[n];
+        for (int i = 0; i < n; i++) {
+            nonZero[i] = Arrays.stream(arr[i])
+                    .filter(x -> x != 0)
+                    .count();
+        }
         int count = 0;
-        for (int i = 0 ; i < n && arr[i][m] < 3; i++) {
+        for (int i = 0 ; i < n && nonZero[i] < 2; i++) {
             count++;
-            if(arr[i][m] == 0) continue;
+            if(nonZero[i] == 0) continue;
             int index = 0;
             while(arr[i][index] == 0) index++;
             for(int j = i-1; j >= 0 ; j--) {
