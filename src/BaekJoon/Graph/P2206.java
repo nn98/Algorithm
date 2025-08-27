@@ -25,6 +25,7 @@ public class P2206 {
         //        for(char []arr : graph) for(int i=0;i<arr.length;i++) System.out.print(arr[i] + (i == arr.length-1 ? "\n" : " "));
 
         int[][][] visited = new int[N][M][2];
+        visited[0][0][1] = 1;
         int[] nX = {0,1,0,-1};
         int[] nY = {1,0,-1,0};
         Queue<int[]> q = new LinkedList<>();
@@ -43,26 +44,17 @@ public class P2206 {
                 int nextX = x + nX[i];
                 int nextY = y + nY[i];
                 if(nextX < 0 || nextX >= N || nextY < 0 || nextY >= M) continue;
-                if(graph[nextX][nextY]=='1') {
-                    if (z == 1) continue;
-                    z++;
-                }
-                if (visited[nextX][nextY][z] == 0 || visited[nextX][nextY][z] > distance) {
-                    visited[nextX][nextY][z] = distance;
-                    q.add(new int[]{nextX,nextY,z,distance});
+                int nextZ = z + (graph[nextX][nextY]=='1' ? 1 : 0);
+                if(nextZ > 1) continue;
+                if (visited[nextX][nextY][nextZ] == 0 || visited[nextX][nextY][nextZ] > distance) {
+                    visited[nextX][nextY][nextZ] = distance;
+                    q.add(new int[]{nextX,nextY,nextZ,distance});
                 }
             }
         }
-        // for(int i=0;i<N;i++) {
-        //     for(int j=0;j<M;j++) {
-        //         System.out.print(visited[i][j][0] + (j == M-1 ? "\n" : " "));
-        //     }
-        // }
-        // for(int i=0;i<N;i++) {
-        //     for(int j=0;j<M;j++) {
-        //         System.out.print(visited[i][j][1] + (j == M-1 ? "\n" : " "));
-        //     }
-        // }
+        // for(int i=0;i<N;i++) for(int j=0;j<M;j++) System.out.print(visited[i][j][0] + (j == M-1 ? "\n" : " "));
+        // System.out.println();
+        // for(int i=0;i<N;i++) for(int j=0;j<M;j++) System.out.print(visited[i][j][1] + (j == M-1 ? "\n" : " "));
         int result = -1;
         if(visited[N-1][M-1][0] != 0 && visited[N-1][M-1][1] != 0) result = Math.min(visited[N-1][M-1][0], visited[N-1][M-1][1]);
         else if(visited[N-1][M-1][0] != 0 || visited[N-1][M-1][1] != 0) result = Math.max(visited[N-1][M-1][0], visited[N-1][M-1][1]);
