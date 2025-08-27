@@ -49,10 +49,23 @@ public class P2206 {
                 }
                 if (visited[nextX][nextY][z] == 0 || visited[nextX][nextY][z] > distance) {
                     visited[nextX][nextY][z] = distance;
-                    q.add(new int[]{nextX,nextY,z+1});
+                    q.add(new int[]{nextX,nextY,z,distance});
                 }
             }
         }
-        System.out.println(Math.min(visited[N-1][M-1][0], visited[N-1][M-1][1]));
+        // for(int i=0;i<N;i++) {
+        //     for(int j=0;j<M;j++) {
+        //         System.out.print(visited[i][j][0] + (j == M-1 ? "\n" : " "));
+        //     }
+        // }
+        // for(int i=0;i<N;i++) {
+        //     for(int j=0;j<M;j++) {
+        //         System.out.print(visited[i][j][1] + (j == M-1 ? "\n" : " "));
+        //     }
+        // }
+        int result = -1;
+        if(visited[N-1][M-1][0] != 0 && visited[N-1][M-1][1] != 0) result = Math.min(visited[N-1][M-1][0], visited[N-1][M-1][1]);
+        else if(visited[N-1][M-1][0] != 0 || visited[N-1][M-1][1] != 0) result = Math.max(visited[N-1][M-1][0], visited[N-1][M-1][1]);
+        System.out.println(result);
     }
 }
