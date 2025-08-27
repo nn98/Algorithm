@@ -7,14 +7,15 @@ import java.util.StringTokenizer;
 public class P2206 {
     public static void main(String[] args) throws Exception{
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        StringTokenizer st = new StringTokenizer(br.readLine());
-        int N = Integer.parseInt(st.nextToken());
-        int M = Integer.parseInt(st.nextToken());
-        int[][][] graph = new int[N][M][2];
+        String inputLine = br.readLine();
+        String[] tokens = inputLine.split(" ");
+        int N = Integer.parseInt(tokens[0]);
+        int M = Integer.parseInt(tokens[1]);
+        chat[][][] graph = new chat[N][M][2];
         for (int i = 0; i < N; i++) {
-            st = new StringTokenizer(br.readLine());
+            inputLine = br.readLine();
             for (int j = 0; j < M; j++) {
-                graph[i][j][0] = Integer.parseInt(st.nextToken());
+                graph[i][j][0] = inputLine.charAt(j);
             }
         }
         for(int [][]arr : graph) {
