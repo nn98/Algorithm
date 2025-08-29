@@ -24,9 +24,12 @@ public class P16236 {
 		}
 		PriorityQueue<Coordinate> queue = new PriorityQueue<>();
 		queue.add(start);
-		for(int i=1;i<7;i++) {
+		for(int i=2;i<7;i++) {
 			sol(queue, space, visited, i);
-			for(int x=0;x<n;x++) for(int y=0;y<n;y++) System.out.println(visited[x][y][i] + (y == n-1 ? "\n" : " "));
+			for(int x=0;x<n;x++) for(int y=0;y<n;y++) System.out.print(visited[x][y][i] + (y == n-1 ? "\n" : " "));
+
+			Coordinate next = getClosest(space, visited, i);
+			System.out.println(next);
 			break;
 		}
 		System.out.println(queue.poll());
@@ -61,12 +64,13 @@ public class P16236 {
 			int x = curr.x;
 			int y = curr.y;
 			if (visited[x][y][level] == 0) visited[x][y][level] = distance;
-			if (visited[x][y][level] <= distance) continue;
+			if (visited[x][y][level] < distance) continue;
 			visited[x][y][level] = distance;
 			distance++;
 			for (int i =0 ; i < 4; i++) {
 				int nextX = x + dx[i];
 				int nextY = y + dy[i];
+				System.out.println("\t" + nextX + " " + nextY);
 				if (nextX < 0 || nextX >= space.length || nextY < 0 || nextY >= space[0].length) continue;
 				if (space[nextX][nextY] > level) continue;
 				if (visited[nextX][nextY][level] == 0 || visited[nextX][nextY][level] > distance) {
@@ -75,5 +79,18 @@ public class P16236 {
 				}
 			}
 		}
+	}
+	static Coordinate getClosest(int[][] space, int[][][] visited, int level) {
+		Coordinate closest = null;
+		int closestDistance = Integer.MAX_VALUE;
+		for (int i = 0 ; i < space.length ; i++) {
+			for (int j = 0 ; j < space[i].length ; j++) {
+				if (space[i][j] != 0 && space[i][j] <= level) {
+					if (closest == null) closest = new Coordinate(visited[i][j][level], i, j);
+					else if (closest.distance > visited[i][j][level]) closest = new Coordinate(visited[i][j][level], i, j);
+				}
+			}
+		}
+		return closest;
 	}
 }
