@@ -21,9 +21,9 @@ def solution(diffs, times, limit):
             high = mid
         else:
             low = mid + 1
-    return low
+    return low if low > 0 else 1
 
-print(solution([1, 5, 3], [2, 4, 7], 30))
-print(solution([1, 4, 4, 2], [6, 3, 8, 2], 59))
+print(solution([1, 5, 3], [2, 4, 7], 300000))
+print(solution([1, 4, 4, 2], [6, 3, 8, 2], 590000))
 print(solution([1, 328, 467, 209, 54], [2, 7, 1, 4, 3], 1723))
 print(solution([1, 99999, 100000, 99995], [9999, 9001, 9999, 9001], 3456789012))
