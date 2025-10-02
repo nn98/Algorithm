@@ -18,21 +18,37 @@ public class P1238 {
 		int m = Integer.parseInt(st.nextToken());
 		int x = Integer.parseInt(st.nextToken());
 		int[][] hist = new int[n+1][n+1];
+		int[][] revHist = new int[n+1][n+1];
 		List<List<Node>> matrix = new ArrayList<>();
+		List<List<Node>> revMatrix = new ArrayList<>();
 		matrix.add(null);
+		revMatrix.add(null);
 		for(int i=0;i<n;i++) matrix.add(new LinkedList<>());
+		for(int i=0;i<n;i++) revMatrix.add(new LinkedList<>());
 		for(int i=0;i<m;i++) {
 			st = new StringTokenizer(br.readLine());
 			int from = Integer.parseInt(st.nextToken());
 			int to = Integer.parseInt(st.nextToken());
 			int dist = Integer.parseInt(st.nextToken());
 			matrix.get(from).add(new Node(to,dist));
+			revMatrix.get(to).add(new Node(from,dist));
 		}
-		for(int i = 1; i<=n; i++) {
-			dijkstra(matrix, hist, i);
+		// for(int i = 1; i<=n; i++) {
+		// 	dijkstra(matrix, hist, i);
+		// }
+		dijkstra(matrix,hist,x);
+		dijkstra(revMatrix,revHist,x);
+		// for(int[] a : hist)
+		// 	System.out.println(Arrays.toString(a));
+		// System.out.println();
+		// for(int[] a : revHist)
+		// 	System.out.println(Arrays.toString(a));
+
+		int ans = 0;
+		for(int i=1;i<=n;i++) {
+			if(i!=x) ans = Math.max(hist[x][i]+revHist[x][i],ans);
 		}
-		for(int[] a : hist)
-			System.out.println(Arrays.toString(a));
+		System.out.println(ans);
 	}
 	static void dijkstra(List<List<Node>> matrix, int[][] hist, int idx) {
 		PriorityQueue<Node> pq = new PriorityQueue<>();
@@ -46,7 +62,7 @@ public class P1238 {
 			for(Node n : matrix.get(nowIdx)) {
 				int nextIdx = n.idx;
 				int nextDist = n.dist + nowDist;
-				if(hist[idx][nowIdx] == 0 || hist[idx][nextIdx]>nextDist) {
+				if(hist[idx][nextIdx] == 0 || hist[idx][nextIdx]>nextDist) {
 					hist[idx][nextIdx] = nextDist;
 					pq.add(new Node(nextIdx, nextDist));
 				}
