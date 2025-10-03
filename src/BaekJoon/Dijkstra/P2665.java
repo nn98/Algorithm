@@ -5,7 +5,6 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.Arrays;
 import java.util.PriorityQueue;
-import java.util.StringTokenizer;
 
 public class P2665 {
 	public static void main(String[] args) throws IOException {
@@ -23,28 +22,26 @@ public class P2665 {
 			for(char c: br.readLine().toCharArray()) matrix[i][j++] = c-'0';
 		}
 		PriorityQueue<Node> pq = new PriorityQueue<>();
-		pq.add(new Node(0,0,1));
+		pq.add(new Node(0,0,0));
 		while(!pq.isEmpty()) {
 			Node node = pq.poll();
 			int nowX = node.x;
 			int nowY = node.y;
 			int nowD = node.dis;
-			if(history[nowX][nowY] <= nowD)continue;
+			if(history[nowX][nowY] < nowD)continue;
 			history[nowX][nowY] = nowD;
 			for(int i=0;i<4;i++) {
 				int newX = nowX + nX[i];
 				int newY = nowY + nY[i];
 				if(newX >= 0 && newX < n && newY >=0 && newY < n) {
 					int flag = matrix[newX][newY] < 1 ? 1 : 0;
-					if(history[newX][newY] < nowD + flag) continue;
+					if(history[newX][newY] != Integer.MAX_VALUE && history[newX][newY] <= nowD + flag) continue;
 					history[newX][newY] = nowD + flag;
 					pq.add(new Node(newX, newY, nowD + flag));
 				}
 			}
 		}
-		for(int[]a: history) {
-			System.out.println(Arrays.toString(a));
-		}
+		System.out.println(history[n-1][n-1]);
 	}
 	static class Node implements Comparable<Node> {
 		int x;
