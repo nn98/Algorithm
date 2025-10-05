@@ -10,6 +10,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.PriorityQueue;
 import java.util.StringTokenizer;
+import java.util.stream.IntStream;
 
 public class P10282 {
 	public static void main(String[] args) throws IOException {
@@ -48,7 +49,9 @@ public class P10282 {
 				}
 			}
 			System.out.println(Arrays.toString(history));
-			System.out.println(Arrays.stream(history).count());
+			// System.out.println(Arrays.stream(history).filter(x -> x != Integer.MAX_VALUE).count() + " " + Arrays.stream(history).filter(x -> x != Integer.MAX_VALUE).max().getAsInt());
+			IntStream result = Arrays.stream(history).filter(x -> x != Integer.MAX_VALUE);
+			System.out.println(result.count() + " " + result.max().getAsInt());
 		}
 	}
 	static class Node implements Comparable<Node>{
