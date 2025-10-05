@@ -48,10 +48,11 @@ public class P10282 {
 					pq.add(new Node(nextIdx,nextDis));
 				}
 			}
-			System.out.println(Arrays.toString(history));
+			// System.out.println(Arrays.toString(history));
 			// System.out.println(Arrays.stream(history).filter(x -> x != Integer.MAX_VALUE).count() + " " + Arrays.stream(history).filter(x -> x != Integer.MAX_VALUE).max().getAsInt());
-			IntStream result = Arrays.stream(history).filter(x -> x != Integer.MAX_VALUE);
-			System.out.println(result.count() + " " + result.max().getAsInt());
+			long count = Arrays.stream(history).filter(x -> x != Integer.MAX_VALUE).count();
+			int maxVal = Arrays.stream(history).filter(x -> x != Integer.MAX_VALUE).max().getAsInt();
+			System.out.println(count + " " + maxVal);
 		}
 	}
 	static class Node implements Comparable<Node>{
