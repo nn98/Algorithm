@@ -58,17 +58,17 @@ public class P1719 {
 			int nowIdx = cur[0];
 			int nowDis = cur[1];
 			int nowFirstIdx = cur[2];
-			System.out.println(String.format("start: %d / now: %d / nowDis: %d / nowFirst: %d", idx, nowIdx, nowDis, nowFirstIdx));
+			// System.out.println(String.format("start: %d / now: %d / nowDis: %d / nowFirst: %d", idx, nowIdx, nowDis, nowFirstIdx));
 			if(distances[nowIdx][0] < nowDis) continue;
 			distances[nowIdx][1] = nowFirstIdx;
 			for(int nextIdx = 1; nextIdx <= n; nextIdx++) {
-				if(nextIdx == nowIdx || matrix[nowIdx][nextIdx] == 0) {
-					System.out.println("here? 01");
+				if(nextIdx == nowIdx || nextIdx == idx || matrix[nowIdx][nextIdx] == 0) {
+					// System.out.println("here? 01");
 					continue;
 				}
 				int nextDis = matrix[nowIdx][nextIdx] + nowDis;
 				if(distances[nextIdx][0] < nextDis)  {
-					System.out.println("here? 02");
+					// System.out.println("here? 02");
 					continue;
 				}
 				distances[nextIdx][0] = nextDis;
