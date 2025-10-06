@@ -4,6 +4,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.Arrays;
+import java.util.Comparator;
 import java.util.PriorityQueue;
 import java.util.StringTokenizer;
 
@@ -51,7 +52,7 @@ public class P1719 {
 		System.out.print(sb);
 	}
 	static void solution(int n, int idx, int[][] matrix, int[][] distances) {
-		PriorityQueue<int[]> pq = new PriorityQueue<>((o1, o2) -> Integer.compare(o1[1], o2[1]));
+		PriorityQueue<int[]> pq = new PriorityQueue<>(Comparator.comparingInt(a -> a[1]));
 		pq.offer(new int[]{idx, 0, 0});
 		while(!pq.isEmpty()){
 			int[] cur = pq.poll();
