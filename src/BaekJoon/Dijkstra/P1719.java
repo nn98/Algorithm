@@ -59,6 +59,7 @@ public class P1719 {
 			int nowIdx = cur[0];
 			int nowDis = cur[1];
 			int nowFirstIdx = cur[2];
+
 			// System.out.println(String.format("start: %d / now: %d / nowDis: %d / nowFirst: %d", idx, nowIdx, nowDis, nowFirstIdx));
 			if(distances[nowIdx][0] < nowDis) continue;
 			distances[nowIdx][1] = nowFirstIdx;
