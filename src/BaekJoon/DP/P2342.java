@@ -1,0 +1,4 @@
+package BaekJoon.DP;
+
+public class P2342 {
+}
