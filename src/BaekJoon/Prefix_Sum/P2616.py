@@ -15,7 +15,11 @@ for i in range(1, N):
             break
         pre_sum[idx] += carriage[i]
 
+history = [-1e9] * N
 def sol(idx, sum, remain):
+    if history[idx] >= sum:
+        return
+    history[idx] = sum
     if remain == 0 or idx >= N:
         global max_val
         max_val = max(max_val, sum)
