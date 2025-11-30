@@ -15,5 +15,23 @@ for i in range(1, N):
             break
         pre_sum[idx] += carriage[i]
 
+def sol(idx, sum, remain):
+    if remain == 0 or idx >= N:
+        global max_val
+        max_val = max(max_val, sum)
+    sol(idx+1, sum, remain)
+
+    sum += pre_sum[idx]
+    if idx < N-1:
+        temp = pre_sum[idx+1]
+        pre_sum[idx+1] = 0
+    sol(idx+1, sum, remain-1)
+    if idx < N-1:
+        pre_sum[idx+1] = temp
+
+max_val = 0
+sol(0,0,3)
+
 print(carriage)
 print(pre_sum)
+print(max_val)
