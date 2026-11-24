@@ -5,7 +5,8 @@
 param(
     [Parameter(Mandatory)][ValidateSet('boj', 'pgs')][string]$Type,
     [Parameter(Mandatory)][string]$Path,
-    [Parameter(Mandatory)][int]$Number
+    [Parameter(Mandatory)][int]$Number,
+    [switch]$NoOpen
 )
 
 # path as given, else under repo root / src / src\BaekJoon (so `np boj Two_Pointer 2230` works from anywhere)
@@ -73,5 +74,12 @@ public class Main {
 }
 
 New-Item -ItemType Directory -Force $dir | Out-Null
-[IO.File]::WriteAllText($file, $body, (New-Object Text.UTF8Encoding($false)))
+[IO.File]::WriteAllText($file, "$body`n", (New-Object Text.UTF8Encoding($false)))
 Write-Host "created $file"
+
+# open in the running IntelliJ (newest install under Program Files); -NoOpen to skip
+if (-not $NoOpen) {
+    $idea = Get-ChildItem 'C:\Program Files\JetBrains\IntelliJ IDEA*\bin\idea64.exe' -ErrorAction SilentlyContinue |
+        Sort-Object FullName -Descending | Select-Object -First 1
+    if ($idea) { Start-Process $idea.FullName -ArgumentList "`"$file`"" }
+}
